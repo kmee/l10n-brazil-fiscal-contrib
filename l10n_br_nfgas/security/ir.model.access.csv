@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_l10n_br_nfgas_meter_user,NFGas meter user,model_l10n_br_nfgas_meter,l10n_br_fiscal.group_user,1,1,1,1
+access_l10n_br_nfgas_consumption_history_user,NFGas consumption history user,model_l10n_br_nfgas_consumption_history,l10n_br_fiscal.group_user,1,1,1,1
+access_l10n_br_nfgas_consumption_history_line_user,NFGas consumption history line user,model_l10n_br_nfgas_consumption_history_line,l10n_br_fiscal.group_user,1,1,1,1
