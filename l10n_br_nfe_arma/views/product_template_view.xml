@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="product_template_form" model="ir.ui.view">
+        <field name="name">product.template.form (arma)</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.product_template_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='fiscal']/group" position="after">
+                <group name="arma" string="Firearm">
+                    <field name="arma_type" />
+                    <field
+                        name="arma_description"
+                        attrs="{'invisible': [('arma_type', '=', False)]}"
+                    />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

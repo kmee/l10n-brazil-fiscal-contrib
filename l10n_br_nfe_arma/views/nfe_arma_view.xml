@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="nfe_arma_list" model="ir.ui.view">
+        <field name="name">nfe.40.arma.list</field>
+        <field name="model">nfe.40.arma</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="nfe40_tpArma" string="Type" />
+                <field name="nfe40_nSerie" string="Serial Number" />
+                <field name="nfe40_nCano" string="Barrel Serial Number" />
+                <field name="nfe40_descr" string="Description" />
+            </tree>
+        </field>
+    </record>
+</odoo>
