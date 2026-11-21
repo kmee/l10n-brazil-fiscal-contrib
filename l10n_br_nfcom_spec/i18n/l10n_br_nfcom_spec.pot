@@ -44,6 +44,8 @@ msgid "06"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__11
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__11
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__11
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__11
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__11
@@ -54,6 +56,8 @@ msgid "11"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__12
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__12
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__12
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__12
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__12
@@ -64,6 +68,8 @@ msgid "12"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__13
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__13
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__13
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__13
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__13
@@ -74,6 +80,8 @@ msgid "13"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__14
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__14
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__14
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__14
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__14
@@ -84,6 +92,8 @@ msgid "14"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__15
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__15
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__15
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__15
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__15
@@ -94,6 +104,8 @@ msgid "15"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__16
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__16
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__16
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__16
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__16
@@ -104,6 +116,8 @@ msgid "16"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__17
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__17
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__17
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__17
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__17
@@ -114,6 +128,8 @@ msgid "17"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__21
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__21
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__21
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gcofat_gnf__nfcom10_mod__21
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__21
@@ -126,6 +142,8 @@ msgid "21"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__22
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__22
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__22
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gcofat_gnf__nfcom10_mod__22
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__22
@@ -138,6 +156,8 @@ msgid "22"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__23
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__23
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__23
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__23
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__23
@@ -148,6 +168,8 @@ msgid "23"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__24
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__24
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__24
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__24
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__24
@@ -158,6 +180,8 @@ msgid "24"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__25
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__25
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__25
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__25
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__25
@@ -168,6 +192,8 @@ msgid "25"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__26
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__26
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__26
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__26
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__26
@@ -178,6 +204,8 @@ msgid "26"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__27
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__27
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__27
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__27
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__27
@@ -188,6 +216,8 @@ msgid "27"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__28
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__28
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__28
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__28
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__28
@@ -198,6 +228,8 @@ msgid "28"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__29
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__29
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__29
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__29
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__29
@@ -208,6 +240,8 @@ msgid "29"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__31
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__31
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__31
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__31
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__31
@@ -218,6 +252,8 @@ msgid "31"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__32
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__32
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__32
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__32
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__32
@@ -228,6 +264,8 @@ msgid "32"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__33
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__33
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__33
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__33
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__33
@@ -238,6 +276,8 @@ msgid "33"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__35
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__35
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__35
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__35
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__35
@@ -253,6 +293,8 @@ msgid "40"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__41
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__41
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__41
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__41
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icms40__nfcom10_CST__41
@@ -264,6 +306,8 @@ msgid "41"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__42
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__42
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__42
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__42
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__42
@@ -274,6 +318,8 @@ msgid "42"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__43
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__43
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__43
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__43
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__43
@@ -284,6 +330,8 @@ msgid "43"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__50
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__50
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__50
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__50
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__50
@@ -294,6 +342,8 @@ msgid "50"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__51
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__51
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__51
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__51
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__51
@@ -304,6 +354,8 @@ msgid "51"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__52
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__52
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__52
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__52
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__52
@@ -314,6 +366,8 @@ msgid "52"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUFPrinc__53
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_cUF__53
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_cUFPrinc__53
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gfatcentral__nfcom10_cUF__53
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_icmsufdest__nfcom10_cUFDest__53
@@ -324,11 +378,13 @@ msgid "53"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_mod__62
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_ide__nfcom10_mod__62
 msgid "62"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_tpAssinante__99
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_assinante__nfcom10_tpAssinante__99
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gressarc__nfcom10_tpRessarc__99
 msgid "99"
@@ -1448,6 +1504,7 @@ msgid "Detalhamento de Produtos e Serviços"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document_line__nfcom10_indDevolucao__1
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_gprocref__nfcom10_indDevolucao__1
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_prod__nfcom10_indDevolucao__1
 msgid "Devolução do valor do item"
@@ -2251,6 +2308,7 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_indNotaEntrada__1
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_ide__nfcom10_indNotaEntrada__1
 msgid "Informar quando for nota de ajuste e possuir itens com CFOP de entrada"
 msgstr ""
@@ -3227,6 +3285,7 @@ msgid "Serie do documento fiscal"
 msgstr ""
 
 #. module: l10n_br_nfcom_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__l10n_br_fiscal_document__nfcom10_indPrePago__1
 #: model:ir.model.fields.selection,name:l10n_br_nfcom_spec.selection__nfcom_10_ide__nfcom10_indPrePago__1
 msgid ""
 "Serviço pré-pago (informar a tag somente se a nota for referente a um "
