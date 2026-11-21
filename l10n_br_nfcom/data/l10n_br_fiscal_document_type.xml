@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="document_62" model="l10n_br_fiscal.document.type">
+        <field name="code">62</field>
+        <field
+            name="name"
+        >Nota Fiscal Fatura de Serviço de Comunicação Eletrônica - NFCom</field>
+        <field name="electronic" eval="True" />
+        <field name="prefix">NFCom</field>
+        <field name="sufix">nfcom</field>
+        <field name="type">icms</field>
+    </record>
+</odoo>

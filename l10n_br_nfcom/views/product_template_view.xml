@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="product_template_form" model="ir.ui.view">
+        <field name="name">l10n_br_nfcom.product.template.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.product_template_form" />
+        <field name="arch" type="xml">
+            <field name="fiscal_type" position="after">
+                <field name="nfcom_cclass" />
+                <field name="nfcom_umed" />
+            </field>
+        </field>
+    </record>
+</odoo>
