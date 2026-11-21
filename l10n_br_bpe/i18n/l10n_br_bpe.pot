@@ -72,6 +72,7 @@ msgid "BC do ICMS"
 msgstr ""
 
 #. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document__bpe_layout__bpe
 #: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_document_form_view
 #: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_res_company_form
 msgid "BP-e"
@@ -96,6 +97,15 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe_environment
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_res_company__bpe_environment
 msgid "BP-e Environment"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe_layout
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe_layout
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move_line__bpe_layout
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe_layout
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document_line__bpe_layout
+msgid "BP-e Layout"
 msgstr ""
 
 #. module: l10n_br_bpe
