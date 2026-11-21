@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="bpe_no_boarding_wizard_form" model="ir.ui.view">
+        <field name="name">l10n_br_bpe.no.boarding.wizard.form</field>
+        <field name="model">l10n_br_bpe.no.boarding.wizard</field>
+        <field name="arch" type="xml">
+            <form string="BP-e No Boarding">
+                <group>
+                    <field name="document_id" invisible="1" />
+                    <field name="justification" />
+                </group>
+                <footer>
+                    <button name="doit" string="OK" class="btn-primary" type="object" />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="bpe_no_boarding_wizard_action" model="ir.actions.act_window">
+        <field name="name">BP-e No Boarding</field>
+        <field name="res_model">l10n_br_bpe.no.boarding.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>
