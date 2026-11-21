@@ -1,3 +1,3 @@
-Issue the NF-e as usual. The fiscal document line shows the groups in
-the *Presumed Credit* tab, where they can be changed or completed, and
-the NF-e XML carries the `gCred` tags of the item.
+Emita a NF-e normalmente. A linha do documento fiscal mostra os grupos
+na aba *Presumed Credit*, onde podem ser alterados ou completados, e o
+XML da NF-e leva as tags `gCred` do item.

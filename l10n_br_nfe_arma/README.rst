@@ -22,23 +22,24 @@ NF-e Firearms (arma)
 
 |badge1| |badge2| |badge3|
 
-This module reports the firearm groups of the NF-e items (group L,
-``arma``) from the serial numbers of the stock.
+Este módulo informa os grupos de arma de fogo dos itens da NF-e (grupo
+L, ``arma``) a partir dos números de série do estoque.
 
-The firearm type (permitted or restricted use) and its full description
-(caliber, brand, capacity, action type, length...) are set once on the
-product. Each firearm is a serial number of the product: its name is the
-firearm serial number, and it holds the barrel serial number.
+O tipo da arma (uso permitido ou restrito) e sua descrição completa
+(calibre, marca, capacidade, tipo de funcionamento, comprimento etc.)
+são definidos uma vez no produto. Cada arma é um número de série do
+produto: seu nome é o número de série da arma, e ele guarda o número de
+série do cano.
 
-When an invoice is created from a delivery (picking invoicing), the
-invoice line of a firearm gets one firearm group per serial number
-shipped. The groups can be edited on the invoice line and on the fiscal
-document line (*Firearms* tab).
+Quando uma fatura é criada a partir de uma entrega (faturamento da
+separação), a linha da fatura de uma arma recebe um grupo de arma por
+número de série expedido. Os grupos podem ser editados na linha da
+fatura e na linha do documento fiscal (aba *Firearms*).
 
-Before the NF-e is confirmed the module refuses a group with an empty
-field (all four are required by the layout), more than 500 groups in one
-item (layout limit) and the groups in the NFC-e (rule L01-10, rejection
-738, NT 2013/005).
+Antes da confirmação da NF-e, o módulo recusa um grupo com campo vazio
+(os quatro são obrigatórios pelo leiaute), mais de 500 grupos em um item
+(limite do leiaute) e os grupos na NFC-e (regra L01-10, rejeição 738, NT
+2013/005).
 
 **Table of contents**
 
@@ -48,30 +49,29 @@ item (layout limit) and the groups in the NFC-e (rule L01-10, rejection
 Configuration
 =============
 
-- Track the firearm products by serial number.
-- On the product form, *Fiscal* tab, set the *Firearm Type* and the
+- Rastreie os produtos de arma de fogo por número de série.
+- No formulário do produto, aba *Fiscal*, informe o *Firearm Type* e a
   *Firearm Description*.
-- Fill the barrel serial number of each serial number.
+- Preencha o número de série do cano de cada número de série.
 
 Usage
 =====
 
-1. Deliver the firearms, choosing their serial numbers.
-2. Create the invoice from the delivery (*Create Invoice* on the
-   picking).
-3. The invoice line shows one row per firearm in the *Firearms* tab.
-4. Post the invoice: the NF-e XML carries one ``arma`` tag per firearm.
+1. Entregue as armas, escolhendo seus números de série.
+2. Crie a fatura a partir da entrega (*Create Invoice* na separação).
+3. A linha da fatura mostra uma linha por arma na aba *Firearms*.
+4. Lance a fatura: o XML da NF-e leva uma tag ``arma`` por arma.
 
 Known issues / Roadmap
 ======================
 
-- The groups are filled by the picking invoicing wizard. Invoices
-  created in other ways can call
-  ``account.move.line._fill_nfe40_arma()`` or have the groups typed in.
-- The number of groups is not compared with the item quantity: the MOC
-  has no such rule.
-- The picking invoicing hook is not covered by the tests, which build
-  the groups from the serial numbers directly.
+- Os grupos são preenchidos pelo assistente de faturamento da separação.
+  Faturas criadas de outras formas podem chamar
+  ``account.move.line._fill_nfe40_arma()`` ou ter os grupos digitados.
+- O número de grupos não é comparado com a quantidade do item: o MOC não
+  tem essa regra.
+- O hook do faturamento da separação não é coberto pelos testes, que
+  montam os grupos diretamente a partir dos números de série.
 
 Bug Tracker
 ===========

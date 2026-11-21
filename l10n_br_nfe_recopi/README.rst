@@ -22,26 +22,26 @@ NF-e Immune Paper (RECOPI)
 
 |badge1| |badge2| |badge3|
 
-This module reports the RECOPI number of the immune paper items of the
-NF-e (group LB, ``nRECOPI``, created by NT 2013/005).
+Este módulo informa o número do RECOPI dos itens de papel imune da NF-e
+(grupo LB, ``nRECOPI``, criado pela NT 2013/005).
 
-RECOPI is the system that controls the sale of paper used to print
-books, newspapers and periodicals, which is immune from taxes. Each
-operation registered in it gets a number that the NF-e items of immune
-paper must carry.
+O RECOPI é o sistema que controla a venda de papel usado na impressão de
+livros, jornais e periódicos, que é imune a impostos. Cada operação
+registrada nele recebe um número que os itens de papel imune da NF-e
+devem carregar.
 
-The number is typed once on the fiscal document (*RECOPI Number*) and
-copied to the lines whose product is marked as immune paper. It can be
-changed on each line (*Extra Info* tab).
+O número é digitado uma vez no documento fiscal (*RECOPI Number*) e
+copiado para as linhas cujo produto está marcado como papel imune. Pode
+ser alterado em cada linha (aba *Extra Info*).
 
-Before the NF-e is confirmed the module refuses the data the SEFAZ would
-reject:
+Antes da confirmação da NF-e, o módulo recusa os dados que a SEFAZ
+rejeitaria:
 
-- rule LB01-30 (rejection 350): the number must follow the
-  ``aaaammddHHMMSSffffDD`` format of the MOC 7.0 (Visao Geral, section
-  8.5): a valid date and time from 2013 to today, followed by two modulo
-  11 check digits;
-- rule LB01-10 (rejection 348): the NFC-e does not accept the number.
+- regra LB01-30 (rejeição 350): o número deve seguir o formato
+  ``aaaammddHHMMSSffffDD`` do MOC 7.0 (Visão Geral, seção 8.5): uma data
+  e hora válidas de 2013 até hoje, seguidas de dois dígitos
+  verificadores módulo 11;
+- regra LB01-10 (rejeição 348): a NFC-e não aceita o número.
 
 **Table of contents**
 
@@ -51,26 +51,26 @@ reject:
 Configuration
 =============
 
-On the product form, *Fiscal* tab, check *Immune Paper (RECOPI)* for the
-immune paper products.
+No formulário do produto, aba *Fiscal*, marque *Immune Paper (RECOPI)*
+para os produtos de papel imune.
 
 Usage
 =====
 
-1. Register the operation in the RECOPI system and get its number.
-2. Type the number in the *RECOPI Number* field of the NF-e.
-3. Confirm the NF-e: the items of immune paper products carry the
-   ``nRECOPI`` tag.
+1. Registre a operação no sistema RECOPI e obtenha o número.
+2. Digite o número no campo *RECOPI Number* da NF-e.
+3. Confirme a NF-e: os itens de produtos de papel imune levam a tag
+   ``nRECOPI``.
 
 Known issues / Roadmap
 ======================
 
-- Rule LB01-20 (rejection 349, number missing for immune paper with CST
-  41 or CSOSN 300 and a paper NCM of the MOC 7.0 table 8-8) is not
-  enforced: the MOC lists it as future implementation.
-- The *RECOPI Number* field is shown on the fiscal document form only,
-  not on the invoice form.
-- The product is not marked as immune paper from its NCM.
+- A regra LB01-20 (rejeição 349, número ausente para papel imune com CST
+  41 ou CSOSN 300 e NCM de papel da tabela 8-8 do MOC 7.0) não é
+  aplicada: o MOC a lista como implementação futura.
+- O campo *RECOPI Number* aparece apenas no formulário do documento
+  fiscal, não no formulário da fatura.
+- O produto não é marcado como papel imune a partir do NCM.
 
 Bug Tracker
 ===========

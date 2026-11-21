@@ -1,22 +1,21 @@
-This module reports the construction work group (`serv/obra`,
-TCInfoObra) of the NFS-e Nacional DPS, which `l10n_br_nfse_nacional`
-does not fill.
+Este módulo informa o grupo de obra (`serv/obra`, TCInfoObra) da DPS da
+NFS-e Nacional, que o `l10n_br_nfse_nacional` não preenche.
 
-The construction site is an address (`res.partner`) that carries the
-work registration (CNO, or the former CEI), the Brazilian Real Estate
-Registry code (CIB) and the municipal real estate registration. The
-fiscal document takes the site from its shipping address and copies
-these codes; all of them can be changed on each document.
+O canteiro de obras é um endereço (`res.partner`) que carrega a matrícula
+da obra (CNO, ou a antiga CEI), o código do Cadastro Imobiliário
+Brasileiro (CIB) e a inscrição imobiliária municipal. O documento fiscal
+toma o canteiro do seu endereço de entrega e copia esses códigos; todos
+podem ser alterados em cada documento.
 
-The group identifies the work by its CNO (`cObra`), or by its CIB
-(`cCIB`) when there is no CNO, or by the site address (`end`) when there
-is neither. The municipal registration (`inscImobFisc`) goes along when
-informed.
+O grupo identifica a obra pelo CNO (`cObra`), ou pelo CIB (`cCIB`)
+quando não há CNO, ou pelo endereço do canteiro (`end`) quando não há
+nenhum dos dois. A inscrição municipal (`inscImobFisc`) acompanha quando
+informada.
 
-Rule E0370 (Anexo VI of the NFS-e Nacional, leiaute 1.04.01 published
-with NT 009) makes the group mandatory for the national taxation codes
-07.02.01, 07.02.02, 07.04.01, 07.05.01, 07.05.02, 07.06.01, 07.06.02,
-07.07.01, 07.08.01, 07.17.01, 07.19.01, 14.14.03 and 14.14.04: the
-module refuses to build the DPS of these services without the work
-identification. For the other services the group is reported only when
-the document has a CNO or a CIB.
+A regra E0370 (Anexo VI da NFS-e Nacional, leiaute 1.04.01 publicado com
+a NT 009) torna o grupo obrigatório para os códigos de tributação
+nacional 07.02.01, 07.02.02, 07.04.01, 07.05.01, 07.05.02, 07.06.01,
+07.06.02, 07.07.01, 07.08.01, 07.17.01, 07.19.01, 14.14.03 e 14.14.04: o
+módulo recusa montar a DPS desses serviços sem a identificação da obra.
+Para os demais serviços o grupo é informado apenas quando o documento
+tem um CNO ou um CIB.

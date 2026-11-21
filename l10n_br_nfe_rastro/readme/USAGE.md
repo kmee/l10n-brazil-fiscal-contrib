@@ -1,6 +1,6 @@
-1. Deliver a product tracked by lot, choosing the lots shipped.
-2. Create the invoice from the delivery (*Create Invoice* on the
-   picking).
-3. Each invoice line of a lot tracked product shows one row per lot in
-   the *Traceability* tab.
-4. Post the invoice: the NF-e XML carries one `rastro` tag per lot.
+1. Entregue um produto rastreado por lote, escolhendo os lotes
+   expedidos.
+2. Crie a fatura a partir da entrega (*Create Invoice* na separação).
+3. Cada linha da fatura de um produto rastreado por lote mostra uma
+   linha por lote na aba *Traceability*.
+4. Lance a fatura: o XML da NF-e leva uma tag `rastro` por lote.

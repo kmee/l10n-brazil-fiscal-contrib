@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e Fuels (comb)",
-    "summary": "ANP product code and fuel details of the NF-e items",
+    "summary": "Código ANP e detalhes de combustível dos itens da NF-e",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

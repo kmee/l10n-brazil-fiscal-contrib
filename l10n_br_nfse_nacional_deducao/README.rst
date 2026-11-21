@@ -22,40 +22,40 @@ NFS-e Nacional Tax Base Adjustment (deducao)
 
 |badge1| |badge2| |badge3|
 
-This module reports the tax base adjustment group
-(``valores/vAjusteBC``, TCInfoAjusteBC) of the NFS-e Nacional DPS, which
-``l10n_br_nfse_nacional`` does not fill: the deduction from the ISSQN
-base and the documents that support the deductions and the refunds
+Este módulo informa o grupo de ajuste da base de cálculo
+(``valores/vAjusteBC``, TCInfoAjusteBC) da DPS da NFS-e Nacional, que o
+``l10n_br_nfse_nacional`` não preenche: a dedução da base do ISSQN e os
+documentos que sustentam as deduções e os reembolsos
 (``documentos/docAjusteBC``).
 
-The ISSQN deduction comes from the *ISSQN Deduction Value* of the fiscal
-line (``vAjusteBCISSQN``), the same field the NF-e reports as
+A dedução do ISSQN vem do *ISSQN Deduction Value* da linha fiscal
+(``vAjusteBCISSQN``), o mesmo campo que a NF-e informa como
 ``vDeducao``.
 
-The documents are listed on the NFS-e, each with the adjustment type
-(``tpAjusteBC``), the document amount and the part of it applied to this
-NFS-e. A document can be an electronic document of the national
-repository (NFS-e, NF-e, CT-e or other, by its access key), a fiscal
-document outside the repository or a non fiscal document. Choosing a
-fiscal document registered in Odoo fills the key, the amount, the dates
-and the supplier, all of which can be changed.
+Os documentos são listados na NFS-e, cada um com o tipo de ajuste
+(``tpAjusteBC``), o valor do documento e a parte dele aplicada a esta
+NFS-e. Um documento pode ser um documento eletrônico do repositório
+nacional (NFS-e, NF-e, CT-e ou outro, pela chave de acesso), um
+documento fiscal fora do repositório ou um documento não fiscal.
+Escolher um documento fiscal registrado no Odoo preenche a chave, o
+valor, as datas e o fornecedor, que podem ser alterados.
 
-The module checks the rules of the group that do not depend on the
-municipal parameters or on the national registries (Anexo VI of the
-NFS-e Nacional, leiaute 1.04.01 published with NT 009):
+O módulo confere as regras do grupo que não dependem dos parâmetros
+municipais nem dos cadastros nacionais (Anexo VI da NFS-e Nacional,
+leiaute 1.04.01 publicado com a NT 009):
 
-- on each document: E0464 and E0465 (description only and always for the
-  types 99 and 199), E0469 (applied amount up to the document amount),
-  E0472 and E0474 (competence not after the issue date), E0470
-  (description of an electronic document of type Other), E0460 (access
-  key of 50 digits for an NFS-e and 44 for an NF-e or CT-e), E0476
-  (fiscal document outside the repository only with a competence before
-  2026) and E0479 (types 101, 103, 104 and 199 need a fiscal document);
-- when building the DPS: E0435 (a service not taxed by the ISSQN only
-  takes the refunds, types 101 to 199), E0462 (the ISSQN deduction
-  excludes the documents of types 2 to 99), E0463 (services 06.01 and
-  06.02 only take the types 9 and 199) and E0467 (applied amount up to
-  the service amount).
+- em cada documento: E0464 e E0465 (apenas descrição e sempre para os
+  tipos 99 e 199), E0469 (valor aplicado até o valor do documento),
+  E0472 e E0474 (competência não posterior à data de emissão), E0470
+  (descrição de documento eletrônico do tipo Outro), E0460 (chave de
+  acesso de 50 dígitos para NFS-e e 44 para NF-e ou CT-e), E0476
+  (documento fiscal fora do repositório apenas com competência anterior
+  a 2026) e E0479 (os tipos 101, 103, 104 e 199 exigem um documento
+  fiscal);
+- na montagem da DPS: E0435 (serviço não tributado pelo ISSQN só aceita
+  os reembolsos, tipos 101 a 199), E0462 (a dedução do ISSQN exclui os
+  documentos dos tipos 2 a 99), E0463 (serviços 06.01 e 06.02 só aceitam
+  os tipos 9 e 199) e E0467 (valor aplicado até o valor do serviço).
 
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
@@ -70,31 +70,30 @@ NFS-e Nacional, leiaute 1.04.01 published with NT 009):
 Usage
 =====
 
-Inform the ISSQN deduction on the fiscal line, as for any other
-document, or list the supporting documents in the *Tax Base Adjustment*
-tab of the NFS-e. For a document already in Odoo (a supplier NF-e of
-materials, a subcontractor NFS-e), choose it in *Fiscal Document* and
-inform the applied amount. The DPS XML carries them in the
-``valores/vAjusteBC`` group.
+Informe a dedução do ISSQN na linha fiscal, como em qualquer outro
+documento, ou liste os documentos de suporte na aba *Tax Base
+Adjustment* da NFS-e. Para um documento que já está no Odoo (uma NF-e de
+materiais de fornecedor, uma NFS-e de subempreiteiro), escolha-o em
+*Fiscal Document* e informe o valor aplicado. O XML da DPS os leva no
+grupo ``valores/vAjusteBC``.
 
 Known issues / Roadmap
 ======================
 
-- The percentage of ISSQN base adjustment (``pAjusteBCISSQN``, rule
-  E0453) is not reported: the fiscal line has a deduction amount only.
-- Rules that depend on the municipal parameters or on national
-  registries are left to the ADN: E0436 (MEI), E0445 (special tax
-  regime), E0448 (municipal exemption benefit), E0437 (IBS/CBS
-  classification without taxation), E0449 to E0452 and E0455 (agreement
-  status of the municipality and Simples Nacional services), E0444,
-  E0446, E0447 and E0454 (municipal parameters of the service), E0466
-  (IBGE code), E0478 to E0488 (supplier registration) and E1538 (NIF of
-  a foreign supplier).
-- Only the first line of the NFS-e is reported, as in
-  ``l10n_br_nfse_nacional``, so the ISSQN deduction is the one of that
-  line.
-- The fields are on the fiscal document form only; the invoice form of
-  ``l10n_br_account`` does not show them.
+- O percentual de ajuste da base do ISSQN (``pAjusteBCISSQN``, regra
+  E0453) não é informado: a linha fiscal tem apenas um valor de dedução.
+- As regras que dependem dos parâmetros municipais ou de cadastros
+  nacionais ficam a cargo do ADN: E0436 (MEI), E0445 (regime especial de
+  tributação), E0448 (benefício de isenção municipal), E0437
+  (classificação IBS/CBS sem tributação), E0449 a E0452 e E0455
+  (situação do convênio do município e serviços do Simples Nacional),
+  E0444, E0446, E0447 e E0454 (parâmetros municipais do serviço), E0466
+  (código IBGE), E0478 a E0488 (cadastro do fornecedor) e E1538 (NIF de
+  fornecedor estrangeiro).
+- Apenas a primeira linha da NFS-e é informada, como no
+  ``l10n_br_nfse_nacional``, então a dedução do ISSQN é a dessa linha.
+- Os campos estão apenas no formulário do documento fiscal; o formulário
+  da fatura do ``l10n_br_account`` não os mostra.
 
 Bug Tracker
 ===========

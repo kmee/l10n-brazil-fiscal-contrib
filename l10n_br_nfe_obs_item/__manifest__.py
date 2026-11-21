@@ -3,8 +3,8 @@
 
 {
     "name": "NF-e Item Observations (obsItem)",
-    "summary": "Free observations of the taxpayer and of the tax authority per "
-    "NF-e item (obsItem group)",
+    "summary": "Observações livres do contribuinte e do fisco por item da NF-e (grupo "
+    "obsItem)",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

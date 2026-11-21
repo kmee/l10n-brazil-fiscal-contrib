@@ -1,11 +1,11 @@
-- Rule E0373 (the CIB is 7 characters and a check digit) is checked by
-  the ADN only: the module checks the length of the schema, not the
-  check digit, whose algorithm is not in the leiaute.
-- Rule E0380 (the CEP of the site belongs to the municipality of the
-  service location) is not checked: the module has no CEP to
-  municipality table.
-- Rule E0384 asks for the foreign address group (`endExt`) when the
-  service location is abroad (`cPaisPrestacao`). The module chooses
-  between CEP and `endExt` by the country of the site address.
-- The fields are on the fiscal document form only; the invoice form of
-  `l10n_br_account` does not show them.
+- A regra E0373 (o CIB tem 7 caracteres e um dígito verificador) é
+  conferida apenas pelo ADN: o módulo confere o tamanho do schema, não o
+  dígito verificador, cujo algoritmo não consta do leiaute.
+- A regra E0380 (o CEP do canteiro pertence ao município do local da
+  prestação) não é conferida: o módulo não tem tabela de CEP para
+  município.
+- A regra E0384 pede o grupo de endereço no exterior (`endExt`) quando o
+  local da prestação é no exterior (`cPaisPrestacao`). O módulo escolhe
+  entre CEP e `endExt` pelo país do endereço do canteiro.
+- Os campos estão apenas no formulário do documento fiscal; o formulário
+  da fatura do `l10n_br_account` não os mostra.

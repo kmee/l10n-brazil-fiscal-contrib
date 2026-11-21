@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e New Vehicles (veicProd)",
-    "summary": "New vehicle group of the NF-e items from the serial numbers",
+    "summary": "Grupo de veículo novo dos itens da NF-e a partir dos números de série",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

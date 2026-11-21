@@ -1,25 +1,26 @@
-- The document type 64 is created by this module. When
-  `l10n_br_fiscal` gets it, the record has to move there.
-- `erpbrasil.base` does not list the model 64 yet, so the module
-  generates the access key with validation off and checks the model
-  and the check digit itself.
-- The success code of the `CTeRecepcaoGTVe` web service is taken as the
-  usual `100`: the MOC 4.00 (Visão Geral, item 4.4) does not state it
-  for the GTV-e. To be confirmed with a GTV-e issued in homologation.
-- The offline contingency (`tpEmis` 2, Ajuste SINIEF 03/20, clause 11)
-  is not supported: it needs `dhCont`, `xJust` and the signed QR Code
-  (`sign` parameter, MOC 4.00, Visão Geral, item 9.4).
-- The SEFAZ checks of the cancellation are not anticipated: 45 days
-  limit (rule O07, rejection 876) and no cancellation after the CT-e OS
-  that references the GTV-e is authorized (rule Q18, rejection 888).
-- The fiscal events 240180 and 240181 (CT-e OS authorized or cancelled)
-  are not read back into the GTV-e.
-- The `tomaTerceiro` rule I53 (rejection 799, third party taker equal
-  to the sender or recipient) and the IE rules I13 to I15 are left to
-  the SEFAZ.
-- Not filled yet: `compl` (observations), `origem` and `destino`
-  addresses and `infRespTec`.
-- There is no DACTE for the GTV-e, and importing a GTV-e XML is not
-  supported.
-- The GTV-e is not linked to the CT-e OS (`infGTVe` group of the CT-e
-  OS, rule H045a).
+- O tipo de documento 64 é criado por este módulo. Quando o
+  `l10n_br_fiscal` o trouxer, o registro precisa migrar para lá.
+- O `erpbrasil.base` ainda não lista o modelo 64, então o módulo gera a
+  chave de acesso com a validação desligada e confere o modelo e o
+  dígito verificador por conta própria.
+- O código de sucesso do web service `CTeRecepcaoGTVe` é tomado como o
+  usual `100`: o MOC 4.00 (Visão Geral, item 4.4) não o informa para a
+  GTV-e. A confirmar com uma GTV-e emitida em homologação.
+- A contingência offline (`tpEmis` 2, Ajuste SINIEF 03/20, cláusula 11)
+  não é suportada: exige `dhCont`, `xJust` e o QR Code assinado
+  (parâmetro `sign`, MOC 4.00, Visão Geral, item 9.4).
+- As conferências da SEFAZ no cancelamento não são antecipadas: limite
+  de 45 dias (regra O07, rejeição 876) e nenhum cancelamento depois que
+  o CT-e OS que referencia a GTV-e é autorizado (regra Q18, rejeição
+  888).
+- Os eventos fiscais 240180 e 240181 (CT-e OS autorizado ou cancelado)
+  não são lidos de volta na GTV-e.
+- A regra I53 do `tomaTerceiro` (rejeição 799, tomador terceiro igual ao
+  remetente ou ao destinatário) e as regras de IE I13 a I15 ficam a
+  cargo da SEFAZ.
+- Ainda não são preenchidos: `compl` (observações), endereços `origem` e
+  `destino` e `infRespTec`.
+- Não há DACTE para a GTV-e, e a importação de XML de GTV-e não é
+  suportada.
+- A GTV-e não é vinculada ao CT-e OS (grupo `infGTVe` do CT-e OS, regra
+  H045a).

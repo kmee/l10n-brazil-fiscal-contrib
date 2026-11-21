@@ -3,7 +3,7 @@
 
 {
     "name": "NFS-e Nacional Event (atvEvento)",
-    "summary": "Event group (atvEvento) of the NFS-e Nacional DPS",
+    "summary": "Grupo de evento (atvEvento) da DPS da NFS-e Nacional",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

@@ -1,4 +1,4 @@
-Invoice a fuel product as usual. The fiscal document line shows the
-fuel group in the *Fuel* tab, where it can be replaced by one with the
-CIDE or the pump meter of the sale; the NF-e XML carries the `comb` tag
-of the item.
+Fature um produto combustível normalmente. A linha do documento fiscal
+mostra o grupo de combustível na aba *Fuel*, onde ele pode ser
+substituído por um com a CIDE ou o encerrante da venda; o XML da NF-e
+leva a tag `comb` do item.

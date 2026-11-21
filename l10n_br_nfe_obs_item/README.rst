@@ -22,17 +22,18 @@ NF-e Item Observations (obsItem)
 
 |badge1| |badge2| |badge3|
 
-This module reports the free observations of the NF-e items, group VA
-``obsItem`` created by NT 2021.004 v1.20: one observation of the
-taxpayer (``obsCont``) and one of the tax authority (``obsFisco``) per
-item, each with a field name (``xCampo``) and a text (``xTexto``).
+Este módulo informa as observações livres dos itens da NF-e, grupo VA
+``obsItem`` criado pela NT 2021.004 v1.20: uma observação do
+contribuinte (``obsCont``) e uma do fisco (``obsFisco``) por item, cada
+uma com um nome de campo (``xCampo``) e um texto (``xTexto``).
 
-The observations are set once on the product and copied to the fiscal
-document lines of that product. They can be changed on each line, and
-the lines of an incoming NF-e keep the observations of the supplier XML.
+As observações são definidas uma vez no produto e copiadas para as
+linhas do documento fiscal desse produto. Podem ser alteradas em cada
+linha, e as linhas de uma NF-e recebida mantêm as observações do XML do
+fornecedor.
 
-The field name must have 1 to 20 characters and the text 1 to 60, as the
-layout requires.
+O nome do campo deve ter de 1 a 20 caracteres e o texto de 1 a 60,
+conforme o leiaute exige.
 
 **Table of contents**
 
@@ -42,23 +43,24 @@ layout requires.
 Configuration
 =============
 
-On the product form, *Fiscal* tab, fill the *NF-e Item Observations*
-field with the taxpayer and the tax authority observations.
+No formulário do produto, aba *Fiscal*, preencha o campo *NF-e Item
+Observations* com as observações do contribuinte e do fisco.
 
 Usage
 =====
 
-Issue the NF-e as usual. The fiscal document line shows the observations
-in the *Extra Info* tab, and the NF-e XML carries the ``obsItem`` tag of
-the item.
+Emita a NF-e normalmente. A linha do documento fiscal mostra as
+observações na aba *Extra Info*, e o XML da NF-e leva a tag ``obsItem``
+do item.
 
 Known issues / Roadmap
 ======================
 
-- The observations are shared by the products that use them: changing
-  one changes it for the draft documents too.
-- The observations are shown on the fiscal document line form; the
-  invoice line form (``l10n_br_account``) does not show them yet.
+- As observações são compartilhadas pelos produtos que as usam: alterar
+  uma a altera também nos documentos em rascunho.
+- As observações aparecem no formulário da linha do documento fiscal; o
+  formulário da linha da fatura (``l10n_br_account``) ainda não as
+  mostra.
 
 Bug Tracker
 ===========

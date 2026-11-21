@@ -1,10 +1,10 @@
-- The groups are filled by the picking invoicing wizard. Invoices created
-  in other ways can call `account.move.line._fill_nfe40_veicprod()` or
-  have the group typed in.
-- An invoice line with several vehicles (several serial numbers) gets
-  no group: it is not split into one line per vehicle.
-- The total of the NF-e of a direct billing (`tpOp` 2, rule W16-10) and
-  the exceptions of rules N12-70, N16-04 and N16-20 for vehicles are
-  not handled by this module.
-- The picking invoicing hook is not covered by the tests, which build
-  the group from the serial number directly.
+- Os grupos são preenchidos pelo assistente de faturamento da
+  separação. Faturas criadas de outras formas podem chamar
+  `account.move.line._fill_nfe40_veicprod()` ou ter o grupo digitado.
+- Uma linha de fatura com vários veículos (vários números de série) não
+  recebe grupo: ela não é dividida em uma linha por veículo.
+- O total da NF-e de faturamento direto (`tpOp` 2, regra W16-10) e as
+  exceções das regras N12-70, N16-04 e N16-20 para veículos não são
+  tratados por este módulo.
+- O hook do faturamento da separação não é coberto pelos testes, que
+  montam o grupo diretamente a partir do número de série.

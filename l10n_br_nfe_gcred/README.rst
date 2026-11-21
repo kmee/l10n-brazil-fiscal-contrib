@@ -22,23 +22,22 @@ NF-e ICMS Presumed Credit (gCred)
 
 |badge1| |badge2| |badge3|
 
-This module reports the ICMS presumed credit of the NF-e items in the
-``gCred`` group of the product (fields ``cCredPresumido``,
-``pCredPresumido`` and ``vCredPresumido``, up to 4 groups per item),
-created by NT 2019.001 v1.60 and named ``gCred`` (I05g) by v1.62.
+Este módulo informa o crédito presumido de ICMS dos itens da NF-e no
+grupo ``gCred`` do produto (campos ``cCredPresumido``,
+``pCredPresumido`` e ``vCredPresumido``, até 4 grupos por item), criado
+pela NT 2019.001 v1.60 e chamado ``gCred`` (I05g) a partir da v1.62.
 
-The benefit code and the percentage are set on the product, per company
-(each company belongs to one state, and the code is the one granted by
-that state, the same code used in the EFD). The fiscal document lines of
-the product get one group with that code and percentage, and the amount
-is the percentage applied to the ICMS base of the line. The group is
-updated when the product or the ICMS base of the line changes, and other
-groups can be typed on the line. Incoming NF-e keep the groups of the
-supplier XML.
+O código do benefício e o percentual são definidos no produto, por
+empresa (cada empresa pertence a uma UF, e o código é o concedido por
+essa UF, o mesmo usado na EFD). As linhas do documento fiscal do produto
+recebem um grupo com esse código e percentual, e o valor é o percentual
+aplicado à base de ICMS da linha. O grupo é atualizado quando o produto
+ou a base de ICMS da linha muda, e outros grupos podem ser digitados na
+linha. As NF-e recebidas mantêm os grupos do XML do fornecedor.
 
-Before the NF-e is issued, the module refuses what the schema rejects:
-more than 4 groups per item, a code that is not 8 or 10 characters long
-without spaces, or a percentage out of the 0 to 999 range.
+Antes da emissão da NF-e, o módulo recusa o que o schema rejeita: mais
+de 4 grupos por item, um código que não tem 8 ou 10 caracteres sem
+espaços, ou um percentual fora da faixa de 0 a 999.
 
 **Table of contents**
 
@@ -48,31 +47,32 @@ without spaces, or a percentage out of the 0 to 999 range.
 Configuration
 =============
 
-On the product form, *Fiscal* tab, fill the *Presumed Credit Code* and
-the *Presumed Credit (%)* of the company in use.
+No formulário do produto, aba *Fiscal*, preencha o *Presumed Credit
+Code* e o *Presumed Credit (%)* da empresa em uso.
 
 Usage
 =====
 
-Issue the NF-e as usual. The fiscal document line shows the groups in
-the *Presumed Credit* tab, where they can be changed or completed, and
-the NF-e XML carries the ``gCred`` tags of the item.
+Emita a NF-e normalmente. A linha do documento fiscal mostra os grupos
+na aba *Presumed Credit*, onde podem ser alterados ou completados, e o
+XML da NF-e leva as tags ``gCred`` do item.
 
 Known issues / Roadmap
 ======================
 
-- Rules I05g-10 (the state allows the group) and I05h-10 (the code is
-  valid in the state table), created by NT 2019.001 v1.63 and v1.64, are
-  applied by each state at its discretion against its own tables and are
-  not checked here.
-- The amount is the percentage applied to the ICMS base of the item.
-  When the state rule uses another base, change the amount on the line.
-- The percentage keeps 2 decimals on the line (the spec field), while
-  the layout accepts up to 4.
-- The product holds a single code per company; the other groups of an
-  item (up to 4) are typed on the line.
-- The groups are shown on the fiscal document line form; the invoice
-  line form (``l10n_br_account``) does not show them yet.
+- As regras I05g-10 (a UF permite o grupo) e I05h-10 (o código é válido
+  na tabela da UF), criadas pelas NT 2019.001 v1.63 e v1.64, são
+  aplicadas por cada UF a seu critério contra as tabelas próprias e não
+  são conferidas aqui.
+- O valor é o percentual aplicado à base de ICMS do item. Quando a regra
+  da UF usa outra base, altere o valor na linha.
+- O percentual mantém 2 casas decimais na linha (o campo do spec),
+  enquanto o leiaute aceita até 4.
+- O produto guarda um único código por empresa; os demais grupos de um
+  item (até 4) são digitados na linha.
+- Os grupos aparecem no formulário da linha do documento fiscal; o
+  formulário da linha da fatura (``l10n_br_account``) ainda não os
+  mostra.
 
 Bug Tracker
 ===========

@@ -370,39 +370,40 @@ ul.auto-toc {
 !! source digest: sha256:48ba2b7de68d9d8b4b970e08accfe44fbe46d622fde2b79496876a22531661a4
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/18.0/l10n_br_nfe_comb"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>This module reports the fuel group of the NF-e items (group LA,
-<tt class="docutils literal">comb</tt>) and checks it against the SEFAZ validation rules.</p>
-<p>The ANP product code (<tt class="docutils literal">cProdANP</tt>) and description (<tt class="docutils literal">descANP</tt>), the
-LPG percentages and starting value (<tt class="docutils literal">pGLP</tt>, <tt class="docutils literal">pGNn</tt>, <tt class="docutils literal">pGNi</tt>,
-<tt class="docutils literal">vPart</tt>), the CODIF, the biodiesel percentage (<tt class="docutils literal">pBio</tt>) and the fuel
-origin (<tt class="docutils literal">origComb</tt>) are set once on the product and the fiscal
-document lines of that product point to them. The group can be replaced
-on each line, for instance to add the CIDE, the pump meter
-(<tt class="docutils literal">encerrante</tt>) or the quantity at ambient temperature (<tt class="docutils literal">qTemp</tt>).</p>
-<p>The consumption state (<tt class="docutils literal">UFCons</tt>) is the state of the fuel group when
-it is set, otherwise the state of the delivery address of the document
-(<tt class="docutils literal">EX</tt> for a foreign customer).</p>
-<p>The LPG percentages are written with two decimals, so that their sum is
-exactly 100. The ANP code is checked against the layout (9 digits) and
-each origin percentage must be greater than 0.</p>
-<p>Before the NF-e is confirmed the module refuses the data the SEFAZ would
-reject:</p>
+<p>Este módulo informa o grupo de combustível dos itens da NF-e (grupo LA,
+<tt class="docutils literal">comb</tt>) e o confere contra as regras de validação da SEFAZ.</p>
+<p>O código (<tt class="docutils literal">cProdANP</tt>) e a descrição (<tt class="docutils literal">descANP</tt>) do produto ANP, os
+percentuais de GLP e o valor de partida (<tt class="docutils literal">pGLP</tt>, <tt class="docutils literal">pGNn</tt>, <tt class="docutils literal">pGNi</tt>,
+<tt class="docutils literal">vPart</tt>), o CODIF, o percentual de biodiesel (<tt class="docutils literal">pBio</tt>) e a origem do
+combustível (<tt class="docutils literal">origComb</tt>) são definidos uma vez no produto, e as linhas
+do documento fiscal desse produto apontam para eles. O grupo pode ser
+substituído em cada linha, por exemplo para acrescentar a CIDE, o
+encerrante (<tt class="docutils literal">encerrante</tt>) ou a quantidade na temperatura ambiente
+(<tt class="docutils literal">qTemp</tt>).</p>
+<p>A UF de consumo (<tt class="docutils literal">UFCons</tt>) é a UF do grupo de combustível quando
+informada; caso contrário, é a UF do endereço de entrega do documento
+(<tt class="docutils literal">EX</tt> para cliente estrangeiro).</p>
+<p>Os percentuais de GLP são gravados com duas casas decimais, para que a
+soma seja exatamente 100. O código ANP é conferido contra o leiaute (9
+dígitos) e cada percentual de origem deve ser maior que 0.</p>
+<p>Antes da confirmação da NF-e, o módulo recusa os dados que a SEFAZ
+rejeitaria:</p>
 <ul class="simple">
-<li>rule LA03c-10 (rejection 461, NT 2016.002): LPG percentages for an ANP
-code other than 210203001;</li>
-<li>rule LA03c-20 (rejection 855, NT 2016.002): LPG percentages that do
-not add up to 100;</li>
-<li>rule LA11-20 (rejection 379, NT 2015.002): pump meter in an NF-e
-(model 55) with a CFOP other than 5656 and 5667;</li>
-<li>rule LA16-10 (rejection 380, NT 2015.002): pump meter at the end not
-greater than at the start;</li>
-<li>rule LA18-20 (rejection 909, NT 2023.001): LPG with natural gas and no
-fuel origin, except for final consumers, complementary and return NF-e
-and the CFOP 5922 and 6922;</li>
-<li>rules LA21-10 and LA21-20 (rejection 958, NT 2023.001): origin
-percentages that do not add up to 100 (separately for national and
-imported origin in the LPG codes 210203001, 210203003, 210203004 and
-210203005), with a tolerance of 0.1.</li>
+<li>regra LA03c-10 (rejeição 461, NT 2016.002): percentuais de GLP para um
+código ANP diferente de 210203001;</li>
+<li>regra LA03c-20 (rejeição 855, NT 2016.002): percentuais de GLP que não
+somam 100;</li>
+<li>regra LA11-20 (rejeição 379, NT 2015.002): encerrante em NF-e (modelo
+55) com CFOP diferente de 5656 e 5667;</li>
+<li>regra LA16-10 (rejeição 380, NT 2015.002): encerrante final não maior
+que o inicial;</li>
+<li>regra LA18-20 (rejeição 909, NT 2023.001): GLP com gás natural e sem
+origem do combustível, exceto para consumidor final, NF-e complementar
+e de devolução e os CFOP 5922 e 6922;</li>
+<li>regras LA21-10 e LA21-20 (rejeição 958, NT 2023.001): percentuais de
+origem que não somam 100 (separadamente para origem nacional e
+importada nos códigos de GLP 210203001, 210203003, 210203004 e
+210203005), com tolerância de 0,1.</li>
 </ul>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
@@ -421,36 +422,40 @@ imported origin in the LPG codes 210203001, 210203003, 210203004 and
 </div>
 <div class="section" id="configuration">
 <h1><a class="toc-backref" href="#toc-entry-1">Configuration</a></h1>
-<p>On the product form, <em>Fiscal</em> tab, fill the <em>Fuel (ANP)</em> field with the
-ANP product code and description of the SIMP table and, when they apply,
-the LPG percentages, the biodiesel percentage and the fuel origin.</p>
+<p>No formulário do produto, aba <em>Fiscal</em>, preencha o campo <em>Fuel (ANP)</em>
+com o código e a descrição do produto ANP da tabela do SIMP e, quando se
+aplicarem, os percentuais de GLP, o percentual de biodiesel e a origem
+do combustível.</p>
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-2">Usage</a></h1>
-<p>Invoice a fuel product as usual. The fiscal document line shows the fuel
-group in the <em>Fuel</em> tab, where it can be replaced by one with the CIDE
-or the pump meter of the sale; the NF-e XML carries the <tt class="docutils literal">comb</tt> tag of
-the item.</p>
+<p>Fature um produto combustível normalmente. A linha do documento fiscal
+mostra o grupo de combustível na aba <em>Fuel</em>, onde ele pode ser
+substituído por um com a CIDE ou o encerrante da venda; o XML da NF-e
+leva a tag <tt class="docutils literal">comb</tt> do item.</p>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-3">Known issues / Roadmap</a></h1>
 <ul class="simple">
-<li>The rules that depend on official tables are not enforced: LA02-10
-(rejection 761, ANP code missing from the SIMP table), LA17-10 and
-LA17-20 (rejections 907 and 908, biodiesel percentage and the table of
-fuels subject to the single phase taxation), LA18-10 and LA18-30
-(rejections 909 and 747, fuel origin and the same table) and LA01-20
-(rejection 660, CFOP of fuel without the fuel group).</li>
-<li>Rule LA01-30 (rejection 1106, fuel cClassTrib of the tax reform
-without the fuel group) and rule I13-20 (rejection 854, LPG with a
-taxable unit other than kg) are not enforced.</li>
-<li>The CIDE is not computed: its group is typed on the line.</li>
-<li>The biodiesel and origin percentages are stored without decimals.</li>
-<li>The fuel group is shared by the lines that use it: changing the
-product group changes it for the draft documents too, and a line that
-needs its own CIDE or pump meter needs its own group.</li>
-<li>The group is not shown on the invoice form, only on the fiscal
-document line.</li>
+<li>As regras que dependem de tabelas oficiais não são aplicadas: LA02-10
+(rejeição 761, código ANP ausente da tabela do SIMP), LA17-10 e
+LA17-20 (rejeições 907 e 908, percentual de biodiesel e a tabela de
+combustíveis sujeitos à tributação monofásica), LA18-10 e LA18-30
+(rejeições 909 e 747, origem do combustível e a mesma tabela) e
+LA01-20 (rejeição 660, CFOP de combustível sem o grupo de
+combustível).</li>
+<li>A regra LA01-30 (rejeição 1106, cClassTrib de combustível da reforma
+tributária sem o grupo de combustível) e a regra I13-20 (rejeição 854,
+GLP com unidade tributável diferente de kg) não são aplicadas.</li>
+<li>A CIDE não é calculada: seu grupo é digitado na linha.</li>
+<li>Os percentuais de biodiesel e de origem são gravados sem casas
+decimais.</li>
+<li>O grupo de combustível é compartilhado pelas linhas que o usam:
+alterar o grupo do produto o altera também nos documentos em rascunho,
+e uma linha que precisa de CIDE ou encerrante próprios precisa de um
+grupo próprio.</li>
+<li>O grupo não aparece no formulário da fatura, só na linha do documento
+fiscal.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">

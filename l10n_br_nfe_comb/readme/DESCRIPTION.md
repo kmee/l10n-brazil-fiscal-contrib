@@ -1,37 +1,38 @@
-This module reports the fuel group of the NF-e items (group LA, `comb`)
-and checks it against the SEFAZ validation rules.
+Este módulo informa o grupo de combustível dos itens da NF-e (grupo LA,
+`comb`) e o confere contra as regras de validação da SEFAZ.
 
-The ANP product code (`cProdANP`) and description (`descANP`), the LPG
-percentages and starting value (`pGLP`, `pGNn`, `pGNi`, `vPart`), the
-CODIF, the biodiesel percentage (`pBio`) and the fuel origin
-(`origComb`) are set once on the product and the fiscal document lines
-of that product point to them. The group can be replaced on each line,
-for instance to add the CIDE, the pump meter (`encerrante`) or the
-quantity at ambient temperature (`qTemp`).
+O código (`cProdANP`) e a descrição (`descANP`) do produto ANP, os
+percentuais de GLP e o valor de partida (`pGLP`, `pGNn`, `pGNi`,
+`vPart`), o CODIF, o percentual de biodiesel (`pBio`) e a origem do
+combustível (`origComb`) são definidos uma vez no produto, e as linhas
+do documento fiscal desse produto apontam para eles. O grupo pode ser
+substituído em cada linha, por exemplo para acrescentar a CIDE, o
+encerrante (`encerrante`) ou a quantidade na temperatura ambiente
+(`qTemp`).
 
-The consumption state (`UFCons`) is the state of the fuel group when it
-is set, otherwise the state of the delivery address of the document
-(`EX` for a foreign customer).
+A UF de consumo (`UFCons`) é a UF do grupo de combustível quando
+informada; caso contrário, é a UF do endereço de entrega do documento
+(`EX` para cliente estrangeiro).
 
-The LPG percentages are written with two decimals, so that their sum is
-exactly 100. The ANP code is checked against the layout (9 digits) and
-each origin percentage must be greater than 0.
+Os percentuais de GLP são gravados com duas casas decimais, para que a
+soma seja exatamente 100. O código ANP é conferido contra o leiaute (9
+dígitos) e cada percentual de origem deve ser maior que 0.
 
-Before the NF-e is confirmed the module refuses the data the SEFAZ
-would reject:
+Antes da confirmação da NF-e, o módulo recusa os dados que a SEFAZ
+rejeitaria:
 
-- rule LA03c-10 (rejection 461, NT 2016.002): LPG percentages for an
-  ANP code other than 210203001;
-- rule LA03c-20 (rejection 855, NT 2016.002): LPG percentages that do
-  not add up to 100;
-- rule LA11-20 (rejection 379, NT 2015.002): pump meter in an NF-e
-  (model 55) with a CFOP other than 5656 and 5667;
-- rule LA16-10 (rejection 380, NT 2015.002): pump meter at the end not
-  greater than at the start;
-- rule LA18-20 (rejection 909, NT 2023.001): LPG with natural gas and
-  no fuel origin, except for final consumers, complementary and return
-  NF-e and the CFOP 5922 and 6922;
-- rules LA21-10 and LA21-20 (rejection 958, NT 2023.001): origin
-  percentages that do not add up to 100 (separately for national and
-  imported origin in the LPG codes 210203001, 210203003, 210203004 and
-  210203005), with a tolerance of 0.1.
+- regra LA03c-10 (rejeição 461, NT 2016.002): percentuais de GLP para
+  um código ANP diferente de 210203001;
+- regra LA03c-20 (rejeição 855, NT 2016.002): percentuais de GLP que não
+  somam 100;
+- regra LA11-20 (rejeição 379, NT 2015.002): encerrante em NF-e (modelo
+  55) com CFOP diferente de 5656 e 5667;
+- regra LA16-10 (rejeição 380, NT 2015.002): encerrante final não maior
+  que o inicial;
+- regra LA18-20 (rejeição 909, NT 2023.001): GLP com gás natural e sem
+  origem do combustível, exceto para consumidor final, NF-e
+  complementar e de devolução e os CFOP 5922 e 6922;
+- regras LA21-10 e LA21-20 (rejeição 958, NT 2023.001): percentuais de
+  origem que não somam 100 (separadamente para origem nacional e
+  importada nos códigos de GLP 210203001, 210203003, 210203004 e
+  210203005), com tolerância de 0,1.

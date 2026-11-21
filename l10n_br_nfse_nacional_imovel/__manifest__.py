@@ -3,7 +3,7 @@
 
 {
     "name": "NFS-e Nacional Real Estate (imovel)",
-    "summary": "Real estate group (IBSCBS/imovel) of the NFS-e Nacional DPS",
+    "summary": "Grupo de bens imóveis (IBSCBS/imovel) da DPS da NFS-e Nacional",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

@@ -1,6 +1,6 @@
-1. Open the fiscal document of the NF-e (from the invoice, or in the
-   fiscal documents menu).
-2. In the *Others* tab, fill the commitment note and the contract, and
-   check the customer purchase order.
-3. Confirm the NF-e: the XML carries the `compra` group with the values
-   filled.
+1. Abra o documento fiscal da NF-e (a partir da fatura, ou no menu de
+   documentos fiscais).
+2. Na aba *Others*, preencha a nota de empenho e o contrato, e confira o
+   pedido de compra do cliente.
+3. Confirme a NF-e: o XML leva o grupo `compra` com os valores
+   preenchidos.

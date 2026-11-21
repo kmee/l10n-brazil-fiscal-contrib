@@ -22,16 +22,16 @@ Brazilian Fiscal Contrib - Test Setup
 
 |badge1| |badge2| |badge3|
 
-Technical module for the CI of this repository. It is not meant for
-production databases.
+Módulo técnico para o CI deste repositório. Não se destina a bancos de
+produção.
 
-The CI installs only the modules of this repository and their
-dependencies. Without a Brazilian chart of accounts module, the
-``l10n_br_account`` post-init hook points the
-``empresa_lucro_presumido`` demo company to the ``br_oca_generic``
-chart, which is never loaded, and any module that pulls ``sale`` fails
-while the test database is created. Depending on ``l10n_br_coa_generic``
-loads that chart on the demo companies, as in the OCA/l10n-brazil CI.
+O CI instala apenas os módulos deste repositório e suas dependências.
+Sem um módulo de plano de contas brasileiro, o post-init hook do
+``l10n_br_account`` aponta a empresa de demonstração
+``empresa_lucro_presumido`` para o plano ``br_oca_generic``, que nunca é
+carregado, e qualquer módulo que traga o ``sale`` falha na criação do
+banco de testes. Depender do ``l10n_br_coa_generic`` carrega esse plano
+nas empresas de demonstração, como no CI do OCA/l10n-brazil.
 
 **Table of contents**
 

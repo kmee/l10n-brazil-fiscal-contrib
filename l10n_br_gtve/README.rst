@@ -22,48 +22,48 @@ GTV-e
 
 |badge1| |badge2| |badge3|
 
-This module issues the Electronic Valuables Transport Guide (Guia de
-Transporte de Valores Eletrônica, GTV-e, model 64), mandatory since
-01/03/2023 for the ICMS taxpayers that transport valuables (Ajuste
-SINIEF 03/20 and 44/22). The GTV-e is part of the CT-e 4.00 project: it
-is authorized by the CT-e authorizer and later consolidated in a CT-e
-OS.
+Este módulo emite a Guia de Transporte de Valores Eletrônica (GTV-e,
+modelo 64), obrigatória desde 01/03/2023 para os contribuintes do ICMS
+que transportam valores (Ajuste SINIEF 03/20 e 44/22). A GTV-e faz parte
+do projeto do CT-e 4.00: é autorizada pelo autorizador do CT-e e depois
+consolidada em um CT-e OS.
 
-The module adds the document type 64 and builds the GTV-e from the
-``l10n_br_fiscal.document``, reusing the CT-e module (``l10n_br_cte``):
-the spec models of the GTV-e from ``l10n_br_cte_spec``, the issuer and
-partner mappings, the persons authorized to download the XML
-(``autXML``), the signature, the QR Code and the events.
+O módulo adiciona o tipo de documento 64 e monta a GTV-e a partir do
+``l10n_br_fiscal.document``, reaproveitando o módulo de CT-e
+(``l10n_br_cte``): os modelos de spec da GTV-e do ``l10n_br_cte_spec``,
+os mapeamentos de emitente e de parceiros, as pessoas autorizadas a
+baixar o XML (``autXML``), a assinatura, o QR Code e os eventos.
 
-- The ``infCte`` of the GTV-e is stacked in its own model, because its
-  tags have the same ``cte40_`` names as the CT-e ones with other
-  contents.
-- The XML is signed and validated against ``GTVe_v4.00.xsd`` when the
-  document is confirmed.
-- The transmission uses the synchronous ``CTeRecepcaoGTVe`` web service,
-  with the GTV-e compressed in GZip and Base64 (MOC 4.00, Visão Geral,
-  items 3.4.1 and 4.4). When authorized, the ``GTVeProc`` (GTV-e with
-  its protocol) is stored in the authorization event.
-- The cancellation is the event 110111 through ``CTeRecepcaoEvento``
+- O ``infCte`` da GTV-e é empilhado em um modelo próprio, porque suas
+  tags têm os mesmos nomes ``cte40_`` das do CT-e com outros conteúdos.
+- O XML é assinado e validado contra o ``GTVe_v4.00.xsd`` na confirmação
+  do documento.
+- A transmissão usa o web service síncrono ``CTeRecepcaoGTVe``, com a
+  GTV-e compactada em GZip e codificada em Base64 (MOC 4.00, Visão
+  Geral, itens 3.4.1 e 4.4). Quando autorizada, o ``GTVeProc`` (GTV-e
+  com o protocolo) é guardado no evento de autorização.
+- O cancelamento é o evento 110111 por meio do ``CTeRecepcaoEvento``
   (MOC 4.00, Visão Geral, item 3.7.1).
 
-Rules of the MOC 4.00 checked by the module before the SEFAZ:
+Regras do MOC 4.00 conferidas pelo módulo antes da SEFAZ:
 
-- Annex I, chapter 6: sender, recipient, CFOP, departure and arrival
-  dates, at least one transported species and one vehicle; modal road
-  (01) or multimodal (06).
-- Annex I, rule I04 (rejection 670): series 890 to 899 are not allowed.
-- Annex I, rules I02 and I03 (rejections 646 and 649): in homologation
-  the names of sender and recipient are replaced by the mandatory text.
-- Annex I, rules I10 and I12 (rejections 875 and 253): the access key
-  carries the model 64 and a valid check digit.
-- Annex I, rule I70 (rejection 850): the QR Code (``infCTeSupl``) is
-  always sent.
-- Visão Geral, item 5 (rejection 595): the GTV-e has no correction
-  letter.
+- Anexo I, capítulo 6: remetente, destinatário, CFOP, datas de saída e
+  de chegada, ao menos uma espécie transportada e um veículo; modal
+  rodoviário (01) ou multimodal (06).
+- Anexo I, regra I04 (rejeição 670): séries de 890 a 899 não são
+  permitidas.
+- Anexo I, regras I02 e I03 (rejeições 646 e 649): em homologação os
+  nomes do remetente e do destinatário são substituídos pelo texto
+  obrigatório.
+- Anexo I, regras I10 e I12 (rejeições 875 e 253): a chave de acesso
+  traz o modelo 64 e um dígito verificador válido.
+- Anexo I, regra I70 (rejeição 850): o QR Code (``infCTeSupl``) é sempre
+  enviado.
+- Visão Geral, item 5 (rejeição 595): a GTV-e não tem carta de correção.
 
-The GTV-e has no IBS/CBS group: the tax reform technical notes of the
-CT-e (NT 2025.001 and 2026.002) apply only to the models 57 and 67.
+A GTV-e não tem grupo de IBS/CBS: as notas técnicas da reforma
+tributária do CT-e (NT 2025.001 e 2026.002) se aplicam apenas aos
+modelos 57 e 67.
 
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
@@ -78,47 +78,48 @@ CT-e (NT 2025.001 and 2026.002) apply only to the models 57 and 67.
 Usage
 =====
 
-1. Create a document series for the document type "Guia de Transporte de
-   Valores Eletrônica - GTV-e" (64) in the company.
-2. Create a fiscal document of type 64 with that series. The partner of
-   the document is the service taker when "GTV-e Service Taker" is
-   "Other"; with "Sender" or "Recipient" the taker is that party.
-3. In the "GTV-e" tab fill in the sender, the modal, the CFOP, the
-   departure and arrival dates, the quantity of volumes or pouches, the
-   transported species (banknote, check, coin or other, with the value
-   and the nationality) and the vehicles. The recipient is the delivery
-   address of the document.
-4. Confirm the document to generate, sign and validate the XML, then
-   send it.
+1. Crie uma série de documento para o tipo de documento "Guia de
+   Transporte de Valores Eletrônica - GTV-e" (64) na empresa.
+2. Crie um documento fiscal do tipo 64 com essa série. O parceiro do
+   documento é o tomador do serviço quando "GTV-e Service Taker" é
+   "Other"; com "Sender" ou "Recipient" o tomador é essa parte.
+3. Na aba "GTV-e", preencha o remetente, o modal, o CFOP, as datas de
+   saída e de chegada, a quantidade de volumes ou malotes, as espécies
+   transportadas (cédula, cheque, moeda ou outra, com o valor e a
+   nacionalidade) e os veículos. O destinatário é o endereço de entrega
+   do documento.
+4. Confirme o documento para gerar, assinar e validar o XML, e então
+   envie.
 
 Known issues / Roadmap
 ======================
 
-- The document type 64 is created by this module. When
-  ``l10n_br_fiscal`` gets it, the record has to move there.
-- ``erpbrasil.base`` does not list the model 64 yet, so the module
-  generates the access key with validation off and checks the model and
-  the check digit itself.
-- The success code of the ``CTeRecepcaoGTVe`` web service is taken as
-  the usual ``100``: the MOC 4.00 (Visão Geral, item 4.4) does not state
-  it for the GTV-e. To be confirmed with a GTV-e issued in homologation.
-- The offline contingency (``tpEmis`` 2, Ajuste SINIEF 03/20, clause 11)
-  is not supported: it needs ``dhCont``, ``xJust`` and the signed QR
-  Code (``sign`` parameter, MOC 4.00, Visão Geral, item 9.4).
-- The SEFAZ checks of the cancellation are not anticipated: 45 days
-  limit (rule O07, rejection 876) and no cancellation after the CT-e OS
-  that references the GTV-e is authorized (rule Q18, rejection 888).
-- The fiscal events 240180 and 240181 (CT-e OS authorized or cancelled)
-  are not read back into the GTV-e.
-- The ``tomaTerceiro`` rule I53 (rejection 799, third party taker equal
-  to the sender or recipient) and the IE rules I13 to I15 are left to
-  the SEFAZ.
-- Not filled yet: ``compl`` (observations), ``origem`` and ``destino``
-  addresses and ``infRespTec``.
-- There is no DACTE for the GTV-e, and importing a GTV-e XML is not
-  supported.
-- The GTV-e is not linked to the CT-e OS (``infGTVe`` group of the CT-e
-  OS, rule H045a).
+- O tipo de documento 64 é criado por este módulo. Quando o
+  ``l10n_br_fiscal`` o trouxer, o registro precisa migrar para lá.
+- O ``erpbrasil.base`` ainda não lista o modelo 64, então o módulo gera
+  a chave de acesso com a validação desligada e confere o modelo e o
+  dígito verificador por conta própria.
+- O código de sucesso do web service ``CTeRecepcaoGTVe`` é tomado como o
+  usual ``100``: o MOC 4.00 (Visão Geral, item 4.4) não o informa para a
+  GTV-e. A confirmar com uma GTV-e emitida em homologação.
+- A contingência offline (``tpEmis`` 2, Ajuste SINIEF 03/20, cláusula
+  11) não é suportada: exige ``dhCont``, ``xJust`` e o QR Code assinado
+  (parâmetro ``sign``, MOC 4.00, Visão Geral, item 9.4).
+- As conferências da SEFAZ no cancelamento não são antecipadas: limite
+  de 45 dias (regra O07, rejeição 876) e nenhum cancelamento depois que
+  o CT-e OS que referencia a GTV-e é autorizado (regra Q18, rejeição
+  888).
+- Os eventos fiscais 240180 e 240181 (CT-e OS autorizado ou cancelado)
+  não são lidos de volta na GTV-e.
+- A regra I53 do ``tomaTerceiro`` (rejeição 799, tomador terceiro igual
+  ao remetente ou ao destinatário) e as regras de IE I13 a I15 ficam a
+  cargo da SEFAZ.
+- Ainda não são preenchidos: ``compl`` (observações), endereços
+  ``origem`` e ``destino`` e ``infRespTec``.
+- Não há DACTE para a GTV-e, e a importação de XML de GTV-e não é
+  suportada.
+- A GTV-e não é vinculada ao CT-e OS (grupo ``infGTVe`` do CT-e OS,
+  regra H045a).
 
 Bug Tracker
 ===========
