@@ -50,6 +50,11 @@ msgid "Customer Purchase Order"
 msgstr ""
 
 #. module: l10n_br_nfe_compra
+#: model:ir.model,name:l10n_br_nfe_compra.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_nfe_compra
 #: model:ir.model.fields,field_description:l10n_br_nfe_compra.field_account_bank_statement_line__purchase_contract_ref
 #: model:ir.model.fields,field_description:l10n_br_nfe_compra.field_account_move__purchase_contract_ref
 #: model:ir.model.fields,field_description:l10n_br_nfe_compra.field_account_payment__purchase_contract_ref
@@ -80,9 +85,4 @@ msgstr ""
 msgid ""
 "This NF-e has an ICMS relief for a sale to a public body: inform the "
 "commitment note (nota de empenho)."
-msgstr ""
-
-#. module: l10n_br_nfe_compra
-#: model:ir.model,name:l10n_br_nfe_compra.model_l10n_br_fiscal_document
-msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
