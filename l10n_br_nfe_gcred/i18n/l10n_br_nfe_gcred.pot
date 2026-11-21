@@ -56,13 +56,6 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfe_gcred
-#: model:ir.model,name:l10n_br_nfe_gcred.model_l10n_br_fiscal_document_line
-msgid ""
-"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
-"não contribuinte de ICMS"
-msgstr ""
-
-#. module: l10n_br_nfe_gcred
 #: model:ir.model.fields,field_description:l10n_br_nfe_gcred.field_account_move_line__nfe40_gCred
 #: model:ir.model.fields,field_description:l10n_br_nfe_gcred.field_l10n_br_fiscal_document_line__nfe40_gCred
 msgid "Grupo de informações sobre"
@@ -77,6 +70,11 @@ msgstr ""
 #. module: l10n_br_nfe_gcred
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfe_gcred.product_template_form
 msgid "ICMS Presumed Credit"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model,name:l10n_br_nfe_gcred.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
 msgstr ""
 
 #. module: l10n_br_nfe_gcred
@@ -138,6 +136,6 @@ msgid "The presumed credit percentage must be between 0 and 999."
 msgstr ""
 
 #. module: l10n_br_nfe_gcred
-#: model:ir.model,name:l10n_br_nfe_gcred.model_l10n_br_fiscal_document
-msgid "Tipo Dados do Imposto BP-e"
+#: model:ir.model,name:l10n_br_nfe_gcred.model_l10n_br_fiscal_document_line
+msgid "Tipo imposto da NFGas"
 msgstr ""
