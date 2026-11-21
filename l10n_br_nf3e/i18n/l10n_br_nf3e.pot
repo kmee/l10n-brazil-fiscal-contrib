@@ -1,0 +1,3494 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nf3e
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_company__nf3e_qrcode_url
+msgid ""
+"Address of the NF3e query by QR Code of the tax authority of the company "
+"state, as published on the NF3e portal."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gscee__nf3e10_gTipoSaldo
+msgid "Agrupador de Saldos para registros"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gtiposaldo
+msgid ""
+"Agrupador de Saldos para registros de múltiplos saldos por posto\n"
+"tarifário"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gscee__nf3e10_gTipoSaldo
+msgid ""
+"Agrupador de Saldos para registros de múltiplos saldos por posto tarifário"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_pICMSSTRet
+msgid "Aliquota suportada pelo consumidor final"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_cofinsefet__nf3e10_pCOFINSEfet
+msgid "Alíquota Efetiva do COFINS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_cofinsefet__nf3e10_pCOFINSEfet
+msgid "Alíquota Efetiva do COFINS (em percentual)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_cofins__nf3e10_pCOFINS
+msgid "Alíquota do COFINS (em percentual)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_pICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_pICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms00__nf3e10_pICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_pICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_pICMS
+msgid "Alíquota do ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_pICMSST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms10__nf3e10_pICMSST
+msgid "Alíquota do ICMS ST"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_pICMSEfet
+msgid "Alíquota do ICMS efetiva"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pis__nf3e10_pPIS
+msgid "Alíquota do PIS (em percentual)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pisefet__nf3e10_pPISEfet
+msgid "Alíquota efetiva do PIS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_pisefet__nf3e10_pPISEfet
+msgid "Alíquota efetiva do PIS (em percentual)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_anoAto
+msgid "Ano do Ato da ANEEL (AAAA)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gnf__nf3e10_CompetEmis
+msgid "Ano e mês da emissão da NF mod"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gnf__nf3e10_CompetEmis
+msgid "Ano e mês da emissão da NF mod. 06 (AAAAMM)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gnf__nf3e10_CompetApur
+msgid "Ano e mês de apuração (AAAAMM)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_CompetFat
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__nf3e10_CompetFat
+msgid "Ano e mês referência do faturamento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_CompetFat
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__nf3e10_CompetFat
+msgid "Ano e mês referência do faturamento (AAAAMM)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Automatic debit code or bank and branch of the invoice"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_autXML
+msgid "Autorizados para download do XML do DF-e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_autxml
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_autXML
+msgid ""
+"Autorizados para download do XML do DF-e\n"
+"Informar CNPJ ou CPF. Preencher os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vBC
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vBC
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vBC
+msgid "BC do ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vBCST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vBCST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vBCST
+msgid "BC do ICMS ST"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_xBairro
+msgid "Bairro"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitem_rettrib__nf3e10_vBCIRRF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant_rettrib__nf3e10_vBCIRRF
+msgid "Base de cálculo do IRRF"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model_terms:ir.ui.view,arch_db:l10n_br_nf3e.nf3e_document_form_view
+msgid "Billing History"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Billing history with the 13 months (gHistFat)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_CEP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_CEP
+msgid "CEP"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_partner__nf3e10_CEP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_users__nf3e10_CEP
+msgid ""
+"CEP\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move_line__nf3e10_CFOP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_CFOP
+msgid ""
+"CFOP\n"
+"Utilizar Tabela de CFOP."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move_line__nf3e10_CFOP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_CFOP
+msgid "CFOP Code"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "CFOP of %s"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_CNPJ
+msgid "CNPJ"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_CNPJ
+msgid ""
+"CNPJ da pessoa jurídica responsável técnica pelo sistema utilizado na emissão do documento fiscal eletrônico\n"
+"Informar o CNPJ da pessoa jurídica desenvolvedora do sistema utilizado na emissão do documento fiscal eletrônico."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gnf__nf3e10_CNPJ
+msgid "CNPJ do Emitente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gnf__nf3e10_CNPJ
+msgid ""
+"CNPJ do Emitente\n"
+"Informar o CNPJ do emitente do Documento Fiscal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_autxml__nf3e10_CNPJ
+msgid "CNPJ do autorizado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_autxml__nf3e10_CNPJ
+msgid ""
+"CNPJ do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_company__nf3e10_CNPJ
+msgid "CNPJ do emitente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_company__nf3e10_CNPJ
+msgid ""
+"CNPJ do emitente\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_autxml__nf3e10_CPF
+msgid "CPF do autorizado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_autxml__nf3e10_CPF
+msgid ""
+"CPF do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid ""
+"Cannot build the NF3e access key of %(document)s: check the company CNPJ and"
+" state, the serie and the number."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_nfdet__nf3e10_chNF3eAnt
+msgid "Chave de Acesso da NF-3e anterior"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_nfdet__nf3e10_chNF3eAnt
+msgid ""
+"Chave de Acesso da NF-3e anterior\n"
+"Informar apenas para finalidade de Ajuste"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_chNF3e
+msgid "Chave de acesso da NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gjudic__nf3e10_chNF3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsub__nf3e10_chNF3e
+msgid "Chave de acesso da NF3e referenciada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gpagantecipado__nf3e10_chDFePagAnt
+msgid "Chave de acesso da nota de antecipação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gpagantecipado__nf3e10_chDFePagAnt
+msgid ""
+"Chave de acesso da nota de antecipação de pagamento (com tpPagAnt=1 ou 2)\n"
+"Referência a DFe emitido anteriormente, referente a pagamento antecipado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_CompetExpirar
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_CompetExpirar
+msgid "Ciclo de faturamento em que ocorrerá"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_CompetExpirar
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_CompetExpirar
+msgid "Ciclo de faturamento em que ocorrerá a expiração (AAAAMM)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpClasse
+msgid "Classe de Consumo da Unidade Consumidora"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpClasse
+msgid ""
+"Classe de Consumo da Unidade Consumidora\n"
+"01 - Comercial\n"
+"02 - Consumo Próprio\n"
+"03 - Iluminação Pública\n"
+"04 - Industrial\n"
+"05 - Poder Público\n"
+"06 - Residencial\n"
+"07 - Rural\n"
+"08 -Serviço Público."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_CST
+msgid "Classificação Tributária do Serviço"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_CST
+msgid ""
+"Classificação Tributária do Serviço\n"
+"90 - ICMS outros"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_CST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms40__nf3e10_CST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms51__nf3e10_CST
+msgid "Classificação Tributária do serviço"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_CST
+msgid ""
+"Classificação Tributária do serviço\n"
+"20 - tributação com BC reduzida do ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms40__nf3e10_CST
+msgid ""
+"Classificação Tributária do serviço\n"
+"40=Isenta; 41=Não tributada;"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms51__nf3e10_CST
+msgid ""
+"Classificação Tributária do serviço\n"
+"Tributação pelo ICMS 51 - Diferimento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_mod
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_mod
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_mod
+msgid "Code"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Company CNPJ"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Company City"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Company State"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Company State Tax Number"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_xCpl
+msgid "Complemento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model_terms:ir.ui.view,arch_db:l10n_br_nf3e.nf3e_document_form_view
+msgid "Consumer Unit"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__create_uid
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__create_uid
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__create_date
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__create_date
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_vCredExpirado
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_vCredExpirado
+msgid "Créditos Expirados"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_vCredExpirar
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_vCredExpirar
+msgid "Créditos a Expirar"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_vCredExpirar
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_vCredExpirar
+msgid ""
+"Créditos a Expirar\n"
+"Próxima parcela do saldo atualizado de créditos a expirar"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Customer"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_cUF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_cUF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_cUF
+msgid "Código da UF do emitente da NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_cUF
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_cUF
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_cUF
+msgid ""
+"Código da UF do emitente da NF-3e\n"
+"Código da UF do emitente do Documento Fiscal. Utilizar a\n"
+"Tabela do IBGE de código de unidades da federação."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_cBenef
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms40__nf3e10_cBenef
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms51__nf3e10_cBenef
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_cBenef
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_cBenef
+msgid "Código de Benefício Fiscal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_cBenef
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_cBenef
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_cBenef
+msgid ""
+"Código de Benefício Fiscal na UF aplicado ao item\n"
+"Código de Benefício Fiscal utilizado pela UF, aplicado ao\n"
+" item."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms40__nf3e10_cBenef
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms51__nf3e10_cBenef
+msgid ""
+"Código de Benefício Fiscal na UF aplicado ao item\n"
+"Código de Benefício Fiscal utilizado pela UF, aplicado ao\n"
+"item."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_idCodCliente
+msgid "Código de Identificação do Cliente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_idCodCliente
+msgid "Código de Identificação do Cliente para empresa emitente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_codDebAuto
+msgid "Código de autorização débito em conta"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_cClass
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_cClass
+msgid "Código de classificação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_cClass
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_cClass
+msgid ""
+"Código de classificação\n"
+"Tabela de Classificação de Item da NF-3e de Energia Elétrica (validar por RV)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_cMun
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_cMun
+msgid "Código do município"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_partner__nf3e10_cMun
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_users__nf3e10_cMun
+msgid "Código do município (utilizar a tabela do IBGE)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_cMunFG
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_cMunFG
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_cMunFG
+msgid "Código do município de ocorrência"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_cMunFG
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_cMunFG
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_cMunFG
+msgid "Código do município de ocorrência do fato gerador"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move_line__nf3e10_cProd
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_cProd
+msgid "Código do produto ou serviço"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_cStat
+msgid "Código do status da NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_inffisco__nf3e10_cMsg
+msgid "Código do status da mensagem do fisco"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_cNF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_cNF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_cNF
+msgid "Código numérico que compõe a Chave"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_cNF
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_cNF
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_cNF
+msgid ""
+"Código numérico que compõe a Chave de Acesso.\n"
+"Código aleatório gerado pelo emitente, com o objetivo de evitar acessos indevidos ao documento."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_idAcessGer
+msgid "Código Único de identificação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_idAcessGer
+msgid ""
+"Código Único de identificação da unidade geradora\n"
+"Informar o Código Único adotado pela companhia distribuidora para o ponto de acesso da unidade geradora cuja energia foi destinada a esta unidade consumidora."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_idAcesso
+msgid "Código único de Identificação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_idAcesso
+msgid ""
+"Código único de Identificação da Unidade Consumidora ou Ponto de Acesso "
+"adotado pela distribuidora."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pgtovinc__nf3e10_pgto
+msgid "Dados de cada pagamento previsto"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_cofins
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_COFINS
+msgid "Dados do COFINS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_cofinsefet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_COFINSEfet
+msgid "Dados do COFINS Efetivo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_pis
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_PIS
+msgid "Dados do PIS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_pisefet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_PISEfet
+msgid "Dados do PIS Efetivo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_infrec
+msgid "Dados do Recibo do Lote"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_infprot
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tprotnf3e__nf3e10_infProt
+msgid "Dados do protocolo de status"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__nf3e10_dMedAnt
+msgid "Data da leitura anterior"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_nf3e_meter__nf3e10_dMedAnt
+msgid ""
+"Data da leitura anterior\n"
+"Formato AAAA-MM-DD"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__nf3e10_dMedAtu
+msgid "Data da leitura atual"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_nf3e_meter__nf3e10_dMedAtu
+msgid ""
+"Data da leitura atual\n"
+"Formato AAAA-MM-DD"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dApresFat
+msgid "Data de apresentação da fatura"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dApresFat
+msgid ""
+"Data de apresentação da fatura\n"
+"Formato AAAA-MM-DD\n"
+"Não obrigatória, conforme item 2.3.2 da Seção 11.1 do Módulo 11 do PRODIST."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_dFimTarif
+msgid "Data de fim da aplicação da tarifa"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_dFimTarif
+msgid ""
+"Data de fim da aplicação da tarifa\n"
+"Data de fim da aplicação da tarifa no período considerado para o faturamento\n"
+" (Formato AAAA-MM-DD)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_dFimAdBand
+msgid "Data de fim da aplicação do adicional"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_dFimAdBand
+msgid ""
+"Data de fim da aplicação do adicional\n"
+"Data de fim da aplicação do adicional de bandeira no período considerado para o faturamento (\n"
+"Formato AAAA-MM-DD)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_dIniTarif
+msgid "Data de início da aplicação da tarifa"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_dIniTarif
+msgid ""
+"Data de início da aplicação da tarifa\n"
+"Data de início da aplicação da tarifa no período considerado para o faturamento (\n"
+"Formato AAAA-MM-DD)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_dIniAdBand
+msgid "Data de início da aplicação do adicional"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_dIniAdBand
+msgid ""
+"Data de início da aplicação do adicional\n"
+"Data de início da aplicação do adicional de bandeira no período considerado para o faturamento (Formato AAAA-MM-DD)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dVencFat
+msgid "Data de vencimento da fatura"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dVencFat
+msgid ""
+"Data de vencimento da fatura\n"
+"Formato AAAA-MM-DD"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dhCont
+msgid "Data e Hora da entrada em contingência"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dhCont
+msgid ""
+"Data e Hora da entrada em contingência\n"
+"Informar a data e hora no formato AAAA-MM-DDTHH:MM:SS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dhEmi
+msgid "Data e hora de emissão"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_dhEmi
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_dhEmi
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dhEmi
+msgid ""
+"Data e hora de emissão do documento fiscal\n"
+"Formato AAAA-MM-DDTHH:MM:DD TZD"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_dhRecbto
+msgid "Data e hora de processamento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_dhRecbto
+msgid "Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SS TZD."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infrec__nf3e10_dhRecbto
+msgid "Data e hora do recebimento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_infrec__nf3e10_dhRecbto
+msgid "Data e hora do recebimento, no formato AAAA-MM-DDTHH:MM:SS TZD"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dProxLeitura
+msgid "Data prevista próxima leitura"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dProxLeitura
+msgid ""
+"Data prevista próxima leitura\n"
+"Formato AAAA-MM-DD"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gcontab__nf3e10_xContab
+msgid "Descrição da conta contábil"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move_line__nf3e10_xProd
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_xProd
+msgid "Descrição do produto ou serviço"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_xMotivo
+msgid "Descrição literal do status da NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_NFdet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_nfdet__nf3e10_det
+msgid "Detalhamento de Produtos e Serviços"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_nfdet
+msgid ""
+"Detalhamento de Produtos e Serviços\n"
+"Quando NF3e Normal com ajustes, utilizar a ultima nota do detalhamento para\n"
+"apresentar a fatura do mês atual"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_NFdet
+msgid ""
+"Detalhamento de Produtos e Serviços\n"
+"Quando NF3e Normal com ajustes, utilizar a ultima nota do detalhamento para apresentar a fatura do mês atual"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_digVal
+msgid "Digest Value da NF-3e processado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_digVal
+msgid ""
+"Digest Value da NF-3e processado. Utilizado para conferir a integridade da "
+"NF-3e original."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Digital Certificate"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_cDV
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_cDV
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_cDV
+msgid "Digito verificador da chave de acesso"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_cDV
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_cDV
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_cDV
+msgid ""
+"Digito verificador da chave de acesso\n"
+"Informar o dígito  de controle da chave de acesso documento fiscal, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__display_name
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__display_name
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Document Lines"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Document Serie"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move_line__nf3e_document_type
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e_document_type
+msgid "Document Type Code"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_email
+msgid "Email da pessoa jurídica a ser contatada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model_terms:ir.ui.view,arch_db:l10n_br_nf3e.nf3e_document_form_view
+msgid "Emission"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_email
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_email
+msgid "Endereço de E-mail"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_enderCorresp
+msgid "Endereço de entrega da fatura"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_enderCorresp
+msgid ""
+"Endereço de entrega da fatura.\n"
+"Informar se diferente do endereço do destinatário"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_enderDest
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_enderDest
+msgid "Endereço do destinatário / acessante"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_company__nf3e10_enderEmit
+msgid "Endereço do emitente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_enerAloc
+msgid "Energia alocada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_enerAloc
+msgid ""
+"Energia alocada\n"
+"Quantidade de energia excedente que é destinado pela unidade geradora a esta unidade consumidora em kWh."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_enerInjet
+msgid "Energia injetada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_enerInjet
+msgid ""
+"Energia injetada\n"
+"Quantidade de energia excedente que é destinado pela unidade geradora a esta unidade consumidora em kWh."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid ""
+"Fill in the required NF3e fields:\n"
+"- %s"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_finNF3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_finNF3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_finNF3e
+msgid "Finalidade de emissão da NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_finNF3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_finNF3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_finNF3e
+msgid ""
+"Finalidade de emissão da NF-3e\n"
+"1 - NF-3e normal; \n"
+"\n"
+"2 - NF-3e substituição; \n"
+"\n"
+"3 - NF-3e normal com ajuste;"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_l10n_br_fiscal_document
+msgid "Fiscal Document"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_l10n_br_fiscal_document_line
+msgid "Fiscal Document Line"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpEmis
+msgid "Forma de emissão do Documento Fiscal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_tpEmis
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_tpEmis
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpEmis
+msgid ""
+"Forma de emissão do Documento Fiscal\n"
+"1 - Normal\n"
+"; 2 - Contingência Off Line"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__nf3e10_gGrandFat
+msgid "Grandezas faturadas"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gProcRef
+msgid "Grupo Processo referenciado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gprocref
+msgid ""
+"Grupo Processo referenciado\n"
+"Este grupo somente deverá ser preenchido quando houver processo judicial ou\n"
+"administrativo que altere valores."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gProcRef
+msgid ""
+"Grupo Processo referenciado\n"
+"Este grupo somente deverá ser preenchido quando houver processo judicial ou administrativo que altere valores."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gadband
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gAdBand
+msgid "Grupo de Adicional de Bandeira"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gCompraGov
+msgid "Grupo de Compras Governamentais"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gContab
+msgid "Grupo de Informações Contábeis"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gcontab
+msgid ""
+"Grupo de Informações Contábeis\n"
+"Informar o número das contas contábeis objeto do lançamento completo do\n"
+"fato."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gContab
+msgid ""
+"Grupo de Informações Contábeis\n"
+"Informar o número das contas contábeis objeto do lançamento completo do fato."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gtarif
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gTarif
+msgid "Grupo de Tarifas por Período"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gPagAntecipado
+msgid "Grupo de antecipação de pagamento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gPagAntecipado
+msgid ""
+"Grupo de antecipação de pagamento\n"
+"\n"
+"Permite informar apenas quando tpPagAnt=3\n"
+"Informado para abater as parcelas de antecipação de\n"
+"pagamento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gpagantecipado
+msgid ""
+"Grupo de antecipação de pagamento\n"
+"Permite informar apenas quando tpPagAnt=3\n"
+"Informado para abater as parcelas de antecipação de\n"
+"pagamento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gAjusteNF3eAnt
+msgid "Grupo de identificação do ajuste do item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gajustenf3eant
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gAjusteNF3eAnt
+msgid ""
+"Grupo de identificação do ajuste do item de NF-3e anterior\n"
+"Somente informar no caso de item relacionado a NF-3e anterior"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gGrContrat
+msgid "Grupo de informações"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gsub
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gSub
+msgid "Grupo de informações da substituição"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_pgtoVinc
+msgid "Grupo de informações da vínculação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_pgtovinc
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_pgtoVinc
+msgid "Grupo de informações da vínculação com a transação de pagamento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_ggrcontrat
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gGrContrat
+msgid "Grupo de informações das quantidades contratadas"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_retTrib
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_retTrib
+msgid "Grupo de informações de retenção"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_retTrib
+msgid "Grupo de informações de retenção de tributos federais"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_detitem_rettrib
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_detitemant_rettrib
+msgid ""
+"Grupo de informações de retenção de tributos federais do item\n"
+"anterior"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_retTrib
+msgid "Grupo de informações de retenção de tributos federais do item anterior"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_IBSCBS
+msgid "Grupo de informações do IBS e CBS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gpix
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gPIX
+msgid "Grupo de informações do PIX"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_gMed
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_gMed
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gMed
+msgid "Grupo de informações dos Medidores"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gJudic
+msgid "Grupo de informações para referenciar"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gjudic
+msgid ""
+"Grupo de informações para referenciar a NF3e original que foi separada\n"
+"judicialmente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gJudic
+msgid ""
+"Grupo de informações para referenciar a NF3e original que foi separada "
+"judicialmente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_detItemAnt
+msgid "Grupo de informações referentes a item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_detitemant
+msgid ""
+"Grupo de informações referentes a item da NF-3e anterior\n"
+"Este grupo somente deverá ser preenchido para detalhar item ajustado de nota\n"
+"anterior nos casos de item alterado ou excluído"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_detItemAnt
+msgid ""
+"Grupo de informações referentes a item da NF-3e anterior\n"
+"Este grupo somente deverá ser preenchido para detalhar item ajustado de nota anterior nos casos de item alterado ou excluído"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gmedicao__nf3e10_gMedida
+msgid "Grupo de medida"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gSCEE
+msgid "Grupo dos dados do Sistema"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gscee
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gSCEE
+msgid "Grupo dos dados do Sistema de Compensação de Energia Elétrica"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpGrpTensao
+msgid "Grupo e Subgrupo de Tensão"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpGrpTensao
+msgid ""
+"Grupo e Subgrupo de Tensão\n"
+"01 - A1 - Alta Tensão (230kV ou mais); \n"
+"\n"
+"02 - A2 - Alta Tensão (88 a 138kV); \n"
+"03 - A3 - Alta Tensão (69kV); \n"
+"04 - A3a - Alta Tensão (30kV a 44kV); \n"
+"05 - A4 - Alta Tensão (2,3kV a 25kV); \n"
+"06 - AS - Alta Tensão Subterrâneo;\n"
+" 07 - B1 - Residencial; \n"
+"08 - B1 - Residencial Baixa Renda;\n"
+" 09 - B2 - Rural;\n"
+" 10 - B2 - Cooperativa de Eletrificação Rural; \n"
+"11 - B2 - Serviço Público de Irrigação;\n"
+"12 - B3 - Demais Classes;\n"
+" 13 - B4a - Iluminação Pública - rede de distribuição;\n"
+" 14 - B4b - Iluminação Pública - bulbo de lâmpada."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gproc
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_gProc
+msgid "Grupo identificador do Processo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gMedicao
+msgid "Grupo para referenciar qual medição"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gmedicao
+msgid ""
+"Grupo para referenciar qual medição e medida estão relacionadas ao\n"
+"item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_gMedicao
+msgid ""
+"Grupo para referenciar qual medição e medida estão relacionadas ao item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gnf__nf3e10_hash115
+msgid "Hash do registro no arquivo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gnf__nf3e10_hash115
+msgid ""
+"Hash do registro no arquivo do convênio 115\n"
+"Campo poderá ser exigido a critério da UF"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_hashCSRT
+msgid "Hash do token do código de segurança"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_hashCSRT
+msgid ""
+"Hash do token do código de segurança do responsável técnico\n"
+"O hashCSRT é o resultado das funções SHA-1 e base64 do token CSRT fornecido pelo fisco + chave de acesso do DF-e. (Implementação em futura NT)\n"
+"\n"
+"Observação: 28 caracteres são representados no schema como 20 bytes do tipo base64Binary"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_nfdet__nf3e10_mod6HashAnt
+msgid "HashCode da Modelo 6 Anterior"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_nfdet__nf3e10_mod6HashAnt
+msgid ""
+"HashCode da Modelo 6 Anterior\n"
+"Informar apenas para finalidade de Ajuste"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_gHistFat
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_gHistFat
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gHistFat
+msgid "Histórico de Faturamento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields.selection,name:l10n_br_nf3e.selection__l10n_br_fiscal_document__nf3e_environment__2
+#: model:ir.model.fields.selection,name:l10n_br_nf3e.selection__res_company__nf3e_environment__2
+msgid "Homologação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS90
+msgid "ICMS Outros"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_icms90
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS90
+msgid ""
+"ICMS Outros\n"
+"Será usado no caso da subvenção ou para NF-3e de ajuste quando for o caso."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_Id
+msgid "Id"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_Id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_Id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_Id
+msgid "Identificador da tag a ser assinada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_Id
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_Id
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_Id
+msgid ""
+"Identificador da tag a ser assinada\n"
+"Informar a chave de acesso da NF-3e e precedida do literal 'NF3e'"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_idCSRT
+msgid "Identificador do código de segurança"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_idCSRT
+msgid ""
+"Identificador do código de segurança do responsável técnico\n"
+"Identificador do CSRT utilizado para geração do hash"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_dest
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_dest
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dest
+msgid "Identificação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_tpAmb
+msgid "Identificação do Ambiente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_tpAmb
+msgid ""
+"Identificação do Ambiente:\n"
+"1 - Produção\n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_emit
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_emit
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_emit
+msgid "Identificação do Emitente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_emit
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_emit
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_emit
+msgid "Identificação do Emitente do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_dest
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_dest
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_dest
+msgid "Identificação do destinatário / acessante"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_idOutros
+msgid "Identificação do destinatário outros"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_partner__nf3e10_idOutros
+msgid ""
+"Identificação do destinatário outros\n"
+"Identificação do destinatário não obrigado a inscrição do CPF tais como estrangeiro, indígena (informar código do RANI) e quilombola; ou destinatário que a distribuidora não possui a informação (nestes casos orienta-se informar '00000')."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__nf3e10_idMedidor
+msgid "Identificação do medidor"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_nSiteAutoriz
+msgid "Identificação do número do Site"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_nSiteAutoriz
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_nSiteAutoriz
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_nSiteAutoriz
+msgid ""
+"Identificação do número do Site do Autorizador de recepção da NF3e\n"
+"Se o autorizador da NF3e possuir apenas um site deverá ser informado com Zero (0), em caso de Autorizador trabalhar com múltiplos sites indicar o número do site para qual foi endereçada a NF3e (1 a 9).\n"
+"Observação: O ambiente autorizador que trabalhar com mais de um Site deverá divulgar para cada endereço de site qual número correspondente de nSiteAutoriz o contribuinte pode usar"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_indIEDest
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_indIEDest
+msgid "Indicador da IE"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_partner__nf3e10_indIEDest
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_users__nf3e10_indIEDest
+msgid ""
+"Indicador da IE do Destinatário/Acessante\n"
+"1 - Contribuinte ICMS (informar a IE do destinatário); \n"
+"\n"
+"2 - Contribuinte isento de Inscrição no cadastro de Contribuintes do ICMS;\n"
+"\n"
+" 9 - Não Contribuinte, que pode ou não possuir Inscrição Estadual no Cadastro de Contribuintes do ICMS. \n"
+"\n"
+"Nota: No caso de Contribuinte Isento de Inscrição (indIEDest=2) informar a tag IE do destinatário com o literal ISENTO."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_indOrigemQtd
+msgid "Indicador da origem"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_indOrigemQtd
+msgid ""
+"Indicador da origem da quantidade faturada\n"
+"1 - Media; 2 - Medido; 3 - Contratada; 4 - Calculada; 5 - Custo de disponibilidade; 6 - Sem quantidade"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_indDevolucao
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_indDevolucao
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_indDevolucao
+msgid "Indicador de devolução do valor do item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_indDevolucao
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_indDevolucao
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_indDevolucao
+msgid ""
+"Indicador de devolução do valor do item\n"
+"1 – Devolução do valor do item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_vConst
+msgid "Indicar o fator de multiplicação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_vConst
+msgid "Indicar o fator de multiplicação do medidor"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gnf
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsub__nf3e10_gNF
+msgid "Informação da NF modelo 06 referenciada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_infAdFisco
+msgid "Informações adicionais de interesse"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_infAdFisco
+msgid ""
+"Informações adicionais de interesse do Fisco\n"
+"Norma referenciada, informações complementares, etc"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_infAdProd
+msgid "Informações adicionais do produto"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_infAdProd
+msgid ""
+"Informações adicionais do produto (norma referenciada, informações "
+"complementares, etc)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_infCpl
+msgid "Informações complementares de interesse"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_infCpl
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_infCpl
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_infCpl
+msgid "Informações complementares de interesse do Contribuinte"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gRespTec
+msgid "Informações do Responsável Técnico"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_gRespTec
+msgid "Informações do Responsável Técnico pela emissão do DF-e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_infnf3esupl
+msgid "Informações suplementares da NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_IE
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_IE
+msgid "Inscrição Estadual"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_company__nf3e10_IE
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_partner__nf3e10_IE
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_users__nf3e10_IE
+msgid "Inscrição Estadual do destinatário / acessante"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_company__nf3e10_IE
+msgid "Inscrição Estadual do emitente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_IM
+msgid "Inscrição Municipal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_company__nf3e10_ISUFEmit
+msgid "Inscrição do emitente da Suframa"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_company__nf3e10_ISUFEmit
+msgid ""
+"Inscrição do emitente da Suframa\n"
+"Informar o número do Cadastro do emitente na Suframa. Campo obrigatório nas operações que se beneficiam de incentivos fiscais existentes nas áreas sob controle da SUFRAMA com alíquota zero da CBS referente aos arts. 451 e 466 da LC 214/25"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model_terms:ir.ui.view,arch_db:l10n_br_nf3e.nf3e_document_form_view
+msgid "Invoice"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Item classification code of %s"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_xJust
+msgid "Justificativa da entrada em contingência"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__write_uid
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__write_uid
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__write_date
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__write_date
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_latGPS
+msgid "Latitude do ponto geográfico"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_latGPS
+msgid "Latitude do ponto geográfico da localização da captura"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_codBarras
+msgid "Linha digitável do código de barras"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_xLgr
+msgid "Logradouro"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_longGPS
+msgid "Longitude do ponto geográfico"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_longGPS
+msgid "Longitude do ponto geográfico da localização da captura"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_inffisco
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_inffisco__nf3e10_xMsg
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tprotnf3e__nf3e10_infFisco
+msgid "Mensagem do Fisco"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model_terms:ir.ui.view,arch_db:l10n_br_nf3e.nf3e_document_form_view
+msgid "Meters"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpModTar
+msgid "Modalidade Tarifária"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpModTar
+msgid ""
+"Modalidade Tarifária\n"
+"01 – Convencional Monômia; 02 – Convencional Binômia; 03 – Horária Azul; 04 – Horária Azul APE;05 – Horária Verde;06 – Horária Verde APE; 07 – Horária Branca;08 – Pré-pagamento; 09 – Geração; 10 – Distribuição."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_autxml__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_cofins__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_cofinsefet__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitem_rettrib__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant_rettrib__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gadband__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gajustenf3eant__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gconsumidor__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gcontab__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_ggrcontrat__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gjudic__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gmedicao__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gnf__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gpagantecipado__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gpix__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gproc__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsaldocred__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gscee__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsub__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms00__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms10__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms40__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms51__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms90__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_inffisco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infnf3esupl__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infrec__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_nfdet__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pgtovinc__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pis__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pisefet__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tprotnf3e__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tresptec__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_company__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__brl_currency_id
+msgid "Moeda"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_motDifBand
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_motDifTarif
+msgid "Motivo da diferença"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_motDifTarif
+msgid ""
+"Motivo da diferença de tarifa aplicada com a homologada\n"
+"01 - Decisão judicial; 02 - Decisão da distribuidora (tarifa homologada equivale a preço teto); 03 - Desconto Tarifário; 04 - Reajuste tarifário"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_motDifBand
+msgid ""
+"Motivo da diferença do adicional aplicado\n"
+"01 - Decisão judicial; 02 - Decisão da distribuidora (tarifa homologada equivale a preço teto); 03 - Desconto tarifário\n"
+"; 04 - Alteração de tarifa"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsub__nf3e10_motSub
+msgid "Motivo da substituição"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gsub__nf3e10_motSub
+msgid ""
+"Motivo da substituição\n"
+"01 – Erro de Leitura\n"
+"; 02 – Erro de Preço ou Erro de Tarifa; \n"
+"03 – Decisão Judicial\n"
+"; 04 – Erro Cadastral; 05 - Erro de Tributação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gajustenf3eant__nf3e10_motAjuste
+msgid "Motivo do Ajuste"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gajustenf3eant__nf3e10_motAjuste
+msgid ""
+"Motivo do Ajuste\n"
+"1 – Erro de Leitura\n"
+"; 2 – Erro de Preço ou Erro de Tarifa\n"
+"; 3 – Decisão Judicial\n"
+"; 4 – Erro Cadastral\n"
+"; 5 - Erro de Tributação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.module.category,name:l10n_br_nf3e.module_category_l10n_br_nf3e
+#: model_terms:ir.ui.view,arch_db:l10n_br_nf3e.nf3e_document_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_br_nf3e.nf3e_document_line_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_br_nf3e.res_company_form_view
+msgid "NF3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_l10n_br_nf3e_billing_history_line
+msgid "NF3e Billed Quantity of a Month (gGrandFat)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_l10n_br_nf3e_billing_history
+msgid "NF3e Billing History (gHistFat)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e_environment
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e_environment
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e_environment
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_company__nf3e_environment
+msgid "NF3e Environment"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:res.groups,name:l10n_br_nf3e.group_manager
+msgid "NF3e Manager"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_l10n_br_nf3e_meter
+msgid "NF3e Meter (gMed)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_company__nf3e_qrcode_url
+msgid "NF3e QR Code URL"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:res.groups,name:l10n_br_nf3e.group_user
+msgid "NF3e User"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_autxml__nf3e10_autXML_infNF3e_id
+msgid "Nf3E10 Autxml Infnf3E"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_det_NFdet_id
+msgid "Nf3E10 Det Nfdet"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_gAdBand_detItem_id
+msgid "Nf3E10 Gadband Detitem"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_gConsumidor_gSCEE_id
+msgid "Nf3E10 Gconsumidor Gscee"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gcontab__nf3e10_gContab_detItem_id
+msgid "Nf3E10 Gcontab Detitem"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__nf3e10_gGrandFat_gHistFat_id
+msgid "Nf3E10 Ggrandfat Ghistfat"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_ggrcontrat__nf3e10_gGrContrat_infNF3e_id
+msgid "Nf3E10 Ggrcontrat Infnf3E"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__nf3e10_gHistFat_TANEEL_id
+msgid "Nf3E10 Ghistfat Taneel"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__nf3e10_gMed_infNF3e_id
+msgid "Nf3E10 Gmed Infnf3E"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gproc__nf3e10_gProc_gProcRef_id
+msgid "Nf3E10 Gproc Gprocref"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_gSaldoCred_gSCEE_id
+msgid "Nf3E10 Gsaldocred Gscee"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_gSaldoCred_gTipoSaldo_id
+msgid "Nf3E10 Gsaldocred Gtiposaldo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_gTarif_detItem_id
+msgid "Nf3E10 Gtarif Detitem"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo__nf3e10_gTipoSaldo_gSCEE_id
+msgid "Nf3E10 Gtiposaldo Gscee"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_nfdet__nf3e10_NFdet_infNF3e_id
+msgid "Nf3E10 Nfdet Infnf3E"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_xNomeUC
+msgid "Nome da Unidade Consumidora"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__nf3e10_xGrandFat
+msgid "Nome da grandeza faturada para exibição"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_nf3e_billing_history__nf3e10_xGrandFat
+msgid ""
+"Nome da grandeza faturada para exibição\n"
+"Exemplo: Consumo Meses Anteriores"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_xContato
+msgid "Nome da pessoa a ser contatada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_xContato
+msgid ""
+"Nome da pessoa a ser contatada\n"
+"Informar o nome da pessoa a ser contatada na empresa desenvolvedora do sistema utilizado na emissão do documento fiscal eletrônico. No caso de pessoa física, informar o respectivo nome."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_xNomeAdicional
+msgid "Nome de destinatário adicional"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_partner__nf3e10_xNomeAdicional
+msgid ""
+"Nome de destinatário adicional\n"
+"Exemplo: Nome do Conjuge, Companheira(o)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_xMun
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_xMun
+msgid "Nome do município"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_company__nf3e10_xFant
+msgid "Nome fantasia do emitente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_nro
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_nro
+msgid "Número"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gcontab__nf3e10_cContab
+msgid "Número da Conta Contábil do lançamento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_nFat
+msgid "Número da Fatura"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_cNIS
+msgid "Número da Identificação Social - NIS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_codAgencia
+msgid "Número da agência bancária para débito"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_codAgencia
+msgid "Número da agência bancária para débito em conta"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_meter__nf3e10_nMed
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_ggrcontrat__nf3e10_nContrat
+msgid "Número de referência para informar"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_nf3e_meter__nf3e10_nMed
+msgid ""
+"Número de referência para informar nos produtos a relação com a medição"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_ggrcontrat__nf3e10_nContrat
+msgid ""
+"Número de referência para informar nos produtos a relação com a quantidade "
+"contratada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_nAto
+msgid "Número do Ato da ANEEL"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_NB
+msgid "Número do Benefício"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_CNPJ
+msgid "Número do CNPJ"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_partner__nf3e10_CNPJ
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_users__nf3e10_CNPJ
+msgid ""
+"Número do CNPJ\n"
+"Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros.\n"
+"\t\t\t\t\t\t\tInformar os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_CPF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_CPF
+msgid "Número do CPF"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_partner__nf3e10_CPF
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_users__nf3e10_CPF
+msgid ""
+"Número do CPF\n"
+"Informar os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gproc__nf3e10_nProcesso
+msgid "Número do Processo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_nProt
+msgid "Número do Protocolo de Status da NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infrec__nf3e10_nRec
+msgid "Número do Recibo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_codBanco
+msgid "Número do banco para débito em conta"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_nNF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_nNF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_nNF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gnf__nf3e10_nNF
+msgid "Número do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_nNF
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_nNF
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_nNF
+msgid ""
+"Número do documento fiscal\n"
+"Número que identifica o documento fiscal 1 a 999999999."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move_line__nf3e10_nItem
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_nItem
+msgid "Número do item da NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_nItemAnt
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_nItemAnt
+msgid "Número do item da NF-3e anterior"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_nItemAnt
+msgid ""
+"Número do item da NF-3e anterior que este item está substituindo. \n"
+"Deve sempre existir um detItemAnt que corresponda"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gpagantecipado__nf3e10_nItemPagAnt
+msgid "Número do item do DFe de antecipação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gpagantecipado__nf3e10_nItemPagAnt
+msgid "Número do item do DFe de antecipação para referência direta a um item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo__nf3e10_nTipoSaldo
+msgid "Número referente ao agrupador de saldos"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtiposaldo__nf3e10_nTipoSaldo
+msgid ""
+"Número referente ao agrupador de saldos por posto tarifário\n"
+"Aceita valores de 01 a 10.\n"
+"Serve para organizar a informação dos grupos de saldos."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Origin of the quantity of %s"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gconsumidor
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gscee__nf3e10_gConsumidor
+msgid "Participação no SCEE como Consumidor"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_pFCPSTRet
+msgid "Percentual de FCP retido anteriormente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_pFCPSTRet
+msgid "Percentual de FCP retido anteriormente por substituição tributária."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_pFCP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms00__nf3e10_pFCP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms10__nf3e10_pFCPST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_pFCP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_pFCP
+msgid "Percentual de ICMS relativo ao Fundo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_pFCP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_pFCPST
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms00__nf3e10_pFCP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms10__nf3e10_pFCPST
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_pFCP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_pFCP
+msgid "Percentual de ICMS relativo ao Fundo de Combate à Pobreza (FCP)."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_pRedBC
+msgid "Percentual de redução da BC"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_pRedBCEfet
+msgid "Percentual de redução da base"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_pRedBCEfet
+msgid "Percentual de redução da base de cálculo efetiva."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_pPerdaTran
+msgid "Perda de Transformação(percentual)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_vPotInst
+msgid "Potência instalada da micro"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_vPotInst
+msgid "Potência instalada da micro ou minigeraçao em kW"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS20
+msgid "Prestação sujeito à tributação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_icms20
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS20
+msgid "Prestação sujeito à tributação com redução de BC do ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS00
+msgid "Prestação sujeito à tributação normal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_icms00
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS00
+msgid ""
+"Prestação sujeito à tributação normal do ICMS\n"
+"Tributada integralmente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_indPrecoACL
+msgid "Preço ACL"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_indPrecoACL
+msgid ""
+"Preço ACL\n"
+"Valor declarado na DEVEC de acordo com convênio ICMS 77/11\n"
+"Deve informar ICMS10 e não poderá informar grupo de tarifas aplicadas."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields.selection,name:l10n_br_nf3e.selection__l10n_br_fiscal_document__nf3e_environment__1
+#: model:ir.model.fields.selection,name:l10n_br_nf3e.selection__res_company__nf3e_environment__1
+msgid "Produção"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_ggrcontrat__nf3e10_qUnidContrat
+msgid "Quantidade Contratada em kW ou kWh"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move_line__nf3e10_qFaturada
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_qFaturada
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_qFaturada
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_qFaturada
+msgid "Quantidade Faturada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move_line__nf3e10_qFaturada
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_qFaturada
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_qFaturada
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_qFaturada
+msgid ""
+"Quantidade Faturada\n"
+"Informar a quantidade de comercialização do produto ."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__nf3e10_qtdDias
+msgid "Quantidade de dias de medição"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_xNome
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_xNome
+msgid "Razão social ou Nome"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_company__nf3e10_xNome
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_partner__nf3e10_xNome
+#: model:ir.model.fields,help:l10n_br_nf3e.field_res_users__nf3e10_xNome
+msgid "Razão social ou Nome do destinatário / acessante"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_company__nf3e10_xNome
+msgid "Razão social ou Nome do emitente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gmedicao__nf3e10_nMed
+msgid "Referência para a medição"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gmedicao__nf3e10_nMed
+msgid "Referência para a medição ao qual se refere o item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gmedicao__nf3e10_nContrat
+msgid "Referência para o grupo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gmedicao__nf3e10_nContrat
+msgid "Referência para o grupo de demanda contratada ao qual se refere o item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_codRoteiroLeitura
+msgid "Roteiro da Leitura para uso operacional"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_codRoteiroLeitura
+msgid ""
+"Roteiro da Leitura para uso operacional\n"
+"Nome da unidade consumidora, exclusivamente para a classe Poder Público, desde que informado previamente e solicitado pelo consumidor."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_vSaldAnt
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_vSaldAnt
+msgid "Saldo Anterior de Créditos em kWh"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_vSaldAtual
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_vSaldAtual
+msgid "Saldo Atual de Créditos em kWh"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gsaldocred
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_gtiposaldo_gsaldocred
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gscee__nf3e10_gSaldoCred
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo__nf3e10_gSaldoCred
+msgid "Saldos de Créditos por posto tarifário"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_indSemCST
+msgid "Sem Situação Tributária para o ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_indSemCST
+msgid ""
+"Sem Situação Tributária para o ICMS\n"
+"Informar para itens que não tenham nenhuma relação com o ICMS.\n"
+"Quando informado o item NÃO PODE ter CFOP informado\n"
+"\n"
+"Se informado esse grupo o schema não permite informar nenhum dos grupos de ICMSXX"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gnf__nf3e10_serie
+msgid "Serie do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_UF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_UF
+msgid "Sigla da UF"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpSubClasse
+msgid "Subclasse de Consumo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpSubClasse
+msgid ""
+"Subclasse de Consumo da Unidade Consumidora\n"
+"01 - Residencial;\n"
+"02 - Residencial baixa renda;\n"
+"03 - Residencial baixa renda indígena;\n"
+"04 - Residencial baixa renda quilombola;\n"
+"05 - Residencial baixa renda benefício de prestação continuada da assistência social;\n"
+"06 - Residencial baixa renda multifamiliar; \n"
+"07 - Comercial; \n"
+"08 - Serviços de transporte, exceto tração elétrica; \n"
+"09 - Serviços de comunicação e telecomunicação;\n"
+"10 - Associação e entidades filantrópicas; \n"
+"11 - Templos religiosos; \n"
+"12 - Administração condominial: iluminação e instalações de uso comum de prédio ou conjunto de edificações;\n"
+"13 - Iluminação em rodovias solicitada por quem detenha concessão ou autorização para administração em rodovias;\n"
+"14 - Semáforos, radares e câmeras de monitoramento de trânsito, solicitados por quem detenha concessão ou autorização para controle de trânsito;\n"
+"15 - Outros serviços e outras atividades da classe comercial;\n"
+"16 - Agropecuária rural; \n"
+"17 - Agropecuária urbana;\n"
+"18 - Residencial rural; \n"
+"19 - Cooperativa de eletrificação rural;\n"
+"20 - Agroindustrial; \n"
+"21 - Serviço público de irrigação rural; \n"
+"22 - Escola agrotécnica;\n"
+"23 - Aquicultura; \n"
+"24 - Poder público Federal;\n"
+"25 - Poder Público Estadual ou Distrital;\n"
+"26 - Poder público Municipal;\n"
+"27 - Tração Elétrica;\n"
+"28 - Água esgoto ou saneamento;\n"
+"29 - Residencial Desconto Social;\n"
+"99 - Outros."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_serie
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_serie
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_serie
+msgid "Série do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_serie
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_serie
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_serie
+msgid ""
+"Série do documento fiscal\n"
+"Informar a série do documento fiscal (informar zero para série única)."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_tmedida
+msgid "TMedida"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_tpTarif
+msgid "Tarifa de aplicação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_tpTarif
+msgid ""
+"Tarifa de aplicação\n"
+"1 - TE; 2 - TUSD"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_partner__nf3e10_fone
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_res_users__nf3e10_fone
+msgid "Telefone"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_fone
+msgid "Telefone da pessoa jurídica"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tresptec__nf3e10_fone
+msgid ""
+"Telefone da pessoa jurídica a ser contatada\n"
+"Preencher com o Código DDD + número do telefone."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infrec__nf3e10_tMed
+msgid "Tempo médio de resposta do serviço"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_infrec__nf3e10_tMed
+msgid "Tempo médio de resposta do serviço (em segundos) dos últimos 5 minutos"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infnf3esupl__nf3e10_qrCodNF3e
+msgid "Texto com o QR-Code para consulta"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_infnf3esupl__nf3e10_qrCodNF3e
+msgid "Texto com o QR-Code para consulta da NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid ""
+"The NF3e transmission to the tax authority is not available yet, so the NF3e"
+" cannot be cancelled from Odoo."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid ""
+"The NF3e transmission to the tax authority is not available yet. Use the "
+"signed XML of the document authorization event."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "The contracted quantity origin of %s is not supported yet"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_tresptec
+msgid "Tipo Dados da Responsável Técnico"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gmedicao__nf3e10_tpMotNaoLeitura
+msgid "Tipo Motivo da não leitura"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gmedicao__nf3e10_tpMotNaoLeitura
+msgid ""
+"Tipo Motivo da não leitura\n"
+"1 - Consumidor; \n"
+"2 - Distribuidora; \n"
+"3 - Independente do Consumidor e distribuidora;"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpPagAnt
+msgid "Tipo Pagamento ou Pagamento Antecipado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpPagAnt
+msgid ""
+"Tipo Pagamento ou Pagamento Antecipado\n"
+"Informar:\n"
+"1 - Pagamento Antecipado de Serviços Não Continuados\n"
+"2 - Pagamento de serviços continuados (antes da prestação)\n"
+"3 - Fornecimento com pagamento realizado anteriormente\n"
+"\n"
+"Este campo é opcional e apenas deve ser informado em notas de pagamento que ocorre antes da prestação do serviço e na nota de fornecimento associada a esses pagamentos, Notas Normais que retratam a prestação de serviço continuado mensal da nota fatura (contendo ou não itens de serviço não continuado) em que o pagamento não foi antecipado NÃO DEVEM INFORMAR ESSE CAMPO.\n"
+"\n"
+"A tabela cClass terá uma flag que sinaliza se o tipo de item é de prestação continuada ou não continuada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_tprotnf3e
+msgid ""
+"Tipo Protocolo de status resultado do processamento da NF-3e (Modelo\n"
+"66)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_tpBand
+msgid "Tipo da bandeira tarifária"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_tpBand
+msgid ""
+"Tipo da bandeira tarifária\n"
+"1 – Verde; 2 – Amarela; 3 – Vermelha patamar 1; 4 – Vermelha patamar 2\n"
+"; 5 - Escassez Hidrica"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_tpFonteEnergia
+msgid "Tipo da fonte de energia"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gconsumidor__nf3e10_tpFonteEnergia
+msgid ""
+"Tipo da fonte de energia\n"
+"1-Hidráulica, \n"
+"2-Solar, \n"
+"3-Eólica,\n"
+" 4-Térmica, 5 - Hibrida"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpAcesso
+msgid "Tipo de Acessante"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpAcesso
+msgid ""
+"Tipo de Acessante\n"
+"0 - Gerador;\n"
+"1 – Cativo; \n"
+"2 – Livre;\n"
+"3 – Parcialmente Livre; \n"
+"4 – Consumidor Especial;\n"
+"5 – Parcialmente Especial;\n"
+" 6 – Comunhão; \n"
+"7 – Suprimento; \n"
+"8 – Distribuidora."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_tpAto
+msgid "Tipo de Ato da ANEEL"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_tpAto
+msgid ""
+"Tipo de Ato da ANEEL\n"
+"1 - REH (Resolução homologatória); 2 - Despacho; 3 - REN (Resolução Normativa)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_tpPosTar
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_tpPosTar
+msgid "Tipo de Posto Tarifário"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gsaldocred__nf3e10_tpPosTar
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtiposaldo_gsaldocred__nf3e10_tpPosTar
+msgid ""
+"Tipo de Posto Tarifário\n"
+"0=Único\n"
+"; 1=Ponta\n"
+"; 2=Fora Ponta; 3 = Intermediario"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_ggrcontrat__nf3e10_tpPosTar
+msgid "Tipo de Posto Tarifário Contratado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_ggrcontrat__nf3e10_tpPosTar
+msgid ""
+"Tipo de Posto Tarifário Contratado\n"
+"0 - Único\n"
+"; 1 - Ponta\n"
+"; 2 - Fora Ponta"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gproc__nf3e10_tpProc
+msgid "Tipo de Processo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gproc__nf3e10_tpProc
+msgid ""
+"Tipo de Processo\n"
+"0 - SEFAZ; 1 - Justiça Federal; 2 - Justiça Estadual"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gajustenf3eant__nf3e10_tpAjuste
+msgid "Tipo de ajuste a ser aplicado ao item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gajustenf3eant__nf3e10_tpAjuste
+msgid ""
+"Tipo de ajuste a ser aplicado ao item\n"
+"1 - Item a ser substituído (deve informar detItemAnt); \n"
+"\n"
+"2 - Item de substituição (nova imagem do item anterior); \n"
+"\n"
+"3 - Item a ser eliminado (deve informar detItemAnt); \n"
+"4 - Item a ser incluído referente a NF-3e anterior\n"
+";"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_ggrcontrat__nf3e10_tpGrContrat
+msgid "Tipo de grandeza contratada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_ggrcontrat__nf3e10_tpGrContrat
+msgid ""
+"Tipo de grandeza contratada\n"
+"1 - Demanda; 2 - Montante de Uso do Sistema de Distribuição; \n"
+"3 - Reserva de Capacidade; 4 - Energia Contratada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_tpGrMed
+msgid "Tipo de grandeza medida"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_tpGrMed
+msgid ""
+"Tipo de grandeza medida\n"
+"01 - Demanda; \n"
+"02 - Demanda Reativa\n"
+"03 - Energia Ativa; \n"
+"04 - Energia Ativa injetada\n"
+"05 - Energia Reativa"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gcontab__nf3e10_tpLanc
+msgid "Tipo de lançamento contábil"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gcontab__nf3e10_tpLanc
+msgid ""
+"Tipo de lançamento contábil\n"
+"Informar o tipo do lançamento contábil referente a esta conta (D/C)."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpFase
+msgid "Tipo de ligação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpFase
+msgid ""
+"Tipo de ligação\n"
+"1 - Monofásico; \n"
+"\n"
+"2 - Bifásico;\n"
+"\n"
+" 3 - Trifásico;"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gscee__nf3e10_tpPartComp
+msgid "Tipo de participação no sistema"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gscee__nf3e10_tpPartComp
+msgid ""
+"Tipo de participação no sistema de compensação de energia elétrica\n"
+"1 - Mini ou microgeração (somente uma UC); 2 -  Múltiplas unidades consumidoras (condomínio em área definida); 3 - Autoconsumo remoto; 4 - Geração compartilhada (consórcio ou cooperativa); \n"
+"5 - Mista (utilizar quando enquadrado em mais de um tipo de participação)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_cPosTarif
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_cPosTarif
+msgid "Tipo de posto tarifário"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_cPosTarif
+msgid ""
+"Tipo de posto tarifário\n"
+"0 - Único/Não se aplica; \n"
+"1 - Ponta;\n"
+"2 - Fora Ponta; \n"
+"3 - Intermediário; \n"
+"4 - Ponta Reservado;\n"
+"5 - Fora ponta Reservado; \n"
+"6 - Intermediário Reservado\n"
+"7 - Reservado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_cPosTarif
+msgid ""
+"Tipo de posto tarifário\n"
+"0 - Único/Não se aplica; 1 - Ponta; 2 - Fora Ponta; 3 - Intermediário; 4 -  Ponta Reservado ; 5 - Fora ponta Reservado; 6 - Intermediário Reservado\n"
+"; 7=Reservado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpAmb
+msgid "Tipo do Ambiente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_tpAmb
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_tpAmb
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_tpAmb
+msgid ""
+"Tipo do Ambiente\n"
+"1 - Produção; \n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_IBSCBSTot
+msgid "Totais de IBS e CBS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vCOFINSEfet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vCOFINSEfet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vCOFINSEfet
+msgid "Total do Valor Efetivo do COFINS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vPISEfet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vPISEfet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vPISEfet
+msgid "Total do Valor Efetivo do PIS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS10
+msgid "Tributada e com cobrança do ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_icms10
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS10
+msgid "Tributada e com cobrança do ICMS por substituição tributária"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_icms40
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS40
+msgid "Tributação Isenta, Não tributada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS51
+msgid "Tributação com Diferimento"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_icms51
+msgid ""
+"Tributação com Diferimento\n"
+"A exigência do preenchimento das informações do ICMS diferido fica a critério\n"
+"de cada UF"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS51
+msgid ""
+"Tributação com Diferimento\n"
+"A exigência do preenchimento das informações do ICMS diferido fica a critério de cada UF"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS60
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_CST
+msgid "Tributação pelo ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model,name:l10n_br_nf3e.model_nf3e_10_icms60
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_ICMS60
+msgid ""
+"Tributação pelo ICMS\n"
+"60 - ICMS cobrado anteriormente por substituição tributária"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_CST
+msgid ""
+"Tributação pelo ICMS \n"
+"60 - ICMS cobrado anteriormente por substituição tributária"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gpix__nf3e10_urlQRCodePIX
+msgid "URL do QRCode do PIX"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gpix__nf3e10_urlQRCodePIX
+msgid "URL do QRCode do PIX que será apresentado na fatura"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_uMed
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__nf3e10_uMed
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_uMed
+msgid "Unidade Básica de Medida"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_uMed
+msgid ""
+"Unidade Básica de Medida\n"
+"1 - kW\n"
+"; 2 - kWh; \n"
+"3 - kVAr; \n"
+"4 - kVArh"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_uMed
+msgid ""
+"Unidade Básica de Medida\n"
+"1=kW\n"
+"; 2=kWh; \n"
+"3=kVAr; \n"
+"4=kVArh; 5=UN"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__nf3e10_uMed
+msgid ""
+"Unidade Básica de Medida\n"
+"1=kW; 2=kWh; 3=kVAr; 4=kVArh"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_uMed
+msgid "Unidade de Medida"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_uMed
+msgid ""
+"Unidade de Medida\n"
+"1=kW (Aplica-se somente a TUSD); 2=kWh (Aplica-se tanto a TUSD quanto TE)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#. odoo-python
+#: code:addons/l10n_br_nf3e/models/document.py:0
+msgid "Unit of measure of %s"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_cofinsefet__nf3e10_vCOFINSEfet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vCOFINSEfet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vCOFINSEfet
+msgid "Valor Efetivo do COFINS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_nf3e_billing_history_line__nf3e10_vFat
+msgid "Valor Faturado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vNF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vNF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vNF
+msgid "Valor Total da NF-e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vFCP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vFCP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vFCP
+msgid "Valor Total do FCP"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vFCPST
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_vFCPST
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vFCPST
+msgid ""
+"Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição "
+"tributária."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vFCP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_vFCP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vFCP
+msgid "Valor Total do FCP (Fundo de Combate à Pobreza)."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vFCPST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vFCPST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vFCPST
+msgid "Valor Total do FCP (vFCPST)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vICMS
+msgid "Valor Total do ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vST
+msgid "Valor Total do ICMS ST"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vICMSDeson
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vICMSDeson
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vICMSDeson
+msgid "Valor Total do ICMS desonerado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vProd
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vProd
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vProd
+msgid "Valor Total dos produtos e serviços"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vBCSTRet
+msgid "Valor da BC"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_cofins__nf3e10_vBC
+msgid "Valor da BC do COFINS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_cofinsefet__nf3e10_vBCCOFINSEfet
+msgid "Valor da BC do COFINS efetivo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vBC
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vBC
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms00__nf3e10_vBC
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_vBC
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_vBC
+msgid "Valor da BC do ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vBCST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vBCST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms10__nf3e10_vBCST
+msgid "Valor da BC do ICMS ST"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vBCSTRet
+msgid "Valor da BC do ICMS ST retido anteriormente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pis__nf3e10_vBC
+msgid "Valor da BC do PIS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pisefet__nf3e10_vBCPISEfet
+msgid "Valor da BC do PIS efetivo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vBCFCPSTRet
+msgid "Valor da Base de cálculo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vBCFCPSTRet
+msgid "Valor da Base de cálculo do FCP retido anteriormente por ST."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vRetCSLL
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vRetCSLL
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vRetCSLL
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitem_rettrib__nf3e10_vRetCSLL
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant_rettrib__nf3e10_vRetCSLL
+msgid "Valor da CSLL retida"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vBCEfet
+msgid "Valor da base de cálculo efetiva"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_vMed
+msgid "Valor da medição"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_vMed
+msgid ""
+"Valor da medição\n"
+"(vMedAtu – vMedAnt) * vConst"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_vMedAnt
+msgid "Valor da medição (leitura) anterior"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_vMedAtu
+msgid "Valor da medição (leitura) atual"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_vTarifAplic
+msgid "Valor da tarifa aplicada"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gtarif__nf3e10_vTarifHom
+msgid "Valor da tarifa homologada pela ANEEL"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_vAdBand
+msgid "Valor do Adicional tarifário"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_vAdBand
+msgid ""
+"Valor do Adicional tarifário\n"
+"Resultado decorrente da aplicação do adicional de cada bandeira sobre o consumo faturado no período considerado entre as datas de início e fim.\n"
+"Quando for bandeira verde o campo valor do adicional tarifário deverá ser preenchido com zero (0.00)."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vCOFINS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vCOFINS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vCOFINS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_cofins__nf3e10_vCOFINS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vCOFINS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vCOFINS
+msgid "Valor do COFINS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vRetCofins
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vRetCofins
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vRetCofins
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitem_rettrib__nf3e10_vRetCofins
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant_rettrib__nf3e10_vRetCofins
+msgid "Valor do COFNS retido"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vFCPSTRet
+msgid "Valor do FCP retido"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vFCPSTRet
+msgid "Valor do FCP retido por substituição tributária."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms00__nf3e10_vICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_vICMS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_vICMS
+msgid "Valor do ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vICMSSubstituto
+msgid "Valor do ICMS Próprio"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vICMSSubstituto
+msgid "Valor do ICMS Próprio do Substituto cobrado em operação anterior"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vICMSST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vICMSST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms10__nf3e10_vICMSST
+msgid "Valor do ICMS ST retido"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vICMSSTRet
+msgid "Valor do ICMS ST retido anteriormente"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_vICMSDeson
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms40__nf3e10_vICMSDeson
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms51__nf3e10_vICMSDeson
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vICMSDeson
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_vICMSDeson
+msgid "Valor do ICMS de desoneração"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms60__nf3e10_vICMSEfet
+msgid "Valor do ICMS efetivo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vFCP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vFCP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms00__nf3e10_vFCP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms10__nf3e10_vFCPST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_vFCP
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_vFCP
+msgid "Valor do ICMS relativo ao Fundo"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vFCPST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vFCPST
+msgid "Valor do ICMS relativo ao Fundo (vFCPST)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vFCP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vFCPST
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vFCP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vFCPST
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms00__nf3e10_vFCP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms10__nf3e10_vFCPST
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms20__nf3e10_vFCP
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms90__nf3e10_vFCP
+msgid "Valor do ICMS relativo ao Fundo de Combate à Pobreza (FCP)."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vIRRF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vIRRF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vIRRF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitem_rettrib__nf3e10_vIRRF
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant_rettrib__nf3e10_vIRRF
+msgid "Valor do IRRF retido"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vPIS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vPIS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vPIS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vPIS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vPIS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pis__nf3e10_vPIS
+msgid "Valor do PIS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vRetPIS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vRetPIS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vRetPIS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitem_rettrib__nf3e10_vRetPIS
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant_rettrib__nf3e10_vRetPIS
+msgid "Valor do PIS retido"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gadband__nf3e10_vAdBandAplic
+msgid "Valor do adicional tarifário aplicado"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gcontab__nf3e10_vContab
+msgid "Valor do lançamento na conta contábil"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gcontab__nf3e10_vContab
+msgid ""
+"Valor do lançamento na conta contábil\n"
+"Informar o valor do lançamento contábil referente a cada conta a débito e a crédito."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vPISEfet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vPISEfet
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pisefet__nf3e10_vPISEfet
+msgid "Valor efetivo do PIS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_vMedPerdaTran
+msgid "Valor medido após perda de transformação"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_vMedPerdaTran
+msgid ""
+"Valor medido após perda de transformação\n"
+"vMed * (1 + pPerdTran/100)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tmedida__nf3e10_vMedPerdaTec
+msgid "Valor medido após perda técnica"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vTotDFe
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_vTotDFe
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vTotDFe
+msgid "Valor total do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_vTotDFe
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_vTotDFe
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_vTotDFe
+msgid ""
+"Valor total do documento fiscal \n"
+"(vNF + total do IBS + total da CBS)"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move_line__nf3e10_vProd
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_vProd
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vProd
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vProd
+msgid "Valor total do item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move_line__nf3e10_vItem
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_vItem
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vItem
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vItem
+msgid "Valor unitário do item"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_detitemant__nf3e10_vItem
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_vItem
+msgid ""
+"Valor unitário do item\n"
+"Informar o valor sem a influência da decisão judicial/administrativa."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move_line__nf3e10_vItem
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document_line__nf3e10_vItem
+msgid ""
+"Valor unitário do item\n"
+"O valor unitário do item no caso de energia elétrica corresponde ao valor da tarifa e dos tributos que devam compor a base de cálculo. O item pode estar acrescido do adicional da bandeira tarifária ou o adicional de bandeira poderá ser lançado como um item específico.\n"
+"Este campo também corresponde ao preço médio efetivo relativo ao consumo ativo do período, quando aplicáveis os termos do inciso I da clausula primeira do Convênio ICMS 77/11 (DEVEC)."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_verAplic
+msgid "Versão do Aplicativo que processou"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_infprot__nf3e10_verAplic
+msgid "Versão do Aplicativo que processou a NF-3e"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_versao
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_versao
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_versao
+msgid "Versão do leiaute"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_verProc
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_account_move__nf3e10_verProc
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_verProc
+msgid "Versão do processo de emissão"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_bank_statement_line__nf3e10_verProc
+#: model:ir.model.fields,help:l10n_br_nf3e.field_account_move__nf3e10_verProc
+#: model:ir.model.fields,help:l10n_br_nf3e.field_l10n_br_fiscal_document__nf3e10_verProc
+msgid ""
+"Versão do processo de emissão\n"
+"Informar a versão do aplicativo emissor de NF-3e."
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_cofins__nf3e10_CST
+msgid "classificação Tributária do COFINS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_cofins__nf3e10_CST
+msgid ""
+"classificação Tributária do COFINS\n"
+"01 – Tributável com alíquota básica\n"
+"02 – Tributável com alíquota diferenciada\n"
+"06 – Tributável com alíquota erro\n"
+"07 – Operação isenta de contribuição\n"
+"08 – Operação sem incidência da contribuição\n"
+"09 – Operação com suspensão da contribuição  \n"
+"49 – Outras operações de saída"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_pis__nf3e10_CST
+msgid "classificação Tributária do PIS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_pis__nf3e10_CST
+msgid ""
+"classificação Tributária do PIS\n"
+"01 – Tributável com alíquota básica\n"
+"02 – Tributável com alíquota diferenciada\n"
+"06 – Tributável com alíquota erro\n"
+"07 – Operação isenta de contribuição\n"
+"08 – Operação sem incidência da contribuição\n"
+"09 – Operação com suspensão da contribuição  \n"
+"49 – Outras operações de saída"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms00__nf3e10_CST
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_icms10__nf3e10_CST
+msgid "classificação Tributária do Serviço"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms00__nf3e10_CST
+msgid ""
+"classificação Tributária do Serviço\n"
+"00 - tributação normal ICMS"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,help:l10n_br_nf3e.field_nf3e_10_icms10__nf3e10_CST
+msgid ""
+"classificação Tributária do Serviço\n"
+"10=Tributada e com cobrança do ICMS por substituição tributária"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_gprocref__nf3e10_pFCPST
+msgid "pFCPST"
+msgstr ""
+
+#. module: l10n_br_nf3e
+#: model:ir.model.fields,field_description:l10n_br_nf3e.field_nf3e_10_tprotnf3e__nf3e10_versao
+msgid "versao"
+msgstr ""
