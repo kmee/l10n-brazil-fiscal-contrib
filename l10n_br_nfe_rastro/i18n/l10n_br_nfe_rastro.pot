@@ -16,18 +16,21 @@ msgstr ""
 #. module: l10n_br_nfe_rastro
 #. odoo-python
 #: code:addons/l10n_br_nfe_rastro/models/document.py:0
+#, python-format
 msgid "%(item)s, lot %(lot)s: expiration date missing."
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
 #. odoo-python
 #: code:addons/l10n_br_nfe_rastro/models/document.py:0
+#, python-format
 msgid "%(item)s, lot %(lot)s: manufacturing date missing."
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
 #. odoo-python
 #: code:addons/l10n_br_nfe_rastro/models/document.py:0
+#, python-format
 msgid ""
 "%(item)s, lot %(lot)s: the expiration date is before the manufacturing date."
 msgstr ""
@@ -35,24 +38,28 @@ msgstr ""
 #. module: l10n_br_nfe_rastro
 #. odoo-python
 #: code:addons/l10n_br_nfe_rastro/models/document.py:0
+#, python-format
 msgid "%(item)s, lot %(lot)s: the manufacturing date is after the issue date."
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
 #. odoo-python
 #: code:addons/l10n_br_nfe_rastro/models/document.py:0
+#, python-format
 msgid "%(item)s: lot number missing."
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
 #. odoo-python
 #: code:addons/l10n_br_nfe_rastro/models/document.py:0
+#, python-format
 msgid "%(item)s: the NF-e accepts at most %(max)s lots per item."
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
 #. odoo-python
 #: code:addons/l10n_br_nfe_rastro/models/document.py:0
+#, python-format
 msgid ""
 "%(item)s: the traceability group (lot number, quantity, manufacturing and "
 "expiration dates) is required."
@@ -69,13 +76,15 @@ msgid "Expiration Date"
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
-#: model:ir.model,name:l10n_br_nfe_rastro.model_l10n_br_fiscal_document
-msgid "Fiscal Document"
+#: model:ir.model,name:l10n_br_nfe_rastro.model_l10n_br_fiscal_document_line
+msgid ""
+"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
+"não contribuinte de ICMS"
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
-#: model:ir.model,name:l10n_br_nfe_rastro.model_l10n_br_fiscal_document_line
-msgid "Fiscal Document Line"
+#: model:ir.model,name:l10n_br_nfe_rastro.model_l10n_br_fiscal_document
+msgid "Informações de exportação"
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
@@ -116,6 +125,7 @@ msgstr ""
 #. module: l10n_br_nfe_rastro
 #. odoo-python
 #: code:addons/l10n_br_nfe_rastro/models/document.py:0
+#, python-format
 msgid ""
 "The NF-e traceability data (rastro) is incomplete or inconsistent:\n"
 "%(errors)s"
