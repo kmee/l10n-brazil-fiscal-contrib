@@ -4,7 +4,7 @@
 {
     "name": "DC-e abstract models",
     "summary": "Esquemas, bindings e modelos abstratos da DC-e gerados do XSD oficial",
-    "version": "18.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",
