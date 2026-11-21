@@ -1,0 +1,1496 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_dce_spec
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_cPais__1058
+msgid "1058"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__11
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__11
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__11
+msgid "11"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__12
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__12
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__12
+msgid "12"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__13
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__13
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__13
+msgid "13"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__14
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__14
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__14
+msgid "14"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__15
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__15
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__15
+msgid "15"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__16
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__16
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__16
+msgid "16"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__17
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__17
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__17
+msgid "17"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__21
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__21
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__21
+msgid "21"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__22
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__22
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__22
+msgid "22"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__23
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__23
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__23
+msgid "23"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__24
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__24
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__24
+msgid "24"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__25
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__25
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__25
+msgid "25"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__26
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__26
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__26
+msgid "26"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__27
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__27
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__27
+msgid "27"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__28
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__28
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__28
+msgid "28"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__29
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__29
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__29
+msgid "29"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__31
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__31
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__31
+msgid "31"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__32
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__32
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__32
+msgid "32"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__33
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__33
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__33
+msgid "33"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__35
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__35
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__35
+msgid "35"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__41
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__41
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__41
+msgid "41"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__42
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__42
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__42
+msgid "42"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__43
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__43
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__43
+msgid "43"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__50
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__50
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__50
+msgid "50"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__51
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__51
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__51
+msgid "51"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__52
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__52
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__52
+msgid "52"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_cUF__53
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tretdce__dce10_cUF__53
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_cUF__53
+msgid "53"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_ide__dce10_mod__99
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_mod__99
+msgid "99"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__ac
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__ac
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__ac
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__ac
+msgid "AC"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__al
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__al
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__al
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__al
+msgid "AL"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__am
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__am
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__am
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__am
+msgid "AM"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__ap
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__ap
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__ap
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__ap
+msgid "AP"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_spec_mixin_dce
+msgid "Abstract Model"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_autXML
+msgid "Autorizados para acessar o XML da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_autxml
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infdce__dce10_autXML
+msgid ""
+"Autorizados para acessar o XML da DCe\n"
+"Informar CNPJ ou CPF. Preencher os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__ba
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__ba
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__ba
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__ba
+msgid "BA"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_xBairro
+msgid "Bairro"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_xPais__brasil
+msgid "Brasil"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__ce
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__ce
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__ce
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__ce
+msgid "CE"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_CEP
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_CEP
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_CEP
+msgid "CEP"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendereco__dce10_CEP
+msgid ""
+"CEP\n"
+"Informar os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendedest__dce10_CEP
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_CEP
+msgid ""
+"CEP\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_autxml__dce10_CNPJ
+msgid "CNPJ do autorizado"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_autxml__dce10_CNPJ
+msgid ""
+"CNPJ do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_autxml__dce10_CPF
+msgid "CPF do autorizado"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_autxml__dce10_CPF
+msgid ""
+"CPF do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__dce10_chDCe
+msgid "Chave de acesso da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_xCpl
+msgid "Complemento"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsect__dce10_xTexto
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsemit__dce10_xTexto
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsfisco__dce10_xTexto
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsmarketplace__dce10_xTexto
+msgid "Conteúdo do Campo"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_prod__dce10_NCM
+msgid "Código NCM"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_prod__dce10_NCM
+msgid ""
+"Código NCM\n"
+"Capítulo do Código NCM com 2 dígitos ou NCM completo"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_cUF
+msgid "Código da UF de emissão e autorização"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_cUF
+msgid ""
+"Código da UF de emissão e autorização da DCe\n"
+"Código da UF de emissão e autorização do Documento Fiscal. Utilizar a\n"
+"Tabela do IBGE de código de unidades da federação"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_cPais
+msgid "Código do País"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_cPais
+msgid ""
+"Código do País\n"
+"1058=Brasil"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_cMun
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_cMun
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_cMun
+msgid "Código do município"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendedest__dce10_cMun
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_cMun
+msgid "Código do município (utilizar a tabela do IBGE)"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendereco__dce10_cMun
+msgid ""
+"Código do município (utilizar a tabela do IBGE), informar 9999999 para "
+"operações com o exterior"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_cPais
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_cPais
+msgid "Código do país"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendedest__dce10_cPais
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendereco__dce10_cPais
+msgid ""
+"Código do país\n"
+"Utilizar a tabela do BACEN"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__dce10_cStat
+msgid "Código do status da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_inffisco__dce10_cMsg
+msgid "Código do status da mensagem do fisco"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_cDC
+msgid "Código numérico que compõe a Chave"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_cDC
+msgid ""
+"Código numérico que compõe a Chave de Acesso.\n"
+"Código aleatório gerado pelo emitente, com o objetivo de evitar acessos indevidos ao documento"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__df
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__df
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__df
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__df
+msgid "DF"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_prod
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_det__dce10_prod
+msgid "Dados do Produto ou Serviço"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_infprot
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tprotdce__dce10_infProt
+msgid "Dados do protocolo de status"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_total
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_total
+msgid "Dados dos totais da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_transp
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_transp
+msgid "Dados dos transportes da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_dhEmi
+msgid "Data e hora de emissão"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_dhEmi
+msgid ""
+"Data e hora de emissão do documento fiscal\n"
+"Formato UTC (AAAA-MM-DDThh:mm:ssTZD, onde TZD = +hh:mm ou -hh:mm)"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__dce10_dhRecbto
+msgid "Data e hora de processamento"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infprot__dce10_dhRecbto
+msgid "Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SS TZD"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_autxml__dce10_autXML_infDCe_id
+msgid "Dce10 Autxml Infdce"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_det__dce10_det_infDCe_id
+msgid "Dce10 Det Infdce"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsect__dce10_obsECT_infAdic_id
+msgid "Dce10 Obsect Infadic"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsemit__dce10_obsEmit_infAdic_id
+msgid "Dce10 Obsemit Infadic"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsfisco__dce10_obsFisco_infAdic_id
+msgid "Dce10 Obsfisco Infadic"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsmarketplace__dce10_obsMarketplace_infAdic_id
+msgid "Dce10 Obsmarketplace Infadic"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_prod__dce10_xProd
+msgid "Descrição do produto"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_prod__dce10_xProd
+msgid "Descrição do produto, bem ou mercadoria"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tretdce__dce10_xMotivo
+msgid "Descrição literal do status"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__dce10_xMotivo
+msgid "Descrição literal do status da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tretdce__dce10_xMotivo
+msgid "Descrição literal do status do do retorno da consulta"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_det
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_det
+msgid "Detalhamento de itens da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__dce10_digVal
+msgid "Digest Value da DCe processado"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infprot__dce10_digVal
+msgid ""
+"Digest Value da DCe processado. Utilizado para conferir a integridade da DCe"
+" original"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_cDV
+msgid "Digito verificador da chave de acesso"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_cDV
+msgid ""
+"Digito verificador da chave de acesso\n"
+"Informar o dígito de controle da chave de acesso documento fiscal, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__es
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__es
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__es
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__es
+msgid "ES"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__ex
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__ex
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__ex
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__ex
+msgid "EX"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_email
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_email
+msgid "Endereço de E-mail"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_dest__dce10_enderDest
+msgid "Endereço do destinatário / assinante"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_emit__dce10_enderEmit
+msgid "Endereço do emitente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_marketplace__dce10_Site
+msgid "Endereço ou site do Marketplace"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_tpEmis
+msgid "Forma de emissão do Documento Fiscal"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_tpEmis
+msgid ""
+"Forma de emissão do Documento Fiscal\n"
+"1 - Normal (não contingência); 9 - Contingência off-line da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__go
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__go
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__go
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__go
+msgid "GO"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infadic__dce10_obsEmit
+msgid "Grupo Campo de uso livre do Emitente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_obsemit
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infadic__dce10_obsEmit
+msgid ""
+"Grupo Campo de uso livre do Emitente\n"
+"Informar o nome do campo no atributo xCampo e o conteúdo do campo no xTexto"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infadic__dce10_obsFisco
+msgid "Grupo Campo de uso livre do Fisco"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_obsfisco
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infadic__dce10_obsFisco
+msgid ""
+"Grupo Campo de uso livre do Fisco\n"
+"Informar o nome do campo no atributo xCampo e o conteúdo do campo no xTexto"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infadic__dce10_obsMarketplace
+msgid "Grupo Campo de uso livre do MarketPlace"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_obsmarketplace
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infadic__dce10_obsMarketplace
+msgid ""
+"Grupo Campo de uso livre do MarketPlace\n"
+"Informar o nome do campo no atributo xCampo e o conteúdo do campo no xTexto"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infadic__dce10_obsECT
+msgid "Grupo Campo de uso livre dos Correios"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_obsect
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infadic__dce10_obsECT
+msgid ""
+"Grupo Campo de uso livre dos Correios\n"
+"Informar o nome do campo no atributo xCampo e o conteúdo do campo no xTexto"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_infDec
+msgid "Grupo para Declaraçao"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_infdec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infdce__dce10_infDec
+msgid "Grupo para Declaraçao do usuário emitente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__dce10_Id
+msgid "Id"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_Id
+msgid "Identificador da tag a ser assinada"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infdce__dce10_Id
+msgid ""
+"Identificador da tag a ser assinada\n"
+"Informar a chave de acesso precedida do literal 'DCe'"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_emit
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_ide
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_ide
+msgid "Identificação da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_emit
+msgid "Identificação da DCe (emit)"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_Transportadora
+msgid "Identificação da Transportadora"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_transportadora
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infdce__dce10_Transportadora
+msgid "Identificação da Transportadora (uso exclusivo Transportadora)"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tretdce__dce10_cUF
+msgid "Identificação da UF"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__dce10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tretdce__dce10_tpAmb
+msgid "Identificação do Ambiente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infprot__dce10_tpAmb
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tretdce__dce10_tpAmb
+msgid ""
+"Identificação do Ambiente:\n"
+"1 - Produção\n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_Fisco
+msgid "Identificação do Fisco"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_fisco
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infdce__dce10_Fisco
+msgid "Identificação do Fisco (uso exclusivo fisco)"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_Marketplace
+msgid "Identificação do Marketplace"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_marketplace
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infdce__dce10_Marketplace
+msgid "Identificação do Marketplace (uso exclusivo Marketplace)"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_dest
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_dest
+msgid "Identificação do destinatário da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_dest__dce10_idOutros
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_emit__dce10_idOutros
+msgid "Identificação do destinatário outros"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_dest__dce10_idOutros
+msgid ""
+"Identificação do destinatário outros\n"
+"Identificação do destinatário não obrigado a inscrição do CPF tais como estrangeiro, indígena e quilombola;\n"
+"Em caso de não contar CPF do assinante, informar o RG"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_emit__dce10_idOutros
+msgid ""
+"Identificação do destinatário outros\n"
+"Identificação do emitente não obrigado a inscrição do CPF ou CNPJ tais como estrangeiro, indígena e quilombola. Observação: Campo aceita algarismos, letras (maiúsculas e minúsculas) e os caracteres do conjunto que segue: [:.+-/()]"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_nSiteAutoriz
+msgid "Identificação do número do Site"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_nSiteAutoriz
+msgid ""
+"Identificação do número do Site do Autorizador de recepção da DCe\n"
+"Se o autorizador da DCe possuir apenas um site deverá ser informado com Zero (0), em caso de Autorizador trabalhar com múltiplos sites indicar o número do site para qual foi endereçada a DCE (1 a 9).\n"
+"\n"
+"Observação: o ambiente autorizador que trabalhar com mais de um Site deverá divulgar para cada endereço de site qual número correspondente de nSiteAutoriz o contribuinte pode usar"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_ect
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_ECT
+msgid "Identificação dos correios"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_infadic
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_infAdic
+msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infadic__dce10_infAdECT
+msgid "Informações Adicionais do Correio"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infadic__dce10_infAdMarketplace
+msgid "Informações Adicionais do MarketPlace"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infadic__dce10_infAdFisco
+msgid "Informações adicionais de interesse"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infadic__dce10_infAdFisco
+msgid ""
+"Informações adicionais de interesse do Fisco\n"
+"Norma referenciada, informações complementares, etc"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_det__dce10_infAdProd
+msgid "Informações adicionais do item"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infadic__dce10_infCpl
+msgid "Informações complementares de interesse"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infadic__dce10_infCpl
+msgid "Informações complementares de interesse do Emitente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_infdce
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tdce__dce10_infDCe
+msgid "Informações da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tdce__dce10_infSolicDCe
+msgid "Informações de solicitação da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_infsolicdce
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tdce__dce10_infSolicDCe
+msgid "Informações de solicitação da DCe pelo Fisco"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_infdcesupl
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tdce__dce10_infDCeSupl
+msgid "Informações suplementares da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_xLgr
+msgid "Logradouro"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__ma
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__ma
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__ma
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__ma
+msgid "MA"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__mg
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__mg
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__mg
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__mg
+msgid "MG"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__ms
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__ms
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__ms
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__ms
+msgid "MS"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__mt
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__mt
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__mt
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__mt
+msgid "MT"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_inffisco
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_inffisco__dce10_xMsg
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tprotdce__dce10_infFisco
+msgid "Mensagem do Fisco"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_transp__dce10_modTrans
+msgid "Modalidade do transporte"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_transp__dce10_modTrans
+msgid ""
+"Modalidade do transporte\n"
+"0 - Transporte pelos correios;\n"
+"1 - Transporte por contra própria;\n"
+"2 - Transporte por empresa transportadora"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_mod
+msgid "Modelo da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_mod
+msgid ""
+"Modelo da DCe\n"
+"Utilizar o código 99 para identificação da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_autxml__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_dest__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_det__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ect__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_emit__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_fisco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infadic__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdcesupl__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdec__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_inffisco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infsolicdce__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_marketplace__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsect__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsemit__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsfisco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_obsmarketplace__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_prod__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tdce__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_timp__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_total__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tprotdce__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_transp__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_transportadora__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tretdce__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_spec_mixin_dce__brl_currency_id
+msgid "Moeda"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_xPais
+msgid "Nome do País exemplo"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_xPais
+msgid "Nome do País exemplo: Brasil ou BRASIL"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_xMun
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_xMun
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_xMun
+msgid "Nome do município"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendereco__dce10_xMun
+msgid "Nome do município, informar EXTERIOR para operações com o exterior"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_xPais
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_xPais
+msgid "Nome do país"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_fisco__dce10_xOrgao
+msgid "Nome do órgão"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_nro
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_nro
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_nro
+msgid "Número"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_dest__dce10_CNPJ
+msgid "Número do CNPJ"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_dest__dce10_CNPJ
+msgid ""
+"Número do CNPJ\n"
+"Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros.\n"
+"\t\t\t\t\t\t\tInformar os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_transp__dce10_CNPJTransp
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_transportadora__dce10_CNPJ
+msgid "Número do CNPJ da Transportadora"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_marketplace__dce10_CNPJ
+msgid "Número do CNPJ do Marketplace"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_emit__dce10_CNPJ
+msgid "Número do CNPJ do emitente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_fisco__dce10_CNPJ
+msgid "Número do CNPJ do órgão"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ect__dce10_CNPJ
+msgid "Número do CNPJ dos correios"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_dest__dce10_CPF
+msgid "Número do CPF"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_dest__dce10_CPF
+msgid ""
+"Número do CPF\n"
+"Informar os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_emit__dce10_CPF
+msgid "Número do CPF do emitente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_emit__dce10_CPF
+msgid ""
+"Número do CPF do emitente\n"
+"Informar os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__dce10_nProt
+msgid "Número do Protocolo de Status da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_nDC
+msgid "Número do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_nDC
+msgid ""
+"Número do documento fiscal\n"
+"Número que identifica o documento fiscal 1 a 999999999"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_det__dce10_nItem
+msgid "Número do item da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdec__dce10_xObs1
+msgid "Observação 1 ao usuário emitente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infdec__dce10_xObs1
+msgid ""
+"Observação 1 ao usuário emitente\n"
+"Deverá conter o texto fixo “É contribuinte de ICMS qualquer pessoa física ou jurídica, que realize, com habitualidade ou em volume que caracterize intuito comercial, operações de circulação de mercadoria ou prestações de serviços de transportes interestadual e intermunicipal e de comunicação, ainda que as operações e prestações de iniciem no exterior (Lei Complementar nº 87/96, Art. 4º)”"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdec__dce10_xObs2
+msgid "Observação 2 ao usuário emitente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_infdec__dce10_xObs2
+msgid ""
+"Observação 2 ao usuário emitente\n"
+"Deverá conter o texto fixo “Constitui crime contra a ordem tributária suprimir ou reduzir tributo, ou contribuição social e qualquer acessório: quando negar ou deixar de fornecer, quando obrigatório, nota fiscal ou documento equivalente, relativa a venda de mercadoria ou prestação de serviço, efetivamente realizada ou fornece-la em desacordo com a legislação. Sob pena de reclusão de 2 (dois) e 5 (cinco) anos, e multa (Lei 8.137/90, Art 1ª, V)”."
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__pa
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__pa
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__pa
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__pa
+msgid "PA"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__pb
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__pb
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__pb
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__pb
+msgid "PB"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__pe
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__pe
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__pe
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__pe
+msgid "PE"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__pi
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__pi
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__pi
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__pi
+msgid "PI"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__pr
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__pr
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__pr
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__pr
+msgid "PR"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tretdce__dce10_dhRecbto
+msgid "Preenchido com a data e hora"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tretdce__dce10_dhRecbto
+msgid ""
+"Preenchido com a data e hora do processamento (informado também no caso de rejeição).\n"
+"Formato: “AAAA-MM-DDThh:mm:ssTZD” (UTC – Universal Coordinated Time)"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_prod__dce10_qCom
+msgid "Quantidade"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__rj
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__rj
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__rj
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__rj
+msgid "RJ"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__rn
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__rn
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__rn
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__rn
+msgid "RN"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__ro
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__ro
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__ro
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__ro
+msgid "RO"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__rr
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__rr
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__rr
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__rr
+msgid "RR"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__rs
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__rs
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__rs
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__rs
+msgid "RS"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_transportadora__dce10_xNome
+msgid "Razão Social ou Nome da Transportadora"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_marketplace__dce10_xNome
+msgid "Razão Social ou Nome do Marketplace"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ect__dce10_xNome
+msgid "Razão Social ou Nome dos correios"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_dest__dce10_xNome
+msgid "Razão social ou Nome do destinatário"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_emit__dce10_xNome
+msgid "Razão social ou Nome do emitente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tretdce__dce10_protDCe
+msgid "Resposta ao processamento da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__sc
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__sc
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__sc
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__sc
+msgid "SC"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__se
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__se
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__se
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__se
+msgid "SE"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__sp
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__sp
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__sp
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__sp
+msgid "SP"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_fisco__dce10_UF
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_UF
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_UF
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_UF
+msgid "Sigla da UF"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_tendereco__dce10_UF
+msgid "Sigla da UF, informar EX para operações com o exterior"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infsolicdce__dce10_xSolic
+msgid "Solicitação do pedido de emissão da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_serie
+msgid "Série do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_serie
+msgid ""
+"Série do documento fiscal\n"
+"Informar a série do documento fiscal (informar zero para série única)"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_fisco__dce10_UF__to
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendedest__dce10_UF__to
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendeemi__dce10_UF__to
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_tendereco__dce10_UF__to
+msgid "TO"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendedest__dce10_fone
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendeemi__dce10_fone
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tendereco__dce10_fone
+msgid "Telefone"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdcesupl__dce10_qrCodDCe
+msgid "Texto com o QR-Code impresso da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_tendeemi
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_tendereco
+msgid "Tipo Dados do Endereço"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_tendedest
+msgid "Tipo Dados do Endereço Destinatario"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_timp
+msgid "Tipo Dados do Imposto DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_tdce
+msgid "Tipo Declaração de Conteúdo Eletrônica"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_tprotdce
+msgid ""
+"Tipo Protocolo de status resultado do processamento da DCe (Modelo\n"
+"99)"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model,name:l10n_br_dce_spec.model_dce_10_tretdce
+msgid "Tipo Retorno do Pedido de Autorização de DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_tpAmb
+msgid "Tipo do Ambiente"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_tpAmb
+msgid ""
+"Tipo do Ambiente\n"
+"1 - Produção\n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_tpEmit
+msgid "Tipo do Emitente da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_tpEmit
+msgid ""
+"Tipo do Emitente da DCe\n"
+"0 - App Fisco\n"
+"1 - Marketplace\n"
+"2 - Emissor próprio\n"
+"3 - Transportadora\n"
+"4 - ECT"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_transp__dce10_modTrans__0
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_modTrans__0
+msgid "Transporte pelos correios"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_transp__dce10_modTrans__1
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_modTrans__1
+msgid "Transporte por contra própria"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_transp__dce10_modTrans__2
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_modTrans__2
+msgid "Transporte por empresa transportadora"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdcesupl__dce10_urlChave
+msgid "URL para consulta chave de acesso"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_total__dce10_vDC
+msgid "Valor Total da DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_prod__dce10_vProd
+msgid "Valor total brutp do item"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_prod__dce10_vUnCom
+msgid "Valor unitário do item"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infprot__dce10_verAplic
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tretdce__dce10_verAplic
+msgid "Versão do Aplicativo que processou a DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_infdce__dce10_versao
+msgid "Versão do leiaute"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_ide__dce10_verProc
+msgid "Versão do processo de emissão"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,help:l10n_br_dce_spec.field_dce_10_ide__dce10_verProc
+msgid ""
+"Versão do processo de emissão\n"
+"Informar a versão do aplicativo emissor de DCe"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tretdce__dce10_cStat
+msgid "código do status da resposta"
+msgstr ""
+
+#. module: l10n_br_dce_spec
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tprotdce__dce10_versao
+#: model:ir.model.fields,field_description:l10n_br_dce_spec.field_dce_10_tretdce__dce10_versao
+msgid "versao"
+msgstr ""
