@@ -1,26 +1,25 @@
-This module adds the multimodal transport modal (modal `06`) to the
-CT-e 4.00. The `l10n_br_cte` module already lets the user choose
-"Multimodal" as the transport modal, but it only serializes the road,
-air, waterway, railway and pipeline modals: with modal `06` the
-`infModal` group was left empty.
+Este módulo adiciona o modal de transporte multimodal (modal `06`) ao
+CT-e 4.00. O módulo `l10n_br_cte` já permite escolher *Multimodal* como
+modal de transporte, mas só serializa os modais rodoviário, aéreo,
+aquaviário, ferroviário e dutoviário: com o modal `06` o grupo
+`infModal` ficava vazio.
 
-The module fills the `multimodal` group of the `infModal` (schema
-`cteMultiModal_v4.00.xsd`, layout 3.6 of the Annex I of the CT-e
-Taxpayer Guidance Manual, MOC 4.00):
+O módulo preenche o grupo `multimodal` do `infModal` (schema
+`cteMultiModal_v4.00.xsd`, leiaute 3.6 do Anexo I do Manual de
+Orientação do Contribuinte do CT-e, MOC 4.00):
 
-- `COTM`: number of the certificate of the multimodal transport
-  operator;
-- `indNegociavel`: negotiable indicator (0 not negotiable, 1
-  negotiable);
-- `seg`: optional insurance group, with the insurance company name and
-  CNPJ (`infSeg/xSeg`, `infSeg/CNPJ`), the policy number (`nApol`) and
-  the endorsement number (`nAver`).
+- `COTM`: número do Certificado do Operador de Transporte Multimodal;
+- `indNegociavel`: indicador de negociável (0 não negociável, 1
+  negociável);
+- `seg`: grupo opcional de seguro, com o nome e o CNPJ da seguradora
+  (`infSeg/xSeg`, `infSeg/CNPJ`), o número da apólice (`nApol`) e o
+  número da averbação (`nAver`).
 
-The SEFAZ validates the XML of the modal against its own schema and
-rejects the CT-e with code 580 when it fails (MOC 4.00 Annex I, rule
-G026). Since the CT-e schema does not check the modal (`xs:any` with
-`processContents="skip"`), the module refuses to export a multimodal
-CT-e without the required elements: `COTM` and `indNegociavel`, and
-the insurance company name, policy and endorsement when any insurance
-field is filled. The insurance company CNPJ may be empty, as the layout
-allows (`TCnpjOpc`).
+A SEFAZ valida o XML do modal contra o schema próprio e rejeita o CT-e
+com o código 580 quando a validação falha (MOC 4.00 Anexo I, regra
+G026). Como o schema do CT-e não confere o modal (`xs:any` com
+`processContents="skip"`), o módulo recusa exportar um CT-e multimodal
+sem os elementos obrigatórios: `COTM` e `indNegociavel`, e o nome da
+seguradora, a apólice e a averbação quando qualquer campo do seguro é
+preenchido. O CNPJ da seguradora pode ficar vazio, como o leiaute
+permite (`TCnpjOpc`).

@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e ICMS Presumed Credit (gCred)",
-    "summary": "Report the ICMS presumed credit of the NF-e items (gCred group)",
+    "summary": "Informa o crédito presumido de ICMS dos itens da NF-e (grupo gCred)",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

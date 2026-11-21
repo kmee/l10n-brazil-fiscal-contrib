@@ -3,7 +3,8 @@
 
 {
     "name": "Brazilian Fiscal Contrib - Test Setup",
-    "summary": "Loads the Brazilian chart of accounts of the demo companies for the CI",
+    "summary": "Carrega o plano de contas brasileiro das empresas de demonstração para "
+    "o CI",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

@@ -22,35 +22,36 @@ NFS-e Nacional Real Estate (imovel)
 
 |badge1| |badge2| |badge3|
 
-This module reports the real estate group (``IBSCBS/imovel``,
-TCRTCInfoImovel) that the tax reform added to the NFS-e Nacional DPS and
-that ``l10n_br_nfse_nacional`` does not fill:
+Este módulo informa o grupo de bens imóveis (``IBSCBS/imovel``,
+TCRTCInfoImovel) que a reforma tributária acrescentou à DPS da NFS-e
+Nacional e que o ``l10n_br_nfse_nacional`` não preenche:
 
-- ``cMun``: city of the property, taken from the address of the first
-  unit or, lacking it, from the ISSQN city of the service line;
-- ``gLocacao`` (TCRTCLocacaoImovel): the lease data of subitem 99.03,
-  with the co-ownership share, the lease total amount and discounts
-  (taken from the service line and editable) and the original due date;
-- ``gUnidImob`` (TCRTCUnidadesImobiliarias): the real estate units, each
-  identified by its CIB or by its address, with the municipal real
-  estate registration and the amounts included in the rent that are not
-  part of the IBS/CBS base (``gAjusteBCLocImoveis``,
+- ``cMun``: município do imóvel, tomado do endereço da primeira unidade
+  ou, na falta dele, do município do ISSQN da linha de serviço;
+- ``gLocacao`` (TCRTCLocacaoImovel): os dados da locação do subitem
+  99.03, com a participação na copropriedade, o valor total da locação e
+  os descontos (tomados da linha de serviço e editáveis) e o vencimento
+  original;
+- ``gUnidImob`` (TCRTCUnidadesImobiliarias): as unidades imobiliárias,
+  cada uma identificada pelo CIB ou pelo endereço, com a inscrição
+  imobiliária municipal e os valores incluídos no aluguel que não fazem
+  parte da base do IBS/CBS (``gAjusteBCLocImoveis``,
   TCRTCValoresBCImoveis).
 
-The group is part of the IBSCBS group, so it is reported only when the
-NFS-e carries the tax reform data of ``l10n_br_nfse_nacional``.
+O grupo faz parte do grupo IBSCBS, então só é informado quando a NFS-e
+leva os dados da reforma tributária do ``l10n_br_nfse_nacional``.
 
-The module follows the rules of the group in Anexo VI of the NFS-e
-Nacional (leiaute 1.04.01 published with NT 009): the group is reported
-for the real estate operation indicators (020101, 020201, 020202, 020301
-and 020401) outside the construction services, as rules E0928, E0931 and
-E0932 require; the lease data goes along for subitem 99.03 only (E0936
-and E0937). It refuses to build the DPS without units for the indicators
-020101, 020201 and 020301 (E0938), with unit adjustments outside subitem
-99.03 (E0939), with the social reducer outside the residential lease NBS
-1.1002.10.00 (E0944) or with an adjustment above the lease total amount
-(E0966). The co-ownership share goes from 0 to 100% (E0940) and only the
-adjustment type 99 takes a description (E0949 and E0954).
+O módulo segue as regras do grupo no Anexo VI da NFS-e Nacional (leiaute
+1.04.01 publicado com a NT 009): o grupo é informado para os indicadores
+de operação com bens imóveis (020101, 020201, 020202, 020301 e 020401)
+fora dos serviços de construção, como exigem as regras E0928, E0931 e
+E0932; os dados da locação acompanham apenas o subitem 99.03 (E0936 e
+E0937). Recusa montar a DPS sem unidades para os indicadores 020101,
+020201 e 020301 (E0938), com ajustes de unidade fora do subitem 99.03
+(E0939), com o redutor social fora da NBS 1.1002.10.00 de locação
+residencial (E0944) ou com ajuste acima do valor total da locação
+(E0966). A participação na copropriedade vai de 0 a 100% (E0940) e
+apenas o tipo de ajuste 99 aceita descrição (E0949 e E0954).
 
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
@@ -65,30 +66,30 @@ adjustment type 99 takes a description (E0949 and E0954).
 Usage
 =====
 
-On the NFS-e of a real estate operation, choose on the service line the
-real estate operation indicator and the tax reform classification, then
-fill the *Real Estate* tab of the fiscal document: the units (CIB or
-address) and, for a lease, the co-ownership share, the amounts and the
-items included in the rent. The DPS XML carries them in the
-``IBSCBS/imovel`` group.
+Na NFS-e de uma operação com bens imóveis, escolha na linha de serviço o
+indicador de operação com bens imóveis e a classificação da reforma
+tributária, e então preencha a aba *Real Estate* do documento fiscal: as
+unidades (CIB ou endereço) e, para uma locação, a participação na
+copropriedade, os valores e os itens incluídos no aluguel. O XML da DPS
+os leva no grupo ``IBSCBS/imovel``.
 
 Known issues / Roadmap
 ======================
 
-- The lease total amount (``vTotOper``) starts from the service amount
-  of the line, which is the lessor share when the property has several
-  owners: change it to the total of the lease in that case, as the
-  leiaute asks.
-- Rules E0929 (IBGE code of the city) and E0933 (CIB check digit, whose
-  algorithm is not in the leiaute) are left to the ADN.
-- The condominium subitem 99.05 (rule without code that makes the group
-  mandatory) and the debit and credit adjustment NFS-e
-  (``tpNFSeDebito``, ``tpNFSeCredito``) are not handled: they are not in
-  the schema of the DPS 1.01.
-- The operation type with real estate (``tpOper``) and the movable goods
-  group (``bensMoveis``) of the IBSCBS group are not reported.
-- The fields are on the fiscal document form only; the invoice form of
-  ``l10n_br_account`` does not show them.
+- O valor total da locação (``vTotOper``) parte do valor do serviço da
+  linha, que é a parte do locador quando o imóvel tem vários
+  proprietários: altere-o para o total da locação nesse caso, como o
+  leiaute pede.
+- As regras E0929 (código IBGE do município) e E0933 (dígito verificador
+  do CIB, cujo algoritmo não consta do leiaute) ficam a cargo do ADN.
+- O subitem 99.05 de condomínio (regra sem código que torna o grupo
+  obrigatório) e a NFS-e de ajuste de débito e crédito
+  (``tpNFSeDebito``, ``tpNFSeCredito``) não são tratados: não constam do
+  schema da DPS 1.01.
+- O tipo de operação com bens imóveis (``tpOper``) e o grupo de bens
+  móveis (``bensMoveis``) do grupo IBSCBS não são informados.
+- Os campos estão apenas no formulário do documento fiscal; o formulário
+  da fatura do ``l10n_br_account`` não os mostra.
 
 Bug Tracker
 ===========

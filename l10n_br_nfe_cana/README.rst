@@ -22,22 +22,22 @@ NF-e Sugarcane Acquisition (cana)
 
 |badge1| |badge2| |badge3|
 
-This module reports the sugarcane acquisition register of the NF-e
-(group ZC, ``cana``): harvest, reference month, daily supplies
-(``forDia``), month, previous and grand totals, deductions (``deduc``),
-supplies, total deductions and net supplies amounts.
+Este módulo informa o registro de aquisição de cana-de-açúcar da NF-e
+(grupo ZC, ``cana``): safra, mês de referência, fornecimentos diários
+(``forDia``), totais do mês, anterior e geral, deduções (``deduc``), e
+os valores de fornecimentos, total de deduções e fornecimentos líquidos.
 
-The group is typed on the fiscal document, *Sugarcane* tab. The month
-total is the sum of the daily supplies, the grand total is the month
-total plus the previous total, the total deductions is the sum of the
-deductions and the net supplies amount is the supplies amount minus the
-deductions; all of them can be changed by hand.
+O grupo é digitado no documento fiscal, aba *Sugarcane*. O total do mês
+é a soma dos fornecimentos diários, o total geral é o total do mês mais
+o total anterior, o total de deduções é a soma das deduções e o valor
+dos fornecimentos líquidos é o valor dos fornecimentos menos as
+deduções; todos podem ser alterados à mão.
 
-The layout is checked as the data is typed: harvest with 4 to 9
-characters, reference month as MM/YYYY, days from 1 to 31 with a single
-supply per day. Before the NF-e is issued, the module also refuses an
-NFC-e with the group (rule ZC01-10 of the MOC), a group without daily
-supplies or with more than 31, and more than 10 deductions.
+O leiaute é conferido na digitação: safra com 4 a 9 caracteres, mês de
+referência como MM/AAAA, dias de 1 a 31 com um único fornecimento por
+dia. Antes da emissão da NF-e, o módulo também recusa NFC-e com o grupo
+(regra ZC01-10 do MOC), grupo sem fornecimentos diários ou com mais de
+31, e mais de 10 deduções.
 
 **Table of contents**
 
@@ -47,22 +47,23 @@ supplies or with more than 31, and more than 10 deductions.
 Usage
 =====
 
-On the fiscal document of the sugarcane acquisition, *Sugarcane* tab,
-create the group with the daily supplies and the deductions of the
-month. The NF-e XML carries the ``cana`` tag.
+No documento fiscal da aquisição de cana-de-açúcar, aba *Sugarcane*,
+crie o grupo com os fornecimentos diários e as deduções do mês. O XML da
+NF-e leva a tag ``cana``.
 
 Known issues / Roadmap
 ======================
 
-- The daily supplies are typed; they are not read from the scale or from
-  the receipts of the month.
-- The previous total (``qTotAnt``) and the supplies amount (``vFor``)
-  are typed; they are not taken from the earlier NF-e of the harvest nor
-  from the document lines.
-- No SEFAZ rule relating the totals was found in the MOC; the totals are
-  computed for convenience and are not checked before issuing.
-- The group is shown on the fiscal document form; the invoice form
-  (``l10n_br_account``) does not show it yet.
+- Os fornecimentos diários são digitados; não são lidos da balança nem
+  dos recibos do mês.
+- O total anterior (``qTotAnt``) e o valor dos fornecimentos (``vFor``)
+  são digitados; não são tomados das NF-e anteriores da safra nem das
+  linhas do documento.
+- Nenhuma regra da SEFAZ relacionando os totais foi encontrada no MOC;
+  os totais são calculados por conveniência e não são conferidos antes
+  da emissão.
+- O grupo aparece no formulário do documento fiscal; o formulário da
+  fatura (``l10n_br_account``) ainda não o mostra.
 
 Bug Tracker
 ===========

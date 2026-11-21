@@ -1,6 +1,6 @@
-Inform the ISSQN deduction on the fiscal line, as for any other
-document, or list the supporting documents in the *Tax Base Adjustment*
-tab of the NFS-e. For a document already in Odoo (a supplier NF-e of
-materials, a subcontractor NFS-e), choose it in *Fiscal Document* and
-inform the applied amount. The DPS XML carries them in the
-`valores/vAjusteBC` group.
+Informe a dedução do ISSQN na linha fiscal, como em qualquer outro
+documento, ou liste os documentos de suporte na aba *Tax Base
+Adjustment* da NFS-e. Para um documento que já está no Odoo (uma NF-e de
+materiais de fornecedor, uma NFS-e de subempreiteiro), escolha-o em
+*Fiscal Document* e informe o valor aplicado. O XML da DPS os leva no
+grupo `valores/vAjusteBC`.

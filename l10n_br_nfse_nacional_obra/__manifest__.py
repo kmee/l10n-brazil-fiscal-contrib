@@ -3,7 +3,7 @@
 
 {
     "name": "NFS-e Nacional Construction Work (obra)",
-    "summary": "Construction work group (infoObra) of the NFS-e Nacional DPS",
+    "summary": "Grupo de obra (infoObra) da DPS da NFS-e Nacional",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

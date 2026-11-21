@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e Purchase Information (compra)",
-    "summary": "Commitment note, purchase order and contract in the NF-e",
+    "summary": "Nota de empenho, pedido de compra e contrato na NF-e",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

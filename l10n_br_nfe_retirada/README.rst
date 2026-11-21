@@ -22,22 +22,21 @@ NF-e Pickup Address (retirada)
 
 |badge1| |badge2| |badge3|
 
-This module fills the pickup address group of the NF-e (group F,
-``retirada``), that the layout asks only when the goods leave from an
-address other than the issuer address: a branch warehouse, a general
-warehouse (armazém geral), a third party plant and so on.
+Este módulo preenche o grupo de local de retirada da NF-e (grupo F,
+``retirada``), que o leiaute pede apenas quando a mercadoria sai de um
+endereço diferente do endereço do emitente: um depósito de filial, um
+armazém geral, uma fábrica de terceiros e assim por diante.
 
-The field already exists in ``l10n_br_nfe``, but nothing filled it. Here
-it is computed on the outgoing NF-e from the deliveries of the invoice:
-when all of them leave from the same warehouse and the address of that
-warehouse is not the address of the issuer company, the warehouse
-address becomes the pickup address. It can be edited on the fiscal
-document (*Delivery* tab).
+O campo já existe no ``l10n_br_nfe``, mas nada o preenchia. Aqui ele é
+calculado na NF-e de saída a partir das entregas da fatura: quando todas
+saem do mesmo depósito e o endereço desse depósito não é o endereço da
+empresa emitente, o endereço do depósito vira o local de retirada. Pode
+ser editado no documento fiscal (aba *Delivery*).
 
-Before the NF-e is confirmed the module refuses a pickup address in the
-NFC-e or in the NF-e with the simplified DANFE (rule F01-10, rejection
-669) and a pickup address without CNPJ/CPF, street, number, district or
-city, required by the layout.
+Antes da confirmação da NF-e, o módulo recusa local de retirada na NFC-e
+ou na NF-e com DANFE simplificado (regra F01-10, rejeição 669) e local
+de retirada sem CNPJ/CPF, logradouro, número, bairro ou município,
+exigidos pelo leiaute.
 
 **Table of contents**
 
@@ -47,29 +46,29 @@ city, required by the layout.
 Configuration
 =============
 
-- Set the *Address* of each warehouse that is not at the company
-  address, with its own CNPJ (or CPF) and full address.
+- Defina o *Address* de cada depósito que não esteja no endereço da
+  empresa, com CNPJ (ou CPF) próprio e endereço completo.
 
 Usage
 =====
 
-1. Deliver the goods from a warehouse whose address is not the company
-   address, and invoice the delivery.
-2. The fiscal document of the invoice shows the warehouse address as the
-   *Pickup Address* (*Delivery* tab); change it if needed.
-3. Confirm the NF-e: the XML carries the ``retirada`` group.
+1. Entregue a mercadoria de um depósito cujo endereço não é o da empresa
+   e fature a entrega.
+2. O documento fiscal da fatura mostra o endereço do depósito como
+   *Pickup Address* (aba *Delivery*); altere-o se necessário.
+3. Confirme a NF-e: o XML leva o grupo ``retirada``.
 
 Known issues / Roadmap
 ======================
 
-- Only outgoing NF-e linked to deliveries (through
-  ``stock_picking_invoice_link``) get a computed pickup address.
-  Deliveries from several warehouses with different addresses leave the
-  field empty, to be filled by hand.
-- The pickup address must have its own CNPJ or CPF: a child address that
-  relies on the CNPJ of its parent company is refused.
-- The CNPJ/CPF registry rules of the pickup address (F02-10, F02-20) are
-  checked by the SEFAZ only.
+- Apenas a NF-e de saída ligada a entregas (por meio do
+  ``stock_picking_invoice_link``) recebe o local de retirada calculado.
+  Entregas de vários depósitos com endereços diferentes deixam o campo
+  vazio, para preenchimento à mão.
+- O local de retirada precisa ter CNPJ ou CPF próprio: um endereço filho
+  que usa o CNPJ da empresa mãe é recusado.
+- As regras de cadastro do CNPJ/CPF do local de retirada (F02-10,
+  F02-20) são conferidas apenas pela SEFAZ.
 
 Bug Tracker
 ===========

@@ -370,34 +370,35 @@ ul.auto-toc {
 !! source digest: sha256:3923ae0101f11b3f5ed0dcdf306cb85d877728c0fc488a954a746abb725f089a
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Alpha" src="https://img.shields.io/badge/maturity-Alpha-red.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/18.0/l10n_br_nfse_nacional_imovel"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>This module reports the real estate group (<tt class="docutils literal">IBSCBS/imovel</tt>,
-TCRTCInfoImovel) that the tax reform added to the NFS-e Nacional DPS and
-that <tt class="docutils literal">l10n_br_nfse_nacional</tt> does not fill:</p>
+<p>Este módulo informa o grupo de bens imóveis (<tt class="docutils literal">IBSCBS/imovel</tt>,
+TCRTCInfoImovel) que a reforma tributária acrescentou à DPS da NFS-e
+Nacional e que o <tt class="docutils literal">l10n_br_nfse_nacional</tt> não preenche:</p>
 <ul class="simple">
-<li><tt class="docutils literal">cMun</tt>: city of the property, taken from the address of the first
-unit or, lacking it, from the ISSQN city of the service line;</li>
-<li><tt class="docutils literal">gLocacao</tt> (TCRTCLocacaoImovel): the lease data of subitem 99.03,
-with the co-ownership share, the lease total amount and discounts
-(taken from the service line and editable) and the original due date;</li>
-<li><tt class="docutils literal">gUnidImob</tt> (TCRTCUnidadesImobiliarias): the real estate units, each
-identified by its CIB or by its address, with the municipal real
-estate registration and the amounts included in the rent that are not
-part of the IBS/CBS base (<tt class="docutils literal">gAjusteBCLocImoveis</tt>,
+<li><tt class="docutils literal">cMun</tt>: município do imóvel, tomado do endereço da primeira unidade
+ou, na falta dele, do município do ISSQN da linha de serviço;</li>
+<li><tt class="docutils literal">gLocacao</tt> (TCRTCLocacaoImovel): os dados da locação do subitem
+99.03, com a participação na copropriedade, o valor total da locação e
+os descontos (tomados da linha de serviço e editáveis) e o vencimento
+original;</li>
+<li><tt class="docutils literal">gUnidImob</tt> (TCRTCUnidadesImobiliarias): as unidades imobiliárias,
+cada uma identificada pelo CIB ou pelo endereço, com a inscrição
+imobiliária municipal e os valores incluídos no aluguel que não fazem
+parte da base do IBS/CBS (<tt class="docutils literal">gAjusteBCLocImoveis</tt>,
 TCRTCValoresBCImoveis).</li>
 </ul>
-<p>The group is part of the IBSCBS group, so it is reported only when the
-NFS-e carries the tax reform data of <tt class="docutils literal">l10n_br_nfse_nacional</tt>.</p>
-<p>The module follows the rules of the group in Anexo VI of the NFS-e
-Nacional (leiaute 1.04.01 published with NT 009): the group is reported
-for the real estate operation indicators (020101, 020201, 020202, 020301
-and 020401) outside the construction services, as rules E0928, E0931 and
-E0932 require; the lease data goes along for subitem 99.03 only (E0936
-and E0937). It refuses to build the DPS without units for the indicators
-020101, 020201 and 020301 (E0938), with unit adjustments outside subitem
-99.03 (E0939), with the social reducer outside the residential lease NBS
-1.1002.10.00 (E0944) or with an adjustment above the lease total amount
-(E0966). The co-ownership share goes from 0 to 100% (E0940) and only the
-adjustment type 99 takes a description (E0949 and E0954).</p>
+<p>O grupo faz parte do grupo IBSCBS, então só é informado quando a NFS-e
+leva os dados da reforma tributária do <tt class="docutils literal">l10n_br_nfse_nacional</tt>.</p>
+<p>O módulo segue as regras do grupo no Anexo VI da NFS-e Nacional (leiaute
+1.04.01 publicado com a NT 009): o grupo é informado para os indicadores
+de operação com bens imóveis (020101, 020201, 020202, 020301 e 020401)
+fora dos serviços de construção, como exigem as regras E0928, E0931 e
+E0932; os dados da locação acompanham apenas o subitem 99.03 (E0936 e
+E0937). Recusa montar a DPS sem unidades para os indicadores 020101,
+020201 e 020301 (E0938), com ajustes de unidade fora do subitem 99.03
+(E0939), com o redutor social fora da NBS 1.1002.10.00 de locação
+residencial (E0944) ou com ajuste acima do valor total da locação
+(E0966). A participação na copropriedade vai de 0 a 100% (E0940) e
+apenas o tipo de ajuste 99 aceita descrição (E0949 e E0954).</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">This is an alpha version, the data model and design can change at any time without warning.
@@ -420,30 +421,30 @@ Only for development or testing purpose, do not use in production.
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-1">Usage</a></h1>
-<p>On the NFS-e of a real estate operation, choose on the service line the
-real estate operation indicator and the tax reform classification, then
-fill the <em>Real Estate</em> tab of the fiscal document: the units (CIB or
-address) and, for a lease, the co-ownership share, the amounts and the
-items included in the rent. The DPS XML carries them in the
-<tt class="docutils literal">IBSCBS/imovel</tt> group.</p>
+<p>Na NFS-e de uma operação com bens imóveis, escolha na linha de serviço o
+indicador de operação com bens imóveis e a classificação da reforma
+tributária, e então preencha a aba <em>Real Estate</em> do documento fiscal: as
+unidades (CIB ou endereço) e, para uma locação, a participação na
+copropriedade, os valores e os itens incluídos no aluguel. O XML da DPS
+os leva no grupo <tt class="docutils literal">IBSCBS/imovel</tt>.</p>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-2">Known issues / Roadmap</a></h1>
 <ul class="simple">
-<li>The lease total amount (<tt class="docutils literal">vTotOper</tt>) starts from the service amount
-of the line, which is the lessor share when the property has several
-owners: change it to the total of the lease in that case, as the
-leiaute asks.</li>
-<li>Rules E0929 (IBGE code of the city) and E0933 (CIB check digit, whose
-algorithm is not in the leiaute) are left to the ADN.</li>
-<li>The condominium subitem 99.05 (rule without code that makes the group
-mandatory) and the debit and credit adjustment NFS-e
-(<tt class="docutils literal">tpNFSeDebito</tt>, <tt class="docutils literal">tpNFSeCredito</tt>) are not handled: they are not in
-the schema of the DPS 1.01.</li>
-<li>The operation type with real estate (<tt class="docutils literal">tpOper</tt>) and the movable goods
-group (<tt class="docutils literal">bensMoveis</tt>) of the IBSCBS group are not reported.</li>
-<li>The fields are on the fiscal document form only; the invoice form of
-<tt class="docutils literal">l10n_br_account</tt> does not show them.</li>
+<li>O valor total da locação (<tt class="docutils literal">vTotOper</tt>) parte do valor do serviço da
+linha, que é a parte do locador quando o imóvel tem vários
+proprietários: altere-o para o total da locação nesse caso, como o
+leiaute pede.</li>
+<li>As regras E0929 (código IBGE do município) e E0933 (dígito verificador
+do CIB, cujo algoritmo não consta do leiaute) ficam a cargo do ADN.</li>
+<li>O subitem 99.05 de condomínio (regra sem código que torna o grupo
+obrigatório) e a NFS-e de ajuste de débito e crédito
+(<tt class="docutils literal">tpNFSeDebito</tt>, <tt class="docutils literal">tpNFSeCredito</tt>) não são tratados: não constam do
+schema da DPS 1.01.</li>
+<li>O tipo de operação com bens imóveis (<tt class="docutils literal">tpOper</tt>) e o grupo de bens
+móveis (<tt class="docutils literal">bensMoveis</tt>) do grupo IBSCBS não são informados.</li>
+<li>Os campos estão apenas no formulário do documento fiscal; o formulário
+da fatura do <tt class="docutils literal">l10n_br_account</tt> não os mostra.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">

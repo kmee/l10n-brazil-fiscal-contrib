@@ -22,28 +22,27 @@ NFS-e Nacional Construction Work (obra)
 
 |badge1| |badge2| |badge3|
 
-This module reports the construction work group (``serv/obra``,
-TCInfoObra) of the NFS-e Nacional DPS, which ``l10n_br_nfse_nacional``
-does not fill.
+Este módulo informa o grupo de obra (``serv/obra``, TCInfoObra) da DPS
+da NFS-e Nacional, que o ``l10n_br_nfse_nacional`` não preenche.
 
-The construction site is an address (``res.partner``) that carries the
-work registration (CNO, or the former CEI), the Brazilian Real Estate
-Registry code (CIB) and the municipal real estate registration. The
-fiscal document takes the site from its shipping address and copies
-these codes; all of them can be changed on each document.
+O canteiro de obras é um endereço (``res.partner``) que carrega a
+matrícula da obra (CNO, ou a antiga CEI), o código do Cadastro
+Imobiliário Brasileiro (CIB) e a inscrição imobiliária municipal. O
+documento fiscal toma o canteiro do seu endereço de entrega e copia
+esses códigos; todos podem ser alterados em cada documento.
 
-The group identifies the work by its CNO (``cObra``), or by its CIB
-(``cCIB``) when there is no CNO, or by the site address (``end``) when
-there is neither. The municipal registration (``inscImobFisc``) goes
-along when informed.
+O grupo identifica a obra pelo CNO (``cObra``), ou pelo CIB (``cCIB``)
+quando não há CNO, ou pelo endereço do canteiro (``end``) quando não há
+nenhum dos dois. A inscrição municipal (``inscImobFisc``) acompanha
+quando informada.
 
-Rule E0370 (Anexo VI of the NFS-e Nacional, leiaute 1.04.01 published
-with NT 009) makes the group mandatory for the national taxation codes
-07.02.01, 07.02.02, 07.04.01, 07.05.01, 07.05.02, 07.06.01, 07.06.02,
-07.07.01, 07.08.01, 07.17.01, 07.19.01, 14.14.03 and 14.14.04: the
-module refuses to build the DPS of these services without the work
-identification. For the other services the group is reported only when
-the document has a CNO or a CIB.
+A regra E0370 (Anexo VI da NFS-e Nacional, leiaute 1.04.01 publicado com
+a NT 009) torna o grupo obrigatório para os códigos de tributação
+nacional 07.02.01, 07.02.02, 07.04.01, 07.05.01, 07.05.02, 07.06.01,
+07.06.02, 07.07.01, 07.08.01, 07.17.01, 07.19.01, 14.14.03 e 14.14.04: o
+módulo recusa montar a DPS desses serviços sem a identificação da obra.
+Para os demais serviços o grupo é informado apenas quando o documento
+tem um CNO ou um CIB.
 
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
@@ -58,29 +57,29 @@ the document has a CNO or a CIB.
 Usage
 =====
 
-Register the construction site as an address of the customer and fill
-the CNO/CEI, CIB and municipal real estate registration in the *Fiscal*
-tab of the address.
+Cadastre o canteiro de obras como um endereço do cliente e preencha o
+CNO/CEI, o CIB e a inscrição imobiliária municipal na aba *Fiscal* do
+endereço.
 
-On the NFS-e, choose the site as shipping address. The *Construction
-Work* tab of the fiscal document shows the site and its codes, which can
-be changed for that document. The DPS XML carries them in the
-``serv/obra`` group.
+Na NFS-e, escolha o canteiro como endereço de entrega. A aba
+*Construction Work* do documento fiscal mostra o canteiro e seus
+códigos, que podem ser alterados para aquele documento. O XML da DPS os
+leva no grupo ``serv/obra``.
 
 Known issues / Roadmap
 ======================
 
-- Rule E0373 (the CIB is 7 characters and a check digit) is checked by
-  the ADN only: the module checks the length of the schema, not the
-  check digit, whose algorithm is not in the leiaute.
-- Rule E0380 (the CEP of the site belongs to the municipality of the
-  service location) is not checked: the module has no CEP to
-  municipality table.
-- Rule E0384 asks for the foreign address group (``endExt``) when the
-  service location is abroad (``cPaisPrestacao``). The module chooses
-  between CEP and ``endExt`` by the country of the site address.
-- The fields are on the fiscal document form only; the invoice form of
-  ``l10n_br_account`` does not show them.
+- A regra E0373 (o CIB tem 7 caracteres e um dígito verificador) é
+  conferida apenas pelo ADN: o módulo confere o tamanho do schema, não o
+  dígito verificador, cujo algoritmo não consta do leiaute.
+- A regra E0380 (o CEP do canteiro pertence ao município do local da
+  prestação) não é conferida: o módulo não tem tabela de CEP para
+  município.
+- A regra E0384 pede o grupo de endereço no exterior (``endExt``) quando
+  o local da prestação é no exterior (``cPaisPrestacao``). O módulo
+  escolhe entre CEP e ``endExt`` pelo país do endereço do canteiro.
+- Os campos estão apenas no formulário do documento fiscal; o formulário
+  da fatura do ``l10n_br_account`` não os mostra.
 
 Bug Tracker
 ===========

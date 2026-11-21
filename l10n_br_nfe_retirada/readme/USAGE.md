@@ -1,5 +1,5 @@
-1. Deliver the goods from a warehouse whose address is not the company
-   address, and invoice the delivery.
-2. The fiscal document of the invoice shows the warehouse address as the
-   *Pickup Address* (*Delivery* tab); change it if needed.
-3. Confirm the NF-e: the XML carries the `retirada` group.
+1. Entregue a mercadoria de um depósito cujo endereço não é o da
+   empresa e fature a entrega.
+2. O documento fiscal da fatura mostra o endereço do depósito como
+   *Pickup Address* (aba *Delivery*); altere-o se necessário.
+3. Confirme a NF-e: o XML leva o grupo `retirada`.

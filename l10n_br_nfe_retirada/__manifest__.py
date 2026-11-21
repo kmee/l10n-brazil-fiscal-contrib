@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e Pickup Address (retirada)",
-    "summary": "Pickup address of the NF-e from the warehouse of the deliveries",
+    "summary": "Local de retirada da NF-e a partir do depósito das entregas",
     "version": "18.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

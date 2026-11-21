@@ -1,16 +1,16 @@
-This module reports the sugarcane acquisition register of the NF-e
-(group ZC, `cana`): harvest, reference month, daily supplies (`forDia`),
-month, previous and grand totals, deductions (`deduc`), supplies, total
-deductions and net supplies amounts.
+Este módulo informa o registro de aquisição de cana-de-açúcar da NF-e
+(grupo ZC, `cana`): safra, mês de referência, fornecimentos diários
+(`forDia`), totais do mês, anterior e geral, deduções (`deduc`), e os
+valores de fornecimentos, total de deduções e fornecimentos líquidos.
 
-The group is typed on the fiscal document, *Sugarcane* tab. The month
-total is the sum of the daily supplies, the grand total is the month
-total plus the previous total, the total deductions is the sum of the
-deductions and the net supplies amount is the supplies amount minus the
-deductions; all of them can be changed by hand.
+O grupo é digitado no documento fiscal, aba *Sugarcane*. O total do mês
+é a soma dos fornecimentos diários, o total geral é o total do mês mais
+o total anterior, o total de deduções é a soma das deduções e o valor
+dos fornecimentos líquidos é o valor dos fornecimentos menos as
+deduções; todos podem ser alterados à mão.
 
-The layout is checked as the data is typed: harvest with 4 to 9
-characters, reference month as MM/YYYY, days from 1 to 31 with a single
-supply per day. Before the NF-e is issued, the module also refuses an
-NFC-e with the group (rule ZC01-10 of the MOC), a group without daily
-supplies or with more than 31, and more than 10 deductions.
+O leiaute é conferido na digitação: safra com 4 a 9 caracteres, mês de
+referência como MM/AAAA, dias de 1 a 31 com um único fornecimento por
+dia. Antes da emissão da NF-e, o módulo também recusa NFC-e com o grupo
+(regra ZC01-10 do MOC), grupo sem fornecimentos diários ou com mais de
+31, e mais de 10 deduções.

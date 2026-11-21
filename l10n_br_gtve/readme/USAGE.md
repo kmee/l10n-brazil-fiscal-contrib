@@ -1,12 +1,12 @@
-1. Create a document series for the document type "Guia de Transporte
-   de Valores Eletrônica - GTV-e" (64) in the company.
-2. Create a fiscal document of type 64 with that series. The partner of
-   the document is the service taker when "GTV-e Service Taker" is
-   "Other"; with "Sender" or "Recipient" the taker is that party.
-3. In the "GTV-e" tab fill in the sender, the modal, the CFOP, the
-   departure and arrival dates, the quantity of volumes or pouches, the
-   transported species (banknote, check, coin or other, with the value
-   and the nationality) and the vehicles. The recipient is the delivery
-   address of the document.
-4. Confirm the document to generate, sign and validate the XML, then
-   send it.
+1. Crie uma série de documento para o tipo de documento "Guia de
+   Transporte de Valores Eletrônica - GTV-e" (64) na empresa.
+2. Crie um documento fiscal do tipo 64 com essa série. O parceiro do
+   documento é o tomador do serviço quando "GTV-e Service Taker" é
+   "Other"; com "Sender" ou "Recipient" o tomador é essa parte.
+3. Na aba "GTV-e", preencha o remetente, o modal, o CFOP, as datas de
+   saída e de chegada, a quantidade de volumes ou malotes, as espécies
+   transportadas (cédula, cheque, moeda ou outra, com o valor e a
+   nacionalidade) e os veículos. O destinatário é o endereço de entrega
+   do documento.
+4. Confirme o documento para gerar, assinar e validar o XML, e então
+   envie.

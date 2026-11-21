@@ -370,35 +370,34 @@ ul.auto-toc {
 !! source digest: sha256:c8f9f07fa576aab79c1c84b7df1e34e082bb6545a3dda92c32f4289896c80843
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/18.0/l10n_br_nfe_transp"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>This module fills the transport subgroups of the NF-e (group X,
-<tt class="docutils literal">transp</tt>) that the localization leaves empty: the vehicle
-(<tt class="docutils literal">veicTransp</tt>), the trailers (<tt class="docutils literal">reboque</tt>) and the ICMS retention of
-the transport (<tt class="docutils literal">retTransp</tt>). The freight modality (<tt class="docutils literal">modFrete</tt>), the
-carrier (<tt class="docutils literal">transporta</tt>) and the volumes (<tt class="docutils literal">vol</tt>) stay with
+<p>Este módulo preenche os subgrupos de transporte da NF-e (grupo X,
+<tt class="docutils literal">transp</tt>) que a localização deixa vazios: o veículo (<tt class="docutils literal">veicTransp</tt>),
+os reboques (<tt class="docutils literal">reboque</tt>) e a retenção de ICMS do transporte
+(<tt class="docutils literal">retTransp</tt>). A modalidade do frete (<tt class="docutils literal">modFrete</tt>), a transportadora
+(<tt class="docutils literal">transporta</tt>) e os volumes (<tt class="docutils literal">vol</tt>) ficam com o
 <tt class="docutils literal">l10n_br_delivery_nfe</tt>.</p>
-<p>Vehicle and trailers come from the carrier vehicles of
-<tt class="docutils literal">l10n_br_delivery</tt> (plate, state and ANTT code), that until now never
-reached the NF-e. On the fiscal document (<em>Delivery</em> tab):</p>
+<p>Veículo e reboques vêm dos veículos da transportadora do
+<tt class="docutils literal">l10n_br_delivery</tt> (placa, UF e código da ANTT), que até agora nunca
+chegavam à NF-e. No documento fiscal (aba <em>Delivery</em>):</p>
 <ul class="simple">
-<li>vehicle: by default the vehicle of the carrier, when it has only one;
-it can be changed;</li>
-<li>trailers: up to 5 vehicles (layout limit).</li>
+<li>veículo: por padrão o veículo da transportadora, quando ela tem apenas
+um; pode ser alterado;</li>
+<li>reboques: até 5 veículos (limite do leiaute).</li>
 </ul>
-<p>Each one becomes a <tt class="docutils literal">veicTransp</tt> or <tt class="docutils literal">reboque</tt> group with the plate
-(upper case, without separators), the state and the ANTT code (RNTC, up
-to 20 characters). They are left out of the XML in interstate operations
-(rule X02-20, rejection 868, NT 2017.002), in the NFC-e and in the NF-e
-with the simplified DANFE (rules X18-10 and X22-10, rejections 756 and
-757).</p>
-<p>The ICMS retention of the transport is used when the issuer retains the
-ICMS of a freight service (for instance one hired from an independent
-carrier): service value, retention base (by default the service value),
-rate, ICMS retained (base times rate), freight CFOP and city of the
-taxable event (by default the city of the company). It is refused in the
-NFC-e and in the NF-e with the simplified DANFE (rule X11-10, rejection
-755).</p>
-<p>Before the NF-e is confirmed the module refuses a plate that does not
-match the layout pattern and an ICMS retention without CFOP or city.</p>
+<p>Cada um vira um grupo <tt class="docutils literal">veicTransp</tt> ou <tt class="docutils literal">reboque</tt> com a placa (em
+maiúsculas, sem separadores), a UF e o código da ANTT (RNTC, até 20
+caracteres). Ficam fora do XML nas operações interestaduais (regra
+X02-20, rejeição 868, NT 2017.002), na NFC-e e na NF-e com DANFE
+simplificado (regras X18-10 e X22-10, rejeições 756 e 757).</p>
+<p>A retenção de ICMS do transporte é usada quando o emitente retém o ICMS
+de um serviço de frete (por exemplo, contratado de um transportador
+autônomo): valor do serviço, base da retenção (por padrão o valor do
+serviço), alíquota, ICMS retido (base vezes alíquota), CFOP do frete e
+município do fato gerador (por padrão o município da empresa). É
+recusada na NFC-e e na NF-e com DANFE simplificado (regra X11-10,
+rejeição 755).</p>
+<p>Antes da confirmação da NF-e, o módulo recusa uma placa que não siga o
+padrão do leiaute e uma retenção de ICMS sem CFOP ou município.</p>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -417,35 +416,35 @@ match the layout pattern and an ICMS retention without CFOP or city.</p>
 <div class="section" id="configuration">
 <h1><a class="toc-backref" href="#toc-entry-1">Configuration</a></h1>
 <ul class="simple">
-<li>Register the vehicles of each carrier (<em>Delivery Methods</em>, vehicles)
-with plate, state and ANTT code, and keep them active.</li>
+<li>Cadastre os veículos de cada transportadora (<em>Delivery Methods</em>,
+veículos) com placa, UF e código da ANTT, e mantenha-os ativos.</li>
 </ul>
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-2">Usage</a></h1>
 <ol class="arabic simple">
-<li>On the fiscal document of the NF-e, <em>Delivery</em> tab, choose the
-carrier: its vehicle is filled when it has only one.</li>
-<li>Choose the vehicle and the trailers, and fill the ICMS retention of
-the transport when the issuer retains it.</li>
-<li>Confirm the NF-e: the XML carries the <tt class="docutils literal">veicTransp</tt>, <tt class="docutils literal">reboque</tt> and
-<tt class="docutils literal">retTransp</tt> groups filled.</li>
+<li>No documento fiscal da NF-e, aba <em>Delivery</em>, escolha a
+transportadora: seu veículo é preenchido quando ela tem apenas um.</li>
+<li>Escolha o veículo e os reboques, e preencha a retenção de ICMS do
+transporte quando o emitente a retém.</li>
+<li>Confirme a NF-e: o XML leva os grupos <tt class="docutils literal">veicTransp</tt>, <tt class="docutils literal">reboque</tt> e
+<tt class="docutils literal">retTransp</tt> preenchidos.</li>
 </ol>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-3">Known issues / Roadmap</a></h1>
 <ul class="simple">
-<li>The vehicle is not carried from the sale order or the delivery to the
-invoice: it is chosen on the fiscal document (or computed from the
-carrier).</li>
-<li>The optional extension of rule X02-20 to internal operations between
-different cities (at the discretion of each state) is not applied.</li>
-<li>The choice between vehicle/trailers, wagon (<tt class="docutils literal">vagao</tt>) and ferry
-(<tt class="docutils literal">balsa</tt>) is not handled: wagon and ferry are not filled.</li>
-<li>The freight CFOP of the ICMS retention is not checked against the CFOP
-table of the NF-e portal (rule X16-10, rejection 722).</li>
-<li>The ICMS retention is typed in: it is not computed from the freight
-service purchase.</li>
+<li>O veículo não é levado do pedido de venda nem da entrega para a
+fatura: é escolhido no documento fiscal (ou calculado a partir da
+transportadora).</li>
+<li>A extensão opcional da regra X02-20 às operações internas entre
+municípios diferentes (a critério de cada UF) não é aplicada.</li>
+<li>A escolha entre veículo/reboques, vagão (<tt class="docutils literal">vagao</tt>) e balsa
+(<tt class="docutils literal">balsa</tt>) não é tratada: vagão e balsa não são preenchidos.</li>
+<li>O CFOP do frete da retenção de ICMS não é conferido contra a tabela de
+CFOP do portal da NF-e (regra X16-10, rejeição 722).</li>
+<li>A retenção de ICMS é digitada: não é calculada a partir da compra do
+serviço de frete.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">

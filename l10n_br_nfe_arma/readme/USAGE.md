@@ -1,5 +1,4 @@
-1. Deliver the firearms, choosing their serial numbers.
-2. Create the invoice from the delivery (*Create Invoice* on the
-   picking).
-3. The invoice line shows one row per firearm in the *Firearms* tab.
-4. Post the invoice: the NF-e XML carries one `arma` tag per firearm.
+1. Entregue as armas, escolhendo seus números de série.
+2. Crie a fatura a partir da entrega (*Create Invoice* na separação).
+3. A linha da fatura mostra uma linha por arma na aba *Firearms*.
+4. Lance a fatura: o XML da NF-e leva uma tag `arma` por arma.
