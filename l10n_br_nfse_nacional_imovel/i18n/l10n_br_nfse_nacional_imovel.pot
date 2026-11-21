@@ -1,0 +1,323 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfse_nacional_imovel
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__partner_id
+msgid "Address reported when the unit has no CIB."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__adjustment_type
+msgid "Adjustment Type"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__amount
+msgid "Amount"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__adjustment_type
+msgid "Amount included in the rent that is not part of the IBS/CBS base."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__cib
+msgid ""
+"Brazilian Real Estate Registry code (Cadastro Imobiliario Brasileiro) of the"
+" unit: 7 characters and the check digit."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__cib
+msgid "CIB"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_real_estate_city_id
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_account_move__nfse_real_estate_city_id
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_real_estate_city_id
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_real_estate_city_id
+msgid "City of the real estate of the operation (imovel/cMun)."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_lease_coownership_percent
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_move__nfse_lease_coownership_percent
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_lease_coownership_percent
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_lease_coownership_percent
+msgid "Co-ownership (%)"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields.selection,name:l10n_br_nfse_nacional_imovel.selection__l10n_br_nfse_nacional_real_estate_adjustment__adjustment_type__03
+msgid "Condominium fee included in the rent"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__create_uid
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__create_date
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__description
+msgid "Description"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__display_name
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_imovel/models/document.py:0
+#, python-format
+msgid ""
+"E0928/E0931: the real estate units of %(document)s are only reported for a "
+"real estate operation indicator outside the construction services."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_imovel/models/document.py:0
+#, python-format
+msgid ""
+"E0938: the operation indicator %(indicator)s needs the real estate units."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_imovel/models/document.py:0
+#, python-format
+msgid ""
+"E0939: the tax base adjustments of the units are only reported for the lease"
+" of real estate (subitem 99.03)."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_imovel/models/document.py:0
+#, python-format
+msgid "E0940: the co-ownership must be from 0 to 100%."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_imovel/models/document.py:0
+#, python-format
+msgid ""
+"E0944: the social reducer is only deducted from the residential lease (NBS "
+"1.1002.10.00)."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_imovel/models/real_estate_unit.py:0
+#, python-format
+msgid "E0949: the adjustment type 99 needs a description."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_imovel/models/real_estate_unit.py:0
+#, python-format
+msgid "E0954: only the adjustment type 99 takes a description."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_imovel/models/document.py:0
+#, python-format
+msgid "E0966: a tax base adjustment exceeds the lease total amount."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields.selection,name:l10n_br_nfse_nacional_imovel.selection__l10n_br_nfse_nacional_real_estate_adjustment__adjustment_type__02
+msgid "Fees included in the rent"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__id
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_imovel/models/real_estate_unit.py:0
+#, python-format
+msgid "Inform the CIB or the address of the real estate unit."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model,name:l10n_br_nfse_nacional_imovel.model_l10n_br_fiscal_document
+msgid "Informações de exportação"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment____last_update
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__write_uid
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__write_date
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse_nacional_imovel.document_form
+msgid "Lease (99.03)"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_lease_conditional_discount
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_move__nfse_lease_conditional_discount
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_lease_conditional_discount
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_lease_conditional_discount
+msgid "Lease Conditional Discount"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_lease_due_date
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_move__nfse_lease_due_date
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_lease_due_date
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_lease_due_date
+msgid "Lease Original Due Date"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_lease_total_amount
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_move__nfse_lease_total_amount
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_lease_total_amount
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_lease_total_amount
+msgid "Lease Total Amount"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_lease_unconditional_discount
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_move__nfse_lease_unconditional_discount
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_lease_unconditional_discount
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_lease_unconditional_discount
+msgid "Lease Unconditional Discount"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__insc_imob_fisc
+msgid "Municipal Real Estate Registration"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__document_id
+msgid "NFS-e"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model,name:l10n_br_nfse_nacional_imovel.model_l10n_br_nfse_nacional_real_estate_adjustment
+msgid "NFS-e Nacional Real Estate Tax Base Adjustment"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model,name:l10n_br_nfse_nacional_imovel.model_l10n_br_nfse_nacional_real_estate_unit
+msgid "NFS-e Nacional Real Estate Unit"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields.selection,name:l10n_br_nfse_nacional_imovel.selection__l10n_br_nfse_nacional_real_estate_adjustment__adjustment_type__99
+msgid "Other amounts included in the rent"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__partner_id
+msgid "Property Address"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_real_estate_city_id
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_move__nfse_real_estate_city_id
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_real_estate_city_id
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_real_estate_city_id
+msgid "Property City"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse_nacional_imovel.document_form
+msgid "Real Estate"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment__unit_id
+msgid "Real Estate Unit"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_real_estate_unit_ids
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_move__nfse_real_estate_unit_ids
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_real_estate_unit_ids
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_real_estate_unit_ids
+msgid "Real Estate Units"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_lease_coownership_percent
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_account_move__nfse_lease_coownership_percent
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_lease_coownership_percent
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_lease_coownership_percent
+msgid "Share of the lessor when the property has several owners."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields.selection,name:l10n_br_nfse_nacional_imovel.selection__l10n_br_nfse_nacional_real_estate_adjustment__adjustment_type__04
+msgid "Social reducer"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit__adjustment_ids
+msgid "Tax Base Adjustments"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields.selection,name:l10n_br_nfse_nacional_imovel.selection__l10n_br_nfse_nacional_real_estate_adjustment__adjustment_type__01
+msgid "Taxes included in the rent"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_account_bank_statement_line__nfse_lease_total_amount
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_account_move__nfse_lease_total_amount
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_account_payment__nfse_lease_total_amount
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_imovel.field_l10n_br_fiscal_document__nfse_lease_total_amount
+msgid "Total amount of the lease, not the share of the co-owner."
+msgstr ""
