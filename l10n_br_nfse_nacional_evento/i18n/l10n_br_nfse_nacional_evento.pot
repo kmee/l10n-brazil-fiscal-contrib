@@ -71,13 +71,6 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_evento
-#: model:ir.model,name:l10n_br_nfse_nacional_evento.model_l10n_br_fiscal_document_line
-msgid ""
-"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
-"não contribuinte de ICMS"
-msgstr ""
-
-#. module: l10n_br_nfse_nacional_evento
 #. odoo-python
 #: code:addons/l10n_br_nfse_nacional_evento/models/document_line.py:0
 #, python-format
@@ -85,6 +78,11 @@ msgid ""
 "Inform the event of %(document)s: its description, start and end dates and "
 "its municipal code or venue (rule E0390 of the NFS-e Nacional for the "
 "service %(code)s)."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model,name:l10n_br_nfse_nacional_evento.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_evento
@@ -96,6 +94,6 @@ msgid "Municipal Event Code"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_evento
-#: model:ir.model,name:l10n_br_nfse_nacional_evento.model_l10n_br_fiscal_document
-msgid "Tipo Dados do Imposto BP-e"
+#: model:ir.model,name:l10n_br_nfse_nacional_evento.model_l10n_br_fiscal_document_line
+msgid "Tipo imposto da NFGas"
 msgstr ""
