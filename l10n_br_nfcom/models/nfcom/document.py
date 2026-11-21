@@ -178,7 +178,7 @@ class NFCom(spec_models.StackedModel):
     nfcom10_verProc = fields.Char(
         default=lambda self: self.env["ir.config_parameter"]
         .sudo()
-        .get_param("l10n_br_nfcom.version.name", default="Odoo Brasil OCA v18")
+        .get_param("l10n_br_nfcom.version.name", default="Odoo Brasil OCA v16")
     )
 
     @api.depends("company_id", "document_type_id")
@@ -400,11 +400,11 @@ class NFCom(spec_models.StackedModel):
         return edocs
 
     def _nfcom_sign(self, edoc, xml, doc_id):
-        certificate = self.company_id._get_br_certificate()
+        certificate = self.company_id.sudo().certificate
         return edoc.sign_xml(
             xml,
-            certificate.with_context(bin_size=False).content,
-            certificate.pkcs12_password,
+            certificate.with_context(bin_size=False).file,
+            certificate.password,
             doc_id,
         )
 
