@@ -54,6 +54,11 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfe_agropecuario
+#: model:ir.model,name:l10n_br_nfe_agropecuario.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfe_agropecuario.nfe_guiatransito_form
 msgid "Number"
 msgstr ""
@@ -158,11 +163,6 @@ msgstr ""
 #: code:addons/l10n_br_nfe_agropecuario/models/nfe_agropecuario.py:0
 #, python-format
 msgid "The transit permit series must have at most 9 characters."
-msgstr ""
-
-#. module: l10n_br_nfe_agropecuario
-#: model:ir.model,name:l10n_br_nfe_agropecuario.model_l10n_br_fiscal_document
-msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_nfe_agropecuario
