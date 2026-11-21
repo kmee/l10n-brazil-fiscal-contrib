@@ -172,7 +172,7 @@ class NFeABI(spec_models.StackedModel):
         copy=False,
         default=lambda self: self.env["ir.config_parameter"]
         .sudo()
-        .get_param("l10n_br_nfeabi.version.name", default="Odoo Brasil OCA v18"),
+        .get_param("l10n_br_nfeabi.version.name", default="Odoo Brasil OCA v16"),
     )
 
     @api.depends("company_id")
@@ -589,10 +589,10 @@ class NFeABI(spec_models.StackedModel):
         return edocs
 
     def _nfeabi_sign(self, binding, doc_id):
-        certificate = self.company_id._get_br_certificate()
+        certificate = self.company_id.sudo().certificate
         return binding.to_xml(
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=certificate.with_context(bin_size=False).file,
+            pkcs12_password=certificate.password,
             doc_id=doc_id,
         )
 

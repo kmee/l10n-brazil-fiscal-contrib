@@ -5,7 +5,7 @@
     "name": "NF-e ABI",
     "summary": "Emissão da Nota Fiscal Eletrônica de Alienação de Bens Imóveis "
     "(NF-e ABI, modelo 77)",
-    "version": "18.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",

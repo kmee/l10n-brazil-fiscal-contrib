@@ -8,7 +8,11 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook/page[@name='products']" position="after">
-                <page name="nfeabi" string="NF-e ABI" invisible="document_type != '77'">
+                <page
+                    name="nfeabi"
+                    string="NF-e ABI"
+                    attrs="{'invisible': [('document_type', '!=', '77')]}"
+                >
                     <group>
                         <group name="nfeabi_ide" string="Emission">
                             <field name="nfeabi_environment" />
@@ -18,7 +22,7 @@
                             <field name="nfeabi10_detOper" />
                             <field
                                 name="nfeabi10_pTransImovel"
-                                invisible="nfeabi10_tpNF != '1'"
+                                attrs="{'invisible': [('nfeabi10_tpNF', '!=', '1')]}"
                             />
                         </group>
                         <group name="nfeabi_instrument" string="Instrument">
@@ -26,7 +30,7 @@
                             <field name="nfeabi10_tpInstrumento" />
                             <field
                                 name="nfeabi10_xOutrosInst"
-                                invisible="nfeabi10_tpInstrumento != '99'"
+                                attrs="{'invisible': [('nfeabi10_tpInstrumento', '!=', '99')]}"
                             />
                             <field name="nfeabi10_dtInstrumento" />
                         </group>
@@ -47,27 +51,27 @@
                     </group>
                     <separator string="Transmitters" />
                     <field name="nfeabi10_transmit">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="sequence" widget="handle" />
                             <field name="partner_id" />
                             <field name="transfer_percent" />
                             <field name="nfeabi10_indContrib" />
-                        </list>
+                        </tree>
                     </field>
                     <separator string="Acquirers" />
                     <field name="nfeabi10_adquirente">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="sequence" widget="handle" />
                             <field name="partner_id" />
-                        </list>
+                        </tree>
                     </field>
                     <separator string="Brokers" />
                     <field name="nfeabi10_gIntermedCorret">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="sequence" widget="handle" />
                             <field name="partner_id" />
                             <field name="nfeabi10_vCorretagem" />
-                        </list>
+                        </tree>
                     </field>
                 </page>
             </xpath>
