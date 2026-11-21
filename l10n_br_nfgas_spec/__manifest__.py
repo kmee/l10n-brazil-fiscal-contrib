@@ -4,7 +4,7 @@
 {
     "name": "NFGas abstract models",
     "summary": "Bindings e modelos abstratos da NFGas gerados a partir do XSD oficial",
-    "version": "18.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",
