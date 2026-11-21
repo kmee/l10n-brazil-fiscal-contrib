@@ -230,11 +230,6 @@ msgid "ID"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_deducao
-#: model:ir.model,name:l10n_br_nfse_nacional_deducao.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfse_nacional_deducao
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_deducao.field_l10n_br_nfse_nacional_bc_adjustment__issue_date
 msgid "Issue Date"
 msgstr ""
@@ -361,6 +356,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_deducao.field_account_payment__nfse_bc_adjustment_ids
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_deducao.field_l10n_br_fiscal_document__nfse_bc_adjustment_ids
 msgid "Tax Base Adjustment Documents"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_deducao
+#: model:ir.model,name:l10n_br_nfse_nacional_deducao.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_deducao
