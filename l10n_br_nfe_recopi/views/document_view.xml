@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="document_form" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.document.form (recopi)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
+        <field name="arch" type="xml">
+            <field name="ind_pres" position="after">
+                <field name="recopi_number" invisible="document_type != '55'" />
+            </field>
+        </field>
+    </record>
+</odoo>
