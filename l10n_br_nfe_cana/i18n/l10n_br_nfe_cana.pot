@@ -1,0 +1,164 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfe_cana
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Amount"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Day"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Deduction"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Deductions Amount"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#. odoo-python
+#: code:addons/l10n_br_nfe_cana/models/nfe_cana.py:0
+msgid "Each day of the month can have a single daily supply."
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model:ir.model,name:l10n_br_nfe_cana.model_l10n_br_fiscal_document
+msgid "Fiscal Document"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model:ir.model,name:l10n_br_nfe_cana.model_nfe_40_fordia
+msgid "Fornecimentos diários"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Grand Total (kg)"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Harvest"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model:ir.model,name:l10n_br_nfe_cana.model_nfe_40_cana
+msgid "Informações de registro aquisições de cana"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Month Total (kg)"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Net Supplies Amount"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Previous Total (kg)"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Quantity (kg)"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Reference Month"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.document_form
+msgid "Sugarcane"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_cana.nfe_cana_form
+msgid "Supplies Amount"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#. odoo-python
+#: code:addons/l10n_br_nfe_cana/models/document.py:0
+msgid ""
+"The NF-e sugarcane acquisition data (cana) is invalid:\n"
+"%(errors)s"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#. odoo-python
+#: code:addons/l10n_br_nfe_cana/models/document.py:0
+msgid "The NFC-e does not accept the sugarcane group."
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#. odoo-python
+#: code:addons/l10n_br_nfe_cana/models/nfe_cana.py:0
+msgid "The day must be a number from 1 to 31."
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#. odoo-python
+#: code:addons/l10n_br_nfe_cana/models/nfe_cana.py:0
+msgid "The harvest (safra) must have 4 to 9 characters, e.g. 2025/2026."
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#. odoo-python
+#: code:addons/l10n_br_nfe_cana/models/nfe_cana.py:0
+msgid "The reference month must be in the MM/YYYY format."
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#. odoo-python
+#: code:addons/l10n_br_nfe_cana/models/document.py:0
+msgid "The sugarcane group accepts at most %(max)s deductions."
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#. odoo-python
+#: code:addons/l10n_br_nfe_cana/models/document.py:0
+msgid "The sugarcane group needs 1 to %(max)s daily supplies."
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model:ir.model.fields,field_description:l10n_br_nfe_cana.field_nfe_40_cana__nfe40_qTotGer
+msgid "Total Geral"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model:ir.model.fields,field_description:l10n_br_nfe_cana.field_nfe_40_cana__nfe40_qTotMes
+msgid "Total do mês"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model:ir.model.fields,field_description:l10n_br_nfe_cana.field_nfe_40_cana__nfe40_vLiqFor
+msgid "Valor Líquido dos fornecimentos"
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model:ir.model.fields,field_description:l10n_br_nfe_cana.field_nfe_40_cana__nfe40_vTotDed
+msgid "Valor Total das Deduções"
+msgstr ""
