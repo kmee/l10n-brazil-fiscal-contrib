@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="nfe_gcred_list" model="ir.ui.view">
+        <field name="name">nfe.40.gcred.list</field>
+        <field name="model">nfe.40.gcred</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="nfe40_cCredPresumido" string="Benefit Code" />
+                <field name="nfe40_pCredPresumido" string="Percentage" />
+                <field name="brl_currency_id" column_invisible="1" />
+                <field name="nfe40_vCredPresumido" string="Amount" />
+            </list>
+        </field>
+    </record>
+</odoo>
