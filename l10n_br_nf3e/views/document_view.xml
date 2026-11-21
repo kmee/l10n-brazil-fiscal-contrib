@@ -8,7 +8,11 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook/page[@name='products']" position="after">
-                <page name="nf3e" string="NF3e" invisible="document_type != '66'">
+                <page
+                    name="nf3e"
+                    string="NF3e"
+                    attrs="{'invisible': [('document_type', '!=', '66')]}"
+                >
                     <group>
                         <group name="nf3e_ide" string="Emission">
                             <field name="nf3e_environment" />
@@ -43,29 +47,29 @@
                     </group>
                     <separator string="Meters" />
                     <field name="nf3e10_gMed">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="nf3e10_nMed" />
                             <field name="nf3e10_idMedidor" />
                             <field name="nf3e10_dMedAnt" />
                             <field name="nf3e10_dMedAtu" />
-                        </list>
+                        </tree>
                     </field>
                     <separator string="Billing History" />
                     <field name="nf3e10_gHistFat">
-                        <list>
+                        <tree>
                             <field name="nf3e10_xGrandFat" />
-                        </list>
+                        </tree>
                         <form>
                             <group>
                                 <field name="nf3e10_xGrandFat" />
                             </group>
                             <field name="nf3e10_gGrandFat">
-                                <list editable="bottom">
+                                <tree editable="bottom">
                                     <field name="nf3e10_CompetFat" />
                                     <field name="nf3e10_vFat" />
                                     <field name="nf3e10_uMed" />
                                     <field name="nf3e10_qtdDias" />
-                                </list>
+                                </tree>
                             </field>
                         </form>
                     </field>
@@ -80,7 +84,11 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_line_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook/page[@name='general']" position="after">
-                <page name="nf3e" string="NF3e" invisible="nf3e_document_type != '66'">
+                <page
+                    name="nf3e"
+                    string="NF3e"
+                    attrs="{'invisible': [('nf3e_document_type', '!=', '66')]}"
+                >
                     <group>
                         <field name="nf3e_document_type" invisible="1" />
                         <field name="nf3e10_cClass" />

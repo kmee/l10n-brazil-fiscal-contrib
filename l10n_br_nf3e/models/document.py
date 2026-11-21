@@ -61,6 +61,20 @@ class NF3e(spec_models.StackedModel):
     _nf3e10_stacking_mixin = "nf3e.10.infnf3e"
     _nf3e10_stacking_force_paths = ["infnf3e.infAdic"]
 
+    def _register_hook(self):
+        """Build the concrete NF3e spec models whatever the MRO resolves to.
+
+        The hook of spec_driven_model takes the schema from the MRO: with
+        another spec driven module extending the fiscal document after this
+        one, it resolves to that schema and the NF3e models (gMed, gHistFat
+        and the other groups of the document) would get no table.
+        """
+        res = super()._register_hook()
+        self.with_context(
+            spec_schema="nf3e", spec_version="10"
+        )._register_remaining_schema_models_hook()
+        return res
+
     nf3e_environment = fields.Selection(
         selection=NF3E_ENVIRONMENTS,
         string="NF3e Environment",
@@ -108,7 +122,7 @@ class NF3e(spec_models.StackedModel):
         copy=False,
         default=lambda self: self.env["ir.config_parameter"]
         .sudo()
-        .get_param("l10n_br_nf3e.version.name", default="Odoo Brasil OCA v18"),
+        .get_param("l10n_br_nf3e.version.name", default="Odoo Brasil OCA v16"),
     )
 
     @api.depends("company_id")
@@ -290,10 +304,10 @@ class NF3e(spec_models.StackedModel):
         return edocs
 
     def _nf3e_sign(self, binding, doc_id):
-        certificate = self.company_id._get_br_certificate()
+        certificate = self.company_id.sudo().certificate
         return binding.to_xml(
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=certificate.with_context(bin_size=False).file,
+            pkcs12_password=certificate.password,
             doc_id=doc_id,
         )
 
@@ -390,7 +404,10 @@ class NF3e(spec_models.StackedModel):
         check(company.state_id, _("Company State"))
         check(company.city_id, _("Company City"))
         check(company.nf3e10_IE, _("Company State Tax Number"))
-        check(company.sudo().certificate, _("Digital Certificate"))
+        check(
+            company.sudo().certificate_nfe_id or company.sudo().certificate_ecnpj_id,
+            _("Digital Certificate"),
+        )
         check(self.partner_id, _("Customer"))
         check(self.document_serie_id, _("Document Serie"))
         for field_name in (

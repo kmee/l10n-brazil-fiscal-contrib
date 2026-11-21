@@ -3,8 +3,8 @@
 
 {
     "name": "NF3e",
-    "summary": "Brazilian electronic electricity invoice NF3e (model 66)",
-    "version": "18.0.1.0.0",
+    "summary": "Nota Fiscal de Energia Elétrica Eletrônica (NF3e, modelo 66)",
+    "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",
