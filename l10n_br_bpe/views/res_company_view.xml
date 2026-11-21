@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="bpe_res_company_form" model="ir.ui.view">
+        <field name="name">res.company.form (in l10n_br_bpe)</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.fiscal_res_company_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='fiscal']/notebook" position="inside">
+                <page name="bpe" string="BP-e">
+                    <group name="bpe_settings" string="BP-e Default Settings">
+                        <field name="bpe_environment" required="1" />
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

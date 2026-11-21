@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils: https://docutils.sourceforge.io/" />
+<title>BP-e</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 9511 2024-01-13 09:50:07Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+Despite the name, some widely supported CSS2 features are used.
+
+See https://docutils.sourceforge.io/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: gray; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic, pre.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="bp-e">
+<h1 class="title">BP-e</h1>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! This file is generated by oca-gen-addon-readme !!
+!! changes will be overwritten.                   !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! source digest: sha256:15728798f5e5c57ad220f1ef78f8040ebc3550cff73996292d9fb5ce348d303d
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Alpha" src="https://img.shields.io/badge/maturity-Alpha-red.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_bpe"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
+<p>Emissão do Bilhete de Passagem Eletrônico (<tt class="docutils literal"><span class="pre">BP-e</span></tt>, <tt class="docutils literal">modelo 63</tt>,
+leiaute 1.00) a partir do documento fiscal (<tt class="docutils literal">l10n_br_fiscal.document</tt>)
+com o tipo de documento 63 do <tt class="docutils literal">l10n_br_fiscal</tt>, no padrão do
+<tt class="docutils literal">l10n_br_mdfe</tt>: os grupos do leiaute vêm do <tt class="docutils literal">l10n_br_bpe_spec</tt> e são
+empilhados no documento fiscal.</p>
+<p>O BP-e é obrigatório desde 01/07/2019 no transporte intermunicipal,
+interestadual e internacional de passageiros rodoviário, aquaviário e
+ferroviário (Ajuste SINIEF 01/17, cláusula 18ª-A, na redação do Ajuste
+SINIEF 22/18).</p>
+<p>O módulo:</p>
+<ul class="simple">
+<li>monta o XML do BP-e: <tt class="docutils literal">ide</tt>, <tt class="docutils literal">emit</tt> (da empresa), <tt class="docutils literal">comp</tt> (do
+parceiro do documento, quando informado), <tt class="docutils literal">infPassagem</tt> e
+<tt class="docutils literal">infPassageiro</tt>, <tt class="docutils literal">infViagem</tt>, <tt class="docutils literal">infValorBPe</tt> (um <tt class="docutils literal">Comp</tt> por
+linha do documento fiscal), <tt class="docutils literal">imp</tt> (ICMS das linhas, grupo <tt class="docutils literal">IBSCBS</tt>
+e <tt class="docutils literal">vTotDFe</tt>), <tt class="docutils literal">pag</tt>, <tt class="docutils literal">infAdic</tt>, <tt class="docutils literal">infRespTec</tt> e o QR Code do
+<tt class="docutils literal">infBPeSupl</tt>;</li>
+<li>calcula IBS e CBS pelo motor fiscal da OCA (classificação tributária e
+impostos das linhas) e leva o grupo <tt class="docutils literal">IBSCBS</tt> da NT 2025.001 RTC;</li>
+<li>aplica a regra do <tt class="docutils literal">vTotDFe</tt> da NT 2026.004 v1.01: igual ao <tt class="docutils literal">vBP</tt>
+em 2026 e <tt class="docutils literal">vBP</tt> mais IBS e CBS a partir de 2027, pela data de
+emissão local;</li>
+<li>gera a chave de acesso, assina o XML com o certificado da empresa e
+valida contra o XSD do BP-e da <tt class="docutils literal">nfelib</tt>;</li>
+<li>transmite o BP-e (serviço síncrono <tt class="docutils literal">BPeRecepcao</tt>, mensagem
+compactada em GZip e Base64) e registra o protocolo de autorização;</li>
+<li>envia os eventos de cancelamento (110111) e de não embarque (110115).</li>
+</ul>
+<p>A transmissão usa um cliente próprio (<tt class="docutils literal">bpe_client</tt>), sobre o
+<tt class="docutils literal">brazil_fiscal_client</tt>, no mesmo padrão dos clientes de CT-e e MDF-e
+da <tt class="docutils literal">nfelib</tt>, que ainda não tem cliente para o BP-e. Ele segue o MOC
+BP-e 1.00b (itens 3.3 e 3.4): SOAP 1.2, requisição em <tt class="docutils literal">bpeDadosMsg</tt>,
+resposta em <tt class="docutils literal">bpeResultMsg</tt>, sem cabeçalho SOAP. Os endereços dos
+autorizadores (MG, MS, MT, PR, SP e SVRS para as demais UFs) e do QR
+Code são os do Portal BP-e
+(<a class="reference external" href="https://dfe-portal.svrs.rs.gov.br/BPe/Servicos">https://dfe-portal.svrs.rs.gov.br/BPe/Servicos</a>).</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">This is an alpha version, the data model and design can change at any time without warning.
+Only for development or testing purpose, do not use in production.
+<a class="reference external" href="https://odoo-community.org/page/development-status">More details on development status</a></p>
+</div>
+<p><strong>Table of contents</strong></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#configuration" id="toc-entry-1">Configuration</a></li>
+<li><a class="reference internal" href="#usage" id="toc-entry-2">Usage</a></li>
+<li><a class="reference internal" href="#known-issues-roadmap" id="toc-entry-3">Known issues / Roadmap</a></li>
+<li><a class="reference internal" href="#bug-tracker" id="toc-entry-4">Bug Tracker</a></li>
+<li><a class="reference internal" href="#credits" id="toc-entry-5">Credits</a><ul>
+<li><a class="reference internal" href="#authors" id="toc-entry-6">Authors</a></li>
+<li><a class="reference internal" href="#contributors" id="toc-entry-7">Contributors</a></li>
+<li><a class="reference internal" href="#maintainers" id="toc-entry-8">Maintainers</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<h1><a class="toc-backref" href="#toc-entry-1">Configuration</a></h1>
+<ul class="simple">
+<li>Na empresa, aba Fiscal, informe o processador de documentos
+eletrônicos “Odoo Community”, o certificado digital A1 e, na aba BP-e,
+o ambiente (produção ou homologação).</li>
+<li>Crie uma série para o tipo de documento 63 (BP-e) na empresa.</li>
+<li>Configure a operação fiscal da venda de passagens: as linhas do BP-e
+precisam de linha de operação fiscal para que o motor calcule ICMS,
+IBS e CBS.</li>
+</ul>
+</div>
+<div class="section" id="usage">
+<h1><a class="toc-backref" href="#toc-entry-2">Usage</a></h1>
+<ol class="arabic simple">
+<li>Crie um documento fiscal com o tipo de documento 63 (BP-e).</li>
+<li>Cada linha do documento é um componente do valor do bilhete (tarifa,
+pedágio, taxa de embarque…), escolhido no campo “BP-e Component
+Type” da linha.</li>
+<li>Na aba BP-e, informe as cidades de origem e destino (ou os códigos
+das localidades), as datas de embarque e de validade do bilhete, o
+passageiro, os trechos da viagem e as formas de pagamento.</li>
+<li>Confirme o documento para gerar, assinar e validar o XML e envie para
+a autorização.</li>
+<li>Com o BP-e autorizado, os botões “Cancel” e “No Boarding” enviam os
+eventos de cancelamento e de não embarque.</li>
+</ol>
+</div>
+<div class="section" id="known-issues-roadmap">
+<h1><a class="toc-backref" href="#toc-entry-3">Known issues / Roadmap</a></h1>
+<ul class="simple">
+<li>Levar o cliente de webservice do BP-e (<tt class="docutils literal">bpe_client</tt>) para a
+<tt class="docutils literal">nfelib</tt>, em <tt class="docutils literal">nfelib/bpe/client/v1_0</tt>, ao lado dos clientes de
+CT-e e MDF-e, com as classes SOAP geradas do WSDL (o WSDL só é servido
+com certificado de cliente, por isso as classes foram declaradas à
+mão).</li>
+<li>Conferir no Portal BP-e três endereços de homologação que parecem
+trocados na página de serviços (MG: Consulta aponta para produção e
+StatusServico para BPeConsulta; MS: Consulta aponta para MG). Foram
+mantidos como publicados.</li>
+<li>BP-e TM (transporte metropolitano, serviço <tt class="docutils literal">BPeRecepcaoTM</tt>) e BP-e
+TA (transporte aéreo, <tt class="docutils literal">BPeRecepcaoTA</tt>, NT 2025.002): os modelos
+estão no <tt class="docutils literal">l10n_br_bpe_spec</tt>, mas a emissão tem estrutura própria (TM
+agrupa as viagens por catraca no <tt class="docutils literal">detBPeTM</tt>) e não foi feita.</li>
+<li>Contingência off-line (<tt class="docutils literal">tpEmis</tt> 2): QR Code com o parâmetro <tt class="docutils literal">sign</tt>
+(MOC item 10.2), <tt class="docutils literal">dhCont</tt> e <tt class="docutils literal">xJust</tt>.</li>
+<li>BP-e de substituição (<tt class="docutils literal">tpBPe</tt> 3, <tt class="docutils literal">infBPeSub</tt>) e os eventos de
+alteração de poltrona e de excesso de bagagem.</li>
+<li>Grupo <tt class="docutils literal">ICMSUFFim</tt> (partilha do ICMS com a UF de término para
+consumidor final), grupo <tt class="docutils literal">agencia</tt>, <tt class="docutils literal">autXML</tt>, CST de ICMS 60 e
+diferimento, redução e monofasia do IBS e da CBS além do <tt class="docutils literal">gRed</tt>.</li>
+<li>Vinculação de pagamento (<tt class="docutils literal">pgtoVinc</tt>, NT 2026.001) e as regras da NT
+2026.005 para o Simples Nacional.</li>
+<li>DABPE (documento auxiliar em PDF) e importação de XML de BP-e.</li>
+</ul>
+</div>
+<div class="section" id="bug-tracker">
+<h1><a class="toc-backref" href="#toc-entry-4">Bug Tracker</a></h1>
+<p>Bugs are tracked on <a class="reference external" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/issues">GitHub Issues</a>.
+In case of trouble, please check there if your issue has already been reported.
+If you spotted it first, help us to smash it by providing a detailed and welcomed
+<a class="reference external" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/issues/new?body=module:%20l10n_br_bpe%0Aversion:%2016.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
+<p>Do not contact contributors directly about support or help with technical issues.</p>
+</div>
+<div class="section" id="credits">
+<h1><a class="toc-backref" href="#toc-entry-5">Credits</a></h1>
+<div class="section" id="authors">
+<h2><a class="toc-backref" href="#toc-entry-6">Authors</a></h2>
+<ul class="simple">
+<li>KMEE</li>
+</ul>
+</div>
+<div class="section" id="contributors">
+<h2><a class="toc-backref" href="#toc-entry-7">Contributors</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.kmee.com.br">KMEE</a>:<ul>
+<li>Luis Felipe Mileo &lt;<a class="reference external" href="mailto:mileo&#64;kmee.com.br">mileo&#64;kmee.com.br</a>&gt;</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="maintainers">
+<h2><a class="toc-backref" href="#toc-entry-8">Maintainers</a></h2>
+<p>Current maintainer:</p>
+<p><a class="reference external image-reference" href="https://github.com/mileo"><img alt="mileo" src="https://github.com/mileo.png?size=40px" /></a></p>
+<p>This module is part of the <a class="reference external" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_bpe">kmee/l10n-brazil-fiscal-contrib</a> project on GitHub.</p>
+<p>You are welcome to contribute.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

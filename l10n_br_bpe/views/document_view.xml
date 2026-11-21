@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="bpe_document_form_view" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.document.form (in l10n_br_bpe)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_document_cancel']" position="after">
+                <button
+                    name="%(l10n_br_bpe.bpe_no_boarding_wizard_action)d"
+                    type="action"
+                    string="No Boarding"
+                    groups="l10n_br_fiscal.group_user"
+                    attrs="{'invisible': ['|', ('document_type', '!=', '63'), ('state_edoc', '!=', 'autorizada')]}"
+                />
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page
+                    name="bpe"
+                    string="BP-e"
+                    attrs="{'invisible': [('document_type', '!=', '63')]}"
+                >
+                    <group>
+                        <group name="bpe_trip" string="Trip">
+                            <field name="bpe_environment" />
+                            <field name="bpe10_modal" />
+                            <field name="bpe10_tpBPe" />
+                            <field name="bpe10_indPres" />
+                            <field name="bpe_origin_city_id" />
+                            <field name="bpe10_cLocOrig" />
+                            <field name="bpe10_xLocOrig" />
+                            <field name="bpe_destination_city_id" />
+                            <field name="bpe10_cLocDest" />
+                            <field name="bpe10_xLocDest" />
+                            <field name="bpe10_dhEmb" />
+                            <field name="bpe10_dhValidade" />
+                        </group>
+                        <group name="bpe_values" string="Values">
+                            <field name="bpe10_vBP" />
+                            <field name="bpe10_vDesconto" />
+                            <field name="bpe10_tpDesconto" />
+                            <field name="bpe10_xDesconto" />
+                            <field name="bpe10_vPgto" />
+                            <field name="bpe10_vTroco" />
+                            <field name="bpe10_vTotDFe" />
+                            <field name="bpe10_infPassageiro" />
+                        </group>
+                    </group>
+                    <field name="bpe10_infViagem">
+                        <tree editable="bottom">
+                            <field name="bpe10_cPercurso" />
+                            <field name="bpe10_xPercurso" />
+                            <field name="bpe10_tpViagem" />
+                            <field name="bpe10_tpServ" />
+                            <field name="bpe10_tpAcomodacao" />
+                            <field name="bpe10_tpTrecho" />
+                            <field name="bpe10_dhViagem" />
+                            <field name="bpe10_prefixo" />
+                            <field name="bpe10_poltrona" />
+                            <field name="bpe10_plataforma" />
+                        </tree>
+                    </field>
+                    <field name="bpe10_pag">
+                        <tree editable="bottom">
+                            <field name="bpe10_tPag" />
+                            <field name="bpe10_xPag" />
+                            <field name="bpe10_nDocPag" />
+                            <field name="bpe10_vPag" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
