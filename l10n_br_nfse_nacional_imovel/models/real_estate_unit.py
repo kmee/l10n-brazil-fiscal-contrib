@@ -8,7 +8,7 @@ from nfelib.nfse.bindings.v1_0.tipos_complexos_v1_01 import (
     TcrtcvaloresBcimoveis,
 )
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
 # TSAjusteBCLocImoveis, leiaute 1.04.01 (NT 009)
@@ -60,7 +60,7 @@ class RealEstateUnit(models.Model):
         for unit in self:
             if not unit.cib and not unit.partner_id:
                 raise ValidationError(
-                    self.env._("Inform the CIB or the address of the real estate unit.")
+                    _("Inform the CIB or the address of the real estate unit.")
                 )
 
     def _nfse_binding(self):
@@ -112,13 +112,11 @@ class RealEstateAdjustment(models.Model):
         for adjustment in self:
             if adjustment.adjustment_type == "99" and not adjustment.description:
                 raise ValidationError(
-                    self.env._("E0949: the adjustment type 99 needs a description.")
+                    _("E0949: the adjustment type 99 needs a description.")
                 )
             if adjustment.adjustment_type != "99" and adjustment.description:
                 raise ValidationError(
-                    self.env._(
-                        "E0954: only the adjustment type 99 takes a description."
-                    )
+                    _("E0954: only the adjustment type 99 takes a description.")
                 )
 
     def _nfse_binding(self):

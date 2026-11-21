@@ -3,7 +3,7 @@
 
 from nfelib.nfse.bindings.v1_0.tipos_complexos_v1_01 import TcrtclocacaoImovel
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
 
 # Anexo VI, leiaute 1.04.01 of NT 009: rule E0931 refuses the imovel group
@@ -114,7 +114,7 @@ class FiscalDocument(models.Model):
         for doc in self:
             if not 0 <= doc.nfse_lease_coownership_percent <= 100:
                 raise ValidationError(
-                    self.env._("E0940: the co-ownership must be from 0 to 100%.")
+                    _("E0940: the co-ownership must be from 0 to 100%.")
                 )
 
     def _export_tag_nfse_10_imovel(self, xsd_fields, class_obj, export_dict):
@@ -129,7 +129,7 @@ class FiscalDocument(models.Model):
         if code in OBRA_TAXATION_CODES or indicator not in REAL_ESTATE_INDICATORS:
             if units:
                 raise UserError(
-                    self.env._(
+                    _(
                         "E0928/E0931: the real estate units of %(document)s are "
                         "only reported for a real estate operation indicator "
                         "outside the construction services.",
@@ -155,7 +155,7 @@ class FiscalDocument(models.Model):
         errors = []
         if indicator in UNIT_INDICATORS and not units:
             errors.append(
-                self.env._(
+                _(
                     "E0938: the operation indicator %(indicator)s needs the "
                     "real estate units.",
                     indicator=indicator,
@@ -163,7 +163,7 @@ class FiscalDocument(models.Model):
             )
         if adjustments and not lease:
             errors.append(
-                self.env._(
+                _(
                     "E0939: the tax base adjustments of the units are only "
                     "reported for the lease of real estate (subitem 99.03)."
                 )
@@ -173,16 +173,14 @@ class FiscalDocument(models.Model):
             and line.nfse10_cNBS != RESIDENTIAL_LEASE_NBS
         ):
             errors.append(
-                self.env._(
+                _(
                     "E0944: the social reducer is only deducted from the "
                     "residential lease (NBS 1.1002.10.00)."
                 )
             )
         if lease and any(a.amount > self.nfse_lease_total_amount for a in adjustments):
             errors.append(
-                self.env._(
-                    "E0966: a tax base adjustment exceeds the lease total amount."
-                )
+                _("E0966: a tax base adjustment exceeds the lease total amount.")
             )
         return errors
 
