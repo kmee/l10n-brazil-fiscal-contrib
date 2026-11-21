@@ -176,11 +176,6 @@ msgid "Inform the CIB or the address of the real estate unit."
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_imovel
-#: model:ir.model,name:l10n_br_nfse_nacional_imovel.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfse_nacional_imovel
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_adjustment____last_update
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_imovel.field_l10n_br_nfse_nacional_real_estate_unit____last_update
 msgid "Last Modified on"
@@ -312,6 +307,11 @@ msgstr ""
 #. module: l10n_br_nfse_nacional_imovel
 #: model:ir.model.fields.selection,name:l10n_br_nfse_nacional_imovel.selection__l10n_br_nfse_nacional_real_estate_adjustment__adjustment_type__01
 msgid "Taxes included in the rent"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_imovel
+#: model:ir.model,name:l10n_br_nfse_nacional_imovel.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_imovel
