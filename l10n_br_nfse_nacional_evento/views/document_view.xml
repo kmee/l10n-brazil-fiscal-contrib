@@ -11,7 +11,7 @@
                 <page
                     name="nfse_event"
                     string="Event"
-                    invisible="document_type != 'SE'"
+                    attrs="{'invisible': [('document_type', '!=', 'SE')]}"
                 >
                     <group>
                         <group>
@@ -23,7 +23,7 @@
                             <field name="nfse_event_code" />
                             <field
                                 name="nfse_event_partner_id"
-                                invisible="nfse_event_code"
+                                attrs="{'invisible': [('nfse_event_code', '!=', False)]}"
                             />
                         </group>
                     </group>

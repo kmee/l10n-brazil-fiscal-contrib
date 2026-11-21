@@ -1,7 +1,7 @@
 # Copyright 2026 KMEE
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import models
+from odoo import _, models
 from odoo.exceptions import UserError
 
 
@@ -31,7 +31,7 @@ class FiscalDocumentLine(models.Model):
         )
         if not complete:
             raise UserError(
-                self.env._(
+                _(
                     "Inform the event of %(document)s: its description, start "
                     "and end dates and its municipal code or venue (rule E0390 "
                     "of the NFS-e Nacional for the service %(code)s).",
