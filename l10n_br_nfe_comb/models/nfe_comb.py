@@ -15,12 +15,14 @@ GLP_PERCENT_FIELDS = ("nfe40_pGLP", "nfe40_pGNn", "nfe40_pGNi")
 class NFeComb(models.AbstractModel):
     _inherit = "nfe.40.comb"
 
-    @api.depends("nfe40_cProdANP", "nfe40_descANP")
-    def _compute_display_name(self):
-        for record in self:
-            record.display_name = " - ".join(
-                filter(None, (record.nfe40_cProdANP, record.nfe40_descANP))
+    def name_get(self):
+        return [
+            (
+                record.id,
+                " - ".join(filter(None, (record.nfe40_cProdANP, record.nfe40_descANP))),
             )
+            for record in self
+        ]
 
     @api.constrains("nfe40_cProdANP")
     def _check_nfe40_cProdANP(self):

@@ -35,8 +35,16 @@ class TestNFeComb(TransactionCase):
                 ],
             }
         )
-        cls.product = cls.env.ref("product.product_product_20").copy(
-            {"name": "Gasoline", "default_code": "GAS-C"}
+        # on 16.0 the company dependent fiscal type is not copied, and
+        # without it the item gets no ICMS (copied in the company of the
+        # environment, where the document line reads it, as 18.0 does)
+        product = cls.env.ref("product.product_product_20")
+        cls.product = product.copy(
+            {
+                "name": "Gasoline",
+                "default_code": "GAS-C",
+                "fiscal_type": product.fiscal_type,
+            }
         )
         cls.product.nfe40_comb = cls.comb
         cls.line = cls.nfe.fiscal_line_ids

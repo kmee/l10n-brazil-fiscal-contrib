@@ -21,7 +21,7 @@
                     </group>
                     <group
                         string="LPG"
-                        invisible="nfe40_cProdANP != '210203001'"
+                        attrs="{'invisible': [('nfe40_cProdANP', '!=', '210203001')]}"
                         name="glp"
                     >
                         <field name="brl_currency_id" invisible="1" />
@@ -39,11 +39,11 @@
                 </group>
                 <group string="Fuel Origin">
                     <field name="nfe40_origComb" nolabel="1" colspan="2">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="nfe40_indImport" string="Origin" />
                             <field name="nfe40_cUFOrig" string="State" />
                             <field name="nfe40_pOrig" string="Percentage" />
-                        </list>
+                        </tree>
                     </field>
                 </group>
                 <group>
