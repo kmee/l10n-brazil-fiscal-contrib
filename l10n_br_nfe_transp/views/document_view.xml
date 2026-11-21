@@ -11,7 +11,10 @@
         />
         <field name="arch" type="xml">
             <group name="nfe_transport" position="after">
-                <group name="nfe40_veicTransp" invisible="document_type != '55'">
+                <group
+                    name="nfe40_veicTransp"
+                    attrs="{'invisible': [('document_type', '!=', '55')]}"
+                >
                     <group string="Vehicle">
                         <field name="transport_vehicle_id" />
                         <field name="transport_trailer_ids" widget="many2many_tags" />
