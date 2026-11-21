@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="bpe_ta_document_form_view" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.document.form (in l10n_br_bpe_ta)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_bpe.bpe_document_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='bpe_settings']" position="after">
+                <group
+                    name="bpe_layout_ta"
+                    attrs="{'invisible': [('bpe_layout', '!=', 'ta')]}"
+                >
+                    <group name="bpe_ta_trip" string="BP-e TA">
+                        <field name="bpe_ta_purchase_type" />
+                        <field
+                            name="bpe_ta_multiple_key"
+                            attrs="{'invisible': [('bpe_ta_purchase_type', '!=', '2')]}"
+                        />
+                        <field name="bpe_ta_iata_number" />
+                        <field name="bpe10_indPres" />
+                        <field name="bpe_origin_city_id" />
+                        <field name="bpe_ta_destination_abroad" />
+                        <field
+                            name="bpe_destination_city_id"
+                            attrs="{'invisible': [('bpe_ta_destination_abroad', '=', True)]}"
+                        />
+                        <field name="bpe10_dhEmb" />
+                        <field name="bpe10_dhValidade" />
+                        <field
+                            name="bpe10_infPassageiro"
+                            attrs="{'invisible': [('bpe_ta_purchase_type', '=', '1')]}"
+                        />
+                    </group>
+                    <group
+                        name="bpe_ta_values"
+                        string="Values"
+                        attrs="{'invisible': [('bpe_ta_purchase_type', '=', '2')]}"
+                    >
+                        <field name="bpe10_vBP" />
+                        <field name="bpe10_vDesconto" />
+                        <field name="bpe_ta_discount_type" />
+                        <field name="bpe10_xDesconto" />
+                        <field name="bpe_ta_discount_code" />
+                        <field name="bpe10_vPgto" />
+                        <field name="bpe10_vTroco" />
+                        <field name="bpe10_vTotDFe" />
+                    </group>
+                </group>
+                <field
+                    name="bpe_ta_flight_ids"
+                    attrs="{'invisible': [('bpe_layout', '!=', 'ta')]}"
+                >
+                    <tree editable="bottom">
+                        <field name="sequence" widget="handle" />
+                        <field name="flight_number" />
+                        <field name="airline_code" />
+                        <field name="trip_type" />
+                        <field name="origin_airport" />
+                        <field name="destination_airport" />
+                        <field name="service_type" />
+                        <field name="accommodation_type" />
+                        <field name="leg_type" />
+                        <field name="departure_date" />
+                        <field name="connection_date" />
+                    </tree>
+                </field>
+            </xpath>
+            <xpath expr="//field[@name='bpe10_pag']" position="attributes">
+                <attribute
+                    name="attrs"
+                >{'invisible': [('bpe_layout', 'not in', ('bpe', 'ta'))]}</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
