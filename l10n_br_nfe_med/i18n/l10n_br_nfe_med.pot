@@ -34,13 +34,6 @@ msgid "Exemption Reason"
 msgstr ""
 
 #. module: l10n_br_nfe_med
-#: model:ir.model,name:l10n_br_nfe_med.model_l10n_br_fiscal_document_line
-msgid ""
-"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
-"não contribuinte de ICMS"
-msgstr ""
-
-#. module: l10n_br_nfe_med
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfe_med.nfe_med_form
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfe_med.nfe_med_list
 msgid "Maximum Consumer Price"
@@ -76,6 +69,11 @@ msgstr ""
 msgid ""
 "The ANVISA code must have 11 or 13 digits, or be ISENTO for medicines exempt"
 " from registration."
+msgstr ""
+
+#. module: l10n_br_nfe_med
+#: model:ir.model,name:l10n_br_nfe_med.model_l10n_br_fiscal_document_line
+msgid "Tipo imposto da NFGas"
 msgstr ""
 
 #. module: l10n_br_nfe_med
