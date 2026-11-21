@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record id="document_76" model="l10n_br_fiscal.document.type">
+        <field name="code">76</field>
+        <field name="name">Nota Fiscal Eletrônica do Gás - NFGas</field>
+        <field name="electronic" eval="True" />
+        <field name="prefix">NFGas</field>
+        <field name="sufix">nfgas</field>
+        <field name="type">icms</field>
+    </record>
+</odoo>
