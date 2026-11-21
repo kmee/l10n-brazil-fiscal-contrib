@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_l10n_br_nfeabi_property_user,NF-e ABI property user,model_l10n_br_nfeabi_property,l10n_br_fiscal.group_user,1,1,1,1
+access_l10n_br_nfeabi_transmitter_user,NF-e ABI transmitter user,model_l10n_br_nfeabi_transmitter,l10n_br_fiscal.group_user,1,1,1,1
+access_l10n_br_nfeabi_acquirer_user,NF-e ABI acquirer user,model_l10n_br_nfeabi_acquirer,l10n_br_fiscal.group_user,1,1,1,1
+access_l10n_br_nfeabi_broker_user,NF-e ABI broker user,model_l10n_br_nfeabi_broker,l10n_br_fiscal.group_user,1,1,1,1
