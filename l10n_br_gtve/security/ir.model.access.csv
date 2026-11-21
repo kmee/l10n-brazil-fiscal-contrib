@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+l10n_br_gtve_gtve_user,l10n_br_gtve_gtve_user,model_l10n_br_gtve_gtve,base.group_user,1,1,1,1
+l10n_br_gtve_species_user,l10n_br_gtve_species_user,model_l10n_br_gtve_species,base.group_user,1,1,1,1
+l10n_br_gtve_vehicle_user,l10n_br_gtve_vehicle_user,model_l10n_br_gtve_vehicle,base.group_user,1,1,1,1

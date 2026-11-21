@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record id="document_64" model="l10n_br_fiscal.document.type">
+        <field name="code">64</field>
+        <field name="name">Guia de Transporte de Valores Eletrônica - GTV-e</field>
+        <field name="electronic" eval="True" />
+        <field name="prefix">CTe</field>
+        <field name="sufix">gtv-e</field>
+        <field name="type">icms</field>
+    </record>
+</odoo>
