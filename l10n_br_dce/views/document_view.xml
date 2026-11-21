@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="dce_document_form_view" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.document.form (in l10n_br_dce)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="dce" string="DC-e" invisible="document_type != '99'">
+                    <group>
+                        <group name="dce_issuer" string="Issuer">
+                            <field name="dce_environment" />
+                            <field name="dce_issuer_type" />
+                            <field
+                                name="dce_sender_id"
+                                invisible="dce_issuer_type == '2'"
+                                required="document_type == '99' and dce_issuer_type != '2'"
+                            />
+                        </group>
+                        <group name="dce_transport" string="Transport">
+                            <field name="dce10_modTrans" />
+                            <field name="dce_carrier_id" />
+                            <field name="dce10_vDC" />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
