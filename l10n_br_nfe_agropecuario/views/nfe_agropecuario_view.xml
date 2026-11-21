@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="nfe_agropecuario_form" model="ir.ui.view">
+        <field name="name">nfe.40.agropecuario.form</field>
+        <field name="model">nfe.40.agropecuario</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field
+                        name="nfe40_guiaTransito"
+                        string="Transit Permit"
+                        invisible="nfe40_defensivo"
+                        context="{'form_view_ref': 'l10n_br_nfe_agropecuario.nfe_guiatransito_form'}"
+                    />
+                </group>
+                <field name="nfe40_defensivo" invisible="nfe40_guiaTransito">
+                    <list editable="bottom">
+                        <field name="nfe40_nReceituario" string="Prescription" />
+                        <field
+                            name="nfe40_CPFRespTec"
+                            string="CPF of the Responsible Technician"
+                        />
+                    </list>
+                </field>
+            </form>
+        </field>
+    </record>
+
+    <record id="nfe_guiatransito_form" model="ir.ui.view">
+        <field name="name">nfe.40.guiatransito.form</field>
+        <field name="model">nfe.40.guiatransito</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="nfe40_tpGuia" string="Type" />
+                    <field name="nfe40_UFGuia" string="State" />
+                    <field name="nfe40_serieGuia" string="Series" />
+                    <field name="nfe40_nGuia" string="Number" />
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
