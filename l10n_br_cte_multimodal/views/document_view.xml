@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="cte_document_form_view" model="ir.ui.view">
+        <field name="name">cte.document.form.view (in l10n_br_cte_multimodal)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_cte.cte_document_form_view" />
+        <field name="arch" type="xml">
+            <page name="modais" position="inside">
+                <group
+                    name="multimodal"
+                    attrs="{'invisible': [('transport_modal', '!=', '06')]}"
+                >
+                    <group name="multimodal_operator">
+                        <field name="cte40_COTM" />
+                        <field name="cte40_indNegociavel" />
+                    </group>
+                    <group name="multimodal_insurance" string="Insurance">
+                        <field name="cte40_multimodal_xSeg" />
+                        <field name="cte40_multimodal_CNPJ" />
+                        <field name="cte40_multimodal_nApol" />
+                        <field name="cte40_multimodal_nAver" />
+                    </group>
+                </group>
+            </page>
+        </field>
+    </record>
+</odoo>
