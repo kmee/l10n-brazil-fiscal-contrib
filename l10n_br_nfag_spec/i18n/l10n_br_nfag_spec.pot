@@ -16,24 +16,28 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__ac
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__ac
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__ac
 msgid "AC"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__al
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__al
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__al
 msgid "AL"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__am
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__am
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__am
 msgid "AM"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__ap
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__ap
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__ap
 msgid "AP"
 msgstr ""
 
@@ -280,6 +284,7 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__ba
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__ba
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__ba
 msgid "BA"
 msgstr ""
 
@@ -292,6 +297,7 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__ce
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__ce
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__ce
 msgid "CE"
 msgstr ""
 
@@ -756,6 +762,7 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__df
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__df
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__df
 msgid "DF"
 msgstr ""
 
@@ -994,6 +1001,7 @@ msgid "Detalhamento de Produtos e Serviços"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__l10n_br_fiscal_document_line__nfag10_indDevolucao__1
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_gprocref__nfag10_indDevolucao__1
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_prod__nfag10_indDevolucao__1
 msgid "Devolução do valor do item"
@@ -1026,6 +1034,7 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__es
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__es
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__es
 msgid "ES"
 msgstr ""
 
@@ -1143,6 +1152,7 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__go
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__go
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__go
 msgid "GO"
 msgstr ""
 
@@ -1973,24 +1983,28 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__ma
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__ma
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__ma
 msgid "MA"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__mg
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__mg
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__mg
 msgid "MG"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__ms
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__ms
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__ms
 msgid "MS"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__mt
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__mt
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__mt
 msgid "MT"
 msgstr ""
 
@@ -2470,30 +2484,35 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__pa
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__pa
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__pa
 msgid "PA"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__pb
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__pb
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__pb
 msgid "PB"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__pe
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__pe
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__pe
 msgid "PE"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__pi
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__pi
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__pi
 msgid "PI"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__pr
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__pr
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__pr
 msgid "PR"
 msgstr ""
 
@@ -2647,30 +2666,35 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__rj
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__rj
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__rj
 msgid "RJ"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__rn
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__rn
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__rn
 msgid "RN"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__ro
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__ro
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__ro
 msgid "RO"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__rr
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__rr
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__rr
 msgid "RR"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__rs
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__rs
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__rs
 msgid "RS"
 msgstr ""
 
@@ -2715,18 +2739,21 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__sc
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__sc
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__sc
 msgid "SC"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__se
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__se
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__se
 msgid "SE"
 msgstr ""
 
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__sp
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__sp
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__sp
 msgid "SP"
 msgstr ""
 
@@ -2766,6 +2793,7 @@ msgstr ""
 #. module: l10n_br_nfag_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendeemi__nfag10_UF__to
 #: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__nfag_10_tendereco__nfag10_UF__to
+#: model:ir.model.fields.selection,name:l10n_br_nfag_spec.selection__res_partner__nfag10_UF__to
 msgid "TO"
 msgstr ""
 
