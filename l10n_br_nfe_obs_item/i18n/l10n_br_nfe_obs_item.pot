@@ -1,0 +1,92 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfe_obs_item
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfe_obs_item
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_obs_item.nfe_det_obscont_form
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_obs_item.nfe_det_obsfisco_form
+msgid "Field"
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#: model:ir.model,name:l10n_br_nfe_obs_item.model_l10n_br_fiscal_document_line
+msgid "Fiscal Document Line"
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#: model:ir.model.fields,field_description:l10n_br_nfe_obs_item.field_account_move_line__nfe40_obsItem
+#: model:ir.model.fields,field_description:l10n_br_nfe_obs_item.field_l10n_br_fiscal_document_line__nfe40_obsItem
+msgid "Grupo de observações de uso livre"
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#: model:ir.model,name:l10n_br_nfe_obs_item.model_nfe_40_det_obscont
+#: model:ir.model,name:l10n_br_nfe_obs_item.model_nfe_40_det_obsfisco
+#: model:ir.model,name:l10n_br_nfe_obs_item.model_nfe_40_obsitem
+#: model:ir.model.fields,help:l10n_br_nfe_obs_item.field_account_move_line__nfe40_obsItem
+#: model:ir.model.fields,help:l10n_br_nfe_obs_item.field_l10n_br_fiscal_document_line__nfe40_obsItem
+msgid "Grupo de observações de uso livre (para o item da NF-e)"
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#: model:ir.model.fields,field_description:l10n_br_nfe_obs_item.field_product_product__nfe40_obsItem
+#: model:ir.model.fields,field_description:l10n_br_nfe_obs_item.field_product_template__nfe40_obsItem
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_obs_item.document_line_form
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_obs_item.product_template_form
+msgid "NF-e Item Observations"
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#: model:ir.model.fields,help:l10n_br_nfe_obs_item.field_product_product__nfe40_obsItem
+#: model:ir.model.fields,help:l10n_br_nfe_obs_item.field_product_template__nfe40_obsItem
+msgid ""
+"Observations of the taxpayer (obsCont) and of the tax authority (obsFisco) "
+"reported in the NF-e items of this product."
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#: model:ir.model,name:l10n_br_nfe_obs_item.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_obs_item.nfe_obs_item_form
+msgid "Tax Authority Observation"
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_obs_item.nfe_obs_item_form
+msgid "Taxpayer Observation"
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_obs_item.nfe_det_obscont_form
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_obs_item.nfe_det_obsfisco_form
+msgid "Text"
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#. odoo-python
+#: code:addons/l10n_br_nfe_obs_item/models/nfe_obs_item.py:0
+msgid ""
+"The field name of an NF-e item observation must have 1 to %(max)s "
+"characters."
+msgstr ""
+
+#. module: l10n_br_nfe_obs_item
+#. odoo-python
+#: code:addons/l10n_br_nfe_obs_item/models/nfe_obs_item.py:0
+msgid ""
+"The text of an NF-e item observation must have 1 to %(max)s characters."
+msgstr ""
