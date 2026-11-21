@@ -1,0 +1,91 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfse_nacional_evento
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_evento.field_account_bank_statement_line__nfse_event_name
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_evento.field_account_move__nfse_event_name
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_evento.field_l10n_br_fiscal_document__nfse_event_name
+msgid ""
+"Description of the artistic, cultural, sports or other event the service is "
+"related to (atvEvento group of the NFS-e Nacional)."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse_nacional_evento.document_form
+msgid "Event"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_bank_statement_line__nfse_event_name
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_move__nfse_event_name
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_l10n_br_fiscal_document__nfse_event_name
+msgid "Event Description"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_bank_statement_line__nfse_event_date_end
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_move__nfse_event_date_end
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_l10n_br_fiscal_document__nfse_event_date_end
+msgid "Event End"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_bank_statement_line__nfse_event_date_start
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_move__nfse_event_date_start
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_l10n_br_fiscal_document__nfse_event_date_start
+msgid "Event Start"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_bank_statement_line__nfse_event_partner_id
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_move__nfse_event_partner_id
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_l10n_br_fiscal_document__nfse_event_partner_id
+msgid "Event Venue"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_evento.field_account_bank_statement_line__nfse_event_code
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_evento.field_account_move__nfse_event_code
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_evento.field_l10n_br_fiscal_document__nfse_event_code
+msgid ""
+"Event identification given by the municipal tax administration. When "
+"informed, the NFS-e reports it instead of the venue address."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model,name:l10n_br_nfse_nacional_evento.model_l10n_br_fiscal_document
+msgid "Fiscal Document"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model,name:l10n_br_nfse_nacional_evento.model_l10n_br_fiscal_document_line
+msgid "Fiscal Document Line"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_evento/models/document_line.py:0
+msgid ""
+"Inform the event of %(document)s: its description, start and end dates and "
+"its municipal code or venue (rule E0390 of the NFS-e Nacional for the "
+"service %(code)s)."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_bank_statement_line__nfse_event_code
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_move__nfse_event_code
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_l10n_br_fiscal_document__nfse_event_code
+msgid "Municipal Event Code"
+msgstr ""
