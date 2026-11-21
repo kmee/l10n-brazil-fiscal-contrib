@@ -1,0 +1,8 @@
+# Generated bindings: the xsd patterns are long regular expressions that
+# cannot be wrapped
+extend = "../../.ruff.toml"
+# keep the cache of the repository root
+cache-dir = "../../.ruff_cache"
+
+[lint]
+extend-ignore = ["E501"]
