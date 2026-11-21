@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -12,6 +12,310 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe__bpe10_tpDesconto__01
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_tpDesconto__01
+msgid "01"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe__bpe10_tpDesconto__02
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe_comp__bpe10_tpComp__02
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_infviagem__bpe10_tpViagem__02
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_tpDesconto__02
+msgid "02"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_infviagem__bpe10_tpViagem__03
+msgid "03"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe__bpe10_tpDesconto__04
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe_comp__bpe10_tpComp__04
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_tpDesconto__04
+msgid "04"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe__bpe10_tpDesconto__05
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe_comp__bpe10_tpComp__05
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_tpDesconto__05
+msgid "05"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe__bpe10_tpDesconto__06
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_tpDesconto__06
+msgid "06"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe__bpe10_tpDesconto__07
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_tpDesconto__07
+msgid "07"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_infvalorbpe__bpe10_tpDesconto__08
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_tpDesconto__08
+msgid "08"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__11
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__11
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__11
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__11
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__11
+msgid "11"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__12
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__12
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_infviagem__bpe10_tpServ__12
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__12
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__12
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__12
+msgid "12"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__13
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__13
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_infviagem__bpe10_tpServ__13
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__13
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__13
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__13
+msgid "13"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__14
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__14
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__14
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__14
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__14
+msgid "14"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__15
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__15
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__15
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__15
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__15
+msgid "15"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__16
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__16
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__16
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__16
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__16
+msgid "16"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__17
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__17
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__17
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__17
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__17
+msgid "17"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__21
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__21
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__21
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__21
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__21
+msgid "21"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__22
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__22
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__22
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__22
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__22
+msgid "22"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__23
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__23
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__23
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__23
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__23
+msgid "23"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__24
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__24
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__24
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__24
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__24
+msgid "24"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__25
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__25
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__25
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__25
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__25
+msgid "25"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__26
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__26
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__26
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__26
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__26
+msgid "26"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__27
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__27
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__27
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__27
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__27
+msgid "27"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__28
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__28
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__28
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__28
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__28
+msgid "28"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__29
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__29
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__29
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__29
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__29
+msgid "29"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__31
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__31
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__31
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__31
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__31
+msgid "31"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__32
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__32
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__32
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__32
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__32
+msgid "32"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__33
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__33
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__33
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__33
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__33
+msgid "33"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__35
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__35
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__35
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__35
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__35
+msgid "35"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__41
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__41
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__41
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__41
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__41
+msgid "41"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__42
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__42
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__42
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__42
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__42
+msgid "42"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__43
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__43
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__43
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__43
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__43
+msgid "43"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__50
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__50
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__50
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__50
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__50
+msgid "50"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__51
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__51
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__51
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__51
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__51
+msgid "51"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__52
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__52
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__52
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__52
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__52
+msgid "52"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_cUF__53
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_cUF__53
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_cUF__53
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tretbpe__bpe10_cUF__53
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_cUF__53
+msgid "53"
+msgstr ""
+
+#. module: l10n_br_bpe_spec
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpe_ide__bpe10_mod__63
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpeta_ide__bpe10_mod__63
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_tbpetm_ide__bpe10_mod__63
+#: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__l10n_br_fiscal_document__bpe10_mod__63
+msgid "63"
+msgstr ""
 
 #. module: l10n_br_bpe_spec
 #: model:ir.model.fields.selection,name:l10n_br_bpe_spec.selection__bpe_10_detbpetm__bpe10_UFFimViagem__ac
