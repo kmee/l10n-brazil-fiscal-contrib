@@ -14,7 +14,7 @@ class AccountMoveLine(models.Model):
         quantities = {}
         for move_line in self.move_line_ids.move_line_ids.filtered("lot_id"):
             quantity = move_line.product_uom_id._compute_quantity(
-                move_line.quantity, self.product_uom_id
+                move_line.qty_done, self.product_uom_id
             )
             quantities[move_line.lot_id] = (
                 quantities.get(move_line.lot_id, 0.0) + quantity

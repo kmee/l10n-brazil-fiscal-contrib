@@ -6,6 +6,7 @@ from datetime import date, datetime
 
 from lxml import etree
 
+from odoo import Command
 from odoo.tests import Form, TransactionCase, tagged
 
 NFE_NS = {"nfe": "http://www.portalfiscal.inf.br/nfe"}
@@ -32,33 +33,45 @@ class NFeRastroCommon(TransactionCase):
         )
         cls.partner = cls.env.ref("l10n_br_base.res_partner_cliente1_sp")
         cls.fiscal_operation = cls.env.ref("l10n_br_fiscal.fo_simples_remessa")
-        cls.product = cls.env.ref("product.product_product_12").copy(
+        cls.product = cls._copy_product(
+            cls.env.ref("product.product_product_12"),
             {
                 "name": "Traced Product",
                 "default_code": "TRACED-1",
-                "is_storable": True,
+                "detailed_type": "product",
                 "tracking": "lot",
                 "use_expiration_date": True,
-            }
+            },
         )
+
+    @classmethod
+    def _copy_product(cls, product, default):
+        """Copy a demo product keeping its fiscal type: on 16.0 the company
+        dependent fiscal fields are not copied, and without the fiscal type
+        the item gets no ICMS."""
+        product = product.with_company(cls.company)
+        return product.copy(dict(default, fiscal_type=product.fiscal_type))
 
     @classmethod
     def _load_chart_of_accounts(cls, company):
         """The demo company has no chart of accounts unless a l10n_br_coa_*
-        module is installed: load the generic one of the core, as
-        l10n_br_stock_account and l10n_br_account tests do."""
+        module is installed (in the CI, l10n_br_fiscal_contrib_setup_tests
+        brings l10n_br_coa_generic): fall back to the generic chart of the
+        core when it is available."""
         receivable = cls.env["account.account"].search_count(
             [
-                ("company_ids", "in", company.id),
+                ("company_id", "=", company.id),
                 ("account_type", "=", "asset_receivable"),
             ]
         )
         if receivable:
             return
-        chart = cls.env["account.chart.template"]
-        chart.try_loading("generic_coa", company, install_demo=False)
-        chart.load_fiscal_taxes([company])
-        company.currency_id = cls.env.ref("base.BRL")
+        chart = cls.env.ref(
+            "l10n_generic_coa.configurable_chart_template", raise_if_not_found=False
+        )
+        if chart:
+            chart.try_loading(company=company, install_demo=False)
+            company.currency_id = cls.env.ref("base.BRL")
 
     @classmethod
     def _create_lot(cls, name, production_date, expiration_date, product=None):
@@ -106,10 +119,9 @@ class NFeRastroCommon(TransactionCase):
                     "location_id": move.location_id.id,
                     "location_dest_id": move.location_dest_id.id,
                     "lot_id": lot.id,
-                    "quantity": quantity,
+                    "qty_done": quantity,
                 }
             )
-        move.picked = True
         # expired lots (product_expiry) would open a confirmation wizard
         picking.with_context(skip_expired=True).button_validate()
         self.assertEqual(picking.state, "done")
@@ -131,6 +143,22 @@ class NFeRastroCommon(TransactionCase):
         invoice = picking.invoice_ids
         self.assertEqual(len(invoice), 1)
         return invoice
+
+    @staticmethod
+    def _set_payment(invoice):
+        """The 16.0 NF-e does not build the payment group (detPag) from the
+        invoice: fill it so that the XML passes the schema validation."""
+        document = invoice.fiscal_document_id
+        document.nfe40_detPag = [
+            Command.clear(),
+            Command.create(
+                {
+                    "nfe40_indPag": "0",
+                    "nfe40_tPag": "01",
+                    "nfe40_vPag": document.amount_financial_total,
+                }
+            ),
+        ]
 
     @staticmethod
     def _rastro_data(line):

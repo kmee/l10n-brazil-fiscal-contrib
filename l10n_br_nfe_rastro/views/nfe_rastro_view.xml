@@ -6,13 +6,13 @@
         <field name="name">nfe.40.rastro.list</field>
         <field name="model">nfe.40.rastro</field>
         <field name="arch" type="xml">
-            <list editable="bottom">
+            <tree editable="bottom">
                 <field name="nfe40_nLote" string="Lot" />
                 <field name="nfe40_qLote" string="Quantity" />
                 <field name="nfe40_dFab" string="Manufacturing Date" />
                 <field name="nfe40_dVal" string="Expiration Date" />
                 <field name="nfe40_cAgreg" string="Aggregation Code" optional="hide" />
-            </list>
+            </tree>
         </field>
     </record>
 </odoo>

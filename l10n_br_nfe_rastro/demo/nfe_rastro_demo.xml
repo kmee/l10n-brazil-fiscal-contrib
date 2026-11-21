@@ -8,8 +8,7 @@
     <record id="product_traced_beverage" model="product.product">
         <field name="name">Mineral Water 500 ml (lot traced)</field>
         <field name="default_code">RASTRO-DEMO-1</field>
-        <field name="type">consu</field>
-        <field name="is_storable" eval="True" />
+        <field name="detailed_type">product</field>
         <field name="tracking">lot</field>
         <field name="use_expiration_date" eval="True" />
         <field name="list_price">3.5</field>
@@ -127,7 +126,12 @@
     <function
         model="stock.move"
         name="write"
-        eval="[[ref('move_traced_beverage')], {'picked': True, 'icms_origin': '0'}]"
+        eval="[[ref('move_traced_beverage')], {'icms_origin': '0'}]"
+    />
+    <function
+        model="stock.picking"
+        name="action_set_quantities_to_reservation"
+        eval="[[ref('picking_traced_beverage')]]"
     />
     <function
         model="stock.picking"

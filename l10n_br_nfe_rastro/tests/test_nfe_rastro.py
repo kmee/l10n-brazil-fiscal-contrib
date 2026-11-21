@@ -55,6 +55,7 @@ class TestNFeRastro(NFeRastroCommon):
         <rastro> per lot and passes the schema validation."""
         picking = self._ship(self.product, {self.lot_a: 2, self.lot_b: 3})
         invoice = self._invoice(picking)
+        self._set_payment(invoice)
         invoice.action_post()
         document = invoice.fiscal_document_id
         self.assertEqual(document.state_edoc, "a_enviar")

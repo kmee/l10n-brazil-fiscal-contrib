@@ -11,7 +11,7 @@
                 <page name="nfe40_rastro" string="Traceability">
                     <field
                         name="nfe40_rastro"
-                        context="{'list_view_ref': 'l10n_br_nfe_rastro.nfe_rastro_list'}"
+                        context="{'tree_view_ref': 'l10n_br_nfe_rastro.nfe_rastro_list'}"
                     />
                 </page>
             </page>
