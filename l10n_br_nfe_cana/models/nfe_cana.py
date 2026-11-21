@@ -47,10 +47,11 @@ class NFeCana(models.AbstractModel):
         for record in self:
             record.nfe40_vLiqFor = record.nfe40_vFor - record.nfe40_vTotDed
 
-    @api.depends("nfe40_safra", "nfe40_ref")
-    def _compute_display_name(self):
-        for record in self:
-            record.display_name = f"{record.nfe40_safra or ''} {record.nfe40_ref or ''}"
+    def name_get(self):
+        return [
+            (record.id, f"{record.nfe40_safra or ''} {record.nfe40_ref or ''}")
+            for record in self
+        ]
 
     @api.constrains("nfe40_safra", "nfe40_ref", "nfe40_forDia")
     def _check_nfe40_cana(self):

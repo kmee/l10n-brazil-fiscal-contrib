@@ -11,7 +11,7 @@
                 <page
                     name="nfe40_cana"
                     string="Sugarcane"
-                    invisible="document_type != '55'"
+                    attrs="{'invisible': [('document_type', '!=', '55')]}"
                 >
                     <group>
                         <field

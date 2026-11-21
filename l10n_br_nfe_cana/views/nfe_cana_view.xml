@@ -20,17 +20,17 @@
                     </group>
                 </group>
                 <field name="nfe40_forDia">
-                    <list editable="bottom">
+                    <tree editable="bottom">
                         <field name="nfe40_dia" string="Day" />
                         <field name="nfe40_qtde" string="Quantity (kg)" />
-                    </list>
+                    </tree>
                 </field>
                 <field name="nfe40_deduc">
-                    <list editable="bottom">
-                        <field name="brl_currency_id" column_invisible="1" />
+                    <tree editable="bottom">
+                        <field name="brl_currency_id" invisible="1" />
                         <field name="nfe40_xDed" string="Deduction" />
                         <field name="nfe40_vDed" string="Amount" />
-                    </list>
+                    </tree>
                 </field>
                 <group>
                     <field name="nfe40_vFor" string="Supplies Amount" />
