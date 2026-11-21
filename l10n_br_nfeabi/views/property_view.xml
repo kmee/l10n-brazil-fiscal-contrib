@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="nfeabi_property_list_view" model="ir.ui.view">
+        <field name="name">l10n_br_nfeabi.property.list</field>
+        <field name="model">l10n_br_nfeabi.property</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="nfeabi10_espImovel" />
+                <field name="nfeabi10_enquadramento" />
+                <field name="nfeabi10_matricTransc" />
+                <field name="city_id" />
+                <field name="company_id" groups="base.group_multi_company" />
+            </list>
+        </field>
+    </record>
+
+    <record id="nfeabi_property_form_view" model="ir.ui.view">
+        <field name="name">l10n_br_nfeabi.property.form</field>
+        <field name="model">l10n_br_nfeabi.property</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group name="kind" string="Property">
+                            <field name="nfeabi10_tipo" />
+                            <field name="nfeabi10_espImovel" />
+                            <field
+                                name="nfeabi10_xOutrosEspecies"
+                                invisible="nfeabi10_espImovel != '99'"
+                                required="nfeabi10_espImovel == '99'"
+                            />
+                            <field name="nfeabi10_enquadramento" />
+                            <field
+                                name="nfeabi10_areaTotal"
+                                required="nfeabi10_tipo == '2'"
+                            />
+                            <field
+                                name="nfeabi10_uAreaTotal"
+                                required="nfeabi10_tipo == '2'"
+                            />
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                            />
+                        </group>
+                        <group name="registry" string="Registry">
+                            <field name="nfeabi10_cCIB" />
+                            <field name="nfeabi10_nIPTU" />
+                            <field name="nfeabi10_nINCRA" />
+                            <field name="nfeabi10_nRIP" />
+                            <field name="nfeabi10_cartorioRegistro" />
+                            <field name="nfeabi10_matricTransc" />
+                        </group>
+                        <group name="address" string="Address">
+                            <field name="street_name" />
+                            <field name="street_number" />
+                            <field name="street2" />
+                            <field name="district" />
+                            <field name="city_id" />
+                            <field name="state_id" />
+                            <field name="zip" />
+                            <field name="nfeabi10_obsLocalImovel" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="nfeabi_property_action" model="ir.actions.act_window">
+        <field name="name">Real Estate Properties</field>
+        <field name="res_model">l10n_br_nfeabi.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem
+        id="nfeabi_property_menu"
+        action="nfeabi_property_action"
+        name="Real Estate Properties"
+        parent="l10n_br_fiscal.partners_menu"
+        sequence="90"
+    />
+</odoo>
