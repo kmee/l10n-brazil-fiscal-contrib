@@ -354,7 +354,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_nfcom.field_account_bank_statement_line__nfcom10_cUF
 #: model:ir.model.fields,field_description:l10n_br_nfcom.field_account_move__nfcom10_cUF
 #: model:ir.model.fields,field_description:l10n_br_nfcom.field_l10n_br_fiscal_document__nfcom10_cUF
-msgid "Código da UF de emissão e autorização"
+msgid "Código da UF de emissão e autorização (nfcom_cUF)"
 msgstr ""
 
 #. module: l10n_br_nfcom
