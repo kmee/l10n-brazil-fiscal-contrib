@@ -8,7 +8,10 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
         <field name="arch" type="xml">
             <field name="ind_pres" position="after">
-                <field name="recopi_number" invisible="document_type != '55'" />
+                <field
+                    name="recopi_number"
+                    attrs="{'invisible': [('document_type', '!=', '55')]}"
+                />
             </field>
         </field>
     </record>
