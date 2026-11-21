@@ -11,6 +11,11 @@
     "maintainers": ["mileo"],
     "website": "https://github.com/kmee/l10n-brazil-fiscal-contrib",
     "development_status": "Alpha",
+    "external_dependencies": {
+        "python": [
+            "nfelib",
+        ],
+    },
     "depends": [
         "l10n_br_fiscal_edi",
         "l10n_br_fiscal_certificate",
