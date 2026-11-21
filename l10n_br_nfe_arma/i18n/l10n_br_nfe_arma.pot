@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfe_arma
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfe_arma
+#. odoo-python
+#: code:addons/l10n_br_nfe_arma/models/document.py:0
+msgid "%(item)s, serial %(serial)s: %(fields)s."
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#. odoo-python
+#: code:addons/l10n_br_nfe_arma/models/document.py:0
+msgid "%(item)s: the NF-e accepts at most %(max)s firearms per item."
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model.fields,field_description:l10n_br_nfe_arma.field_stock_lot__arma_barrel_number
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_arma.nfe_arma_list
+msgid "Barrel Serial Number"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_arma.nfe_arma_list
+msgid "Description"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_arma.product_template_form
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_arma.view_production_lot_form
+msgid "Firearm"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model.fields,field_description:l10n_br_nfe_arma.field_product_product__arma_description
+#: model:ir.model.fields,field_description:l10n_br_nfe_arma.field_product_template__arma_description
+msgid "Firearm Description"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model.fields,field_description:l10n_br_nfe_arma.field_product_product__arma_type
+#: model:ir.model.fields,field_description:l10n_br_nfe_arma.field_product_template__arma_type
+msgid "Firearm Type"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_arma.document_line_form
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_arma.invoice_form
+msgid "Firearms"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model,name:l10n_br_nfe_arma.model_l10n_br_fiscal_document
+msgid "Fiscal Document"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model,name:l10n_br_nfe_arma.model_l10n_br_fiscal_document_line
+msgid "Fiscal Document Line"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model.fields,help:l10n_br_nfe_arma.field_product_product__arma_description
+#: model:ir.model.fields,help:l10n_br_nfe_arma.field_product_template__arma_description
+msgid ""
+"Full description of the firearm: caliber, brand, capacity, action type, "
+"length and other details that identify it."
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model,name:l10n_br_nfe_arma.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model,name:l10n_br_nfe_arma.model_stock_lot
+msgid "Lot/Serial"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model.fields.selection,name:l10n_br_nfe_arma.selection__product_template__arma_type__0
+msgid "Permitted use"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model,name:l10n_br_nfe_arma.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model.fields.selection,name:l10n_br_nfe_arma.selection__product_template__arma_type__1
+msgid "Restricted use"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_arma.nfe_arma_list
+msgid "Serial Number"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model.fields,help:l10n_br_nfe_arma.field_stock_lot__arma_barrel_number
+msgid ""
+"Serial number of the barrel of the firearm, reported in the NF-e (nCano). "
+"The serial number (lot name) is the firearm serial."
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model.fields,help:l10n_br_nfe_arma.field_product_product__arma_type
+#: model:ir.model.fields,help:l10n_br_nfe_arma.field_product_template__arma_type
+msgid ""
+"Set it on firearms: their NF-e items carry one firearm group per serial "
+"number shipped."
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model,name:l10n_br_nfe_arma.model_stock_invoice_onshipping
+msgid "Stock Invoice Onshipping"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#. odoo-python
+#: code:addons/l10n_br_nfe_arma/models/document.py:0
+msgid ""
+"The NF-e firearm data (arma) is incomplete, these fields are required:\n"
+"%(errors)s"
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#. odoo-python
+#: code:addons/l10n_br_nfe_arma/models/document.py:0
+msgid "The NFC-e does not accept the firearm group."
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_arma.nfe_arma_list
+msgid "Type"
+msgstr ""
