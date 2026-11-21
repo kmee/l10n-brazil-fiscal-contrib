@@ -104,6 +104,10 @@ def _soap_action(service, method, compressed=False):
 
 
 BpeRecepcao = _soap_action("BPeRecepcao", "bpeRecepcao", compressed=True)
+# NT BP-e 2020.002 v1.01 (item 1) and NT BP-e 2025.002 v2.00 (items 2.4 and
+# 4.1): synchronous, the BP-e TM / TA gzipped and base64 encoded
+BpeRecepcaoTm = _soap_action("BPeRecepcaoTM", "bpeRecepcaoTM", compressed=True)
+BpeRecepcaoTa = _soap_action("BPeRecepcaoTA", "bpeRecepcaoTA", compressed=True)
 BpeRecepcaoEvento = _soap_action("BPeRecepcaoEvento", "bpeRecepcaoEvento")
 BpeConsulta = _soap_action("BPeConsulta", "bpeConsultaBP")
 BpeStatusServico = _soap_action("BPeStatusServico", "bpeStatusServicoBP")

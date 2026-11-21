@@ -6,10 +6,6 @@
   na página de serviços (MG: Consulta aponta para produção e StatusServico
   para BPeConsulta; MS: Consulta aponta para MG). Foram mantidos como
   publicados.
-- BP-e TM (transporte metropolitano, serviço `BPeRecepcaoTM`) e BP-e TA
-  (transporte aéreo, `BPeRecepcaoTA`, NT 2025.002): os modelos estão no
-  `l10n_br_bpe_spec`, mas a emissão tem estrutura própria (TM agrupa as
-  viagens por catraca no `detBPeTM`) e não foi feita.
 - Contingência off-line (`tpEmis` 2): QR Code com o parâmetro `sign` (MOC
   item 10.2), `dhCont` e `xJust`.
 - BP-e de substituição (`tpBPe` 3, `infBPeSub`) e os eventos de alteração de

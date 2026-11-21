@@ -7,6 +7,7 @@ from unicodedata import normalize
 
 from erpbrasil.base.fiscal.edoc import ChaveEdoc
 from erpbrasil.base.misc import punctuation_rm
+from lxml import etree
 from nfelib.bpe.bindings.v1_0.bpe_tipos_basico_v1_00 import Tbpe, Timp
 from nfelib.bpe.bindings.v1_0.bpe_v1_00 import Bpe
 from nfelib.bpe.bindings.v1_0.ev_canc_bpe_v1_00 import (
@@ -19,6 +20,7 @@ from nfelib.bpe.bindings.v1_0.ev_nao_emb_bpe_v1_00 import (
 )
 from nfelib.bpe.bindings.v1_0.evento_bpe_v1_00 import EventoBpe
 from nfelib.bpe.bindings.v1_0.tipos_geral_bpe_v1_00 import Tamb, TcorgaoIbge
+from xsdata.formats.dataclass.serializers import XmlSerializer
 
 from odoo import _, api, fields
 from odoo.exceptions import UserError, ValidationError
@@ -143,6 +145,17 @@ class BPe(spec_models.StackedModel):
         string="BP-e Environment",
         copy=False,
         default=lambda self: self.env.company.bpe_environment,
+    )
+
+    # The model 63 has three layouts: the BP-e (bpe_v1.00.xsd), the BP-e TM
+    # (bpeTM_v1.00.xsd, NT 2020.002) and the BP-e TA (bpeTA_v1.00.xsd, NT
+    # 2025.002). The TM and TA modules add their layout and override the
+    # _bpe_* hooks below.
+    bpe_layout = fields.Selection(
+        selection=[("bpe", "BP-e")],
+        string="BP-e Layout",
+        default="bpe",
+        required=True,
     )
 
     bpe_origin_city_id = fields.Many2one(
@@ -395,10 +408,13 @@ class BPe(spec_models.StackedModel):
 
     def _export_fields_bpe_10_timp(self, xsd_fields, class_obj, export_dict):
         """ICMS group of the ticket, from the ICMS of the fiscal lines."""
-        lines = self.fiscal_line_ids
+        export_dict.update(self._bpe_icms_groups(self.fiscal_line_ids))
+
+    def _bpe_icms_groups(self, lines):
+        """Values of a TImp binding (one ICMS group by CST) for the lines."""
+        self.ensure_one()
         if self.company_id.tax_framework == "1":
-            export_dict["ICMSSN"] = Timp.Icmssn(CST="90", indSN="1")
-            return
+            return {"ICMSSN": Timp.Icmssn(CST="90", indSN="1")}
         cst = lines[:1].icms_cst_id.code
         group = ICMS_GROUP_BY_CST.get(cst)
         if not group:
@@ -433,16 +449,32 @@ class BPe(spec_models.StackedModel):
                 vals["pRedBC"] = f"{reduction:.2f}"
         else:
             vals = {}
-        export_dict[group] = binding(CST=cst, **vals)
+        return {group: binding(CST=cst, **vals)}
 
     ##########################
     # BP-e tag: IBSCBS (NT BP-e 2025.001 RTC)
     ##########################
 
     def _get_bpe_ibscbs_lines(self):
-        return self.fiscal_line_ids.filtered(
+        lines = self.fiscal_line_ids
+        # set by _bpe_ibscbs_binding to build the group of some lines only
+        line_ids = self.env.context.get("bpe_ibscbs_line_ids")
+        if line_ids is not None:
+            lines = lines.filtered(lambda line: line.id in line_ids)
+        return lines.filtered(
             lambda line: line.tax_classification_id
             and (line.ibs_tax_id or line.cbs_tax_id)
+        )
+
+    def _bpe_ibscbs_binding(self, lines=None):
+        """IBSCBS group (TTribBPe) of the lines, all of them by default, built
+        by the _export_tag_bpe_10_* hooks below; False without IBS and CBS."""
+        self.ensure_one()
+        record = self.with_context(spec_schema="bpe", spec_version="10")
+        if lines is not None:
+            record = record.with_context(bpe_ibscbs_line_ids=lines.ids)
+        return record._export_m2o_via_tag_hooks(
+            "bpe10_IBSCBS", self.env["bpe.10.tbpe_imp"]
         )
 
     def _export_tag_bpe_10_ibscbs(self, xsd_fields, class_obj, export_dict):
@@ -555,6 +587,10 @@ class BPe(spec_models.StackedModel):
     # Business Model Methods
     ################################
 
+    def _bpe_server_key(self):
+        """Authorizer of the document; None for the one of the company UF."""
+        return None
+
     def _get_bpe_qrcode(self):
         """QR Code of the DABPE (MOC BP-e 1.00b, item 10.2)."""
         self.ensure_one()
@@ -563,20 +599,33 @@ class BPe(spec_models.StackedModel):
                 _("The QR Code of a BP-e issued in contingency is not supported yet.")
             )
         url = get_location(
-            self.company_id.state_id.ibge_code, self.bpe_environment, Endpoint.QRCODE
+            self.company_id.state_id.ibge_code,
+            self.bpe_environment,
+            Endpoint.QRCODE,
+            self._bpe_server_key(),
         )
         return f"{url}?chBPe={self.document_key}&tpAmb={self.bpe_environment}"
+
+    def _bpe_binding(self):
+        """Root binding of the document, overridden by the other layouts."""
+        self.ensure_one()
+        return Bpe(
+            infBPe=self._build_binding("bpe", "10"),
+            infBPeSupl=Tbpe.InfBpeSupl(qrCodBPe=self._get_bpe_qrcode()),
+        )
+
+    def _bpe_schema_validation(self, xml_file):
+        """Schema errors of the signed XML of the document layout."""
+        return Bpe.schema_validation(xml_file)
+
+    def _bpe_transmit(self, signed_xml):
+        """Send the signed XML to the reception service of the layout."""
+        return self._get_bpe_client().envia_bpe(signed_xml)
 
     def _serialize(self, edocs):
         edocs = super()._serialize(edocs)
         for record in self.filtered(filtered_processador_edoc_bpe):
-            inf_bpe = record._build_binding("bpe", "10")
-            edocs.append(
-                Bpe(
-                    infBPe=inf_bpe,
-                    infBPeSupl=Tbpe.InfBpeSupl(qrCodBPe=record._get_bpe_qrcode()),
-                )
-            )
+            edocs.append(record._bpe_binding())
         return edocs
 
     def _get_bpe_certificate(self):
@@ -624,7 +673,7 @@ class BPe(spec_models.StackedModel):
         self.ensure_one()
         if not filtered_processador_edoc_bpe(self):
             return super()._validate_xml(xml_file)
-        errors = Bpe.schema_validation(xml_file)
+        errors = self._bpe_schema_validation(xml_file)
         self.write({"xml_error_message": "\n".join(errors) or False})
 
     def _get_bpe_client(self):
@@ -635,6 +684,7 @@ class BPe(spec_models.StackedModel):
             uf=self.company_id.state_id.ibge_code,
             pkcs12_data=pkcs12_data,
             pkcs12_password=pkcs12_password,
+            server_key=self._bpe_server_key(),
         )
 
     def _eletronic_document_send(self):
@@ -646,7 +696,7 @@ class BPe(spec_models.StackedModel):
             signed_xml = base64.b64decode(
                 record.authorization_event_id.file_request_id.datas
             ).decode("utf-8")
-            response = record._get_bpe_client().envia_bpe(signed_xml)
+            response = record._bpe_transmit(signed_xml)
             record._bpe_process_response(response, signed_xml)
         return result
 
@@ -672,15 +722,25 @@ class BPe(spec_models.StackedModel):
         else:
             self._change_state(SITUACAO_EDOC_REJEITADA)
 
+    def _bpe_proc_tag(self):
+        """Root tag of the processed document of the layout."""
+        return "bpeProc"
+
     def _bpe_proc_xml(self, signed_xml, response):
         """bpeProc: the signed BP-e with the authorization protocol."""
-        prot_xml = response.protBPe.to_xml(ns_map={None: Bpe.Meta.namespace})
-        prot_xml = re.sub(r"^\s*<\?xml[^>]*\?>", "", prot_xml).strip()
-        bpe_xml = re.sub(r"^\s*<\?xml[^>]*\?>", "", signed_xml).strip()
-        return (
-            f'<bpeProc xmlns="{Bpe.Meta.namespace}" versao="{BPE_VERSION}">'
-            f"{bpe_xml}{prot_xml}</bpeProc>"
+        namespace = Bpe.Meta.namespace
+        # serialized from the retBPe: TProtBPe alone has no element name
+        protocol = etree.fromstring(XmlSerializer().render(response).encode()).find(
+            f"{{{namespace}}}protBPe"
         )
+        proc = etree.Element(
+            f"{{{namespace}}}{self._bpe_proc_tag()}",
+            versao=BPE_VERSION,
+            nsmap={None: namespace},
+        )
+        proc.append(etree.fromstring(signed_xml.encode()))
+        proc.append(protocol)
+        return etree.tostring(proc, encoding="unicode")
 
     ################################
     # Events (MOC BP-e 1.00b, items 6 and 7)
