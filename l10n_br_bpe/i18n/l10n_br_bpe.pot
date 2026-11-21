@@ -1,0 +1,2855 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_bpe
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_pICMSInter
+msgid "Alíquota interestadual das UF envolvidas"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_pICMSInter
+msgid ""
+"Alíquota interestadual das UF envolvidas\n"
+"Alíquota interestadual das UF envolvidas"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_pICMSUFFim
+msgid "Alíquota interna da UF fim da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_pICMSUFFim
+msgid ""
+"Alíquota interna da UF fim da viagem\n"
+"Alíquota adotada nas operações internas na UF do destinatário"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Authorization Protocol Not Found!"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_autXML
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_autXML
+msgid "Autorizados para download do XML do DF-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_autxml
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_autxml
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_autxml
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_autXML
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_autXML
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_autXML
+msgid ""
+"Autorizados para download do XML do DF-e\n"
+"Informar CNPJ ou CPF. Preencher os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_autXML
+msgid "Autorizados para download do XML do DF-e (bpe_autXML)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmstot__bpe10_vBC
+msgid "BC do ICMS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_document_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_res_company_form
+msgid "BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move_line__bpe_component_type
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document_line__bpe_component_type
+msgid "BP-e Component Type"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_res_company_form
+msgid "BP-e Default Settings"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe_environment
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe_environment
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe_environment
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_res_company__bpe_environment
+msgid "BP-e Environment"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.actions.act_window,name:l10n_br_bpe.bpe_no_boarding_wizard_action
+#: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_no_boarding_wizard_form
+msgid "BP-e No Boarding"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_l10n_br_bpe_no_boarding_wizard
+msgid "BP-e No Boarding Wizard"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "BP-e cancellation refused: %(code)s - %(reason)s"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "BP-e no boarding event refused: %(code)s - %(reason)s"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xBairro
+msgid "Bairro"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_tBand
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_tBand
+msgid "Bandeira da operadora de cartão"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_tBand
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_tBand
+msgid ""
+"Bandeira da operadora de cartão de crédito/débito\n"
+"01–Visa; 02–Mastercard; 03–American Express; 04–Sorocred; 05 - Elo; 06 - Diners; 99–Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Boarding Date"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document_line__bpe_component_type__03
+msgid "Boarding Fee"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_autxml__bpe10_autXML_infBPe_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_autxml__bpe10_autXML_infBPe_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_autxml__bpe10_autXML_infBPe_id
+msgid "Bpe10 Autxml Infbpe"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_comp__bpe10_Comp_det_id
+msgid "Bpe10 Comp Det"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infvalorbpe_comp__bpe10_Comp_infValorBPe_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe_comp__bpe10_Comp_infValorBPe_id
+msgid "Bpe10 Comp Infvalorbpe"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_det_detBPeTM_id
+msgid "Bpe10 Det Detbpetm"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_detBPeTM_infBPe_id
+msgid "Bpe10 Detbpetm Infbpe"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_infViagem_infBPe_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_infViagem_infBPe_id
+msgid "Bpe10 Infviagem Infbpe"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_pag__bpe10_pag_infBPe_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_pag__bpe10_pag_infBPe_id
+msgid "Bpe10 Pag Infbpe"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_CEP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_CEP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_CEP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CEP
+msgid "CEP"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tendereco__bpe10_CEP
+msgid ""
+"CEP\n"
+"Informar os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_CEP
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_CEP
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CEP
+msgid ""
+"CEP\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_CNAE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_CNAE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CNAE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CNAE
+msgid "CNAE Fiscal"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tresptec__bpe10_CNPJ
+msgid "CNPJ"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_CNPJ
+msgid "CNPJ da credenciadora de cartão"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_CNPJ
+msgid "CNPJ da credenciadora de cartão de crédito/débito"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tresptec__bpe10_CNPJ
+msgid ""
+"CNPJ da pessoa jurídica responsável técnica pelo sistema utilizado na emissão do documento fiscal eletrônico\n"
+"Informar o CNPJ da pessoa jurídica desenvolvedora do sistema utilizado na emissão do documento fiscal eletrônico."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_autxml__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_autxml__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_autxml__bpe10_CNPJ
+msgid "CNPJ do autorizado"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_autxml__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_autxml__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_autxml__bpe10_CNPJ
+msgid ""
+"CNPJ do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CNPJ
+msgid "CNPJ do emitente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CNPJ
+msgid ""
+"CNPJ do emitente\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_autxml__bpe10_CPF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_autxml__bpe10_CPF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_autxml__bpe10_CPF
+msgid "CPF do autorizado"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_autxml__bpe10_CPF
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_autxml__bpe10_CPF
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_autxml__bpe10_CPF
+msgid ""
+"CPF do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_no_boarding_wizard_form
+msgid "Cancel"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__bpe10_chBPe
+msgid "Chave de acesso do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infbpevinculado__bpe10_chBPeMultiplo
+msgid "Chave de acesso do BPe Multiplo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infbpesub__bpe10_chBPe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpesub__bpe10_chBPe
+msgid "Chave do Bilhete de Passagem Substituido"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infbpesub__bpe10_chBPe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpesub__bpe10_chBPe
+msgid ""
+"Chave do Bilhete de Passagem Substituido\n"
+"Informar os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__document_type
+msgid "Code"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Company CNPJ"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Company State"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xCpl
+msgid "Complemento"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_Comp
+msgid "Componentes da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_infvalorbpe_comp
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infvalorbpe_comp
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_comp
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_Comp
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_Comp
+msgid "Componentes do Valor do Bilhete"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_nContFim
+msgid "Contador fim da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_nContInicio
+msgid "Contador início da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_CFOP
+msgid "Código Fiscal de Operações e Prestações"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_cAeroDest
+msgid "Código IATA do Aeroporto de destino"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_cAeroOrig
+msgid "Código IATA do Aeroporto de origem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cLocOrig
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cLocOrig
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cLocOrig
+msgid "Código da Localidade de Origem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cUF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cUF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cUF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cUF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cUF
+msgid "Código da UF do emitente do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_cUF
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_cUF
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cUF
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cUF
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cUF
+msgid ""
+"Código da UF do emitente do BP-e\n"
+"Código da UF do emitente do Documento Fiscal. Utilizar a\n"
+"Tabela do IBGE de código de unidades da federação."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_CRT
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_CRT
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_CRT
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CRT
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CRT
+msgid "Código de Regime Tributário"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_CRT
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_CRT
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_CRT
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CRT
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CRT
+msgid ""
+"Código de Regime Tributário.\n"
+"Este campo será obrigatoriamente preenchido com:\n"
+"1 – Simples Nacional;\n"
+"2 – Simples Nacional – excesso de sublimite de receita bruta;\n"
+"3 – Regime Normal."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_cDesconto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDesconto
+msgid "Código do desconto quando informado"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_cDesconto
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDesconto
+msgid "Código do desconto quando informado com tipo 99 - Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cMun
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cMun
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_cMun
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cMun
+msgid "Código do município"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_cMun
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_cMun
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cMun
+msgid "Código do município (utilizar a tabela do IBGE)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tendereco__bpe10_cMun
+msgid ""
+"Código do município (utilizar a tabela do IBGE), informar 9999999 para "
+"operações com o exterior."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cMunFim
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cMunFim
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_cMunFim
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cMunFim
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cMunFim
+msgid "Código do município do fim da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cMunIni
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cMunIni
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_cMunIni
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cMunIni
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cMunIni
+msgid "Código do município do início da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_cPais
+msgid "Código do país"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tendereco__bpe10_cPais
+msgid ""
+"Código do país\n"
+"Utilizar a tabela do BACEN"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_cPercurso
+msgid "Código do percurso da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_inffisco__bpe10_cMsg
+msgid "Código do status da mensagem do fisco"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__bpe10_cStat
+msgid "Código do status do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cBP
+msgid "Código numérico que compõe a Chave"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cBP
+msgid "Código numérico que compõe a Chave (bpe_cBP)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_cBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_cBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cBP
+msgid ""
+"Código numérico que compõe a Chave de Acesso.\n"
+"Código aleatório gerado pelo emitente, com o objetivo de evitar acessos indevidos ao documento."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_nroVoo
+msgid "Código voo viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_pag
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_pag
+msgid "Dados de Pagamento"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_pag
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_pag
+msgid "Dados de Pagamento."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_pgtovinc__bpe10_pgto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_pgtovinc__bpe10_pgto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_pgtovinc__bpe10_pgto
+msgid "Dados de cada pagamento previsto"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_infprot
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tprotbpe__bpe10_infProt
+msgid "Dados do protocolo de status"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_dCompet
+msgid "Data da Competência a que se refere"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_dCompet
+msgid ""
+"Data da Competência a que se refere o Transporte Metropolitano\n"
+"Formato AAAA-MM-DDTHH:MM:DD TZD"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_dNasc
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_dNasc
+msgid "Data de Nascimento"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_dNasc
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_dNasc
+msgid ""
+"Data de Nascimento\n"
+"Formato AAAA-MM-DD"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_dhCont
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_dhCont
+msgid "Data e Hora da entrada em contingência"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_dhCont
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_dhCont
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhCont
+msgid ""
+"Data e Hora da entrada em contingência\n"
+"Informar a data e hora no formato AAAA-MM-DDTHH:MM:SS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhCont
+msgid "Data e Hora da entrada em contingência (bpe_dhCont)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_dhConexao
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_dhConexao
+msgid "Data e hora da conexão"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_dhConexao
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_dhConexao
+msgid ""
+"Data e hora da conexão\n"
+"Informar se tpTrecho = 3\n"
+"Formato AAAA-MM-DDTHH:MM:DD TZD"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_dhEmb
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhEmb
+msgid "Data e hora de embarque"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_dhEmb
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhEmb
+msgid ""
+"Data e hora de embarque\n"
+"Formato AAAA-MM-DDTHH:MM:DD TZD"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhEmi
+msgid "Data e hora de emissão do Bilhete"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_dhEmi
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_dhEmi
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_dhEmi
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_dhEmi
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhEmi
+msgid ""
+"Data e hora de emissão do Bilhete de Passagem\n"
+"Formato AAAA-MM-DDTHH:MM:DD TZD"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__bpe10_dhRecbto
+msgid "Data e hora de processamento"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_infprot__bpe10_dhRecbto
+msgid "Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SS TZD."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_dhViagem
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_dhViagem
+msgid "Data e hora de referencia para a viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_dhViagem
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_dhViagem
+msgid ""
+"Data e hora de referencia para a viagem\n"
+"Formato AAAA-MM-DDTHH:MM:DD TZD"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_dhValidade
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhValidade
+msgid "Data e hora de validade do bilhete"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_dhValidade
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhValidade
+msgid ""
+"Data e hora de validade do bilhete\n"
+"Formato AAAA-MM-DDTHH:MM:DD TZD"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_det
+msgid "Datalhamento da viagem por trechos"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_det
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_det
+msgid "Datalhamento da viagem por trechos do BPeTM"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xLocDest
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xLocDest
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xLocDest
+msgid "Descrição da Localidade de Destino"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xLocOrig
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xLocOrig
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xLocOrig
+msgid "Descrição da Localidade de Origem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_pag__bpe10_xPag
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_pag__bpe10_xPag
+msgid "Descrição da forma de pagamento 99"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_pag__bpe10_xPag
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_pag__bpe10_xPag
+msgid "Descrição da forma de pagamento 99 - Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_xBand
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_xBand
+msgid "Descrição da operador de cartão para 99"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_xBand
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_xBand
+msgid "Descrição da operador de cartão para 99 - Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_xPercurso
+msgid "Descrição do Percurso da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_xDesconto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xDesconto
+msgid "Descrição do tipo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_xDesconto
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xDesconto
+msgid "Descrição do tipo de desconto/benefício concedido"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_xDoc
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_xDoc
+msgid "Descrição do tipo de documento 'outros'"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__bpe10_xMotivo
+msgid "Descrição literal do status do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe_destination_city_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe_destination_city_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe_destination_city_id
+msgid "Destination City"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__bpe10_digVal
+msgid "Digest Value do BP-e processado"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_infprot__bpe10_digVal
+msgid ""
+"Digest Value do BP-e processado. Utilizado para conferir a integridade do "
+"BP-e original."
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Digital Certificate"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cDV
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cDV
+msgid "Digito verificador da chave de acesso"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_cDV
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_cDV
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cDV
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cDV
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDV
+msgid ""
+"Digito verificador da chave de acesso\n"
+"Informar o dígito  de controle da chave de acesso do BP-e, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cDV
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cDV
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDV
+msgid "Digito verificador da chave de acesso (bpe_cDV)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__document_key
+msgid "Document Key"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__document_number
+msgid "Document Number"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__document_serie
+msgid "Document Serie"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__document_type_id
+msgid "Document Type"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tresptec__bpe10_email
+msgid "Email da pessoa jurídica a ser contatada"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_agencia__bpe10_enderAgencia
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_agencia__bpe10_enderAgencia
+msgid "Endereço da agência"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_email
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_email
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_email
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_email
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_email
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_email
+msgid "Endereço de E-mail"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_enderComp
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_enderComp
+msgid "Endereço do comprador"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_enderEmit
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_enderEmit
+msgid "Endereço do emitente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document_line__bpe_component_type__01
+msgid "Fare"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid ""
+"Fill in the required BP-e fields:\n"
+"- %s"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__document_id
+msgid "Fiscal Document"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document_line
+msgid "Fiscal Document Line"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__event_id
+msgid "Fiscal Event"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_pag__bpe10_tPag
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_pag__bpe10_tPag
+msgid "Forma de Pagamento"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_pag__bpe10_tPag
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_pag__bpe10_tPag
+msgid ""
+"Forma de Pagamento:01-Dinheiro;02-Cheque;03-Cartão de Crédito;04-Cartão de "
+"Débito;05-Vale Transportel;06 - PIX; 99 - Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpEmis
+msgid "Forma de emissão do Bilhete"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpEmis
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_tpEmis
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpEmis
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpEmis
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpEmis
+msgid ""
+"Forma de emissão do Bilhete (Normal ou Contingência Off-Line)\n"
+"1 - Normal\n"
+"; 2 - Contingência Off-Line"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_card
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_card
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_pag__bpe10_card
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_pag__bpe10_card
+msgid "Grupo de Cartões"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_gCompraGov
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_gCompraGov
+msgid "Grupo de Compras Governamentais"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_gCompraGov
+msgid "Grupo de Compras Governamentais (bpe_gCompraGov)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_infviagem
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infviagem
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infViagem
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infViagem
+msgid "Grupo de informações da viagem do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_pgtoVinc
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_pgtoVinc
+msgid "Grupo de informações da vínculação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_pgtoVinc
+msgid "Grupo de informações da vínculação (bpe_pgtoVinc)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_pgtovinc
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_pgtovinc
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_pgtovinc
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_pgtoVinc
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_pgtoVinc
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_pgtoVinc
+msgid "Grupo de informações da vínculação com a transação de pagamento"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_detBPeTM
+msgid "Grupo de informações detalhadas"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_detbpetm
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_detBPeTM
+msgid "Grupo de informações detalhadas do BPe TM"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_imp__bpe10_IBSCBS
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_imp__bpe10_IBSCBS
+msgid "Grupo de informações do IBS e CBS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IBSCBS
+msgid "Grupo de informações do IBS e CBS (bpe_IBSCBS)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tresptec__bpe10_hashCSRT
+msgid "Hash do token do código de segurança"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tresptec__bpe10_hashCSRT
+msgid ""
+"Hash do token do código de segurança do responsável técnico\n"
+"O hashCSRT é o resultado das funções SHA-1 e base64 do token CSRT fornecido pelo fisco + chave de acesso do DF-e. (Implementação em futura NT)\n"
+"\n"
+"\n"
+"Observação: 28 caracteres são representados no schema como 20 bytes do tipo base64Binary"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document__bpe_environment__2
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__res_company__bpe_environment__2
+msgid "Homologation"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "ICMS CST %(cst)s is not supported in the BP-e."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__bpe10_Id
+msgid "Id"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_Id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_Id
+msgid "Identificador da tag a ser assinada"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_Id
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_Id
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_Id
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_Id
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_Id
+msgid ""
+"Identificador da tag a ser assinada\n"
+"Informar a chave de acesso do BP-e e precedida do literal 'BPe'"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_Id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_Id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_Id
+msgid "Identificador da tag a ser assinada (bpe_Id)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_idEstrangeiro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_idEstrangeiro
+msgid "Identificador do comprador em caso"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_idEstrangeiro
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_idEstrangeiro
+msgid "Identificador do comprador em caso de comprador estrangeiro"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tresptec__bpe10_idCSRT
+msgid "Identificador do código de segurança"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tresptec__bpe10_idCSRT
+msgid ""
+"Identificador do código de segurança do responsável técnico\n"
+"Identificador do CSRT utilizado para geração do hash"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_idEqpCont
+msgid "Identificador do equipamento contador"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_agencia
+msgid "Identificação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_agencia
+msgid "Identificação (bpe_agencia)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_agencia
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_agencia
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_agencia
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_agencia
+msgid "Identificação da agência/preposto/terceiro que comercializou o BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__bpe10_tpAmb
+msgid "Identificação do Ambiente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_infprot__bpe10_tpAmb
+msgid ""
+"Identificação do Ambiente:\n"
+"1 - Produção\n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_ide
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_ide
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_ide
+msgid "Identificação do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_ide
+msgid "Identificação do BPe TM"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_comp
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_comp
+msgid "Identificação do Comprador do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_comp
+msgid ""
+"Identificação do Comprador do BP-e\n"
+"\n"
+"Informar quando diferente do passageiro"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_comp
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_comp
+msgid ""
+"Identificação do Comprador do BP-e\n"
+"Informar quando diferente do passageiro"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_emit
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_emit
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_emit
+msgid "Identificação do Emitente do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_emit
+msgid "Identificação do Emitente do BPe TM"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_indPres
+msgid "Indicador de presença do comprador"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_indPres
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_indPres
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_indPres
+msgid "Indicador de presença do comprador (bpe_indPres)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_indPres
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_indPres
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_indPres
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_indPres
+msgid ""
+"Indicador de presença do comprador no estabelecimento comercial no momento da operação\n"
+"1=Operação presencial não embarcado;\n"
+"2=Operação não presencial, pela Internet;\n"
+"3=Operação não presencial, Teleatendimento;\n"
+"4=BP-e em operação com entrega a domicílio;\n"
+"5=Operação presencial embarcada;\n"
+"9=Operação não presencial, outros."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_nroBPIATA
+msgid "Informação do número do bilhete"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_nroBPIATA
+msgid ""
+"Informação do número do bilhete de passagem conforme definido pela IATA\n"
+"Número que identifica o bilhete 1 a 999999999."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_infadic
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infadic
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_infadic
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infAdic
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_infAdic
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdic
+msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infadic__bpe10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_imp__bpe10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infadic__bpe10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_imp__bpe10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infadic__bpe10_infAdFisco
+msgid "Informações adicionais de interesse"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdFisco
+msgid "Informações adicionais de interesse (bpe_infAdFisco)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infadic__bpe10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_imp__bpe10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infadic__bpe10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_imp__bpe10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infadic__bpe10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdFisco
+msgid ""
+"Informações adicionais de interesse do Fisco\n"
+"Norma referenciada, informações complementares, etc"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_infAdCard
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_infAdCard
+msgid "Informações adicionais operacionais"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_infAdCard
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_infAdCard
+msgid ""
+"Informações adicionais operacionais para integração do cartão de crédito\n"
+"Norma referenciada, informações complementares, etc"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infadic__bpe10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infadic__bpe10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infadic__bpe10_infCpl
+msgid "Informações complementares de interesse"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infadic__bpe10_infCpl
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infadic__bpe10_infCpl
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infadic__bpe10_infCpl
+msgid "Informações complementares de interesse do Contribuinte"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe__bpe10_infBPe
+msgid "Informações do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infbpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_infbpe
+msgid "Informações do BPe Aereo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_ICMSUFFim
+msgid "Informações do ICMS de partilha com a UF"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_icmsuffim
+msgid ""
+"Informações do ICMS de partilha com a UF de término do serviço de\n"
+"transporte na operação interestadual\n"
+"Grupo a ser informado nas prestações interestaduais para consumidor final, não\n"
+"contribuinte do ICMS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_ICMSUFFim
+msgid ""
+"Informações do ICMS de partilha com a UF de término do serviço de transporte na operação interestadual\n"
+"Grupo a ser informado nas prestações interestaduais para consumidor final, não contribuinte do ICMS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infRespTec
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_infRespTec
+msgid "Informações do Responsável Técnico"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infRespTec
+msgid "Informações do Responsável Técnico (bpe_infRespTec)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infRespTec
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_infRespTec
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infRespTec
+msgid "Informações do Responsável Técnico pela emissão do DF-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infBPeVinculado
+msgid "Informações do Serviço Vinculado"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_infbpevinculado
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infBPeVinculado
+msgid "Informações do Serviço Vinculado a BPe Multiplo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infpassagem
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infPassagem
+msgid "Informações do detalhamento da Passagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_infpassageiro
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infpassageiro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_infPassageiro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infPassageiro
+msgid "Informações do passageiro"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_infTravessia
+msgid "Informações do transporte aquaviário"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_inftravessia
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_infTravessia
+msgid "Informações do transporte aquaviário de travessia"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infBPeSub
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infBPeSub
+msgid "Informações dos BP-e de Substituição"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_infbpesub
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infbpesub
+msgid ""
+"Informações dos BP-e de Substituição para remarcação e/ou\n"
+"transferência"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infBPeSub
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infBPeSub
+msgid ""
+"Informações dos BP-e de Substituição para remarcação e/ou transferência"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_total
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_total
+msgid "Informações dos totais do BPe TM"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infValorBPe
+msgid "Informações dos valores do Bilhete"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infvalorbpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infValorBPe
+msgid "Informações dos valores do Bilhete de Passagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_imp__bpe10_ICMS
+msgid "Informações relativas ao ICMS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_imp
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_imp
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_imp
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_imp
+msgid "Informações relativas aos Impostos"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_infbpesupl
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infbpesupl
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe__bpe10_infBPeSupl
+msgid "Informações suplementares do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_IE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_IE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_IEST
+msgid "Inscrição Estadual"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_IE
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_IE
+msgid ""
+"Inscrição Estadual\n"
+"Informar a IE do remetente ou ISENTO se remetente é contribuinte do ICMS isento de inscrição no cadastro de contribuintes do ICMS. Caso o remetente não seja contribuinte do ICMS não informar a tag."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IEST
+msgid "Inscrição Estadual (bpe_IEST)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_IEST
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IEST
+msgid "Inscrição Estadual do Substituto Tributário"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_IE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_IE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_IE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_IE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IE
+msgid "Inscrição Estadual do emitente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_IM
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_IM
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_IM
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IM
+msgid "Inscrição Municipal"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_ISUFEmit
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_ISUFEmit
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_ISUFEmit
+msgid "Inscrição do emitente da Suframa"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_ISUFEmit
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_ISUFEmit
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_ISUFEmit
+msgid ""
+"Inscrição do emitente da Suframa\n"
+"Informar o número do Cadastro do emitente na Suframa. Campo obrigatório nas operações que se beneficiam de incentivos fiscais existentes nas áreas sob controle da SUFRAMA com alíquota zero da CBS referente aos arts. 451 e 466 da LC 214/25"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document_line__bpe_component_type__04
+msgid "Insurance"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document_line__bpe_component_type__06
+msgid "Integrated Sale Service (SVI)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__justification
+msgid "Justification"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_xJust
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_xJust
+msgid "Justificativa da entrada em contingência"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xJust
+msgid "Justificativa da entrada em contingência (bpe_xJust)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xLgr
+msgid "Logradouro"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_inffisco
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_inffisco__bpe10_xMsg
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tprotbpe__bpe10_infFisco
+msgid "Mensagem do Fisco"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_modal
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_modal
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_modal
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_modal
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_modal
+msgid "Modalidade de transporte"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_modal
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_modal
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_modal
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_modal
+msgid ""
+"Modalidade de transporte\n"
+"1 - Rodoviário; 3 - Aquaviário; 4 - Ferroviário."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_modal
+msgid ""
+"Modalidade de transporte\n"
+"2 - Aéreo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_mod
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_mod
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_mod
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_mod
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_mod
+msgid "Modelo do Bilhete de Passagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_mod
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_mod
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_mod
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_mod
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_mod
+msgid ""
+"Modelo do Bilhete de Passagem\n"
+"Utilizar o código 63 para identificação do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_detbpetm__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmstot__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmsuffim__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infbpevinculado__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_inffisco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_inftravessia__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_agencia__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_autxml__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_comp__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infadic__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infbpesub__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infbpesupl__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infvalorbpe_comp__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_pag__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_pgtovinc__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_agencia__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_autxml__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_comp__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_imp__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infadic__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpesub__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpesupl__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe_comp__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_pag__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_pgtovinc__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_autxml__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_comp__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_imp__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infadic__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_pgtovinc__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_total__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tprotbpe__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tresptec__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__brl_currency_id
+msgid "Moeda"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_document_form_view
+msgid "No Boarding"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tresptec__bpe10_xContato
+msgid "Nome da pessoa a ser contatada"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tresptec__bpe10_xContato
+msgid ""
+"Nome da pessoa a ser contatada\n"
+"Informar o nome da pessoa a ser contatada na empresa desenvolvedora do sistema utilizado na emissão do documento fiscal eletrônico. No caso de pessoa física, informar o respectivo nome."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_xNome
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_xNome
+msgid "Nome do Passageiro"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_comp__bpe10_xNome
+msgid "Nome do componente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_comp__bpe10_xNome
+msgid ""
+"Nome do componente\n"
+"Exxemplos: ISENTOS, VT, CARTAO PRE-PAGO, IDOSOS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xMun
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xMun
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xMun
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xMun
+msgid "Nome do município"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xMun
+msgid "Nome do município, informar EXTERIOR para operações com o exterior."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xPais
+msgid "Nome do país"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xFant
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xFant
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_xFant
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_xFant
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xFant
+msgid "Nome fantasia do emitente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_nro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_nro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_nro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_nro
+msgid "Número"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_poltrona
+msgid "Número da Poltrona / assento / cabine"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_cAut
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_cAut
+msgid "Número de autorização da operação cartão"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_cAut
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_cAut
+msgid "Número de autorização da operação cartão de crédito/débito"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_nParcelas
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_nParcelas
+msgid "Número de parcelas"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_agencia__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_agencia__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_CNPJ
+msgid "Número do CNPJ"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_agencia__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_agencia__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_CNPJ
+msgid ""
+"Número do CNPJ\n"
+"Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros.\n"
+"\t\t\t\t\t\t\tInformar os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_CPF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_CPF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_CPF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_CPF
+msgid "Número do CPF"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_CPF
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_CPF
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_CPF
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_CPF
+msgid ""
+"Número do CPF\n"
+"Informar os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_nDoc
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_nDoc
+msgid "Número do Documento do passageiro"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__bpe10_nProt
+msgid "Número do Protocolo de Status do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_nBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_nBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_nBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_nBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_nBP
+msgid "Número do bilhete de passagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_nBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_nBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_nBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_nBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_nBP
+msgid ""
+"Número do bilhete de passagem\n"
+"Número que identifica o bilhete 1 a 999999999."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_pag__bpe10_nDocPag
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_pag__bpe10_nDocPag
+msgid "Número do documento"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_pag__bpe10_nDocPag
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_pag__bpe10_nDocPag
+msgid ""
+"Número do documento ou carteira apresentada nas formas de pagamento "
+"diferentes de 03 e 04"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_nsuTrans
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_nsuTrans
+msgid "Número sequencial único da transação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_nsuHost
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_nsuHost
+msgid "Número sequencial único do Host"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_no_boarding_wizard_form
+msgid "OK"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe_origin_city_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe_origin_city_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe_origin_city_id
+msgid "Origin City"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document_line__bpe_component_type__99
+msgid "Other"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__partner_id
+msgid "Partner"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Passenger (interstate trip)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Payment Information"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_pFCPUFFim
+msgid "Percentual do ICMS relativo ao Fundo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_pFCPUFFim
+msgid ""
+"Percentual do ICMS relativo ao Fundo de Combate à pobreza (FCP) na UF fim da viagem\n"
+"Alíquota adotada nas operações internas na UF do destinatário"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_placa
+msgid "Placa do coletivo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_plataforma
+msgid "Plataforma/carro/barco de Embarque"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_prefixo
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_prefixo
+msgid "Prefixo da linha"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document__bpe_environment__1
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__res_company__bpe_environment__1
+msgid "Production"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_qPass
+msgid "Quantidade de Passagens da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_comp__bpe10_qComp
+msgid "Quantidade do componente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_total__bpe10_qPass
+msgid "Quantidade total de passagens"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_agencia__bpe10_xNome
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_agencia__bpe10_xNome
+msgid "Razão social ou Nome da Agência"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_comp__bpe10_xNome
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_comp__bpe10_xNome
+msgid "Razão social ou Nome do comprador"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xNome
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xNome
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_xNome
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_xNome
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xNome
+msgid "Razão social ou Nome do emitente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document_line__bpe_component_type__05
+msgid "Road Maintenance Fee (TMR)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__rps_number
+msgid "Rps Number"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_SiglaCiaOperVoo
+msgid "Sigla IATA da Companhia que opera o voo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_UF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_UF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_UF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UF
+msgid "Sigla da UF"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_UFIni
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_UFIni
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_UFIni
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UFIni
+msgid "Sigla da UF Início da Viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_UFIni
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_UFIni
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_UFIni
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UFIni
+msgid ""
+"Sigla da UF Início da Viagem\n"
+"Utilizar a Tabela do IBGE de código de unidades da federação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_UFFim
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_UFFim
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_UFFim
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UFFim
+msgid "Sigla da UF do Fim da Viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_UFFim
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_UFFim
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_UFFim
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UFFim
+msgid ""
+"Sigla da UF do Fim da Viagem\n"
+"Utilizar a Tabela do IBGE de código de unidades da federação.\n"
+"Informar 'EX' para operações com o exterior."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_UFFimViagem
+msgid "Sigla da UF fim da Viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_UFFimViagem
+msgid ""
+"Sigla da UF fim da Viagem\n"
+"Utilizar a Tabela do IBGE de código de unidades da federação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_UFIniViagem
+msgid "Sigla da UF início da Viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_detbpetm__bpe10_UFIniViagem
+msgid ""
+"Sigla da UF início da Viagem\n"
+"Utilizar a Tabela do IBGE de código de unidades da federação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tendereco__bpe10_UF
+msgid "Sigla da UF, informar EX para operações com o exterior."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_inftravessia__bpe10_sitVeiculo
+msgid "Situação do veículo transportado"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_inftravessia__bpe10_sitVeiculo
+msgid ""
+"Situação do veículo transportado\n"
+"01 - Vazio; 02 - Carregado; 03 - Não se aplica"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__state
+msgid "State"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__document_status
+msgid "Status"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_serie
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_serie
+msgid "Série do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_serie
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_serie
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_serie
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_serie
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_serie
+msgid ""
+"Série do documento fiscal\n"
+"Informar a série do documento fiscal (informar zero se inexistente)."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_serie
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_serie
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_serie
+msgid "Série do documento fiscal (bpe_serie)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_fone
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_fone
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_fone
+msgid "Telefone"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_fone
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_fone
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_fone
+msgid "Telefone (bpe_fone)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tresptec__bpe10_fone
+msgid "Telefone da pessoa jurídica"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tresptec__bpe10_fone
+msgid ""
+"Telefone da pessoa jurídica a ser contatada\n"
+"Preencher com o Código DDD + número do telefone."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_TAR
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_TAR
+msgid "Termo de Autorização de Serviço Regular"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_TAR
+msgid ""
+"Termo de Autorização de Serviço Regular\n"
+"Registro obrigatório do emitente do BP-e junto à ANTT para exercer a atividade"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_TAR
+msgid ""
+"Termo de Autorização de Serviço Regular\n"
+"Registro obrigatório do emitente do BPe TM junto à Agência Reguladora Estadual ou ANTT."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infbpesupl__bpe10_qrCodBPe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpesupl__bpe10_qrCodBPe
+msgid "Texto com o QR-Code impresso no DABPE"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infbpesupl__bpe10_boardPassBPe
+msgid "Texto contendo o boarding Pass impresso"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infbpesupl__bpe10_boardPassBPe
+msgid ""
+"Texto contendo o boarding Pass impresso no DABPE (padrão PDF417)\n"
+"O boarding Pass poderá ser gerado no padrão PDF417 e impresso no DABPE opcionalmente pelo emitente para colocar informações operacionais do bilhete e/ou prestar informações para a agência reguladora do setor"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "The QR Code of a BP-e issued in contingency is not supported yet."
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Ticket Validity Date"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe
+msgid "Tipo Bilhete de Passagem Eletrônico"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tresptec
+msgid "Tipo Dados da Responsável Técnico"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tendereco
+msgid "Tipo Dados do Endereço"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_tprotbpe
+msgid ""
+"Tipo Protocolo de status resultado do processamento do BP-e (Modelo\n"
+"63)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_tpAcomodacao
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_tpAcomodacao
+msgid "Tipo de Acomodação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_tpAcomodacao
+msgid ""
+"Tipo de Acomodação\n"
+"Informar o código do tipo de acomodação (1-Assento/poltrona, 2-Rede, 3-Rede com ar-condicionado, 4-Cabine, 5-Outros)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_tpAcomodacao
+msgid ""
+"Tipo de Acomodação\n"
+"Informar o código do tipo de acomodação (6-Comum, 7-Conforto)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_tpIntegra
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_tpIntegra
+msgid "Tipo de Integração do processo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_card__bpe10_tpIntegra
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_card__bpe10_tpIntegra
+msgid ""
+"Tipo de Integração do processo de pagamento com o sistema de automação da "
+"empresa\t\t\t\t\t\t\t1=Pagamento integrado com o sistema de automação da "
+"empresa Ex. equipamento TEF , Comercio Eletronico\t\t\t\t\t2=Pagamento não "
+"integrado com o sistema de automação da empresa Ex: equipamento POS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_tpServ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_tpServ
+msgid "Tipo de Serviço"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_tpServ
+msgid ""
+"Tipo de Serviço\n"
+"Informar o código do tipo de serviço (1-Convencional com sanitário, 2-Convencional sem sanitário, 3-Semileito, 4-Leito com ar condicionado, 5-Leito sem ar condicionado, 6-Executivo, 7-Semiurbano, 8-Longitudinal, 9-Travessia, 10-Cama, 11-Micro-onibus)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_tpServ
+msgid ""
+"Tipo de Serviço\n"
+"Informar o código do tipo de serviço (12 - Comercial, 13 - Executivo)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infbpesub__bpe10_tpSub
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpesub__bpe10_tpSub
+msgid "Tipo de Substituição"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infbpesub__bpe10_tpSub
+msgid ""
+"Tipo de Substituição\n"
+"1 - Remarcação\n"
+"\n"
+"\n"
+"2 - Transferência\n"
+"\n"
+"3 - Transferência e Remarcação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpesub__bpe10_tpSub
+msgid ""
+"Tipo de Substituição\n"
+"1 - Remarcação\n"
+"2 - Transferência\n"
+"3 - Transferência e Remarcação\n"
+"4 – Erro de Tarifa\n"
+"5 – Erro de Tributação\n"
+"6 – Decisão judicial\n"
+"7 – Erro Cadastral\n"
+"9 - Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_tpViagem
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_tpViagem
+msgid "Tipo de Viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_tpViagem
+msgid ""
+"Tipo de Viagem\n"
+"Informa o código do tipo da viagem \n"
+"00- Regular Doméstico;\n"
+"01- Regular Internacional;\n"
+"02- Não Regular Doméstico; e\n"
+"03- Não Regular Internacional."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_tpViagem
+msgid ""
+"Tipo de Viagem\n"
+"Informa o código do tipo da viagem (00-regular, 01-extra)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpCompra
+msgid "Tipo de compra do BPe Aereo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpCompra
+msgid ""
+"Tipo de compra do BPe Aereo\n"
+"0 - Normal \n"
+"1 - BPe múltiplo (fretamento)\n"
+"2 - Vinculado a BPe multiplo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_tpDesconto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpDesconto
+msgid "Tipo de desconto/benefício para o BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpDesconto
+msgid ""
+"Tipo de desconto/benefício para o BP-e\n"
+"01 - Tarifa promocional\n"
+"02 - Idoso\n"
+"03 - Criança\n"
+"04 - Deficiente\n"
+"05 - Estudante\n"
+"06 - Animal Doméstico\n"
+"07 - Acordo Coletivo\n"
+"08 - Profissional em Deslocamento\n"
+"09 - Profissional da Empresa\n"
+"10 - Jovem \n"
+"11 - Idoso 50%\n"
+"\n"
+"12 - Acompanhante PCD;\n"
+"\n"
+"13 - Pessoa Obesa\n"
+"99 - Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_tpDesconto
+msgid ""
+"Tipo de desconto/benefício para o BP-e\n"
+"03 - Crianças\n"
+"09 - Profissional da Empresa  (empregados ou tripulantes da cia aérea)\n"
+"10 - Programas de fidelidade (Milhagem);\n"
+"11 - Acordos Corporativos\n"
+"12- Acordos com Grupos de Passageiros;\n"
+"13 - Acompanhante passageiro PNE\n"
+"99 - Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_tpTrecho
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_tpTrecho
+msgid "Tipo de trecho da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infviagem__bpe10_tpTrecho
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infviagem__bpe10_tpTrecho
+msgid ""
+"Tipo de trecho da viagem\n"
+"Informar do tipo de trecho (1-Normal, 2-Trecho Inicial, 3-Conexão)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpAmb
+msgid "Tipo do Ambiente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpAmb
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_tpAmb
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpAmb
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpAmb
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpAmb
+msgid ""
+"Tipo do Ambiente\n"
+"1 - Produção\n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpAmb
+msgid "Tipo do Ambiente (bpe_tpAmb)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpBPe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_tpBPe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpBPe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpBPe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpBPe
+msgid "Tipo do BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpBPe
+msgid ""
+"Tipo do BP-e\n"
+"0 - BP-e normal\n"
+"3 - BP-e substituição"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpBPe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_tpBPe
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpBPe
+msgid ""
+"Tipo do BP-e\n"
+"0 - BP-e normal 3 - BP-e substituição"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpBPe
+msgid ""
+"Tipo do BP-e\n"
+"4 - BP-e Transporte Metropolitano"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infvalorbpe_comp__bpe10_tpComp
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe_comp__bpe10_tpComp
+msgid "Tipo do Componente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe_comp__bpe10_tpComp
+msgid ""
+"Tipo do Componente\n"
+"01 - TARIFA; \n"
+"03 - TAXA EMBARQUE;\n"
+"06 - BAGAGEM\n"
+"07 - RESERVA DE ASSENTOS\n"
+"08 - TRANSPORTE DE ANIMAIS\n"
+"99 - OUTROS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infvalorbpe_comp__bpe10_tpComp
+msgid ""
+"Tipo do Componente\n"
+"01 - TARIFA; 02 - PEDÁGIO;\n"
+"03 - TAXA EMBARQUE;\n"
+"04 - SEGURO;\n"
+"05-TAXA DE MANUTENÇÃO RODOVIA (TMR); 06 - SERVIÇO DE VENDA INTEGRADA (SVI); 99 - OUTROS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_tpDoc
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_tpDoc
+msgid "Tipo do Documento de identificação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_tpDoc
+msgid ""
+"Tipo do Documento de identificação\n"
+"1-RG\n"
+"\n"
+"2-Título de Eleitor\n"
+"\n"
+"3-Passaporte\n"
+"\n"
+"4-CNH\n"
+"5-Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_tpDoc
+msgid ""
+"Tipo do Documento de identificação\n"
+"1-RG\n"
+"2-Título de Eleitor\n"
+"3-Passaporte\n"
+"4-CNH\n"
+"5-Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_inftravessia__bpe10_tpVeiculo
+msgid "Tipo do veículo transportado"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_inftravessia__bpe10_tpVeiculo
+msgid ""
+"Tipo do veículo transportado\n"
+"01-Motocicleta\n"
+"02-Automóvel\n"
+"03-Automóvel com reboque\n"
+"04-Caminhonete\n"
+"05-Caminhonete com reboque\n"
+"06-Micro-onibus\n"
+"07-Van\n"
+"08-Ônibus - 2 ou 3 eixos\n"
+"09-Ônibus 4 eixos\n"
+"10-Caminhão 3/4\n"
+"11-Caminhão toco\n"
+"12-Caminhão Truck\n"
+"13-Carreta\n"
+"14-Bi-Trem\n"
+"15-Rodo-Trem - 9 eixos\n"
+"16-Romeu e Julieta - 7 eixos\n"
+"17-Jamanta - 6 eixos\n"
+"18-Jamanta - 5 eixos\n"
+"19-Jamanta - 4 eixos\n"
+"20-Trator de esteira\n"
+"21-Pá mecânica\n"
+"22-Patrol\n"
+"23-Trator de Pneu Grande\n"
+"24-Trator de Pneu com reboque\n"
+"25-Trator de Pneu sem reboque\n"
+"26-Carroça\n"
+"27-Mobilete\n"
+"28-Bicicleta\n"
+"29-Passageiro\n"
+"99-Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid ""
+"To generate the BP-e key, fill the CNPJ and the State of the company %s."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields.selection,name:l10n_br_bpe.selection__l10n_br_fiscal_document_line__bpe_component_type__02
+msgid "Toll"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_total__bpe10_IBSCBSTot
+msgid "Totais do IBS e CBS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_bpe_10_icmstot
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_total__bpe10_ICMSTot
+msgid "Totais referentes ao ICMS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_document_form_view
+msgid "Trip"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Trip Information"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move_line__bpe_component_type
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document_line__bpe_component_type
+msgid "Type of the value component (Comp/tpComp) of the BP-e."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_total__bpe10_vBP
+msgid "Valor Total do Bilhete"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_total__bpe10_vBP
+msgid ""
+"Valor Total do Bilhete de Passagem Transporte Metropolitano\n"
+"Pode conter zeros quando o BP-e for de complemento de ICMS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmstot__bpe10_vICMS
+msgid "Valor Total do ICMS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_imp__bpe10_vTotTrib
+msgid "Valor Total dos Tributos"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vTotTrib
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vTotTrib
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vTotTrib
+msgid "Valor Total dos Tributos (bpe_vTotTrib)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_vBCUFFim
+msgid "Valor da BC do ICMS na UF fim da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_vBP
+msgid "Valor da soma dos Bilhetes de Passagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_det__bpe10_vBP
+msgid ""
+"Valor da soma dos Bilhetes de Passagem da viagem\n"
+"Pode conter zeros quando o BP-e for de complemento de ICMS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vBP
+msgid "Valor do Bilhete de Passagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_vBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_vBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vBP
+msgid ""
+"Valor do Bilhete de Passagem\n"
+"Pode conter zeros quando o BP-e for de complemento de ICMS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_vICMSUFIni
+msgid "Valor do ICMS de partilha"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_vICMSUFFim
+msgid "Valor do ICMS de partilha para a UF fim"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_vICMSUFFim
+msgid "Valor do ICMS de partilha para a UF fim da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_vICMSUFIni
+msgid "Valor do ICMS de partilha para a UF início da viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_vFCPUFFim
+msgid "Valor do ICMS relativo ao Fundo"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_icmsuffim__bpe10_vFCPUFFim
+msgid ""
+"Valor do ICMS relativo ao Fundo de Combate á Pobreza (FCP) da UF fim da "
+"viagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_pag__bpe10_vPag
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_pag__bpe10_vPag
+msgid "Valor do Pagamento"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infvalorbpe_comp__bpe10_vComp
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe_comp__bpe10_vComp
+msgid "Valor do componente"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vDesconto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vDesconto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vDesconto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vDesconto
+msgid "Valor do desconto concedido ao comprador"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_vDesconto
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_vDesconto
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vDesconto
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vDesconto
+msgid ""
+"Valor do desconto concedido ao comprador\n"
+"Indicar o valor total concedido em função dos benefícios concedidos ou política de desconto da empresa\n"
+"Informar 0.00 em caso de passagem comercializada sem nenhum desconto"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vTroco
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vTroco
+msgid "Valor do troco"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vPgto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vPgto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vPgto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vPgto
+msgid "Valor pago pelo BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_vPgto
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_vPgto
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vPgto
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vPgto
+msgid "Valor pago pelo BP-e (vBP - vDesconto)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_imp__bpe10_vINSSRet
+msgid "Valor retido"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_imp__bpe10_vINSSRet
+msgid ""
+"Valor retido de contribuição previdenciária (informar apenas no Multiplo)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_imp__bpe10_vTotDFe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_total__bpe10_vTotDFe
+msgid "Valor total do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_vTotDFe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_vTotDFe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_total__bpe10_vTotDFe
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vTotDFe
+msgid ""
+"Valor total do documento fiscal \n"
+"(vBP + total do IBS + total da CBS)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_imp__bpe10_vTotDFe
+msgid ""
+"Valor total do documento fiscal \n"
+"vBP+ total do IBS + total da CBS"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vTotDFe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vTotDFe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vTotDFe
+msgid "Valor total do documento fiscal (bpe_vTotDFe)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#. odoo-python
+#: code:addons/l10n_br_bpe/models/bpe/document.py:0
+msgid "Value Components (fiscal lines)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model_terms:ir.ui.view,arch_db:l10n_br_bpe.bpe_document_form_view
+msgid "Values"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_infprot__bpe10_verAplic
+msgid "Versão do Aplicativo que processou"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_infprot__bpe10_verAplic
+msgid "Versão do Aplicativo que processou o BP-e"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_versao
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_versao
+msgid "Versão do leiaute"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_versao
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_versao
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_versao
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_versao
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_versao
+msgid ""
+"Versão do leiaute\n"
+"Ex: '3.00'"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_versao
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_versao
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_versao
+msgid "Versão do leiaute (bpe_versao)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_verProc
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_verProc
+msgid "Versão do processo de emissão"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_verProc
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_verProc
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_verProc
+#: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_verProc
+#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_verProc
+msgid ""
+"Versão do processo de emissão\n"
+"Informar a versão do aplicativo emissor de BP-e."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_verProc
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_verProc
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_verProc
+msgid "Versão do processo de emissão (bpe_verProc)"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cLocDest
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cLocDest
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cLocDest
+msgid "cLocDest"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_nViagem
+msgid "nViagem"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tprotbpe__bpe10_versao
+msgid "versao"
+msgstr ""
