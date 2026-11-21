@@ -8,7 +8,10 @@
         <field name="inherit_id" ref="l10n_br_cte.cte_document_form_view" />
         <field name="arch" type="xml">
             <page name="modais" position="inside">
-                <group name="multimodal" invisible="transport_modal != '06'">
+                <group
+                    name="multimodal"
+                    attrs="{'invisible': [('transport_modal', '!=', '06')]}"
+                >
                     <group name="multimodal_operator">
                         <field name="cte40_COTM" />
                         <field name="cte40_indNegociavel" />

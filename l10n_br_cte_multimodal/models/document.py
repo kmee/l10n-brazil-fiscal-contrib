@@ -1,7 +1,7 @@
 # Copyright 2026 KMEE
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import fields, models
+from odoo import _, fields, models
 from odoo.exceptions import UserError
 
 from odoo.addons.l10n_br_cte_spec.models.v4_0.cte_multi_modal_v4_00 import (
@@ -78,7 +78,7 @@ class Document(models.Model):
         missing = [self._fields[name].string for name in required if not self[name]]
         if missing:
             raise UserError(
-                self.env._(
+                _(
                     "Multimodal CT-e %(document)s: fill in %(fields)s.",
                     document=self.display_name,
                     fields=", ".join(missing),
