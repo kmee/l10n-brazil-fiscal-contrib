@@ -23,7 +23,7 @@ class TestNFeRetirada(TransactionCase):
             {
                 "name": "General Warehouse",
                 "is_company": True,
-                "vat": "21.221.265/0001-90",
+                "vat": "47.018.352/0001-38",
                 "street_name": "Estrada do Caminho Velho",
                 "street_number": "100",
                 "district": "Jardim Nova Cidade",
@@ -75,7 +75,7 @@ class TestNFeRetirada(TransactionCase):
                 retirada.findtext(f"nfe:{tag}", namespaces=NFE_NS)
                 for tag in ("CNPJ", "xLgr", "nro", "cMun", "UF")
             ],
-            ["21221265000190", "Estrada do Caminho Velho", "100", "3518800", "SP"],
+            ["47018352000138", "Estrada do Caminho Velho", "100", "3518800", "SP"],
         )
 
     def test_incomplete_pickup_address_blocks_confirmation(self):
