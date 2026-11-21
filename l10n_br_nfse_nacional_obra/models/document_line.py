@@ -1,7 +1,7 @@
 # Copyright 2026 KMEE
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import models
+from odoo import _, models
 from odoo.exceptions import UserError
 
 # Rule E0370 (Anexo VI, leiaute 1.04.01 of NT 009): the infoObra group is
@@ -40,7 +40,7 @@ class FiscalDocumentLine(models.Model):
             return
         if required and not values:
             raise UserError(
-                self.env._(
+                _(
                     "The service %(code)s of %(document)s is a construction "
                     "work: inform its CNO, CIB or address (rule E0370 of the "
                     "NFS-e Nacional).",

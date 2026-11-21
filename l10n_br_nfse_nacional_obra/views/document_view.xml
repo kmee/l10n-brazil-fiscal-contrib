@@ -11,7 +11,7 @@
                 <page
                     name="nfse_obra"
                     string="Construction Work"
-                    invisible="document_type != 'SE'"
+                    attrs="{'invisible': [('document_type', '!=', 'SE')]}"
                 >
                     <group>
                         <field name="nfse_obra_partner_id" />
