@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_company_form" model="ir.ui.view">
+        <field name="name">l10n_br_nfcom.res.company.form</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.fiscal_res_company_form" />
+        <field name="arch" type="xml">
+            <field name="processador_edoc" position="after">
+                <field name="nfcom_environment" />
+            </field>
+        </field>
+    </record>
+</odoo>
