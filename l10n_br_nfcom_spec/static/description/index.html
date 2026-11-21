@@ -370,23 +370,23 @@ ul.auto-toc {
 !! source digest: sha256:21dce03c127fd9918f695ffc88a9f4dcf4f4a356c29866ab41e4d729be1fd239
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Alpha" src="https://img.shields.io/badge/maturity-Alpha-red.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/18.0/l10n_br_nfcom_spec"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>Modelos abstratos (mixins) da Nota Fiscal Fatura de Serviço de
-Comunicação Eletrônica (<tt class="docutils literal">NFCom</tt>, <tt class="docutils literal">modelo 62</tt>), gerados a partir dos
-schemas oficiais do leiaute 1.00 pelo
+<p>Abstract models (mixins) of the Electronic Communication Services
+Invoice (<tt class="docutils literal">NFCom</tt>, <tt class="docutils literal">model 62</tt>), generated from the official schemas
+of layout 1.00 by
 <a class="reference external" href="https://github.com/akretion/xsdata-odoo">xsdata-odoo</a>.</p>
-<p>O módulo não emite a NFCom: é a base de dados do leiaute para o módulo
-de implementação <tt class="docutils literal">l10n_br_nfcom</tt>, que mapeia esses modelos no
-documento fiscal do Odoo (<tt class="docutils literal">l10n_br_fiscal.document</tt>), no mesmo desenho
-dos módulos <tt class="docutils literal">l10n_br_nfe_spec</tt>, <tt class="docutils literal">l10n_br_cte_spec</tt> e
-<tt class="docutils literal">l10n_br_mdfe_spec</tt> da OCA.</p>
-<p>Os modelos cobrem o grupo <tt class="docutils literal">infNFCom</tt> inteiro (identificação, emitente,
-destinatário, assinante, substituição, cofaturamento, itens com ICMS,
-PIS, COFINS, FUST, FUNTTEL, retenções e o grupo <tt class="docutils literal">IBSCBS</tt> da reforma
-tributária, totais, fatura e responsável técnico) e os tipos comuns do
-<tt class="docutils literal">DFeTiposBasicos</tt> (IBS, CBS e IS).</p>
-<p>Schemas usados: pacote <tt class="docutils literal">PL_NFCOM_1.00_NT2026.002 RTC_1.01</tt>,
-distribuído pelo nfelib 3.3.0 (<tt class="docutils literal">nfelib/nfcom/schemas/v1_0</tt>).</p>
-<p>Comando de geração:</p>
+<p>The module does not issue the NFCom: it is the layout data base for the
+implementation module <tt class="docutils literal">l10n_br_nfcom</tt>, which maps these models onto
+the Odoo fiscal document (<tt class="docutils literal">l10n_br_fiscal.document</tt>), following the
+same pattern as the OCA modules <tt class="docutils literal">l10n_br_nfe_spec</tt>,
+<tt class="docutils literal">l10n_br_cte_spec</tt> and <tt class="docutils literal">l10n_br_mdfe_spec</tt>.</p>
+<p>The models cover the entire <tt class="docutils literal">infNFCom</tt> group (identification, issuer,
+recipient, subscriber, replacement, co-billing, items with ICMS, PIS,
+COFINS, FUST, FUNTTEL, withholdings and the <tt class="docutils literal">IBSCBS</tt> group of the tax
+reform, totals, invoice and technical manager) and the common types of
+<tt class="docutils literal">DFeTiposBasicos</tt> (IBS, CBS and IS).</p>
+<p>Schemas used: package <tt class="docutils literal">PL_NFCOM_1.00_NT2026.002 RTC_1.01</tt>, distributed
+by nfelib 3.3.0 (<tt class="docutils literal">nfelib/nfcom/schemas/v1_0</tt>).</p>
+<p>Generation command:</p>
 <pre class="code bash literal-block">
 <span class="nb">export</span><span class="w"> </span><span class="nv">XSDATA_SCHEMA</span><span class="o">=</span>nfcom<span class="w">
 </span><span class="nb">export</span><span class="w"> </span><span class="nv">XSDATA_VERSION</span><span class="o">=</span><span class="m">10</span><span class="w">
@@ -398,17 +398,17 @@ distribuído pelo nfelib 3.3.0 (<tt class="docutils literal">nfelib/nfcom/schema
 </span><span class="w">  </span>--package<span class="w"> </span>nfelib.nfcom.odoo.v1_0<span class="w"> </span><span class="se">\
 </span><span class="w">  </span>--output<span class="o">=</span>odoo
 </pre>
-<p>Do resultado entram <tt class="docutils literal">tipos_geral_nfcom_v1_00.py</tt>,
-<tt class="docutils literal">dfe_tipos_basicos_v1_00.py</tt> e <tt class="docutils literal">nfcom_tipos_basico_v1_00.py</tt>; o
-<tt class="docutils literal">nfcom_v1_00.py</tt> só reimporta o tipo raiz e fica de fora. Do
-<tt class="docutils literal">nfcom_tipos_basico_v1_00.py</tt> sai o campo <tt class="docutils literal">nfcom10_cUFAdic</tt> (grupo
-<tt class="docutils literal">assinante</tt>): é uma lista de um tipo simples (<tt class="docutils literal">TCodUfIBGE</tt>), que o
-xsdata-odoo 1.2.2 gera como <tt class="docutils literal">One2many</tt> para um modelo inexistente, o
-mesmo caso do <tt class="docutils literal">cte40_cInfManu</tt> do CT-e, e impede o carregamento do
-registro.</p>
-<p>Os campos têm o prefixo <tt class="docutils literal">nfcom10_</tt> (schema e dois dígitos da versão),
-como o <tt class="docutils literal">nfe40_</tt> da NF-e: uma revisão menor do leiaute reaproveita os
-mesmos campos.</p>
+<p>From the result, <tt class="docutils literal">tipos_geral_nfcom_v1_00.py</tt>,
+<tt class="docutils literal">dfe_tipos_basicos_v1_00.py</tt> and <tt class="docutils literal">nfcom_tipos_basico_v1_00.py</tt> are
+included; <tt class="docutils literal">nfcom_v1_00.py</tt> only re-imports the root type and is left
+out. From <tt class="docutils literal">nfcom_tipos_basico_v1_00.py</tt> the field <tt class="docutils literal">nfcom10_cUFAdic</tt>
+(group <tt class="docutils literal">assinante</tt>) is removed: it is a list of a simple type
+(<tt class="docutils literal">TCodUfIBGE</tt>), which xsdata-odoo 1.2.2 generates as a <tt class="docutils literal">One2many</tt> to
+a nonexistent model, the same case as <tt class="docutils literal">cte40_cInfManu</tt> in CT-e, and it
+prevents the registry from loading.</p>
+<p>The fields have the prefix <tt class="docutils literal">nfcom10_</tt> (schema and two digits of the
+version), like <tt class="docutils literal">nfe40_</tt> for NF-e: a minor layout revision reuses the
+same fields.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">This is an alpha version, the data model and design can change at any time without warning.

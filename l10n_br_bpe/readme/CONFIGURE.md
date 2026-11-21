@@ -1,7 +1,6 @@
-- Na empresa, aba Fiscal, informe o processador de documentos eletrônicos
-  "Odoo Community", o certificado digital A1 e, na aba BP-e, o ambiente
-  (produção ou homologação).
-- Crie uma série para o tipo de documento 63 (BP-e) na empresa.
-- Configure a operação fiscal da venda de passagens: as linhas do BP-e
-  precisam de linha de operação fiscal para que o motor calcule ICMS, IBS e
-  CBS.
+- On the company, in the Fiscal tab, set the electronic document processor to
+  "Odoo Community", the A1 digital certificate and, in the BP-e tab, the
+  environment (production or homologation).
+- Create a series for document type 63 (BP-e) on the company.
+- Configure the fiscal operation for ticket sales: the BP-e lines need a
+  fiscal operation line so that the engine can compute ICMS, IBS and CBS.

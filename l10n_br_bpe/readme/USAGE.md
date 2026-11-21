@@ -1,11 +1,10 @@
-1. Crie um documento fiscal com o tipo de documento 63 (BP-e).
-2. Cada linha do documento é um componente do valor do bilhete (tarifa,
-   pedágio, taxa de embarque...), escolhido no campo "BP-e Component Type"
-   da linha.
-3. Na aba BP-e, informe as cidades de origem e destino (ou os códigos das
-   localidades), as datas de embarque e de validade do bilhete, o passageiro,
-   os trechos da viagem e as formas de pagamento.
-4. Confirme o documento para gerar, assinar e validar o XML e envie para a
-   autorização.
-5. Com o BP-e autorizado, os botões "Cancel" e "No Boarding" enviam os
-   eventos de cancelamento e de não embarque.
+1. Create a fiscal document with document type 63 (BP-e).
+2. Each document line is a component of the ticket value (fare, toll,
+   boarding fee...), chosen in the "BP-e Component Type" field of the line.
+3. In the BP-e tab, enter the origin and destination cities (or the location
+   codes), the boarding and ticket validity dates, the passenger, the trip
+   legs and the payment methods.
+4. Confirm the document to generate, sign and validate the XML, then send it
+   for authorization.
+5. Once the BP-e is authorized, the "Cancel" and "No Boarding" buttons send
+   the cancellation and no-boarding events.

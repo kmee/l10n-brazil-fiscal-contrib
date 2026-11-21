@@ -22,37 +22,39 @@ NF3e
 
 |badge1| |badge2| |badge3|
 
-Emissão da Nota Fiscal de Energia Elétrica Eletrônica (``NF3e``,
-``modelo 66``), obrigatória para as distribuidoras e permissionárias de
-energia elétrica (Ajuste SINIEF 01/19), a partir do documento fiscal do
-``l10n_br_fiscal`` com o tipo de documento 66.
+Issuance of the Electronic Electricity Bill (``NF3e``, ``model 66``),
+mandatory for electricity distributors and licensees (Ajuste SINIEF
+01/19), from the ``l10n_br_fiscal`` fiscal document with document type
+66.
 
-O módulo injeta os modelos do ``l10n_br_nf3e_spec`` no documento fiscal
-e nas suas linhas (empilhamento do ``spec_driven_model``, no mesmo
-desenho do ``l10n_br_mdfe`` e do ``l10n_br_cte``) e:
+The module injects the ``l10n_br_nf3e_spec`` models into the fiscal
+document and its lines (``spec_driven_model`` stacking, following the
+same pattern as ``l10n_br_mdfe`` and ``l10n_br_cte``) and:
 
-- numera o documento pela série e monta a chave de acesso da NF3e (MOC
-  NF3e 1.00a, Visão Geral, item 2.1: código numérico de 7 dígitos, forma
-  de emissão e site do autorizador), com o dígito verificador em módulo
-  11, inclusive para CNPJ alfanumérico;
-- gera o XML com os grupos ``ide``, ``emit``, ``dest``, ``acessante``
-  (unidade consumidora), ``gMed`` (medidores), ``NFdet`` (itens com
-  ``prod`` e ``imposto``), ``total``, ``gFat`` (fatura), ``gANEEL``
-  (histórico de faturamento), ``infAdic`` e o QR Code de ``infNF3eSupl``
-  (MOC NF3e 1.00a, Visão Geral, item 9.2);
-- leva para o XML os tributos calculados pelo motor fiscal da OCA: ICMS
-  (grupo escolhido pelo CST), PIS, COFINS, retenções e o grupo
-  ``IBSCBS`` do item com o total ``IBSCBSTot`` (NT 2025.001 RTC v1.14a);
-- calcula o ``vNF`` (MOC, regra G157) e o ``vTotDFe``, que repete o
-  ``vNF`` em 2026 e soma IBS e CBS a partir de 2027, pela data de
-  emissão (NT 2025.001 RTC v1.14a, item 9, regras 360 e 365, e NT
-  2026.004 v1.01);
-- assina o XML com o certificado da empresa, valida contra o XSD do
-  ``nfelib`` e guarda o XML assinado no evento de autorização do
-  documento;
-- monta, assina e valida o XML do evento de cancelamento (110111).
+- numbers the document by series and builds the NF3e access key (MOC
+  NF3e 1.00a, Overview, item 2.1: 7-digit numeric code, issuance type
+  and authorizer site), with a modulo 11 check digit, including for
+  alphanumeric CNPJ;
+- generates the XML with the groups ``ide``, ``emit``, ``dest``,
+  ``acessante`` (consumer unit), ``gMed`` (meters), ``NFdet`` (items
+  with ``prod`` and ``imposto``), ``total``, ``gFat`` (invoice),
+  ``gANEEL`` (billing history), ``infAdic`` and the ``infNF3eSupl`` QR
+  Code (MOC NF3e 1.00a, Overview, item 9.2);
+- carries into the XML the taxes computed by the OCA fiscal engine: ICMS
+  (group chosen by the CST), PIS, COFINS, withholdings and the item
+  ``IBSCBS`` group with the ``IBSCBSTot`` total (NT 2025.001 RTC
+  v1.14a);
+- computes ``vNF`` (MOC, rule G157) and ``vTotDFe``, which repeats
+  ``vNF`` in 2026 and adds IBS and CBS from 2027, by issue date (NT
+  2025.001 RTC v1.14a, item 9, rules 360 and 365, and NT 2026.004
+  v1.01);
+- signs the XML with the company certificate, validates it against the
+  ``nfelib`` XSD and stores the signed XML in the authorization event of
+  the document;
+- builds, signs and validates the XML of the cancellation event
+  (110111).
 
-A transmissão ao autorizador ainda não está disponível: ver o roteiro.
+Transmission to the authorizer is not available yet: see the roadmap.
 
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
@@ -67,111 +69,111 @@ A transmissão ao autorizador ainda não está disponível: ver o roteiro.
 Configuration
 =============
 
-Na empresa (aba Fiscal, NF3e):
+On the company (Fiscal tab, NF3e):
 
-- escolha o ambiente da NF3e (homologação ou produção);
-- confira o endereço do QR Code. O padrão é o da SVRS
-  (``https://dfe-portal.svrs.rs.gov.br/nf3e/qrCode``); MG, MT e SC
-  publicam endereços próprios na página de serviços do Portal NF3e
-  (``https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos``), e a SEFAZ
-  recusa o QR Code com endereço diferente do previsto (MOC NF3e 1.00a,
-  regra G164).
+- choose the NF3e environment (homologation or production);
+- check the QR Code address. The default is the SVRS one
+  (``https://dfe-portal.svrs.rs.gov.br/nf3e/qrCode``); MG, MT and SC
+  publish their own addresses on the services page of the NF3e Portal
+  (``https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos``), and SEFAZ
+  rejects the QR Code with an address different from the expected one
+  (MOC NF3e 1.00a, rule G164).
 
-A empresa precisa de CNPJ, inscrição estadual, estado, município,
-certificado digital e o processador de documentos eletrônicos "Odoo
-Community". Crie também uma série para o tipo de documento 66.
+The company needs a CNPJ, state registration, state, city, digital
+certificate and the "Odoo Community" electronic document processor. Also
+create a series for document type 66.
 
 Usage
 =====
 
-1. Crie um documento fiscal com o tipo de documento 66, o cliente, a
-   operação fiscal e a série da NF3e.
-2. Na aba NF3e, preencha a unidade consumidora (acessante), os dados da
-   fatura (competência, vencimento, próxima leitura, linha digitável e
-   débito automático ou banco e agência), os medidores e o histórico de
-   faturamento (de 1 a 5 grandezas, cada uma com os 13 meses que o
-   leiaute exige).
-3. Em cada item, informe o CFOP de energia elétrica e, na aba NF3e da
-   linha, o código de classificação do item, a unidade de medida e a
-   origem da quantidade faturada. Para o IBS e a CBS, informe a
-   classificação tributária (``cClassTrib``): o motor fiscal calcula os
-   valores.
-4. Confirme o documento: o XML é gerado, assinado e validado, e fica no
-   evento de autorização. Os erros de esquema aparecem na mensagem de
-   erro do XML.
+1. Create a fiscal document with document type 66, the customer, the
+   fiscal operation and the NF3e series.
+2. In the NF3e tab, fill in the consumer unit (acessante), the invoice
+   data (competence period, due date, next reading, payment line and
+   automatic debit or bank and branch), the meters and the billing
+   history (1 to 5 quantities, each with the 13 months that the layout
+   requires).
+3. On each item, enter the electricity CFOP and, in the NF3e tab of the
+   line, the item classification code, the unit of measure and the
+   origin of the billed quantity. For IBS and CBS, enter the tax
+   classification (``cClassTrib``): the fiscal engine computes the
+   values.
+4. Confirm the document: the XML is generated, signed and validated, and
+   is kept in the authorization event. Schema errors appear in the XML
+   error message.
 
 Known issues / Roadmap
 ======================
 
-Transmissão
------------
+Transmission
+------------
 
-A NF3e ainda não é transmitida: confirmar o documento gera, assina e
-valida o XML, e o envio ao autorizador (ou o cancelamento pelo Odoo)
-avisa que o serviço não está disponível. O destino é uma contribuição ao
-``nfelib``, no padrão do cliente de CT-e e MDF-e dele
-(``nfelib/<doc>/client/``, sobre o ``brazil_fiscal_client``):
+The NF3e is not transmitted yet: confirming the document generates,
+signs and validates the XML, and sending to the authorizer (or
+cancelling through Odoo) warns that the service is not available. The
+goal is a contribution to ``nfelib``, following the pattern of its CT-e
+and MDF-e client (``nfelib/<doc>/client/``, built on
+``brazil_fiscal_client``):
 
-- os bindings SOAP gerados pelo xsdata a partir dos WSDL dos serviços
-  ``NF3eRecepcaoSinc``, ``NF3eRecepcaoEvento``, ``NF3eConsulta`` e
-  ``NF3eStatusServico``. O ``nfelib`` 3.3.0 tem os bindings do leiaute e
-  dos eventos da NF3e, mas não os WSDL nem os bindings SOAP, e os WSDL
-  só são servidos pelos autorizadores (``<serviço>?wsdl``);
-- a tabela de servidores dos cinco autorizadores publicados no Portal
-  NF3e (``https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos``): MG, MS,
-  MT, PR e SVRS, em produção e homologação;
-- o cliente ``NF3eClient`` com o envio síncrono (XML compactado em gzip
-  e base64), o evento, a consulta e o status do serviço.
+- the SOAP bindings generated by xsdata from the WSDL of the services
+  ``NF3eRecepcaoSinc``, ``NF3eRecepcaoEvento``, ``NF3eConsulta`` and
+  ``NF3eStatusServico``. ``nfelib`` 3.3.0 has the bindings for the NF3e
+  layout and events, but not the WSDL or the SOAP bindings, and the WSDL
+  are only served by the authorizers (``<service>?wsdl``);
+- the server table of the five authorizers published on the NF3e Portal
+  (``https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos``): MG, MS, MT, PR
+  and SVRS, in production and homologation;
+- the ``NF3eClient`` client with synchronous submission (XML compressed
+  with gzip and encoded in base64), the event, the query and the service
+  status.
 
-Com o cliente no ``nfelib``, este módulo passa a enviar o XML guardado
-no evento de autorização, tratar o protocolo (``protNF3e``,
-``nf3eProc``) e transmitir o evento de cancelamento que
-``_nf3e_cancel_event_xml`` já monta, assina e valida (com a regra de
-prazo do cancelamento do MOC).
+With the client in ``nfelib``, this module will send the XML stored in
+the authorization event, handle the protocol (``protNF3e``,
+``nf3eProc``) and transmit the cancellation event that
+``_nf3e_cancel_event_xml`` already builds, signs and validates (with the
+cancellation deadline rule of the MOC).
 
-Leiaute
--------
+Layout
+------
 
-- NT 2026.004 v1.01 (produção em 14/12/2026): valor líquido do item
-  (``vProdLiq``, ``vItemLiq``), ICMS previsto para pagamento antecipado,
-  IBS e CBS no grupo de processo judicial e o fim da NF3e normal com
-  ajuste. O ``nfelib`` 3.3.0 traz o pacote de esquemas da NT 2026.002
-  RTC v1.01: o ``l10n_br_nf3e_spec`` precisa ser regerado quando o
-  ``nfelib`` publicar o pacote da NT 2026.004.
-- NT 2026.001 RTC (vinculação de pagamento, grupo ``pgtoVinc`` e eventos
-  de vinculação).
-- Contingência off-line (``tpEmis`` 2): ``dhCont``, ``xJust`` e o
-  parâmetro ``sign`` do QR Code (MOC NF3e 1.00a, Visão Geral, item 9.2).
-- Grupos da energia que o leiaute não exige e ainda não são preenchidos:
-  tarifas por posto tarifário (``gTarif``, regras G111 e G112),
-  adicional de bandeira (``gAdBand``), medição do item (``gMedicao`` e
-  ``gMedida``, regras G114 a G116; por isso a origem de quantidade
-  "contratada" é recusada), grandezas contratadas (``gGrContrat``),
-  sistema de compensação de energia (``gSCEE``), substituição
-  (``gSub``), processo judicial (``gJudic``, ``gProcRef``), contas
-  contábeis (``gContab``), itens de NF3e anterior (``detItemAnt``,
-  finalidades 2 e 3), pagamento antecipado, PIX, endereço de
-  correspondência, autorizados ao XML (``autXML``) e responsável técnico
-  (``gRespTec``).
-- IBS e CBS: estorno de crédito (``gEstornoCred``), diferimento,
-  devolução de tributos, IBS municipal (hoje exportado zerado), compras
-  governamentais (``gCompraGov``) e doação (``indDoacao``).
+- NT 2026.004 v1.01 (production on 2026-12-14): net item value
+  (``vProdLiq``, ``vItemLiq``), ICMS expected for advance payment, IBS
+  and CBS in the judicial process group and the end of the normal NF3e
+  with adjustment. ``nfelib`` 3.3.0 ships the schema package of NT
+  2026.002 RTC v1.01: ``l10n_br_nf3e_spec`` must be regenerated when
+  ``nfelib`` publishes the NT 2026.004 package.
+- NT 2026.001 RTC (payment linking, ``pgtoVinc`` group and linking
+  events).
+- Offline contingency (``tpEmis`` 2): ``dhCont``, ``xJust`` and the QR
+  Code ``sign`` parameter (MOC NF3e 1.00a, Overview, item 9.2).
+- Electricity groups that the layout does not require and are not filled
+  yet: tariffs by tariff period (``gTarif``, rules G111 and G112),
+  tariff flag surcharge (``gAdBand``), item measurement (``gMedicao``
+  and ``gMedida``, rules G114 to G116; that is why the "contracted"
+  quantity origin is rejected), contracted quantities (``gGrContrat``),
+  energy compensation system (``gSCEE``), replacement (``gSub``),
+  judicial process (``gJudic``, ``gProcRef``), accounting accounts
+  (``gContab``), items of a previous NF3e (``detItemAnt``, purposes 2
+  and 3), advance payment, PIX, mailing address, parties authorized to
+  access the XML (``autXML``) and technical manager (``gRespTec``).
+- IBS and CBS: credit reversal (``gEstornoCred``), deferral, tax refund,
+  municipal IBS (exported as zero today), government procurement
+  (``gCompraGov``) and donation (``indDoacao``).
 
-Regras de negócio
------------------
+Business rules
+--------------
 
-- Sinal de cada item no total conforme a natureza do código de
-  classificação (``cClass``, MOC NF3e 1.00a, Visão Geral, item 7.9) e o
-  indicador de devolução: hoje todos os itens somam.
-- Validação do CFOP permitido e da compatibilidade com o ``cClass``
-  (regras G108 e G109, itens 7.8 e 7.9 do MOC).
-- Histórico de faturamento (``gANEEL``) montado a partir das NF3e
-  anteriores da mesma unidade consumidora; hoje é informado no
-  documento.
-- Cadastro da unidade consumidora e dos medidores no cliente, com o
-  código de classificação e a unidade de medida padrão no produto.
-- Mais de um grupo ``NFdet`` (até 13) e mais de 990 itens.
-- DANF3E (MOC NF3e, Anexo II) e importação do XML da NF3e.
+- Sign of each item in the total according to the nature of the
+  classification code (``cClass``, MOC NF3e 1.00a, Overview, item 7.9)
+  and the refund indicator: today all items are added.
+- Validation of the allowed CFOP and of its compatibility with
+  ``cClass`` (rules G108 and G109, items 7.8 and 7.9 of the MOC).
+- Billing history (``gANEEL``) built from the previous NF3e of the same
+  consumer unit; today it is entered in the document.
+- Registration of the consumer unit and meters on the customer, with the
+  classification code and the default unit of measure on the product.
+- More than one ``NFdet`` group (up to 13) and more than 990 items.
+- DANF3E (MOC NF3e, Annex II) and NF3e XML import.
 
 Bug Tracker
 ===========

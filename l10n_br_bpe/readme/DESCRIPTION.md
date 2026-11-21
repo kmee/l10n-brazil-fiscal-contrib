@@ -1,34 +1,34 @@
-Emissão do Bilhete de Passagem Eletrônico (`BP-e`, `modelo 63`, leiaute 1.00)
-a partir do documento fiscal (`l10n_br_fiscal.document`) com o tipo de
-documento 63 do `l10n_br_fiscal`, no padrão do `l10n_br_mdfe`: os grupos do
-leiaute vêm do `l10n_br_bpe_spec` e são empilhados no documento fiscal.
+Issuance of the Electronic Passenger Ticket (`BP-e`, `model 63`, layout 1.00)
+from the fiscal document (`l10n_br_fiscal.document`) with document type 63 of
+`l10n_br_fiscal`, following the pattern of `l10n_br_mdfe`: the layout groups
+come from `l10n_br_bpe_spec` and are stacked onto the fiscal document.
 
-O BP-e é obrigatório desde 01/07/2019 no transporte intermunicipal,
-interestadual e internacional de passageiros rodoviário, aquaviário e
-ferroviário (Ajuste SINIEF 01/17, cláusula 18ª-A, na redação do Ajuste SINIEF
-22/18).
+The BP-e has been mandatory since 2019-07-01 for intercity, interstate and
+international passenger transport by road, water and rail (Ajuste SINIEF
+01/17, clause 18-A, as worded by Ajuste SINIEF 22/18).
 
-O módulo:
+The module:
 
-- monta o XML do BP-e: `ide`, `emit` (da empresa), `comp` (do parceiro do
-  documento, quando informado), `infPassagem` e `infPassageiro`, `infViagem`,
-  `infValorBPe` (um `Comp` por linha do documento fiscal), `imp` (ICMS das
-  linhas, grupo `IBSCBS` e `vTotDFe`), `pag`, `infAdic`, `infRespTec` e o QR
-  Code do `infBPeSupl`;
-- calcula IBS e CBS pelo motor fiscal da OCA (classificação tributária e
-  impostos das linhas) e leva o grupo `IBSCBS` da NT 2025.001 RTC;
-- aplica a regra do `vTotDFe` da NT 2026.004 v1.01: igual ao `vBP` em 2026 e
-  `vBP` mais IBS e CBS a partir de 2027, pela data de emissão local;
-- gera a chave de acesso, assina o XML com o certificado da empresa e valida
-  contra o XSD do BP-e da `nfelib`;
-- transmite o BP-e (serviço síncrono `BPeRecepcao`, mensagem compactada em GZip
-  e Base64) e registra o protocolo de autorização;
-- envia os eventos de cancelamento (110111) e de não embarque (110115).
+- builds the BP-e XML: `ide`, `emit` (from the company), `comp` (from the
+  document partner, when provided), `infPassagem` and `infPassageiro`,
+  `infViagem`, `infValorBPe` (one `Comp` per fiscal document line), `imp`
+  (line ICMS, the `IBSCBS` group and `vTotDFe`), `pag`, `infAdic`,
+  `infRespTec` and the `infBPeSupl` QR Code;
+- computes IBS and CBS with the OCA fiscal engine (tax classification and
+  line taxes) and fills the `IBSCBS` group of NT 2025.001 RTC;
+- applies the `vTotDFe` rule of NT 2026.004 v1.01: equal to `vBP` in 2026 and
+  `vBP` plus IBS and CBS from 2027, by local issue date;
+- generates the access key, signs the XML with the company certificate and
+  validates it against the BP-e XSD of `nfelib`;
+- transmits the BP-e (synchronous `BPeRecepcao` service, message compressed
+  with GZip and encoded in Base64) and records the authorization protocol;
+- sends the cancellation (110111) and no-boarding (110115) events.
 
-A transmissão usa um cliente próprio (`bpe_client`), sobre o
-`brazil_fiscal_client`, no mesmo padrão dos clientes de CT-e e MDF-e da
-`nfelib`, que ainda não tem cliente para o BP-e. Ele segue o MOC BP-e 1.00b
-(itens 3.3 e 3.4): SOAP 1.2, requisição em `bpeDadosMsg`, resposta em
-`bpeResultMsg`, sem cabeçalho SOAP. Os endereços dos autorizadores (MG, MS, MT,
-PR, SP e SVRS para as demais UFs) e do QR Code são os do Portal BP-e
+The transmission uses its own client (`bpe_client`), built on
+`brazil_fiscal_client`, following the same pattern as the CT-e and MDF-e
+clients of `nfelib`, which does not have a BP-e client yet. It follows MOC
+BP-e 1.00b (taxpayer guidance manual, items 3.3 and 3.4): SOAP 1.2, request in
+`bpeDadosMsg`, response in `bpeResultMsg`, no SOAP header. The authorizer
+addresses (MG, MS, MT, PR, SP and SVRS for the other states) and the QR Code
+address are those of the BP-e Portal
 (https://dfe-portal.svrs.rs.gov.br/BPe/Servicos).

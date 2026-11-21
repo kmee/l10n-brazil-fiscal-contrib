@@ -1,12 +1,13 @@
-1. Crie um documento fiscal com o tipo de documento 66, o cliente, a operação
-   fiscal e a série da NF3e.
-2. Na aba NF3e, preencha a unidade consumidora (acessante), os dados da fatura
-   (competência, vencimento, próxima leitura, linha digitável e débito
-   automático ou banco e agência), os medidores e o histórico de faturamento
-   (de 1 a 5 grandezas, cada uma com os 13 meses que o leiaute exige).
-3. Em cada item, informe o CFOP de energia elétrica e, na aba NF3e da linha, o
-   código de classificação do item, a unidade de medida e a origem da
-   quantidade faturada. Para o IBS e a CBS, informe a classificação tributária
-   (`cClassTrib`): o motor fiscal calcula os valores.
-4. Confirme o documento: o XML é gerado, assinado e validado, e fica no evento
-   de autorização. Os erros de esquema aparecem na mensagem de erro do XML.
+1. Create a fiscal document with document type 66, the customer, the fiscal
+   operation and the NF3e series.
+2. In the NF3e tab, fill in the consumer unit (acessante), the invoice data
+   (competence period, due date, next reading, payment line and automatic
+   debit or bank and branch), the meters and the billing history (1 to 5
+   quantities, each with the 13 months that the layout requires).
+3. On each item, enter the electricity CFOP and, in the NF3e tab of the line,
+   the item classification code, the unit of measure and the origin of the
+   billed quantity. For IBS and CBS, enter the tax classification
+   (`cClassTrib`): the fiscal engine computes the values.
+4. Confirm the document: the XML is generated, signed and validated, and is
+   kept in the authorization event. Schema errors appear in the XML error
+   message.

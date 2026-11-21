@@ -1,22 +1,22 @@
-Modelos abstratos (mixins) da Nota Fiscal Fatura de Serviço de Comunicação
-Eletrônica (`NFCom`, `modelo 62`), gerados a partir dos schemas oficiais do
-leiaute 1.00 pelo [xsdata-odoo](https://github.com/akretion/xsdata-odoo).
+Abstract models (mixins) of the Electronic Communication Services Invoice
+(`NFCom`, `model 62`), generated from the official schemas of layout 1.00 by
+[xsdata-odoo](https://github.com/akretion/xsdata-odoo).
 
-O módulo não emite a NFCom: é a base de dados do leiaute para o módulo de
-implementação `l10n_br_nfcom`, que mapeia esses modelos no documento fiscal do
-Odoo (`l10n_br_fiscal.document`), no mesmo desenho dos módulos
-`l10n_br_nfe_spec`, `l10n_br_cte_spec` e `l10n_br_mdfe_spec` da OCA.
+The module does not issue the NFCom: it is the layout data base for the
+implementation module `l10n_br_nfcom`, which maps these models onto the Odoo
+fiscal document (`l10n_br_fiscal.document`), following the same pattern as the
+OCA modules `l10n_br_nfe_spec`, `l10n_br_cte_spec` and `l10n_br_mdfe_spec`.
 
-Os modelos cobrem o grupo `infNFCom` inteiro (identificação, emitente,
-destinatário, assinante, substituição, cofaturamento, itens com ICMS, PIS,
-COFINS, FUST, FUNTTEL, retenções e o grupo `IBSCBS` da reforma tributária,
-totais, fatura e responsável técnico) e os tipos comuns do `DFeTiposBasicos`
-(IBS, CBS e IS).
+The models cover the entire `infNFCom` group (identification, issuer,
+recipient, subscriber, replacement, co-billing, items with ICMS, PIS, COFINS,
+FUST, FUNTTEL, withholdings and the `IBSCBS` group of the tax reform, totals,
+invoice and technical manager) and the common types of `DFeTiposBasicos` (IBS,
+CBS and IS).
 
-Schemas usados: pacote `PL_NFCOM_1.00_NT2026.002 RTC_1.01`, distribuído pelo
+Schemas used: package `PL_NFCOM_1.00_NT2026.002 RTC_1.01`, distributed by
 nfelib 3.3.0 (`nfelib/nfcom/schemas/v1_0`).
 
-Comando de geração:
+Generation command:
 
 ```bash
 export XSDATA_SCHEMA=nfcom
@@ -30,12 +30,13 @@ xsdata generate nfelib/nfcom/schemas/v1_0/nfcom_v1.00.xsd \
   --output=odoo
 ```
 
-Do resultado entram `tipos_geral_nfcom_v1_00.py`, `dfe_tipos_basicos_v1_00.py`
-e `nfcom_tipos_basico_v1_00.py`; o `nfcom_v1_00.py` só reimporta o tipo raiz e
-fica de fora. Do `nfcom_tipos_basico_v1_00.py` sai o campo `nfcom10_cUFAdic`
-(grupo `assinante`): é uma lista de um tipo simples (`TCodUfIBGE`), que o
-xsdata-odoo 1.2.2 gera como `One2many` para um modelo inexistente, o mesmo caso
-do `cte40_cInfManu` do CT-e, e impede o carregamento do registro.
+From the result, `tipos_geral_nfcom_v1_00.py`, `dfe_tipos_basicos_v1_00.py`
+and `nfcom_tipos_basico_v1_00.py` are included; `nfcom_v1_00.py` only
+re-imports the root type and is left out. From `nfcom_tipos_basico_v1_00.py`
+the field `nfcom10_cUFAdic` (group `assinante`) is removed: it is a list of a
+simple type (`TCodUfIBGE`), which xsdata-odoo 1.2.2 generates as a `One2many`
+to a nonexistent model, the same case as `cte40_cInfManu` in CT-e, and it
+prevents the registry from loading.
 
-Os campos têm o prefixo `nfcom10_` (schema e dois dígitos da versão), como o
-`nfe40_` da NF-e: uma revisão menor do leiaute reaproveita os mesmos campos.
+The fields have the prefix `nfcom10_` (schema and two digits of the version),
+like `nfe40_` for NF-e: a minor layout revision reuses the same fields.

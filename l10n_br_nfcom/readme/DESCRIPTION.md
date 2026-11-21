@@ -1,32 +1,34 @@
-Emissão da Nota Fiscal Fatura de Serviço de Comunicação Eletrônica (`NFCom`,
-`modelo 62`) a partir do documento fiscal do Odoo (`l10n_br_fiscal.document`),
-no mesmo desenho do `l10n_br_nfe` e do `l10n_br_mdfe`: os modelos do
-`l10n_br_nfcom_spec` são empilhados no documento e na linha
-(`spec_driven_model`) e o XML é montado com os bindings do nfelib.
+Issuance of the Electronic Communication Services Invoice (`NFCom`,
+`model 62`) from the Odoo fiscal document (`l10n_br_fiscal.document`),
+following the same pattern as `l10n_br_nfe` and `l10n_br_mdfe`: the
+`l10n_br_nfcom_spec` models are stacked onto the document and the line
+(`spec_driven_model`) and the XML is built with the nfelib bindings.
 
-A NFCom substitui os modelos 21 (NFSC) e 22 (NFST) para os serviços de
-comunicação e telecomunicação (Ajuste SINIEF 7/22) e é obrigatória desde
-01/11/2025 (Ajuste SINIEF 34/24). O grupo `IBSCBS` da reforma tributária segue a
+The NFCom replaces models 21 (NFSC) and 22 (NFST) for communication and
+telecommunication services (Ajuste SINIEF 7/22) and has been mandatory since
+2025-11-01 (Ajuste SINIEF 34/24). The `IBSCBS` group of the tax reform follows
 NT 2025.001 RTC.
 
-O módulo:
+The module:
 
-- cria o tipo de documento fiscal 62, que o `l10n_br_fiscal` ainda não tem;
-- gera a chave de acesso no formato da NFCom (MOC NFCom 1.00a, item 2.1.3:
-  `cUF`, `AAMM`, `CNPJ`, `mod`, `serie`, `nNF`, `tpEmis`, `nSiteAutoriz`, `cNF`
-  de 7 dígitos e `cDV` em módulo 11, item 7.3);
-- monta os grupos `ide`, `emit`, `dest`, `assinante`, `det` (`prod` e
-  `imposto`), `total` e `infAdic`, e o `infNFComSupl` com a URL do QR Code do
-  autorizador da UF (página de serviços do Portal NFCom);
-- leva o ICMS (grupos `ICMS00`, `ICMS20`, `ICMS40`, `ICMS51`, `ICMS90` e
-  `ICMSSN` pelo CST e pelo regime da empresa), PIS, COFINS e o IBS e a CBS
-  (`IBSCBS` no item e `IBSCBSTot` no total) calculados pelo motor fiscal do
-  `l10n_br_fiscal`;
-- calcula o `vProd` do item e o `vNF` pelas regras G86 e G137 do Anexo I do MOC;
-- assina o XML com o certificado da empresa e o valida contra o XSD do nfelib
-  ao confirmar o documento, guardando o XML assinado no evento de autorização;
-- monta e assina o evento de cancelamento (`110111`, MOC item 6.1), validado
-  contra o XSD.
+- creates fiscal document type 62, which `l10n_br_fiscal` does not have yet;
+- generates the access key in the NFCom format (MOC NFCom 1.00a, item 2.1.3:
+  `cUF`, `AAMM`, `CNPJ`, `mod`, `serie`, `nNF`, `tpEmis`, `nSiteAutoriz`, 7-digit
+  `cNF` and `cDV` in modulo 11, item 7.3);
+- builds the groups `ide`, `emit`, `dest`, `assinante`, `det` (`prod` and
+  `imposto`), `total` and `infAdic`, and the `infNFComSupl` with the QR Code
+  URL of the state authorizer (services page of the NFCom Portal);
+- carries ICMS (groups `ICMS00`, `ICMS20`, `ICMS40`, `ICMS51`, `ICMS90` and
+  `ICMSSN`, by CST and company regime), PIS, COFINS and IBS and CBS (`IBSCBS`
+  on the item and `IBSCBSTot` on the total) computed by the `l10n_br_fiscal`
+  fiscal engine;
+- computes the item `vProd` and `vNF` by rules G86 and G137 of Annex I of the
+  MOC;
+- signs the XML with the company certificate and validates it against the
+  nfelib XSD when the document is confirmed, storing the signed XML in the
+  authorization event;
+- builds and signs the cancellation event (`110111`, MOC item 6.1), validated
+  against the XSD.
 
-A transmissão ao autorizador ainda não está no módulo (ver o roadmap): ao
-enviar, o documento avisa que a transmissão não está disponível.
+Transmission to the authorizer is not in the module yet (see the roadmap): on
+sending, the document warns that transmission is not available.

@@ -370,34 +370,35 @@ ul.auto-toc {
 !! source digest: sha256:0b4b3c20534d5727012e178464a11f6fd7475a0b0ef503b753e91ee06ffbda8d
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Alpha" src="https://img.shields.io/badge/maturity-Alpha-red.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/18.0/l10n_br_bpe_spec"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>Este módulo traz os modelos abstratos do Bilhete de Passagem Eletrônico
-(<tt class="docutils literal"><span class="pre">BP-e</span></tt>, <tt class="docutils literal">modelo 63</tt>), gerados a partir dos esquemas XSD oficiais da
-versão 1.00 publicados no Portal BP-e (SVRS), na cópia que a biblioteca
-<tt class="docutils literal">nfelib</tt> mantém em <tt class="docutils literal">nfelib/bpe/schemas/v1_0</tt>.</p>
-<p>Assim como o <tt class="docutils literal">l10n_br_mdfe_spec</tt> e o <tt class="docutils literal">l10n_br_cte_spec</tt>, ele não
-emite o BP-e sozinho: é a base para o módulo <tt class="docutils literal">l10n_br_bpe</tt>, que
-empilha esses modelos no documento fiscal (<tt class="docutils literal">l10n_br_fiscal.document</tt>).</p>
-<p>Os modelos cobrem os três leiautes do modelo 63, todos definidos em
+<p>This module provides the abstract models of the Electronic Passenger
+Ticket (<tt class="docutils literal"><span class="pre">BP-e</span></tt>, <tt class="docutils literal">model 63</tt>), generated from the official XSD schemas
+of version 1.00 published on the BP-e Portal (SVRS), in the copy that
+the <tt class="docutils literal">nfelib</tt> library keeps in <tt class="docutils literal">nfelib/bpe/schemas/v1_0</tt>.</p>
+<p>Like <tt class="docutils literal">l10n_br_mdfe_spec</tt> and <tt class="docutils literal">l10n_br_cte_spec</tt>, it does not issue
+the BP-e by itself: it is the base for the <tt class="docutils literal">l10n_br_bpe</tt> module, which
+stacks these models onto the fiscal document
+(<tt class="docutils literal">l10n_br_fiscal.document</tt>).</p>
+<p>The models cover the three layouts of model 63, all defined in
 <tt class="docutils literal">bpeTiposBasico_v1.00.xsd</tt>:</p>
 <ul class="simple">
-<li>BP-e (<tt class="docutils literal">bpe.10.tbpe_*</tt>): bilhete do transporte rodoviário, aquaviário
-e ferroviário de passageiros.</li>
-<li>BP-e TM (<tt class="docutils literal">bpe.10.tbpetm_*</tt>): transporte metropolitano e semiurbano
-com cobrança por catraca ou contador.</li>
-<li>BP-e TA (<tt class="docutils literal">bpe.10.tbpeta_*</tt>): transporte aéreo (NT 2025.002).</li>
+<li>BP-e (<tt class="docutils literal">bpe.10.tbpe_*</tt>): ticket for passenger transport by road,
+water and rail.</li>
+<li>BP-e TM (<tt class="docutils literal">bpe.10.tbpetm_*</tt>): metropolitan and semi-urban transport
+charged by turnstile or counter.</li>
+<li>BP-e TA (<tt class="docutils literal">bpe.10.tbpeta_*</tt>): air transport (NT 2025.002).</li>
 </ul>
-<p>O grupo <tt class="docutils literal">IBSCBS</tt> da reforma tributária (NT 2025.001 RTC) vem de
-<tt class="docutils literal">DFeTiposBasicos_v1.00.xsd</tt> (<tt class="docutils literal">bpe.10.ttribbpe</tt>, <tt class="docutils literal">bpe.10.tcibs</tt> e
-os subgrupos). Os grupos de ICMS por CST (<tt class="docutils literal">ICMS00</tt>, <tt class="docutils literal">ICMS20</tt>,
-<tt class="docutils literal">ICMS45</tt>, <tt class="docutils literal">ICMS90</tt> e <tt class="docutils literal">ICMSSN</tt>) ficam de fora da geração, como no
-CT-e, porque o <tt class="docutils literal">l10n_br_bpe</tt> os monta a partir das linhas do documento
-fiscal.</p>
-<div class="section" id="geracao">
-<h1>Geração</h1>
-<p>Os modelos foram gerados com o
-<a class="reference external" href="https://github.com/akretion/xsdata-odoo">xsdata-odoo</a> sobre os
-esquemas da <tt class="docutils literal">nfelib</tt> 3.3.0, a partir do <tt class="docutils literal">bpe_v1.00.xsd</tt> (que inclui
-o <tt class="docutils literal">bpeTiposBasico_v1.00.xsd</tt>, o <tt class="docutils literal">tiposGeralBPe_v1.00.xsd</tt> e o
+<p>The <tt class="docutils literal">IBSCBS</tt> group of the tax reform (NT 2025.001 RTC) comes from
+<tt class="docutils literal">DFeTiposBasicos_v1.00.xsd</tt> (<tt class="docutils literal">bpe.10.ttribbpe</tt>, <tt class="docutils literal">bpe.10.tcibs</tt> and
+the subgroups). The ICMS groups by CST (<tt class="docutils literal">ICMS00</tt>, <tt class="docutils literal">ICMS20</tt>,
+<tt class="docutils literal">ICMS45</tt>, <tt class="docutils literal">ICMS90</tt> and <tt class="docutils literal">ICMSSN</tt>) are left out of the generation,
+as in CT-e, because <tt class="docutils literal">l10n_br_bpe</tt> builds them from the fiscal document
+lines.</p>
+<div class="section" id="generation">
+<h1>Generation</h1>
+<p>The models were generated with
+<a class="reference external" href="https://github.com/akretion/xsdata-odoo">xsdata-odoo</a> from the
+<tt class="docutils literal">nfelib</tt> 3.3.0 schemas, starting from <tt class="docutils literal">bpe_v1.00.xsd</tt> (which
+includes <tt class="docutils literal">bpeTiposBasico_v1.00.xsd</tt>, <tt class="docutils literal">tiposGeralBPe_v1.00.xsd</tt> and
 <tt class="docutils literal">DFeTiposBasicos_v1.00.xsd</tt>):</p>
 <pre class="code bash literal-block">
 <span class="nb">export</span><span class="w"> </span><span class="nv">XSDATA_SCHEMA</span><span class="o">=</span>bpe<span class="w">
@@ -410,25 +411,24 @@ o <tt class="docutils literal">bpeTiposBasico_v1.00.xsd</tt>, o <tt class="docut
 </span><span class="w">  </span>--package<span class="w"> </span>nfelib.bpe.odoo.v1_0<span class="w"> </span><span class="se">\
 </span><span class="w">  </span>--output<span class="o">=</span>odoo
 </pre>
-<p>Gerar a partir do diretório inteiro de esquemas não funciona: o
-<tt class="docutils literal">DFeTiposBasicos_v1.00.xsd</tt> não tem <tt class="docutils literal">targetNamespace</tt> e, processado
-sozinho, os tipos dele (<tt class="docutils literal">TTribBPe</tt>, <tt class="docutils literal">TIBSCBSTot</tt>…) deixam de ser
-encontrados pelos outros arquivos e os campos viram <tt class="docutils literal">Char</tt>.</p>
-<p>O BP-e tem duas tags que só diferem pela caixa: <tt class="docutils literal">infBPe/comp</tt>
-(comprador) e <tt class="docutils literal">infBPe/infValorBPe/Comp</tt> (componente do valor). O
-xsdata-odoo 1.2.2 compara os nomes antes de normalizá-los e gera os dois
-grupos com o mesmo modelo <tt class="docutils literal">bpe.10.tbpe_comp</tt>. A geração deste módulo
-usou o xsdata-odoo com essa comparação feita depois da normalização, o
-que dá <tt class="docutils literal">bpe.10.tbpe_comp</tt> (comprador) e
-<tt class="docutils literal">bpe.10.tbpe_infvalorbpe_comp</tt> (componente); o mesmo vale para o BP-e
-TA.</p>
+<p>Generating from the whole schema directory does not work:
+<tt class="docutils literal">DFeTiposBasicos_v1.00.xsd</tt> has no <tt class="docutils literal">targetNamespace</tt> and, when
+processed on its own, its types (<tt class="docutils literal">TTribBPe</tt>, <tt class="docutils literal">TIBSCBSTot</tt>…) can no
+longer be found by the other files and the fields become <tt class="docutils literal">Char</tt>.</p>
+<p>The BP-e has two tags that differ only by case: <tt class="docutils literal">infBPe/comp</tt> (buyer)
+and <tt class="docutils literal">infBPe/infValorBPe/Comp</tt> (value component). xsdata-odoo 1.2.2
+compares the names before normalizing them and generates both groups
+with the same model <tt class="docutils literal">bpe.10.tbpe_comp</tt>. The generation of this module
+used xsdata-odoo with that comparison done after normalization, which
+yields <tt class="docutils literal">bpe.10.tbpe_comp</tt> (buyer) and <tt class="docutils literal">bpe.10.tbpe_infvalorbpe_comp</tt>
+(component); the same applies to BP-e TA.</p>
 </div>
-<div class="section" id="prefixo-dos-campos-e-versao">
-<h1>Prefixo dos campos e versão</h1>
-<p>Cada campo tem o prefixo <tt class="docutils literal">bpe10_</tt> (nome do esquema e dois dígitos da
-versão 1.00), como o <tt class="docutils literal">nfe40_</tt> da NF-e e o <tt class="docutils literal">cte40_</tt> do CT-e: uma
-versão menor do esquema reaproveita os campos, e uma versão maior ganha
-campos e tabelas novos.</p>
+<div class="section" id="field-prefix-and-version">
+<h1>Field prefix and version</h1>
+<p>Each field has the prefix <tt class="docutils literal">bpe10_</tt> (schema name and two digits of the
+version 1.00), like <tt class="docutils literal">nfe40_</tt> for NF-e and <tt class="docutils literal">cte40_</tt> for CT-e: a minor
+schema version reuses the fields, and a major version gets new fields
+and tables.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">This is an alpha version, the data model and design can change at any time without warning.
@@ -446,12 +446,12 @@ Only for development or testing purpose, do not use in production.
 <div class="section" id="known-issues-roadmap">
 <h2><a class="toc-backref" href="#toc-entry-1">Known issues / Roadmap</a></h2>
 <ul class="simple">
-<li>Propor ao xsdata-odoo a comparação de nomes de classe depois da
-normalização, para que a geração do BP-e saia correta sem ajuste local
-(<tt class="docutils literal">infBPe/comp</tt> e <tt class="docutils literal">infValorBPe/Comp</tt>).</li>
-<li>Gerar os modelos dos eventos do BP-e
-(<tt class="docutils literal">eventoBPeTiposBasico_v1.00.xsd</tt>) se algum módulo precisar deles;
-hoje os eventos são montados direto com os bindings da <tt class="docutils literal">nfelib</tt>.</li>
+<li>Propose to xsdata-odoo that class names be compared after
+normalization, so that the BP-e generation comes out correct without a
+local patch (<tt class="docutils literal">infBPe/comp</tt> and <tt class="docutils literal">infValorBPe/Comp</tt>).</li>
+<li>Generate the BP-e event models (<tt class="docutils literal">eventoBPeTiposBasico_v1.00.xsd</tt>) if
+any module needs them; today the events are built directly with the
+<tt class="docutils literal">nfelib</tt> bindings.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">

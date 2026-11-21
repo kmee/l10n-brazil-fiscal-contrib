@@ -22,38 +22,39 @@ BP-e abstract models
 
 |badge1| |badge2| |badge3|
 
-Este módulo traz os modelos abstratos do Bilhete de Passagem Eletrônico
-(``BP-e``, ``modelo 63``), gerados a partir dos esquemas XSD oficiais da
-versão 1.00 publicados no Portal BP-e (SVRS), na cópia que a biblioteca
-``nfelib`` mantém em ``nfelib/bpe/schemas/v1_0``.
+This module provides the abstract models of the Electronic Passenger
+Ticket (``BP-e``, ``model 63``), generated from the official XSD schemas
+of version 1.00 published on the BP-e Portal (SVRS), in the copy that
+the ``nfelib`` library keeps in ``nfelib/bpe/schemas/v1_0``.
 
-Assim como o ``l10n_br_mdfe_spec`` e o ``l10n_br_cte_spec``, ele não
-emite o BP-e sozinho: é a base para o módulo ``l10n_br_bpe``, que
-empilha esses modelos no documento fiscal (``l10n_br_fiscal.document``).
+Like ``l10n_br_mdfe_spec`` and ``l10n_br_cte_spec``, it does not issue
+the BP-e by itself: it is the base for the ``l10n_br_bpe`` module, which
+stacks these models onto the fiscal document
+(``l10n_br_fiscal.document``).
 
-Os modelos cobrem os três leiautes do modelo 63, todos definidos em
+The models cover the three layouts of model 63, all defined in
 ``bpeTiposBasico_v1.00.xsd``:
 
-- BP-e (``bpe.10.tbpe_*``): bilhete do transporte rodoviário, aquaviário
-  e ferroviário de passageiros.
-- BP-e TM (``bpe.10.tbpetm_*``): transporte metropolitano e semiurbano
-  com cobrança por catraca ou contador.
-- BP-e TA (``bpe.10.tbpeta_*``): transporte aéreo (NT 2025.002).
+- BP-e (``bpe.10.tbpe_*``): ticket for passenger transport by road,
+  water and rail.
+- BP-e TM (``bpe.10.tbpetm_*``): metropolitan and semi-urban transport
+  charged by turnstile or counter.
+- BP-e TA (``bpe.10.tbpeta_*``): air transport (NT 2025.002).
 
-O grupo ``IBSCBS`` da reforma tributária (NT 2025.001 RTC) vem de
-``DFeTiposBasicos_v1.00.xsd`` (``bpe.10.ttribbpe``, ``bpe.10.tcibs`` e
-os subgrupos). Os grupos de ICMS por CST (``ICMS00``, ``ICMS20``,
-``ICMS45``, ``ICMS90`` e ``ICMSSN``) ficam de fora da geração, como no
-CT-e, porque o ``l10n_br_bpe`` os monta a partir das linhas do documento
-fiscal.
+The ``IBSCBS`` group of the tax reform (NT 2025.001 RTC) comes from
+``DFeTiposBasicos_v1.00.xsd`` (``bpe.10.ttribbpe``, ``bpe.10.tcibs`` and
+the subgroups). The ICMS groups by CST (``ICMS00``, ``ICMS20``,
+``ICMS45``, ``ICMS90`` and ``ICMSSN``) are left out of the generation,
+as in CT-e, because ``l10n_br_bpe`` builds them from the fiscal document
+lines.
 
-Geração
--------
+Generation
+----------
 
-Os modelos foram gerados com o
-`xsdata-odoo <https://github.com/akretion/xsdata-odoo>`__ sobre os
-esquemas da ``nfelib`` 3.3.0, a partir do ``bpe_v1.00.xsd`` (que inclui
-o ``bpeTiposBasico_v1.00.xsd``, o ``tiposGeralBPe_v1.00.xsd`` e o
+The models were generated with
+`xsdata-odoo <https://github.com/akretion/xsdata-odoo>`__ from the
+``nfelib`` 3.3.0 schemas, starting from ``bpe_v1.00.xsd`` (which
+includes ``bpeTiposBasico_v1.00.xsd``, ``tiposGeralBPe_v1.00.xsd`` and
 ``DFeTiposBasicos_v1.00.xsd``):
 
 .. code:: bash
@@ -68,27 +69,26 @@ o ``bpeTiposBasico_v1.00.xsd``, o ``tiposGeralBPe_v1.00.xsd`` e o
      --package nfelib.bpe.odoo.v1_0 \
      --output=odoo
 
-Gerar a partir do diretório inteiro de esquemas não funciona: o
-``DFeTiposBasicos_v1.00.xsd`` não tem ``targetNamespace`` e, processado
-sozinho, os tipos dele (``TTribBPe``, ``TIBSCBSTot``...) deixam de ser
-encontrados pelos outros arquivos e os campos viram ``Char``.
+Generating from the whole schema directory does not work:
+``DFeTiposBasicos_v1.00.xsd`` has no ``targetNamespace`` and, when
+processed on its own, its types (``TTribBPe``, ``TIBSCBSTot``...) can no
+longer be found by the other files and the fields become ``Char``.
 
-O BP-e tem duas tags que só diferem pela caixa: ``infBPe/comp``
-(comprador) e ``infBPe/infValorBPe/Comp`` (componente do valor). O
-xsdata-odoo 1.2.2 compara os nomes antes de normalizá-los e gera os dois
-grupos com o mesmo modelo ``bpe.10.tbpe_comp``. A geração deste módulo
-usou o xsdata-odoo com essa comparação feita depois da normalização, o
-que dá ``bpe.10.tbpe_comp`` (comprador) e
-``bpe.10.tbpe_infvalorbpe_comp`` (componente); o mesmo vale para o BP-e
-TA.
+The BP-e has two tags that differ only by case: ``infBPe/comp`` (buyer)
+and ``infBPe/infValorBPe/Comp`` (value component). xsdata-odoo 1.2.2
+compares the names before normalizing them and generates both groups
+with the same model ``bpe.10.tbpe_comp``. The generation of this module
+used xsdata-odoo with that comparison done after normalization, which
+yields ``bpe.10.tbpe_comp`` (buyer) and ``bpe.10.tbpe_infvalorbpe_comp``
+(component); the same applies to BP-e TA.
 
-Prefixo dos campos e versão
----------------------------
+Field prefix and version
+------------------------
 
-Cada campo tem o prefixo ``bpe10_`` (nome do esquema e dois dígitos da
-versão 1.00), como o ``nfe40_`` da NF-e e o ``cte40_`` do CT-e: uma
-versão menor do esquema reaproveita os campos, e uma versão maior ganha
-campos e tabelas novos.
+Each field has the prefix ``bpe10_`` (schema name and two digits of the
+version 1.00), like ``nfe40_`` for NF-e and ``cte40_`` for CT-e: a minor
+schema version reuses the fields, and a major version gets new fields
+and tables.
 
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
@@ -103,12 +103,12 @@ campos e tabelas novos.
 Known issues / Roadmap
 ======================
 
-- Propor ao xsdata-odoo a comparação de nomes de classe depois da
-  normalização, para que a geração do BP-e saia correta sem ajuste local
-  (``infBPe/comp`` e ``infValorBPe/Comp``).
-- Gerar os modelos dos eventos do BP-e
-  (``eventoBPeTiposBasico_v1.00.xsd``) se algum módulo precisar deles;
-  hoje os eventos são montados direto com os bindings da ``nfelib``.
+- Propose to xsdata-odoo that class names be compared after
+  normalization, so that the BP-e generation comes out correct without a
+  local patch (``infBPe/comp`` and ``infValorBPe/Comp``).
+- Generate the BP-e event models (``eventoBPeTiposBasico_v1.00.xsd``) if
+  any module needs them; today the events are built directly with the
+  ``nfelib`` bindings.
 
 Bug Tracker
 ===========

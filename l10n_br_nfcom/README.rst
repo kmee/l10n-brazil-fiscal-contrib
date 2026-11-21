@@ -22,44 +22,45 @@ NFCom
 
 |badge1| |badge2| |badge3|
 
-Emissão da Nota Fiscal Fatura de Serviço de Comunicação Eletrônica
-(``NFCom``, ``modelo 62``) a partir do documento fiscal do Odoo
-(``l10n_br_fiscal.document``), no mesmo desenho do ``l10n_br_nfe`` e do
-``l10n_br_mdfe``: os modelos do ``l10n_br_nfcom_spec`` são empilhados no
-documento e na linha (``spec_driven_model``) e o XML é montado com os
-bindings do nfelib.
+Issuance of the Electronic Communication Services Invoice (``NFCom``,
+``model 62``) from the Odoo fiscal document
+(``l10n_br_fiscal.document``), following the same pattern as
+``l10n_br_nfe`` and ``l10n_br_mdfe``: the ``l10n_br_nfcom_spec`` models
+are stacked onto the document and the line (``spec_driven_model``) and
+the XML is built with the nfelib bindings.
 
-A NFCom substitui os modelos 21 (NFSC) e 22 (NFST) para os serviços de
-comunicação e telecomunicação (Ajuste SINIEF 7/22) e é obrigatória desde
-01/11/2025 (Ajuste SINIEF 34/24). O grupo ``IBSCBS`` da reforma
-tributária segue a NT 2025.001 RTC.
+The NFCom replaces models 21 (NFSC) and 22 (NFST) for communication and
+telecommunication services (Ajuste SINIEF 7/22) and has been mandatory
+since 2025-11-01 (Ajuste SINIEF 34/24). The ``IBSCBS`` group of the tax
+reform follows NT 2025.001 RTC.
 
-O módulo:
+The module:
 
-- cria o tipo de documento fiscal 62, que o ``l10n_br_fiscal`` ainda não
-  tem;
-- gera a chave de acesso no formato da NFCom (MOC NFCom 1.00a, item
+- creates fiscal document type 62, which ``l10n_br_fiscal`` does not
+  have yet;
+- generates the access key in the NFCom format (MOC NFCom 1.00a, item
   2.1.3: ``cUF``, ``AAMM``, ``CNPJ``, ``mod``, ``serie``, ``nNF``,
-  ``tpEmis``, ``nSiteAutoriz``, ``cNF`` de 7 dígitos e ``cDV`` em módulo
+  ``tpEmis``, ``nSiteAutoriz``, 7-digit ``cNF`` and ``cDV`` in modulo
   11, item 7.3);
-- monta os grupos ``ide``, ``emit``, ``dest``, ``assinante``, ``det``
-  (``prod`` e ``imposto``), ``total`` e ``infAdic``, e o
-  ``infNFComSupl`` com a URL do QR Code do autorizador da UF (página de
-  serviços do Portal NFCom);
-- leva o ICMS (grupos ``ICMS00``, ``ICMS20``, ``ICMS40``, ``ICMS51``,
-  ``ICMS90`` e ``ICMSSN`` pelo CST e pelo regime da empresa), PIS,
-  COFINS e o IBS e a CBS (``IBSCBS`` no item e ``IBSCBSTot`` no total)
-  calculados pelo motor fiscal do ``l10n_br_fiscal``;
-- calcula o ``vProd`` do item e o ``vNF`` pelas regras G86 e G137 do
-  Anexo I do MOC;
-- assina o XML com o certificado da empresa e o valida contra o XSD do
-  nfelib ao confirmar o documento, guardando o XML assinado no evento de
-  autorização;
-- monta e assina o evento de cancelamento (``110111``, MOC item 6.1),
-  validado contra o XSD.
+- builds the groups ``ide``, ``emit``, ``dest``, ``assinante``, ``det``
+  (``prod`` and ``imposto``), ``total`` and ``infAdic``, and the
+  ``infNFComSupl`` with the QR Code URL of the state authorizer
+  (services page of the NFCom Portal);
+- carries ICMS (groups ``ICMS00``, ``ICMS20``, ``ICMS40``, ``ICMS51``,
+  ``ICMS90`` and ``ICMSSN``, by CST and company regime), PIS, COFINS and
+  IBS and CBS (``IBSCBS`` on the item and ``IBSCBSTot`` on the total)
+  computed by the ``l10n_br_fiscal`` fiscal engine;
+- computes the item ``vProd`` and ``vNF`` by rules G86 and G137 of Annex
+  I of the MOC;
+- signs the XML with the company certificate and validates it against
+  the nfelib XSD when the document is confirmed, storing the signed XML
+  in the authorization event;
+- builds and signs the cancellation event (``110111``, MOC item 6.1),
+  validated against the XSD.
 
-A transmissão ao autorizador ainda não está no módulo (ver o roadmap):
-ao enviar, o documento avisa que a transmissão não está disponível.
+Transmission to the authorizer is not in the module yet (see the
+roadmap): on sending, the document warns that transmission is not
+available.
 
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
@@ -74,64 +75,64 @@ ao enviar, o documento avisa que a transmissão não está disponível.
 Usage
 =====
 
-1. Na empresa, informe o processador de documentos eletrônicos ``OCA``,
-   o certificado digital e o ambiente da NFCom (aba de documentos
-   eletrônicos).
-2. Crie uma série para o tipo de documento ``62`` da empresa.
-3. No produto, informe a classificação do item da NFCom (``cClass``,
-   tabela do item 7.8 do MOC) e a unidade de medida (``uMed``).
-4. Crie o documento fiscal com o tipo ``62``, preencha os dados do
-   assinante na aba NFCom e confirme: o XML é gerado, assinado e
-   validado, e os erros de schema aparecem no documento.
+1. On the company, set the ``OCA`` electronic document processor, the
+   digital certificate and the NFCom environment (electronic documents
+   tab).
+2. Create a series for document type ``62`` on the company.
+3. On the product, enter the NFCom item classification (``cClass``,
+   table of MOC item 7.8) and the unit of measure (``uMed``).
+4. Create the fiscal document with type ``62``, fill in the subscriber
+   data in the NFCom tab and confirm: the XML is generated, signed and
+   validated, and schema errors appear on the document.
 
 Known issues / Roadmap
 ======================
 
-- Transmissão (destino: contribuição ao nfelib). O nfelib 3.3.0 tem os
-  bindings da NFCom, mas não tem os bindings SOAP
-  (``nfelib/nfcom/soap/v1_0``) nem o cliente
-  (``nfelib/nfcom/client/v1_0``) sobre o ``brazil_fiscal_client``, como
-  já existem para NF-e, CT-e e MDF-e. Os WSDL dos serviços
-  ``NFComRecepcao``, ``NFComConsulta``, ``NFComRecepcaoEvento`` e
-  ``NFComStatusServico`` só são servidos com autenticação mútua
-  (certificado ICP-Brasil) e o MOC NFCom 1.00a (item 3.4.1) escreve o
-  namespace com caixa diferente da usada nos schemas (``NFCom`` x
-  ``nfcom``), então o nome do elemento ``nfcomDadosMsg`` e o namespace
-  de cada serviço precisam ser conferidos no WSDL antes de gerar os
-  bindings. A recepção é síncrona e a mensagem vai compactada em GZip e
-  codificada em Base64 (MOC, itens 3.4.1 e 4.2); os autorizadores são
-  MG, MS, MT e SVRS (página de serviços do Portal NFCom). Com o cliente
-  no nfelib: envio, consulta, protocolo (``nfcomProc``) e envio do
-  evento de cancelamento já montado por este módulo.
-- ``schema_validation`` da NFCom no nfelib: o ``CommonMixin`` não
-  conhece o caminho do XSD da NFCom e o módulo passa o caminho
-  explicitamente.
-- Leiaute: os schemas são os do pacote
-  ``PL_NFCOM_1.00_NT2026.002 RTC_1.01`` distribuído pelo nfelib 3.3.0. A
-  NT 2026.004 v1.01 (produção em 14/12/2026) e a NT 2026.005 v1.00
-  (Simples Nacional) ainda não estão no nfelib: regenerar o
-  ``l10n_br_nfcom_spec`` quando estiverem.
-- Regras da NT 2026.002 que dependem de cadastro: ``CNPJCobrTerc`` para
-  itens de ``cClass`` do grupo 110 (cobrança de terceiros) e a rejeição
-  310 (grupo IBS/CBS obrigatório para CRT 3).
-- Grupo ``IBSCBS``: só ``gIBSCBS``; faltam ``gEstornoCred``,
-  diferimento, devolução de tributos, redução por compra governamental e
-  o IBS municipal separado do estadual (exportado com zero, como na
+- Transmission (goal: a contribution to nfelib). nfelib 3.3.0 has the
+  NFCom bindings, but not the SOAP bindings (``nfelib/nfcom/soap/v1_0``)
+  nor the client (``nfelib/nfcom/client/v1_0``) on top of
+  ``brazil_fiscal_client``, as already exist for NF-e, CT-e and MDF-e.
+  The WSDL of the services ``NFComRecepcao``, ``NFComConsulta``,
+  ``NFComRecepcaoEvento`` and ``NFComStatusServico`` are only served
+  with mutual authentication (ICP-Brasil certificate) and MOC NFCom
+  1.00a (item 3.4.1) writes the namespace with a different case from the
+  one used in the schemas (``NFCom`` x ``nfcom``), so the name of the
+  ``nfcomDadosMsg`` element and the namespace of each service must be
+  checked in the WSDL before generating the bindings. Reception is
+  synchronous and the message is compressed with GZip and encoded in
+  Base64 (MOC, items 3.4.1 and 4.2); the authorizers are MG, MS, MT and
+  SVRS (services page of the NFCom Portal). With the client in nfelib:
+  submission, query, protocol (``nfcomProc``) and sending of the
+  cancellation event already built by this module.
+- NFCom ``schema_validation`` in nfelib: the ``CommonMixin`` does not
+  know the NFCom XSD path and the module passes the path explicitly.
+- Layout: the schemas are those of the package
+  ``PL_NFCOM_1.00_NT2026.002 RTC_1.01`` shipped with nfelib 3.3.0. NT
+  2026.004 v1.01 (production on 2026-12-14) and NT 2026.005 v1.00
+  (Simples Nacional) are not in nfelib yet: regenerate
+  ``l10n_br_nfcom_spec`` when they are.
+- NT 2026.002 rules that depend on registration data: ``CNPJCobrTerc``
+  for items with ``cClass`` of group 110 (third-party billing) and
+  rejection 310 (IBS/CBS group required for CRT 3).
+- ``IBSCBS`` group: only ``gIBSCBS``; missing are ``gEstornoCred``,
+  deferral, tax refund, reduction for government procurement and the
+  municipal IBS separate from the state one (exported as zero, as in
   NF-e).
-- Faturamento: grupos ``gFat`` (competência, vencimento, código de
-  barras, débito automático, PIX), ``gFatCentral``, ``gCofat``, ``gSub``
-  (substituição), ``gFidelidade``, ``pgtoVinc`` e ``gRespTec``, e o
-  faturamento recorrente a partir de contratos.
-- Itens: ``gProcRef``, ``gRessarc``, ``ICMSUFDest``, FUST, FUNTTEL,
-  retenções por item (``retTrib``), ``indSemCST`` e validação do CFOP
-  pela lista do item 7.7 do MOC e do ``cClass`` pela tabela do item 7.8.
-- Contingência (``tpEmis`` 2, ``dhCont``, ``xJust`` e assinatura do QR
-  Code).
-- DANFE-COM (Anexo II do MOC).
-- Tipo de documento 62: levar o registro para os dados do
-  ``l10n_br_fiscal`` e incluir o 62 nas classificações tributárias do
-  IBS e da CBS (``tax_classification``) que se aplicam à NFCom.
-- Importação do XML da NFCom.
+- Billing: groups ``gFat`` (competence period, due date, barcode,
+  automatic debit, PIX), ``gFatCentral``, ``gCofat``, ``gSub``
+  (replacement), ``gFidelidade``, ``pgtoVinc`` and ``gRespTec``, and
+  recurring billing from contracts.
+- Items: ``gProcRef``, ``gRessarc``, ``ICMSUFDest``, FUST, FUNTTEL,
+  withholdings per item (``retTrib``), ``indSemCST`` and validation of
+  the CFOP against the list of MOC item 7.7 and of ``cClass`` against
+  the table of item 7.8.
+- Contingency (``tpEmis`` 2, ``dhCont``, ``xJust`` and QR Code
+  signature).
+- DANFE-COM (Annex II of the MOC).
+- Document type 62: move the record to the ``l10n_br_fiscal`` data and
+  include 62 in the IBS and CBS tax classifications
+  (``tax_classification``) that apply to the NFCom.
+- NFCom XML import.
 
 Bug Tracker
 ===========

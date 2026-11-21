@@ -1,22 +1,21 @@
-- Levar o cliente de webservice do BP-e (`bpe_client`) para a `nfelib`, em
-  `nfelib/bpe/client/v1_0`, ao lado dos clientes de CT-e e MDF-e, com as
-  classes SOAP geradas do WSDL (o WSDL só é servido com certificado de
-  cliente, por isso as classes foram declaradas à mão).
-- Conferir no Portal BP-e três endereços de homologação que parecem trocados
-  na página de serviços (MG: Consulta aponta para produção e StatusServico
-  para BPeConsulta; MS: Consulta aponta para MG). Foram mantidos como
-  publicados.
-- BP-e TM (transporte metropolitano, serviço `BPeRecepcaoTM`) e BP-e TA
-  (transporte aéreo, `BPeRecepcaoTA`, NT 2025.002): os modelos estão no
-  `l10n_br_bpe_spec`, mas a emissão tem estrutura própria (TM agrupa as
-  viagens por catraca no `detBPeTM`) e não foi feita.
-- Contingência off-line (`tpEmis` 2): QR Code com o parâmetro `sign` (MOC
-  item 10.2), `dhCont` e `xJust`.
-- BP-e de substituição (`tpBPe` 3, `infBPeSub`) e os eventos de alteração de
-  poltrona e de excesso de bagagem.
-- Grupo `ICMSUFFim` (partilha do ICMS com a UF de término para consumidor
-  final), grupo `agencia`, `autXML`, CST de ICMS 60 e diferimento, redução e
-  monofasia do IBS e da CBS além do `gRed`.
-- Vinculação de pagamento (`pgtoVinc`, NT 2026.001) e as regras da NT 2026.005
-  para o Simples Nacional.
-- DABPE (documento auxiliar em PDF) e importação de XML de BP-e.
+- Move the BP-e web service client (`bpe_client`) to `nfelib`, in
+  `nfelib/bpe/client/v1_0`, next to the CT-e and MDF-e clients, with the SOAP
+  classes generated from the WSDL (the WSDL is only served with a client
+  certificate, so the classes were declared by hand).
+- Check three homologation addresses on the BP-e Portal that seem swapped on
+  the services page (MG: Consulta points to production and StatusServico to
+  BPeConsulta; MS: Consulta points to MG). They were kept as published.
+- BP-e TM (metropolitan transport, `BPeRecepcaoTM` service) and BP-e TA (air
+  transport, `BPeRecepcaoTA`, NT 2025.002): the models are in
+  `l10n_br_bpe_spec`, but their issuance has its own structure (TM groups the
+  trips by turnstile in `detBPeTM`) and was not implemented.
+- Offline contingency (`tpEmis` 2): QR Code with the `sign` parameter (MOC
+  item 10.2), `dhCont` and `xJust`.
+- Replacement BP-e (`tpBPe` 3, `infBPeSub`) and the seat change and excess
+  baggage events.
+- `ICMSUFFim` group (ICMS sharing with the destination state for final
+  consumers), `agencia` group, `autXML`, ICMS CST 60 and deferral, reduction
+  and monophasic treatment of IBS and CBS beyond `gRed`.
+- Payment linking (`pgtoVinc`, NT 2026.001) and the NT 2026.005 rules for
+  Simples Nacional.
+- DABPE (auxiliary PDF document) and BP-e XML import.

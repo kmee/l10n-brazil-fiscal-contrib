@@ -370,36 +370,38 @@ ul.auto-toc {
 !! source digest: sha256:2053748983a97bbdba66debe25c1479e22062c0051c865812a77b72fcb185b74
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Alpha" src="https://img.shields.io/badge/maturity-Alpha-red.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/18.0/l10n_br_nf3e"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>Emissão da Nota Fiscal de Energia Elétrica Eletrônica (<tt class="docutils literal">NF3e</tt>,
-<tt class="docutils literal">modelo 66</tt>), obrigatória para as distribuidoras e permissionárias de
-energia elétrica (Ajuste SINIEF 01/19), a partir do documento fiscal do
-<tt class="docutils literal">l10n_br_fiscal</tt> com o tipo de documento 66.</p>
-<p>O módulo injeta os modelos do <tt class="docutils literal">l10n_br_nf3e_spec</tt> no documento fiscal
-e nas suas linhas (empilhamento do <tt class="docutils literal">spec_driven_model</tt>, no mesmo
-desenho do <tt class="docutils literal">l10n_br_mdfe</tt> e do <tt class="docutils literal">l10n_br_cte</tt>) e:</p>
+<p>Issuance of the Electronic Electricity Bill (<tt class="docutils literal">NF3e</tt>, <tt class="docutils literal">model 66</tt>),
+mandatory for electricity distributors and licensees (Ajuste SINIEF
+01/19), from the <tt class="docutils literal">l10n_br_fiscal</tt> fiscal document with document type
+66.</p>
+<p>The module injects the <tt class="docutils literal">l10n_br_nf3e_spec</tt> models into the fiscal
+document and its lines (<tt class="docutils literal">spec_driven_model</tt> stacking, following the
+same pattern as <tt class="docutils literal">l10n_br_mdfe</tt> and <tt class="docutils literal">l10n_br_cte</tt>) and:</p>
 <ul class="simple">
-<li>numera o documento pela série e monta a chave de acesso da NF3e (MOC
-NF3e 1.00a, Visão Geral, item 2.1: código numérico de 7 dígitos, forma
-de emissão e site do autorizador), com o dígito verificador em módulo
-11, inclusive para CNPJ alfanumérico;</li>
-<li>gera o XML com os grupos <tt class="docutils literal">ide</tt>, <tt class="docutils literal">emit</tt>, <tt class="docutils literal">dest</tt>, <tt class="docutils literal">acessante</tt>
-(unidade consumidora), <tt class="docutils literal">gMed</tt> (medidores), <tt class="docutils literal">NFdet</tt> (itens com
-<tt class="docutils literal">prod</tt> e <tt class="docutils literal">imposto</tt>), <tt class="docutils literal">total</tt>, <tt class="docutils literal">gFat</tt> (fatura), <tt class="docutils literal">gANEEL</tt>
-(histórico de faturamento), <tt class="docutils literal">infAdic</tt> e o QR Code de <tt class="docutils literal">infNF3eSupl</tt>
-(MOC NF3e 1.00a, Visão Geral, item 9.2);</li>
-<li>leva para o XML os tributos calculados pelo motor fiscal da OCA: ICMS
-(grupo escolhido pelo CST), PIS, COFINS, retenções e o grupo
-<tt class="docutils literal">IBSCBS</tt> do item com o total <tt class="docutils literal">IBSCBSTot</tt> (NT 2025.001 RTC v1.14a);</li>
-<li>calcula o <tt class="docutils literal">vNF</tt> (MOC, regra G157) e o <tt class="docutils literal">vTotDFe</tt>, que repete o
-<tt class="docutils literal">vNF</tt> em 2026 e soma IBS e CBS a partir de 2027, pela data de
-emissão (NT 2025.001 RTC v1.14a, item 9, regras 360 e 365, e NT
-2026.004 v1.01);</li>
-<li>assina o XML com o certificado da empresa, valida contra o XSD do
-<tt class="docutils literal">nfelib</tt> e guarda o XML assinado no evento de autorização do
-documento;</li>
-<li>monta, assina e valida o XML do evento de cancelamento (110111).</li>
+<li>numbers the document by series and builds the NF3e access key (MOC
+NF3e 1.00a, Overview, item 2.1: 7-digit numeric code, issuance type
+and authorizer site), with a modulo 11 check digit, including for
+alphanumeric CNPJ;</li>
+<li>generates the XML with the groups <tt class="docutils literal">ide</tt>, <tt class="docutils literal">emit</tt>, <tt class="docutils literal">dest</tt>,
+<tt class="docutils literal">acessante</tt> (consumer unit), <tt class="docutils literal">gMed</tt> (meters), <tt class="docutils literal">NFdet</tt> (items
+with <tt class="docutils literal">prod</tt> and <tt class="docutils literal">imposto</tt>), <tt class="docutils literal">total</tt>, <tt class="docutils literal">gFat</tt> (invoice),
+<tt class="docutils literal">gANEEL</tt> (billing history), <tt class="docutils literal">infAdic</tt> and the <tt class="docutils literal">infNF3eSupl</tt> QR
+Code (MOC NF3e 1.00a, Overview, item 9.2);</li>
+<li>carries into the XML the taxes computed by the OCA fiscal engine: ICMS
+(group chosen by the CST), PIS, COFINS, withholdings and the item
+<tt class="docutils literal">IBSCBS</tt> group with the <tt class="docutils literal">IBSCBSTot</tt> total (NT 2025.001 RTC
+v1.14a);</li>
+<li>computes <tt class="docutils literal">vNF</tt> (MOC, rule G157) and <tt class="docutils literal">vTotDFe</tt>, which repeats
+<tt class="docutils literal">vNF</tt> in 2026 and adds IBS and CBS from 2027, by issue date (NT
+2025.001 RTC v1.14a, item 9, rules 360 and 365, and NT 2026.004
+v1.01);</li>
+<li>signs the XML with the company certificate, validates it against the
+<tt class="docutils literal">nfelib</tt> XSD and stores the signed XML in the authorization event of
+the document;</li>
+<li>builds, signs and validates the XML of the cancellation event
+(110111).</li>
 </ul>
-<p>A transmissão ao autorizador ainda não está disponível: ver o roteiro.</p>
+<p>Transmission to the authorizer is not available yet: see the roadmap.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">This is an alpha version, the data model and design can change at any time without warning.
@@ -412,9 +414,9 @@ Only for development or testing purpose, do not use in production.
 <li><a class="reference internal" href="#configuration" id="toc-entry-1">Configuration</a></li>
 <li><a class="reference internal" href="#usage" id="toc-entry-2">Usage</a></li>
 <li><a class="reference internal" href="#known-issues-roadmap" id="toc-entry-3">Known issues / Roadmap</a><ul>
-<li><a class="reference internal" href="#transmissao" id="toc-entry-4">Transmissão</a></li>
-<li><a class="reference internal" href="#leiaute" id="toc-entry-5">Leiaute</a></li>
-<li><a class="reference internal" href="#regras-de-negocio" id="toc-entry-6">Regras de negócio</a></li>
+<li><a class="reference internal" href="#transmission" id="toc-entry-4">Transmission</a></li>
+<li><a class="reference internal" href="#layout" id="toc-entry-5">Layout</a></li>
+<li><a class="reference internal" href="#business-rules" id="toc-entry-6">Business rules</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#bug-tracker" id="toc-entry-7">Bug Tracker</a></li>
@@ -428,111 +430,111 @@ Only for development or testing purpose, do not use in production.
 </div>
 <div class="section" id="configuration">
 <h1><a class="toc-backref" href="#toc-entry-1">Configuration</a></h1>
-<p>Na empresa (aba Fiscal, NF3e):</p>
+<p>On the company (Fiscal tab, NF3e):</p>
 <ul class="simple">
-<li>escolha o ambiente da NF3e (homologação ou produção);</li>
-<li>confira o endereço do QR Code. O padrão é o da SVRS
-(<tt class="docutils literal"><span class="pre">https://dfe-portal.svrs.rs.gov.br/nf3e/qrCode</span></tt>); MG, MT e SC
-publicam endereços próprios na página de serviços do Portal NF3e
-(<tt class="docutils literal"><span class="pre">https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos</span></tt>), e a SEFAZ
-recusa o QR Code com endereço diferente do previsto (MOC NF3e 1.00a,
-regra G164).</li>
+<li>choose the NF3e environment (homologation or production);</li>
+<li>check the QR Code address. The default is the SVRS one
+(<tt class="docutils literal"><span class="pre">https://dfe-portal.svrs.rs.gov.br/nf3e/qrCode</span></tt>); MG, MT and SC
+publish their own addresses on the services page of the NF3e Portal
+(<tt class="docutils literal"><span class="pre">https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos</span></tt>), and SEFAZ
+rejects the QR Code with an address different from the expected one
+(MOC NF3e 1.00a, rule G164).</li>
 </ul>
-<p>A empresa precisa de CNPJ, inscrição estadual, estado, município,
-certificado digital e o processador de documentos eletrônicos “Odoo
-Community”. Crie também uma série para o tipo de documento 66.</p>
+<p>The company needs a CNPJ, state registration, state, city, digital
+certificate and the “Odoo Community” electronic document processor. Also
+create a series for document type 66.</p>
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-2">Usage</a></h1>
 <ol class="arabic simple">
-<li>Crie um documento fiscal com o tipo de documento 66, o cliente, a
-operação fiscal e a série da NF3e.</li>
-<li>Na aba NF3e, preencha a unidade consumidora (acessante), os dados da
-fatura (competência, vencimento, próxima leitura, linha digitável e
-débito automático ou banco e agência), os medidores e o histórico de
-faturamento (de 1 a 5 grandezas, cada uma com os 13 meses que o
-leiaute exige).</li>
-<li>Em cada item, informe o CFOP de energia elétrica e, na aba NF3e da
-linha, o código de classificação do item, a unidade de medida e a
-origem da quantidade faturada. Para o IBS e a CBS, informe a
-classificação tributária (<tt class="docutils literal">cClassTrib</tt>): o motor fiscal calcula os
-valores.</li>
-<li>Confirme o documento: o XML é gerado, assinado e validado, e fica no
-evento de autorização. Os erros de esquema aparecem na mensagem de
-erro do XML.</li>
+<li>Create a fiscal document with document type 66, the customer, the
+fiscal operation and the NF3e series.</li>
+<li>In the NF3e tab, fill in the consumer unit (acessante), the invoice
+data (competence period, due date, next reading, payment line and
+automatic debit or bank and branch), the meters and the billing
+history (1 to 5 quantities, each with the 13 months that the layout
+requires).</li>
+<li>On each item, enter the electricity CFOP and, in the NF3e tab of the
+line, the item classification code, the unit of measure and the
+origin of the billed quantity. For IBS and CBS, enter the tax
+classification (<tt class="docutils literal">cClassTrib</tt>): the fiscal engine computes the
+values.</li>
+<li>Confirm the document: the XML is generated, signed and validated, and
+is kept in the authorization event. Schema errors appear in the XML
+error message.</li>
 </ol>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-3">Known issues / Roadmap</a></h1>
-<div class="section" id="transmissao">
-<h2><a class="toc-backref" href="#toc-entry-4">Transmissão</a></h2>
-<p>A NF3e ainda não é transmitida: confirmar o documento gera, assina e
-valida o XML, e o envio ao autorizador (ou o cancelamento pelo Odoo)
-avisa que o serviço não está disponível. O destino é uma contribuição ao
-<tt class="docutils literal">nfelib</tt>, no padrão do cliente de CT-e e MDF-e dele
-(<tt class="docutils literal"><span class="pre">nfelib/&lt;doc&gt;/client/</span></tt>, sobre o <tt class="docutils literal">brazil_fiscal_client</tt>):</p>
+<div class="section" id="transmission">
+<h2><a class="toc-backref" href="#toc-entry-4">Transmission</a></h2>
+<p>The NF3e is not transmitted yet: confirming the document generates,
+signs and validates the XML, and sending to the authorizer (or
+cancelling through Odoo) warns that the service is not available. The
+goal is a contribution to <tt class="docutils literal">nfelib</tt>, following the pattern of its CT-e
+and MDF-e client (<tt class="docutils literal"><span class="pre">nfelib/&lt;doc&gt;/client/</span></tt>, built on
+<tt class="docutils literal">brazil_fiscal_client</tt>):</p>
 <ul class="simple">
-<li>os bindings SOAP gerados pelo xsdata a partir dos WSDL dos serviços
-<tt class="docutils literal">NF3eRecepcaoSinc</tt>, <tt class="docutils literal">NF3eRecepcaoEvento</tt>, <tt class="docutils literal">NF3eConsulta</tt> e
-<tt class="docutils literal">NF3eStatusServico</tt>. O <tt class="docutils literal">nfelib</tt> 3.3.0 tem os bindings do leiaute e
-dos eventos da NF3e, mas não os WSDL nem os bindings SOAP, e os WSDL
-só são servidos pelos autorizadores (<tt class="docutils literal"><span class="pre">&lt;serviço&gt;?wsdl</span></tt>);</li>
-<li>a tabela de servidores dos cinco autorizadores publicados no Portal
-NF3e (<tt class="docutils literal"><span class="pre">https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos</span></tt>): MG, MS,
-MT, PR e SVRS, em produção e homologação;</li>
-<li>o cliente <tt class="docutils literal">NF3eClient</tt> com o envio síncrono (XML compactado em gzip
-e base64), o evento, a consulta e o status do serviço.</li>
+<li>the SOAP bindings generated by xsdata from the WSDL of the services
+<tt class="docutils literal">NF3eRecepcaoSinc</tt>, <tt class="docutils literal">NF3eRecepcaoEvento</tt>, <tt class="docutils literal">NF3eConsulta</tt> and
+<tt class="docutils literal">NF3eStatusServico</tt>. <tt class="docutils literal">nfelib</tt> 3.3.0 has the bindings for the NF3e
+layout and events, but not the WSDL or the SOAP bindings, and the WSDL
+are only served by the authorizers (<tt class="docutils literal"><span class="pre">&lt;service&gt;?wsdl</span></tt>);</li>
+<li>the server table of the five authorizers published on the NF3e Portal
+(<tt class="docutils literal"><span class="pre">https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos</span></tt>): MG, MS, MT, PR
+and SVRS, in production and homologation;</li>
+<li>the <tt class="docutils literal">NF3eClient</tt> client with synchronous submission (XML compressed
+with gzip and encoded in base64), the event, the query and the service
+status.</li>
 </ul>
-<p>Com o cliente no <tt class="docutils literal">nfelib</tt>, este módulo passa a enviar o XML guardado
-no evento de autorização, tratar o protocolo (<tt class="docutils literal">protNF3e</tt>,
-<tt class="docutils literal">nf3eProc</tt>) e transmitir o evento de cancelamento que
-<tt class="docutils literal">_nf3e_cancel_event_xml</tt> já monta, assina e valida (com a regra de
-prazo do cancelamento do MOC).</p>
+<p>With the client in <tt class="docutils literal">nfelib</tt>, this module will send the XML stored in
+the authorization event, handle the protocol (<tt class="docutils literal">protNF3e</tt>,
+<tt class="docutils literal">nf3eProc</tt>) and transmit the cancellation event that
+<tt class="docutils literal">_nf3e_cancel_event_xml</tt> already builds, signs and validates (with the
+cancellation deadline rule of the MOC).</p>
 </div>
-<div class="section" id="leiaute">
-<h2><a class="toc-backref" href="#toc-entry-5">Leiaute</a></h2>
+<div class="section" id="layout">
+<h2><a class="toc-backref" href="#toc-entry-5">Layout</a></h2>
 <ul class="simple">
-<li>NT 2026.004 v1.01 (produção em 14/12/2026): valor líquido do item
-(<tt class="docutils literal">vProdLiq</tt>, <tt class="docutils literal">vItemLiq</tt>), ICMS previsto para pagamento antecipado,
-IBS e CBS no grupo de processo judicial e o fim da NF3e normal com
-ajuste. O <tt class="docutils literal">nfelib</tt> 3.3.0 traz o pacote de esquemas da NT 2026.002
-RTC v1.01: o <tt class="docutils literal">l10n_br_nf3e_spec</tt> precisa ser regerado quando o
-<tt class="docutils literal">nfelib</tt> publicar o pacote da NT 2026.004.</li>
-<li>NT 2026.001 RTC (vinculação de pagamento, grupo <tt class="docutils literal">pgtoVinc</tt> e eventos
-de vinculação).</li>
-<li>Contingência off-line (<tt class="docutils literal">tpEmis</tt> 2): <tt class="docutils literal">dhCont</tt>, <tt class="docutils literal">xJust</tt> e o
-parâmetro <tt class="docutils literal">sign</tt> do QR Code (MOC NF3e 1.00a, Visão Geral, item 9.2).</li>
-<li>Grupos da energia que o leiaute não exige e ainda não são preenchidos:
-tarifas por posto tarifário (<tt class="docutils literal">gTarif</tt>, regras G111 e G112),
-adicional de bandeira (<tt class="docutils literal">gAdBand</tt>), medição do item (<tt class="docutils literal">gMedicao</tt> e
-<tt class="docutils literal">gMedida</tt>, regras G114 a G116; por isso a origem de quantidade
-“contratada” é recusada), grandezas contratadas (<tt class="docutils literal">gGrContrat</tt>),
-sistema de compensação de energia (<tt class="docutils literal">gSCEE</tt>), substituição
-(<tt class="docutils literal">gSub</tt>), processo judicial (<tt class="docutils literal">gJudic</tt>, <tt class="docutils literal">gProcRef</tt>), contas
-contábeis (<tt class="docutils literal">gContab</tt>), itens de NF3e anterior (<tt class="docutils literal">detItemAnt</tt>,
-finalidades 2 e 3), pagamento antecipado, PIX, endereço de
-correspondência, autorizados ao XML (<tt class="docutils literal">autXML</tt>) e responsável técnico
-(<tt class="docutils literal">gRespTec</tt>).</li>
-<li>IBS e CBS: estorno de crédito (<tt class="docutils literal">gEstornoCred</tt>), diferimento,
-devolução de tributos, IBS municipal (hoje exportado zerado), compras
-governamentais (<tt class="docutils literal">gCompraGov</tt>) e doação (<tt class="docutils literal">indDoacao</tt>).</li>
+<li>NT 2026.004 v1.01 (production on 2026-12-14): net item value
+(<tt class="docutils literal">vProdLiq</tt>, <tt class="docutils literal">vItemLiq</tt>), ICMS expected for advance payment, IBS
+and CBS in the judicial process group and the end of the normal NF3e
+with adjustment. <tt class="docutils literal">nfelib</tt> 3.3.0 ships the schema package of NT
+2026.002 RTC v1.01: <tt class="docutils literal">l10n_br_nf3e_spec</tt> must be regenerated when
+<tt class="docutils literal">nfelib</tt> publishes the NT 2026.004 package.</li>
+<li>NT 2026.001 RTC (payment linking, <tt class="docutils literal">pgtoVinc</tt> group and linking
+events).</li>
+<li>Offline contingency (<tt class="docutils literal">tpEmis</tt> 2): <tt class="docutils literal">dhCont</tt>, <tt class="docutils literal">xJust</tt> and the QR
+Code <tt class="docutils literal">sign</tt> parameter (MOC NF3e 1.00a, Overview, item 9.2).</li>
+<li>Electricity groups that the layout does not require and are not filled
+yet: tariffs by tariff period (<tt class="docutils literal">gTarif</tt>, rules G111 and G112),
+tariff flag surcharge (<tt class="docutils literal">gAdBand</tt>), item measurement (<tt class="docutils literal">gMedicao</tt>
+and <tt class="docutils literal">gMedida</tt>, rules G114 to G116; that is why the “contracted”
+quantity origin is rejected), contracted quantities (<tt class="docutils literal">gGrContrat</tt>),
+energy compensation system (<tt class="docutils literal">gSCEE</tt>), replacement (<tt class="docutils literal">gSub</tt>),
+judicial process (<tt class="docutils literal">gJudic</tt>, <tt class="docutils literal">gProcRef</tt>), accounting accounts
+(<tt class="docutils literal">gContab</tt>), items of a previous NF3e (<tt class="docutils literal">detItemAnt</tt>, purposes 2
+and 3), advance payment, PIX, mailing address, parties authorized to
+access the XML (<tt class="docutils literal">autXML</tt>) and technical manager (<tt class="docutils literal">gRespTec</tt>).</li>
+<li>IBS and CBS: credit reversal (<tt class="docutils literal">gEstornoCred</tt>), deferral, tax refund,
+municipal IBS (exported as zero today), government procurement
+(<tt class="docutils literal">gCompraGov</tt>) and donation (<tt class="docutils literal">indDoacao</tt>).</li>
 </ul>
 </div>
-<div class="section" id="regras-de-negocio">
-<h2><a class="toc-backref" href="#toc-entry-6">Regras de negócio</a></h2>
+<div class="section" id="business-rules">
+<h2><a class="toc-backref" href="#toc-entry-6">Business rules</a></h2>
 <ul class="simple">
-<li>Sinal de cada item no total conforme a natureza do código de
-classificação (<tt class="docutils literal">cClass</tt>, MOC NF3e 1.00a, Visão Geral, item 7.9) e o
-indicador de devolução: hoje todos os itens somam.</li>
-<li>Validação do CFOP permitido e da compatibilidade com o <tt class="docutils literal">cClass</tt>
-(regras G108 e G109, itens 7.8 e 7.9 do MOC).</li>
-<li>Histórico de faturamento (<tt class="docutils literal">gANEEL</tt>) montado a partir das NF3e
-anteriores da mesma unidade consumidora; hoje é informado no
-documento.</li>
-<li>Cadastro da unidade consumidora e dos medidores no cliente, com o
-código de classificação e a unidade de medida padrão no produto.</li>
-<li>Mais de um grupo <tt class="docutils literal">NFdet</tt> (até 13) e mais de 990 itens.</li>
-<li>DANF3E (MOC NF3e, Anexo II) e importação do XML da NF3e.</li>
+<li>Sign of each item in the total according to the nature of the
+classification code (<tt class="docutils literal">cClass</tt>, MOC NF3e 1.00a, Overview, item 7.9)
+and the refund indicator: today all items are added.</li>
+<li>Validation of the allowed CFOP and of its compatibility with
+<tt class="docutils literal">cClass</tt> (rules G108 and G109, items 7.8 and 7.9 of the MOC).</li>
+<li>Billing history (<tt class="docutils literal">gANEEL</tt>) built from the previous NF3e of the same
+consumer unit; today it is entered in the document.</li>
+<li>Registration of the consumer unit and meters on the customer, with the
+classification code and the default unit of measure on the product.</li>
+<li>More than one <tt class="docutils literal">NFdet</tt> group (up to 13) and more than 990 items.</li>
+<li>DANF3E (MOC NF3e, Annex II) and NF3e XML import.</li>
 </ul>
 </div>
 </div>
