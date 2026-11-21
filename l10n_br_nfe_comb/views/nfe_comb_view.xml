@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="nfe_comb_form" model="ir.ui.view">
+        <field name="name">nfe.40.comb.form</field>
+        <field name="model">nfe.40.comb</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="nfe40_cProdANP" string="ANP Product Code" />
+                        <field name="nfe40_descANP" string="ANP Description" />
+                        <field name="nfe40_UFCons" string="Consumption State" />
+                        <field name="nfe40_CODIF" string="CODIF" />
+                        <field name="nfe40_pBio" string="Biodiesel Percentage" />
+                        <field
+                            name="nfe40_qTemp"
+                            string="Quantity at Ambient Temperature"
+                        />
+                    </group>
+                    <group
+                        string="LPG"
+                        invisible="nfe40_cProdANP != '210203001'"
+                        name="glp"
+                    >
+                        <field name="brl_currency_id" invisible="1" />
+                        <field name="nfe40_pGLP" string="Oil LPG Percentage" />
+                        <field
+                            name="nfe40_pGNn"
+                            string="National Natural Gas Percentage"
+                        />
+                        <field
+                            name="nfe40_pGNi"
+                            string="Imported Natural Gas Percentage"
+                        />
+                        <field name="nfe40_vPart" string="Starting Value per kg" />
+                    </group>
+                </group>
+                <group string="Fuel Origin">
+                    <field name="nfe40_origComb" nolabel="1" colspan="2">
+                        <list editable="bottom">
+                            <field name="nfe40_indImport" string="Origin" />
+                            <field name="nfe40_cUFOrig" string="State" />
+                            <field name="nfe40_pOrig" string="Percentage" />
+                        </list>
+                    </field>
+                </group>
+                <group>
+                    <field name="nfe40_CIDE" string="CIDE" />
+                    <field name="nfe40_encerrante" string="Pump Meter" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="nfe_cide_form" model="ir.ui.view">
+        <field name="name">nfe.40.cide.form</field>
+        <field name="model">nfe.40.cide</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="brl_currency_id" invisible="1" />
+                    <field name="nfe40_qBCProd" string="Base Quantity" />
+                    <field name="nfe40_vAliqProd" string="Rate per Unit" />
+                    <field name="nfe40_vCIDE" string="CIDE Amount" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="nfe_encerrante_form" model="ir.ui.view">
+        <field name="name">nfe.40.encerrante.form</field>
+        <field name="model">nfe.40.encerrante</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="nfe40_nBico" string="Nozzle" />
+                    <field name="nfe40_nBomba" string="Pump" />
+                    <field name="nfe40_nTanque" string="Tank" />
+                    <field name="nfe40_vEncIni" string="Meter at Start" />
+                    <field name="nfe40_vEncFin" string="Meter at End" />
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
