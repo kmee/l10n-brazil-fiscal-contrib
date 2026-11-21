@@ -83,11 +83,6 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
-#: model:ir.model,name:l10n_br_nfe_rastro.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfe_rastro
 #: model:ir.model,name:l10n_br_nfe_rastro.model_account_move_line
 msgid "Journal Item"
 msgstr ""
@@ -129,6 +124,11 @@ msgstr ""
 msgid ""
 "The NF-e traceability data (rastro) is incomplete or inconsistent:\n"
 "%(errors)s"
+msgstr ""
+
+#. module: l10n_br_nfe_rastro
+#: model:ir.model,name:l10n_br_nfe_rastro.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_nfe_rastro
