@@ -1,0 +1,7 @@
+# Generated bindings: the xsd patterns are long regular expressions that
+# cannot be split.
+extend = "../../.ruff.toml"
+cache-dir = "../../.ruff_cache"
+
+[lint]
+extend-ignore = ["E501"]
