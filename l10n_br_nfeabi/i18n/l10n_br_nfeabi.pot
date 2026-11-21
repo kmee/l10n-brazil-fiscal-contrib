@@ -1,0 +1,2194 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfeabi
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_transmitter__nfeabi10_indContrib__0
+msgid "0 - Not an IBS/CBS taxpayer"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_modOper__01
+msgid "01 - General alienation"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__01
+msgid "01 - Land"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_enquadramento__01
+msgid "01 - New residential property"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__01
+msgid "01 - Private contract or instrument"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__01
+msgid "01 - Promise of purchase and sale"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__01
+msgid "01 - Purchase and sale"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__02
+msgid "02 - Final purchase and sale"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__02
+msgid "02 - House"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_modOper__02
+msgid "02 - Judicial auction, adjudication or redemption"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__02
+msgid "02 - Payment in kind"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__02
+msgid "02 - Private contract with a financial institution"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_enquadramento__02
+msgid "02 - Used residential property"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__03
+msgid "03 - Apartment"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_modOper__03
+msgid "03 - Assignment or transfer of rights"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__03
+msgid "03 - Operations of the secured creditor or consortium group"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__03
+msgid "03 - Promise of payment in kind"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__03
+msgid "03 - Public deed"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_enquadramento__03
+msgid "03 - Residential lot"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__04
+msgid "04 - Auction record"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__04
+msgid "04 - Corporate acts"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_modOper__04
+msgid "04 - Exchange"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__04
+msgid "04 - Final payment in kind"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_enquadramento__04
+msgid "04 - Non residential"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__04
+msgid "04 - Parking space"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__05
+msgid "05 - Adjudication record"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__05
+msgid "05 - Donations or free transfers"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__05
+msgid "05 - Ownership consolidation by the secured creditor"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__05
+msgid "05 - Slab"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__06
+msgid "06 - Court decision"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__06
+msgid "06 - Judicial auction"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__06
+msgid "06 - Office room"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__06
+msgid "06 - Ownership consolidation by the consortium group"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__07
+msgid "07 - Adjudication"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__07
+msgid "07 - Alienation by the secured creditor"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__07
+msgid "07 - Registration of the ownership consolidation"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__07
+msgid "07 - Set of office rooms"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__08
+msgid "08 - Alienation by the consortium group"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__08
+msgid "08 - Articles of association"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__08
+msgid "08 - Redemption"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__08
+msgid "08 - Shop"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__09
+msgid "09 - Amendment of the articles"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__09
+msgid "09 - Assignment of rights over the property"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__09
+msgid "09 - Capital contribution"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__09
+msgid "09 - Mezzanine shop"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_transmitter__nfeabi10_indContrib__1
+msgid "1 - IBS/CBS regular regime taxpayer"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__10
+msgid "10 - Corporate merger"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__10
+msgid "10 - Emphyteusis or surface right"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__10
+msgid "10 - General meeting minutes"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__10
+msgid "10 - Parking lot"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__11
+msgid "11 - Amalgamation"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__11
+msgid "11 - Company dissolution agreement"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__11
+msgid "11 - Shack"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__11
+msgid "11 - Use or usufruct"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__12
+msgid "12 - Other real rights"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__12
+msgid "12 - Total or partial spin-off"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__12
+msgid "12 - Warehouse"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__13
+msgid "13 - Company dissolution"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__13
+msgid "13 - Exchange of real estate only"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__14
+msgid ""
+"14 - Paid purchase with debt acknowledgment and promise of payment in kind "
+"(LC 214/2025, article 252, paragraph 6)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__14
+msgid "14 - Property withdrawal by capital reduction"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__15
+msgid "15 - Donation without consideration to the donor"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_natOper__15
+msgid "15 - Other exchange"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__16
+msgid "16 - Donation with consideration to the donor"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__17
+msgid "17 - Onerous assignment of the rights of a purchase promise"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__18
+msgid "18 - Onerous assignment of inheritance rights"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__19
+msgid "19 - Onerous assignment of rights over a fiduciary sold property"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_transmitter__nfeabi10_indContrib__2
+msgid "2 - Simples Nacional"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__20
+msgid "20 - Assignment of the rights of the auction buyer"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__21
+msgid "21 - Assignment of the rights of the adjudicatee"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__22
+msgid "22 - Emphyteusis of federal properties"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__23
+msgid "23 - Onerous transfer of the emphyteusis"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__24
+msgid "24 - Onerous grant of the surface right"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__25
+msgid "25 - Onerous assignment of the surface right"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__26
+msgid "26 - Onerous grant of use or usufruct"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__27
+msgid "27 - Onerous transfer of use or usufruct"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__28
+msgid "28 - Onerous grant of special housing use"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__29
+msgid "29 - Onerous transfer of special housing use"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__30
+msgid "30 - Onerous grant of the real right of use"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__31
+msgid "31 - Onerous transfer of the real right of use"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__32
+msgid "32 - Onerous grant of the slab right"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__33
+msgid "33 - Onerous assignment of the slab right"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_detOper__34
+msgid "34 - Onerous assignment of provisional possession rights"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpInstrumento__99
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_espImovel__99
+msgid "99 - Other"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "A single document line with the IBS and CBS taxes"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_adquirente
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_adquirente
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_adquirente
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_adquirente
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_document_form_view
+#, python-format
+msgid "Acquirers"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_property_form_view
+msgid "Address"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_res_company__nfeabi_qrcode_url
+msgid ""
+"Address of the NF-e ABI query by QR Code published on the NF-e ABI portal "
+"for the environment of the company, without the '?' (NT 2026.001, item 5.2)."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_res_company__nfeabi_key_query_url
+msgid ""
+"Address of the NF-e ABI query by access key printed on the DANFE-ABI (tag "
+"urlChave, NT 2026.001, item 5.1)."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vInicial
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vInicial
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vInicial
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vInicial
+msgid "Adjustment Reducer Initial Amount"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vRedAjusteImovel
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_vRedAjusteImovel
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_vRedAjusteImovel
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vRedAjusteImovel
+msgid ""
+"Adjustment reducer of the property (arts. 257 and 258 of the LC 214/2025). "
+"Computed as the initial amount plus ITBI, laudemium and counterparts when "
+"the initial amount is informed (rule H15-10)."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_adquirente
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_adquirente
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_adquirente
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_adquirente
+msgid ""
+"Adquirentes (F01). Ocorrência 0-99 (NT 2026.001): obrigatório para tpNF=0 ou"
+" 1; proibido para tpNF=2."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__nfeabi10_vCorretagem
+msgid "Brokerage Amount"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_gIntermedCorret
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_gIntermedCorret
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_gIntermedCorret
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_gIntermedCorret
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_document_form_view
+msgid "Brokers"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_CEP
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_CEP
+msgid "CEP (nfeabi_CEP)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_cCIB
+msgid "CIB"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__nfeabi10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__nfeabi10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tautxml__nfeabi10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi10_CNPJ
+msgid "CNPJ"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_CNPJ
+msgid "CNPJ (nfeabi_CNPJ)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tginftribtransic__nfeabi10_CNPJ
+msgid "CNPJ do contribuinte (UA02)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "CNPJ, e-mail and phone of the technical responsible"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgincorplote__nfeabi10_CNPJempImob
+msgid "CNPJempImob"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_CPF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__nfeabi10_CPF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__nfeabi10_CPF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tautxml__nfeabi10_CPF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi10_CPF
+msgid "CPF"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tginftribtransic__nfeabi10_CPF
+msgid "CPF do contribuinte (UA03)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgincorplote__nfeabi10_CNO
+msgid "Cadastro Nacional de Obras"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_nfeabi_10_tgincorplote__nfeabi10_CNO
+msgid ""
+"Cadastro Nacional de Obras (H10b - NT 2026.001). Numérico, 2 a 60 posições."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgincorplote__nfeabi10_cCIBObra
+msgid "Cadastro do CIB da obra (H10a)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid ""
+"Cannot build the NF-e ABI access key of %(document)s: check the company CNPJ"
+" or CPF and state, the serie and the number."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgpagantecipado__nfeabi10_chNFePagAnt
+msgid "Chave de acesso da NF-e ABI"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_nfeabi_10_tgpagantecipado__nfeabi10_chNFePagAnt
+msgid ""
+"Chave de acesso da NF-e ABI (modelo 77) de antecipação de pagamento emitida "
+"anteriormente (BB02)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__city_id
+msgid "City"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_mod
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_mod
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_mod
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_mod
+msgid "Code (nfeabi_mod)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "Company CNPJ or CPF"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "Company City"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "Company State"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_res_company__nfeabi_technical_partner_id
+msgid ""
+"Company that develops the NF-e ABI issuing system (group infRespTec). When "
+"empty, the company itself is informed, as the MOC NF-e ABI (Visão Geral, "
+"item 2.2.5) asks for systems developed by the issuer."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpNF__1
+msgid "Complete"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vContrap
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vContrap
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vContrap
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vContrap
+msgid "Counterparts Amount"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__create_uid
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__create_uid
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__create_uid
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__create_date
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__create_date
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__create_date
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vOperacIndiv
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vOperacIndiv
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vOperacIndiv
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vOperacIndiv
+msgid "Declarant Operation Amount"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "Describe the undo of the alienation."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "Digital Certificate"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__display_name
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__display_name
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__display_name
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__district
+msgid "District"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_xBairro
+msgid "District (nfeabi_xBairro)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "Document Serie"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_document_form_view
+msgid "Emission"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid ""
+"Fill in the required NF-e ABI fields:\n"
+"- %s"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_gtorna
+msgid "GTorna"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_gPagAntecipado
+msgid "Grupo de notas de antecipação"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tgpagantecipado
+msgid ""
+"Grupo de notas de antecipação de pagamento (BB01 - NT 2026.001).\n"
+"Informado somente quando ide/tpPagAnt=2, para abater as parcelas de\n"
+"antecipação de pagamento (art. 10, § 4º, da LC 214/2025)."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_gPagAntecipado
+msgid ""
+"Grupo de notas de antecipação de pagamento (BB01 - NT 2026.001). Informar "
+"somente quando ide/tpPagAnt=2."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_uAreaTotal__ha
+msgid "Hectares (ha)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi_environment__2
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__res_company__nfeabi_environment__2
+msgid "Homologation"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_cMun
+msgid "IBGE Code"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vBC
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vBC
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vBC
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vBC
+msgid "IBS/CBS Base of the Declarant"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__nfeabi10_indContrib
+msgid "IBS/CBS Contributor"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_nINCRA
+msgid "INCRA Number"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_nIPTU
+msgid "IPTU Number"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vITBI
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vITBI
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vITBI
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vITBI
+msgid "ITBI Amount"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_Id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_Id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_Id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_Id
+msgid "Id (nfeabi_Id)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_imovel
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_imovel
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_imovel
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_imovel
+msgid ""
+"Identificação do imóvel (G01). Ocorrência 0-1 (NT 2026.001): obrigatório "
+"para tpNF=0 ou 1; proibido para tpNF=2."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_indINCRA
+msgid "Indicador se o imóvel possui INCRA"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_indINCRA
+msgid ""
+"Indicador se o imóvel possui INCRA (G07). Tag renomeada de indIncra para "
+"indINCRA pela NT 2026.001."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_indRIP
+msgid "Indicador se o imóvel possui RIP"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_indRIP
+msgid ""
+"Indicador se o imóvel possui RIP - Registro Imobiliário Patrimonial da SPU "
+"(G08a - NT 2026.001): 0=Não possui RIP; 1=Possui RIP"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_cadastro
+msgid "Informações Cadastrais do imóvel"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_cadastro
+msgid ""
+"Informações Cadastrais do imóvel (G03). Ocorrência alterada de 0-1 para 1-1 "
+"pela NT 2026.001."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_gInfTribTransic
+msgid "Informações da Tributação no Regime"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tginftribtransic
+msgid ""
+"Informações da Tributação no Regime de Transição (UA01 - NT 2026.001).\n"
+"Informado somente quando tpNF=2 (Transição)."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_gInfTribTransic
+msgid ""
+"Informações da Tributação no Regime de Transição (UA01 - NT 2026.001). "
+"Obrigatório para tpNF=2; proibido para tpNF=0 ou 1."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tginftribtransic__nfeabi10_IBSCBS
+msgid "Informações do IBS e da CBS no Regime"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_nfeabi_10_tginftribtransic__nfeabi10_IBSCBS
+msgid "Informações do IBS e da CBS no Regime de Transição (UA05)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_document_form_view
+msgid "Instrument"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_dtInstrumento
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_dtInstrumento
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_dtInstrumento
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_dtInstrumento
+#, python-format
+msgid "Instrument Date"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_tpInstrumento
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_tpInstrumento
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_tpInstrumento
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_tpInstrumento
+msgid "Instrument Type"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "Invalid NF-e ABI access key: %s"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "Invalid undo type: %s"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__is_declarant
+msgid "Is Declarant"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer____last_update
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker____last_update
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property____last_update
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__write_uid
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__write_uid
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__write_uid
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__write_date
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__write_date
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__write_date
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vLaudemio
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vLaudemio
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vLaudemio
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vLaudemio
+msgid "Laudemium Amount"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_obsLocalImovel
+msgid "Location Notes"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_gtorna__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tautxml__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagimovel__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagincorplote__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgcont__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgincorplote__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tginftribtransic__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgpagantecipado__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tinfnfesupl__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tnfref__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tobs__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tpag__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__brl_currency_id
+msgid "Moeda"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_document_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.res_company_form_view
+msgid "NF-e ABI"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_l10n_br_nfeabi_acquirer
+msgid "NF-e ABI Acquirer"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_l10n_br_nfeabi_broker
+msgid "NF-e ABI Broker"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi_environment
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi_environment
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi_environment
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi_environment
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi_environment
+msgid "NF-e ABI Environment"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi_key_query_url
+msgid "NF-e ABI Key Query URL"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "NF-e ABI Key Query URL of the company"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi_qrcode_url
+msgid "NF-e ABI QR Code URL"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "NF-e ABI QR Code URL of the company"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_l10n_br_nfeabi_property
+msgid "NF-e ABI Real Estate Property"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi_technical_partner_id
+msgid "NF-e ABI Technical Responsible"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vNF
+msgid "NF-e ABI Total"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_l10n_br_nfeabi_transmitter
+msgid "NF-e ABI Transmitter"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_tpNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_tpNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_tpNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_tpNF
+msgid "NF-e ABI Type"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_NFref
+msgid "NFref"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__name
+msgid "Name"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_xMun
+msgid "Name (nfeabi_xMun)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__document_id
+msgid "Nfeabi10 Adquirente Tinfnfeabi"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_adquirente_TInfNFeABI_id
+msgid "Nfeabi10 Adquirente Tinfnfeabi (nfeabi_adquirente_TInfNFeABI_id)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tautxml__nfeabi10_autXML_TInfNFeABI_id
+msgid "Nfeabi10 Autxml Tinfnfeabi"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_CEP
+msgid "Nfeabi10 Cep"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagimovel__nfeabi10_detPagImovel_TPag_id
+msgid "Nfeabi10 Detpagimovel Tpag"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagincorplote__nfeabi10_detPagIncorpLote_TPag_id
+msgid "Nfeabi10 Detpagincorplote Tpag"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_gCompraGov
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_gCompraGov
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_gCompraGov
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_gCompraGov
+msgid "Nfeabi10 Gcompragov"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__document_id
+msgid "Nfeabi10 Gintermedcorret Tinfoper"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__nfeabi10_gIntermedCorret_TInfOper_id
+msgid "Nfeabi10 Gintermedcorret Tinfoper (nfeabi_gIntermedCorret_TInfOper_id)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_IBSCBS
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_IBSCBS
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_IBSCBS
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_IBSCBS
+msgid "Nfeabi10 Ibscbs"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_imovelTorna_GTorna_id
+msgid "Nfeabi10 Imoveltorna Gtorna"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tnfref__nfeabi10_NFref_TInfNFeABI_id
+msgid "Nfeabi10 Nfref Tinfnfeabi"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tobs__nfeabi10_obsCont_TInfAdic_id
+msgid "Nfeabi10 Obscont Tinfadic"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tobs__nfeabi10_obsFisco_TInfAdic_id
+msgid "Nfeabi10 Obsfisco Tinfadic"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__document_id
+msgid "Nfeabi10 Transmit Tinfnfeabi"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__nfeabi10_transmit_TInfNFeABI_id
+msgid "Nfeabi10 Transmit Tinfnfeabi (nfeabi_transmit_TInfNFeABI_id)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_nINCRA
+msgid ""
+"Número do INCRA (G08). Tag renomeada de nIncra para nINCRA pela NT 2026.001."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_nIPTU
+msgid ""
+"Número do IPTU (G06). Tag renomeada de nIptu para nIPTU pela NT 2026.001."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_nRIP
+msgid "Número do RIP (G08b - NT 2026.001). Obrigatório quando indRIP=1."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_detOper
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_detOper
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_detOper
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_detOper
+msgid "Operation Detail"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_modOper
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_modOper
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_modOper
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_modOper
+msgid "Operation Mode"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_natOper
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_natOper
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_natOper
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_natOper
+msgid "Operation Nature (nfeabi_natOper)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_xOutrosInst
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_xOutrosInst
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_xOutrosInst
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_xOutrosInst
+#, python-format
+msgid "Other Instrument"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_xOutrosEspecies
+msgid "Other Kind"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__partner_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__partner_id
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__partner_id
+msgid "Partner"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_pAquisicao
+msgid "Percentual de Aquisição"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_pAquisicao
+msgid "Percentual de Aquisição (campo F18 do MOC)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi_environment__1
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__res_company__nfeabi_environment__1
+msgid "Production"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_imovel
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_imovel
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_property_form_view
+#, python-format
+msgid "Property"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vRedAjusteImovel
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vRedAjusteImovel
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vRedAjusteImovel
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vRedAjusteImovel
+msgid "Property Adjustment Reducer"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_enquadramento
+msgid "Property Class"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_espImovel
+msgid "Property Kind"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_tipo
+msgid "Property Type"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_nRIP
+msgid "RIP Number"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tginftribtransic__nfeabi10_xNome
+msgid "Razão Social ou Nome do contribuinte"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_nfeabi_10_tginftribtransic__nfeabi10_xNome
+msgid "Razão Social ou Nome do contribuinte (UA04)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.actions.act_window,name:l10n_br_nfeabi.nfeabi_property_action
+#: model:ir.ui.menu,name:l10n_br_nfeabi.nfeabi_property_menu
+msgid "Real Estate Properties"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_document_form_view
+msgid "Reducers"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_matricTransc
+msgid "Registration Number"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_property_form_view
+msgid "Registry"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_cartorioRegistro
+msgid "Registry Office"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_tipo__2
+msgid "Rural"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__sequence
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__sequence
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_pTransImovel
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_pTransImovel
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_pTransImovel
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_pTransImovel
+msgid ""
+"Share of the property transferred by the whole operation (pTransImovel), "
+"informed only in the complete NF-e ABI."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__transfer_percent
+msgid ""
+"Share of the property transferred by this transmitter, in percent "
+"(pTransIndiv). Informed only in the complete NF-e ABI."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_fiscal_document__nfeabi10_tpNF__0
+msgid "Simplified"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_tpNF
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_tpNF
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_tpNF
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_tpNF
+msgid ""
+"Simplified: the operation covers the whole property and has a single "
+"transmitter. Complete: part of the property or more than one transmitter (NT"
+" 2026.001, B08)."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vRedSocial
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vRedSocial
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vRedSocial
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vRedSocial
+msgid "Social Reducer"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vRedSocial
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_vRedSocial
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_vRedSocial
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vRedSocial
+msgid ""
+"Social reducer (art. 259 of the LC 214/2025): R$ 100,000.00 for a new "
+"residential property or R$ 30,000.00 for a residential lot, updated by the "
+"IPCA since 01/16/2025. Informing it asks for the reducer; it is used only "
+"once per property."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_uAreaTotal__m2
+msgid "Square meters (m2)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__state_id
+msgid "State"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_UF
+msgid "State Code"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__street_name
+msgid "Street Name"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_xLgr
+msgid "Street Name (nfeabi_xLgr)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__street_number
+msgid "Street Number"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_nro
+msgid "Street Number (nfeabi_nro)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__street2
+msgid "Street2"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_xCpl
+msgid "Street2 (nfeabi_xCpl)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tautxml
+msgid "TAutXML"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tdetpagimovel
+msgid "TDetPagImovel"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tdetpagincorplote
+msgid "TDetPagIncorpLote"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tgcont
+msgid "TGCont"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tgincorplote
+msgid "TGIncorpLote"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tinfnfesupl
+msgid "TInfNFeSupl"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tnfref
+msgid "TNFref"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tobs
+msgid "TObs"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_nfeabi_10_tpag
+msgid "TPag"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "Tax Classification (cClassTrib)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_emit
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_emit
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_emit
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_emit
+msgid "Technical Field."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tinfnfesupl__nfeabi10_qrCode
+msgid "Texto com o QR-Code impresso"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_nfeabi_10_tinfnfesupl__nfeabi10_qrCode
+msgid ""
+"Texto com o QR-Code impresso no DANFE-ABI (ZX02). Tamanho máximo alterado de"
+" 600 para 1000 pela NT 2026.001 (contingência off-line com parâmetro sign)."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid ""
+"The NF-e ABI transmission to the tax authority is not available yet, so the "
+"NF-e ABI cannot be cancelled from Odoo."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid ""
+"The NF-e ABI transmission to the tax authority is not available yet. Use the"
+" signed XML of the document authorization event."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "The company as one of the transmitters (declarant)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid ""
+"The complete NF-e ABI needs the transferred share of the property and of "
+"each transmitter."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid ""
+"The judicial auction, adjudication and redemption mode is not supported yet."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "The operation detail does not belong to the nature."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "The operation nature does not belong to the mode."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid ""
+"The shares of the transmitters must add up to the transferred share of the "
+"property."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "The simplified NF-e ABI accepts a single transmitter."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid ""
+"The social reducer is only allowed for a new residential property or a "
+"residential lot, out of the assignment of rights and of the exchange of real"
+" estate."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_UF
+msgid "The state code."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#. odoo-python
+#: code:addons/l10n_br_nfeabi/models/nfeabi/document.py:0
+#, python-format
+msgid "There is already a fiscal document with this key: %s"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi10_tpEmit
+msgid "Tipo do Emitente (C18)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_res_company__nfeabi10_tpEmit
+msgid ""
+"Tipo do Emitente (C18). Incluído o código 11=Instituição administradora em "
+"nome do Fundo de Investimento (FII ou Fiagro) pela NT 2026.001."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model,name:l10n_br_nfeabi.model_l10n_br_fiscal_document_line
+msgid "Tipo imposto da NFGas"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_areaTotal
+msgid "Total Area"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_uAreaTotal
+msgid "Total Area Unit"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vTotalOperacao
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vTotalOperacao
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vTotalOperacao
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vTotalOperacao
+msgid "Total Operation Amount"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__transfer_percent
+msgid "Transferred Share (%)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_pTransImovel
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_pTransImovel
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_pTransImovel
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_pTransImovel
+msgid "Transferred Share of the Property (%)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_transmit
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_transmit
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_transmit
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_transmit
+msgid ""
+"Transmitentes (E01). Ocorrência 0-99 (NT 2026.001): obrigatório para tpNF=0 "
+"ou 1; proibido para tpNF=2."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_transmit
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_transmit
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_transmit
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_transmit
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_document_form_view
+msgid "Transmitters"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_UF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_UF
+msgid "UF"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields.selection,name:l10n_br_nfeabi.selection__l10n_br_nfeabi_property__nfeabi10_tipo__1
+msgid "Urbano"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vTotalOperacao
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_vTotalOperacao
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_vTotalOperacao
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vTotalOperacao
+msgid ""
+"Valor Total da Operação (W03). Ocorrência 0-1 (NT 2026.001): não informar "
+"quando tpNF=2 (Transição) ou tpPagAnt=1 (Pagamento antecipado)."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vOperacIndiv
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_move__nfeabi10_vOperacIndiv
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_account_payment__nfeabi10_vOperacIndiv
+#: model:ir.model.fields,help:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vOperacIndiv
+msgid ""
+"Valor da Operação Individual (W04). Ocorrência 0-1 (NT 2026.001): não "
+"informar quando tpNF=2 (Transição) ou tpPagAnt=1 (Pagamento antecipado)."
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfeabi.nfeabi_document_form_view
+msgid "Values"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__zip
+msgid "Zip"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_autXML
+msgid "autXML"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_cDV
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_cDV
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_cDV
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_cDV
+msgid "cDV"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_cMun
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_cMun
+msgid "cMun"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_cNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_cNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_cNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_cNF
+msgid "cNF"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_cPais
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_cPais
+msgid "cPais"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_cUF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_cUF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_cUF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_cUF
+msgid "cUF"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tpag__nfeabi10_detPagImovel
+msgid "detPagImovel"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tpag__nfeabi10_detPagIncorpLote
+msgid "detPagIncorpLote"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgcont__nfeabi10_dhCont
+msgid "dhCont"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_dhEmi
+msgid "dhEmi"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_email
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_email
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_email
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_email
+msgid "email"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_emit
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_emit
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_emit
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_emit
+msgid "emit"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_enderAdquirente
+msgid "enderAdquirente"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi10_enderEmit
+msgid "enderEmit"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_enderImovel
+msgid "enderImovel"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__nfeabi10_enderTransmit
+msgid "enderTransmit"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_finNFe
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_finNFe
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_finNFe
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_finNFe
+msgid "finNFe"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_fone
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_fone
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_fone
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_fone
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_fone
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_fone
+msgid "fone"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_gtorna__nfeabi10_imovelTorna
+msgid "imovelTorna"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_indContrib
+msgid "indContrib"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_indDeclarante
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__nfeabi10_indDeclarante
+msgid "indDeclarante"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_property__nfeabi10_indIPTU
+msgid "indIPTU"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgincorplote__nfeabi10_indIncorpLote
+msgid "indIncorpLote"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_indIntermedCorret
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_indIntermedCorret
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_indIntermedCorret
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_indIntermedCorret
+msgid "indIntermedCorret"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_indRedSocial
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_indRedSocial
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_indRedSocial
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_indRedSocial
+msgid "indRedSocial"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_infAdFisco
+msgid "infAdFisco"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_infCpl
+msgid "infCpl"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_nAdquir
+msgid "nAdquir"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tautxml__nfeabi10_nAutXML
+msgid "nAutXML"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__nfeabi10_nCorretagem
+msgid "nCorretagem"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagimovel__nfeabi10_nDetPag
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagincorplote__nfeabi10_nDetPag
+msgid "nDetPag"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_nNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_nNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_nNF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_nNF
+msgid "nNF"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagincorplote__nfeabi10_nParcela
+msgid "nParcela"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_nSiteAutoriz
+msgid "nSiteAutoriz"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__nfeabi10_nTransmit
+msgid "nTransmit"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_nro
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_nro
+msgid "nro"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__nfeabi10_pTransIndiv
+msgid "pTransIndiv"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_pag
+msgid "pag"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_procEmi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_procEmi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_procEmi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_procEmi
+msgid "procEmi"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tnfref__nfeabi10_refNFeABI
+msgid "refNFeABI"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_serie
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_serie
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_serie
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_serie
+msgid "serie"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagimovel__nfeabi10_tPag
+msgid "tPag"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagincorplote__nfeabi10_tParcela
+msgid "tParcela"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_tpAmb
+msgid "tpAmb"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_tpEmis
+msgid "tpEmis"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_tpImp
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_tpImp
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_tpImp
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_tpImp
+msgid "tpImp"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tinfnfesupl__nfeabi10_urlChave
+msgid "urlChave"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vCBS
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vCBS
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vCBS
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vCBS
+msgid "vCBS"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vIBSMun
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vIBSMun
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vIBSMun
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vIBSMun
+msgid "vIBSMun"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vIBSUF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vIBSUF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vIBSUF
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vIBSUF
+msgid "vIBSUF"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagimovel__nfeabi10_vPag
+msgid "vPag"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vRedAjusteIndiv
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vRedAjusteIndiv
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vRedAjusteIndiv
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vRedAjusteIndiv
+msgid "vRedAjusteIndiv"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_vRedSocialIndiv
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_vRedSocialIndiv
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_vRedSocialIndiv
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_vRedSocialIndiv
+msgid "vRedSocialIndiv"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_gtorna__nfeabi10_vTorna
+msgid "vTorna"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_verProc
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_verProc
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_verProc
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_verProc
+msgid "verProc"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_versao
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_versao
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_versao
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_versao
+msgid "versao (nfeabi_versao)"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_xBairro
+msgid "xBairro"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tobs__nfeabi10_xCampo
+msgid "xCampo"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_bank_statement_line__nfeabi10_xContato
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_move__nfeabi10_xContato
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_account_payment__nfeabi10_xContato
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_fiscal_document__nfeabi10_xContato
+msgid "xContato"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_xCpl
+msgid "xCpl"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi10_xFant
+msgid "xFant"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tgcont__nfeabi10_xJust
+msgid "xJust"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_xLgr
+msgid "xLgr"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_xMun
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_xMun
+msgid "xMun"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_acquirer__nfeabi10_xNome
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_broker__nfeabi10_xNome
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_l10n_br_nfeabi_transmitter__nfeabi10_xNome
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_company__nfeabi10_xNome
+msgid "xNome"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagimovel__nfeabi10_xPag
+msgid "xPag"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_partner__nfeabi10_xPais
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_res_users__nfeabi10_xPais
+msgid "xPais"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tdetpagincorplote__nfeabi10_xParcela
+msgid "xParcela"
+msgstr ""
+
+#. module: l10n_br_nfeabi
+#: model:ir.model.fields,field_description:l10n_br_nfeabi.field_nfeabi_10_tobs__nfeabi10_xTexto
+msgid "xTexto"
+msgstr ""
