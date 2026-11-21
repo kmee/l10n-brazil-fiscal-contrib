@@ -103,6 +103,20 @@ class NFAg(spec_models.StackedModel):
         "nfag10_gPIX",
     )
 
+    def _register_hook(self):
+        """Build the concrete NFAg spec models whatever the MRO resolves to.
+
+        The hook of spec_driven_model takes the schema from the MRO: with
+        another spec driven module extending the fiscal document after this
+        one, it resolves to that schema and the NFAg models (gMed, gHistCons
+        and the other groups of the document) would get no table.
+        """
+        res = super()._register_hook()
+        self.with_context(
+            spec_schema="nfag", spec_version="10"
+        )._register_remaining_schema_models_hook()
+        return res
+
     nfag_environment = fields.Selection(
         selection=NFAG_ENVIRONMENTS,
         string="NFAg Environment",
@@ -153,7 +167,7 @@ class NFAg(spec_models.StackedModel):
         copy=False,
         default=lambda self: self.env["ir.config_parameter"]
         .sudo()
-        .get_param("l10n_br_nfag.version.name", default="Odoo Brasil OCA v18"),
+        .get_param("l10n_br_nfag.version.name", default="Odoo Brasil OCA v16"),
     )
 
     @api.depends("company_id")
@@ -351,10 +365,10 @@ class NFAg(spec_models.StackedModel):
         return edocs
 
     def _nfag_sign(self, binding, doc_id):
-        certificate = self.company_id._get_br_certificate()
+        certificate = self.company_id.sudo().certificate
         return binding.to_xml(
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=certificate.with_context(bin_size=False).file,
+            pkcs12_password=certificate.password,
             doc_id=doc_id,
         )
 
@@ -450,7 +464,10 @@ class NFAg(spec_models.StackedModel):
         check(company.vat, _("Company CNPJ"))
         check(company.state_id, _("Company State"))
         check(company.city_id, _("Company City"))
-        check(company.sudo().certificate, _("Digital Certificate"))
+        check(
+            company.sudo().certificate_nfe_id or company.sudo().certificate_ecnpj_id,
+            _("Digital Certificate"),
+        )
         check(self.partner_id, _("Customer"))
         check(self.partner_id.city_id, _("Customer City"))
         check(self.document_serie_id, _("Document Serie"))
@@ -517,12 +534,12 @@ class NFAg(spec_models.StackedModel):
 
     def _get_nfag_client(self):
         self.ensure_one()
-        certificate = self.company_id._get_br_certificate()
+        certificate = self.company_id.sudo().certificate
         return NfagClient(
             ambiente=self.nfag_environment,
             uf=self.company_id.state_id.ibge_code,
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=certificate.with_context(bin_size=False).file,
+            pkcs12_password=certificate.password,
         )
 
     def _eletronic_document_send(self):

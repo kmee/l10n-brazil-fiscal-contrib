@@ -8,7 +8,11 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook/page[@name='products']" position="after">
-                <page name="nfag" string="NFAg" invisible="document_type != '75'">
+                <page
+                    name="nfag"
+                    string="NFAg"
+                    attrs="{'invisible': [('document_type', '!=', '75')]}"
+                >
                     <group>
                         <group name="nfag_ide" string="Emission">
                             <field name="nfag_environment" />
@@ -47,33 +51,33 @@
                     </group>
                     <separator string="Water Meters" />
                     <field name="nfag10_gMed">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="nfag10_nMed" />
                             <field name="nfag10_idMedidor" />
                             <field name="nfag10_dMedAnt" />
                             <field name="nfag10_dMedAtu" />
-                        </list>
+                        </tree>
                     </field>
                     <separator string="Consumption History" />
                     <field name="nfag10_gHistCons">
-                        <list>
+                        <tree>
                             <field name="nfag10_xHistorico" />
                             <field name="nfag10_medMensal" />
-                        </list>
+                        </tree>
                         <form>
                             <group>
                                 <field name="nfag10_xHistorico" />
                                 <field name="nfag10_medMensal" />
                             </group>
                             <field name="nfag10_gCons">
-                                <list editable="bottom">
+                                <tree editable="bottom">
                                     <field name="nfag10_CompetFat" />
                                     <field name="nfag10_uMed" />
                                     <field name="nfag10_qtdDias" />
                                     <field name="nfag10_medDiaria" />
                                     <field name="nfag10_consumo" />
                                     <field name="nfag10_volFat" />
-                                </list>
+                                </tree>
                             </field>
                         </form>
                     </field>
@@ -88,7 +92,11 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_line_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook/page[@name='general']" position="after">
-                <page name="nfag" string="NFAg" invisible="nfag_document_type != '75'">
+                <page
+                    name="nfag"
+                    string="NFAg"
+                    attrs="{'invisible': [('nfag_document_type', '!=', '75')]}"
+                >
                     <group>
                         <field name="nfag_document_type" invisible="1" />
                         <field name="nfag10_cClass" />

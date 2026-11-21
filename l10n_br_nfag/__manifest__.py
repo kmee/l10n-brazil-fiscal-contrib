@@ -4,7 +4,7 @@
 {
     "name": "NFAg",
     "summary": "Nota Fiscal de Água e Saneamento Eletrônica (NFAg, modelo 75)",
-    "version": "18.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",
