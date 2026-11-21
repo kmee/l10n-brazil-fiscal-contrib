@@ -88,11 +88,6 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfe_veic
-#: model:ir.model,name:l10n_br_nfe_veic.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfe_veic
 #: model:ir.model,name:l10n_br_nfe_veic.model_account_move_line
 msgid "Journal Item"
 msgstr ""
@@ -213,6 +208,11 @@ msgstr ""
 #: code:addons/l10n_br_nfe_veic/models/nfe_veicprod.py:0
 #, python-format
 msgid "The chassis (VIN) must have 17 capital letters or digits."
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model,name:l10n_br_nfe_veic.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_nfe_veic
