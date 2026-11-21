@@ -9,6 +9,7 @@
     "category": "Localisation",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",
+    "maintainers": ["mileo"],
     "website": "https://github.com/kmee/l10n-brazil-fiscal-contrib",
     "development_status": "Beta",
     "depends": [
