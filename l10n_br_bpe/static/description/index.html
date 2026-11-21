@@ -406,6 +406,13 @@ resposta em <tt class="docutils literal">bpeResultMsg</tt>, sem cabeçalho SOAP.
 autorizadores (MG, MS, MT, PR, SP e SVRS para as demais UFs) e do QR
 Code são os do Portal BP-e
 (<a class="reference external" href="https://dfe-portal.svrs.rs.gov.br/BPe/Servicos">https://dfe-portal.svrs.rs.gov.br/BPe/Servicos</a>).</p>
+<p>O modelo 63 tem mais dois leiautes, emitidos por módulos próprios que
+dependem deste: o BP-e TM (transporte metropolitano e semiurbano com
+catraca ou contador, NT 2020.002), no <tt class="docutils literal">l10n_br_bpe_tm</tt>, e o BP-e TA
+(transporte aéreo, NT 2025.002), no <tt class="docutils literal">l10n_br_bpe_ta</tt>. O campo “BP-e
+Layout” do documento escolhe o leiaute, e o cliente de webservice já
+traz os serviços <tt class="docutils literal">BPeRecepcaoTM</tt> (MG e SVRS) e <tt class="docutils literal">BPeRecepcaoTA</tt>
+(SVRS) publicados no Portal BP-e.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">This is an alpha version, the data model and design can change at any time without warning.
@@ -467,10 +474,6 @@ mão).</li>
 trocados na página de serviços (MG: Consulta aponta para produção e
 StatusServico para BPeConsulta; MS: Consulta aponta para MG). Foram
 mantidos como publicados.</li>
-<li>BP-e TM (transporte metropolitano, serviço <tt class="docutils literal">BPeRecepcaoTM</tt>) e BP-e
-TA (transporte aéreo, <tt class="docutils literal">BPeRecepcaoTA</tt>, NT 2025.002): os modelos
-estão no <tt class="docutils literal">l10n_br_bpe_spec</tt>, mas a emissão tem estrutura própria (TM
-agrupa as viagens por catraca no <tt class="docutils literal">detBPeTM</tt>) e não foi feita.</li>
 <li>Contingência off-line (<tt class="docutils literal">tpEmis</tt> 2): QR Code com o parâmetro <tt class="docutils literal">sign</tt>
 (MOC item 10.2), <tt class="docutils literal">dhCont</tt> e <tt class="docutils literal">xJust</tt>.</li>
 <li>BP-e de substituição (<tt class="docutils literal">tpBPe</tt> 3, <tt class="docutils literal">infBPeSub</tt>) e os eventos de

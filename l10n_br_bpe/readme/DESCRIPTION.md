@@ -32,3 +32,11 @@ A transmissão usa um cliente próprio (`bpe_client`), sobre o
 `bpeResultMsg`, sem cabeçalho SOAP. Os endereços dos autorizadores (MG, MS, MT,
 PR, SP e SVRS para as demais UFs) e do QR Code são os do Portal BP-e
 (https://dfe-portal.svrs.rs.gov.br/BPe/Servicos).
+
+O modelo 63 tem mais dois leiautes, emitidos por módulos próprios que
+dependem deste: o BP-e TM (transporte metropolitano e semiurbano com catraca
+ou contador, NT 2020.002), no `l10n_br_bpe_tm`, e o BP-e TA (transporte
+aéreo, NT 2025.002), no `l10n_br_bpe_ta`. O campo "BP-e Layout" do documento
+escolhe o leiaute, e o cliente de webservice já traz os serviços
+`BPeRecepcaoTM` (MG e SVRS) e `BPeRecepcaoTA` (SVRS) publicados no Portal
+BP-e.
