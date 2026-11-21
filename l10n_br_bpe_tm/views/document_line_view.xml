@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="bpe_tm_document_line_form_view" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.document.line.form (in l10n_br_bpe_tm)</field>
+        <field name="model">l10n_br_fiscal.document.line</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_line_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page
+                    name="bpe_tm"
+                    string="BP-e TM"
+                    attrs="{'invisible': [('bpe_layout', '!=', 'tm')]}"
+                >
+                    <field name="bpe_layout" invisible="1" />
+                    <group>
+                        <group name="bpe_tm_equipment" string="Counter Equipment">
+                            <field name="bpe_tm_equipment" />
+                            <field name="bpe_tm_plate" />
+                            <field name="bpe_tm_line_prefix" />
+                        </group>
+                        <group name="bpe_tm_trip" string="Trip">
+                            <field name="bpe_tm_trip" />
+                            <field name="bpe_tm_start_city_id" />
+                            <field name="bpe_tm_end_city_id" />
+                            <field name="bpe_tm_counter_start" />
+                            <field name="bpe_tm_counter_end" />
+                        </group>
+                    </group>
+                    <field name="bpe_tm_component_ids">
+                        <tree editable="bottom">
+                            <field name="name" />
+                            <field name="quantity" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
