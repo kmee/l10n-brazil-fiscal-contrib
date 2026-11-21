@@ -1,0 +1,128 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfse_nacional_obra
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_account_bank_statement_line__nfse_obra_partner_id
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_account_move__nfse_obra_partner_id
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_account_payment__nfse_obra_partner_id
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_l10n_br_fiscal_document__nfse_obra_partner_id
+msgid "Address of the construction work of the NFS-e (infoObra group)."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_res_partner__nfse_cib
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_res_users__nfse_cib
+msgid ""
+"Brazilian Real Estate Registry code (Cadastro Imobiliario Brasileiro) of "
+"this address: 7 characters and the check digit."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_res_partner__nfse_cib
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_res_users__nfse_cib
+msgid "CIB"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_res_partner__nfse_cno
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_res_users__nfse_cno
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse_nacional_obra.document_form
+msgid "CNO/CEI"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_bank_statement_line__civil_construction_code
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_move__civil_construction_code
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_payment__civil_construction_code
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_l10n_br_fiscal_document__civil_construction_code
+msgid "Civil Construction Code"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_bank_statement_line__nfse_obra_partner_id
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_move__nfse_obra_partner_id
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_payment__nfse_obra_partner_id
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_l10n_br_fiscal_document__nfse_obra_partner_id
+msgid "Construction Site"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_bank_statement_line__nfse_obra_cib
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_move__nfse_obra_cib
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_payment__nfse_obra_cib
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_l10n_br_fiscal_document__nfse_obra_cib
+msgid "Construction Site CIB"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_bank_statement_line__nfse_obra_insc_imob_fisc
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_move__nfse_obra_insc_imob_fisc
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_account_payment__nfse_obra_insc_imob_fisc
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_l10n_br_fiscal_document__nfse_obra_insc_imob_fisc
+msgid "Construction Site Real Estate Registration"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse_nacional_obra.document_form
+msgid "Construction Work"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_res_partner__nfse_cno
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_res_users__nfse_cno
+msgid ""
+"Construction work registration (Cadastro Nacional de Obras, or the former "
+"CEI) of this address, reported as cObra in the NFS-e Nacional."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model,name:l10n_br_nfse_nacional_obra.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model,name:l10n_br_nfse_nacional_obra.model_l10n_br_fiscal_document_line
+msgid ""
+"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
+"não contribuinte de ICMS"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model,name:l10n_br_nfse_nacional_obra.model_l10n_br_fiscal_document
+msgid "Informações de exportação"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_res_partner__nfse_insc_imob_fisc
+#: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_res_users__nfse_insc_imob_fisc
+msgid "Municipal Real Estate Registration"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_res_partner__nfse_insc_imob_fisc
+#: model:ir.model.fields,help:l10n_br_nfse_nacional_obra.field_res_users__nfse_insc_imob_fisc
+msgid ""
+"Registration given by the municipality to identify the construction work or "
+"the property for the IPTU."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#. odoo-python
+#: code:addons/l10n_br_nfse_nacional_obra/models/document_line.py:0
+#, python-format
+msgid ""
+"The service %(code)s of %(document)s is a construction work: inform its CNO,"
+" CIB or address (rule E0370 of the NFS-e Nacional)."
+msgstr ""
