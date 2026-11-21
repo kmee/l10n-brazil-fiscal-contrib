@@ -32,6 +32,11 @@ msgid "CNPJ or CPF"
 msgstr ""
 
 #. module: l10n_br_nfe_retirada
+#: model:ir.model,name:l10n_br_nfe_retirada.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_nfe_retirada
 #: model:ir.model.fields,field_description:l10n_br_nfe_retirada.field_account_bank_statement_line__nfe40_retirada
 #: model:ir.model.fields,field_description:l10n_br_nfe_retirada.field_account_move__nfe40_retirada
 #: model:ir.model.fields,field_description:l10n_br_nfe_retirada.field_account_payment__nfe40_retirada
@@ -53,11 +58,6 @@ msgstr ""
 msgid ""
 "The pickup address is not accepted in the NFC-e nor in the NF-e with the "
 "simplified DANFE."
-msgstr ""
-
-#. module: l10n_br_nfe_retirada
-#: model:ir.model,name:l10n_br_nfe_retirada.model_l10n_br_fiscal_document
-msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_nfe_retirada
