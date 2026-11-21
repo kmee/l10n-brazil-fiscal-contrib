@@ -204,7 +204,7 @@ class BPe(spec_models.StackedModel):
     bpe10_verProc = fields.Char(
         default=lambda self: self.env["ir.config_parameter"]
         .sudo()
-        .get_param("l10n_br_bpe.version.name", default="Odoo Brasil OCA v18")
+        .get_param("l10n_br_bpe.version.name", default="Odoo Brasil OCA v16")
     )
 
     bpe10_tpBPe = fields.Selection(default="0")
@@ -579,11 +579,21 @@ class BPe(spec_models.StackedModel):
             )
         return edocs
 
+    def _get_bpe_certificate(self):
+        """PKCS#12 data (the base64 value of the Binary field, as nfelib and
+        brazil_fiscal_client take it) and password of the company certificate.
+        The certificate compute raises when the company has none."""
+        certificate = self.company_id.sudo().certificate
+        return (
+            certificate.with_context(bin_size=False).file,
+            certificate.password,
+        )
+
     def _bpe_sign(self, binding, doc_id):
-        certificate = self.company_id._get_br_certificate()
+        pkcs12_data, pkcs12_password = self._get_bpe_certificate()
         return binding.to_xml(
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=pkcs12_data,
+            pkcs12_password=pkcs12_password,
             doc_id=doc_id,
         )
 
@@ -619,12 +629,12 @@ class BPe(spec_models.StackedModel):
 
     def _get_bpe_client(self):
         self.ensure_one()
-        certificate = self.company_id._get_br_certificate()
+        pkcs12_data, pkcs12_password = self._get_bpe_certificate()
         return BpeClient(
             ambiente=self.bpe_environment,
             uf=self.company_id.state_id.ibge_code,
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=pkcs12_data,
+            pkcs12_password=pkcs12_password,
         )
 
     def _eletronic_document_send(self):
@@ -840,7 +850,11 @@ class BPe(spec_models.StackedModel):
         checks = [
             (self.company_id.vat, _("Company CNPJ")),
             (self.company_id.state_id, _("Company State")),
-            (self.company_id.sudo().certificate, _("Digital Certificate")),
+            (
+                self.company_id.sudo().certificate_nfe_id
+                or self.company_id.sudo().certificate_ecnpj_id,
+                _("Digital Certificate"),
+            ),
             (self.bpe_environment, _("BP-e Environment")),
             (self.bpe10_cLocOrig and self.bpe_origin_city_id, _("Origin City")),
             (

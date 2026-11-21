@@ -71,7 +71,7 @@ class TestBpe(TransactionCase):
             }
         )
         cls.product = cls.env["product.product"].create(
-            {"name": "Passagem Sao Paulo x Rio de Janeiro", "type": "service"}
+            {"name": "Passagem Sao Paulo x Rio de Janeiro", "detailed_type": "service"}
         )
         cls.document = cls.env["l10n_br_fiscal.document"].create(
             {
