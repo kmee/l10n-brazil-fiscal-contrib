@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -40,6 +40,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Authorization Protocol Not Found!"
 msgstr ""
 
@@ -93,8 +94,10 @@ msgstr ""
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe_environment
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe_environment
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe_environment
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe_environment
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_res_company__bpe_environment
+#, python-format
 msgid "BP-e Environment"
 msgstr ""
 
@@ -112,18 +115,21 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "BP-e cancellation refused: %(code)s - %(reason)s"
 msgstr ""
 
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "BP-e no boarding event refused: %(code)s - %(reason)s"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xBairro
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_xBairro
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xBairro
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xBairro
 msgid "Bairro"
@@ -146,6 +152,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Boarding Date"
 msgstr ""
 
@@ -197,6 +204,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_CEP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_CEP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_CEP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_CEP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CEP
 msgid "CEP"
@@ -212,6 +220,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_CEP
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_CEP
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_CEP
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CEP
 msgid ""
 "CEP\n"
@@ -221,6 +230,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_CNAE
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_CNAE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_CNAE
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CNAE
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CNAE
 msgid "CNAE Fiscal"
@@ -269,6 +279,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_CNPJ
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_CNPJ
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_CNPJ
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CNPJ
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CNPJ
@@ -278,6 +289,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_CNPJ
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_CNPJ
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_CNPJ
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_CNPJ
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CNPJ
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CNPJ
@@ -344,18 +356,21 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Company CNPJ"
 msgstr ""
 
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Company State"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xCpl
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_xCpl
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xCpl
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xCpl
 msgid "Complemento"
@@ -371,7 +386,6 @@ msgstr ""
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infvalorbpe_comp
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_comp
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_Comp
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_Comp
 msgid "Componentes do Valor do Bilhete"
 msgstr ""
 
@@ -413,6 +427,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cLocOrig
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cLocOrig
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cLocOrig
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cLocOrig
 msgid "Código da Localidade de Origem"
 msgstr ""
@@ -420,6 +435,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cUF
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cUF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cUF
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cUF
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cUF
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cUF
@@ -429,6 +445,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_cUF
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_cUF
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_cUF
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cUF
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cUF
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cUF
@@ -441,6 +458,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_CRT
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_CRT
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_CRT
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_CRT
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CRT
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CRT
@@ -450,6 +468,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_CRT
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_CRT
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_CRT
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_CRT
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_CRT
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_CRT
@@ -463,19 +482,18 @@ msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_cDesconto
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDesconto
 msgid "Código do desconto quando informado"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_cDesconto
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDesconto
 msgid "Código do desconto quando informado com tipo 99 - Outros"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cMun
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cMun
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cMun
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_cMun
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cMun
 msgid "Código do município"
@@ -484,6 +502,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_cMun
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_cMun
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_cMun
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cMun
 msgid "Código do município (utilizar a tabela do IBGE)"
 msgstr ""
@@ -498,6 +517,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cMunFim
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cMunFim
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cMunFim
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_cMunFim
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cMunFim
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cMunFim
@@ -507,6 +527,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cMunIni
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cMunIni
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cMunIni
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_det__bpe10_cMunIni
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cMunIni
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cMunIni
@@ -549,6 +570,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cBP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cBP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cBP
 msgid "Código numérico que compõe a Chave (bpe_cBP)"
 msgstr ""
@@ -556,6 +578,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_cBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_cBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_cBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cBP
@@ -629,15 +652,9 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_dhCont
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_dhCont
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhCont
 msgid ""
 "Data e Hora da entrada em contingência\n"
 "Informar a data e hora no formato AAAA-MM-DDTHH:MM:SS"
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhCont
-msgid "Data e Hora da entrada em contingência (bpe_dhCont)"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -657,13 +674,11 @@ msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_dhEmb
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhEmb
 msgid "Data e hora de embarque"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_dhEmb
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhEmb
 msgid ""
 "Data e hora de embarque\n"
 "Formato AAAA-MM-DDTHH:MM:DD TZD"
@@ -672,6 +687,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_dhEmi
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_dhEmi
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_dhEmi
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_dhEmi
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhEmi
@@ -681,6 +697,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_dhEmi
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_dhEmi
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_dhEmi
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_dhEmi
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_dhEmi
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhEmi
@@ -715,13 +732,11 @@ msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_dhValidade
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhValidade
 msgid "Data e hora de validade do bilhete"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_dhValidade
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_dhValidade
 msgid ""
 "Data e hora de validade do bilhete\n"
 "Formato AAAA-MM-DDTHH:MM:DD TZD"
@@ -741,6 +756,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xLocDest
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xLocDest
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_xLocDest
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xLocDest
 msgid "Descrição da Localidade de Destino"
 msgstr ""
@@ -748,6 +764,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xLocOrig
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xLocOrig
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_xLocOrig
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xLocOrig
 msgid "Descrição da Localidade de Origem"
 msgstr ""
@@ -783,13 +800,11 @@ msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_xDesconto
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xDesconto
 msgid "Descrição do tipo"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_xDesconto
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xDesconto
 msgid "Descrição do tipo de desconto/benefício concedido"
 msgstr ""
 
@@ -809,7 +824,9 @@ msgstr ""
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe_destination_city_id
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe_destination_city_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe_destination_city_id
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe_destination_city_id
+#, python-format
 msgid "Destination City"
 msgstr ""
 
@@ -828,31 +845,30 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Digital Certificate"
 msgstr ""
 
 #. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cDV
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cDV
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cDV
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cDV
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cDV
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDV
 msgid "Digito verificador da chave de acesso"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_cDV
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_cDV
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_cDV
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cDV
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cDV
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDV
 msgid ""
 "Digito verificador da chave de acesso\n"
 "Informar o dígito  de controle da chave de acesso do BP-e, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso."
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cDV
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cDV
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDV
-msgid "Digito verificador da chave de acesso (bpe_cDV)"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -894,6 +910,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_email
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_email
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_email
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpe_infpassageiro__bpe10_email
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassageiro__bpe10_email
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_email
@@ -921,20 +938,15 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid ""
 "Fill in the required BP-e fields:\n"
 "- %s"
 msgstr ""
 
 #. module: l10n_br_bpe
-#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard__document_id
 msgid "Fiscal Document"
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document_line
-msgid "Fiscal Document Line"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -959,6 +971,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpEmis
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_tpEmis
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpEmis
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpEmis
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpEmis
@@ -968,6 +981,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpEmis
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_tpEmis
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_tpEmis
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpEmis
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpEmis
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpEmis
@@ -975,6 +989,13 @@ msgid ""
 "Forma de emissão do Bilhete (Normal ou Contingência Off-Line)\n"
 "1 - Normal\n"
 "; 2 - Contingência Off-Line"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document_line
+msgid ""
+"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
+"não contribuinte de ICMS"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -989,11 +1010,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_gCompraGov
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_gCompraGov
 msgid "Grupo de Compras Governamentais"
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_gCompraGov
-msgid "Grupo de Compras Governamentais (bpe_gCompraGov)"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -1043,11 +1059,6 @@ msgid "Grupo de informações do IBS e CBS"
 msgstr ""
 
 #. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IBSCBS
-msgid "Grupo de informações do IBS e CBS (bpe_IBSCBS)"
-msgstr ""
-
-#. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tresptec__bpe10_hashCSRT
 msgid "Hash do token do código de segurança"
 msgstr ""
@@ -1071,6 +1082,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "ICMS CST %(cst)s is not supported in the BP-e."
 msgstr ""
 
@@ -1093,6 +1105,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_Id
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_Id
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_Id
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_Id
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_Id
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_Id
@@ -1104,6 +1117,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_Id
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_Id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_Id
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_Id
 msgid "Identificador da tag a ser assinada (bpe_Id)"
 msgstr ""
@@ -1139,12 +1153,8 @@ msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_agencia
-msgid "Identificação"
-msgstr ""
-
-#. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_agencia
-msgid "Identificação (bpe_agencia)"
+msgid "Identificação"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -1222,6 +1232,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_indPres
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_indPres
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_indPres
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_indPres
 msgid "Indicador de presença do comprador (bpe_indPres)"
 msgstr ""
@@ -1229,6 +1240,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_indPres
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_indPres
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_indPres
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_indPres
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_indPres
 msgid ""
@@ -1259,12 +1271,8 @@ msgstr ""
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_infadic
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infAdic
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_infAdic
-msgid "Informações Adicionais"
-msgstr ""
-
-#. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdic
-msgid "Informações Adicionais (bpe_infAdic)"
+msgid "Informações Adicionais"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -1277,17 +1285,11 @@ msgid "Informações adicionais de interesse"
 msgstr ""
 
 #. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdFisco
-msgid "Informações adicionais de interesse (bpe_infAdFisco)"
-msgstr ""
-
-#. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpe_infadic__bpe10_infAdFisco
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_imp__bpe10_infAdFisco
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infadic__bpe10_infAdFisco
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_imp__bpe10_infAdFisco
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infadic__bpe10_infAdFisco
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdFisco
 msgid ""
 "Informações adicionais de interesse do Fisco\n"
 "Norma referenciada, informações complementares, etc"
@@ -1333,24 +1335,12 @@ msgid "Informações do BPe Aereo"
 msgstr ""
 
 #. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_ICMSUFFim
-msgid "Informações do ICMS de partilha com a UF"
-msgstr ""
-
-#. module: l10n_br_bpe
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_icmsuffim
 msgid ""
 "Informações do ICMS de partilha com a UF de término do serviço de\n"
 "transporte na operação interestadual\n"
 "Grupo a ser informado nas prestações interestaduais para consumidor final, não\n"
 "contribuinte do ICMS"
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_ICMSUFFim
-msgid ""
-"Informações do ICMS de partilha com a UF de término do serviço de transporte na operação interestadual\n"
-"Grupo a ser informado nas prestações interestaduais para consumidor final, não contribuinte do ICMS"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -1392,7 +1382,6 @@ msgstr ""
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_infpassageiro
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infpassageiro
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infpassagem__bpe10_infPassageiro
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infPassageiro
 msgid "Informações do passageiro"
 msgstr ""
 
@@ -1481,19 +1470,14 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IEST
-msgid "Inscrição Estadual (bpe_IEST)"
-msgstr ""
-
-#. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_IEST
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IEST
 msgid "Inscrição Estadual do Substituto Tributário"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_IE
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_IE
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_IE
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_IE
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_IE
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IE
@@ -1503,6 +1487,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_IM
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_IM
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_IM
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_IM
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_IM
 msgid "Inscrição Municipal"
@@ -1511,14 +1496,12 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_ISUFEmit
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_ISUFEmit
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_ISUFEmit
 msgid "Inscrição do emitente da Suframa"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_ISUFEmit
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_ISUFEmit
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_ISUFEmit
 msgid ""
 "Inscrição do emitente da Suframa\n"
 "Informar o número do Cadastro do emitente na Suframa. Campo obrigatório nas operações que se beneficiam de incentivos fiscais existentes nas áreas sob controle da SUFRAMA com alíquota zero da CBS referente aos arts. 451 e 466 da LC 214/25"
@@ -1546,8 +1529,8 @@ msgid "Justificativa da entrada em contingência"
 msgstr ""
 
 #. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xJust
-msgid "Justificativa da entrada em contingência (bpe_xJust)"
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_bpe_no_boarding_wizard____last_update
+msgid "Last Modified on"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -1563,6 +1546,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xLgr
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_xLgr
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xLgr
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xLgr
 msgid "Logradouro"
@@ -1578,6 +1562,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_modal
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_modal
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_modal
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_modal
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_modal
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_modal
@@ -1587,6 +1572,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_modal
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_modal
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_modal
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_modal
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_modal
 msgid ""
@@ -1604,6 +1590,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_mod
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_mod
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_mod
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_mod
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_mod
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_mod
@@ -1613,6 +1600,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_mod
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_mod
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_mod
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_mod
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_mod
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_mod
@@ -1715,6 +1703,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xMun
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xMun
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_xMun
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_xMun
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xMun
 msgid "Nome do município"
@@ -1733,6 +1722,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xFant
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xFant
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_xFant
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_xFant
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_xFant
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xFant
@@ -1742,6 +1732,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_nro
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_nro
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_nro
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_nro
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_nro
 msgid "Número"
@@ -1821,6 +1812,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_nBP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_nBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_nBP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_nBP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_nBP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_nBP
@@ -1830,6 +1822,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_nBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_nBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_nBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_nBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_nBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_nBP
@@ -1874,7 +1867,9 @@ msgstr ""
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe_origin_city_id
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe_origin_city_id
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe_origin_city_id
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe_origin_city_id
+#, python-format
 msgid "Origin City"
 msgstr ""
 
@@ -1891,12 +1886,14 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Passenger (interstate trip)"
 msgstr ""
 
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Payment Information"
 msgstr ""
 
@@ -1964,6 +1961,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_xNome
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_xNome
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_xNome
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_emit__bpe10_xNome
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_xNome
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_xNome
@@ -1988,6 +1986,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_UF
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_UF
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_UF
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tendereco__bpe10_UF
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UF
 msgid "Sigla da UF"
@@ -1996,6 +1995,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_UFIni
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_UFIni
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_UFIni
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_UFIni
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UFIni
 msgid "Sigla da UF Início da Viagem"
@@ -2004,6 +2004,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_UFIni
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_UFIni
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_UFIni
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_UFIni
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UFIni
 msgid ""
@@ -2014,6 +2015,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_UFFim
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_UFFim
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_UFFim
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_UFFim
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UFFim
 msgid "Sigla da UF do Fim da Viagem"
@@ -2022,6 +2024,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_UFFim
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_UFFim
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_UFFim
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_UFFim
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_UFFim
 msgid ""
@@ -2082,27 +2085,25 @@ msgid "Status"
 msgstr ""
 
 #. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_serie
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_serie
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_serie
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_serie
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_serie
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_serie
 msgid "Série do documento fiscal"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_serie
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_serie
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_serie
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_serie
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_serie
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_serie
 msgid ""
 "Série do documento fiscal\n"
 "Informar a série do documento fiscal (informar zero se inexistente)."
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_serie
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_serie
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_serie
-msgid "Série do documento fiscal (bpe_serie)"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -2115,6 +2116,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_fone
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_fone
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_fone
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_fone
 msgid "Telefone (bpe_fone)"
 msgstr ""
@@ -2133,15 +2135,7 @@ msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_emit__bpe10_TAR
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_TAR
 msgid "Termo de Autorização de Serviço Regular"
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_TAR
-msgid ""
-"Termo de Autorização de Serviço Regular\n"
-"Registro obrigatório do emitente do BP-e junto à ANTT para exercer a atividade"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -2172,12 +2166,14 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "The QR Code of a BP-e issued in contingency is not supported yet."
 msgstr ""
 
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Ticket Validity Date"
 msgstr ""
 
@@ -2194,6 +2190,11 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tendereco
 msgid "Tipo Dados do Endereço"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -2331,30 +2332,7 @@ msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_tpDesconto
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpDesconto
 msgid "Tipo de desconto/benefício para o BP-e"
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpDesconto
-msgid ""
-"Tipo de desconto/benefício para o BP-e\n"
-"01 - Tarifa promocional\n"
-"02 - Idoso\n"
-"03 - Criança\n"
-"04 - Deficiente\n"
-"05 - Estudante\n"
-"06 - Animal Doméstico\n"
-"07 - Acordo Coletivo\n"
-"08 - Profissional em Deslocamento\n"
-"09 - Profissional da Empresa\n"
-"10 - Jovem \n"
-"11 - Idoso 50%\n"
-"\n"
-"12 - Acompanhante PCD;\n"
-"\n"
-"13 - Pessoa Obesa\n"
-"99 - Outros"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -2393,6 +2371,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpAmb
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_tpAmb
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_tpAmb
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpAmb
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpAmb
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpAmb
@@ -2405,6 +2384,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpAmb
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_tpAmb
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpAmb
 msgid "Tipo do Ambiente (bpe_tpAmb)"
 msgstr ""
@@ -2412,6 +2392,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpBPe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_tpBPe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_tpBPe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_tpBPe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_tpBPe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpBPe
@@ -2429,6 +2410,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_tpBPe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_tpBPe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_tpBPe
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_tpBPe
 msgid ""
 "Tipo do BP-e\n"
@@ -2545,6 +2527,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid ""
 "To generate the BP-e key, fill the CNPJ and the State of the company %s."
 msgstr ""
@@ -2573,6 +2556,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Trip Information"
 msgstr ""
 
@@ -2607,6 +2591,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vTotTrib
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vTotTrib
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_vTotTrib
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vTotTrib
 msgid "Valor Total dos Tributos (bpe_vTotTrib)"
 msgstr ""
@@ -2631,6 +2616,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vBP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vBP
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_vBP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vBP
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vBP
 msgid "Valor do Bilhete de Passagem"
@@ -2639,6 +2625,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_vBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_vBP
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_vBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vBP
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vBP
 msgid ""
@@ -2693,6 +2680,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vDesconto
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vDesconto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_vDesconto
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vDesconto
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vDesconto
 msgid "Valor do desconto concedido ao comprador"
@@ -2701,6 +2689,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_vDesconto
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_vDesconto
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_vDesconto
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vDesconto
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vDesconto
 msgid ""
@@ -2711,13 +2700,13 @@ msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vTroco
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vTroco
 msgid "Valor do troco"
 msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vPgto
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vPgto
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_vPgto
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vPgto
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vPgto
 msgid "Valor pago pelo BP-e"
@@ -2726,6 +2715,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_vPgto
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_vPgto
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_vPgto
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infvalorbpe__bpe10_vPgto
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vPgto
 msgid "Valor pago pelo BP-e (vBP - vDesconto)"
@@ -2751,6 +2741,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_vTotDFe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_vTotDFe
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_vTotDFe
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_total__bpe10_vTotDFe
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vTotDFe
 msgid ""
@@ -2768,6 +2759,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_vTotDFe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_vTotDFe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_vTotDFe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_vTotDFe
 msgid "Valor total do documento fiscal (bpe_vTotDFe)"
 msgstr ""
@@ -2775,6 +2767,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #. odoo-python
 #: code:addons/l10n_br_bpe/models/bpe/document.py:0
+#, python-format
 msgid "Value Components (fiscal lines)"
 msgstr ""
 
@@ -2802,6 +2795,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_versao
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_versao
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_versao
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_versao
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_versao
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_versao
@@ -2813,6 +2807,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_versao
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_versao
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_versao
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_versao
 msgid "Versão do leiaute (bpe_versao)"
 msgstr ""
@@ -2826,6 +2821,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_bank_statement_line__bpe10_verProc
 #: model:ir.model.fields,help:l10n_br_bpe.field_account_move__bpe10_verProc
+#: model:ir.model.fields,help:l10n_br_bpe.field_account_payment__bpe10_verProc
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_verProc
 #: model:ir.model.fields,help:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_verProc
 #: model:ir.model.fields,help:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_verProc
@@ -2837,6 +2833,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_verProc
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_verProc
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_verProc
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_verProc
 msgid "Versão do processo de emissão (bpe_verProc)"
 msgstr ""
@@ -2844,6 +2841,7 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cLocDest
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cLocDest
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cLocDest
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cLocDest
 msgid "cLocDest"
 msgstr ""
