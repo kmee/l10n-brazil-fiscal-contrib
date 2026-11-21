@@ -12,7 +12,7 @@
                     <field
                         name="nfe40_xMotivoIsencao"
                         string="Exemption Reason"
-                        invisible="nfe40_cProdANVISA != 'ISENTO'"
+                        attrs="{'invisible': [('nfe40_cProdANVISA', '!=', 'ISENTO')]}"
                     />
                     <field name="brl_currency_id" invisible="1" />
                     <field name="nfe40_vPMC" string="Maximum Consumer Price" />
@@ -25,11 +25,11 @@
         <field name="name">nfe.40.med.list</field>
         <field name="model">nfe.40.med</field>
         <field name="arch" type="xml">
-            <list>
+            <tree>
                 <field name="nfe40_cProdANVISA" string="ANVISA Code" />
                 <field name="nfe40_xMotivoIsencao" string="Exemption Reason" />
                 <field name="nfe40_vPMC" string="Maximum Consumer Price" />
-            </list>
+            </tree>
         </field>
     </record>
 </odoo>

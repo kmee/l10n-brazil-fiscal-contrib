@@ -13,12 +13,14 @@ ANVISA_CODE_PATTERN = re.compile(r"[0-9]{11}|[0-9]{13}|ISENTO")
 class NFeMed(models.AbstractModel):
     _inherit = "nfe.40.med"
 
-    @api.depends("nfe40_cProdANVISA", "nfe40_vPMC")
-    def _compute_display_name(self):
-        for record in self:
-            record.display_name = (
-                f"{record.nfe40_cProdANVISA or ''} - PMC {record.nfe40_vPMC:.2f}"
+    def name_get(self):
+        return [
+            (
+                record.id,
+                f"{record.nfe40_cProdANVISA or ''} - PMC {record.nfe40_vPMC:.2f}",
             )
+            for record in self
+        ]
 
     @api.constrains("nfe40_cProdANVISA")
     def _check_nfe40_cProdANVISA(self):

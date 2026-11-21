@@ -36,8 +36,9 @@ class TestNFeMed(NFeRastroCommon):
     def _medicine_invoice_without_lots(self):
         """A medicine that is not tracked by lot: the invoice line gets the
         medicine group but no traceability group."""
-        product = self.env.ref("product.product_product_12").copy(
-            {"name": "Untracked Medicine", "default_code": "MED-NOLOT"}
+        product = self._copy_product(
+            self.env.ref("product.product_product_12"),
+            {"name": "Untracked Medicine", "default_code": "MED-NOLOT"},
         )
         product.nfe40_med = self.med
         self.env["stock.quant"].with_company(self.company)._update_available_quantity(
@@ -56,6 +57,7 @@ class TestNFeMed(NFeRastroCommon):
     def test_nfe_xml_has_med_and_rastro(self):
         picking = self._ship(self.product, {self.lot: 2})
         invoice = self._invoice(picking)
+        self._set_payment(invoice)
         invoice.action_post()
         document = invoice.fiscal_document_id
         self.assertEqual(document.state_edoc, "a_enviar")
