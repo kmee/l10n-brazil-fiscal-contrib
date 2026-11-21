@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="nfag_document_form_view">
+        <field name="name">l10n_br_fiscal.document.form (in l10n_br_nfag)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='products']" position="after">
+                <page
+                    name="nfag"
+                    string="NFAg"
+                    attrs="{'invisible': [('document_type', '!=', '75')]}"
+                >
+                    <group>
+                        <group name="nfag_ide" string="Emission">
+                            <field name="nfag_environment" />
+                            <field name="nfag10_finNFAg" />
+                            <field name="nfag10_tpFat" />
+                            <field name="nfag10_tpEmis" />
+                        </group>
+                        <group name="nfag_ligacao" string="Connection">
+                            <field name="nfag10_idLigacao" />
+                            <field name="nfag10_idCodCliente" />
+                            <field name="nfag10_tpLigacao" />
+                            <field name="nfag10_latGPS" />
+                            <field name="nfag10_longGPS" />
+                            <field name="nfag10_codRoteiroLeitura" />
+                        </group>
+                        <group name="nfag_gfat" string="Invoice">
+                            <field name="nfag10_CompetFat" />
+                            <field name="nfag10_dVencFat" />
+                            <field name="nfag10_dApresFat" />
+                            <field name="nfag10_dProxLeitura" />
+                            <field name="nfag10_nFat" />
+                            <field name="nfag10_codBarras" />
+                            <field name="nfag10_codDebAuto" />
+                            <field name="nfag10_codBanco" />
+                            <field name="nfag10_codAgencia" />
+                        </group>
+                        <group name="nfag_gagencia" string="Regulatory Agency">
+                            <field name="nfag10_nAgenciaAtend" />
+                            <field name="nfag10_enderAgenciaAtend" />
+                            <field name="nfag10_econ" />
+                            <field name="nfag10_econAcumulada" />
+                            <field name="nfag10_sPrestador" />
+                            <field name="nfag10_dEmissSelo" />
+                            <field name="nfag10_sRegulador" />
+                        </group>
+                    </group>
+                    <separator string="Water Meters" />
+                    <field name="nfag10_gMed">
+                        <tree editable="bottom">
+                            <field name="nfag10_nMed" />
+                            <field name="nfag10_idMedidor" />
+                            <field name="nfag10_dMedAnt" />
+                            <field name="nfag10_dMedAtu" />
+                        </tree>
+                    </field>
+                    <separator string="Consumption History" />
+                    <field name="nfag10_gHistCons">
+                        <tree>
+                            <field name="nfag10_xHistorico" />
+                            <field name="nfag10_medMensal" />
+                        </tree>
+                        <form>
+                            <group>
+                                <field name="nfag10_xHistorico" />
+                                <field name="nfag10_medMensal" />
+                            </group>
+                            <field name="nfag10_gCons">
+                                <tree editable="bottom">
+                                    <field name="nfag10_CompetFat" />
+                                    <field name="nfag10_uMed" />
+                                    <field name="nfag10_qtdDias" />
+                                    <field name="nfag10_medDiaria" />
+                                    <field name="nfag10_consumo" />
+                                    <field name="nfag10_volFat" />
+                                </tree>
+                            </field>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="nfag_document_line_form_view">
+        <field name="name">l10n_br_fiscal.document.line.form (in l10n_br_nfag)</field>
+        <field name="model">l10n_br_fiscal.document.line</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_line_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='general']" position="after">
+                <page
+                    name="nfag"
+                    string="NFAg"
+                    attrs="{'invisible': [('nfag_document_type', '!=', '75')]}"
+                >
+                    <group>
+                        <field name="nfag_document_type" invisible="1" />
+                        <field name="nfag10_cClass" />
+                        <field name="nfag10_uMed" />
+                        <field name="nfag10_indOrigemQtd" />
+                        <field name="nfag10_tpCategoria" />
+                        <field name="nfag10_xCategoria" />
+                        <field name="nfag10_qEconomias" />
+                        <field name="nfag10_infAdProd" />
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
