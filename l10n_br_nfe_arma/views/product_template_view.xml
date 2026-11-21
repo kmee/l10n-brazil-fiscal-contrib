@@ -10,7 +10,10 @@
             <xpath expr="//page[@name='fiscal']/group" position="after">
                 <group name="arma" string="Firearm">
                     <field name="arma_type" />
-                    <field name="arma_description" invisible="not arma_type" />
+                    <field
+                        name="arma_description"
+                        attrs="{'invisible': [('arma_type', '=', False)]}"
+                    />
                 </group>
             </xpath>
         </field>

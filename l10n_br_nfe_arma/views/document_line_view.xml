@@ -11,7 +11,7 @@
                 <page name="nfe40_arma" string="Firearms">
                     <field
                         name="nfe40_arma"
-                        context="{'list_view_ref': 'l10n_br_nfe_arma.nfe_arma_list'}"
+                        context="{'tree_view_ref': 'l10n_br_nfe_arma.nfe_arma_list'}"
                     />
                 </page>
             </page>
