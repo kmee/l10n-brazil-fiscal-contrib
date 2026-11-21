@@ -44,24 +44,28 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__ac
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__ac
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__ac
 msgid "AC"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__al
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__al
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__al
 msgid "AL"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__am
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__am
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__am
 msgid "AM"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__ap
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__ap
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__ap
 msgid "AP"
 msgstr ""
 
@@ -334,6 +338,7 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__ba
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__ba
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__ba
 msgid "BA"
 msgstr ""
 
@@ -356,6 +361,7 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__ce
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__ce
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__ce
 msgid "CE"
 msgstr ""
 
@@ -682,6 +688,7 @@ msgid "Consumo no mês"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_nfgas_meter__nfgas10_tpEqp__2
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_gmed__nfgas10_tpEqp__2
 msgid "Conversor"
 msgstr ""
@@ -907,6 +914,7 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__df
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__df
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__df
 msgid "DF"
 msgstr ""
 
@@ -1161,12 +1169,14 @@ msgid "Detalhamento do motivo da não leitura"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_indDevolucao__1
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_gprocref__nfgas10_indDevolucao__1
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_prod__nfgas10_indDevolucao__1
 msgid "Devolução do valor do item"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_nfgas_meter__nfgas10_tpMedidor__3
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_gmed__nfgas10_tpMedidor__3
 msgid "Diafragma"
 msgstr ""
@@ -1203,6 +1213,7 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__es
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__es
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__es
 msgid "ES"
 msgstr ""
 
@@ -1265,12 +1276,14 @@ msgid "Endereço do emitente"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_orig__2
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_timp__nfgas10_orig__2
 msgid ""
 "Estrangeira - Adquirida no mercado interno, exceto a indicada no código 7"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_orig__7
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_timp__nfgas10_orig__7
 msgid ""
 "Estrangeira - Adquirida no mercado interno, sem similar nacional, constante "
@@ -1278,11 +1291,13 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_orig__1
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_timp__nfgas10_orig__1
 msgid "Estrangeira - Importação direta, exceto a indicada no código 6"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_orig__6
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_timp__nfgas10_orig__6
 msgid ""
 "Estrangeira - Importação direta, sem similar nacional, constante em lista da"
@@ -1377,6 +1392,7 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__go
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__go
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__go
 msgid "GO"
 msgstr ""
 
@@ -2275,24 +2291,28 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__ma
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__ma
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__ma
 msgid "MA"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__mg
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__mg
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__mg
 msgid "MG"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__ms
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__ms
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__ms
 msgid "MS"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__mt
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__mt
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__mt
 msgid "MT"
 msgstr ""
 
@@ -2305,6 +2325,7 @@ msgid "Margem Valor Agregado (%)"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_nfgas_meter__nfgas10_tpEqp__1
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_gmed__nfgas10_tpEqp__1
 msgid "Medidor"
 msgstr ""
@@ -2527,6 +2548,7 @@ msgid "Média Mensal de consumo"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_orig__4
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_timp__nfgas10_orig__4
 msgid ""
 "Nacional, cuja produção tenha sido feita em conformidade com os processos "
@@ -2534,11 +2556,13 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_orig__0
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_timp__nfgas10_orig__0
 msgid "Nacional, exceto as indicadas nos códigos 3, 4, 5 e 8"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_orig__5
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_timp__nfgas10_orig__5
 msgid ""
 "Nacional, mercadoria ou bem com Conteúdo de Importação inferior ou igual a "
@@ -2546,6 +2570,7 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_orig__3
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_timp__nfgas10_orig__3
 msgid ""
 "Nacional, mercadoria ou bem com Conteúdo de Importação superior a 40% e "
@@ -2553,6 +2578,7 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_fiscal_document_line__nfgas10_orig__8
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_timp__nfgas10_orig__8
 msgid "Nacional, mercadoria ou bem com Conteúdo de Importação superior a 70%"
 msgstr ""
@@ -2896,30 +2922,35 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__pa
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__pa
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__pa
 msgid "PA"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__pb
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__pb
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__pb
 msgid "PB"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__pe
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__pe
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__pe
 msgid "PE"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__pi
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__pi
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__pi
 msgid "PI"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__pr
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__pr
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__pr
 msgid "PR"
 msgstr ""
 
@@ -3169,30 +3200,35 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__rj
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__rj
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__rj
 msgid "RJ"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__rn
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__rn
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__rn
 msgid "RN"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__ro
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__ro
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__ro
 msgid "RO"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__rr
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__rr
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__rr
 msgid "RR"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__rs
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__rs
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__rs
 msgid "RS"
 msgstr ""
 
@@ -3232,6 +3268,7 @@ msgid "Reposta ao processamento da NFGas"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_nfgas_meter__nfgas10_tpMedidor__2
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_gmed__nfgas10_tpMedidor__2
 msgid "Rotativo"
 msgstr ""
@@ -3244,18 +3281,21 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__sc
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__sc
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__sc
 msgid "SC"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__se
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__se
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__se
 msgid "SE"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__sp
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__sp
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__sp
 msgid "SP"
 msgstr ""
 
@@ -3310,6 +3350,7 @@ msgstr ""
 #. module: l10n_br_nfgas_spec
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendeemi__nfgas10_UF__to
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_tendereco__nfgas10_UF__to
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__res_partner__nfgas10_UF__to
 msgid "TO"
 msgstr ""
 
@@ -3929,6 +3970,7 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_nfgas_meter__nfgas10_tpMedidor__1
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_gmed__nfgas10_tpMedidor__1
 msgid "Turbina"
 msgstr ""
@@ -3944,6 +3986,7 @@ msgid "URL do QRCode do PIX que será apresentado na fatura"
 msgstr ""
 
 #. module: l10n_br_nfgas_spec
+#: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__l10n_br_nfgas_meter__nfgas10_tpMedidor__4
 #: model:ir.model.fields.selection,name:l10n_br_nfgas_spec.selection__nfgas_10_gmed__nfgas10_tpMedidor__4
 msgid "Ultrasonico"
 msgstr ""
