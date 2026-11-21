@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="document_form" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.document.form (nfse imovel)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
+        <field name="arch" type="xml">
+            <page name="extra_info" position="before">
+                <page
+                    name="nfse_real_estate"
+                    string="Real Estate"
+                    invisible="document_type != 'SE'"
+                >
+                    <group>
+                        <group>
+                            <field name="nfse_real_estate_city_id" />
+                        </group>
+                        <group string="Lease (99.03)">
+                            <field name="nfse_lease_coownership_percent" />
+                            <field name="nfse_lease_total_amount" />
+                            <field name="nfse_lease_unconditional_discount" />
+                            <field name="nfse_lease_conditional_discount" />
+                            <field name="nfse_lease_due_date" />
+                        </group>
+                    </group>
+                    <field name="nfse_real_estate_unit_ids">
+                        <list>
+                            <field name="cib" />
+                            <field name="partner_id" />
+                            <field name="insc_imob_fisc" />
+                        </list>
+                        <form>
+                            <group>
+                                <field name="cib" />
+                                <field name="partner_id" />
+                                <field name="insc_imob_fisc" />
+                            </group>
+                            <field name="adjustment_ids">
+                                <list editable="bottom">
+                                    <field name="currency_id" column_invisible="True" />
+                                    <field name="adjustment_type" />
+                                    <field name="description" />
+                                    <field name="amount" />
+                                </list>
+                            </field>
+                        </form>
+                    </field>
+                </page>
+            </page>
+        </field>
+    </record>
+</odoo>
