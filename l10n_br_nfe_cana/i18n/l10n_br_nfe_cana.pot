@@ -56,11 +56,6 @@ msgid "Harvest"
 msgstr ""
 
 #. module: l10n_br_nfe_cana
-#: model:ir.model,name:l10n_br_nfe_cana.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfe_cana
 #: model:ir.model,name:l10n_br_nfe_cana.model_nfe_40_cana
 msgid "Informações de registro aquisições de cana"
 msgstr ""
@@ -149,6 +144,11 @@ msgstr ""
 #: code:addons/l10n_br_nfe_cana/models/document.py:0
 #, python-format
 msgid "The sugarcane group needs 1 to %(max)s daily supplies."
+msgstr ""
+
+#. module: l10n_br_nfe_cana
+#: model:ir.model,name:l10n_br_nfe_cana.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_nfe_cana
