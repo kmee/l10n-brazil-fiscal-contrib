@@ -1,0 +1,1230 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_dce
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid ""
+"%(sender)s is an ICMS taxpayer and cannot be the sender of a DC-e: issue an "
+"NF-e."
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "A DC-e has at most 999 items."
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_res_company__dce_marketplace_site
+msgid "Address of the marketplace site (Marketplace/Site of the DC-e)."
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "Authorization Protocol Not Found!"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_autXML
+msgid "Autorizados para acessar o XML da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_autxml
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_autXML
+msgid ""
+"Autorizados para acessar o XML da DCe\n"
+"Informar CNPJ ou CPF. Preencher os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_xBairro
+msgid "Bairro"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_CEP
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_CEP
+msgid "CEP"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_tendedest__dce10_CEP
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_tendeemi__dce10_CEP
+msgid ""
+"CEP\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_autxml__dce10_CNPJ
+msgid "CNPJ do autorizado"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_autxml__dce10_CNPJ
+msgid ""
+"CNPJ do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "CNPJ or CPF of the recipient"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "CNPJ or CPF of the sender"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_autxml__dce10_CPF
+msgid "CPF do autorizado"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_autxml__dce10_CPF
+msgid ""
+"CPF do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid ""
+"Cannot build the DC-e access key of %(document)s: check the company CNPJ, "
+"the state of the sender, the serie and the number."
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__l10n_br_fiscal_document__dce_issuer_type__3
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__res_company__dce_issuer_type__3
+msgid "Carrier"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce_carrier_id
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce_carrier_id
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce_carrier_id
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce_carrier_id
+msgid "Carrier of the goods (transp/CNPJTransp)."
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__dce10_chDCe
+msgid "Chave de acesso da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "City of the recipient"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "City of the sender"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "Company CNPJ"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_xCpl
+msgid "Complemento"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsect__dce10_xTexto
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsemit__dce10_xTexto
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsfisco__dce10_xTexto
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsmarketplace__dce10_xTexto
+msgid "Conteúdo do Campo"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_prod__dce10_NCM
+msgid "Código NCM"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_prod__dce10_NCM
+msgid ""
+"Código NCM\n"
+"Capítulo do Código NCM com 2 dígitos ou NCM completo"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_cUF
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_cUF
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_cUF
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_cUF
+msgid "Código da UF de emissão e autorização (dce_cUF)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_cUF
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_cUF
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_cUF
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_cUF
+msgid ""
+"Código da UF de emissão e autorização da DCe\n"
+"Código da UF de emissão e autorização do Documento Fiscal. Utilizar a\n"
+"Tabela do IBGE de código de unidades da federação"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_cPais
+msgid "Código do País"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_tendeemi__dce10_cPais
+msgid ""
+"Código do País\n"
+"1058=Brasil"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_cMun
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_cMun
+msgid "Código do município"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_tendedest__dce10_cMun
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_tendeemi__dce10_cMun
+msgid "Código do município (utilizar a tabela do IBGE)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_cPais
+msgid "Código do país"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_tendedest__dce10_cPais
+msgid ""
+"Código do país\n"
+"Utilizar a tabela do BACEN"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__dce10_cStat
+msgid "Código do status da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_inffisco__dce10_cMsg
+msgid "Código do status da mensagem do fisco"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_cDC
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_cDC
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_cDC
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_cDC
+msgid "Código numérico que compõe a Chave (dce_cDC)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_cDC
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_cDC
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_cDC
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_cDC
+msgid ""
+"Código numérico que compõe a Chave de Acesso.\n"
+"Código aleatório gerado pelo emitente, com o objetivo de evitar acessos indevidos ao documento"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model_terms:ir.ui.view,arch_db:l10n_br_dce.dce_document_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_br_dce.dce_res_company_form
+msgid "DC-e"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce_carrier_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce_carrier_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce_carrier_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce_carrier_id
+msgid "DC-e Carrier"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model_terms:ir.ui.view,arch_db:l10n_br_dce.dce_res_company_form
+msgid "DC-e Default Settings"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce_environment
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce_environment
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce_environment
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce_environment
+#: model:ir.model.fields,field_description:l10n_br_dce.field_res_company__dce_environment
+#, python-format
+msgid "DC-e Environment"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce_issuer_type
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce_issuer_type
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce_issuer_type
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce_issuer_type
+#: model:ir.model.fields,field_description:l10n_br_dce.field_res_company__dce_issuer_type
+#, python-format
+msgid "DC-e Issuer Type"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_res_company__dce_marketplace_site
+msgid "DC-e Marketplace Site"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce_sender_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce_sender_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce_sender_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce_sender_id
+msgid "DC-e Sender"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "DC-e cancellation refused: %(code)s - %(reason)s"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_prod
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_det__dce10_prod
+msgid "Dados do Produto ou Serviço"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_infprot
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tprotdce__dce10_infProt
+msgid "Dados do protocolo de status"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_dhEmi
+msgid "Data e hora de emissão (dce_dhEmi)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_dhEmi
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_dhEmi
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_dhEmi
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_dhEmi
+msgid ""
+"Data e hora de emissão do documento fiscal\n"
+"Formato UTC (AAAA-MM-DDThh:mm:ssTZD, onde TZD = +hh:mm ou -hh:mm)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__dce10_dhRecbto
+msgid "Data e hora de processamento"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_infprot__dce10_dhRecbto
+msgid "Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SS TZD"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_autxml__dce10_autXML_infDCe_id
+msgid "Dce10 Autxml Infdce"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_det__dce10_det_infDCe_id
+msgid "Dce10 Det Infdce"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsect__dce10_obsECT_infAdic_id
+msgid "Dce10 Obsect Infadic"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsemit__dce10_obsEmit_infAdic_id
+msgid "Dce10 Obsemit Infadic"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsfisco__dce10_obsFisco_infAdic_id
+msgid "Dce10 Obsfisco Infadic"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsmarketplace__dce10_obsMarketplace_infAdic_id
+msgid "Dce10 Obsmarketplace Infadic"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_prod__dce10_xProd
+msgid "Descrição do produto"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_prod__dce10_xProd
+msgid "Descrição do produto, bem ou mercadoria"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__dce10_xMotivo
+msgid "Descrição literal do status da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_det
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_det
+msgid "Detalhamento de itens da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__dce10_digVal
+msgid "Digest Value da DCe processado"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_infprot__dce10_digVal
+msgid ""
+"Digest Value da DCe processado. Utilizado para conferir a integridade da DCe"
+" original"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "Digital Certificate"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_cDV
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_cDV
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_cDV
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_cDV
+msgid ""
+"Digito verificador da chave de acesso\n"
+"Informar o dígito de controle da chave de acesso documento fiscal, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_cDV
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_cDV
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_cDV
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_cDV
+msgid "Digito verificador da chave de acesso (dce_cDV)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_email
+msgid "Endereço de E-mail"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_dest__dce10_enderDest
+msgid "Endereço do destinatário / assinante"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_emit__dce10_enderEmit
+msgid "Endereço do emitente"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_marketplace__dce10_Site
+msgid "Endereço ou site do Marketplace"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid ""
+"Fill in the required DC-e fields:\n"
+"- %s"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_tpEmis
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_tpEmis
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_tpEmis
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_tpEmis
+msgid ""
+"Forma de emissão do Documento Fiscal\n"
+"1 - Normal (não contingência); 9 - Contingência off-line da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_tpEmis
+msgid "Forma de emissão do Documento Fiscal (dce_tpEmis)"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "Goods (fiscal lines)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infadic__dce10_obsEmit
+msgid "Grupo Campo de uso livre do Emitente"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_obsemit
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_infadic__dce10_obsEmit
+msgid ""
+"Grupo Campo de uso livre do Emitente\n"
+"Informar o nome do campo no atributo xCampo e o conteúdo do campo no xTexto"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infadic__dce10_obsFisco
+msgid "Grupo Campo de uso livre do Fisco"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_obsfisco
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_infadic__dce10_obsFisco
+msgid ""
+"Grupo Campo de uso livre do Fisco\n"
+"Informar o nome do campo no atributo xCampo e o conteúdo do campo no xTexto"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infadic__dce10_obsMarketplace
+msgid "Grupo Campo de uso livre do MarketPlace"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_obsmarketplace
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_infadic__dce10_obsMarketplace
+msgid ""
+"Grupo Campo de uso livre do MarketPlace\n"
+"Informar o nome do campo no atributo xCampo e o conteúdo do campo no xTexto"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infadic__dce10_obsECT
+msgid "Grupo Campo de uso livre dos Correios"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_obsect
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_infadic__dce10_obsECT
+msgid ""
+"Grupo Campo de uso livre dos Correios\n"
+"Informar o nome do campo no atributo xCampo e o conteúdo do campo no xTexto"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__l10n_br_fiscal_document__dce_environment__2
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__res_company__dce_environment__2
+msgid "Homologation"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__dce10_Id
+msgid "Id"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_Id
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_Id
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_Id
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_Id
+msgid ""
+"Identificador da tag a ser assinada\n"
+"Informar a chave de acesso precedida do literal 'DCe'"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_Id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_Id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_Id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_Id
+msgid "Identificador da tag a ser assinada (dce_Id)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_emit
+msgid "Identificação da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_emit
+msgid "Identificação da DCe (emit)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_Transportadora
+msgid "Identificação da Transportadora"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_transportadora
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_Transportadora
+msgid "Identificação da Transportadora (uso exclusivo Transportadora)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__dce10_tpAmb
+msgid "Identificação do Ambiente"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_infprot__dce10_tpAmb
+msgid ""
+"Identificação do Ambiente:\n"
+"1 - Produção\n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_Fisco
+msgid "Identificação do Fisco"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_fisco
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_Fisco
+msgid "Identificação do Fisco (uso exclusivo fisco)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_Marketplace
+msgid "Identificação do Marketplace"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_marketplace
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_Marketplace
+msgid "Identificação do Marketplace (uso exclusivo Marketplace)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_dest
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_dest
+msgid "Identificação do destinatário da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_dest__dce10_idOutros
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_emit__dce10_idOutros
+msgid "Identificação do destinatário outros"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_dest__dce10_idOutros
+msgid ""
+"Identificação do destinatário outros\n"
+"Identificação do destinatário não obrigado a inscrição do CPF tais como estrangeiro, indígena e quilombola;\n"
+"Em caso de não contar CPF do assinante, informar o RG"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_emit__dce10_idOutros
+msgid ""
+"Identificação do destinatário outros\n"
+"Identificação do emitente não obrigado a inscrição do CPF ou CNPJ tais como estrangeiro, indígena e quilombola. Observação: Campo aceita algarismos, letras (maiúsculas e minúsculas) e os caracteres do conjunto que segue: [:.+-/()]"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_nSiteAutoriz
+msgid "Identificação do número do Site (dce_nSiteAutoriz)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_nSiteAutoriz
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_nSiteAutoriz
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_nSiteAutoriz
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_nSiteAutoriz
+msgid ""
+"Identificação do número do Site do Autorizador de recepção da DCe\n"
+"Se o autorizador da DCe possuir apenas um site deverá ser informado com Zero (0), em caso de Autorizador trabalhar com múltiplos sites indicar o número do site para qual foi endereçada a DCE (1 a 9).\n"
+"\n"
+"Observação: o ambiente autorizador que trabalhar com mais de um Site deverá divulgar para cada endereço de site qual número correspondente de nSiteAutoriz o contribuinte pode usar"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_ect
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_ECT
+msgid "Identificação dos correios"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_infadic
+#: model:ir.model,name:l10n_br_dce.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_infAdic
+msgid "Informações Adicionais (dce_infAdic)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infadic__dce10_infAdECT
+msgid "Informações Adicionais do Correio"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infadic__dce10_infAdMarketplace
+msgid "Informações Adicionais do MarketPlace"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infadic__dce10_infAdFisco
+msgid "Informações adicionais de interesse"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_infadic__dce10_infAdFisco
+msgid ""
+"Informações adicionais de interesse do Fisco\n"
+"Norma referenciada, informações complementares, etc"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_det__dce10_infAdProd
+msgid "Informações adicionais do item"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infadic__dce10_infCpl
+msgid "Informações complementares de interesse"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_infadic__dce10_infCpl
+msgid "Informações complementares de interesse do Emitente"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_infsolicdce
+msgid "Informações de solicitação da DCe pelo Fisco"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_infdcesupl
+msgid "Informações suplementares da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "Invalid DC-e access key: %(key)s"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model_terms:ir.ui.view,arch_db:l10n_br_dce.dce_document_form_view
+msgid "Issuer"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_xLgr
+msgid "Logradouro"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__l10n_br_fiscal_document__dce_issuer_type__1
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__res_company__dce_issuer_type__1
+msgid "Marketplace"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "Marketplace Site"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_inffisco
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_inffisco__dce10_xMsg
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tprotdce__dce10_infFisco
+msgid "Mensagem do Fisco"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_mod
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_mod
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_mod
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_mod
+msgid "Modelo da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_mod
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_mod
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_mod
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_mod
+msgid ""
+"Modelo da DCe\n"
+"Utilizar o código 99 para identificação da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_autxml__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_dest__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_det__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_ect__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_emit__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_fisco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infadic__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infdcesupl__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_inffisco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infsolicdce__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_marketplace__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsect__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsemit__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsfisco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_obsmarketplace__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_prod__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tprotdce__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_transportadora__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__brl_currency_id
+msgid "Moeda"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_xPais
+msgid "Nome do País exemplo"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_tendeemi__dce10_xPais
+msgid "Nome do País exemplo: Brasil ou BRASIL"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_xMun
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_xMun
+msgid "Nome do município"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_xPais
+msgid "Nome do país"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_fisco__dce10_xOrgao
+msgid "Nome do órgão"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_nro
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_nro
+msgid "Número"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_dest__dce10_CNPJ
+msgid "Número do CNPJ"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_dest__dce10_CNPJ
+msgid ""
+"Número do CNPJ\n"
+"Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros.\n"
+"\t\t\t\t\t\t\tInformar os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_transportadora__dce10_CNPJ
+msgid "Número do CNPJ da Transportadora"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_marketplace__dce10_CNPJ
+msgid "Número do CNPJ do Marketplace"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_emit__dce10_CNPJ
+msgid "Número do CNPJ do emitente"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_fisco__dce10_CNPJ
+msgid "Número do CNPJ do órgão"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_ect__dce10_CNPJ
+msgid "Número do CNPJ dos correios"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_dest__dce10_CPF
+msgid "Número do CPF"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_dest__dce10_CPF
+msgid ""
+"Número do CPF\n"
+"Informar os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_emit__dce10_CPF
+msgid "Número do CPF do emitente"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_dce_10_emit__dce10_CPF
+msgid ""
+"Número do CPF do emitente\n"
+"Informar os zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__dce10_nProt
+msgid "Número do Protocolo de Status da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_nDC
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_nDC
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_nDC
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_nDC
+msgid ""
+"Número do documento fiscal\n"
+"Número que identifica o documento fiscal 1 a 999999999"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_nDC
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_nDC
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_nDC
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_nDC
+msgid "Número do documento fiscal (dce_nDC)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_det__dce10_nItem
+msgid "Número do item da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__l10n_br_fiscal_document__dce_issuer_type__2
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__res_company__dce_issuer_type__2
+msgid "Own Issuer"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_res_company__dce_issuer_type
+msgid ""
+"Own issuer: the company declares the goods it sends. Marketplace or carrier:"
+" the company issues the DC-e on behalf of the sender."
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce_sender_id
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce_sender_id
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce_sender_id
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce_sender_id
+msgid ""
+"Person or company that sends the goods, when the company issues the DC-e as "
+"a marketplace or as a carrier."
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__l10n_br_fiscal_document__dce_environment__1
+#: model:ir.model.fields.selection,name:l10n_br_dce.selection__res_company__dce_environment__1
+msgid "Production"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_prod__dce10_qCom
+msgid "Quantidade"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_transportadora__dce10_xNome
+msgid "Razão Social ou Nome da Transportadora"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_marketplace__dce10_xNome
+msgid "Razão Social ou Nome do Marketplace"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_ect__dce10_xNome
+msgid "Razão Social ou Nome dos correios"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_dest__dce10_xNome
+msgid "Razão social ou Nome do destinatário"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_emit__dce10_xNome
+msgid "Razão social ou Nome do emitente"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_fisco__dce10_UF
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_UF
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_UF
+msgid "Sigla da UF"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infsolicdce__dce10_xSolic
+msgid "Solicitação do pedido de emissão da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_serie
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_serie
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_serie
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_serie
+msgid ""
+"Série do documento fiscal\n"
+"Informar a série do documento fiscal (informar zero para série única)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_serie
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_serie
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_serie
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_serie
+msgid "Série do documento fiscal (dce_serie)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendedest__dce10_fone
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tendeemi__dce10_fone
+msgid "Telefone"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infdcesupl__dce10_qrCodDCe
+msgid "Texto com o QR-Code impresso da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "The DC-e cancellation reason must have 15 to 255 characters."
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "The QR Code of a DC-e issued in contingency is not supported yet."
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "The total of the DC-e is above R$ 100,000,000.00."
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "The value of a DC-e item is above R$ 100,000,000.00."
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_tendeemi
+msgid "Tipo Dados do Endereço"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_tendedest
+msgid "Tipo Dados do Endereço Destinatario"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model,name:l10n_br_dce.model_dce_10_tprotdce
+msgid ""
+"Tipo Protocolo de status resultado do processamento da DCe (Modelo\n"
+"99)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_tpAmb
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_tpAmb
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_tpAmb
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_tpAmb
+msgid ""
+"Tipo do Ambiente\n"
+"1 - Produção\n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_tpAmb
+msgid "Tipo do Ambiente (dce_tpAmb)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_tpEmit
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_tpEmit
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_tpEmit
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_tpEmit
+msgid "Tipo do Emitente da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_tpEmit
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_tpEmit
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_tpEmit
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_tpEmit
+msgid ""
+"Tipo do Emitente da DCe\n"
+"0 - App Fisco\n"
+"1 - Marketplace\n"
+"2 - Emissor próprio\n"
+"3 - Transportadora\n"
+"4 - ECT"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model_terms:ir.ui.view,arch_db:l10n_br_dce.dce_document_form_view
+msgid "Transport"
+msgstr ""
+
+#. module: l10n_br_dce
+#. odoo-python
+#: code:addons/l10n_br_dce/models/dce/document.py:0
+#, python-format
+msgid "Transport Mode"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infdcesupl__dce10_urlChave
+msgid "URL para consulta chave de acesso"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_vDC
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_vDC
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_vDC
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_vDC
+msgid "Valor Total da DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_prod__dce10_vProd
+msgid "Valor total brutp do item"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_prod__dce10_vUnCom
+msgid "Valor unitário do item"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_infprot__dce10_verAplic
+msgid "Versão do Aplicativo que processou a DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_versao
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_versao
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_versao
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_versao
+msgid "Versão do leiaute (dce_versao)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,help:l10n_br_dce.field_account_bank_statement_line__dce10_verProc
+#: model:ir.model.fields,help:l10n_br_dce.field_account_move__dce10_verProc
+#: model:ir.model.fields,help:l10n_br_dce.field_account_payment__dce10_verProc
+#: model:ir.model.fields,help:l10n_br_dce.field_l10n_br_fiscal_document__dce10_verProc
+msgid ""
+"Versão do processo de emissão\n"
+"Informar a versão do aplicativo emissor de DCe"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_bank_statement_line__dce10_verProc
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_move__dce10_verProc
+#: model:ir.model.fields,field_description:l10n_br_dce.field_account_payment__dce10_verProc
+#: model:ir.model.fields,field_description:l10n_br_dce.field_l10n_br_fiscal_document__dce10_verProc
+msgid "Versão do processo de emissão (dce_verProc)"
+msgstr ""
+
+#. module: l10n_br_dce
+#: model:ir.model.fields,field_description:l10n_br_dce.field_dce_10_tprotdce__dce10_versao
+msgid "versao"
+msgstr ""
