@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="document_form" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.document.form (transp)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field
+            name="inherit_id"
+            ref="l10n_br_delivery_nfe.l10n_br_delivery_nfe-nfe_document_form"
+        />
+        <field name="arch" type="xml">
+            <group name="nfe_transport" position="after">
+                <group
+                    name="nfe40_veicTransp"
+                    attrs="{'invisible': [('document_type', '!=', '55')]}"
+                >
+                    <group string="Vehicle">
+                        <field name="transport_vehicle_id" />
+                        <field name="transport_trailer_ids" widget="many2many_tags" />
+                    </group>
+                    <group string="ICMS Retention of the Transport">
+                        <field name="currency_id" invisible="1" />
+                        <field name="ret_transp_service_value" />
+                        <field name="ret_transp_base" />
+                        <field name="ret_transp_percent" />
+                        <field name="ret_transp_value" />
+                        <field name="ret_transp_cfop_id" />
+                        <field name="ret_transp_city_id" />
+                    </group>
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>
