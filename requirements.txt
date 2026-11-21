@@ -2,3 +2,4 @@
 brazil_fiscal_client
 erpbrasil.base
 nfelib
+xsdata
