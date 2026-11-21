@@ -1259,8 +1259,12 @@ msgstr ""
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_infadic
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infAdic
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_infAdic
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdic
 msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdic
+msgid "Informações Adicionais (bpe_infAdic)"
 msgstr ""
 
 #. module: l10n_br_bpe
