@@ -4,7 +4,7 @@
 {
     "name": "NFS-e Nacional Tax Base Adjustment (deducao)",
     "summary": "Tax base adjustment group (vAjusteBC) of the NFS-e Nacional DPS",
-    "version": "18.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",

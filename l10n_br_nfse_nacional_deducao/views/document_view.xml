@@ -11,52 +11,52 @@
                 <page
                     name="nfse_bc_adjustment"
                     string="Tax Base Adjustment"
-                    invisible="document_type != 'SE'"
+                    attrs="{'invisible': [('document_type', '!=', 'SE')]}"
                 >
                     <field name="nfse_bc_adjustment_ids">
-                        <list>
+                        <tree>
                             <field name="adjustment_type" />
                             <field name="reference_type" />
                             <field name="dfe_key" optional="show" />
                             <field name="supplier_id" optional="show" />
                             <field name="issue_date" optional="hide" />
-                            <field name="currency_id" column_invisible="True" />
+                            <field name="currency_id" invisible="1" />
                             <field name="document_amount" />
                             <field name="applied_amount" />
-                        </list>
+                        </tree>
                         <form>
                             <group>
                                 <group>
                                     <field name="adjustment_type" />
                                     <field
                                         name="adjustment_description"
-                                        invisible="adjustment_type not in ('99', '199')"
+                                        attrs="{'invisible': [('adjustment_type', 'not in', ('99', '199'))]}"
                                     />
                                     <field name="source_document_id" />
                                     <field name="reference_type" />
                                     <field
                                         name="dfe_type"
-                                        invisible="reference_type != 'dfe'"
+                                        attrs="{'invisible': [('reference_type', '!=', 'dfe')]}"
                                     />
                                     <field
                                         name="dfe_type_description"
-                                        invisible="reference_type != 'dfe' or dfe_type != '9'"
+                                        attrs="{'invisible': ['|', ('reference_type', '!=', 'dfe'), ('dfe_type', '!=', '9')]}"
                                     />
                                     <field
                                         name="dfe_key"
-                                        invisible="reference_type != 'dfe'"
+                                        attrs="{'invisible': [('reference_type', '!=', 'dfe')]}"
                                     />
                                     <field
                                         name="fiscal_city_id"
-                                        invisible="reference_type != 'fiscal'"
+                                        attrs="{'invisible': [('reference_type', '!=', 'fiscal')]}"
                                     />
                                     <field
                                         name="reference_number"
-                                        invisible="reference_type == 'dfe'"
+                                        attrs="{'invisible': [('reference_type', '=', 'dfe')]}"
                                     />
                                     <field
                                         name="reference_description"
-                                        invisible="reference_type == 'dfe'"
+                                        attrs="{'invisible': [('reference_type', '=', 'dfe')]}"
                                     />
                                 </group>
                                 <group>

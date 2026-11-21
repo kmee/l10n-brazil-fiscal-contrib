@@ -11,7 +11,7 @@ from nfelib.nfse.bindings.v1_0.tipos_complexos_v1_01 import (
     TcrtclistaDocOutro,
 )
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
 # TSRTCTpAjusteBC, leiaute 1.04.01 (NT 009)
@@ -201,35 +201,29 @@ class BcAdjustment(models.Model):
         errors = []
         described = self.adjustment_type in DESCRIBED_ADJUSTMENT_TYPES
         if described and not self.adjustment_description:
-            errors.append(self.env._("E0465: the types 99 and 199 need a description."))
+            errors.append(_("E0465: the types 99 and 199 need a description."))
         if not described and self.adjustment_description:
-            errors.append(
-                self.env._("E0464: only the types 99 and 199 take a description.")
-            )
+            errors.append(_("E0464: only the types 99 and 199 take a description."))
         if self.applied_amount > self.document_amount:
-            errors.append(
-                self.env._("E0469: the applied amount exceeds the document amount.")
-            )
+            errors.append(_("E0469: the applied amount exceeds the document amount."))
         if (
             self.issue_date
             and self.competence_date
             and self.competence_date > self.issue_date
         ):
             errors.append(
-                self.env._(
-                    "E0472: the competence date is after the document issue date."
-                )
+                _("E0472: the competence date is after the document issue date.")
             )
         if self.reference_type == "dfe":
             if self.dfe_type == "9" and not self.dfe_type_description:
                 errors.append(
-                    self.env._("E0470: describe the electronic document of type Other.")
+                    _("E0470: describe the electronic document of type Other.")
                 )
             length = DFE_KEY_LENGTH.get(self.dfe_type)
             key = self.dfe_key or ""
             if length and (len(key) != length or not key.isdigit()):
                 errors.append(
-                    self.env._(
+                    _(
                         "E0460: the access key must have %(length)s digits.",
                         length=length,
                     )
@@ -238,7 +232,7 @@ class BcAdjustment(models.Model):
             self.competence_date and self.competence_date < date(2026, 1, 1)
         ):
             errors.append(
-                self.env._(
+                _(
                     "E0476: a fiscal document outside the national repository "
                     "is accepted only with a competence before 2026."
                 )
@@ -248,9 +242,7 @@ class BcAdjustment(models.Model):
             and self.adjustment_type in FISCAL_ADJUSTMENT_TYPES
         ):
             errors.append(
-                self.env._(
-                    "E0479: the types 101, 103, 104 and 199 need a fiscal document."
-                )
+                _("E0479: the types 101, 103, 104 and 199 need a fiscal document.")
             )
         return errors
 

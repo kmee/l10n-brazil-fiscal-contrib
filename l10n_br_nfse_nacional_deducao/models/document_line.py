@@ -3,7 +3,7 @@
 
 from nfelib.nfse.bindings.v1_0.tipos_complexos_v1_01 import TclistaDocAjusteBc
 
-from odoo import models
+from odoo import _, models
 from odoo.exceptions import UserError
 
 from .bc_adjustment import ISSQN_ADJUSTMENT_TYPES
@@ -41,14 +41,14 @@ class FiscalDocumentLine(models.Model):
             issqn_types or self.issqn_deduction_amount
         ):
             errors.append(
-                self.env._(
+                _(
                     "E0435: a service that is not taxed by the ISSQN only takes "
                     "the refund adjustments (types 101 to 199)."
                 )
             )
         if self.issqn_deduction_amount and issqn_types:
             errors.append(
-                self.env._(
+                _(
                     "E0462: the ISSQN deduction of the line excludes the "
                     "adjustment documents of types 2 to 99."
                 )
@@ -58,13 +58,11 @@ class FiscalDocumentLine(models.Model):
             "199",
         }:
             errors.append(
-                self.env._(
+                _(
                     "E0463: the services 06.01 and 06.02 only take the "
                     "adjustment types 9 and 199."
                 )
             )
         if any(a.applied_amount > self.price_gross for a in adjustments):
-            errors.append(
-                self.env._("E0467: an applied adjustment exceeds the service amount.")
-            )
+            errors.append(_("E0467: an applied adjustment exceeds the service amount."))
         return errors
