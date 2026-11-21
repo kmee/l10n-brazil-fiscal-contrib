@@ -18,7 +18,7 @@ from nfelib.cte.bindings.v4_0.ret_gtve_v4_00 import RetGtve
 from nfelib.nfe.ws.edoc_legacy import CTeAdapter
 from requests import Session
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
 
 from odoo.addons.l10n_br_fiscal.constants.fiscal import (
@@ -110,21 +110,17 @@ class Document(models.Model):
         missing = [self._fields[name].string for name in required if not self[name]]
         if missing:
             raise UserError(
-                self.env._(
+                _(
                     "GTV-e %(document)s: fill in %(fields)s.",
                     document=self.display_name,
                     fields=", ".join(missing),
                 )
             )
         if self.transport_modal not in ("01", "06"):
-            raise UserError(
-                self.env._("The GTV-e modal must be road (01) or multimodal (06).")
-            )
+            raise UserError(_("The GTV-e modal must be road (01) or multimodal (06)."))
         # MOC 4.00 Annex I, rule I04 (rejection 670)
         if 890 <= int(self.document_serie or 0) <= 899:
-            raise UserError(
-                self.env._("The series 890 to 899 cannot be used in a GTV-e.")
-            )
+            raise UserError(_("The series 890 to 899 cannot be used in a GTV-e."))
 
     def _gtve_binding(self):
         self.ensure_one()
@@ -190,9 +186,7 @@ class Document(models.Model):
                 and key[20:22] == MODELO_FISCAL_GTVE
                 and str(modulo11(key[:43])) == key[43]
             ):
-                raise ValidationError(
-                    self.env._("Invalid GTV-e access key: %(key)s", key=key)
-                )
+                raise ValidationError(_("Invalid GTV-e access key: %(key)s", key=key))
         return result
 
     def _document_qrcode(self):
@@ -295,5 +289,5 @@ class Document(models.Model):
     def _document_correction(self, justificative):
         # MOC 4.00, item 5: the correction letter is only for models 57 and 67
         if self.filtered(filter_gtve):
-            raise UserError(self.env._("The GTV-e has no correction letter."))
+            raise UserError(_("The GTV-e has no correction letter."))
         return super()._document_correction(justificative)

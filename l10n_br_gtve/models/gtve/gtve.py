@@ -137,6 +137,24 @@ class GTVe(spec_models.StackedModel):
         related="document_id.gtve_vehicle_ids",
     )
 
+    @classmethod
+    def _build_model(cls, pool, cr):
+        """Keep StackedModel ahead of the stacked spec mixins in the bases.
+
+        StackedModel puts the stacked spec mixins (TgtveInfCte...) before
+        itself in the bases. When the CT-e spec hook already made
+        cte.40.tgtve_infcte concrete in this registry (on 16.0 _build_binding
+        runs it, e.g. in the at_install tests of another CT-e module), that
+        class has SpecModel before TgtveInfCte and the MRO of this model
+        cannot be built. SpecModel and StackedModel first works both ways.
+        """
+        model = super()._build_model(pool, cr)
+        if cls.__bases__[0] is not spec_models.StackedModel:
+            cls.__bases__ = (spec_models.StackedModel,) + tuple(
+                base for base in cls.__bases__ if base is not spec_models.StackedModel
+            )
+        return model
+
     @api.depends("document_id.document_key")
     def _compute_cte40_key_fields(self):
         for record in self:

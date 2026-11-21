@@ -4,7 +4,7 @@
 {
     "name": "GTV-e",
     "summary": "Guia de Transporte de Valores Eletrônica (GTV-e, modelo 64)",
-    "version": "18.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",

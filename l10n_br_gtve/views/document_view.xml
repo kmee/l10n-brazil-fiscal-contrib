@@ -8,7 +8,11 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
         <field name="arch" type="xml">
             <page name="delivery" position="after">
-                <page name="gtve" string="GTV-e" invisible="document_type != '64'">
+                <page
+                    name="gtve"
+                    string="GTV-e"
+                    attrs="{'invisible': [('document_type', '!=', '64')]}"
+                >
                     <group>
                         <group name="gtve_parties">
                             <field name="partner_sendering_id" string="Sender" />
@@ -24,20 +28,20 @@
                         </group>
                     </group>
                     <field name="gtve_species_ids">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="cte40_tpEspecie" />
                             <field name="cte40_tpNumerario" />
                             <field name="cte40_xMoedaEstr" />
-                            <field name="brl_currency_id" column_invisible="True" />
+                            <field name="brl_currency_id" invisible="1" />
                             <field name="cte40_vEspecie" />
-                        </list>
+                        </tree>
                     </field>
                     <field name="gtve_vehicle_ids">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="cte40_placa" />
                             <field name="cte40_UF" />
                             <field name="cte40_RNTRC" />
-                        </list>
+                        </tree>
                     </field>
                 </page>
             </page>
