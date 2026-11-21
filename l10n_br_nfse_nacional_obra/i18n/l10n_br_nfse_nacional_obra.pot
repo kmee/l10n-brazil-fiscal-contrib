@@ -93,10 +93,8 @@ msgid "Contact"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_obra
-#: model:ir.model,name:l10n_br_nfse_nacional_obra.model_l10n_br_fiscal_document_line
-msgid ""
-"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
-"não contribuinte de ICMS"
+#: model:ir.model,name:l10n_br_nfse_nacional_obra.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_obra
@@ -123,6 +121,6 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_obra
-#: model:ir.model,name:l10n_br_nfse_nacional_obra.model_l10n_br_fiscal_document
-msgid "Tipo Dados do Imposto BP-e"
+#: model:ir.model,name:l10n_br_nfse_nacional_obra.model_l10n_br_fiscal_document_line
+msgid "Tipo imposto da NFGas"
 msgstr ""
