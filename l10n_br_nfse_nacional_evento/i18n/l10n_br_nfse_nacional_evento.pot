@@ -88,14 +88,14 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_evento
-#: model:ir.model,name:l10n_br_nfse_nacional_evento.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfse_nacional_evento
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_bank_statement_line__nfse_event_code
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_move__nfse_event_code
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_account_payment__nfse_event_code
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_evento.field_l10n_br_fiscal_document__nfse_event_code
 msgid "Municipal Event Code"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_evento
+#: model:ir.model,name:l10n_br_nfse_nacional_evento.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
