@@ -74,11 +74,6 @@ msgid "ICMS Retention of the Transport"
 msgstr ""
 
 #. module: l10n_br_nfe_transp
-#: model:ir.model,name:l10n_br_nfe_transp.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfe_transp
 #. odoo-python
 #: code:addons/l10n_br_nfe_transp/models/document.py:0
 #, python-format
@@ -101,6 +96,11 @@ msgstr ""
 #: code:addons/l10n_br_nfe_transp/models/document.py:0
 #, python-format
 msgid "The NF-e accepts at most %(max)s trailers."
+msgstr ""
+
+#. module: l10n_br_nfe_transp
+#: model:ir.model,name:l10n_br_nfe_transp.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_nfe_transp
