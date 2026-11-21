@@ -1,0 +1,3 @@
+odoo-test-helper
+# Same pin as OCA/l10n-brazil 16.0
+pyopenssl==22.1.0
