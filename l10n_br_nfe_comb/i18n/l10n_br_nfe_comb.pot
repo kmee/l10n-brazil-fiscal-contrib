@@ -175,11 +175,6 @@ msgid "Informar apenas para operações com combustíveis líquidos"
 msgstr ""
 
 #. module: l10n_br_nfe_comb
-#: model:ir.model,name:l10n_br_nfe_comb.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfe_comb
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
 msgid "LPG"
 msgstr ""
@@ -280,4 +275,9 @@ msgstr ""
 #: code:addons/l10n_br_nfe_comb/models/nfe_comb.py:0
 #, python-format
 msgid "The origin percentage must be greater than 0 and up to 100."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model:ir.model,name:l10n_br_nfe_comb.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
