@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="nfe_obs_item_form" model="ir.ui.view">
+        <field name="name">nfe.40.obsitem.form</field>
+        <field name="model">nfe.40.obsitem</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field
+                        name="nfe40_obsCont"
+                        string="Taxpayer Observation"
+                        context="{'form_view_ref': 'l10n_br_nfe_obs_item.nfe_det_obscont_form'}"
+                    />
+                    <field
+                        name="nfe40_obsFisco"
+                        string="Tax Authority Observation"
+                        context="{'form_view_ref': 'l10n_br_nfe_obs_item.nfe_det_obsfisco_form'}"
+                    />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="nfe_det_obscont_form" model="ir.ui.view">
+        <field name="name">nfe.40.det_obscont.form</field>
+        <field name="model">nfe.40.det_obscont</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="nfe40_xCampo" string="Field" />
+                    <field name="nfe40_xTexto" string="Text" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="nfe_det_obsfisco_form" model="ir.ui.view">
+        <field name="name">nfe.40.det_obsfisco.form</field>
+        <field name="model">nfe.40.det_obsfisco</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="nfe40_xCampo" string="Field" />
+                    <field name="nfe40_xTexto" string="Text" />
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
