@@ -100,6 +100,14 @@ Contributors
 Maintainers
 -----------
 
+.. |maintainer-mileo| image:: https://github.com/mileo.png?size=40px
+    :target: https://github.com/mileo
+    :alt: mileo
+
+Current maintainer:
+
+|maintainer-mileo| 
+
 This module is part of the `kmee/l10n-brazil-fiscal-contrib <https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_nfe_recopi>`_ project on GitHub.
 
 You are welcome to contribute.
