@@ -100,11 +100,6 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_obra
-#: model:ir.model,name:l10n_br_nfse_nacional_obra.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfse_nacional_obra
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_res_partner__nfse_insc_imob_fisc
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_obra.field_res_users__nfse_insc_imob_fisc
 msgid "Municipal Real Estate Registration"
@@ -125,4 +120,9 @@ msgstr ""
 msgid ""
 "The service %(code)s of %(document)s is a construction work: inform its CNO,"
 " CIB or address (rule E0370 of the NFS-e Nacional)."
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_obra
+#: model:ir.model,name:l10n_br_nfse_nacional_obra.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
