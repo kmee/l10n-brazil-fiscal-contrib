@@ -1,0 +1,164 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfe_agropecuario
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/document.py:0
+msgid ""
+"%(item)s: rule ZF02-10 (rejection 835) requires the pesticide prescription "
+"on a sale to the final consumer."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/document.py:0
+msgid ""
+"%(item)s: rule ZF05-10 (rejection 836) requires the animal transit permit "
+"(GTA, TTA or DTA)."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_agropecuario.document_form
+msgid "Agricultural Products"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_agropecuario.nfe_agropecuario_form
+msgid "CPF of the Responsible Technician"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model:ir.model,name:l10n_br_nfe_agropecuario.model_nfe_40_defensivo
+msgid "Defensivo Agrícola / Agrotóxico"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model:ir.model,name:l10n_br_nfe_agropecuario.model_l10n_br_fiscal_document
+msgid "Fiscal Document"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model:ir.model,name:l10n_br_nfe_agropecuario.model_nfe_40_guiatransito
+msgid ""
+"Guias De Trânsito de produtos agropecurários animais, vegetais e de\n"
+"origem florestal."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_agropecuario.nfe_guiatransito_form
+msgid "Number"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_agropecuario.nfe_agropecuario_form
+msgid "Prescription"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model:ir.model,name:l10n_br_nfe_agropecuario.model_nfe_40_agropecuario
+msgid "Produtos Agropecurários Animais, Vegetais e Florestais"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/document.py:0
+msgid ""
+"Rule ZF02-20 (rejection 309): no item is a pesticide, remove the pesticide "
+"prescription."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/document.py:0
+msgid ""
+"Rule ZF05-14 (rejection 310): no item is a live animal, remove the animal "
+"transit permit."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/document.py:0
+msgid ""
+"Rule ZF05-24 (rejection 312): no item is a vegetable product, remove the "
+"vegetable transit permit."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_agropecuario.nfe_guiatransito_form
+msgid "Series"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_agropecuario.nfe_guiatransito_form
+msgid "State"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/nfe_agropecuario.py:0
+msgid ""
+"The CPF of the technician responsible for the prescription is invalid (11 "
+"digits, no punctuation)."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/document.py:0
+msgid "The NF-e accepts at most %(max)s pesticide prescriptions."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/document.py:0
+msgid ""
+"The NF-e agricultural data (agropecuario) is invalid:\n"
+"%(errors)s"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/document.py:0
+msgid ""
+"The agricultural group must have either pesticide prescriptions or a transit"
+" permit, not both."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/nfe_agropecuario.py:0
+msgid "The prescription number must have 1 to 30 characters."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/nfe_agropecuario.py:0
+msgid "The transit permit number must have 1 to 9 digits."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#. odoo-python
+#: code:addons/l10n_br_nfe_agropecuario/models/nfe_agropecuario.py:0
+msgid "The transit permit series must have at most 9 characters."
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_agropecuario.nfe_agropecuario_form
+msgid "Transit Permit"
+msgstr ""
+
+#. module: l10n_br_nfe_agropecuario
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_agropecuario.nfe_guiatransito_form
+msgid "Type"
+msgstr ""
