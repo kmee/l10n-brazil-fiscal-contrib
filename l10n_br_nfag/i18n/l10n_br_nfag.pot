@@ -1,0 +1,2199 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfag
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_company__nfag_qrcode_url
+msgid ""
+"Address of the NFAg query by QR Code, as published on the services page of "
+"the NFAg portal."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_cofins__nfag10_pCOFINS
+msgid "Alíquota do COFINS (em percentual)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_pis__nfag10_pPIS
+msgid "Alíquota do PIS (em percentual)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tfs__nfag10_pTFS
+msgid "Alíquota do TFS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tfu__nfag10_pTFU
+msgid "Alíquota do TFU"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gtarif__nfag10_anoAto
+msgid "Ano do Ato (AAAA)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gqualiagua__nfag10_CompetAnalise
+msgid "Ano e mês referência da analise"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gqualiagua__nfag10_CompetAnalise
+msgid "Ano e mês referência da analise (AAAAMM)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__nfag10_CompetFat
+msgid "Ano e mês referência do faturamento"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__nfag10_CompetFat
+msgid "Ano e mês referência do faturamento (AAAAMM)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Authorization Protocol Not Found!"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Automatic debit code or bank and branch of the invoice"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_autxml
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_autXML
+msgid ""
+"Autorizados para download do XML do DF-e\n"
+"Informar CNPJ ou CPF. Preencher os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_autXML
+msgid "Autorizados para download do XML do DF-e (nfag_autXML)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_xBairro
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_xBairro
+msgid "Bairro (nfag_xBairro)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_partner__nfag10_CEP
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_users__nfag10_CEP
+msgid ""
+"CEP\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_CEP
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_CEP
+msgid "CEP (nfag_CEP)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tresptec__nfag10_CNPJ
+msgid "CNPJ"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_tresptec__nfag10_CNPJ
+msgid ""
+"CNPJ da pessoa jurídica responsável técnica pelo sistema utilizado na emissão do documento fiscal eletrônico\n"
+"Informar o CNPJ da pessoa jurídica desenvolvedora do sistema utilizado na emissão do documento fiscal eletrônico."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infpaa__nfag10_CNPJPAA
+msgid "CNPJ do Provedor de Assinatura"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_infpaa__nfag10_CNPJPAA
+msgid ""
+"CNPJ do Provedor de Assinatura e Autorização\n"
+"\n"
+"CNPJ da empresa que emitirá a nota do tipo faturamento 1 em nome de outra empresa"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_autxml__nfag10_CNPJ
+msgid "CNPJ do autorizado"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_autxml__nfag10_CNPJ
+msgid ""
+"CNPJ do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_company__nfag10_CNPJ
+msgid ""
+"CNPJ do emitente\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_company__nfag10_CNPJ
+msgid "CNPJ do emitente (nfag_CNPJ)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "COFINS CST not accepted by the NFAg in %s"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_autxml__nfag10_CPF
+msgid "CPF do autorizado"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_autxml__nfag10_CPF
+msgid ""
+"CPF do autorizado\n"
+"Informar zeros não significativos"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid ""
+"Cannot build the NFAg access key of %(document)s: check the company CNPJ and"
+" state, the serie and the number."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_chNFAgAnt
+msgid "Chave de Acesso da NFag anterior"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_chNFAgAnt
+msgid ""
+"Chave de Acesso da NFag anterior\n"
+"Informar chave de acesso de referencia anterior\n"
+"TAG OPCIONAL, DEVE SER INFORMADA APENAS NOS CASOS PREVISTOS DE NOTA ANTERIOR REFERENCIADA"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__nfag10_chNFAg
+msgid "Chave de acesso da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gfatconjunto__nfag10_chNFAgFat
+msgid "Chave de acesso da NFAg faturada"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gfatconjunto__nfag10_chNFAgFat
+msgid ""
+"Chave de acesso da NFAg faturada em conjunto\n"
+"\n"
+"Obrigatorio para tpFat 3\n"
+"Vedado para tpFat 1 e 2"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gsub__nfag10_chNFAg
+msgid "Chave de acesso da NFAg referenciada"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gpagantecipado__nfag10_chDFePagAnt
+msgid "Chave de acesso da nota de antecipação"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gpagantecipado__nfag10_chDFePagAnt
+msgid ""
+"Chave de acesso da nota de antecipação de pagamento (com tpPagAnt=1 ou 2)\n"
+"Referência a DFe emitido anteriormente, referente a pagamento antecipado"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_mod
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_mod
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_mod
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_mod
+msgid "Code (nfag_mod)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Company CNPJ"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Company City"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Company State"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_xCpl
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_xCpl
+msgid "Complemento (nfag_xCpl)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gqualiagua__nfag10_Conclusao
+msgid "Conclusão da Análise"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfag.nfag_document_form_view
+msgid "Connection"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__nfag10_gCons
+msgid "Consumo"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__nfag10_consumo
+msgid "Consumo no mês"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfag.nfag_document_form_view
+msgid "Consumption History"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Consumption history (gHistCons) with 1 to 13 months"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__create_uid
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__create_uid
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__create_date
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__create_date
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Customer"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Customer City"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_cUF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_cUF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_cUF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_cUF
+msgid "Código da UF do emitente da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_cUF
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_cUF
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_cUF
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_cUF
+msgid ""
+"Código da UF do emitente da NFAg\n"
+"Código da UF do emitente do Documento Fiscal. Utilizar a\n"
+"Tabela do IBGE de código de unidades da federação."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gagregadora__nfag10_cClass
+msgid "Código de classificação"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gagregadora__nfag10_cClass
+msgid ""
+"Código de classificação\n"
+"Tabela de Classificação de Item da NFAg (validar por RV)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_cMun
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_cMun
+msgid "Código do município (nfag_cMun)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_partner__nfag10_cMun
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_users__nfag10_cMun
+msgid "Código do município (utilizar a tabela do IBGE)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_cMunFG
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_cMunFG
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_cMunFG
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_cMunFG
+msgid "Código do município de ocorrência (nfag_cMunFG)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_cMunFG
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_cMunFG
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_cMunFG
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_cMunFG
+msgid "Código do município de ocorrência do fato gerador"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move_line__nfag10_cProd
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_cProd
+msgid "Código do produto ou serviço (nfag_cProd)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__nfag10_cStat
+msgid "Código do status da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_inffisco__nfag10_cMsg
+msgid "Código do status da mensagem do fisco"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_cNF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_cNF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_cNF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_cNF
+msgid "Código numérico que compõe a Chave (nfag_cNF)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_cNF
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_cNF
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_cNF
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_cNF
+msgid ""
+"Código numérico que compõe a Chave de Acesso.\n"
+"Código aleatório gerado pelo emitente, com o objetivo de evitar acessos indevidos ao documento."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_pgtovinc__nfag10_pgto
+msgid "Dados de cada pagamento previsto"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_cofins
+msgid "Dados do COFINS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_pis
+msgid "Dados do PIS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_infprot
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tprotnfag__nfag10_infProt
+msgid "Dados do protocolo de status"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__nfag10_dMedAnt
+msgid "Data da leitura anterior"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_nfag_meter__nfag10_dMedAnt
+msgid ""
+"Data da leitura anterior\n"
+"Formato AAAA-MM-DD\n"
+"\n"
+"Em caso da 1a leitura do hidrometro, informar a data de instalação do hidrômetro"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__nfag10_dMedAtu
+msgid "Data da leitura atual"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_nfag_meter__nfag10_dMedAtu
+msgid ""
+"Data da leitura atual\n"
+"Formato AAAA-MM-DD"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gtarif__nfag10_dFimTarif
+msgid "Data de fim da aplicação da tarifa"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gtarif__nfag10_dFimTarif
+msgid ""
+"Data de fim da aplicação da tarifa\n"
+"Data de fim da aplicação da tarifa no período considerado para o faturamento\n"
+" (Formato AAAA-MM-DD)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gtarif__nfag10_dIniTarif
+msgid "Data de início da aplicação da tarifa"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gtarif__nfag10_dIniTarif
+msgid ""
+"Data de início da aplicação da tarifa\n"
+"Data de início da aplicação da tarifa no período considerado para o faturamento (\n"
+"Formato AAAA-MM-DD)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_dhEmi
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_dhEmi
+msgid "Data e hora de emissão (nfag_dhEmi)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_dhEmi
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_dhEmi
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_dhEmi
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_dhEmi
+msgid ""
+"Data e hora de emissão do documento fiscal\n"
+"Formato AAAA-MM-DDTHH:MM:DD TZD"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__nfag10_dhRecbto
+msgid "Data e hora de processamento"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_infprot__nfag10_dhRecbto
+msgid "Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SS TZD."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move_line__nfag10_xProd
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_xProd
+msgid "Descrição do produto ou serviço (nfag_xProd)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__nfag10_xMotivo
+msgid "Descrição literal do status da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_det
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_det
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_det
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_det
+msgid "Detalhamento de Produtos e Serviços (nfag_det)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__nfag10_digVal
+msgid "Digest Value da NFAg processado"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_infprot__nfag10_digVal
+msgid ""
+"Digest Value da NFAg processado. Utilizado para conferir a integridade da "
+"NFAg original."
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Digital Certificate"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_cDV
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_cDV
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_cDV
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_cDV
+msgid ""
+"Digito verificador da chave de acesso\n"
+"Informar o dígito  de controle da chave de acesso documento fiscal, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_cDV
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_cDV
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_cDV
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_cDV
+msgid "Digito verificador da chave de acesso (nfag_cDV)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__display_name
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__display_name
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Document Lines"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Document Serie"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tresptec__nfag10_email
+msgid "Email da pessoa jurídica a ser contatada"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfag.nfag_document_form_view
+msgid "Emission"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_email
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_email
+msgid "Endereço de E-mail (nfag_email)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_enderDest
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_enderDest
+msgid "Endereço do destinatário / acessante (nfag_enderDest)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_company__nfag10_enderEmit
+msgid "Endereço do emitente (nfag_enderEmit)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gtarif__nfag10_tpFaixaCons
+msgid "Faixa Prevista de Consumo"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gtarif__nfag10_tpFaixaCons
+msgid ""
+"Faixa Prevista de Consumo\n"
+"1 - minimo\n"
+"2 - médio\n"
+"3 - máximo"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid ""
+"Fill in the required NFAg fields:\n"
+"- %s"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_finNFAg
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_finNFAg
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_finNFAg
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_finNFAg
+msgid "Finalidade de emissão da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_finNFAg
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_finNFAg
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_finNFAg
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_finNFAg
+msgid ""
+"Finalidade de emissão da NFAg\n"
+"0 - NFAg normal; \n"
+"3 - NFAg substituição;"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move_line__nfag10_det_infNFAg_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_det_infNFAg_id
+msgid "Fiscal Document (nfag_det_infNFAg_id)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_tpEmis
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_tpEmis
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_tpEmis
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_tpEmis
+msgid ""
+"Forma de emissão do Documento Fiscal\n"
+"1 - Normal\n"
+"; 2 - Contingência Off Line"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_tpEmis
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_tpEmis
+msgid "Forma de emissão do Documento Fiscal (nfag_tpEmis)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gprocref
+msgid ""
+"Grupo Processo referenciado\n"
+"Este grupo somente deverá ser preenchido quando houver processo judicial ou\n"
+"administrativo que altere valores."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_gProcRef
+msgid ""
+"Grupo Processo referenciado\n"
+"Este grupo somente deverá ser preenchido quando houver processo judicial ou administrativo que altere valores."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_gProcRef
+msgid "Grupo Processo referenciado (nfag_gProcRef)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_infPAA
+msgid "Grupo de Informação do Provedor (nfag_infPAA)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_infpaa
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_infPAA
+msgid "Grupo de Informação do Provedor de Assinatura e Autorização"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_gFatConjunto
+msgid "Grupo de Informações"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gfatconjunto
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_gFatConjunto
+msgid "Grupo de Informações do Faturamento conjunto"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gtarif
+msgid "Grupo de Tarifas por Período"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_gTarif
+msgid "Grupo de Tarifas por Período (nfag_gTarif)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gpagantecipado
+msgid ""
+"Grupo de antecipação de pagamento\n"
+"Permite informar apenas quando tpPagAnt=3\n"
+"Informado para abater as parcelas de antecipação de\n"
+"pagamento"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_ganalise
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gqualiagua__nfag10_gAnalise
+msgid "Grupo de informações da Análise"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gsub
+msgid "Grupo de informações da substituição"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_gSub
+msgid "Grupo de informações da substituição (nfag_gSub)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_pgtoVinc
+msgid "Grupo de informações da vínculação (nfag_pgtoVinc)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_pgtovinc
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_pgtoVinc
+msgid "Grupo de informações da vínculação com a transação de pagamento"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_rettrib
+msgid "Grupo de informações de retenção de tributos federais"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gprocref__nfag10_gIBSCBS
+msgid "Grupo de informações do IBS e CBS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gibscbs
+msgid ""
+"Grupo de informações do IBS e CBS a serem considerados sem a aplicação\n"
+"do processo judicial"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gprocref__nfag10_gIBSCBS
+msgid ""
+"Grupo de informações do IBS e CBS a serem considerados sem a aplicação do "
+"processo judicial"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gpix
+msgid "Grupo de informações do PIX"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_gMed
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_gMed
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_gMed
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_gMed
+msgid "Grupo de informações dos Medidores (nfag_gMed)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gmedicao__nfag10_gMedida
+msgid "Grupo de medida"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gproc
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gprocref__nfag10_gProc
+msgid "Grupo identificador do Processo"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gmedicao
+msgid ""
+"Grupo para referenciar qual medição e medida estão relacionadas ao\n"
+"item"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tresptec__nfag10_hashCSRT
+msgid "Hash do token do código de segurança"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_tresptec__nfag10_hashCSRT
+msgid ""
+"Hash do token do código de segurança do responsável técnico\n"
+"O hashCSRT é o resultado das funções SHA-1 e base64 do token CSRT fornecido pelo fisco + chave de acesso do DF-e. (Implementação em futura NT)\n"
+"\n"
+"Observação: 28 caracteres são representados no schema como 20 bytes do tipo base64Binary"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_gHistCons
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_gHistCons
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_gHistCons
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_gHistCons
+msgid "Histórico de Consumo (nfag_gHistCons)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields.selection,name:l10n_br_nfag.selection__l10n_br_fiscal_document__nfag_environment__2
+#: model:ir.model.fields.selection,name:l10n_br_nfag.selection__res_company__nfag_environment__2
+msgid "Homologation"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "IBS/CBS tax situation and classification of %s"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__nfag10_Id
+msgid "Id"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_Id
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_Id
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_Id
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_Id
+msgid ""
+"Identificador da tag a ser assinada\n"
+"Informar a chave de acesso da NFAg e precedida do literal 'NFAg'"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_Id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_Id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_Id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_Id
+msgid "Identificador da tag a ser assinada (nfag_Id)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tresptec__nfag10_idCSRT
+msgid "Identificador do código de segurança"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_tresptec__nfag10_idCSRT
+msgid ""
+"Identificador do código de segurança do responsável técnico\n"
+"Identificador do CSRT utilizado para geração do hash"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__nfag10_tpAmb
+msgid "Identificação do Ambiente"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_infprot__nfag10_tpAmb
+msgid ""
+"Identificação do Ambiente:\n"
+"1 - Produção\n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_emit
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_emit
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_emit
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_emit
+msgid "Identificação do Emitente (nfag_emit)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_emit
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_emit
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_emit
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_emit
+msgid "Identificação do Emitente do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_dest
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_dest
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_dest
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_dest
+msgid "Identificação do destinatário (nfag_dest)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_partner__nfag10_idOutros
+msgid ""
+"Identificação do destinatário outros\n"
+"Identificação do destinatário não obrigado a inscrição do CPF tais como estrangeiro, indígena (informar código do RANI) e quilombola; ou destinatário que a distribuidora não possui a informação (nestes casos orienta-se informar '00000')."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_idOutros
+msgid "Identificação do destinatário outros (nfag_idOutros)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__nfag10_idMedidor
+msgid "Identificação do medidor"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_nfag_meter__nfag10_idMedidor
+msgid ""
+"Identificação do medidor\n"
+"Caso não tenha medidor informar '000000'  quando necessite informar datas de leitura para geranção do documento auxilair"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_nSiteAutoriz
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_nSiteAutoriz
+msgid "Identificação do número do Site (nfag_nSiteAutoriz)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_nSiteAutoriz
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_nSiteAutoriz
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_nSiteAutoriz
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_nSiteAutoriz
+msgid ""
+"Identificação do número do Site do Autorizador de recepção da NFAg\n"
+"Se o autorizador da NFAg possuir apenas um site deverá ser informado com Zero (0), em caso de Autorizador trabalhar com múltiplos sites indicar o número do site para qual foi endereçada a NFAg (1 a 9).\n"
+"Observação: O ambiente autorizador que trabalhar com mais de um Site deverá divulgar para cada endereço de site qual número correspondente de nSiteAutoriz o contribuinte pode usar"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gprocref__nfag10_indDevolucao
+msgid "Indicador de devolução do valor do item"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gprocref__nfag10_indDevolucao
+msgid ""
+"Indicador de devolução do valor do item\n"
+"1 – Devolução do valor do item"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_vConst
+msgid "Indicar o fator de multiplicação"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_vConst
+msgid "Indicar o fator de multiplicação do medidor"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gagregadora
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_gAgregadora
+msgid "Informar para faturamento agregador (5)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_gAgregadora
+msgid "Informar para faturamento agregador (nfag_gAgregadora)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_infAdFisco
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_infAdFisco
+msgid "Informações adicionais de interesse (nfag_infAdFisco)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_infAdFisco
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_infAdFisco
+msgid ""
+"Informações adicionais de interesse do Fisco\n"
+"Norma referenciada, informações complementares, etc"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_infAdProd
+msgid "Informações adicionais do produto (nfag_infAdProd)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_infAdProd
+msgid ""
+"Informações adicionais do produto (norma referenciada, informações "
+"complementares, etc)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_infCpl
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_infCpl
+msgid "Informações complementares de interesse (nfag_infCpl)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_infCpl
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_infCpl
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_infCpl
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_infCpl
+msgid "Informações complementares de interesse do Contribuinte"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_gRespTec
+msgid "Informações do Responsável Técnico (nfag_gRespTec)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_gRespTec
+msgid "Informações do Responsável Técnico pela emissão do DF-e"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_gqualiagua
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_gQualiAgua
+msgid "Informações sobre a qualidade de água"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_infnfagsupl
+msgid "Informações suplementares da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_IE
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_IE
+msgid "Inscrição Estadual do destinatário (nfag_IE)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_company__nfag10_IE
+msgid "Inscrição Estadual do emitente (nfag_IE)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_IM
+msgid "Inscrição Municipal (nfag_IM)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_company__nfag10_ISUFEmit
+msgid ""
+"Inscrição do emitente da Suframa\n"
+"Informar o número do Cadastro do emitente na Suframa. Campo obrigatório nas operações que se beneficiam de incentivos fiscais existentes nas áreas sob controle da SUFRAMA com alíquota zero da CBS referente aos arts. 451 e 466 da LC 214/25"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_company__nfag10_ISUFEmit
+msgid "Inscrição do emitente da Suframa (nfag_ISUFEmit)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfag.nfag_document_form_view
+msgid "Invoice"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Item classification code (7 digits) of %s"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history____last_update
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line____last_update
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__write_uid
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__write_uid
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__write_date
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__write_date
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gqualiagua__nfag10_cProcesso
+msgid "Legislação aplicada"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_xLgr
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_xLgr
+msgid "Logradouro (nfag_xLgr)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_ganalise__nfag10_nMediaMensal
+msgid "Media mensal dos valores da analise"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_inffisco
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_inffisco__nfag10_xMsg
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tprotnfag__nfag10_infFisco
+msgid "Mensagem do Fisco"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_autxml__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_cofins__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gagregadora__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_ganalise__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gfatconjunto__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gibscbs__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gmedicao__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gpagantecipado__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gpix__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gproc__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gprocref__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gqualiagua__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gsub__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gtarif__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_inffisco__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infnfagsupl__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infpaa__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_pgtovinc__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_pis__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_rettrib__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tfs__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tfu__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tmedidaag__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tprotnfag__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tresptec__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_company__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__brl_currency_id
+msgid "Moeda"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gsub__nfag10_motSub
+msgid "Motivo da substituição"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gsub__nfag10_motSub
+msgid ""
+"Motivo da substituição\n"
+"01 – Erro de Leitura\n"
+"02 – Erro de Preço ou Erro de Tarifa; \n"
+"03 – Decisão Judicial\n"
+"04 – Erro Cadastral; \n"
+"05 - Erro de Tributação\n"
+"06 - Decisão da Reguladora; \n"
+"07 - Acúmulo de Consumo; \n"
+"08 - Correção de Vazamento Interno\n"
+"09 - Alteração de vencimento"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__nfag10_medDiaria
+msgid "Média Diária de consumo"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__nfag10_medMensal
+msgid "Média Mensal de consumo"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfag.nfag_document_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfag.nfag_document_line_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfag.res_company_form_view
+msgid "NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_l10n_br_nfag_consumption_history
+msgid "NFAg Consumption History (gHistCons)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_l10n_br_nfag_consumption_history_line
+msgid "NFAg Consumption of a Month (gCons)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move_line__nfag_document_type
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag_document_type
+msgid "NFAg Document Type Code"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag_environment
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag_environment
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag_environment
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag_environment
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_company__nfag_environment
+msgid "NFAg Environment"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_company__nfag_qrcode_url
+msgid "NFAg QR Code URL"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_l10n_br_nfag_meter
+msgid "NFAg Water Meter (gMed)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "NFAg cancellation refused: %(code)s - %(reason)s"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_autxml__nfag10_autXML_infNFAg_id
+msgid "Nfag10 Autxml Infnfag"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_ganalise__nfag10_gAnalise_gQualiAgua_id
+msgid "Nfag10 Ganalise Gqualiagua"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__nfag10_gCons_gHistCons_id
+msgid "Nfag10 Gcons Ghistcons"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__nfag10_gHistCons_gAgencia_id
+msgid "Nfag10 Ghistcons Gagencia"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__nfag10_gMed_infNFAg_id
+msgid "Nfag10 Gmed Infnfag"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gproc__nfag10_gProc_gProcRef_id
+msgid "Nfag10 Gproc Gprocref"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gtarif__nfag10_gTarif_det_id
+msgid "Nfag10 Gtarif Det"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tresptec__nfag10_xContato
+msgid "Nome da pessoa a ser contatada"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_tresptec__nfag10_xContato
+msgid ""
+"Nome da pessoa a ser contatada\n"
+"Informar o nome da pessoa a ser contatada na empresa desenvolvedora do sistema utilizado na emissão do documento fiscal eletrônico. No caso de pessoa física, informar o respectivo nome."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_partner__nfag10_xNomeAdicional
+msgid ""
+"Nome de destinatário adicional\n"
+"Exemplo: Nome do Conjuge, Companheira(o)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_xNomeAdicional
+msgid "Nome de destinatário adicional (nfag_xNomeAdicional)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gqualiagua__nfag10_SistemaAbast
+msgid "Nome do Sistema de abastecimento"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history__nfag10_xHistorico
+msgid "Nome do histórico"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_nfag_consumption_history__nfag10_xHistorico
+msgid ""
+"Nome do histórico para exibição/apresentação\n"
+"Exemplo: Consumo Meses Anteriores"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_ganalise__nfag10_xItemAnalisado
+msgid "Nome do item analisado"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_xMun
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_xMun
+msgid "Nome do município (nfag_xMun)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_company__nfag10_xFant
+msgid "Nome fantasia do emitente (nfag_xFant)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_nro
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_nro
+msgid "Número (nfag_nro)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_cNIS
+msgid "Número da Identificação Social - NIS (nfag_cNIS)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_nUnidConsumo
+msgid "Número da unidade de consumo"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_ganalise__nfag10_nAmostraAnalisada
+msgid "Número de amostra analisada"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_ganalise__nfag10_nAmostraDPadrao
+msgid "Número de amostra dentro do padrão"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_ganalise__nfag10_nAmostraFPadrao
+msgid "Número de amostra fora do padrão"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_ganalise__nfag10_nAmostraMinima
+msgid "Número de amostra minima"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_meter__nfag10_nMed
+msgid "Número de referência para informar"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_nfag_meter__nfag10_nMed
+msgid ""
+"Número de referência para informar nos produtos a relação com a medição"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gtarif__nfag10_nAto
+msgid "Número do Ato"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_NB
+msgid "Número do Benefício (nfag_NB)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_partner__nfag10_CNPJ
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_users__nfag10_CNPJ
+msgid ""
+"Número do CNPJ\n"
+"Informar os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_CNPJ
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_CNPJ
+msgid "Número do CNPJ (nfag_CNPJ)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_partner__nfag10_CPF
+#: model:ir.model.fields,help:l10n_br_nfag.field_res_users__nfag10_CPF
+msgid ""
+"Número do CPF\n"
+"Informar os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_CPF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_CPF
+msgid "Número do CPF (nfag_CPF)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gproc__nfag10_nProcesso
+msgid "Número do Processo"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__nfag10_nProt
+msgid "Número do Protocolo de Status da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_nNF
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_nNF
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_nNF
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_nNF
+msgid ""
+"Número do documento fiscal\n"
+"Número que identifica o documento fiscal 1 a 999999999."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_nNF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_nNF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_nNF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_nNF
+msgid "Número do documento fiscal (nfag_nNF)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move_line__nfag10_nItem
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_nItem
+msgid "Número do item da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_nItemAnt
+msgid "Número do item da NFAg anterior"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_nItemAnt
+msgid ""
+"Número do item da NFAg anterior\n"
+"Informar nro do item da chave de acesso de referencia anterior\n"
+"\n"
+"TAG OPCIONAL, DEVE SER INFORMADA APENAS NOS CASOS PREVISTOS DE NOTA ANTERIOR REFERENCIADA"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gpagantecipado__nfag10_nItemPagAnt
+msgid "Número do item do DFe de antecipação"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gpagantecipado__nfag10_nItemPagAnt
+msgid "Número do item do DFe de antecipação para referência direta a um item"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Only the normal NFAg (tpFat 1 and finNFAg 0) is supported yet"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Origin of the quantity of %s"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "PIS CST not accepted by the NFAg in %s"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Product code of %s"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields.selection,name:l10n_br_nfag.selection__l10n_br_fiscal_document__nfag_environment__1
+#: model:ir.model.fields.selection,name:l10n_br_nfag.selection__res_company__nfag_environment__1
+msgid "Production"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gprocref__nfag10_qFaturada
+msgid "Quantidade Faturada"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move_line__nfag10_qFaturada
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_qFaturada
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gprocref__nfag10_qFaturada
+msgid ""
+"Quantidade Faturada\n"
+"Informar a quantidade de comercialização do produto ."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move_line__nfag10_qFaturada
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_qFaturada
+msgid "Quantidade Faturada (nfag_qFaturada)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__nfag10_qtdDias
+msgid "Quantidade de dias de medição"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_xNome
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_xNome
+msgid "Razão social ou Nome do destinatário (nfag_xNome)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_company__nfag10_xNome
+msgid "Razão social ou Nome do emitente (nfag_xNome)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gmedicao__nfag10_nMed
+msgid "Referência para a medição"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gmedicao__nfag10_nMed
+msgid "Referência para a medição ao qual se refere o item"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfag.nfag_document_form_view
+msgid "Regulatory Agency"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_UF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_UF
+msgid "Sigla da UF (nfag_UF)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_serie
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_serie
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_serie
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_serie
+msgid ""
+"Série do documento fiscal\n"
+"Informar a série do documento fiscal (informar zero para série única)."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_serie
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_serie
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_serie
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_serie
+msgid "Série do documento fiscal (nfag_serie)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_tfs
+msgid "Taxa de Fiscalização de Serviço"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_tfu
+msgid "Taxa de Fiscalização de Uso"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_dest
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_dest
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_dest
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_dest
+msgid "Technical Field."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_partner__nfag10_fone
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_res_users__nfag10_fone
+msgid "Telefone (nfag_fone)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tresptec__nfag10_fone
+msgid "Telefone da pessoa jurídica"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_tresptec__nfag10_fone
+msgid ""
+"Telefone da pessoa jurídica a ser contatada\n"
+"Preencher com o Código DDD + número do telefone."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infnfagsupl__nfag10_qrCodNFAg
+msgid "Texto com o QR-Code para consulta"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_infnfagsupl__nfag10_qrCodNFAg
+msgid "Texto com o QR-Code para consulta da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "The offline contingency is not supported yet"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_tresptec
+msgid "Tipo Dados da Responsável Técnico"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gmedicao__nfag10_tpMotNaoLeitura
+msgid "Tipo Motivo da não leitura"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gmedicao__nfag10_tpMotNaoLeitura
+msgid ""
+"Tipo Motivo da não leitura\n"
+"1 - Consumidor; \n"
+"2 - Distribuidora; \n"
+"3 - Independente do Consumidor e distribuidora;"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_tprotnfag
+msgid "Tipo Protocolo de status resultado do processamento da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_tpFat
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_tpFat
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_tpFat
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_tpFat
+msgid "Tipo de Faturamento da NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_tpFat
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_tpFat
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_tpFat
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_tpFat
+msgid ""
+"Tipo de Faturamento da NFAg\n"
+"1 - Faturamento Normal; \n"
+"2 - Faturamento por terceiro; \n"
+"3 - Faturamento conjunto\n"
+"4 - Faturamento Agregado\n"
+"5 - Faturamento Agregador\n"
+"1- Faturamento Normal; 2 - Faturamento por terceiro; 3 - Faturamento conjunto"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gproc__nfag10_tpProc
+msgid "Tipo de Processo"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gproc__nfag10_tpProc
+msgid ""
+"Tipo de Processo\n"
+"0 - Processo Adm Estadual;\n"
+"1 - Justiça Federal; \n"
+"2 - Justiça Estadual; \n"
+"3 - Processo Adm Municipal;\n"
+"4 - Processo Adm Federal;\n"
+"5 - Procon"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_nfag_10_tmedidaag
+msgid "Tipo de dados de medida"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_tpGrMed
+msgid "Tipo de grandeza medida"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_tpGrMed
+msgid ""
+"Tipo de grandeza medida\n"
+"01 - Água Tratada;\n"
+"02 - Esgoto tratado;\n"
+"03 - Esgoto coletado;\n"
+"04 - Resíduos sólidos;\n"
+"05 - Água de reuso;\n"
+"06 - Esgoto Estatico\n"
+"07 - Captação de agua bruta\n"
+"08 - Recebimento e tratamento de chorume\n"
+"99 - Outros"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_tpAmb
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_tpAmb
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_tpAmb
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_tpAmb
+msgid ""
+"Tipo do Ambiente\n"
+"1 - Produção; \n"
+"2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_tpAmb
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_tpAmb
+msgid "Tipo do Ambiente (nfag_tpAmb)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model,name:l10n_br_nfag.model_l10n_br_fiscal_document_line
+msgid "Tipo imposto da NFGas"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gpix__nfag10_urlQRCodePIX
+msgid "URL do QRCode do PIX"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gpix__nfag10_urlQRCodePIX
+msgid "URL do QRCode do PIX que será apresentado na fatura"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__nfag10_uMed
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_uMed
+msgid "Unidade Básica de Medida"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__nfag10_uMed
+msgid ""
+"Unidade Básica de Medida\n"
+"1 - m3 e 2 - litro"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_uMed
+msgid ""
+"Unidade Básica de Medida\n"
+"1 - m3; \n"
+"2 - Litros;\n"
+"5 - Unidade\n"
+"6 - ton"
+msgstr ""
+
+#. module: l10n_br_nfag
+#. odoo-python
+#: code:addons/l10n_br_nfag/models/document.py:0
+#, python-format
+msgid "Unit of measure of %s"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tfs__nfag10_vBCTFS
+msgid "Valor BC TFS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tfu__nfag10_vBCTFU
+msgid "Valor BC TFU"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vTFS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vTFS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vTFS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vTFS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tfs__nfag10_vTFS
+msgid "Valor TFS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vTFU
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vTFU
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vTFU
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vTFU
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tfu__nfag10_vTFU
+msgid "Valor TFU"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vNF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vNF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vNF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vNF
+msgid "Valor Total da NF-e (nfag_vNF)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vProd
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vProd
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vProd
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vProd
+msgid "Valor Total dos produtos e serviços (nfag_vProd)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_cofins__nfag10_vBC
+msgid "Valor da BC do COFINS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_pis__nfag10_vBC
+msgid "Valor da BC do PIS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gibscbs__nfag10_vCBS
+msgid "Valor da CBS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_rettrib__nfag10_vRetCSLL
+msgid "Valor da CSLL retida"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vRetCSLL
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vRetCSLL
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vRetCSLL
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vRetCSLL
+msgid "Valor da CSLL retida (nfag_vRetCSLL)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_vMed
+msgid "Valor da medição"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_vMed
+msgid ""
+"Valor da medição\n"
+"(vMedAtu – vMedAnt) * vConst"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_vMedAnt
+msgid "Valor da medição (leitura) anterior"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_vMedAtu
+msgid "Valor da medição (leitura) atual"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_ganalise__nfag10_xValorReferencia
+msgid "Valor de referência"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gibscbs__nfag10_vBC
+msgid "Valor do BC"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_cofins__nfag10_vCOFINS
+msgid "Valor do COFINS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vCOFINS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vCOFINS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vCOFINS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vCOFINS
+msgid "Valor do COFINS (nfag_vCOFINS)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_rettrib__nfag10_vRetCofins
+msgid "Valor do COFNS retido"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vRetCofins
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vRetCofins
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vRetCofins
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vRetCofins
+msgid "Valor do COFNS retido (nfag_vRetCofins)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gibscbs__nfag10_vIBSMun
+msgid "Valor do IBS Municipal"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gibscbs__nfag10_vIBSUF
+msgid "Valor do IBS de competência das UF"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_rettrib__nfag10_vIRRF
+msgid "Valor do IRRF retido"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vIRRF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vIRRF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vIRRF
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vIRRF
+msgid "Valor do IRRF retido (nfag_vIRRF)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_pis__nfag10_vPIS
+msgid "Valor do PIS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vPIS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vPIS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vPIS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vPIS
+msgid "Valor do PIS (nfag_vPIS)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_rettrib__nfag10_vRetPIS
+msgid "Valor do PIS retido"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vRetPIS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vRetPIS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vRetPIS
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vRetPIS
+msgid "Valor do PIS retido (nfag_vRetPIS)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gagregadora__nfag10_vTotDFe
+msgid "Valor total do documento fiscal"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_vTotDFe
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_vTotDFe
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_vTotDFe
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vTotDFe
+msgid "Valor total do documento fiscal (nfag_vTotDFe)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_vTotDFe
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_vTotDFe
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_vTotDFe
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_vTotDFe
+msgid "Valor total do documento fiscal (vNF + IBS + CBS)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gagregadora__nfag10_vTotDFe
+msgid "Valor total do documento fiscal da nota agregada"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gprocref__nfag10_vProd
+msgid "Valor total do item"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move_line__nfag10_vProd
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_vProd
+msgid "Valor total do item (nfag_vProd)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_gprocref__nfag10_vItem
+msgid "Valor unitário do item"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_gprocref__nfag10_vItem
+msgid ""
+"Valor unitário do item\n"
+"Informar o valor sem a influência da decisão judicial/administrativa."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move_line__nfag10_vItem
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_vItem
+msgid ""
+"Valor unitário do item\n"
+"O valor unitário do item no caso de energia elétrica corresponde ao valor da tarifa e dos tributos que devam compor a base de cálculo. O item pode estar acrescido do adicional da bandeira tarifária ou o adicional de bandeira poderá ser lançado como um item específico.\n"
+"Este campo também corresponde ao preço médio efetivo relativo ao consumo ativo do período, quando aplicáveis os termos do inciso I da clausula primeira do Convênio ICMS 77/11 (DEVEC)."
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move_line__nfag10_vItem
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document_line__nfag10_vItem
+msgid "Valor unitário do item (nfag_vItem)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_infprot__nfag10_verAplic
+msgid "Versão do Aplicativo que processou"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_infprot__nfag10_verAplic
+msgid "Versão do Aplicativo que processou a NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_versao
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_versao
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_versao
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_versao
+msgid "Versão do leiaute (nfag_versao)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_bank_statement_line__nfag10_verProc
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_move__nfag10_verProc
+#: model:ir.model.fields,help:l10n_br_nfag.field_account_payment__nfag10_verProc
+#: model:ir.model.fields,help:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_verProc
+msgid ""
+"Versão do processo de emissão\n"
+"Informar a versão do aplicativo emissor de NFAg"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_bank_statement_line__nfag10_verProc
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_move__nfag10_verProc
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_account_payment__nfag10_verProc
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_fiscal_document__nfag10_verProc
+msgid "Versão do processo de emissão (nfag_verProc)"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_l10n_br_nfag_consumption_history_line__nfag10_volFat
+msgid "Volume Faturado"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tmedidaag__nfag10_vUnidConsumo
+msgid "Volume por unidade de consumo em m3"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfag.nfag_document_form_view
+msgid "Water Meters"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_cofins__nfag10_CST
+msgid "classificação Tributária do COFINS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_cofins__nfag10_CST
+msgid ""
+"classificação Tributária do COFINS\n"
+"01 – Tributável com alíquota básica\n"
+"02 – Tributável com alíquota diferenciada\n"
+"06 – Tributável com alíquota erro\n"
+"07 – Operação isenta de contribuição\n"
+"08 – Operação sem incidência da contribuição\n"
+"09 – Operação com suspensão da contribuição  \n"
+"49 – Outras operações de saída"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_pis__nfag10_CST
+msgid "classificação Tributária do PIS"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,help:l10n_br_nfag.field_nfag_10_pis__nfag10_CST
+msgid ""
+"classificação Tributária do PIS\n"
+"01 – Tributável com alíquota básica\n"
+"02 – Tributável com alíquota diferenciada\n"
+"06 – Tributável com alíquota erro\n"
+"07 – Operação isenta de contribuição\n"
+"08 – Operação sem incidência da contribuição\n"
+"09 – Operação com suspensão da contribuição  \n"
+"49 – Outras operações de saída"
+msgstr ""
+
+#. module: l10n_br_nfag
+#: model:ir.model.fields,field_description:l10n_br_nfag.field_nfag_10_tprotnfag__nfag10_versao
+msgid "versao"
+msgstr ""
