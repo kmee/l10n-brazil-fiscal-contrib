@@ -92,7 +92,7 @@ class TestBpeTm(TransactionCase):
             }
         )
         cls.product = cls.env["product.product"].create(
-            {"name": "Viagem metropolitana", "type": "service"}
+            {"name": "Viagem metropolitana", "detailed_type": "service"}
         )
         cls.document = cls.env["l10n_br_fiscal.document"].create(
             {

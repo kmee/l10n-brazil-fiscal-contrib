@@ -12,11 +12,14 @@
                 position="attributes"
             >
                 <attribute
-                    name="invisible"
-                >document_type != '63' or state_edoc != 'autorizada' or bpe_layout == 'tm'</attribute>
+                    name="attrs"
+                >{'invisible': ['|', '|', ('document_type', '!=', '63'), ('state_edoc', '!=', 'autorizada'), ('bpe_layout', '=', 'tm')]}</attribute>
             </xpath>
             <xpath expr="//group[@name='bpe_settings']" position="after">
-                <group name="bpe_layout_tm" invisible="bpe_layout != 'tm'">
+                <group
+                    name="bpe_layout_tm"
+                    attrs="{'invisible': [('bpe_layout', '!=', 'tm')]}"
+                >
                     <group name="bpe_tm_trips" string="BP-e TM">
                         <field name="bpe10_modal" />
                         <field name="bpe_tm_competence_date" />

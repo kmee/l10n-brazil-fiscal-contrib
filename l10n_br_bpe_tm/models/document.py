@@ -299,7 +299,11 @@ class Document(models.Model):
             (company.state_id, _("Company State")),
             # NT BP-e 2020.002 v1.01, rule H18 (rejection 229)
             (self.bpe10_IE, _("Company State Registration (IE)")),
-            (company.sudo().certificate, _("Digital Certificate")),
+            (
+                company.sudo().certificate_nfe_id
+                or company.sudo().certificate_ecnpj_id,
+                _("Digital Certificate"),
+            ),
             (self.bpe_environment, _("BP-e Environment")),
             (self.bpe_tm_competence_date, _("BP-e TM Competence Date")),
             (self.bpe_tm_cfop_id, _("BP-e TM CFOP")),

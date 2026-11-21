@@ -8,7 +8,11 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_line_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook" position="inside">
-                <page name="bpe_tm" string="BP-e TM" invisible="bpe_layout != 'tm'">
+                <page
+                    name="bpe_tm"
+                    string="BP-e TM"
+                    attrs="{'invisible': [('bpe_layout', '!=', 'tm')]}"
+                >
                     <field name="bpe_layout" invisible="1" />
                     <group>
                         <group name="bpe_tm_equipment" string="Counter Equipment">
@@ -25,10 +29,10 @@
                         </group>
                     </group>
                     <field name="bpe_tm_component_ids">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="name" />
                             <field name="quantity" />
-                        </list>
+                        </tree>
                     </field>
                 </page>
             </xpath>
