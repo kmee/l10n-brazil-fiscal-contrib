@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="document_form" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.document.form (nfse deducao)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
+        <field name="arch" type="xml">
+            <page name="extra_info" position="before">
+                <page
+                    name="nfse_bc_adjustment"
+                    string="Tax Base Adjustment"
+                    attrs="{'invisible': [('document_type', '!=', 'SE')]}"
+                >
+                    <field name="nfse_bc_adjustment_ids">
+                        <tree>
+                            <field name="adjustment_type" />
+                            <field name="reference_type" />
+                            <field name="dfe_key" optional="show" />
+                            <field name="supplier_id" optional="show" />
+                            <field name="issue_date" optional="hide" />
+                            <field name="currency_id" invisible="1" />
+                            <field name="document_amount" />
+                            <field name="applied_amount" />
+                        </tree>
+                        <form>
+                            <group>
+                                <group>
+                                    <field name="adjustment_type" />
+                                    <field
+                                        name="adjustment_description"
+                                        attrs="{'invisible': [('adjustment_type', 'not in', ('99', '199'))]}"
+                                    />
+                                    <field name="source_document_id" />
+                                    <field name="reference_type" />
+                                    <field
+                                        name="dfe_type"
+                                        attrs="{'invisible': [('reference_type', '!=', 'dfe')]}"
+                                    />
+                                    <field
+                                        name="dfe_type_description"
+                                        attrs="{'invisible': ['|', ('reference_type', '!=', 'dfe'), ('dfe_type', '!=', '9')]}"
+                                    />
+                                    <field
+                                        name="dfe_key"
+                                        attrs="{'invisible': [('reference_type', '!=', 'dfe')]}"
+                                    />
+                                    <field
+                                        name="fiscal_city_id"
+                                        attrs="{'invisible': [('reference_type', '!=', 'fiscal')]}"
+                                    />
+                                    <field
+                                        name="reference_number"
+                                        attrs="{'invisible': [('reference_type', '=', 'dfe')]}"
+                                    />
+                                    <field
+                                        name="reference_description"
+                                        attrs="{'invisible': [('reference_type', '=', 'dfe')]}"
+                                    />
+                                </group>
+                                <group>
+                                    <field name="currency_id" invisible="1" />
+                                    <field name="document_amount" />
+                                    <field name="applied_amount" />
+                                    <field name="issue_date" />
+                                    <field name="competence_date" />
+                                    <field name="supplier_id" />
+                                </group>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </page>
+        </field>
+    </record>
+</odoo>
