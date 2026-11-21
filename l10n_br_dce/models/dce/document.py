@@ -236,7 +236,7 @@ class DCe(spec_models.StackedModel):
         copy=False,
         default=lambda self: self.env["ir.config_parameter"]
         .sudo()
-        .get_param("l10n_br_dce.version.name", default="Odoo Brasil OCA v18"),
+        .get_param("l10n_br_dce.version.name", default="Odoo Brasil OCA v16"),
     )
 
     @api.depends(
@@ -392,10 +392,10 @@ class DCe(spec_models.StackedModel):
         return edocs
 
     def _dce_sign(self, binding, doc_id):
-        certificate = self.company_id._get_br_certificate()
+        certificate = self.company_id.sudo().certificate
         return binding.to_xml(
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=certificate.with_context(bin_size=False).file,
+            pkcs12_password=certificate.password,
             doc_id=doc_id,
         )
 
@@ -431,12 +431,12 @@ class DCe(spec_models.StackedModel):
 
     def _get_dce_client(self):
         self.ensure_one()
-        certificate = self.company_id._get_br_certificate()
+        certificate = self.company_id.sudo().certificate
         return DceClient(
             ambiente=self.dce_environment,
             uf=self.company_id.state_id.ibge_code,
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=certificate.with_context(bin_size=False).file,
+            pkcs12_password=certificate.password,
         )
 
     def _eletronic_document_send(self):
@@ -646,9 +646,7 @@ class DCe(spec_models.StackedModel):
                 and key[20:22] == MODELO_FISCAL_DCE
                 and _check_digit(key[:43]) == key[43]
             ):
-                raise ValidationError(
-                    self.env._("Invalid DC-e access key: %(key)s", key=key)
-                )
+                raise ValidationError(_("Invalid DC-e access key: %(key)s", key=key))
         return result
 
     def _document_number(self):

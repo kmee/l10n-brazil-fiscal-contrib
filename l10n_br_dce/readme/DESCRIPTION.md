@@ -8,7 +8,7 @@ contribuinte do ICMS, quando não se exige outro documento fiscal, e é
 obrigatória desde 06/04/2026 (Ajuste SINIEF 05/21, na redação do Ajuste SINIEF
 22/25, com as exceções do Ajuste SINIEF 35/26). Ela não tem grupo de IBS e CBS.
 
-O `l10n_br_fiscal` 18.0 não tem o tipo de documento 99: o módulo o cria nos
+O `l10n_br_fiscal` 16.0 não tem o tipo de documento 99: o módulo o cria nos
 dados (`l10n_br_dce.document_99`).
 
 O módulo emite a DC-e de três formas (campo `tpEmit`, NT 2024.001 v1.30):
