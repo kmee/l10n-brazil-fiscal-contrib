@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="nfe_cana_form" model="ir.ui.view">
+        <field name="name">nfe.40.cana.form</field>
+        <field name="model">nfe.40.cana</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="brl_currency_id" invisible="1" />
+                <group>
+                    <group>
+                        <field name="nfe40_safra" string="Harvest" />
+                        <field name="nfe40_ref" string="Reference Month" />
+                    </group>
+                    <group>
+                        <field name="nfe40_qTotMes" string="Month Total (kg)" />
+                        <field name="nfe40_qTotAnt" string="Previous Total (kg)" />
+                        <field name="nfe40_qTotGer" string="Grand Total (kg)" />
+                    </group>
+                </group>
+                <field name="nfe40_forDia">
+                    <tree editable="bottom">
+                        <field name="nfe40_dia" string="Day" />
+                        <field name="nfe40_qtde" string="Quantity (kg)" />
+                    </tree>
+                </field>
+                <field name="nfe40_deduc">
+                    <tree editable="bottom">
+                        <field name="brl_currency_id" invisible="1" />
+                        <field name="nfe40_xDed" string="Deduction" />
+                        <field name="nfe40_vDed" string="Amount" />
+                    </tree>
+                </field>
+                <group>
+                    <field name="nfe40_vFor" string="Supplies Amount" />
+                    <field name="nfe40_vTotDed" string="Deductions Amount" />
+                    <field name="nfe40_vLiqFor" string="Net Supplies Amount" />
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
