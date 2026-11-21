@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e Sugarcane Acquisition (cana)",
-    "summary": "Report the sugarcane acquisition register in the NF-e (cana group)",
+    "summary": "Informa o registro de aquisição de cana-de-açúcar na NF-e (grupo cana)",
     "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

@@ -1,20 +1,20 @@
-This module reports the medicine group of the NF-e items (group K, `med`)
-and enforces the traceability group that the SEFAZ requires for
-medicines.
+Este módulo informa o grupo de medicamento dos itens da NF-e (grupo K,
+`med`) e exige o grupo de rastreabilidade que a SEFAZ requer para
+medicamentos.
 
-The ANVISA code (`cProdANVISA`), the exemption reason
-(`xMotivoIsencao`) and the maximum consumer price (`vPMC`) are set once
-on the product and copied to the fiscal document lines of that product.
-The values can be changed on each line, and the lines of an incoming
-NF-e keep the values of the supplier XML.
+O código da ANVISA (`cProdANVISA`), o motivo da isenção
+(`xMotivoIsencao`) e o preço máximo ao consumidor (`vPMC`) são definidos
+uma vez no produto e copiados para as linhas do documento fiscal desse
+produto. Os valores podem ser alterados em cada linha, e as linhas de
+uma NF-e recebida mantêm os valores do XML do fornecedor.
 
-The ANVISA code is checked against the layout: 11 or 13 digits, or
-`ISENTO` for medicines exempt from registration.
+O código da ANVISA é conferido contra o leiaute: 11 ou 13 dígitos, ou
+`ISENTO` para medicamentos isentos de registro.
 
-Rule K01-20 (rejection 873) requires the traceability group (`rastro`)
-on every item with the medicine group. The module refuses to confirm
-such an NF-e without lots, except in the cases listed by the rule:
-complementary, adjustment and return NF-e, non presential sales
-(`indPres` 2 or 3), incoming NF-e, DANFE type 6 and the CFOP of future
-delivery and sale on behalf of a third party (5922, 6922, 5118 to 5120,
-6118 to 6120). The lots come from the `l10n_br_nfe_rastro` module.
+A regra K01-20 (rejeição 873) exige o grupo de rastreabilidade
+(`rastro`) em todo item com o grupo de medicamento. O módulo recusa
+confirmar uma NF-e assim sem lotes, exceto nos casos listados pela
+regra: NF-e complementar, de ajuste e de devolução, vendas não
+presenciais (`indPres` 2 ou 3), NF-e recebida, DANFE tipo 6 e os CFOP de
+entrega futura e de venda por conta e ordem de terceiros (5922, 6922,
+5118 a 5120, 6118 a 6120). Os lotes vêm do módulo `l10n_br_nfe_rastro`.

@@ -370,20 +370,20 @@ ul.auto-toc {
 !! source digest: sha256:27b5e6ebb39309ac5aefbb34abc9e59bb282a4c3e4d15ace78c7fad0dfabf902
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_nfe_cana"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>This module reports the sugarcane acquisition register of the NF-e
-(group ZC, <tt class="docutils literal">cana</tt>): harvest, reference month, daily supplies
-(<tt class="docutils literal">forDia</tt>), month, previous and grand totals, deductions (<tt class="docutils literal">deduc</tt>),
-supplies, total deductions and net supplies amounts.</p>
-<p>The group is typed on the fiscal document, <em>Sugarcane</em> tab. The month
-total is the sum of the daily supplies, the grand total is the month
-total plus the previous total, the total deductions is the sum of the
-deductions and the net supplies amount is the supplies amount minus the
-deductions; all of them can be changed by hand.</p>
-<p>The layout is checked as the data is typed: harvest with 4 to 9
-characters, reference month as MM/YYYY, days from 1 to 31 with a single
-supply per day. Before the NF-e is issued, the module also refuses an
-NFC-e with the group (rule ZC01-10 of the MOC), a group without daily
-supplies or with more than 31, and more than 10 deductions.</p>
+<p>Este módulo informa o registro de aquisição de cana-de-açúcar da NF-e
+(grupo ZC, <tt class="docutils literal">cana</tt>): safra, mês de referência, fornecimentos diários
+(<tt class="docutils literal">forDia</tt>), totais do mês, anterior e geral, deduções (<tt class="docutils literal">deduc</tt>), e
+os valores de fornecimentos, total de deduções e fornecimentos líquidos.</p>
+<p>O grupo é digitado no documento fiscal, aba <em>Sugarcane</em>. O total do mês
+é a soma dos fornecimentos diários, o total geral é o total do mês mais
+o total anterior, o total de deduções é a soma das deduções e o valor
+dos fornecimentos líquidos é o valor dos fornecimentos menos as
+deduções; todos podem ser alterados à mão.</p>
+<p>O leiaute é conferido na digitação: safra com 4 a 9 caracteres, mês de
+referência como MM/AAAA, dias de 1 a 31 com um único fornecimento por
+dia. Antes da emissão da NF-e, o módulo também recusa NFC-e com o grupo
+(regra ZC01-10 do MOC), grupo sem fornecimentos diários ou com mais de
+31, e mais de 10 deduções.</p>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -400,22 +400,23 @@ supplies or with more than 31, and more than 10 deductions.</p>
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-1">Usage</a></h1>
-<p>On the fiscal document of the sugarcane acquisition, <em>Sugarcane</em> tab,
-create the group with the daily supplies and the deductions of the
-month. The NF-e XML carries the <tt class="docutils literal">cana</tt> tag.</p>
+<p>No documento fiscal da aquisição de cana-de-açúcar, aba <em>Sugarcane</em>,
+crie o grupo com os fornecimentos diários e as deduções do mês. O XML da
+NF-e leva a tag <tt class="docutils literal">cana</tt>.</p>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-2">Known issues / Roadmap</a></h1>
 <ul class="simple">
-<li>The daily supplies are typed; they are not read from the scale or from
-the receipts of the month.</li>
-<li>The previous total (<tt class="docutils literal">qTotAnt</tt>) and the supplies amount (<tt class="docutils literal">vFor</tt>)
-are typed; they are not taken from the earlier NF-e of the harvest nor
-from the document lines.</li>
-<li>No SEFAZ rule relating the totals was found in the MOC; the totals are
-computed for convenience and are not checked before issuing.</li>
-<li>The group is shown on the fiscal document form; the invoice form
-(<tt class="docutils literal">l10n_br_account</tt>) does not show it yet.</li>
+<li>Os fornecimentos diários são digitados; não são lidos da balança nem
+dos recibos do mês.</li>
+<li>O total anterior (<tt class="docutils literal">qTotAnt</tt>) e o valor dos fornecimentos (<tt class="docutils literal">vFor</tt>)
+são digitados; não são tomados das NF-e anteriores da safra nem das
+linhas do documento.</li>
+<li>Nenhuma regra da SEFAZ relacionando os totais foi encontrada no MOC;
+os totais são calculados por conveniência e não são conferidos antes
+da emissão.</li>
+<li>O grupo aparece no formulário do documento fiscal; o formulário da
+fatura (<tt class="docutils literal">l10n_br_account</tt>) ainda não o mostra.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">

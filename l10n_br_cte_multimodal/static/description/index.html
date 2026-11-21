@@ -370,31 +370,30 @@ ul.auto-toc {
 !! source digest: sha256:a2d21ad6ad33fbd17103410dfe87b25b2969cbeb1bb79a102373a949a2410455
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_cte_multimodal"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>This module adds the multimodal transport modal (modal <tt class="docutils literal">06</tt>) to the
-CT-e 4.00. The <tt class="docutils literal">l10n_br_cte</tt> module already lets the user choose
-“Multimodal” as the transport modal, but it only serializes the road,
-air, waterway, railway and pipeline modals: with modal <tt class="docutils literal">06</tt> the
-<tt class="docutils literal">infModal</tt> group was left empty.</p>
-<p>The module fills the <tt class="docutils literal">multimodal</tt> group of the <tt class="docutils literal">infModal</tt> (schema
-<tt class="docutils literal">cteMultiModal_v4.00.xsd</tt>, layout 3.6 of the Annex I of the CT-e
-Taxpayer Guidance Manual, MOC 4.00):</p>
+<p>Este módulo adiciona o modal de transporte multimodal (modal <tt class="docutils literal">06</tt>) ao
+CT-e 4.00. O módulo <tt class="docutils literal">l10n_br_cte</tt> já permite escolher <em>Multimodal</em>
+como modal de transporte, mas só serializa os modais rodoviário, aéreo,
+aquaviário, ferroviário e dutoviário: com o modal <tt class="docutils literal">06</tt> o grupo
+<tt class="docutils literal">infModal</tt> ficava vazio.</p>
+<p>O módulo preenche o grupo <tt class="docutils literal">multimodal</tt> do <tt class="docutils literal">infModal</tt> (schema
+<tt class="docutils literal">cteMultiModal_v4.00.xsd</tt>, leiaute 3.6 do Anexo I do Manual de
+Orientação do Contribuinte do CT-e, MOC 4.00):</p>
 <ul class="simple">
-<li><tt class="docutils literal">COTM</tt>: number of the certificate of the multimodal transport
-operator;</li>
-<li><tt class="docutils literal">indNegociavel</tt>: negotiable indicator (0 not negotiable, 1
-negotiable);</li>
-<li><tt class="docutils literal">seg</tt>: optional insurance group, with the insurance company name and
-CNPJ (<tt class="docutils literal">infSeg/xSeg</tt>, <tt class="docutils literal">infSeg/CNPJ</tt>), the policy number (<tt class="docutils literal">nApol</tt>)
-and the endorsement number (<tt class="docutils literal">nAver</tt>).</li>
+<li><tt class="docutils literal">COTM</tt>: número do Certificado do Operador de Transporte Multimodal;</li>
+<li><tt class="docutils literal">indNegociavel</tt>: indicador de negociável (0 não negociável, 1
+negociável);</li>
+<li><tt class="docutils literal">seg</tt>: grupo opcional de seguro, com o nome e o CNPJ da seguradora
+(<tt class="docutils literal">infSeg/xSeg</tt>, <tt class="docutils literal">infSeg/CNPJ</tt>), o número da apólice (<tt class="docutils literal">nApol</tt>) e
+o número da averbação (<tt class="docutils literal">nAver</tt>).</li>
 </ul>
-<p>The SEFAZ validates the XML of the modal against its own schema and
-rejects the CT-e with code 580 when it fails (MOC 4.00 Annex I, rule
-G026). Since the CT-e schema does not check the modal (<tt class="docutils literal">xs:any</tt> with
-<tt class="docutils literal"><span class="pre">processContents=&quot;skip&quot;</span></tt>), the module refuses to export a multimodal
-CT-e without the required elements: <tt class="docutils literal">COTM</tt> and <tt class="docutils literal">indNegociavel</tt>, and
-the insurance company name, policy and endorsement when any insurance
-field is filled. The insurance company CNPJ may be empty, as the layout
-allows (<tt class="docutils literal">TCnpjOpc</tt>).</p>
+<p>A SEFAZ valida o XML do modal contra o schema próprio e rejeita o CT-e
+com o código 580 quando a validação falha (MOC 4.00 Anexo I, regra
+G026). Como o schema do CT-e não confere o modal (<tt class="docutils literal">xs:any</tt> com
+<tt class="docutils literal"><span class="pre">processContents=&quot;skip&quot;</span></tt>), o módulo recusa exportar um CT-e multimodal
+sem os elementos obrigatórios: <tt class="docutils literal">COTM</tt> e <tt class="docutils literal">indNegociavel</tt>, e o nome da
+seguradora, a apólice e a averbação quando qualquer campo do seguro é
+preenchido. O CNPJ da seguradora pode ficar vazio, como o leiaute
+permite (<tt class="docutils literal">TCnpjOpc</tt>).</p>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -411,26 +410,26 @@ allows (<tt class="docutils literal">TCnpjOpc</tt>).</p>
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-1">Usage</a></h1>
-<p>On a CT-e (document type 57), open the “Modais” tab, choose “Multimodal”
-as the transport modal and fill in the certificate of the multimodal
-transport operator (COTM), the negotiable indicator and, when there is
-one, the insurance of the multimodal transport.</p>
+<p>Em um CT-e (tipo de documento 57), abra a aba <em>Modais</em>, escolha
+<em>Multimodal</em> como modal de transporte e preencha o Certificado do
+Operador de Transporte Multimodal (COTM), o indicador de negociável e,
+quando houver, o seguro do transporte multimodal.</p>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-2">Known issues / Roadmap</a></h1>
 <ul class="simple">
-<li>The CT-e of a service linked to a multimodal transport (<tt class="docutils literal">tpServ</tt> 4)
-must reference the multimodal CT-e issued by the operator
+<li>O CT-e de um serviço vinculado a transporte multimodal (<tt class="docutils literal">tpServ</tt> 4)
+deve referenciar o CT-e multimodal emitido pelo operador
 (<tt class="docutils literal">infCTeNorm/infServVinc/infCTeMultimodal/chCTeMultimodal</tt>, MOC 4.00
-Annex I rules G057, G058 and G070 to G075). That group is not filled
-yet.</li>
-<li>The event of registration of the multimodal transport
-(<tt class="docutils literal">evRegMultimodal</tt>) is not implemented.</li>
-<li>The DACTE does not print the multimodal group.</li>
-<li>Importing a CT-e XML with modal <tt class="docutils literal">06</tt> does not read the
-<tt class="docutils literal">multimodal</tt> group back.</li>
-<li>The insurance company is typed as text: it could be a partner, with
-the CNPJ taken from it.</li>
+Anexo I, regras G057, G058 e G070 a G075). Esse grupo ainda não é
+preenchido.</li>
+<li>O evento de registro do transporte multimodal (<tt class="docutils literal">evRegMultimodal</tt>)
+não está implementado.</li>
+<li>O DACTE não imprime o grupo multimodal.</li>
+<li>A importação de um XML de CT-e com modal <tt class="docutils literal">06</tt> não lê o grupo
+<tt class="docutils literal">multimodal</tt> de volta.</li>
+<li>A seguradora é digitada como texto: poderia ser um parceiro, com o
+CNPJ tomado dele.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">

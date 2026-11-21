@@ -22,34 +22,37 @@ NF-e Traceability (rastro)
 
 |badge1| |badge2| |badge3|
 
-This module fills the traceability group of the NF-e items (group I80,
-``rastro``) from the stock lots, and checks it before the NF-e is
-issued.
+Este módulo preenche o grupo de rastreabilidade dos itens da NF-e (grupo
+I80, ``rastro``) a partir dos lotes do estoque, e o confere antes da
+emissão da NF-e.
 
-The group was created by NT 2016.002 for products subject to sanitary
-regulation or recall: medicines, beverages, bottled water, veterinary
-and agricultural products and so on. Each item can carry up to 500 lots,
-each one with its number, quantity, manufacturing date and expiration
-date.
+O grupo foi criado pela NT 2016.002 para produtos sujeitos a regulação
+sanitária ou a recolhimento: medicamentos, bebidas, água envasada,
+produtos veterinários e agrícolas, entre outros. Cada item pode levar
+até 500 lotes, cada um com número, quantidade, data de fabricação e data
+de validade.
 
-When an invoice is created from a delivery (picking invoicing), each lot
-shipped becomes one traceability group of the invoice line:
+Quando uma fatura é criada a partir de uma entrega (faturamento da
+separação), cada lote expedido vira um grupo de rastreabilidade da linha
+da fatura:
 
-- lot number: the lot name;
-- quantity: the quantity of the lot in the invoice line unit;
-- manufacturing date: the lot production date;
-- expiration date: the lot expiration date.
+- número do lote: o nome do lote;
+- quantidade: a quantidade do lote na unidade da linha da fatura;
+- data de fabricação: a data de produção do lote;
+- data de validade: a data de validade do lote.
 
-Both dates are read as calendar dates in the user time zone.
+As duas datas são lidas como datas de calendário no fuso horário do
+usuário.
 
-Before the NF-e is confirmed the module refuses the data the SEFAZ would
-reject: missing lot number or dates, more than 500 lots, a manufacturing
-date after the issue date (rule I83-10, rejection 877) and an expiration
-date before the manufacturing date (rule I84-10, rejection 870).
+Antes da confirmação da NF-e, o módulo recusa os dados que a SEFAZ
+rejeitaria: número do lote ou datas ausentes, mais de 500 lotes, data de
+fabricação posterior à data de emissão (regra I83-10, rejeição 877) e
+data de validade anterior à data de fabricação (regra I84-10, rejeição
+870).
 
-The lots of an incoming NF-e are kept on the imported lines, and the
-groups can be edited by hand on the invoice line and on the fiscal
-document line (Traceability tab).
+Os lotes de uma NF-e recebida são mantidos nas linhas importadas, e os
+grupos podem ser editados à mão na linha da fatura e na linha do
+documento fiscal (aba Traceability).
 
 **Table of contents**
 
@@ -59,31 +62,31 @@ document line (Traceability tab).
 Configuration
 =============
 
-- Enable *Lots & Serial Numbers* and *Expiration Dates* in the Inventory
-  settings, and track the products by lot.
-- Fill the production date and the expiration date of the lots: both are
-  required by the NF-e layout.
+- Habilite *Lots & Serial Numbers* e *Expiration Dates* nas
+  configurações do Estoque, e rastreie os produtos por lote.
+- Preencha a data de produção e a data de validade dos lotes: ambas são
+  exigidas pelo leiaute da NF-e.
 
 Usage
 =====
 
-1. Deliver a product tracked by lot, choosing the lots shipped.
-2. Create the invoice from the delivery (*Create Invoice* on the
-   picking).
-3. Each invoice line of a lot tracked product shows one row per lot in
-   the *Traceability* tab.
-4. Post the invoice: the NF-e XML carries one ``rastro`` tag per lot.
+1. Entregue um produto rastreado por lote, escolhendo os lotes
+   expedidos.
+2. Crie a fatura a partir da entrega (*Create Invoice* na separação).
+3. Cada linha da fatura de um produto rastreado por lote mostra uma
+   linha por lote na aba *Traceability*.
+4. Lance a fatura: o XML da NF-e leva uma tag ``rastro`` por lote.
 
 Known issues / Roadmap
 ======================
 
-- The groups are filled by the picking invoicing wizard. Invoices
-  created in other ways (from a sale order, by hand) can call
-  ``account.move.line._fill_nfe40_rastro()`` or have the groups typed
-  in.
-- The aggregation code (``cAgreg``) is not filled automatically.
-- Importing an incoming NF-e keeps its lots on the fiscal document line,
-  but does not create the stock lots of the receipt.
+- Os grupos são preenchidos pelo assistente de faturamento da separação.
+  Faturas criadas de outras formas (a partir de um pedido de venda, à
+  mão) podem chamar ``account.move.line._fill_nfe40_rastro()`` ou ter os
+  grupos digitados.
+- O código de agregação (``cAgreg``) não é preenchido automaticamente.
+- A importação de uma NF-e recebida mantém seus lotes na linha do
+  documento fiscal, mas não cria os lotes de estoque do recebimento.
 
 Bug Tracker
 ===========

@@ -1,3 +1,3 @@
-On the fiscal document, *Agricultural Products* tab, create the group
-with the pesticide prescriptions or with the transit permit of the
-operation. The NF-e XML carries the `agropecuario` tag.
+No documento fiscal, aba *Agricultural Products*, crie o grupo com os
+receituários de agrotóxicos ou com a guia de trânsito da operação. O
+XML da NF-e leva a tag `agropecuario`.

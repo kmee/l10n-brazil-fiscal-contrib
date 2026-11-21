@@ -1,2 +1,2 @@
-- Set the *Address* of each warehouse that is not at the company
-  address, with its own CNPJ (or CPF) and full address.
+- Defina o *Address* de cada depósito que não esteja no endereço da
+  empresa, com CNPJ (ou CPF) próprio e endereço completo.

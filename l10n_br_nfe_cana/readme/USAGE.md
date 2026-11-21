@@ -1,3 +1,3 @@
-On the fiscal document of the sugarcane acquisition, *Sugarcane* tab,
-create the group with the daily supplies and the deductions of the
-month. The NF-e XML carries the `cana` tag.
+No documento fiscal da aquisição de cana-de-açúcar, aba *Sugarcane*,
+crie o grupo com os fornecimentos diários e as deduções do mês. O XML da
+NF-e leva a tag `cana`.

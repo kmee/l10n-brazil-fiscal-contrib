@@ -3,7 +3,8 @@
 
 {
     "name": "NFS-e Nacional Tax Base Adjustment (deducao)",
-    "summary": "Tax base adjustment group (vAjusteBC) of the NFS-e Nacional DPS",
+    "summary": "Grupo de ajuste da base de cálculo (vAjusteBC) da DPS da NFS-e "
+    "Nacional",
     "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

@@ -22,29 +22,28 @@ NF-e Purchase Information (compra)
 
 |badge1| |badge2| |badge3|
 
-This module fills the purchase information group of the NF-e (group ZB,
-``compra``): the commitment note of a public procurement (``xNEmp``),
-the purchase order (``xPed``) and the contract (``xCont``). The group is
-typical of sales to public administration bodies, that pay against a
-commitment note (nota de empenho).
+Este módulo preenche o grupo de informações de compra da NF-e (grupo ZB,
+``compra``): a nota de empenho de uma compra pública (``xNEmp``), o
+pedido de compra (``xPed``) e o contrato (``xCont``). O grupo é típico
+das vendas a órgãos da administração pública, que pagam contra uma nota
+de empenho.
 
-The three values are fields of the fiscal document (*Others* tab):
+Os três valores são campos do documento fiscal (aba *Others*):
 
-- commitment note: typed in (up to 22 characters);
-- customer purchase order: computed from the purchase order of the
-  document lines (``partner_order``, also reported per item in ``xPed``)
-  when all of them have the same one, otherwise from the reference of
-  the customer invoice (where Odoo copies the customer reference of the
-  sale order); it can be edited;
-- contract: typed in.
+- nota de empenho: digitada (até 22 caracteres);
+- pedido de compra do cliente: calculado a partir do pedido de compra
+  das linhas do documento (``partner_order``, informado também por item
+  em ``xPed``) quando todas têm o mesmo, caso contrário a partir da
+  referência da fatura do cliente (onde o Odoo copia a referência do
+  cliente do pedido de venda); pode ser editado;
+- contrato: digitado.
 
-The group is not written in the NFC-e nor in the NF-e with the
-simplified DANFE (rule ZB01-10, rejection 762).
+O grupo não é gravado na NFC-e nem na NF-e com DANFE simplificado (regra
+ZB01-10, rejeição 762).
 
-Before the NF-e is confirmed the module refuses an NF-e with ICMS relief
-for a sale to a public body (``motDesICMS`` 8) without the commitment
-note (rule ZB02-10, rejection 359, applied at the discretion of each
-state).
+Antes da confirmação da NF-e, o módulo recusa uma NF-e com desoneração
+de ICMS para venda a órgão público (``motDesICMS`` 8) sem a nota de
+empenho (regra ZB02-10, rejeição 359, aplicada a critério de cada UF).
 
 **Table of contents**
 
@@ -54,25 +53,26 @@ state).
 Usage
 =====
 
-1. Open the fiscal document of the NF-e (from the invoice, or in the
-   fiscal documents menu).
-2. In the *Others* tab, fill the commitment note and the contract, and
-   check the customer purchase order.
-3. Confirm the NF-e: the XML carries the ``compra`` group with the
-   values filled.
+1. Abra o documento fiscal da NF-e (a partir da fatura, ou no menu de
+   documentos fiscais).
+2. Na aba *Others*, preencha a nota de empenho e o contrato, e confira o
+   pedido de compra do cliente.
+3. Confirme a NF-e: o XML leva o grupo ``compra`` com os valores
+   preenchidos.
 
 Known issues / Roadmap
 ======================
 
-- The commitment note and the contract are typed in: there is no link
-  with a public procurement or contract model (for instance the OCA
-  ``contract`` module).
-- The fields are on the fiscal document form, not on the invoice form.
-- Importing an incoming NF-e keeps the ``compra`` group in the
-  ``nfe40_compra`` record, but does not fill the three fields of the
-  document.
-- Rules ZB02-20 and ZB02-30 (commitment note invalid or unknown in the
-  state) depend on the registry of each state and are not checked.
+- A nota de empenho e o contrato são digitados: não há vínculo com um
+  modelo de compra pública ou de contrato (por exemplo o módulo
+  ``contract`` da OCA).
+- Os campos estão no formulário do documento fiscal, não no formulário
+  da fatura.
+- A importação de uma NF-e recebida mantém o grupo ``compra`` no
+  registro ``nfe40_compra``, mas não preenche os três campos do
+  documento.
+- As regras ZB02-20 e ZB02-30 (nota de empenho inválida ou desconhecida
+  na UF) dependem do cadastro de cada UF e não são conferidas.
 
 Bug Tracker
 ===========

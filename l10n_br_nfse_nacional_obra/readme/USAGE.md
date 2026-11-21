@@ -1,8 +1,8 @@
-Register the construction site as an address of the customer and fill
-the CNO/CEI, CIB and municipal real estate registration in the *Fiscal*
-tab of the address.
+Cadastre o canteiro de obras como um endereço do cliente e preencha o
+CNO/CEI, o CIB e a inscrição imobiliária municipal na aba *Fiscal* do
+endereço.
 
-On the NFS-e, choose the site as shipping address. The *Construction
-Work* tab of the fiscal document shows the site and its codes, which can
-be changed for that document. The DPS XML carries them in the
-`serv/obra` group.
+Na NFS-e, escolha o canteiro como endereço de entrega. A aba
+*Construction Work* do documento fiscal mostra o canteiro e seus
+códigos, que podem ser alterados para aquele documento. O XML da DPS os
+leva no grupo `serv/obra`.

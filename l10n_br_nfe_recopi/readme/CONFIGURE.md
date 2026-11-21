@@ -1,2 +1,2 @@
-On the product form, *Fiscal* tab, check *Immune Paper (RECOPI)* for the
-immune paper products.
+No formulário do produto, aba *Fiscal*, marque *Immune Paper (RECOPI)*
+para os produtos de papel imune.

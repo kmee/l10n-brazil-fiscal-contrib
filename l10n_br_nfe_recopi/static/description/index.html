@@ -370,23 +370,23 @@ ul.auto-toc {
 !! source digest: sha256:7eb139be1d3198f1dd73079b30a74db4a244cd8c4f560e13e4f16000666f7aaa
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_nfe_recopi"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>This module reports the RECOPI number of the immune paper items of the
-NF-e (group LB, <tt class="docutils literal">nRECOPI</tt>, created by NT 2013/005).</p>
-<p>RECOPI is the system that controls the sale of paper used to print
-books, newspapers and periodicals, which is immune from taxes. Each
-operation registered in it gets a number that the NF-e items of immune
-paper must carry.</p>
-<p>The number is typed once on the fiscal document (<em>RECOPI Number</em>) and
-copied to the lines whose product is marked as immune paper. It can be
-changed on each line (<em>Extra Info</em> tab).</p>
-<p>Before the NF-e is confirmed the module refuses the data the SEFAZ would
-reject:</p>
+<p>Este módulo informa o número do RECOPI dos itens de papel imune da NF-e
+(grupo LB, <tt class="docutils literal">nRECOPI</tt>, criado pela NT 2013/005).</p>
+<p>O RECOPI é o sistema que controla a venda de papel usado na impressão de
+livros, jornais e periódicos, que é imune a impostos. Cada operação
+registrada nele recebe um número que os itens de papel imune da NF-e
+devem carregar.</p>
+<p>O número é digitado uma vez no documento fiscal (<em>RECOPI Number</em>) e
+copiado para as linhas cujo produto está marcado como papel imune. Pode
+ser alterado em cada linha (aba <em>Extra Info</em>).</p>
+<p>Antes da confirmação da NF-e, o módulo recusa os dados que a SEFAZ
+rejeitaria:</p>
 <ul class="simple">
-<li>rule LB01-30 (rejection 350): the number must follow the
-<tt class="docutils literal">aaaammddHHMMSSffffDD</tt> format of the MOC 7.0 (Visao Geral, section
-8.5): a valid date and time from 2013 to today, followed by two modulo
-11 check digits;</li>
-<li>rule LB01-10 (rejection 348): the NFC-e does not accept the number.</li>
+<li>regra LB01-30 (rejeição 350): o número deve seguir o formato
+<tt class="docutils literal">aaaammddHHMMSSffffDD</tt> do MOC 7.0 (Visão Geral, seção 8.5): uma data
+e hora válidas de 2013 até hoje, seguidas de dois dígitos
+verificadores módulo 11;</li>
+<li>regra LB01-10 (rejeição 348): a NFC-e não aceita o número.</li>
 </ul>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
@@ -405,27 +405,27 @@ reject:</p>
 </div>
 <div class="section" id="configuration">
 <h1><a class="toc-backref" href="#toc-entry-1">Configuration</a></h1>
-<p>On the product form, <em>Fiscal</em> tab, check <em>Immune Paper (RECOPI)</em> for the
-immune paper products.</p>
+<p>No formulário do produto, aba <em>Fiscal</em>, marque <em>Immune Paper (RECOPI)</em>
+para os produtos de papel imune.</p>
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-2">Usage</a></h1>
 <ol class="arabic simple">
-<li>Register the operation in the RECOPI system and get its number.</li>
-<li>Type the number in the <em>RECOPI Number</em> field of the NF-e.</li>
-<li>Confirm the NF-e: the items of immune paper products carry the
-<tt class="docutils literal">nRECOPI</tt> tag.</li>
+<li>Registre a operação no sistema RECOPI e obtenha o número.</li>
+<li>Digite o número no campo <em>RECOPI Number</em> da NF-e.</li>
+<li>Confirme a NF-e: os itens de produtos de papel imune levam a tag
+<tt class="docutils literal">nRECOPI</tt>.</li>
 </ol>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-3">Known issues / Roadmap</a></h1>
 <ul class="simple">
-<li>Rule LB01-20 (rejection 349, number missing for immune paper with CST
-41 or CSOSN 300 and a paper NCM of the MOC 7.0 table 8-8) is not
-enforced: the MOC lists it as future implementation.</li>
-<li>The <em>RECOPI Number</em> field is shown on the fiscal document form only,
-not on the invoice form.</li>
-<li>The product is not marked as immune paper from its NCM.</li>
+<li>A regra LB01-20 (rejeição 349, número ausente para papel imune com CST
+41 ou CSOSN 300 e NCM de papel da tabela 8-8 do MOC 7.0) não é
+aplicada: o MOC a lista como implementação futura.</li>
+<li>O campo <em>RECOPI Number</em> aparece apenas no formulário do documento
+fiscal, não no formulário da fatura.</li>
+<li>O produto não é marcado como papel imune a partir do NCM.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">

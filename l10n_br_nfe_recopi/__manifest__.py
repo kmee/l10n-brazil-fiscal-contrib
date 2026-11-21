@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e Immune Paper (RECOPI)",
-    "summary": "RECOPI number of the immune paper items of the NF-e",
+    "summary": "Número do RECOPI dos itens de papel imune da NF-e",
     "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

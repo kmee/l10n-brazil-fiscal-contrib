@@ -1,3 +1,3 @@
-Issue the NF-e as usual. The fiscal document line shows the observations
-in the *Extra Info* tab, and the NF-e XML carries the `obsItem` tag of
-the item.
+Emita a NF-e normalmente. A linha do documento fiscal mostra as
+observações na aba *Extra Info*, e o XML da NF-e leva a tag `obsItem` do
+item.

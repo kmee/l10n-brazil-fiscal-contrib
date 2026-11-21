@@ -3,7 +3,8 @@
 
 {
     "name": "NF-e Traceability (rastro)",
-    "summary": "Fill the NF-e traceability group (rastro) from the stock lots",
+    "summary": "Preenche o grupo de rastreabilidade da NF-e (rastro) a partir dos "
+    "lotes do estoque",
     "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

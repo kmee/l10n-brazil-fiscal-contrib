@@ -22,32 +22,31 @@ CT-e Multimodal
 
 |badge1| |badge2| |badge3|
 
-This module adds the multimodal transport modal (modal ``06``) to the
-CT-e 4.00. The ``l10n_br_cte`` module already lets the user choose
-"Multimodal" as the transport modal, but it only serializes the road,
-air, waterway, railway and pipeline modals: with modal ``06`` the
-``infModal`` group was left empty.
+Este módulo adiciona o modal de transporte multimodal (modal ``06``) ao
+CT-e 4.00. O módulo ``l10n_br_cte`` já permite escolher *Multimodal*
+como modal de transporte, mas só serializa os modais rodoviário, aéreo,
+aquaviário, ferroviário e dutoviário: com o modal ``06`` o grupo
+``infModal`` ficava vazio.
 
-The module fills the ``multimodal`` group of the ``infModal`` (schema
-``cteMultiModal_v4.00.xsd``, layout 3.6 of the Annex I of the CT-e
-Taxpayer Guidance Manual, MOC 4.00):
+O módulo preenche o grupo ``multimodal`` do ``infModal`` (schema
+``cteMultiModal_v4.00.xsd``, leiaute 3.6 do Anexo I do Manual de
+Orientação do Contribuinte do CT-e, MOC 4.00):
 
-- ``COTM``: number of the certificate of the multimodal transport
-  operator;
-- ``indNegociavel``: negotiable indicator (0 not negotiable, 1
-  negotiable);
-- ``seg``: optional insurance group, with the insurance company name and
-  CNPJ (``infSeg/xSeg``, ``infSeg/CNPJ``), the policy number (``nApol``)
-  and the endorsement number (``nAver``).
+- ``COTM``: número do Certificado do Operador de Transporte Multimodal;
+- ``indNegociavel``: indicador de negociável (0 não negociável, 1
+  negociável);
+- ``seg``: grupo opcional de seguro, com o nome e o CNPJ da seguradora
+  (``infSeg/xSeg``, ``infSeg/CNPJ``), o número da apólice (``nApol``) e
+  o número da averbação (``nAver``).
 
-The SEFAZ validates the XML of the modal against its own schema and
-rejects the CT-e with code 580 when it fails (MOC 4.00 Annex I, rule
-G026). Since the CT-e schema does not check the modal (``xs:any`` with
-``processContents="skip"``), the module refuses to export a multimodal
-CT-e without the required elements: ``COTM`` and ``indNegociavel``, and
-the insurance company name, policy and endorsement when any insurance
-field is filled. The insurance company CNPJ may be empty, as the layout
-allows (``TCnpjOpc``).
+A SEFAZ valida o XML do modal contra o schema próprio e rejeita o CT-e
+com o código 580 quando a validação falha (MOC 4.00 Anexo I, regra
+G026). Como o schema do CT-e não confere o modal (``xs:any`` com
+``processContents="skip"``), o módulo recusa exportar um CT-e multimodal
+sem os elementos obrigatórios: ``COTM`` e ``indNegociavel``, e o nome da
+seguradora, a apólice e a averbação quando qualquer campo do seguro é
+preenchido. O CNPJ da seguradora pode ficar vazio, como o leiaute
+permite (``TCnpjOpc``).
 
 **Table of contents**
 
@@ -57,26 +56,26 @@ allows (``TCnpjOpc``).
 Usage
 =====
 
-On a CT-e (document type 57), open the "Modais" tab, choose "Multimodal"
-as the transport modal and fill in the certificate of the multimodal
-transport operator (COTM), the negotiable indicator and, when there is
-one, the insurance of the multimodal transport.
+Em um CT-e (tipo de documento 57), abra a aba *Modais*, escolha
+*Multimodal* como modal de transporte e preencha o Certificado do
+Operador de Transporte Multimodal (COTM), o indicador de negociável e,
+quando houver, o seguro do transporte multimodal.
 
 Known issues / Roadmap
 ======================
 
-- The CT-e of a service linked to a multimodal transport (``tpServ`` 4)
-  must reference the multimodal CT-e issued by the operator
+- O CT-e de um serviço vinculado a transporte multimodal (``tpServ`` 4)
+  deve referenciar o CT-e multimodal emitido pelo operador
   (``infCTeNorm/infServVinc/infCTeMultimodal/chCTeMultimodal``, MOC 4.00
-  Annex I rules G057, G058 and G070 to G075). That group is not filled
-  yet.
-- The event of registration of the multimodal transport
-  (``evRegMultimodal``) is not implemented.
-- The DACTE does not print the multimodal group.
-- Importing a CT-e XML with modal ``06`` does not read the
-  ``multimodal`` group back.
-- The insurance company is typed as text: it could be a partner, with
-  the CNPJ taken from it.
+  Anexo I, regras G057, G058 e G070 a G075). Esse grupo ainda não é
+  preenchido.
+- O evento de registro do transporte multimodal (``evRegMultimodal``)
+  não está implementado.
+- O DACTE não imprime o grupo multimodal.
+- A importação de um XML de CT-e com modal ``06`` não lê o grupo
+  ``multimodal`` de volta.
+- A seguradora é digitada como texto: poderia ser um parceiro, com o
+  CNPJ tomado dele.
 
 Bug Tracker
 ===========

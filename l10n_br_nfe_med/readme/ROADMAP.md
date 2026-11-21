@@ -1,5 +1,6 @@
-- Rule K01-10 (medicine NCM 3001 to 3006 requires the medicine group) is
-  not enforced: the SEFAZ suspended it and lists it as future
-  implementation.
-- The medicine group is shared by the products that use it: changing
-  the maximum consumer price changes it for the draft documents too.
+- A regra K01-10 (NCM de medicamento 3001 a 3006 exige o grupo de
+  medicamento) não é aplicada: a SEFAZ a suspendeu e a lista como
+  implementação futura.
+- O grupo de medicamento é compartilhado pelos produtos que o usam:
+  alterar o preço máximo ao consumidor o altera também nos documentos em
+  rascunho.

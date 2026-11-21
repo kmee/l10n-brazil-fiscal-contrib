@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e Transport Vehicle and ICMS Retention (transp)",
-    "summary": "Vehicle, trailers and ICMS retention of the transport in the NF-e",
+    "summary": "Veículo, reboques e retenção de ICMS do transporte na NF-e",
     "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",
