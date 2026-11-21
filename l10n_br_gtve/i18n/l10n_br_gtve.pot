@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,6 +16,7 @@ msgstr ""
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_arrival_date
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_arrival_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_payment__gtve_arrival_date
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_arrival_date
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dhChegadaDest
 msgid "Arrival at Destination"
@@ -41,6 +42,7 @@ msgstr ""
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_cfop_id
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_cfop_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_payment__gtve_cfop_id
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_cfop_id
 msgid "CFOP"
 msgstr ""
@@ -143,6 +145,7 @@ msgstr ""
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_departure_date
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_departure_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_payment__gtve_departure_date
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_departure_date
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dhSaidaOrig
 msgid "Departure from Origin"
@@ -177,11 +180,6 @@ msgstr ""
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dhEmi
 msgid "Document Date"
-msgstr ""
-
-#. module: l10n_br_gtve
-#: model:ir.model,name:l10n_br_gtve.model_l10n_br_fiscal_document
-msgid "Fiscal Document"
 msgstr ""
 
 #. module: l10n_br_gtve
@@ -224,12 +222,14 @@ msgstr ""
 #. module: l10n_br_gtve
 #. odoo-python
 #: code:addons/l10n_br_gtve/models/document.py:0
+#, python-format
 msgid "GTV-e %(document)s: fill in %(fields)s."
 msgstr ""
 
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_service_taker
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_service_taker
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_payment__gtve_service_taker
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_service_taker
 msgid "GTV-e Service Taker"
 msgstr ""
@@ -247,6 +247,7 @@ msgstr ""
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_id
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_payment__gtve_id
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_id
 msgid "Gtve"
 msgstr ""
@@ -311,6 +312,11 @@ msgid "Indicador do 'papel' do tomador do serviço no GT-e"
 msgstr ""
 
 #. module: l10n_br_gtve
+#: model:ir.model,name:l10n_br_gtve.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_infEspecie
 msgid "Informações das Espécies transportadas"
 msgstr ""
@@ -372,12 +378,20 @@ msgstr ""
 #. module: l10n_br_gtve
 #. odoo-python
 #: code:addons/l10n_br_gtve/models/document.py:0
+#, python-format
 msgid "Invalid GTV-e access key: %(key)s"
 msgstr ""
 
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_xJust
 msgid "Justificativa da entrada em contingência"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve____last_update
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species____last_update
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle____last_update
+msgid "Last Modified on"
 msgstr ""
 
 #. module: l10n_br_gtve
@@ -529,18 +543,21 @@ msgstr ""
 #. module: l10n_br_gtve
 #. odoo-python
 #: code:addons/l10n_br_gtve/models/document.py:0
+#, python-format
 msgid "The GTV-e has no correction letter."
 msgstr ""
 
 #. module: l10n_br_gtve
 #. odoo-python
 #: code:addons/l10n_br_gtve/models/document.py:0
+#, python-format
 msgid "The GTV-e modal must be road (01) or multimodal (06)."
 msgstr ""
 
 #. module: l10n_br_gtve
 #. odoo-python
 #: code:addons/l10n_br_gtve/models/document.py:0
+#, python-format
 msgid "The series 890 to 899 cannot be used in a GTV-e."
 msgstr ""
 
@@ -591,6 +608,7 @@ msgstr ""
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_species_ids
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_species_ids
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_payment__gtve_species_ids
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_species_ids
 msgid "Transported Species"
 msgstr ""
@@ -615,6 +633,7 @@ msgstr ""
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_vehicle_ids
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_vehicle_ids
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_payment__gtve_vehicle_ids
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_vehicle_ids
 msgid "Vehicles"
 msgstr ""
@@ -646,6 +665,7 @@ msgstr ""
 #. module: l10n_br_gtve
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_load_quantity
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_load_quantity
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_payment__gtve_load_quantity
 #: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_load_quantity
 msgid "Volumes/Pouches"
 msgstr ""
@@ -653,6 +673,7 @@ msgstr ""
 #. module: l10n_br_gtve
 #: model:ir.model.fields,help:l10n_br_gtve.field_account_bank_statement_line__gtve_service_taker
 #: model:ir.model.fields,help:l10n_br_gtve.field_account_move__gtve_service_taker
+#: model:ir.model.fields,help:l10n_br_gtve.field_account_payment__gtve_service_taker
 #: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_service_taker
 msgid "With Other, the service taker is the partner of the document."
 msgstr ""
