@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="bpe_tm_document_form_view" model="ir.ui.view">
+        <field name="name">l10n_br_fiscal.document.form (in l10n_br_bpe_tm)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_bpe.bpe_document_form_view" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//button[@name='%(l10n_br_bpe.bpe_no_boarding_wizard_action)d']"
+                position="attributes"
+            >
+                <attribute
+                    name="invisible"
+                >document_type != '63' or state_edoc != 'autorizada' or bpe_layout == 'tm'</attribute>
+            </xpath>
+            <xpath expr="//group[@name='bpe_settings']" position="after">
+                <group name="bpe_layout_tm" invisible="bpe_layout != 'tm'">
+                    <group name="bpe_tm_trips" string="BP-e TM">
+                        <field name="bpe10_modal" />
+                        <field name="bpe_tm_competence_date" />
+                        <field name="bpe_tm_cfop_id" />
+                    </group>
+                    <group name="bpe_tm_values" string="Values">
+                        <field name="bpe10_vBP" />
+                        <field name="bpe10_vTotDFe" />
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
