@@ -1225,16 +1225,19 @@ msgstr ""
 
 #. module: l10n_br_dce_spec
 #: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_transp__dce10_modTrans__0
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_modTrans__0
 msgid "Transporte pelos correios"
 msgstr ""
 
 #. module: l10n_br_dce_spec
 #: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_transp__dce10_modTrans__1
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_modTrans__1
 msgid "Transporte por contra própria"
 msgstr ""
 
 #. module: l10n_br_dce_spec
 #: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__dce_10_transp__dce10_modTrans__2
+#: model:ir.model.fields.selection,name:l10n_br_dce_spec.selection__l10n_br_fiscal_document__dce10_modTrans__2
 msgid "Transporte por empresa transportadora"
 msgstr ""
 
