@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="nfgas_document_form_view">
+        <field name="name">l10n_br_fiscal.document.form (in l10n_br_nfgas)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='products']" position="after">
+                <page
+                    name="nfgas"
+                    string="NFGas"
+                    attrs="{'invisible': [('document_type', '!=', '76')]}"
+                >
+                    <group>
+                        <group name="nfgas_ide" string="Emission">
+                            <field name="nfgas_environment" />
+                            <field name="nfgas10_finNFGas" />
+                            <field name="nfgas10_tpFat" />
+                            <field name="nfgas10_tpEmis" />
+                        </group>
+                        <group name="nfgas_instalacao" string="Installation">
+                            <field name="nfgas10_idInstalacao" />
+                            <field name="nfgas10_idCodCliente" />
+                            <field name="nfgas10_tpInstalacao" />
+                            <field name="nfgas10_nContrato" />
+                            <field name="nfgas10_tpClasse" />
+                            <field name="nfgas10_xClasse" />
+                            <field name="nfgas10_latGPS" />
+                            <field name="nfgas10_longGPS" />
+                            <field name="nfgas10_codRoteiroLeitura" />
+                        </group>
+                        <group name="nfgas_gfat" string="Invoice">
+                            <field name="nfgas10_CompetFat" />
+                            <field name="nfgas10_dVencFat" />
+                            <field name="nfgas10_dApresFat" />
+                            <field name="nfgas10_dProxLeitura" />
+                            <field name="nfgas10_nFat" />
+                            <field name="nfgas10_codBarras" />
+                            <field name="nfgas10_codDebAuto" />
+                            <field name="nfgas10_codBanco" />
+                            <field name="nfgas10_codAgencia" />
+                        </group>
+                        <group name="nfgas_gagencia" string="Regulatory Agency">
+                            <field name="nfgas10_nomeAgenciaAtend" />
+                            <field name="nfgas10_enderAgenciaAtend" />
+                            <field name="nfgas10_sitioAgenciaAtend" />
+                            <field name="nfgas10_infAdReg" />
+                        </group>
+                    </group>
+                    <separator string="Metering Equipment" />
+                    <field name="nfgas10_gMed">
+                        <tree editable="bottom">
+                            <field name="nfgas10_idEqp" />
+                            <field name="nfgas10_tpEqp" />
+                            <field name="nfgas10_tpMedidor" />
+                            <field name="nfgas10_dMedAnt" />
+                            <field name="nfgas10_vMedAnt" />
+                            <field name="nfgas10_dMedAtu" />
+                            <field name="nfgas10_vMedAtu" />
+                            <field name="nfgas10_dMedProx" />
+                            <field name="nfgas10_descPontoCons" />
+                        </tree>
+                    </field>
+                    <separator string="Consumption History" />
+                    <field name="nfgas10_gHistCons">
+                        <tree>
+                            <field name="nfgas10_xHistorico" />
+                            <field name="nfgas10_medMensal" />
+                        </tree>
+                        <form>
+                            <group>
+                                <field name="nfgas10_xHistorico" />
+                                <field name="nfgas10_medMensal" />
+                            </group>
+                            <field name="nfgas10_gCons">
+                                <tree editable="bottom">
+                                    <field name="nfgas10_CompetFat" />
+                                    <field name="nfgas10_uMed" />
+                                    <field name="nfgas10_qtdDias" />
+                                    <field name="nfgas10_consumo" />
+                                    <field name="nfgas10_vFat" />
+                                </tree>
+                            </field>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="nfgas_document_line_form_view">
+        <field name="name">l10n_br_fiscal.document.line.form (in l10n_br_nfgas)</field>
+        <field name="model">l10n_br_fiscal.document.line</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_line_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='general']" position="after">
+                <page
+                    name="nfgas"
+                    string="NFGas"
+                    attrs="{'invisible': [('nfgas_document_type', '!=', '76')]}"
+                >
+                    <group>
+                        <field name="nfgas_document_type" invisible="1" />
+                        <field name="document_id" invisible="1" />
+                        <field name="nfgas10_cClass" />
+                        <field name="nfgas10_uMed" />
+                        <field name="nfgas10_indOrigemQtd" />
+                        <field name="nfgas_meter_id" />
+                        <field name="nfgas10_infAdProd" />
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
