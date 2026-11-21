@@ -128,7 +128,7 @@ class TestBpeTa(TransactionCase):
             }
         )
         product = cls.env["product.product"].create(
-            {"name": "Passagem aerea", "type": "service"}
+            {"name": "Passagem aerea", "detailed_type": "service"}
         )
         for name, value, component in (
             ("Tarifa", 500.0, "01"),

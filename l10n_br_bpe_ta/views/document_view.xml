@@ -8,12 +8,15 @@
         <field name="inherit_id" ref="l10n_br_bpe.bpe_document_form_view" />
         <field name="arch" type="xml">
             <xpath expr="//group[@name='bpe_settings']" position="after">
-                <group name="bpe_layout_ta" invisible="bpe_layout != 'ta'">
+                <group
+                    name="bpe_layout_ta"
+                    attrs="{'invisible': [('bpe_layout', '!=', 'ta')]}"
+                >
                     <group name="bpe_ta_trip" string="BP-e TA">
                         <field name="bpe_ta_purchase_type" />
                         <field
                             name="bpe_ta_multiple_key"
-                            invisible="bpe_ta_purchase_type != '2'"
+                            attrs="{'invisible': [('bpe_ta_purchase_type', '!=', '2')]}"
                         />
                         <field name="bpe_ta_iata_number" />
                         <field name="bpe10_indPres" />
@@ -21,19 +24,19 @@
                         <field name="bpe_ta_destination_abroad" />
                         <field
                             name="bpe_destination_city_id"
-                            invisible="bpe_ta_destination_abroad"
+                            attrs="{'invisible': [('bpe_ta_destination_abroad', '=', True)]}"
                         />
                         <field name="bpe10_dhEmb" />
                         <field name="bpe10_dhValidade" />
                         <field
                             name="bpe10_infPassageiro"
-                            invisible="bpe_ta_purchase_type == '1'"
+                            attrs="{'invisible': [('bpe_ta_purchase_type', '=', '1')]}"
                         />
                     </group>
                     <group
                         name="bpe_ta_values"
                         string="Values"
-                        invisible="bpe_ta_purchase_type == '2'"
+                        attrs="{'invisible': [('bpe_ta_purchase_type', '=', '2')]}"
                     >
                         <field name="bpe10_vBP" />
                         <field name="bpe10_vDesconto" />
@@ -45,8 +48,11 @@
                         <field name="bpe10_vTotDFe" />
                     </group>
                 </group>
-                <field name="bpe_ta_flight_ids" invisible="bpe_layout != 'ta'">
-                    <list editable="bottom">
+                <field
+                    name="bpe_ta_flight_ids"
+                    attrs="{'invisible': [('bpe_layout', '!=', 'ta')]}"
+                >
+                    <tree editable="bottom">
                         <field name="sequence" widget="handle" />
                         <field name="flight_number" />
                         <field name="airline_code" />
@@ -58,11 +64,13 @@
                         <field name="leg_type" />
                         <field name="departure_date" />
                         <field name="connection_date" />
-                    </list>
+                    </tree>
                 </field>
             </xpath>
             <xpath expr="//field[@name='bpe10_pag']" position="attributes">
-                <attribute name="invisible">bpe_layout not in ('bpe', 'ta')</attribute>
+                <attribute
+                    name="attrs"
+                >{'invisible': [('bpe_layout', 'not in', ('bpe', 'ta'))]}</attribute>
             </xpath>
         </field>
     </record>

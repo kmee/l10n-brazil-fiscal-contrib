@@ -322,7 +322,11 @@ class Document(models.Model):
         checks = [
             (company.vat, _("Company CNPJ")),
             (company.state_id, _("Company State")),
-            (company.sudo().certificate, _("Digital Certificate")),
+            (
+                company.sudo().certificate_nfe_id
+                or company.sudo().certificate_ecnpj_id,
+                _("Digital Certificate"),
+            ),
             (self.bpe_environment, _("BP-e Environment")),
             (self.bpe_origin_city_id, _("Origin City")),
             (

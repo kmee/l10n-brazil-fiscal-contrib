@@ -8,7 +8,11 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_line_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook" position="inside">
-                <page name="bpe_ta" string="BP-e TA" invisible="bpe_layout != 'ta'">
+                <page
+                    name="bpe_ta"
+                    string="BP-e TA"
+                    attrs="{'invisible': [('bpe_layout', '!=', 'ta')]}"
+                >
                     <field name="bpe_layout" invisible="1" />
                     <group>
                         <field name="bpe_ta_component_type" />
