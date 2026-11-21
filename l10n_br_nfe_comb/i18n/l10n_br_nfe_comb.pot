@@ -1,0 +1,283 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfe_comb
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/document_line.py:0
+#, python-format
+msgid "%(item)s: the ANP description is required."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/document_line.py:0
+#, python-format
+msgid ""
+"%(item)s: the LPG percentages (oil, national and imported natural gas) must "
+"add up to 100 (rejection 855)."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/document_line.py:0
+#, python-format
+msgid ""
+"%(item)s: the LPG percentages are only allowed for the ANP code %(code)s "
+"(rejection 461)."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/document_line.py:0
+#, python-format
+msgid "%(item)s: the consumption state is required."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/document_line.py:0
+#, python-format
+msgid ""
+"%(item)s: the fuel origin is required when the LPG has natural gas "
+"(rejection 909)."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/document_line.py:0
+#, python-format
+msgid "%(item)s: the origin percentages must add up to 100 (rejection 958)."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/document_line.py:0
+#, python-format
+msgid ""
+"%(item)s: the pump meter at the end must be greater than at the start "
+"(rejection 380)."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/document_line.py:0
+#, python-format
+msgid ""
+"%(item)s: the pump meter group is only allowed in the NF-e with the CFOP "
+"5656 or 5667 (rejection 379)."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "ANP Description"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "ANP Product Code"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model:ir.model.fields,help:l10n_br_nfe_comb.field_product_product__nfe40_comb
+#: model:ir.model.fields,help:l10n_br_nfe_comb.field_product_template__nfe40_comb
+msgid ""
+"ANP product code and fuel details copied to the fuel group of the NF-e items"
+" of this product."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_cide_form
+msgid "Base Quantity"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Biodiesel Percentage"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "CIDE"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_cide_form
+msgid "CIDE Amount"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "CODIF"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Consumption State"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.document_line_form
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.product_template_form
+msgid "Fuel"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model:ir.model.fields,field_description:l10n_br_nfe_comb.field_product_product__nfe40_comb
+#: model:ir.model.fields,field_description:l10n_br_nfe_comb.field_product_template__nfe40_comb
+msgid "Fuel (ANP)"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Fuel Origin"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model:ir.model,name:l10n_br_nfe_comb.model_l10n_br_fiscal_document_line
+msgid ""
+"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
+"não contribuinte de ICMS"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model:ir.model,name:l10n_br_nfe_comb.model_nfe_40_origcomb
+msgid "Grupo indicador da origem do combustível"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Imported Natural Gas Percentage"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model:ir.model.fields,field_description:l10n_br_nfe_comb.field_account_move_line__nfe40_comb
+#: model:ir.model.fields,field_description:l10n_br_nfe_comb.field_l10n_br_fiscal_document_line__nfe40_comb
+msgid "Informar apenas para operações"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model:ir.model,name:l10n_br_nfe_comb.model_nfe_40_comb
+#: model:ir.model.fields,help:l10n_br_nfe_comb.field_account_move_line__nfe40_comb
+#: model:ir.model.fields,help:l10n_br_nfe_comb.field_l10n_br_fiscal_document_line__nfe40_comb
+msgid "Informar apenas para operações com combustíveis líquidos"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model:ir.model,name:l10n_br_nfe_comb.model_l10n_br_fiscal_document
+msgid "Informações de exportação"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "LPG"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_encerrante_form
+msgid "Meter at End"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_encerrante_form
+msgid "Meter at Start"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "National Natural Gas Percentage"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_encerrante_form
+msgid "Nozzle"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Oil LPG Percentage"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Origin"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Percentage"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model:ir.model,name:l10n_br_nfe_comb.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_encerrante_form
+msgid "Pump"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Pump Meter"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Quantity at Ambient Temperature"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_cide_form
+msgid "Rate per Unit"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "Starting Value per kg"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_comb_form
+msgid "State"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_comb.nfe_encerrante_form
+msgid "Tank"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/nfe_comb.py:0
+#, python-format
+msgid "The ANP product code must have 9 digits."
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/document.py:0
+#, python-format
+msgid ""
+"The NF-e fuel data (comb) is incomplete or inconsistent:\n"
+"%(errors)s"
+msgstr ""
+
+#. module: l10n_br_nfe_comb
+#. odoo-python
+#: code:addons/l10n_br_nfe_comb/models/nfe_comb.py:0
+#, python-format
+msgid "The origin percentage must be greater than 0 and up to 100."
+msgstr ""
