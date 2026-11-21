@@ -1,30 +1,30 @@
-This module fills the transport subgroups of the NF-e (group X, `transp`)
-that the localization leaves empty: the vehicle (`veicTransp`), the
-trailers (`reboque`) and the ICMS retention of the transport
-(`retTransp`). The freight modality (`modFrete`), the carrier
-(`transporta`) and the volumes (`vol`) stay with `l10n_br_delivery_nfe`.
+Este módulo preenche os subgrupos de transporte da NF-e (grupo X,
+`transp`) que a localização deixa vazios: o veículo (`veicTransp`), os
+reboques (`reboque`) e a retenção de ICMS do transporte (`retTransp`). A
+modalidade do frete (`modFrete`), a transportadora (`transporta`) e os
+volumes (`vol`) ficam com o `l10n_br_delivery_nfe`.
 
-Vehicle and trailers come from the carrier vehicles of
-`l10n_br_delivery` (plate, state and ANTT code), that until now never
-reached the NF-e. On the fiscal document (*Delivery* tab):
+Veículo e reboques vêm dos veículos da transportadora do
+`l10n_br_delivery` (placa, UF e código da ANTT), que até agora nunca
+chegavam à NF-e. No documento fiscal (aba *Delivery*):
 
-- vehicle: by default the vehicle of the carrier, when it has only one;
-  it can be changed;
-- trailers: up to 5 vehicles (layout limit).
+- veículo: por padrão o veículo da transportadora, quando ela tem apenas
+  um; pode ser alterado;
+- reboques: até 5 veículos (limite do leiaute).
 
-Each one becomes a `veicTransp` or `reboque` group with the plate (upper
-case, without separators), the state and the ANTT code (RNTC, up to 20
-characters). They are left out of the XML in interstate operations (rule
-X02-20, rejection 868, NT 2017.002), in the NFC-e and in the NF-e with
-the simplified DANFE (rules X18-10 and X22-10, rejections 756 and 757).
+Cada um vira um grupo `veicTransp` ou `reboque` com a placa (em
+maiúsculas, sem separadores), a UF e o código da ANTT (RNTC, até 20
+caracteres). Ficam fora do XML nas operações interestaduais (regra
+X02-20, rejeição 868, NT 2017.002), na NFC-e e na NF-e com DANFE
+simplificado (regras X18-10 e X22-10, rejeições 756 e 757).
 
-The ICMS retention of the transport is used when the issuer retains the
-ICMS of a freight service (for instance one hired from an independent
-carrier): service value, retention base (by default the service value),
-rate, ICMS retained (base times rate), freight CFOP and city of the
-taxable event (by default the city of the company). It is refused in the
-NFC-e and in the NF-e with the simplified DANFE (rule X11-10, rejection
-755).
+A retenção de ICMS do transporte é usada quando o emitente retém o ICMS
+de um serviço de frete (por exemplo, contratado de um transportador
+autônomo): valor do serviço, base da retenção (por padrão o valor do
+serviço), alíquota, ICMS retido (base vezes alíquota), CFOP do frete e
+município do fato gerador (por padrão o município da empresa). É
+recusada na NFC-e e na NF-e com DANFE simplificado (regra X11-10,
+rejeição 755).
 
-Before the NF-e is confirmed the module refuses a plate that does not
-match the layout pattern and an ICMS retention without CFOP or city.
+Antes da confirmação da NF-e, o módulo recusa uma placa que não siga o
+padrão do leiaute e uma retenção de ICMS sem CFOP ou município.

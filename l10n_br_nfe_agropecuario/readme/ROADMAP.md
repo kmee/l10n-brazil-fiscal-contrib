@@ -1,14 +1,14 @@
-- Rules ZF02-10, ZF02-20, ZF05-14 and ZF05-24 are optional for each
-  state in the NT; the module applies them to every state, as they only
-  refuse a sale without the prescription or inconsistent data. Rule
-  ZF05-10 is applied only to the states and NCM of table 4.1 of NT
-  2024.003 v1.10, which has to be updated when the NT adds states.
-- Rule ZF05-20 (vegetable transit permit) is not active for any state
-  and rule ZF05-30 (forest permit) is future implementation in the NT;
-  neither is checked.
-- Rules 10ZF04-10 and 10ZF04-20 (permit unknown or already used) are
-  checked by the SEFAZ against the databases of the sanitary agencies.
-- The prescription and the permit are typed; they are not taken from
-  the sale order or from a register of prescriptions.
-- The group is shown on the fiscal document form; the invoice form
-  (`l10n_br_account`) does not show it yet.
+- As regras ZF02-10, ZF02-20, ZF05-14 e ZF05-24 são opcionais para cada
+  UF na NT; o módulo as aplica a todas as UFs, pois apenas recusam venda
+  sem receituário ou dados inconsistentes. A regra ZF05-10 é aplicada
+  somente às UFs e NCM da tabela 4.1 da NT 2024.003 v1.10, que precisa
+  ser atualizada quando a NT acrescentar UFs.
+- A regra ZF05-20 (guia de trânsito vegetal) não está ativa para
+  nenhuma UF e a regra ZF05-30 (permissão florestal) é implementação
+  futura na NT; nenhuma das duas é conferida.
+- As regras 10ZF04-10 e 10ZF04-20 (guia desconhecida ou já utilizada)
+  são conferidas pela SEFAZ nas bases dos órgãos sanitários.
+- O receituário e a guia são digitados; não vêm do pedido de venda nem
+  de um cadastro de receituários.
+- O grupo aparece no formulário do documento fiscal; o formulário da
+  fatura (`l10n_br_account`) ainda não o mostra.

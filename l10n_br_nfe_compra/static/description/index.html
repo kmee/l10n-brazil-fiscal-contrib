@@ -370,27 +370,26 @@ ul.auto-toc {
 !! source digest: sha256:65621bfb897ab3a8775c6c856b3bf6ba6057ed218e1ca20e4556de678a7b9e97
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_nfe_compra"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>This module fills the purchase information group of the NF-e (group ZB,
-<tt class="docutils literal">compra</tt>): the commitment note of a public procurement (<tt class="docutils literal">xNEmp</tt>),
-the purchase order (<tt class="docutils literal">xPed</tt>) and the contract (<tt class="docutils literal">xCont</tt>). The group is
-typical of sales to public administration bodies, that pay against a
-commitment note (nota de empenho).</p>
-<p>The three values are fields of the fiscal document (<em>Others</em> tab):</p>
+<p>Este módulo preenche o grupo de informações de compra da NF-e (grupo ZB,
+<tt class="docutils literal">compra</tt>): a nota de empenho de uma compra pública (<tt class="docutils literal">xNEmp</tt>), o
+pedido de compra (<tt class="docutils literal">xPed</tt>) e o contrato (<tt class="docutils literal">xCont</tt>). O grupo é típico
+das vendas a órgãos da administração pública, que pagam contra uma nota
+de empenho.</p>
+<p>Os três valores são campos do documento fiscal (aba <em>Others</em>):</p>
 <ul class="simple">
-<li>commitment note: typed in (up to 22 characters);</li>
-<li>customer purchase order: computed from the purchase order of the
-document lines (<tt class="docutils literal">partner_order</tt>, also reported per item in <tt class="docutils literal">xPed</tt>)
-when all of them have the same one, otherwise from the reference of
-the customer invoice (where Odoo copies the customer reference of the
-sale order); it can be edited;</li>
-<li>contract: typed in.</li>
+<li>nota de empenho: digitada (até 22 caracteres);</li>
+<li>pedido de compra do cliente: calculado a partir do pedido de compra
+das linhas do documento (<tt class="docutils literal">partner_order</tt>, informado também por item
+em <tt class="docutils literal">xPed</tt>) quando todas têm o mesmo, caso contrário a partir da
+referência da fatura do cliente (onde o Odoo copia a referência do
+cliente do pedido de venda); pode ser editado;</li>
+<li>contrato: digitado.</li>
 </ul>
-<p>The group is not written in the NFC-e nor in the NF-e with the
-simplified DANFE (rule ZB01-10, rejection 762).</p>
-<p>Before the NF-e is confirmed the module refuses an NF-e with ICMS relief
-for a sale to a public body (<tt class="docutils literal">motDesICMS</tt> 8) without the commitment
-note (rule ZB02-10, rejection 359, applied at the discretion of each
-state).</p>
+<p>O grupo não é gravado na NFC-e nem na NF-e com DANFE simplificado (regra
+ZB01-10, rejeição 762).</p>
+<p>Antes da confirmação da NF-e, o módulo recusa uma NF-e com desoneração
+de ICMS para venda a órgão público (<tt class="docutils literal">motDesICMS</tt> 8) sem a nota de
+empenho (regra ZB02-10, rejeição 359, aplicada a critério de cada UF).</p>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -408,26 +407,27 @@ state).</p>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-1">Usage</a></h1>
 <ol class="arabic simple">
-<li>Open the fiscal document of the NF-e (from the invoice, or in the
-fiscal documents menu).</li>
-<li>In the <em>Others</em> tab, fill the commitment note and the contract, and
-check the customer purchase order.</li>
-<li>Confirm the NF-e: the XML carries the <tt class="docutils literal">compra</tt> group with the
-values filled.</li>
+<li>Abra o documento fiscal da NF-e (a partir da fatura, ou no menu de
+documentos fiscais).</li>
+<li>Na aba <em>Others</em>, preencha a nota de empenho e o contrato, e confira o
+pedido de compra do cliente.</li>
+<li>Confirme a NF-e: o XML leva o grupo <tt class="docutils literal">compra</tt> com os valores
+preenchidos.</li>
 </ol>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-2">Known issues / Roadmap</a></h1>
 <ul class="simple">
-<li>The commitment note and the contract are typed in: there is no link
-with a public procurement or contract model (for instance the OCA
-<tt class="docutils literal">contract</tt> module).</li>
-<li>The fields are on the fiscal document form, not on the invoice form.</li>
-<li>Importing an incoming NF-e keeps the <tt class="docutils literal">compra</tt> group in the
-<tt class="docutils literal">nfe40_compra</tt> record, but does not fill the three fields of the
-document.</li>
-<li>Rules ZB02-20 and ZB02-30 (commitment note invalid or unknown in the
-state) depend on the registry of each state and are not checked.</li>
+<li>A nota de empenho e o contrato são digitados: não há vínculo com um
+modelo de compra pública ou de contrato (por exemplo o módulo
+<tt class="docutils literal">contract</tt> da OCA).</li>
+<li>Os campos estão no formulário do documento fiscal, não no formulário
+da fatura.</li>
+<li>A importação de uma NF-e recebida mantém o grupo <tt class="docutils literal">compra</tt> no
+registro <tt class="docutils literal">nfe40_compra</tt>, mas não preenche os três campos do
+documento.</li>
+<li>As regras ZB02-20 e ZB02-30 (nota de empenho inválida ou desconhecida
+na UF) dependem do cadastro de cada UF e não são conferidas.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">

@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e Medicines (med)",
-    "summary": "ANVISA code and maximum consumer price of medicines in the NF-e",
+    "summary": "Código ANVISA e preço máximo ao consumidor de medicamentos na NF-e",
     "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

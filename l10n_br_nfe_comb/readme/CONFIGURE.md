@@ -1,4 +1,4 @@
-On the product form, *Fiscal* tab, fill the *Fuel (ANP)* field with the
-ANP product code and description of the SIMP table and, when they
-apply, the LPG percentages, the biodiesel percentage and the fuel
-origin.
+No formulário do produto, aba *Fiscal*, preencha o campo *Fuel (ANP)*
+com o código e a descrição do produto ANP da tabela do SIMP e, quando
+se aplicarem, os percentuais de GLP, o percentual de biodiesel e a
+origem do combustível.

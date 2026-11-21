@@ -1,8 +1,8 @@
-- Only outgoing NF-e linked to deliveries (through
-  `stock_picking_invoice_link`) get a computed pickup address. Deliveries
-  from several warehouses with different addresses leave the field empty,
-  to be filled by hand.
-- The pickup address must have its own CNPJ or CPF: a child address that
-  relies on the CNPJ of its parent company is refused.
-- The CNPJ/CPF registry rules of the pickup address (F02-10, F02-20) are
-  checked by the SEFAZ only.
+- Apenas a NF-e de saída ligada a entregas (por meio do
+  `stock_picking_invoice_link`) recebe o local de retirada calculado.
+  Entregas de vários depósitos com endereços diferentes deixam o campo
+  vazio, para preenchimento à mão.
+- O local de retirada precisa ter CNPJ ou CPF próprio: um endereço filho
+  que usa o CNPJ da empresa mãe é recusado.
+- As regras de cadastro do CNPJ/CPF do local de retirada (F02-10, F02-20)
+  são conferidas apenas pela SEFAZ.

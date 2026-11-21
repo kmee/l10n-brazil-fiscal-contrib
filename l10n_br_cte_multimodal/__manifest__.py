@@ -3,7 +3,7 @@
 
 {
     "name": "CT-e Multimodal",
-    "summary": "Multimodal transport group (infModal, modal 06) of the CT-e 4.00",
+    "summary": "Grupo do transporte multimodal (infModal, modal 06) do CT-e 4.00",
     "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

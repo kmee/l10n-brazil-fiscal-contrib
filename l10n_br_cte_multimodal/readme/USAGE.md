@@ -1,4 +1,4 @@
-On a CT-e (document type 57), open the "Modais" tab, choose
-"Multimodal" as the transport modal and fill in the certificate of the
-multimodal transport operator (COTM), the negotiable indicator and,
-when there is one, the insurance of the multimodal transport.
+Em um CT-e (tipo de documento 57), abra a aba *Modais*, escolha
+*Multimodal* como modal de transporte e preencha o Certificado do
+Operador de Transporte Multimodal (COTM), o indicador de negociável e,
+quando houver, o seguro do transporte multimodal.

@@ -1,2 +1,2 @@
-- Register the vehicles of each carrier (*Delivery Methods*, vehicles)
-  with plate, state and ANTT code, and keep them active.
+- Cadastre os veículos de cada transportadora (*Delivery Methods*,
+  veículos) com placa, UF e código da ANTT, e mantenha-os ativos.

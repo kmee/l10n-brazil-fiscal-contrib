@@ -1,26 +1,31 @@
-This module fills the traceability group of the NF-e items (group I80,
-`rastro`) from the stock lots, and checks it before the NF-e is issued.
+Este módulo preenche o grupo de rastreabilidade dos itens da NF-e
+(grupo I80, `rastro`) a partir dos lotes do estoque, e o confere antes da
+emissão da NF-e.
 
-The group was created by NT 2016.002 for products subject to sanitary
-regulation or recall: medicines, beverages, bottled water, veterinary and
-agricultural products and so on. Each item can carry up to 500 lots, each
-one with its number, quantity, manufacturing date and expiration date.
+O grupo foi criado pela NT 2016.002 para produtos sujeitos a regulação
+sanitária ou a recolhimento: medicamentos, bebidas, água envasada,
+produtos veterinários e agrícolas, entre outros. Cada item pode levar
+até 500 lotes, cada um com número, quantidade, data de fabricação e data
+de validade.
 
-When an invoice is created from a delivery (picking invoicing), each lot
-shipped becomes one traceability group of the invoice line:
+Quando uma fatura é criada a partir de uma entrega (faturamento da
+separação), cada lote expedido vira um grupo de rastreabilidade da linha
+da fatura:
 
-- lot number: the lot name;
-- quantity: the quantity of the lot in the invoice line unit;
-- manufacturing date: the lot production date;
-- expiration date: the lot expiration date.
+- número do lote: o nome do lote;
+- quantidade: a quantidade do lote na unidade da linha da fatura;
+- data de fabricação: a data de produção do lote;
+- data de validade: a data de validade do lote.
 
-Both dates are read as calendar dates in the user time zone.
+As duas datas são lidas como datas de calendário no fuso horário do
+usuário.
 
-Before the NF-e is confirmed the module refuses the data the SEFAZ would
-reject: missing lot number or dates, more than 500 lots, a manufacturing
-date after the issue date (rule I83-10, rejection 877) and an expiration
-date before the manufacturing date (rule I84-10, rejection 870).
+Antes da confirmação da NF-e, o módulo recusa os dados que a SEFAZ
+rejeitaria: número do lote ou datas ausentes, mais de 500 lotes, data de
+fabricação posterior à data de emissão (regra I83-10, rejeição 877) e
+data de validade anterior à data de fabricação (regra I84-10, rejeição
+870).
 
-The lots of an incoming NF-e are kept on the imported lines, and the
-groups can be edited by hand on the invoice line and on the fiscal
-document line (Traceability tab).
+Os lotes de uma NF-e recebida são mantidos nas linhas importadas, e os
+grupos podem ser editados à mão na linha da fatura e na linha do
+documento fiscal (aba Traceability).

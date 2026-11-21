@@ -3,7 +3,7 @@
 
 {
     "name": "NF-e Firearms (arma)",
-    "summary": "Firearm group of the NF-e items from the serial numbers",
+    "summary": "Grupo de arma de fogo dos itens da NF-e a partir dos números de série",
     "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

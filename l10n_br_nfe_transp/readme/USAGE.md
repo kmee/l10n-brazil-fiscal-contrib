@@ -1,6 +1,6 @@
-1. On the fiscal document of the NF-e, *Delivery* tab, choose the carrier:
-   its vehicle is filled when it has only one.
-2. Choose the vehicle and the trailers, and fill the ICMS retention of
-   the transport when the issuer retains it.
-3. Confirm the NF-e: the XML carries the `veicTransp`, `reboque` and
-   `retTransp` groups filled.
+1. No documento fiscal da NF-e, aba *Delivery*, escolha a
+   transportadora: seu veículo é preenchido quando ela tem apenas um.
+2. Escolha o veículo e os reboques, e preencha a retenção de ICMS do
+   transporte quando o emitente a retém.
+3. Confirme a NF-e: o XML leva os grupos `veicTransp`, `reboque` e
+   `retTransp` preenchidos.

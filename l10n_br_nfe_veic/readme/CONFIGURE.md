@@ -1,5 +1,5 @@
-- Track the vehicle products by serial number.
-- On the product form, *Fiscal* tab, fill the *New Vehicle Model* with
-  the data shared by the vehicles of the model.
-- Name each serial number with the chassis (VIN) and fill its vehicle
-  serial and engine number.
+- Rastreie os produtos de veículo por número de série.
+- No formulário do produto, aba *Fiscal*, preencha o *New Vehicle Model*
+  com os dados comuns aos veículos do modelo.
+- Nomeie cada número de série com o chassi (VIN) e preencha o número de
+  série do veículo e o número do motor.

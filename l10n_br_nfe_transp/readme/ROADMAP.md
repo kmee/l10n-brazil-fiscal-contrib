@@ -1,11 +1,11 @@
-- The vehicle is not carried from the sale order or the delivery to the
-  invoice: it is chosen on the fiscal document (or computed from the
-  carrier).
-- The optional extension of rule X02-20 to internal operations between
-  different cities (at the discretion of each state) is not applied.
-- The choice between vehicle/trailers, wagon (`vagao`) and ferry
-  (`balsa`) is not handled: wagon and ferry are not filled.
-- The freight CFOP of the ICMS retention is not checked against the CFOP
-  table of the NF-e portal (rule X16-10, rejection 722).
-- The ICMS retention is typed in: it is not computed from the freight
-  service purchase.
+- O veículo não é levado do pedido de venda nem da entrega para a
+  fatura: é escolhido no documento fiscal (ou calculado a partir da
+  transportadora).
+- A extensão opcional da regra X02-20 às operações internas entre
+  municípios diferentes (a critério de cada UF) não é aplicada.
+- A escolha entre veículo/reboques, vagão (`vagao`) e balsa (`balsa`)
+  não é tratada: vagão e balsa não são preenchidos.
+- O CFOP do frete da retenção de ICMS não é conferido contra a tabela de
+  CFOP do portal da NF-e (regra X16-10, rejeição 722).
+- A retenção de ICMS é digitada: não é calculada a partir da compra do
+  serviço de frete.

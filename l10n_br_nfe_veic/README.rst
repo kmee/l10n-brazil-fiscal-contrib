@@ -22,27 +22,28 @@ NF-e New Vehicles (veicProd)
 
 |badge1| |badge2| |badge3|
 
-This module reports the new vehicle group of the NF-e items (group JA,
-``veicProd``) from the serial numbers of the stock.
+Este módulo informa o grupo de veículo novo dos itens da NF-e (grupo JA,
+``veicProd``) a partir dos números de série do estoque.
 
-The data shared by the vehicles of a model (color, power, displacement,
-weights, fuel type, RENAVAM and DENATRAN codes, operation type and so
-on) is set once on the product (*New Vehicle Model*). Each vehicle is a
-serial number of the product: its name is the chassis (VIN), and it
-holds the vehicle serial and the engine number.
+Os dados comuns aos veículos de um modelo (cor, potência, cilindrada,
+pesos, tipo de combustível, códigos RENAVAM e DENATRAN, tipo de operação
+e assim por diante) são definidos uma vez no produto (*New Vehicle
+Model*). Cada veículo é um número de série do produto: seu nome é o
+chassi (VIN), e ele guarda o número de série do veículo e o número do
+motor.
 
-When an invoice is created from a delivery (picking invoicing), the
-invoice line of a vehicle gets its own new vehicle group: the vehicle
-model of the product completed with the chassis, serial and engine
-number of the serial number shipped. The group describes one vehicle, so
-it is only filled when the line has a single serial number. It can be
-edited on the invoice line and on the fiscal document line (*New
-Vehicle* tab).
+Quando uma fatura é criada a partir de uma entrega (faturamento da
+separação), a linha da fatura de um veículo recebe seu próprio grupo de
+veículo novo: o modelo de veículo do produto completado com o chassi, o
+número de série e o número do motor do número de série expedido. O grupo
+descreve um único veículo, então só é preenchido quando a linha tem um
+único número de série. Pode ser editado na linha da fatura e na linha do
+documento fiscal (aba *New Vehicle*).
 
-The chassis is checked against the layout (17 capital letters or
-digits). Before the NF-e is confirmed the module refuses an item whose
-group misses a field required by the layout, and refuses the group in
-the NFC-e (rule J01-10, rejection 736, NT 2013/005).
+O chassi é conferido contra o leiaute (17 letras maiúsculas ou dígitos).
+Antes da confirmação da NF-e, o módulo recusa um item cujo grupo não
+tenha um campo exigido pelo leiaute, e recusa o grupo na NFC-e (regra
+J01-10, rejeição 736, NT 2013/005).
 
 **Table of contents**
 
@@ -52,36 +53,33 @@ the NFC-e (rule J01-10, rejection 736, NT 2013/005).
 Configuration
 =============
 
-- Track the vehicle products by serial number.
-- On the product form, *Fiscal* tab, fill the *New Vehicle Model* with
-  the data shared by the vehicles of the model.
-- Name each serial number with the chassis (VIN) and fill its vehicle
-  serial and engine number.
+- Rastreie os produtos de veículo por número de série.
+- No formulário do produto, aba *Fiscal*, preencha o *New Vehicle Model*
+  com os dados comuns aos veículos do modelo.
+- Nomeie cada número de série com o chassi (VIN) e preencha o número de
+  série do veículo e o número do motor.
 
 Usage
 =====
 
-1. Deliver the vehicle, choosing its serial number.
-2. Create the invoice from the delivery (*Create Invoice* on the
-   picking).
-3. The invoice line shows the vehicle in the *New Vehicle* tab.
-4. Post the invoice: the NF-e XML carries the ``veicProd`` tag of the
-   item.
+1. Entregue o veículo, escolhendo seu número de série.
+2. Crie a fatura a partir da entrega (*Create Invoice* na separação).
+3. A linha da fatura mostra o veículo na aba *New Vehicle*.
+4. Lance a fatura: o XML da NF-e leva a tag ``veicProd`` do item.
 
 Known issues / Roadmap
 ======================
 
-- The groups are filled by the picking invoicing wizard. Invoices
-  created in other ways can call
-  ``account.move.line._fill_nfe40_veicprod()`` or have the group typed
-  in.
-- An invoice line with several vehicles (several serial numbers) gets no
-  group: it is not split into one line per vehicle.
-- The total of the NF-e of a direct billing (``tpOp`` 2, rule W16-10)
-  and the exceptions of rules N12-70, N16-04 and N16-20 for vehicles are
-  not handled by this module.
-- The picking invoicing hook is not covered by the tests, which build
-  the group from the serial number directly.
+- Os grupos são preenchidos pelo assistente de faturamento da separação.
+  Faturas criadas de outras formas podem chamar
+  ``account.move.line._fill_nfe40_veicprod()`` ou ter o grupo digitado.
+- Uma linha de fatura com vários veículos (vários números de série) não
+  recebe grupo: ela não é dividida em uma linha por veículo.
+- O total da NF-e de faturamento direto (``tpOp`` 2, regra W16-10) e as
+  exceções das regras N12-70, N16-04 e N16-20 para veículos não são
+  tratados por este módulo.
+- O hook do faturamento da separação não é coberto pelos testes, que
+  montam o grupo diretamente a partir do número de série.
 
 Bug Tracker
 ===========

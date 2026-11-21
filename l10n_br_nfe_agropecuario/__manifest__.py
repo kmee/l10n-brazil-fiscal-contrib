@@ -3,8 +3,8 @@
 
 {
     "name": "NF-e Agricultural Products (agropecuario)",
-    "summary": "Pesticide prescription and transit permit of agricultural, "
-    "livestock and forest products in the NF-e (agropecuario group)",
+    "summary": "Receituário de agrotóxicos e guia de trânsito de produtos "
+    "agropecuários e florestais na NF-e (grupo agropecuario)",
     "version": "16.0.1.0.0",
     "category": "Localisation",
     "license": "AGPL-3",

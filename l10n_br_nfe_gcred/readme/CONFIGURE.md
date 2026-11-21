@@ -1,2 +1,2 @@
-On the product form, *Fiscal* tab, fill the *Presumed Credit Code* and
-the *Presumed Credit (%)* of the company in use.
+No formulário do produto, aba *Fiscal*, preencha o *Presumed Credit
+Code* e o *Presumed Credit (%)* da empresa em uso.

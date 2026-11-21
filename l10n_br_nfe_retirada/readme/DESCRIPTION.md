@@ -1,16 +1,15 @@
-This module fills the pickup address group of the NF-e (group F,
-`retirada`), that the layout asks only when the goods leave from an
-address other than the issuer address: a branch warehouse, a general
-warehouse (armazém geral), a third party plant and so on.
+Este módulo preenche o grupo de local de retirada da NF-e (grupo F,
+`retirada`), que o leiaute pede apenas quando a mercadoria sai de um
+endereço diferente do endereço do emitente: um depósito de filial, um
+armazém geral, uma fábrica de terceiros e assim por diante.
 
-The field already exists in `l10n_br_nfe`, but nothing filled it. Here
-it is computed on the outgoing NF-e from the deliveries of the invoice:
-when all of them leave from the same warehouse and the address of that
-warehouse is not the address of the issuer company, the warehouse
-address becomes the pickup address. It can be edited on the fiscal
-document (*Delivery* tab).
+O campo já existe no `l10n_br_nfe`, mas nada o preenchia. Aqui ele é
+calculado na NF-e de saída a partir das entregas da fatura: quando todas
+saem do mesmo depósito e o endereço desse depósito não é o endereço da
+empresa emitente, o endereço do depósito vira o local de retirada. Pode
+ser editado no documento fiscal (aba *Delivery*).
 
-Before the NF-e is confirmed the module refuses a pickup address in the
-NFC-e or in the NF-e with the simplified DANFE (rule F01-10, rejection
-669) and a pickup address without CNPJ/CPF, street, number, district or
-city, required by the layout.
+Antes da confirmação da NF-e, o módulo recusa local de retirada na NFC-e
+ou na NF-e com DANFE simplificado (regra F01-10, rejeição 669) e local
+de retirada sem CNPJ/CPF, logradouro, número, bairro ou município,
+exigidos pelo leiaute.

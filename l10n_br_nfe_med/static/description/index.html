@@ -370,23 +370,24 @@ ul.auto-toc {
 !! source digest: sha256:b617a3784190dd7286c87a3b4a2387b00451650c461bb92eb40ecec94b6d0ff4
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_nfe_med"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
-<p>This module reports the medicine group of the NF-e items (group K,
-<tt class="docutils literal">med</tt>) and enforces the traceability group that the SEFAZ requires for
-medicines.</p>
-<p>The ANVISA code (<tt class="docutils literal">cProdANVISA</tt>), the exemption reason
-(<tt class="docutils literal">xMotivoIsencao</tt>) and the maximum consumer price (<tt class="docutils literal">vPMC</tt>) are set
-once on the product and copied to the fiscal document lines of that
-product. The values can be changed on each line, and the lines of an
-incoming NF-e keep the values of the supplier XML.</p>
-<p>The ANVISA code is checked against the layout: 11 or 13 digits, or
-<tt class="docutils literal">ISENTO</tt> for medicines exempt from registration.</p>
-<p>Rule K01-20 (rejection 873) requires the traceability group (<tt class="docutils literal">rastro</tt>)
-on every item with the medicine group. The module refuses to confirm
-such an NF-e without lots, except in the cases listed by the rule:
-complementary, adjustment and return NF-e, non presential sales
-(<tt class="docutils literal">indPres</tt> 2 or 3), incoming NF-e, DANFE type 6 and the CFOP of future
-delivery and sale on behalf of a third party (5922, 6922, 5118 to 5120,
-6118 to 6120). The lots come from the <tt class="docutils literal">l10n_br_nfe_rastro</tt> module.</p>
+<p>Este módulo informa o grupo de medicamento dos itens da NF-e (grupo K,
+<tt class="docutils literal">med</tt>) e exige o grupo de rastreabilidade que a SEFAZ requer para
+medicamentos.</p>
+<p>O código da ANVISA (<tt class="docutils literal">cProdANVISA</tt>), o motivo da isenção
+(<tt class="docutils literal">xMotivoIsencao</tt>) e o preço máximo ao consumidor (<tt class="docutils literal">vPMC</tt>) são
+definidos uma vez no produto e copiados para as linhas do documento
+fiscal desse produto. Os valores podem ser alterados em cada linha, e as
+linhas de uma NF-e recebida mantêm os valores do XML do fornecedor.</p>
+<p>O código da ANVISA é conferido contra o leiaute: 11 ou 13 dígitos, ou
+<tt class="docutils literal">ISENTO</tt> para medicamentos isentos de registro.</p>
+<p>A regra K01-20 (rejeição 873) exige o grupo de rastreabilidade
+(<tt class="docutils literal">rastro</tt>) em todo item com o grupo de medicamento. O módulo recusa
+confirmar uma NF-e assim sem lotes, exceto nos casos listados pela
+regra: NF-e complementar, de ajuste e de devolução, vendas não
+presenciais (<tt class="docutils literal">indPres</tt> 2 ou 3), NF-e recebida, DANFE tipo 6 e os CFOP
+de entrega futura e de venda por conta e ordem de terceiros (5922, 6922,
+5118 a 5120, 6118 a 6120). Os lotes vêm do módulo
+<tt class="docutils literal">l10n_br_nfe_rastro</tt>.</p>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -404,24 +405,25 @@ delivery and sale on behalf of a third party (5922, 6922, 5118 to 5120,
 </div>
 <div class="section" id="configuration">
 <h1><a class="toc-backref" href="#toc-entry-1">Configuration</a></h1>
-<p>On the product form, <em>Fiscal</em> tab, fill the <em>Medicine (ANVISA)</em> field
-with the ANVISA code and the maximum consumer price. Track the product
-by lot (see <tt class="docutils literal">l10n_br_nfe_rastro</tt>).</p>
+<p>No formulário do produto, aba <em>Fiscal</em>, preencha o campo <em>Medicine
+(ANVISA)</em> com o código da ANVISA e o preço máximo ao consumidor.
+Rastreie o produto por lote (veja <tt class="docutils literal">l10n_br_nfe_rastro</tt>).</p>
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-2">Usage</a></h1>
-<p>Invoice a medicine as usual. The invoice line shows the medicine group
-in the <em>Medicine</em> tab and the lots in the <em>Traceability</em> tab; the NF-e
-XML carries the <tt class="docutils literal">med</tt> and <tt class="docutils literal">rastro</tt> tags of the item.</p>
+<p>Fature um medicamento normalmente. A linha da fatura mostra o grupo de
+medicamento na aba <em>Medicine</em> e os lotes na aba <em>Traceability</em>; o XML da
+NF-e leva as tags <tt class="docutils literal">med</tt> e <tt class="docutils literal">rastro</tt> do item.</p>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-3">Known issues / Roadmap</a></h1>
 <ul class="simple">
-<li>Rule K01-10 (medicine NCM 3001 to 3006 requires the medicine group) is
-not enforced: the SEFAZ suspended it and lists it as future
-implementation.</li>
-<li>The medicine group is shared by the products that use it: changing the
-maximum consumer price changes it for the draft documents too.</li>
+<li>A regra K01-10 (NCM de medicamento 3001 a 3006 exige o grupo de
+medicamento) não é aplicada: a SEFAZ a suspendeu e a lista como
+implementação futura.</li>
+<li>O grupo de medicamento é compartilhado pelos produtos que o usam:
+alterar o preço máximo ao consumidor o altera também nos documentos em
+rascunho.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">

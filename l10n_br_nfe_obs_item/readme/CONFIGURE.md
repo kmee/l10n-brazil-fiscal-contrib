@@ -1,2 +1,2 @@
-On the product form, *Fiscal* tab, fill the *NF-e Item Observations*
-field with the taxpayer and the tax authority observations.
+No formulário do produto, aba *Fiscal*, preencha o campo *NF-e Item
+Observations* com as observações do contribuinte e do fisco.
