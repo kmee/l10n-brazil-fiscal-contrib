@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="nfeabi_document_form_view">
+        <field name="name">l10n_br_fiscal.document.form (in l10n_br_nfeabi)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='products']" position="after">
+                <page
+                    name="nfeabi"
+                    string="NF-e ABI"
+                    attrs="{'invisible': [('document_type', '!=', '77')]}"
+                >
+                    <group>
+                        <group name="nfeabi_ide" string="Emission">
+                            <field name="nfeabi_environment" />
+                            <field name="nfeabi10_tpNF" />
+                            <field name="nfeabi10_modOper" />
+                            <field name="nfeabi10_natOper" />
+                            <field name="nfeabi10_detOper" />
+                            <field
+                                name="nfeabi10_pTransImovel"
+                                attrs="{'invisible': [('nfeabi10_tpNF', '!=', '1')]}"
+                            />
+                        </group>
+                        <group name="nfeabi_instrument" string="Instrument">
+                            <field name="nfeabi10_imovel" />
+                            <field name="nfeabi10_tpInstrumento" />
+                            <field
+                                name="nfeabi10_xOutrosInst"
+                                attrs="{'invisible': [('nfeabi10_tpInstrumento', '!=', '99')]}"
+                            />
+                            <field name="nfeabi10_dtInstrumento" />
+                        </group>
+                        <group name="nfeabi_reducers" string="Reducers">
+                            <field name="nfeabi10_vInicial" />
+                            <field name="nfeabi10_vITBI" />
+                            <field name="nfeabi10_vLaudemio" />
+                            <field name="nfeabi10_vContrap" />
+                            <field name="nfeabi10_vRedAjusteImovel" />
+                            <field name="nfeabi10_vRedSocial" />
+                        </group>
+                        <group name="nfeabi_values" string="Values">
+                            <field name="nfeabi10_vTotalOperacao" />
+                            <field name="nfeabi10_vOperacIndiv" />
+                            <field name="nfeabi10_vBC" />
+                            <field name="nfeabi10_vNF" />
+                        </group>
+                    </group>
+                    <separator string="Transmitters" />
+                    <field name="nfeabi10_transmit">
+                        <tree editable="bottom">
+                            <field name="sequence" widget="handle" />
+                            <field name="partner_id" />
+                            <field name="transfer_percent" />
+                            <field name="nfeabi10_indContrib" />
+                        </tree>
+                    </field>
+                    <separator string="Acquirers" />
+                    <field name="nfeabi10_adquirente">
+                        <tree editable="bottom">
+                            <field name="sequence" widget="handle" />
+                            <field name="partner_id" />
+                        </tree>
+                    </field>
+                    <separator string="Brokers" />
+                    <field name="nfeabi10_gIntermedCorret">
+                        <tree editable="bottom">
+                            <field name="sequence" widget="handle" />
+                            <field name="partner_id" />
+                            <field name="nfeabi10_vCorretagem" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
