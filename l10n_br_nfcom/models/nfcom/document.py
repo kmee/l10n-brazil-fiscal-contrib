@@ -109,6 +109,20 @@ class NFCom(spec_models.StackedModel):
     + <infAdic>
     - <gRespTec>"""
 
+    def _register_hook(self):
+        """Build the concrete NFCom spec models whatever the MRO resolves to.
+
+        The hook of spec_driven_model takes the schema from the MRO: with
+        another spec driven module extending the fiscal document after this
+        one, it resolves to that schema and the NFCom models (gSub, gCofat,
+        pgtoVinc, gFidelidade...) would get no table.
+        """
+        res = super()._register_hook()
+        self.with_context(
+            spec_schema="nfcom", spec_version="10"
+        )._register_remaining_schema_models_hook()
+        return res
+
     nfcom_environment = fields.Selection(
         related="company_id.nfcom_environment",
         string="NFCom Environment",
