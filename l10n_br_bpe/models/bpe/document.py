@@ -124,6 +124,20 @@ class BPe(spec_models.StackedModel):
     - <infAdic>
     - <infRespTec>"""
 
+    def _register_hook(self):
+        """Build the concrete BP-e spec models whatever the MRO resolves to.
+
+        The hook of spec_driven_model takes the schema from the MRO: with
+        another spec driven module extending the fiscal document after this
+        one (NF3e, NFCom...), it resolves to that schema and the BP-e models
+        (infPassageiro, infViagem, pag...) would get no table.
+        """
+        res = super()._register_hook()
+        self.with_context(
+            spec_schema="bpe", spec_version="10"
+        )._register_remaining_schema_models_hook()
+        return res
+
     bpe_environment = fields.Selection(
         selection=[("1", "Production"), ("2", "Homologation")],
         string="BP-e Environment",
