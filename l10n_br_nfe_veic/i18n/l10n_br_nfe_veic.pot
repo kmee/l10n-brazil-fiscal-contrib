@@ -1,0 +1,252 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfe_veic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfe_veic
+#. odoo-python
+#: code:addons/l10n_br_nfe_veic/models/document.py:0
+#, python-format
+msgid "%(item)s: %(fields)s."
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Brand and Model Code"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Chassis (VIN)"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Color"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Color Code"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Condition"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "DENATRAN Color"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model.fields,help:l10n_br_nfe_veic.field_product_product__nfe40_veicProd
+#: model:ir.model.fields,help:l10n_br_nfe_veic.field_product_template__nfe40_veicProd
+msgid ""
+"Data shared by the vehicles of this model (color, engine, weights, RENAVAM "
+"codes...). The chassis, serial and engine number of each vehicle come from "
+"its serial number."
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Displacement (cc)"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model.fields,field_description:l10n_br_nfe_veic.field_stock_lot__vehicle_engine_number
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Engine Number"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Fuel Type"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Gross Weight"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model,name:l10n_br_nfe_veic.model_l10n_br_fiscal_document_line
+msgid ""
+"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
+"não contribuinte de ICMS"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model,name:l10n_br_nfe_veic.model_l10n_br_fiscal_document
+msgid "Informações de exportação"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model,name:l10n_br_nfe_veic.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model,name:l10n_br_nfe_veic.model_stock_lot
+msgid "Lot/Serial"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Manufacturing Year"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Maximum Traction (t)"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Model"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Model Year"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Net Weight"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.document_line_form
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.invoice_form
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.product_template_form
+msgid "New Vehicle"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model.fields,field_description:l10n_br_nfe_veic.field_product_product__nfe40_veicProd
+#: model:ir.model.fields,field_description:l10n_br_nfe_veic.field_product_template__nfe40_veicProd
+msgid "New Vehicle Model"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Operation Type"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Paint Type"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Power (CV)"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model,name:l10n_br_nfe_veic.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Restriction"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Seats"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Serial"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model.fields,help:l10n_br_nfe_veic.field_stock_lot__vehicle_serial
+msgid ""
+"Serial of the vehicle reported in the NF-e (nSerie). The serial number (lot "
+"name) is the chassis (VIN)."
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Specifications"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model,name:l10n_br_nfe_veic.model_stock_invoice_onshipping
+msgid "Stock Invoice Onshipping"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#. odoo-python
+#: code:addons/l10n_br_nfe_veic/models/document.py:0
+#, python-format
+msgid ""
+"The NF-e new vehicle data (veicProd) is incomplete, these fields are required:\n"
+"%(errors)s"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#. odoo-python
+#: code:addons/l10n_br_nfe_veic/models/document.py:0
+#, python-format
+msgid "The NFC-e does not accept the new vehicle group."
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#. odoo-python
+#: code:addons/l10n_br_nfe_veic/models/nfe_veicprod.py:0
+#, python-format
+msgid "The chassis (VIN) must have 17 capital letters or digits."
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "VIN Condition"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.view_production_lot_form
+msgid "Vehicle"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model.fields,field_description:l10n_br_nfe_veic.field_stock_lot__vehicle_serial
+msgid "Vehicle Serial"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Vehicle Species"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Vehicle Type"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model:ir.model,name:l10n_br_nfe_veic.model_nfe_40_veicprod
+msgid "Veículos novos"
+msgstr ""
+
+#. module: l10n_br_nfe_veic
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_veic.nfe_veicprod_form
+msgid "Wheelbase"
+msgstr ""
