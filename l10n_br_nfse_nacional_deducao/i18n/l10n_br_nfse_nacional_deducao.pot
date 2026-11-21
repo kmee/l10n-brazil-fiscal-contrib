@@ -208,13 +208,6 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_deducao
-#: model:ir.model,name:l10n_br_nfse_nacional_deducao.model_l10n_br_fiscal_document_line
-msgid ""
-"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
-"não contribuinte de ICMS"
-msgstr ""
-
-#. module: l10n_br_nfse_nacional_deducao
 #: model:ir.model.fields.selection,name:l10n_br_nfse_nacional_deducao.selection__l10n_br_nfse_nacional_bc_adjustment__adjustment_type__6
 msgid "Health plan transfer"
 msgstr ""
@@ -227,6 +220,11 @@ msgstr ""
 #. module: l10n_br_nfse_nacional_deducao
 #: model:ir.model.fields,field_description:l10n_br_nfse_nacional_deducao.field_l10n_br_nfse_nacional_bc_adjustment__id
 msgid "ID"
+msgstr ""
+
+#. module: l10n_br_nfse_nacional_deducao
+#: model:ir.model,name:l10n_br_nfse_nacional_deducao.model_l10n_br_fiscal_document
+msgid "Informações Adicionais"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_deducao
@@ -359,8 +357,8 @@ msgid "Tax Base Adjustment Documents"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_deducao
-#: model:ir.model,name:l10n_br_nfse_nacional_deducao.model_l10n_br_fiscal_document
-msgid "Tipo Dados do Imposto BP-e"
+#: model:ir.model,name:l10n_br_nfse_nacional_deducao.model_l10n_br_fiscal_document_line
+msgid "Tipo imposto da NFGas"
 msgstr ""
 
 #. module: l10n_br_nfse_nacional_deducao
