@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="nf3e_document_form_view">
+        <field name="name">l10n_br_fiscal.document.form (in l10n_br_nf3e)</field>
+        <field name="model">l10n_br_fiscal.document</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='products']" position="after">
+                <page name="nf3e" string="NF3e" invisible="document_type != '66'">
+                    <group>
+                        <group name="nf3e_ide" string="Emission">
+                            <field name="nf3e_environment" />
+                            <field name="nf3e10_finNF3e" />
+                            <field name="nf3e10_tpEmis" />
+                        </group>
+                        <group name="nf3e_acessante" string="Consumer Unit">
+                            <field name="nf3e10_idAcesso" />
+                            <field name="nf3e10_idCodCliente" />
+                            <field name="nf3e10_tpAcesso" />
+                            <field name="nf3e10_xNomeUC" />
+                            <field name="nf3e10_tpClasse" />
+                            <field name="nf3e10_tpSubClasse" />
+                            <field name="nf3e10_tpFase" />
+                            <field name="nf3e10_tpGrpTensao" />
+                            <field name="nf3e10_tpModTar" />
+                            <field name="nf3e10_latGPS" />
+                            <field name="nf3e10_longGPS" />
+                            <field name="nf3e10_codRoteiroLeitura" />
+                        </group>
+                        <group name="nf3e_gfat" string="Invoice">
+                            <field name="nf3e10_CompetFat" />
+                            <field name="nf3e10_dVencFat" />
+                            <field name="nf3e10_dApresFat" />
+                            <field name="nf3e10_dProxLeitura" />
+                            <field name="nf3e10_nFat" />
+                            <field name="nf3e10_codBarras" />
+                            <field name="nf3e10_codDebAuto" />
+                            <field name="nf3e10_codBanco" />
+                            <field name="nf3e10_codAgencia" />
+                        </group>
+                    </group>
+                    <separator string="Meters" />
+                    <field name="nf3e10_gMed">
+                        <list editable="bottom">
+                            <field name="nf3e10_nMed" />
+                            <field name="nf3e10_idMedidor" />
+                            <field name="nf3e10_dMedAnt" />
+                            <field name="nf3e10_dMedAtu" />
+                        </list>
+                    </field>
+                    <separator string="Billing History" />
+                    <field name="nf3e10_gHistFat">
+                        <list>
+                            <field name="nf3e10_xGrandFat" />
+                        </list>
+                        <form>
+                            <group>
+                                <field name="nf3e10_xGrandFat" />
+                            </group>
+                            <field name="nf3e10_gGrandFat">
+                                <list editable="bottom">
+                                    <field name="nf3e10_CompetFat" />
+                                    <field name="nf3e10_vFat" />
+                                    <field name="nf3e10_uMed" />
+                                    <field name="nf3e10_qtdDias" />
+                                </list>
+                            </field>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="nf3e_document_line_form_view">
+        <field name="name">l10n_br_fiscal.document.line.form (in l10n_br_nf3e)</field>
+        <field name="model">l10n_br_fiscal.document.line</field>
+        <field name="inherit_id" ref="l10n_br_fiscal.document_line_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='general']" position="after">
+                <page name="nf3e" string="NF3e" invisible="nf3e_document_type != '66'">
+                    <group>
+                        <field name="nf3e_document_type" invisible="1" />
+                        <field name="nf3e10_cClass" />
+                        <field name="nf3e10_uMed" />
+                        <field name="nf3e10_indOrigemQtd" />
+                        <field name="nf3e10_infAdProd" />
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
