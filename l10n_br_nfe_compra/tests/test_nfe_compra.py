@@ -5,6 +5,7 @@ import base64
 
 from lxml import etree
 
+from odoo import Command
 from odoo.exceptions import UserError
 from odoo.tests import TransactionCase, tagged
 
@@ -19,6 +20,17 @@ class TestNFeCompra(TransactionCase):
         super().setUpClass()
         cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
         cls.nfe = cls.env.ref("l10n_br_nfe.demo_nfe_same_state")
+        # l10n_br_nfe 16.0 does not fill the payment of the demo NF-e
+        cls.nfe.nfe40_detPag = [
+            Command.clear(),
+            Command.create(
+                {
+                    "nfe40_indPag": "0",
+                    "nfe40_tPag": "01",
+                    "nfe40_vPag": cls.nfe.amount_financial_total,
+                }
+            ),
+        ]
 
     def _confirm(self):
         self.nfe.action_document_confirm()

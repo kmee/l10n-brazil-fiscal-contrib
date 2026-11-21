@@ -11,7 +11,7 @@
                 <group
                     name="nfe40_compra"
                     string="Purchase Information"
-                    invisible="document_type != '55'"
+                    attrs="{'invisible': [('document_type', '!=', '55')]}"
                 >
                     <field name="purchase_commitment_note" />
                     <field name="purchase_order_ref" />
