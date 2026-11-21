@@ -6,12 +6,12 @@
         <field name="name">nfe.40.gcred.list</field>
         <field name="model">nfe.40.gcred</field>
         <field name="arch" type="xml">
-            <list editable="bottom">
+            <tree editable="bottom">
                 <field name="nfe40_cCredPresumido" string="Benefit Code" />
                 <field name="nfe40_pCredPresumido" string="Percentage" />
-                <field name="brl_currency_id" column_invisible="1" />
+                <field name="brl_currency_id" invisible="1" />
                 <field name="nfe40_vCredPresumido" string="Amount" />
-            </list>
+            </tree>
         </field>
     </record>
 </odoo>
