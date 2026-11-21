@@ -32,6 +32,8 @@ BPE_VERSION = "1.00"
 
 ENDPOINTS = {
     soap.BpeRecepcao: Endpoint.RECEPCAO,
+    soap.BpeRecepcaoTm: Endpoint.RECEPCAO_TM,
+    soap.BpeRecepcaoTa: Endpoint.RECEPCAO_TA,
     soap.BpeRecepcaoEvento: Endpoint.RECEPCAO_EVENTO,
     soap.BpeConsulta: Endpoint.CONSULTA,
     soap.BpeStatusServico: Endpoint.STATUS_SERVICO,
@@ -39,6 +41,9 @@ ENDPOINTS = {
 
 RESULTS = {
     soap.BpeRecepcao: RetBpe,
+    # the BP-e TM and TA answer with the retBPe of the BP-e
+    soap.BpeRecepcaoTm: RetBpe,
+    soap.BpeRecepcaoTa: RetBpe,
     soap.BpeRecepcaoEvento: RetEventoBpe,
     soap.BpeConsulta: RetConsSitBpe,
     soap.BpeStatusServico: RetConsStatServBpe,
@@ -50,12 +55,15 @@ XML_DECLARATION = re.compile(r"^\s*<\?xml[^>]*\?>")
 class BpeClient(FiscalClient):
     """A facade for the BP-e 1.00 SOAP webservices."""
 
-    def __init__(self, **kwargs):
+    def __init__(self, server_key=None, **kwargs):
+        """server_key forces an authorizer (e.g. SVRS for the BP-e TA)
+        instead of the one of the UF."""
         kwargs.setdefault("soap12_envelope", True)
+        self.server_key = server_key
         super().__init__(service="bpe", versao=BPE_VERSION, **kwargs)
 
     def _get_location(self, endpoint):
-        return get_location(self.uf, self.ambiente, endpoint)
+        return get_location(self.uf, self.ambiente, endpoint, self.server_key)
 
     def prepare_headers(self, headers):
         """SOAP 1.2 carries the action in the content type (no SOAPAction)."""
@@ -112,13 +120,26 @@ class BpeClient(FiscalClient):
         )
         return self.send(soap.BpeConsulta, {"content": [payload]})
 
-    def envia_bpe(self, signed_xml):
-        """Recepcao do BP-e (MOC item 4.1): synchronous, gzip + base64."""
+    def _send_compressed(self, action_class, signed_xml):
         if not signed_xml:
             raise ValueError("The signed BP-e XML is empty.")
         xml = XML_DECLARATION.sub("", signed_xml)
         value = base64.b64encode(gzip.compress(xml.encode("utf-8"))).decode()
-        return self.send(soap.BpeRecepcao, {"value": value})
+        return self.send(action_class, {"value": value})
+
+    def envia_bpe(self, signed_xml):
+        """Recepcao do BP-e (MOC item 4.1): synchronous, gzip + base64."""
+        return self._send_compressed(soap.BpeRecepcao, signed_xml)
+
+    def envia_bpe_tm(self, signed_xml):
+        """Recepcao do BP-e TM (NT 2020.002 v1.01, item 1): synchronous,
+        gzip + base64, answered with a retBPe."""
+        return self._send_compressed(soap.BpeRecepcaoTm, signed_xml)
+
+    def envia_bpe_ta(self, signed_xml):
+        """Recepcao do BP-e TA (NT 2025.002 v2.00, item 4.1): synchronous,
+        gzip + base64, answered with a retBPe."""
+        return self._send_compressed(soap.BpeRecepcaoTa, signed_xml)
 
     def envia_evento(self, signed_xml):
         """Recepcao de Evento (MOC item 6), with the signed eventoBPe as is."""

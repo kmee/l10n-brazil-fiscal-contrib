@@ -18,9 +18,14 @@
             </xpath>
             <xpath expr="//notebook" position="inside">
                 <page name="bpe" string="BP-e" invisible="document_type != '63'">
-                    <group>
-                        <group name="bpe_trip" string="Trip">
+                    <group name="bpe_settings">
+                        <group>
+                            <field name="bpe_layout" />
                             <field name="bpe_environment" />
+                        </group>
+                    </group>
+                    <group name="bpe_layout_bpe" invisible="bpe_layout != 'bpe'">
+                        <group name="bpe_trip" string="Trip">
                             <field name="bpe10_modal" />
                             <field name="bpe10_tpBPe" />
                             <field name="bpe10_indPres" />
@@ -44,7 +49,7 @@
                             <field name="bpe10_infPassageiro" />
                         </group>
                     </group>
-                    <field name="bpe10_infViagem">
+                    <field name="bpe10_infViagem" invisible="bpe_layout != 'bpe'">
                         <list editable="bottom">
                             <field name="bpe10_cPercurso" />
                             <field name="bpe10_xPercurso" />
@@ -58,7 +63,7 @@
                             <field name="bpe10_plataforma" />
                         </list>
                     </field>
-                    <field name="bpe10_pag">
+                    <field name="bpe10_pag" invisible="bpe_layout != 'bpe'">
                         <list editable="bottom">
                             <field name="bpe10_tPag" />
                             <field name="bpe10_xPag" />

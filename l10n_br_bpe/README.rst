@@ -61,6 +61,14 @@ autorizadores (MG, MS, MT, PR, SP e SVRS para as demais UFs) e do QR
 Code são os do Portal BP-e
 (https://dfe-portal.svrs.rs.gov.br/BPe/Servicos).
 
+O modelo 63 tem mais dois leiautes, emitidos por módulos próprios que
+dependem deste: o BP-e TM (transporte metropolitano e semiurbano com
+catraca ou contador, NT 2020.002), no ``l10n_br_bpe_tm``, e o BP-e TA
+(transporte aéreo, NT 2025.002), no ``l10n_br_bpe_ta``. O campo "BP-e
+Layout" do documento escolhe o leiaute, e o cliente de webservice já
+traz os serviços ``BPeRecepcaoTM`` (MG e SVRS) e ``BPeRecepcaoTA``
+(SVRS) publicados no Portal BP-e.
+
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
    Only for development or testing purpose, do not use in production.
@@ -109,10 +117,6 @@ Known issues / Roadmap
   trocados na página de serviços (MG: Consulta aponta para produção e
   StatusServico para BPeConsulta; MS: Consulta aponta para MG). Foram
   mantidos como publicados.
-- BP-e TM (transporte metropolitano, serviço ``BPeRecepcaoTM``) e BP-e
-  TA (transporte aéreo, ``BPeRecepcaoTA``, NT 2025.002): os modelos
-  estão no ``l10n_br_bpe_spec``, mas a emissão tem estrutura própria (TM
-  agrupa as viagens por catraca no ``detBPeTM``) e não foi feita.
 - Contingência off-line (``tpEmis`` 2): QR Code com o parâmetro ``sign``
   (MOC item 10.2), ``dhCont`` e ``xJust``.
 - BP-e de substituição (``tpBPe`` 3, ``infBPeSub``) e os eventos de

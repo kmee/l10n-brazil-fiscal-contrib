@@ -24,3 +24,5 @@ class FiscalDocumentLine(models.Model):
         default="01",
         help="Type of the value component (Comp/tpComp) of the BP-e.",
     )
+
+    bpe_layout = fields.Selection(related="document_id.bpe_layout")

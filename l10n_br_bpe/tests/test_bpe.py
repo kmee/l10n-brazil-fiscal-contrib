@@ -3,12 +3,14 @@
 
 import base64
 import gzip
+import os
 import re
 from datetime import datetime
 from unittest import mock
 
 from lxml import etree
 from nfelib.bpe.bindings.v1_0.bpe_v1_00 import Bpe
+from nfelib.bpe.bindings.v1_0.proc_bpe_v1_00 import BpeProc
 
 from odoo import Command
 from odoo.exceptions import UserError
@@ -16,6 +18,8 @@ from odoo.tests import TransactionCase, tagged
 from odoo.tools import mute_logger
 
 from ..bpe_client.client import BpeClient
+from ..bpe_client.servers import Endpoint, get_location
+from ..constants import BPE_SCHEMAS
 
 NS = {"bpe": "http://www.portalfiscal.inf.br/bpe"}
 
@@ -188,6 +192,27 @@ class TestBpe(TransactionCase):
             f"?chBPe={key}&tpAmb=2",
         )
 
+    def test_layout_and_tm_ta_services(self):
+        """The BP-e layout is the default one, and the reception services of
+        the BP-e TM and TA are the ones of the Portal BP-e (MG and SVRS for
+        the TM, SVRS for the TA)."""
+        self.assertEqual(self.document.bpe_layout, "bpe")
+        self.assertEqual(self.line.bpe_layout, "bpe")
+        self.assertEqual(
+            get_location("31", "2", Endpoint.RECEPCAO_TM),
+            "https://hbpe.fazenda.mg.gov.br/bpe/services/BPeRecepcaoTM",
+        )
+        self.assertEqual(
+            get_location("43", "1", Endpoint.RECEPCAO_TM),
+            "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx",
+        )
+        self.assertEqual(
+            get_location("35", "2", Endpoint.RECEPCAO_TA, "SVRS"),
+            "https://bpe-homologacao.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx",
+        )
+        with self.assertRaisesRegex(ValueError, "BPeRecepcaoTM"):
+            get_location("35", "2", Endpoint.RECEPCAO_TM)
+
     def test_vtotdfe_from_2027(self):
         """From 2027 on vTotDFe adds IBS and CBS to vBP (NT 2026.004 v1.01)."""
         self.assertEqual(self.document.bpe10_vTotDFe, 120.0)
@@ -224,6 +249,18 @@ class TestBpe(TransactionCase):
         self.assertIn(f'Id="BPe{key}"', sent_xml)
         self.assertEqual(self.document.state_edoc, "autorizada")
         self.assertEqual(self.document.authorization_protocol, "135260000000001")
+        proc = base64.b64decode(
+            self.document.authorization_event_id.file_response_id.datas
+        ).decode()
+        self.assertEqual(
+            BpeProc.schema_validation(
+                proc,
+                schema_path=os.path.join(
+                    os.path.dirname(BPE_SCHEMAS["bpe"]), "procBPe_v1.00.xsd"
+                ),
+            ),
+            [],
+        )
 
         def event_response(status, reason, event_type):
             return self._soap(

@@ -11,6 +11,10 @@ class Endpoint(Enum):
     CONSULTA = "BPeConsulta"
     STATUS_SERVICO = "BPeStatusServico"
     QRCODE = "QRCode"
+    # NT BP-e 2020.002 v1.01, item 1: reception of the BP-e TM
+    RECEPCAO_TM = "BPeRecepcaoTM"
+    # NT BP-e 2025.002 v2.00, item 4.1: reception of the BP-e TA
+    RECEPCAO_TA = "BPeRecepcaoTA"
 
 
 # UFs with their own authorizer; every other UF uses SVRS
@@ -44,6 +48,9 @@ SERVERS = {
             Endpoint.QRCODE: (
                 "https://portalbpe.fazenda.mg.gov.br/portalbpe/sistema/qrcode.xhtml"
             ),
+            Endpoint.RECEPCAO_TM: (
+                "https://bpe.fazenda.mg.gov.br/bpe/services/BPeRecepcaoTM"
+            ),
         },
         "dev": {
             Endpoint.RECEPCAO: "https://hbpe.fazenda.mg.gov.br/bpe/services/BPeRecepcao",
@@ -56,6 +63,9 @@ SERVERS = {
             ),
             Endpoint.QRCODE: (
                 "https://portalbpe.fazenda.mg.gov.br/portalbpe/sistema/qrcode.xhtml"
+            ),
+            Endpoint.RECEPCAO_TM: (
+                "https://hbpe.fazenda.mg.gov.br/bpe/services/BPeRecepcaoTM"
             ),
         },
     },
@@ -184,6 +194,12 @@ SERVERS = {
                 "https://bpe.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx"
             ),
             Endpoint.QRCODE: "https://dfe-portal.svrs.rs.gov.br/bpe/qrCode",
+            Endpoint.RECEPCAO_TM: (
+                "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx"
+            ),
+            Endpoint.RECEPCAO_TA: (
+                "https://bpe.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx"
+            ),
         },
         "dev": {
             Endpoint.RECEPCAO: (
@@ -201,6 +217,14 @@ SERVERS = {
                 "/ws/bpeStatusServico/bpeStatusServico.asmx"
             ),
             Endpoint.QRCODE: "https://dfe-portal.svrs.rs.gov.br/bpe/qrCode",
+            Endpoint.RECEPCAO_TM: (
+                "https://bpe-homologacao.svrs.rs.gov.br"
+                "/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx"
+            ),
+            Endpoint.RECEPCAO_TA: (
+                "https://bpe-homologacao.svrs.rs.gov.br"
+                "/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx"
+            ),
         },
     },
 }
@@ -210,8 +234,16 @@ def get_server_key(uf_ibge_code):
     return UF_AUTHORIZER.get(uf_ibge_code, "SVRS")
 
 
-def get_location(uf_ibge_code, ambiente, endpoint):
+def get_location(uf_ibge_code, ambiente, endpoint, server_key=None):
+    """URL of a service; server_key forces an authorizer instead of the one
+    of the UF (the BP-e TA is only offered by SVRS)."""
     environment = "prod" if ambiente == "1" else "dev"
     if endpoint == Endpoint.QRCODE and uf_ibge_code in QRCODE_BY_UF:
         return QRCODE_BY_UF[uf_ibge_code][environment]
-    return SERVERS[get_server_key(uf_ibge_code)][environment][endpoint]
+    server_key = server_key or get_server_key(uf_ibge_code)
+    location = SERVERS[server_key][environment].get(endpoint)
+    if not location:
+        raise ValueError(
+            f"The {server_key} authorizer publishes no {endpoint.value} service."
+        )
+    return location

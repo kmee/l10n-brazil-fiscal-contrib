@@ -15,6 +15,7 @@
         "python": [
             "nfelib",
             "brazil_fiscal_client",
+            "xsdata",
         ],
     },
     "depends": [
