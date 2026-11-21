@@ -1,0 +1,663 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_gtve
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_arrival_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_arrival_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_arrival_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dhChegadaDest
+msgid "Arrival at Destination"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_autXML
+msgid "Autorizados para download do XML do DF-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_autXML
+msgid ""
+"Autorizados para download do XML do DF-e\n"
+"Informar CNPJ ou CPF. Preencher os zeros não significativos."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields.selection,name:l10n_br_gtve.selection__l10n_br_gtve_species__cte40_tpEspecie__1
+msgid "Banknote"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_cfop_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_cfop_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_cfop_id
+msgid "CFOP"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields.selection,name:l10n_br_gtve.selection__l10n_br_gtve_species__cte40_tpEspecie__2
+msgid "Check"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_mod
+msgid "Code"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields.selection,name:l10n_br_gtve.selection__l10n_br_gtve_species__cte40_tpEspecie__3
+msgid "Coin"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model,name:l10n_br_gtve.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__create_uid
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__create_uid
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__create_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__create_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__cte40_infEspecie_detGTV_id
+msgid "Cte40 Infespecie Detgtv"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__cte40_infVeiculo_detGTV_id
+msgid "Cte40 Infveiculo Detgtv"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_CFOP
+msgid "Código Fiscal de Operações e Prestações"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_cMunEnv
+msgid "Código do Município de envio da GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_cMunEnv
+msgid ""
+"Código do Município de envio da GTV-e (de onde o documento foi transmitido)\n"
+"Utilizar a tabela do IBGE. Informar 9999999 para as operações com o exterior."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_cCT
+msgid "Código numérico que compõe a Chave"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_cCT
+msgid ""
+"Código numérico que compõe a Chave de Acesso.\n"
+"Número aleatório gerado pelo emitente para cada CT-e, com o objetivo de evitar acessos indevidos ao documento."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_compl
+msgid "Dados complementares da GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_compl
+msgid "Dados complementares da GTV-e para fins operacionais ou comerciais"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dhCont
+msgid "Data e Hora da entrada em contingência"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dhCont
+msgid ""
+"Data e Hora da entrada em contingência\n"
+"Informar a data e hora no formato AAAA-MM-DDTHH:MM:SS"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_departure_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_departure_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_departure_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dhSaidaOrig
+msgid "Departure from Origin"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_cDV
+msgid "Digito Verificador da chave de acesso"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_cDV
+msgid ""
+"Digito Verificador da chave de acesso da GTV-e\n"
+"Informar o dígito  de controle da chave de acesso do CT-e, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__display_name
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__display_name
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__document_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__document_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__document_id
+msgid "Document"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dhEmi
+msgid "Document Date"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model,name:l10n_br_gtve.model_l10n_br_fiscal_document
+msgid "Fiscal Document"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__cte40_xMoedaEstr
+msgid "Foreign Currency"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpEmis
+msgid "Forma de emissão da GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpEmis
+msgid ""
+"Forma de emissão da GTV-e\n"
+"Preencher com:\n"
+"1 - Normal;\n"
+"2- Contingencia offline"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpImp
+msgid "Formato de impressão do DACTE"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpImp
+msgid ""
+"Formato de impressão do DACTE\n"
+"Preencher com: 1 - Retrato; 2 - Paisagem."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model,name:l10n_br_gtve.model_l10n_br_gtve_gtve
+#: model_terms:ir.ui.view,arch_db:l10n_br_gtve.gtve_document_form_view
+msgid "GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#. odoo-python
+#: code:addons/l10n_br_gtve/models/document.py:0
+msgid "GTV-e %(document)s: fill in %(fields)s."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_service_taker
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_service_taker
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_service_taker
+msgid "GTV-e Service Taker"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_infVeiculo
+msgid "Grupo de informações"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_infVeiculo
+msgid "Grupo de informações dos veículos utilizados no transporte de valores"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_id
+msgid "Gtve"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_cUF
+msgid "IBGE Code"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_Id
+msgid "Identificador da tag a ser assinada"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_Id
+msgid ""
+"Identificador da tag a ser assinada\n"
+"Informar a chave de acesso do CT-e OS e precedida do literal 'CTe'"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_emit
+msgid "Identificação do Emitente da GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_indIEToma
+msgid "Indicador da IE do tomador"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_indIEToma
+msgid ""
+"Indicador da IE do tomador:\n"
+"1 – Contribuinte ICMS;\n"
+"2 – Contribuinte isento de inscrição;\n"
+"9 – Não Contribuinte\n"
+"Aplica-se ao tomador que for indicado no toma3 ou toma4"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_toma
+msgid "Indicador do 'papel' do tomador"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tomaTerceiro
+msgid "Indicador do 'papel' do tomador do serviço no CTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_toma
+msgid "Indicador do 'papel' do tomador do serviço no GT-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_infEspecie
+msgid "Informações das Espécies transportadas"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dest
+msgid "Informações do Destinatário"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_dest
+msgid ""
+"Informações do Destinatário\n"
+"Poderá não ser informado para os CT-e de redespacho intermediário e serviço vinculado a multimodal. Nos demais casos deverá sempre ser informado."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_rem
+msgid "Informações do Remetente"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_rem
+msgid ""
+"Informações do Remetente\n"
+"Poderá não ser informado para os CT-e de redespacho intermediário e serviço vinculado a multimodal. Nos demais casos deverá sempre ser informado."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_infRespTec
+msgid "Informações do Responsável Técnico"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_infRespTec
+msgid "Informações do Responsável Técnico pela emissão do DF-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_origem
+msgid "Informações do endereço da origem"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_origem
+msgid "Informações do endereço da origem do serviço"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_destino
+msgid "Informações do endereço do destino"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_destino
+msgid "Informações do endereço do destino do serviço"
+msgstr ""
+
+#. module: l10n_br_gtve
+#. odoo-python
+#: code:addons/l10n_br_gtve/models/document.py:0
+msgid "Invalid GTV-e access key: %(key)s"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_xJust
+msgid "Justificativa da entrada em contingência"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__write_uid
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__write_uid
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__write_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__write_date
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__cte40_placa
+msgid "License Plate"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_modal
+msgid "Modal da GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_modal
+msgid ""
+"Modal da GTV-e\n"
+"Preencher com:\n"
+"01-Rodoviário \n"
+"06-Multimodal"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__brl_currency_id
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__brl_currency_id
+msgid "Moeda"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_species__cte40_tpNumerario
+msgid ""
+"Nacionalidade do Numerário\n"
+"1 - Nacional\n"
+"2 - Estrangeiro"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__cte40_tpNumerario
+msgid "Nationality"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_natOp
+msgid "Natureza da Operação"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_species__cte40_xMoedaEstr
+msgid ""
+"Nome da Moeda\n"
+"Informar somente se tipo de numerário for 2 - Estrangeiro"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_xMunEnv
+msgid "Nome do Município de envio da GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_xMunEnv
+msgid ""
+"Nome do Município de envio da GTV-e (de onde o documento foi transmitido)\n"
+"Informar PAIS/Municipio para as operações com o exterior."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_nCT
+msgid "Número da GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields.selection,name:l10n_br_gtve.selection__l10n_br_fiscal_document__gtve_service_taker__4
+#: model:ir.model.fields.selection,name:l10n_br_gtve.selection__l10n_br_gtve_species__cte40_tpEspecie__4
+msgid "Other"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_qCarga
+msgid "Quantidade de volumes/malotes"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__cte40_RNTRC
+msgid "RNTRC"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields.selection,name:l10n_br_gtve.selection__l10n_br_fiscal_document__gtve_service_taker__1
+msgid "Recipient"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields.selection,name:l10n_br_gtve.selection__l10n_br_fiscal_document__gtve_service_taker__0
+#: model_terms:ir.ui.view,arch_db:l10n_br_gtve.gtve_document_form_view
+msgid "Sender"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__cte40_tpEspecie
+msgid "Species"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model,name:l10n_br_gtve.model_l10n_br_gtve_species
+msgid "Species Transported in the GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_vehicle__cte40_UF
+msgid "State"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_UFEnv
+msgid "State Code"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_serie
+msgid "Série da GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_serie
+msgid ""
+"Série da GTV-e\n"
+"Preencher com '0' no caso de série única"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_emit
+msgid "Technical Field."
+msgstr ""
+
+#. module: l10n_br_gtve
+#. odoo-python
+#: code:addons/l10n_br_gtve/models/document.py:0
+msgid "The GTV-e has no correction letter."
+msgstr ""
+
+#. module: l10n_br_gtve
+#. odoo-python
+#: code:addons/l10n_br_gtve/models/document.py:0
+msgid "The GTV-e modal must be road (01) or multimodal (06)."
+msgstr ""
+
+#. module: l10n_br_gtve
+#. odoo-python
+#: code:addons/l10n_br_gtve/models/document.py:0
+msgid "The series 890 to 899 cannot be used in a GTV-e."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_UFEnv
+msgid "The state code."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpCTe
+msgid "Tipo da GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpCTe
+msgid ""
+"Tipo da GTV-e\n"
+"Preencher com:\n"
+" 4 - GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpAmb
+msgid "Tipo do Ambiente"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpAmb
+msgid ""
+"Tipo do Ambiente\n"
+"Preencher com:1 - Produção; 2 - Homologação"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpServ
+msgid "Tipo do Serviço"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tpServ
+msgid ""
+"Tipo do Serviço\n"
+"Preencher com: \n"
+"\n"
+"9 - GTV"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_species_ids
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_species_ids
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_species_ids
+msgid "Transported Species"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_vehicle__cte40_UF
+msgid ""
+"UF em que veículo está licenciado\n"
+"Sigla da UF de licenciamento do veículo."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_species__cte40_vEspecie
+msgid "Value"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model,name:l10n_br_gtve.model_l10n_br_gtve_vehicle
+msgid "Vehicle of the GTV-e"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_vehicle_ids
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_vehicle_ids
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_vehicle_ids
+msgid "Vehicles"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_versao
+msgid "Versão do leiaute"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_versao
+msgid ""
+"Versão do leiaute\n"
+"Ex: '4.00'"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_verProc
+msgid "Versão do processo de emissão"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_verProc
+msgid ""
+"Versão do processo de emissão\n"
+"Iinformar a versão do aplicativo emissor de CT-e."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_bank_statement_line__gtve_load_quantity
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_account_move__gtve_load_quantity
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_load_quantity
+msgid "Volumes/Pouches"
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,help:l10n_br_gtve.field_account_bank_statement_line__gtve_service_taker
+#: model:ir.model.fields,help:l10n_br_gtve.field_account_move__gtve_service_taker
+#: model:ir.model.fields,help:l10n_br_gtve.field_l10n_br_fiscal_document__gtve_service_taker
+msgid "With Other, the service taker is the partner of the document."
+msgstr ""
+
+#. module: l10n_br_gtve
+#: model:ir.model.fields,field_description:l10n_br_gtve.field_l10n_br_gtve_gtve__cte40_tomaTerceiro
+msgid "tomaTerceiro"
+msgstr ""
