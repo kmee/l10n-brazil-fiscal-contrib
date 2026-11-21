@@ -42,11 +42,16 @@ class TestNFeVeic(TransactionCase):
         super().setUpClass()
         cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
         cls.nfe = cls.env.ref("l10n_br_nfe.demo_nfe_natural_icms_18_red_51_11")
-        cls.product = cls.env.ref("product.product_product_20").copy(
+        # on 16.0 the company dependent fiscal type is not copied, and
+        # without it the item gets no ICMS (copied in the company of the
+        # environment, where the document line reads it, as 18.0 does)
+        product = cls.env.ref("product.product_product_20")
+        cls.product = product.copy(
             {
+                "fiscal_type": product.fiscal_type,
                 "name": "Car",
                 "default_code": "CAR-1",
-                "is_storable": True,
+                "detailed_type": "product",
                 "tracking": "serial",
                 "nfe40_veicProd": cls.env["nfe.40.veicprod"].create(VEHICLE_MODEL).id,
             }

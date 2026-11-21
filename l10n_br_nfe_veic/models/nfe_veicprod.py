@@ -13,10 +13,11 @@ CHASSIS_PATTERN = re.compile(r"[A-Z0-9]{17}")
 class NFeVeicProd(models.AbstractModel):
     _inherit = "nfe.40.veicprod"
 
-    @api.depends("nfe40_chassi", "nfe40_cMod")
-    def _compute_display_name(self):
-        for record in self:
-            record.display_name = record.nfe40_chassi or record.nfe40_cMod or ""
+    def name_get(self):
+        return [
+            (record.id, record.nfe40_chassi or record.nfe40_cMod or "")
+            for record in self
+        ]
 
     @api.constrains("nfe40_chassi")
     def _check_nfe40_chassi(self):
