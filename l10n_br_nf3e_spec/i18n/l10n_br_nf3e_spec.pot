@@ -19,6 +19,10 @@ msgid "00"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpClasse__01
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__01
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__01
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__01
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpClasse__01
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__01
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__01
@@ -29,6 +33,10 @@ msgid "01"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpClasse__02
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__02
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__02
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__02
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpClasse__02
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__02
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__02
@@ -39,6 +47,10 @@ msgid "02"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpClasse__03
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__03
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__03
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__03
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpClasse__03
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__03
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__03
@@ -49,6 +61,10 @@ msgid "03"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpClasse__04
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__04
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__04
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__04
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpClasse__04
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__04
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__04
@@ -59,6 +75,10 @@ msgid "04"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpClasse__05
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__05
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__05
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__05
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpClasse__05
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__05
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__05
@@ -69,6 +89,10 @@ msgid "05"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpClasse__06
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__06
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__06
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__06
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpClasse__06
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__06
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__06
@@ -77,6 +101,10 @@ msgid "06"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpClasse__07
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__07
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__07
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__07
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpClasse__07
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__07
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__07
@@ -85,6 +113,10 @@ msgid "07"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpClasse__08
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__08
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__08
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__08
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpClasse__08
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__08
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__08
@@ -93,6 +125,9 @@ msgid "08"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__09
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__09
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__09
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__09
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__09
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__09
@@ -100,6 +135,9 @@ msgid "09"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__10
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpModTar__10
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__10
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__10
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpModTar__10
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__10
@@ -108,6 +146,9 @@ msgid "10"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__11
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__11
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__11
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__11
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__11
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__11
@@ -117,6 +158,9 @@ msgid "11"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__12
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__12
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__12
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__12
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__12
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__12
@@ -126,6 +170,9 @@ msgid "12"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__13
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__13
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__13
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__13
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__13
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__13
@@ -135,6 +182,9 @@ msgid "13"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__14
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpGrpTensao__14
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__14
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpGrpTensao__14
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__14
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__14
@@ -144,6 +194,8 @@ msgid "14"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__15
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__15
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__15
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__15
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__15
@@ -152,6 +204,8 @@ msgid "15"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__16
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__16
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__16
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__16
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__16
@@ -160,6 +214,8 @@ msgid "16"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__17
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__17
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__17
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__17
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__17
@@ -168,21 +224,26 @@ msgid "17"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__18
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__18
 msgid "18"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__19
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__19
 msgid "19"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__20
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__20
 msgid "20"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__21
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__21
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__21
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__21
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__21
@@ -191,6 +252,8 @@ msgid "21"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__22
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__22
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__22
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__22
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__22
@@ -199,6 +262,8 @@ msgid "22"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__23
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__23
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__23
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__23
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__23
@@ -207,6 +272,8 @@ msgid "23"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__24
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__24
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__24
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__24
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__24
@@ -215,6 +282,8 @@ msgid "24"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__25
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__25
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__25
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__25
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__25
@@ -223,6 +292,8 @@ msgid "25"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__26
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__26
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__26
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__26
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__26
@@ -231,6 +302,8 @@ msgid "26"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__27
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__27
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__27
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__27
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__27
@@ -239,6 +312,8 @@ msgid "27"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__28
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__28
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__28
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__28
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__28
@@ -247,6 +322,8 @@ msgid "28"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__29
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__29
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__29
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__29
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__29
@@ -255,6 +332,7 @@ msgid "29"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__31
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__31
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__31
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__31
@@ -262,6 +340,7 @@ msgid "31"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__32
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__32
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__32
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__32
@@ -269,6 +348,7 @@ msgid "32"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__33
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__33
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__33
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__33
@@ -276,6 +356,7 @@ msgid "33"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__35
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__35
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__35
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__35
@@ -288,6 +369,7 @@ msgid "40"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__41
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_icms40__nf3e10_CST__41
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__41
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__41
@@ -296,6 +378,7 @@ msgid "41"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__42
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__42
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__42
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__42
@@ -303,6 +386,7 @@ msgid "42"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__43
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__43
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__43
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__43
@@ -310,6 +394,7 @@ msgid "43"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__50
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__50
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__50
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__50
@@ -317,6 +402,7 @@ msgid "50"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__51
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__51
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__51
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__51
@@ -324,6 +410,7 @@ msgid "51"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__52
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__52
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__52
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__52
@@ -331,6 +418,7 @@ msgid "52"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_cUF__53
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_ide__nf3e10_cUF__53
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretenvinf3e__nf3e10_cUF__53
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tretnf3e__nf3e10_cUF__53
@@ -343,6 +431,7 @@ msgid "66"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document__nf3e10_tpSubClasse__99
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_acessante__nf3e10_tpSubClasse__99
 msgid "99"
 msgstr ""
@@ -350,24 +439,28 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__ac
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__ac
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__ac
 msgid "AC"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__al
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__al
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__al
 msgid "AL"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__am
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__am
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__am
 msgid "AM"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__ap
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__ap
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__ap
 msgid "AP"
 msgstr ""
 
@@ -672,6 +765,7 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__ba
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__ba
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__ba
 msgid "BA"
 msgstr ""
 
@@ -700,6 +794,7 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__ce
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__ce
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__ce
 msgid "CE"
 msgstr ""
 
@@ -1261,6 +1356,7 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__df
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__df
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__df
 msgid "DF"
 msgstr ""
 
@@ -1551,6 +1647,7 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__l10n_br_fiscal_document_line__nf3e10_indDevolucao__1
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_detitemant__nf3e10_indDevolucao__1
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_gprocref__nf3e10_indDevolucao__1
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_prod__nf3e10_indDevolucao__1
@@ -1589,6 +1686,7 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__es
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__es
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__es
 msgid "ES"
 msgstr ""
 
@@ -1696,6 +1794,7 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__go
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__go
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__go
 msgid "GO"
 msgstr ""
 
@@ -2667,24 +2766,28 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__ma
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__ma
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__ma
 msgid "MA"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__mg
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__mg
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__mg
 msgid "MG"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__ms
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__ms
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__ms
 msgid "MS"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__mt
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__mt
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__mt
 msgid "MT"
 msgstr ""
 
@@ -3250,30 +3353,35 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__pa
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__pa
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__pa
 msgid "PA"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__pb
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__pb
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__pb
 msgid "PB"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__pe
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__pe
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__pe
 msgid "PE"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__pi
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__pi
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__pi
 msgid "PI"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__pr
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__pr
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__pr
 msgid "PR"
 msgstr ""
 
@@ -3524,30 +3632,35 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__rj
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__rj
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__rj
 msgid "RJ"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__rn
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__rn
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__rn
 msgid "RN"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__ro
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__ro
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__ro
 msgid "RO"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__rr
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__rr
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__rr
 msgid "RR"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__rs
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__rs
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__rs
 msgid "RS"
 msgstr ""
 
@@ -3611,18 +3724,21 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__sc
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__sc
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__sc
 msgid "SC"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__se
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__se
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__se
 msgid "SE"
 msgstr ""
 
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__sp
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__sp
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__sp
 msgid "SP"
 msgstr ""
 
@@ -3743,6 +3859,7 @@ msgstr ""
 #. module: l10n_br_nf3e_spec
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendeemi__nf3e10_UF__to
 #: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__nf3e_10_tendereco__nf3e10_UF__to
+#: model:ir.model.fields.selection,name:l10n_br_nf3e_spec.selection__res_partner__nf3e10_UF__to
 msgid "TO"
 msgstr ""
 
