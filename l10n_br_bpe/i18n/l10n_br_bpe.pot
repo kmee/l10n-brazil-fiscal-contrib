@@ -850,12 +850,8 @@ msgid "Digital Certificate"
 msgstr ""
 
 #. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cDV
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cDV
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cDV
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_cDV
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_cDV
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDV
 msgid "Digito verificador da chave de acesso"
 msgstr ""
 
@@ -869,6 +865,14 @@ msgstr ""
 msgid ""
 "Digito verificador da chave de acesso\n"
 "Informar o dígito  de controle da chave de acesso do BP-e, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_cDV
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_cDV
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_cDV
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_cDV
+msgid "Digito verificador da chave de acesso (bpe_cDV)"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -989,13 +993,6 @@ msgid ""
 "Forma de emissão do Bilhete (Normal ou Contingência Off-Line)\n"
 "1 - Normal\n"
 "; 2 - Contingência Off-Line"
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document_line
-msgid ""
-"Grupo a ser informado nas vendas interestarduais para consumidor final,\n"
-"não contribuinte de ICMS"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -1153,8 +1150,12 @@ msgstr ""
 
 #. module: l10n_br_bpe
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_agencia
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_agencia
 msgid "Identificação"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_agencia
+msgid "Identificação (bpe_agencia)"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -1269,10 +1270,15 @@ msgstr ""
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpe_infadic
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpeta_infadic
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tbpetm_infadic
+#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_infbpe__bpe10_infAdic
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_infbpe__bpe10_infAdic
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdic
 msgid "Informações Adicionais"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_infAdic
+msgid "Informações Adicionais (bpe_infAdic)"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -2085,12 +2091,8 @@ msgid "Status"
 msgstr ""
 
 #. module: l10n_br_bpe
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_serie
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_serie
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_serie
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpeta_ide__bpe10_serie
 #: model:ir.model.fields,field_description:l10n_br_bpe.field_bpe_10_tbpetm_ide__bpe10_serie
-#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_serie
 msgid "Série do documento fiscal"
 msgstr ""
 
@@ -2104,6 +2106,14 @@ msgstr ""
 msgid ""
 "Série do documento fiscal\n"
 "Informar a série do documento fiscal (informar zero se inexistente)."
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_bank_statement_line__bpe10_serie
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_move__bpe10_serie
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_account_payment__bpe10_serie
+#: model:ir.model.fields,field_description:l10n_br_bpe.field_l10n_br_fiscal_document__bpe10_serie
+msgid "Série do documento fiscal (bpe_serie)"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -2190,11 +2200,6 @@ msgstr ""
 #. module: l10n_br_bpe
 #: model:ir.model,name:l10n_br_bpe.model_bpe_10_tendereco
 msgid "Tipo Dados do Endereço"
-msgstr ""
-
-#. module: l10n_br_bpe
-#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document
-msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_bpe
@@ -2522,6 +2527,11 @@ msgid ""
 "28-Bicicleta\n"
 "29-Passageiro\n"
 "99-Outros"
+msgstr ""
+
+#. module: l10n_br_bpe
+#: model:ir.model,name:l10n_br_bpe.model_l10n_br_fiscal_document_line
+msgid "Tipo imposto da NFGas"
 msgstr ""
 
 #. module: l10n_br_bpe
