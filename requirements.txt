@@ -1,3 +1,4 @@
 # generated from manifests external_dependencies
 brazil_fiscal_client
+erpbrasil.base
 nfelib
