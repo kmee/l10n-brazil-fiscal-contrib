@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="nfe_veicprod_form" model="ir.ui.view">
+        <field name="name">nfe.40.veicprod.form</field>
+        <field name="model">nfe.40.veicprod</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group string="Vehicle">
+                        <field name="nfe40_chassi" string="Chassis (VIN)" />
+                        <field name="nfe40_VIN" string="VIN Condition" />
+                        <field name="nfe40_nSerie" string="Serial" />
+                        <field name="nfe40_nMotor" string="Engine Number" />
+                        <field name="nfe40_anoFab" string="Manufacturing Year" />
+                        <field name="nfe40_anoMod" string="Model Year" />
+                        <field name="nfe40_condVeic" string="Condition" />
+                        <field name="nfe40_tpOp" string="Operation Type" />
+                        <field name="nfe40_tpRest" string="Restriction" />
+                    </group>
+                    <group string="Model">
+                        <field name="nfe40_cMod" string="Brand and Model Code" />
+                        <field name="nfe40_tpVeic" string="Vehicle Type" />
+                        <field name="nfe40_espVeic" string="Vehicle Species" />
+                        <field name="nfe40_cCor" string="Color Code" />
+                        <field name="nfe40_xCor" string="Color" />
+                        <field name="nfe40_cCorDENATRAN" string="DENATRAN Color" />
+                        <field name="nfe40_tpPint" string="Paint Type" />
+                        <field name="nfe40_tpComb" string="Fuel Type" />
+                    </group>
+                    <group string="Specifications">
+                        <field name="nfe40_pot" string="Power (CV)" />
+                        <field name="nfe40_cilin" string="Displacement (cc)" />
+                        <field name="nfe40_pesoL" string="Net Weight" />
+                        <field name="nfe40_pesoB" string="Gross Weight" />
+                        <field name="nfe40_CMT" string="Maximum Traction (t)" />
+                        <field name="nfe40_dist" string="Wheelbase" />
+                        <field name="nfe40_lota" string="Seats" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
