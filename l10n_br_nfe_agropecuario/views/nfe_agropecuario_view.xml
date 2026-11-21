@@ -11,18 +11,21 @@
                     <field
                         name="nfe40_guiaTransito"
                         string="Transit Permit"
-                        invisible="nfe40_defensivo"
+                        attrs="{'invisible': [('nfe40_defensivo', '!=', [])]}"
                         context="{'form_view_ref': 'l10n_br_nfe_agropecuario.nfe_guiatransito_form'}"
                     />
                 </group>
-                <field name="nfe40_defensivo" invisible="nfe40_guiaTransito">
-                    <list editable="bottom">
+                <field
+                    name="nfe40_defensivo"
+                    attrs="{'invisible': [('nfe40_guiaTransito', '!=', False)]}"
+                >
+                    <tree editable="bottom">
                         <field name="nfe40_nReceituario" string="Prescription" />
                         <field
                             name="nfe40_CPFRespTec"
                             string="CPF of the Responsible Technician"
                         />
-                    </list>
+                    </tree>
                 </field>
             </form>
         </field>

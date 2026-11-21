@@ -15,21 +15,22 @@ GUIA_NUMBER_PATTERN = re.compile(r"[0-9]{1,9}")
 class NFeAgropecuario(models.AbstractModel):
     _inherit = "nfe.40.agropecuario"
 
-    @api.depends("nfe40_defensivo", "nfe40_guiaTransito")
-    def _compute_display_name(self):
-        for record in self:
-            record.display_name = record.nfe40_guiaTransito.display_name or ", ".join(
-                record.nfe40_defensivo.mapped("display_name")
+    def name_get(self):
+        return [
+            (
+                record.id,
+                record.nfe40_guiaTransito.display_name
+                or ", ".join(record.nfe40_defensivo.mapped("display_name")),
             )
+            for record in self
+        ]
 
 
 class NFeDefensivo(models.AbstractModel):
     _inherit = "nfe.40.defensivo"
 
-    @api.depends("nfe40_nReceituario")
-    def _compute_display_name(self):
-        for record in self:
-            record.display_name = record.nfe40_nReceituario or ""
+    def name_get(self):
+        return [(record.id, record.nfe40_nReceituario or "") for record in self]
 
     @api.constrains("nfe40_nReceituario", "nfe40_CPFRespTec")
     def _check_nfe40_defensivo(self):
@@ -52,22 +53,24 @@ class NFeDefensivo(models.AbstractModel):
 class NFeGuiaTransito(models.AbstractModel):
     _inherit = "nfe.40.guiatransito"
 
-    @api.depends("nfe40_tpGuia", "nfe40_UFGuia", "nfe40_serieGuia", "nfe40_nGuia")
-    def _compute_display_name(self):
-        for record in self:
-            kind = dict(self._fields["nfe40_tpGuia"].selection).get(
-                record.nfe40_tpGuia, ""
+    def name_get(self):
+        kinds = dict(self._fields["nfe40_tpGuia"].selection)
+        return [
+            (
+                record.id,
+                " ".join(
+                    part
+                    for part in (
+                        kinds.get(record.nfe40_tpGuia, ""),
+                        record.nfe40_UFGuia,
+                        record.nfe40_serieGuia,
+                        record.nfe40_nGuia,
+                    )
+                    if part
+                ),
             )
-            record.display_name = " ".join(
-                part
-                for part in (
-                    kind,
-                    record.nfe40_UFGuia,
-                    record.nfe40_serieGuia,
-                    record.nfe40_nGuia,
-                )
-                if part
-            )
+            for record in self
+        ]
 
     @api.constrains("nfe40_nGuia", "nfe40_serieGuia")
     def _check_nfe40_guiaTransito(self):

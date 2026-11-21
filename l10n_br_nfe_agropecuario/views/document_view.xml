@@ -11,7 +11,7 @@
                 <page
                     name="nfe40_agropecuario"
                     string="Agricultural Products"
-                    invisible="document_type not in ('55', '65')"
+                    attrs="{'invisible': [('document_type', 'not in', ['55', '65'])]}"
                 >
                     <group>
                         <field
