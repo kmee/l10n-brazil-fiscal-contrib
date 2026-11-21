@@ -66,17 +66,18 @@ class TestNFGas(TransactionCase):
         cls.company = cls.env.ref("l10n_br_base.empresa_lucro_presumido")
         cls.company.processador_edoc = "oca"
         cls.company.nfgas_environment = "2"
-        cls.company.certificate_id = cls.env["certificate.certificate"].create(
+        cls.company.certificate_nfe_id = cls.env["l10n_br_fiscal.certificate"].create(
             {
-                "pkcs12_password": "123456",
-                "content": misc.create_fake_certificate_file(
+                "type": "nf-e",
+                "subtype": "a1",
+                "password": "123456",
+                "file": misc.create_fake_certificate_file(
                     valid=True,
                     passwd="123456",
                     issuer="EMISSOR A TESTE",
                     country="BR",
                     subject="CERTIFICADO VALIDO TESTE",
                 ),
-                "company_id": cls.company.id,
             }
         )
         document_type = cls.env.ref("l10n_br_nfgas.document_76")

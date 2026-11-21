@@ -142,7 +142,7 @@ class NFGas(spec_models.StackedModel):
         copy=False,
         default=lambda self: self.env["ir.config_parameter"]
         .sudo()
-        .get_param("l10n_br_nfgas.version.name", default="Odoo Brasil OCA v18"),
+        .get_param("l10n_br_nfgas.version.name", default="Odoo Brasil OCA v16"),
     )
 
     @api.depends("company_id")
@@ -337,10 +337,10 @@ class NFGas(spec_models.StackedModel):
         return edocs
 
     def _nfgas_sign(self, binding, doc_id):
-        certificate = self.company_id._get_br_certificate()
+        certificate = self.company_id.sudo().certificate
         return binding.to_xml(
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=certificate.with_context(bin_size=False).file,
+            pkcs12_password=certificate.password,
             doc_id=doc_id,
         )
 
@@ -437,7 +437,10 @@ class NFGas(spec_models.StackedModel):
         check(company.state_id, _("Company State"))
         check(company.city_id, _("Company City"))
         check(company.nfgas10_IE, _("Company State Tax Number"))
-        check(company.sudo().certificate, _("Digital Certificate"))
+        check(
+            company.sudo().certificate_nfe_id or company.sudo().certificate_ecnpj_id,
+            _("Digital Certificate"),
+        )
         check(self.partner_id, _("Customer"))
         check(self.document_serie_id, _("Document Serie"))
         if self.nfgas10_tpFat != "1" or self.nfgas10_finNFGas != "0":
@@ -498,12 +501,12 @@ class NFGas(spec_models.StackedModel):
 
     def _get_nfgas_client(self):
         self.ensure_one()
-        certificate = self.company_id._get_br_certificate()
+        certificate = self.company_id.sudo().certificate
         return NfgasClient(
             ambiente=self.nfgas_environment,
             uf=self.company_id.state_id.ibge_code,
-            pkcs12_data=certificate.with_context(bin_size=False).content,
-            pkcs12_password=certificate.pkcs12_password,
+            pkcs12_data=certificate.with_context(bin_size=False).file,
+            pkcs12_password=certificate.password,
         )
 
     def _eletronic_document_send(self):

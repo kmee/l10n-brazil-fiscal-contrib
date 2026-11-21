@@ -8,7 +8,11 @@
         <field name="inherit_id" ref="l10n_br_fiscal.document_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook/page[@name='products']" position="after">
-                <page name="nfgas" string="NFGas" invisible="document_type != '76'">
+                <page
+                    name="nfgas"
+                    string="NFGas"
+                    attrs="{'invisible': [('document_type', '!=', '76')]}"
+                >
                     <group>
                         <group name="nfgas_ide" string="Emission">
                             <field name="nfgas_environment" />
@@ -47,7 +51,7 @@
                     </group>
                     <separator string="Metering Equipment" />
                     <field name="nfgas10_gMed">
-                        <list editable="bottom">
+                        <tree editable="bottom">
                             <field name="nfgas10_idEqp" />
                             <field name="nfgas10_tpEqp" />
                             <field name="nfgas10_tpMedidor" />
@@ -57,27 +61,27 @@
                             <field name="nfgas10_vMedAtu" />
                             <field name="nfgas10_dMedProx" />
                             <field name="nfgas10_descPontoCons" />
-                        </list>
+                        </tree>
                     </field>
                     <separator string="Consumption History" />
                     <field name="nfgas10_gHistCons">
-                        <list>
+                        <tree>
                             <field name="nfgas10_xHistorico" />
                             <field name="nfgas10_medMensal" />
-                        </list>
+                        </tree>
                         <form>
                             <group>
                                 <field name="nfgas10_xHistorico" />
                                 <field name="nfgas10_medMensal" />
                             </group>
                             <field name="nfgas10_gCons">
-                                <list editable="bottom">
+                                <tree editable="bottom">
                                     <field name="nfgas10_CompetFat" />
                                     <field name="nfgas10_uMed" />
                                     <field name="nfgas10_qtdDias" />
                                     <field name="nfgas10_consumo" />
                                     <field name="nfgas10_vFat" />
-                                </list>
+                                </tree>
                             </field>
                         </form>
                     </field>
@@ -95,10 +99,11 @@
                 <page
                     name="nfgas"
                     string="NFGas"
-                    invisible="nfgas_document_type != '76'"
+                    attrs="{'invisible': [('nfgas_document_type', '!=', '76')]}"
                 >
                     <group>
                         <field name="nfgas_document_type" invisible="1" />
+                        <field name="document_id" invisible="1" />
                         <field name="nfgas10_cClass" />
                         <field name="nfgas10_uMed" />
                         <field name="nfgas10_indOrigemQtd" />
