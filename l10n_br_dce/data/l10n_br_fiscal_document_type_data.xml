@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 KMEE
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <!-- l10n_br_fiscal 16.0 has no document type 99 -->
+    <record id="document_99" model="l10n_br_fiscal.document.type">
+        <field name="code">99</field>
+        <field name="name">Declaração de Conteúdo Eletrônica - DC-e</field>
+        <field name="electronic" eval="True" />
+        <field name="prefix">DCe</field>
+        <field name="sufix">dc-e</field>
+        <field name="type">icms</field>
+    </record>
+</odoo>
