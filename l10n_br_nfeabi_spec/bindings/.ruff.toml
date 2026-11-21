@@ -1,0 +1,6 @@
+# Generated bindings: the xsd patterns are kept in a single line
+extend = "../../.ruff.toml"
+cache-dir = "../../.ruff_cache"
+
+[lint]
+extend-ignore = ["E501"]
