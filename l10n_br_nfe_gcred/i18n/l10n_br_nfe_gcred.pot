@@ -1,0 +1,135 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_nfe_gcred
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_br_nfe_gcred
+#. odoo-python
+#: code:addons/l10n_br_nfe_gcred/models/document.py:0
+msgid "%(item)s: the NF-e accepts at most %(max)s presumed credits per item."
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#. odoo-python
+#: code:addons/l10n_br_nfe_gcred/models/document.py:0
+msgid ""
+"%(item)s: the presumed credit code %(code)r must have 8 or 10 characters, "
+"without spaces."
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#. odoo-python
+#: code:addons/l10n_br_nfe_gcred/models/document.py:0
+msgid "%(item)s: the presumed credit percentage must be between 0 and 999."
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_gcred.nfe_gcred_list
+msgid "Amount"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_gcred.nfe_gcred_list
+msgid "Benefit Code"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model.fields,help:l10n_br_nfe_gcred.field_product_product__nfe_cred_presumido_code
+#: model:ir.model.fields,help:l10n_br_nfe_gcred.field_product_template__nfe_cred_presumido_code
+msgid ""
+"Code of the ICMS presumed credit benefit granted by the state of the "
+"company, the same code used in the EFD (8 or 10 characters). It is reported "
+"in the gCred group of the NF-e items of this product."
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model,name:l10n_br_nfe_gcred.model_l10n_br_fiscal_document
+msgid "Fiscal Document"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model,name:l10n_br_nfe_gcred.model_l10n_br_fiscal_document_line
+msgid "Fiscal Document Line"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model.fields,field_description:l10n_br_nfe_gcred.field_account_move_line__nfe40_gCred
+#: model:ir.model.fields,field_description:l10n_br_nfe_gcred.field_l10n_br_fiscal_document_line__nfe40_gCred
+msgid "Grupo de informações sobre"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model.fields,help:l10n_br_nfe_gcred.field_account_move_line__nfe40_gCred
+#: model:ir.model.fields,help:l10n_br_nfe_gcred.field_l10n_br_fiscal_document_line__nfe40_gCred
+msgid "Grupo de informações sobre o CréditoPresumido"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_gcred.product_template_form
+msgid "ICMS Presumed Credit"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_gcred.nfe_gcred_list
+msgid "Percentage"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model.fields,help:l10n_br_nfe_gcred.field_product_product__nfe_cred_presumido_percent
+#: model:ir.model.fields,help:l10n_br_nfe_gcred.field_product_template__nfe_cred_presumido_percent
+msgid ""
+"Percentage of the ICMS presumed credit, applied to the ICMS base of the NF-e"
+" item."
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfe_gcred.document_line_form
+msgid "Presumed Credit"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model.fields,field_description:l10n_br_nfe_gcred.field_product_product__nfe_cred_presumido_percent
+#: model:ir.model.fields,field_description:l10n_br_nfe_gcred.field_product_template__nfe_cred_presumido_percent
+msgid "Presumed Credit (%)"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model.fields,field_description:l10n_br_nfe_gcred.field_product_product__nfe_cred_presumido_code
+#: model:ir.model.fields,field_description:l10n_br_nfe_gcred.field_product_template__nfe_cred_presumido_code
+msgid "Presumed Credit Code"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#: model:ir.model,name:l10n_br_nfe_gcred.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#. odoo-python
+#: code:addons/l10n_br_nfe_gcred/models/document.py:0
+msgid ""
+"The NF-e presumed credit data (gCred) is invalid:\n"
+"%(errors)s"
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#. odoo-python
+#: code:addons/l10n_br_nfe_gcred/models/product_template.py:0
+msgid "The presumed credit code must have 8 or 10 characters, without spaces."
+msgstr ""
+
+#. module: l10n_br_nfe_gcred
+#. odoo-python
+#: code:addons/l10n_br_nfe_gcred/models/product_template.py:0
+msgid "The presumed credit percentage must be between 0 and 999."
+msgstr ""
