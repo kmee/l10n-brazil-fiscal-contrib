@@ -78,11 +78,6 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_nfe_arma
-#: model:ir.model,name:l10n_br_nfe_arma.model_l10n_br_fiscal_document
-msgid "Informações de exportação"
-msgstr ""
-
-#. module: l10n_br_nfe_arma
 #: model:ir.model,name:l10n_br_nfe_arma.model_account_move_line
 msgid "Journal Item"
 msgstr ""
@@ -146,6 +141,11 @@ msgstr ""
 #: code:addons/l10n_br_nfe_arma/models/document.py:0
 #, python-format
 msgid "The NFC-e does not accept the firearm group."
+msgstr ""
+
+#. module: l10n_br_nfe_arma
+#: model:ir.model,name:l10n_br_nfe_arma.model_l10n_br_fiscal_document
+msgid "Tipo Dados do Imposto BP-e"
 msgstr ""
 
 #. module: l10n_br_nfe_arma
