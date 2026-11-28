@@ -3,6 +3,7 @@
 
 from os import path
 
+import nfelib
 from lxml import etree
 
 from odoo.tests import TransactionCase, tagged
@@ -31,12 +32,14 @@ class TestGnreXml(TransactionCase):
         # constraint de unicidade de vat.
         cls.company.partner_id.write(
             {
-                "cnpj_cpf": "99.001.100/2200-51",
-                "inscr_est": "633.606.400.022",
+                "vat": "99.001.100/2200-51",
+                "l10n_br_ie_code": "633.606.400.022",
                 "legal_name": "Empresa Emitente de Testes LTDA",
+                "state_id": cls.env.ref("base.state_br_sp").id,
             }
         )
         cls.state_sp = cls.env.ref("base.state_br_sp")
+        cls.state_rj = cls.env.ref("base.state_br_rj")
         cls.tax_group = cls.env.ref("l10n_br_fiscal.tax_group_icmsst")
         cls.document_type_nfe = cls.env["l10n_br_fiscal.document.type"].search(
             [("code", "=", "55")], limit=1
@@ -55,9 +58,16 @@ class TestGnreXml(TransactionCase):
             }
         )
 
+        # The official XSD ships with the nfelib bindings.
         cls.schema = etree.XMLSchema(
             etree.parse(
-                path.join(path.dirname(__file__), "data", "lote_gnre_v2.00.xsd")
+                path.join(
+                    path.dirname(nfelib.__file__),
+                    "gnre",
+                    "schemas",
+                    "v2_0",
+                    "lote_gnre_v2.00.xsd",
+                )
             )
         )
 
@@ -75,7 +85,8 @@ class TestGnreXml(TransactionCase):
                 rows.extend(self._as_tuples(child, depth + 1))
         return rows
 
-    def _create_guide(self, keys, fcp=0.0):
+    def _create_guide(self, keys, fcp=0.0, config=None, partner=None):
+        config = config or self.config
         obligations = self.env["l10n_br_gnre.obligation"]
         for index, key in enumerate(keys):
             document = self.env["l10n_br_fiscal.document"].create(
@@ -86,16 +97,17 @@ class TestGnreXml(TransactionCase):
                     "document_number": str(1000 + index),
                     "document_date": "2026-07-15",
                     "document_key": key,
+                    "partner_id": partner.id if partner else False,
                 }
             )
             obligations |= self.env["l10n_br_gnre.obligation"].create(
                 {
                     "company_id": self.company.id,
                     "document_id": document.id,
-                    "config_id": self.config.id,
-                    "fiscal_state_id": self.state_sp.id,
+                    "config_id": config.id,
+                    "fiscal_state_id": config.fiscal_state_id.id,
                     "tax_group_id": self.tax_group.id,
-                    "revenue_code": self.config.revenue_code,
+                    "revenue_code": config.revenue_code,
                     "amount_principal": 150.0,
                     "amount_fcp": fcp,
                     "period_ref": "072026",
@@ -106,7 +118,7 @@ class TestGnreXml(TransactionCase):
 
     def test_lote_validates_against_official_xsd(self):
         """O XML gerado passa no schema oficial v2.15."""
-        guide = self._create_guide(["35260723130935000198550010000010001000010007"])
+        guide = self._create_guide(["35260799001100220051550010000010001000010008"])
         lote = self.env["l10n_br_gnre.xml"].build_lote(guide)
 
         self.schema.assertValid(lote)
@@ -115,9 +127,9 @@ class TestGnreXml(TransactionCase):
         """Guia com várias notas também passa no schema."""
         guide = self._create_guide(
             [
-                "35260723130935000198550010000010001000010007",
-                "35260723130935000198550010000010002000010005",
-                "35260723130935000198550010000010003000010003",
+                "35260799001100220051550010000010001000010008",
+                "35260799001100220051550010000010002000010006",
+                "35260799001100220051550010000010003000010004",
             ]
         )
         lote = self.env["l10n_br_gnre.xml"].build_lote(guide)
@@ -129,7 +141,7 @@ class TestGnreXml(TransactionCase):
     def test_icms_and_fcp_share_the_same_item(self):
         """ICMS e FCP são dois valor do mesmo item, não itens separados."""
         guide = self._create_guide(
-            ["35260723130935000198550010000010001000010007"], fcp=20.0
+            ["35260799001100220051550010000010001000010008"], fcp=20.0
         )
         lote = self.env["l10n_br_gnre.xml"].build_lote(guide)
 
@@ -150,7 +162,7 @@ class TestGnreXml(TransactionCase):
         formatação, que o schema sozinho não garante por inteiro.
         """
         guide = self._create_guide(
-            ["35260723130935000198550010000010001000010007"], fcp=20.0
+            ["35260799001100220051550010000010001000010008"], fcp=20.0
         )
         generated = self.env["l10n_br_gnre.xml"].render_lote(guide)
 
@@ -168,7 +180,7 @@ class TestGnreXml(TransactionCase):
     def test_element_order_follows_the_schema(self):
         """A ordem dos elementos do item segue o xs:sequence do XSD."""
         guide = self._create_guide(
-            ["35260723130935000198550010000010001000010007"], fcp=20.0
+            ["35260799001100220051550010000010001000010008"], fcp=20.0
         )
         lote = self.env["l10n_br_gnre.xml"].build_lote(guide)
 
@@ -202,3 +214,96 @@ class TestGnreXml(TransactionCase):
         )
         with self.assertRaises(UserError):
             self.env["l10n_br_gnre.xml"].build_lote(empty)
+
+    def _rj_config(self, **values):
+        return self.env["l10n_br_gnre.state.config"].create(
+            dict(
+                {
+                    "company_id": self.company.id,
+                    "fiscal_state_id": self.state_rj.id,
+                    "tax_group_id": self.tax_group.id,
+                    "amount_source": "difal",
+                    "revenue_code": "100102",
+                    "mode": "document",
+                },
+                **values,
+            )
+        )
+
+    def _emitter(self, lote):
+        emitente = lote.find(f".//{{{NS}}}contribuinteEmitente")
+        return {etree.QName(child).localname: child for child in emitente}
+
+    def test_emitter_without_registration_sends_the_address(self):
+        """Sem IE na UF favorecida, vão endereço, município, UF e CEP."""
+        self.company.partner_id.write(
+            {
+                "street": "Rua de Testes, 100",
+                "district": "Centro",
+                "zip": "01001-000",
+                "phone": "(11) 3622-0000",
+                "city_id": self.env.ref("l10n_br_base.city_3550308").id,
+            }
+        )
+        guide = self._create_guide(
+            ["35260799001100220051550010000010001000010008"], config=self._rj_config()
+        )
+        lote = self.env["l10n_br_gnre.xml"].build_lote(guide)
+
+        self.schema.assertValid(lote)
+        emitter = self._emitter(lote)
+        identification = emitter["identificacao"]
+        self.assertIsNone(identification.find(f"{{{NS}}}IE"))
+        self.assertTrue(emitter["endereco"].text.startswith("Rua de Testes"))
+        self.assertEqual(emitter["municipio"].text, "50308")
+        self.assertEqual(emitter["uf"].text, "SP")
+        self.assertEqual(emitter["cep"].text, "01001000")
+        self.assertEqual(emitter["telefone"].text, "1136220000")
+
+    def test_emitter_registered_in_the_favoured_state(self):
+        """Com IE de substituto na UF favorecida, vai essa IE e não o endereço."""
+        self.company.partner_id.state_tax_number_ids = [
+            (0, 0, {"state_id": self.state_rj.id, "l10n_br_ie_code": "81265690"})
+        ]
+        guide = self._create_guide(
+            ["35260799001100220051550010000010001000010008"], config=self._rj_config()
+        )
+        lote = self.env["l10n_br_gnre.xml"].build_lote(guide)
+
+        self.schema.assertValid(lote)
+        emitter = self._emitter(lote)
+        self.assertEqual(emitter["identificacao"].find(f"{{{NS}}}IE").text, "81265690")
+        self.assertNotIn("endereco", emitter)
+
+    def test_recipient_is_sent_when_the_state_requires_it(self):
+        """DIFAL a consumidor final: o destinatário vai no item."""
+        customer = self.env["res.partner"].create(
+            {
+                "name": "Consumidor Final de Testes",
+                "vat": "529.982.247-25",
+                "state_id": self.state_rj.id,
+                "city_id": self.env.ref("l10n_br_base.city_3304557").id,
+            }
+        )
+        guide = self._create_guide(
+            ["35260799001100220051550010000010001000010008"],
+            config=self._rj_config(recipient_required=True),
+            partner=customer,
+        )
+        lote = self.env["l10n_br_gnre.xml"].build_lote(guide)
+
+        self.schema.assertValid(lote)
+        recipient = lote.find(f".//{{{NS}}}item/{{{NS}}}contribuinteDestinatario")
+        self.assertEqual(recipient.find(f".//{{{NS}}}CPF").text, "52998224725")
+        self.assertEqual(
+            recipient.find(f"{{{NS}}}razaoSocial").text, "Consumidor Final de Testes"
+        )
+        self.assertEqual(recipient.find(f"{{{NS}}}municipio").text, "04557")
+
+    def test_recipient_is_left_out_by_default(self):
+        guide = self._create_guide(
+            ["35260799001100220051550010000010001000010008"], config=self._rj_config()
+        )
+        lote = self.env["l10n_br_gnre.xml"].build_lote(guide)
+
+        self.assertIsNone(lote.find(f".//{{{NS}}}contribuinteDestinatario"))

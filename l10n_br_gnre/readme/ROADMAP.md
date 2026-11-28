@@ -1,7 +1,8 @@
-Esta entrega para na geração da guia. A transmissão ao webservice virá depois,
-fora do addon, em duas camadas: `nfelib/gnre/` com os bindings e os endpoints, e
-`erpbrasil.edoc.gnre` com a orquestração, seguindo o par que já existe para
-MDF-e.
+A transmissão usa o cliente da GNRE da nfelib (akretion/nfelib#157 e o cliente
+empilhado sobre ele), instalado pelo git até ser publicado no PyPI. O WSDL do
+portal só responde com certificado de cliente, então os namespaces do envelope
+seguem a implementação aberta sped-gnre e precisam ser confirmados no primeiro
+envio em homologação.
 
 Fora do escopo por decisão consciente:
 
@@ -13,8 +14,11 @@ Fora do escopo por decisão consciente:
 - cadastro completo dos códigos de receita das 27 UFs, que é dado e entra por
   contribuição.
 
-A serialização do lote usa lxml em vez de `spec_driven_model` sobre os mixins
-`gnre20_`. É provisório: o `_build_binding` precisa dos bindings da GNRE na
-nfelib, que ainda não foram publicados (akretion/nfelib#157). Quando entrarem,
-o `l10n_br_gnre.xml` dá lugar ao `StackedModel`, e os XSD de
-`tests/data/` saem daqui, porque o lugar deles é a nfelib.
+Próximos passos:
+
+- consultar as configurações da UF (GnreConfigUF) a partir da regra por UF, para
+  preencher sozinho o que cada receita exige (destinatário, detalhamento,
+  produto, campos extras);
+- campos extras e os valores de multa, juros e atualização monetária no item;
+- trocar a serialização em lxml pelo `StackedModel` sobre os mixins `gnre20_`,
+  agora que os bindings estão na nfelib.

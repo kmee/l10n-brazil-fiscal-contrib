@@ -19,6 +19,14 @@
         sequence="61"
     />
     <menuitem
+        id="gnre_analysis_menu"
+        name="Análise de GNRE"
+        action="gnre_obligation_analysis_action"
+        groups="l10n_br_fiscal.group_user"
+        parent="l10n_br_fiscal.document_menu"
+        sequence="62"
+    />
+    <menuitem
         id="gnre_state_config_menu"
         name="Regras de GNRE por UF"
         action="gnre_state_config_action"

@@ -34,7 +34,7 @@ class TestGnreObligation(TransactionCase):
                 "company_id": cls.company.id,
                 "fiscal_state_id": cls.state_rj.id,
                 "tax_group_id": cls.tax_group_icmsst.id,
-                "revenue_code": "100102",
+                "revenue_code": "100099",
                 "mode": "document",
                 "due_days": 0,
             }

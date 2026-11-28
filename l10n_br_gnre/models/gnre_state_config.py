@@ -115,6 +115,13 @@ class GnreStateConfig(models.Model):
         string="Convênio",
     )
 
+    recipient_required = fields.Boolean(
+        string="Informar Destinatário",
+        help="A UF exige o contribuinte destinatário no item da guia, o que é "
+        "comum no DIFAL de venda a consumidor final. Confira na consulta de "
+        "configurações da UF (GnreConfigUF) para a receita.",
+    )
+
     active = fields.Boolean(default=True)
 
     _sql_constraints = [
