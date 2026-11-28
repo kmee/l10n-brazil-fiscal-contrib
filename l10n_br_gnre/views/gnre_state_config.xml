@@ -22,6 +22,14 @@
         <field name="model">l10n_br_gnre.state.config</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <button
+                        name="action_gnre_fetch_rules"
+                        type="object"
+                        string="Consultar Regras no Portal"
+                        class="btn-primary"
+                    />
+                </header>
                 <sheet>
                     <group>
                         <group string="Abrangência">
@@ -46,7 +54,23 @@
                             <field name="period" />
                             <field name="due_days" />
                         </group>
+                        <group string="Exigências da UF">
+                            <field name="origin_document_type" />
+                            <field name="period_reference" />
+                            <field name="payment_date_required" />
+                            <field name="fcp_required" />
+                        </group>
                     </group>
+                    <field name="extra_field_ids">
+                        <list editable="bottom">
+                            <field name="code" />
+                            <field name="name" />
+                            <field name="field_type" />
+                            <field name="source" />
+                            <field name="fixed_value" />
+                        </list>
+                    </field>
+                    <field name="portal_rules" invisible="not portal_rules" />
                 </sheet>
             </form>
         </field>

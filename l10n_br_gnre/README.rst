@@ -63,9 +63,12 @@ Configuration
    para cada UF favorecida e origem de valor (ICMS ST ou DIFAL): código
    de receita, detalhamento, modo (guia por documento ou consolidada),
    período, prazo e convênio.
-3. Marque "Informar Destinatário" quando a UF exigir o contribuinte
-   destinatário no item, o que é comum no DIFAL de venda a consumidor
-   final.
+3. Na regra, use Consultar Regras no Portal: o portal informa o que a UF
+   exige para a receita, e a regra fica preenchida com o destinatário, o
+   tipo do documento de origem, o período de referência, a data de
+   pagamento, o FCP e os campos extras obrigatórios. Os campos extras
+   podem ser ajustados à mão; o valor de cada um sai do documento de
+   origem (data de emissão, chave ou número) ou de um texto fixo.
 4. Quando a empresa for inscrita como substituta na UF favorecida,
    cadastre a inscrição entre as inscrições estaduais de outras UFs da
    empresa. Sem ela, a guia leva o endereço completo do emitente, como o
@@ -91,11 +94,10 @@ Usage
 Known issues / Roadmap
 ======================
 
-A transmissão usa o cliente da GNRE da nfelib (akretion/nfelib#157 e o
-cliente empilhado sobre ele), instalado pelo git até ser publicado no
-PyPI. O WSDL do portal só responde com certificado de cliente, então os
-namespaces do envelope seguem a implementação aberta sped-gnre e
-precisam ser confirmados no primeiro envio em homologação.
+A transmissão usa o cliente da GNRE da nfelib (akretion/nfelib#157),
+instalado pelo git até ser publicado no PyPI. O envelope segue o WSDL do
+portal e foi validado no portal de homologação: lote recebido,
+processado e guia devolvida em PDF, para o DIFAL do RJ (receita 100102).
 
 Fora do escopo por decisão consciente:
 
@@ -111,11 +113,9 @@ Fora do escopo por decisão consciente:
 
 Próximos passos:
 
-- consultar as configurações da UF (GnreConfigUF) a partir da regra por
-  UF, para preencher sozinho o que cada receita exige (destinatário,
-  detalhamento, produto, campos extras);
-- campos extras e os valores de multa, juros e atualização monetária no
-  item;
+- detalhamento da receita e produto escolhidos a partir da lista que a
+  consulta de configurações da UF devolve;
+- os valores de multa, juros e atualização monetária no item;
 - trocar a serialização em lxml pelo ``StackedModel`` sobre os mixins
   ``gnre20_``, agora que os bindings estão na nfelib.
 

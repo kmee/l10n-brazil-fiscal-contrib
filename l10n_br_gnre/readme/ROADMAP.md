@@ -1,8 +1,7 @@
-A transmissão usa o cliente da GNRE da nfelib (akretion/nfelib#157 e o cliente
-empilhado sobre ele), instalado pelo git até ser publicado no PyPI. O WSDL do
-portal só responde com certificado de cliente, então os namespaces do envelope
-seguem a implementação aberta sped-gnre e precisam ser confirmados no primeiro
-envio em homologação.
+A transmissão usa o cliente da GNRE da nfelib (akretion/nfelib#157), instalado
+pelo git até ser publicado no PyPI. O envelope segue o WSDL do portal e foi
+validado no portal de homologação: lote recebido, processado e guia devolvida em
+PDF, para o DIFAL do RJ (receita 100102).
 
 Fora do escopo por decisão consciente:
 
@@ -16,9 +15,8 @@ Fora do escopo por decisão consciente:
 
 Próximos passos:
 
-- consultar as configurações da UF (GnreConfigUF) a partir da regra por UF, para
-  preencher sozinho o que cada receita exige (destinatário, detalhamento,
-  produto, campos extras);
-- campos extras e os valores de multa, juros e atualização monetária no item;
+- detalhamento da receita e produto escolhidos a partir da lista que a consulta
+  de configurações da UF devolve;
+- os valores de multa, juros e atualização monetária no item;
 - trocar a serialização em lxml pelo `StackedModel` sobre os mixins `gnre20_`,
   agora que os bindings estão na nfelib.

@@ -44,12 +44,23 @@ GUIDE_PENDING = "4"
 # O portal descarta mensagens acima de 600 KB (manual, item 4.1.5).
 GNRE_MAX_MESSAGE_SIZE = 600 * 1024
 
+# Limites do lote publicados na página Automação do portal GNRE.
+GNRE_MAX_GUIDES_PER_LOT = 50
+GNRE_MAX_ITEMS_PER_LOT = 300
+
 
 def _value(node):
-    """Plain text of an enum, a string or an xsdata wildcard."""
+    """Plain text of an enum, a string or an xsdata wildcard.
+
+    The portal answers wrap enums in elements that carry attributes, such as
+    the extra field type: an object whose value is an enum whose value is the
+    text, so the unwrapping goes down to the text.
+    """
     if node is None:
         return False
-    value = getattr(node, "value", node)
+    value = node
+    while not isinstance(value, str | bytes) and hasattr(value, "value"):
+        value = value.value
     if hasattr(value, "text"):
         value = value.text
     if isinstance(value, bytes):
@@ -239,25 +250,9 @@ class Document(models.Model):
         document_type = self._gnre_document_type()
         return self.filtered(lambda d: d.document_type_id == document_type)
 
-    def _gnre_certificate(self):
-        """PKCS12 bytes and password of the company certificate."""
-        certificate = self.company_id._get_br_certificate()
-        return (
-            certificate.with_context(bin_size=False).content,
-            certificate.pkcs12_password,
-        )
-
     def _gnre_client(self):
         """Return the nfelib GNRE client for the company of the guides."""
-        from nfelib.gnre.client.v2_0 import GnreClient
-
-        company = self.company_id
-        pkcs12_data, pkcs12_password = self._gnre_certificate()
-        return GnreClient(
-            ambiente=company.gnre_environment,
-            pkcs12_data=pkcs12_data,
-            pkcs12_password=pkcs12_password,
-        )
+        return self.company_id._gnre_client()
 
     def _gnre_attach(self, name, data, mimetype):
         self.ensure_one()
@@ -285,8 +280,32 @@ class Document(models.Model):
                         f"gnre-{label}-{kind}-{guide.id}.xml", data, "application/xml"
                     )
 
+    def _gnre_split_lots(self):
+        """Split the guides in lotes within the limits of the portal.
+
+        The Automação page of the portal admits at most 50 guides and 300 items
+        per lote (100 items per guide is already enforced when grouping).
+        """
+        lots = []
+        lot = self.browse()
+        items = 0
+        for guide in self:
+            count = len(guide.gnre_obligation_ids)
+            if lot and (
+                len(lot) >= GNRE_MAX_GUIDES_PER_LOT
+                or items + count > GNRE_MAX_ITEMS_PER_LOT
+            ):
+                lots.append(lot)
+                lot = self.browse()
+                items = 0
+            lot |= guide
+            items += count
+        if lot:
+            lots.append(lot)
+        return lots
+
     def action_gnre_transmit(self):
-        """Send the selected guides in one lote and keep the receipt."""
+        """Send the selected guides, one lote per portal limit, keeping receipts."""
         guides = self._gnre_guides().filtered(
             lambda g: g.gnre_transmission_state in ("draft", "rejected")
         )
@@ -294,7 +313,11 @@ class Document(models.Model):
             raise UserError(_("Nenhuma guia GNRE para transmitir."))
         if len(guides.company_id) > 1:
             raise UserError(_("Um lote de GNRE não pode misturar empresas."))
+        results = [lot._gnre_send_lot() for lot in guides._gnre_split_lots()]
+        return all(results)
 
+    def _gnre_send_lot(self):
+        guides = self
         xml = self.env["l10n_br_gnre.xml"].render_lote(guides)
         if len(xml.encode()) > GNRE_MAX_MESSAGE_SIZE:
             raise UserError(

@@ -125,10 +125,25 @@ class GnreXml(models.AbstractModel):
         if municipio:
             self._element(destinatario, "municipio", municipio)
 
-    def _append_value(self, item, value_type, amount):
-        if not amount:
+    def _append_value(self, item, value_type, amount, required=False):
+        if not amount and not required:
             return
-        self._element(item, "valor", f"{amount:.2f}", tipo=value_type)
+        self._element(item, "valor", f"{amount or 0.0:.2f}", tipo=value_type)
+
+    def _append_extra_fields(self, item, obligation):
+        """camposExtras that the state requires for the revenue."""
+        extras = [
+            (extra.code, extra._value_for(obligation))
+            for extra in obligation.config_id.extra_field_ids
+        ]
+        extras = [(code, value) for code, value in extras if value]
+        if not extras:
+            return
+        campos = self._element(item, "camposExtras")
+        for code, value in extras:
+            campo = self._element(campos, "campoExtra")
+            self._element(campo, "codigo", code)
+            self._element(campo, "valor", self._text(value, 100))
 
     def _append_item(self, itens, obligation):
         """Um item da guia, montado a partir de uma obrigação.
@@ -137,6 +152,7 @@ class GnreXml(models.AbstractModel):
         documentoOrigem, produto, referencia, dataVencimento, valor, convenio,
         contribuinteDestinatario, camposExtras, numeroControle.
         """
+        config = obligation.config_id
         item = self._element(itens, "item")
         self._element(item, "receita", obligation.revenue_code)
         if obligation.detail_revenue_code:
@@ -147,9 +163,9 @@ class GnreXml(models.AbstractModel):
                 item,
                 "documentoOrigem",
                 document.document_key,
-                tipo=DOCUMENT_ORIGIN_NFE,
+                tipo=config.origin_document_type or DOCUMENT_ORIGIN_NFE,
             )
-        if obligation.period_ref:
+        if obligation.period_ref and config.period_reference:
             referencia = self._element(item, "referencia")
             self._element(referencia, "periodo", obligation.config_id.period or "0")
             self._element(referencia, "mes", obligation.period_ref[:2])
@@ -160,12 +176,13 @@ class GnreXml(models.AbstractModel):
             )
         # ICMS e FCP são dois valores do MESMO item, não itens separados.
         self._append_value(item, VALUE_TYPE_ICMS, obligation.amount_principal)
-        self._append_value(item, VALUE_TYPE_FCP, obligation.amount_fcp)
-        if obligation.config_id.convenio:
-            self._element(
-                item, "convenio", self._text(obligation.config_id.convenio, 30)
-            )
+        self._append_value(
+            item, VALUE_TYPE_FCP, obligation.amount_fcp, required=config.fcp_required
+        )
+        if config.convenio:
+            self._element(item, "convenio", self._text(config.convenio, 30))
         self._append_recipient(item, obligation)
+        self._append_extra_fields(item, obligation)
         return item
 
     def _append_guide(self, guias, guide):
@@ -188,6 +205,9 @@ class GnreXml(models.AbstractModel):
             self._append_item(itens, obligation)
         total = sum(obligations.mapped("amount_total"))
         self._element(guia, "valorGNRE", f"{total:.2f}")
+        due_dates = [d for d in obligations.mapped("date_due") if d]
+        if due_dates and any(obligations.mapped("config_id.payment_date_required")):
+            self._element(guia, "dataPagamento", min(due_dates).strftime("%Y-%m-%d"))
         return guia
 
     def build_lote(self, guides):

@@ -417,9 +417,12 @@ Portal GNRE para usar o webservice (rejeição 102 do manual).</li>
 para cada UF favorecida e origem de valor (ICMS ST ou DIFAL): código
 de receita, detalhamento, modo (guia por documento ou consolidada),
 período, prazo e convênio.</li>
-<li>Marque “Informar Destinatário” quando a UF exigir o contribuinte
-destinatário no item, o que é comum no DIFAL de venda a consumidor
-final.</li>
+<li>Na regra, use Consultar Regras no Portal: o portal informa o que a UF
+exige para a receita, e a regra fica preenchida com o destinatário, o
+tipo do documento de origem, o período de referência, a data de
+pagamento, o FCP e os campos extras obrigatórios. Os campos extras
+podem ser ajustados à mão; o valor de cada um sai do documento de
+origem (data de emissão, chave ou número) ou de um texto fixo.</li>
 <li>Quando a empresa for inscrita como substituta na UF favorecida,
 cadastre a inscrição entre as inscrições estaduais de outras UFs da
 empresa. Sem ela, a guia leva o endereço completo do emitente, como o
@@ -446,11 +449,10 @@ ST ou DIFAL), receita e mês.</li>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h1><a class="toc-backref" href="#toc-entry-3">Known issues / Roadmap</a></h1>
-<p>A transmissão usa o cliente da GNRE da nfelib (akretion/nfelib#157 e o
-cliente empilhado sobre ele), instalado pelo git até ser publicado no
-PyPI. O WSDL do portal só responde com certificado de cliente, então os
-namespaces do envelope seguem a implementação aberta sped-gnre e
-precisam ser confirmados no primeiro envio em homologação.</p>
+<p>A transmissão usa o cliente da GNRE da nfelib (akretion/nfelib#157),
+instalado pelo git até ser publicado no PyPI. O envelope segue o WSDL do
+portal e foi validado no portal de homologação: lote recebido,
+processado e guia devolvida em PDF, para o DIFAL do RJ (receita 100102).</p>
 <p>Fora do escopo por decisão consciente:</p>
 <ul class="simple">
 <li>apuração de ICMS-ST, com saldo credor anterior, devoluções e ajustes.
@@ -465,11 +467,9 @@ entra por contribuição.</li>
 </ul>
 <p>Próximos passos:</p>
 <ul class="simple">
-<li>consultar as configurações da UF (GnreConfigUF) a partir da regra por
-UF, para preencher sozinho o que cada receita exige (destinatário,
-detalhamento, produto, campos extras);</li>
-<li>campos extras e os valores de multa, juros e atualização monetária no
-item;</li>
+<li>detalhamento da receita e produto escolhidos a partir da lista que a
+consulta de configurações da UF devolve;</li>
+<li>os valores de multa, juros e atualização monetária no item;</li>
 <li>trocar a serialização em lxml pelo <tt class="docutils literal">StackedModel</tt> sobre os mixins
 <tt class="docutils literal">gnre20_</tt>, agora que os bindings estão na nfelib.</li>
 </ul>
