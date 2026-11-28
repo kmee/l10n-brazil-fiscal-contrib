@@ -5,3 +5,12 @@ signxml==3.2.2
 # and installing a newer cryptography there breaks pyOpenSSL
 # (oca_install_addons can no longer probe the addons path).
 requests_pkcs12<1.23
+# Temporary: l10n_br_nfse_nacional 18.0.2.0.0 (OCA/l10n-brazil 26e4622889)
+# overrides _export_many2one of l10n_br_fiscal.document and skips the
+# l10n_br_nfe override for every field of the schema in the export context
+# (_spec_prefix() is "nfe40" while a NF-e is exported), so a NF-e exported in
+# a database with the NFS-e Nacional installed carries empty ISSQNtot and
+# exporta groups and fails the schema validation. Remove once the guard checks
+# the nfse10_ prefix upstream, together with the port of the contrib NFS-e
+# modules to the DPS stacked on the document by that same release.
+odoo-addon-l10n_br_nfse_nacional<18.0.2
