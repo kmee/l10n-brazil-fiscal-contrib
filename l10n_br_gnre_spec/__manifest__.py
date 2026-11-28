@@ -10,5 +10,5 @@
     "application": False,
     "development_status": "Alpha",
     "maintainers": ["mileo"],
-    "website": "https://github.com/OCA/l10n-brazil",
+    "website": "https://github.com/kmee/l10n-brazil-fiscal-contrib",
 }
