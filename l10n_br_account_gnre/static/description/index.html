@@ -369,7 +369,7 @@ ul.auto-toc {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! source digest: sha256:834ae78b1d31de3cec7f62d2d033cea029ff189bdd75970d5d8c6a36f3b2f992
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Alpha" src="https://img.shields.io/badge/maturity-Alpha-red.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/OCA/l10n-brazil/tree/16.0/l10n_br_account_gnre"><img alt="OCA/l10n-brazil" src="https://img.shields.io/badge/github-OCA%2Fl10n--brazil-lightgray.png?logo=github" /></a> <a class="reference external image-reference" href="https://translation.odoo-community.org/projects/l10n-brazil-16-0/l10n-brazil-16-0-l10n_br_account_gnre"><img alt="Translate me on Weblate" src="https://img.shields.io/badge/weblate-Translate%20me-F47D42.png" /></a> <a class="reference external image-reference" href="https://runboat.odoo-community.org/builds?repo=OCA/l10n-brazil&amp;target_branch=16.0"><img alt="Try me on Runboat" src="https://img.shields.io/badge/runboat-Try%20me-875A7B.png" /></a></p>
+<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Alpha" src="https://img.shields.io/badge/maturity-Alpha-red.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_account_gnre"><img alt="kmee/l10n-brazil-fiscal-contrib" src="https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github" /></a></p>
 <p>Liga a GNRE à contabilidade: a postagem da fatura de venda cria a
 obrigação de recolhimento, e a emissão da guia cria a conta a pagar
 contra a Secretaria da Fazenda da UF favorecida.</p>
@@ -400,17 +400,19 @@ Only for development or testing purpose, do not use in production.
 <p>O gatilho lê as linhas fiscais, e não as linhas de imposto contábeis.
 Isso é deliberado: o DIFAL não gera <tt class="docutils literal">account.move.line</tt> com
 <tt class="docutils literal">tax_line_id</tt> próprio, e um gatilho sobre as linhas de imposto
-simplesmente não o veria.</p>
+simplesmente não o veria. O DIFAL vem do <tt class="docutils literal">icms_destination_value</tt> e o
+FCP de destino do <tt class="docutils literal">icmsfcp_value</tt>, os mesmos campos que a NF-e leva em
+<tt class="docutils literal">vICMSUFDest</tt> e <tt class="docutils literal">vFCPUFDest</tt>.</p>
 <p>A conciliação da baixa depende do parceiro, porque o plano de contas tem
 uma única conta de ICMS ST a recolher, sem segregação por UF. Quem
 precisar separar por estado pode usar a conta a pagar da regra por UF.</p>
 </div>
 <div class="section" id="bug-tracker">
 <h1><a class="toc-backref" href="#toc-entry-2">Bug Tracker</a></h1>
-<p>Bugs are tracked on <a class="reference external" href="https://github.com/OCA/l10n-brazil/issues">GitHub Issues</a>.
+<p>Bugs are tracked on <a class="reference external" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/issues">GitHub Issues</a>.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-<a class="reference external" href="https://github.com/OCA/l10n-brazil/issues/new?body=module:%20l10n_br_account_gnre%0Aversion:%2016.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
+<a class="reference external" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/issues/new?body=module:%20l10n_br_account_gnre%0Aversion:%2016.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
 <p>Do not contact contributors directly about support or help with technical issues.</p>
 </div>
 <div class="section" id="credits">
@@ -432,17 +434,10 @@ If you spotted it first, help us to smash it by providing a detailed and welcome
 </div>
 <div class="section" id="maintainers">
 <h2><a class="toc-backref" href="#toc-entry-6">Maintainers</a></h2>
-<p>This module is maintained by the OCA.</p>
-<a class="reference external image-reference" href="https://odoo-community.org">
-<img alt="Odoo Community Association" src="https://odoo-community.org/logo.png" />
-</a>
-<p>OCA, or the Odoo Community Association, is a nonprofit organization whose
-mission is to support the collaborative development of Odoo features and
-promote its widespread use.</p>
-<p>Current <a class="reference external" href="https://odoo-community.org/page/maintainer-role">maintainer</a>:</p>
+<p>Current maintainer:</p>
 <p><a class="reference external image-reference" href="https://github.com/mileo"><img alt="mileo" src="https://github.com/mileo.png?size=40px" /></a></p>
-<p>This module is part of the <a class="reference external" href="https://github.com/OCA/l10n-brazil/tree/16.0/l10n_br_account_gnre">OCA/l10n-brazil</a> project on GitHub.</p>
-<p>You are welcome to contribute. To learn how please visit <a class="reference external" href="https://odoo-community.org/page/Contribute">https://odoo-community.org/page/Contribute</a>.</p>
+<p>This module is part of the <a class="reference external" href="https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/16.0/l10n_br_account_gnre">kmee/l10n-brazil-fiscal-contrib</a> project on GitHub.</p>
+<p>You are welcome to contribute.</p>
 </div>
 </div>
 </div>

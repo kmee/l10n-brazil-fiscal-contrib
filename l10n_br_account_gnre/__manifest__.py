@@ -9,7 +9,7 @@
     "license": "AGPL-3",
     "author": "KMEE,Odoo Community Association (OCA)",
     "maintainers": ["mileo"],
-    "website": "https://github.com/OCA/l10n-brazil",
+    "website": "https://github.com/kmee/l10n-brazil-fiscal-contrib",
     "development_status": "Alpha",
     "depends": [
         "l10n_br_gnre",
