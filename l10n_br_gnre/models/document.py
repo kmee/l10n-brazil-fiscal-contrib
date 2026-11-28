@@ -1,6 +1,9 @@
 # Copyright 2026 KMEE - Luis Felipe Mileo <mileo@kmee.com.br>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+import base64
+import logging
+
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
@@ -14,6 +17,44 @@ VALUE_TYPE_FCP = "12"
 GNRE_TYPE_SIMPLE = "0"
 GNRE_TYPE_MULTI_DOCUMENT = "1"
 GNRE_TYPE_MULTI_REVENUE = "2"
+
+
+_logger = logging.getLogger(__name__)
+
+GNRE_TRANSMISSION_STATE = [
+    ("draft", "Não transmitida"),
+    ("sent", "Enviada"),
+    ("pending", "Pendente no portal"),
+    ("processed", "Processada"),
+    ("rejected", "Rejeitada"),
+]
+
+# Recepção do lote (manual, item 4.1.6): 100 é o lote recebido.
+RECEPTION_OK = "100"
+
+# Situação do processamento do lote (manual, quadro IV).
+LOT_WAITING = ("400", "401")
+LOT_DONE = ("402", "403")
+LOT_ERROR = "404"
+
+# Situação de cada guia no resultado (lote_gnre_result_v2.00).
+GUIDE_PROCESSED = "0"
+GUIDE_PENDING = "4"
+
+# O portal descarta mensagens acima de 600 KB (manual, item 4.1.5).
+GNRE_MAX_MESSAGE_SIZE = 600 * 1024
+
+
+def _value(node):
+    """Plain text of an enum, a string or an xsdata wildcard."""
+    if node is None:
+        return False
+    value = getattr(node, "value", node)
+    if hasattr(value, "text"):
+        value = value.text
+    if isinstance(value, bytes):
+        value = value.decode()
+    return value if isinstance(value, str) else str(value)
 
 
 class Document(models.Model):
@@ -142,3 +183,289 @@ class Document(models.Model):
     def action_gnre_render_xml(self):
         """Return the lote XML for the selected guides."""
         return self.env["l10n_br_gnre.xml"].render_lote(self)
+
+    gnre_transmission_state = fields.Selection(
+        selection=GNRE_TRANSMISSION_STATE,
+        string="Situação no Portal",
+        default="draft",
+        readonly=True,
+        copy=False,
+    )
+
+    gnre_environment = fields.Selection(
+        related="company_id.gnre_environment",
+    )
+
+    gnre_receipt_number = fields.Char(
+        string="Recibo do Lote", readonly=True, copy=False
+    )
+
+    gnre_receipt_date = fields.Char(string="Data do Recibo", readonly=True, copy=False)
+
+    gnre_lot_position = fields.Integer(readonly=True, copy=False)
+
+    gnre_status_code = fields.Char(
+        string="Código do Retorno", readonly=True, copy=False
+    )
+
+    gnre_status_message = fields.Char(
+        string="Mensagem do Retorno", readonly=True, copy=False
+    )
+
+    gnre_rejection = fields.Text(
+        string="Motivos da Rejeição", readonly=True, copy=False
+    )
+
+    gnre_digitable_line = fields.Char(
+        string="Linha Digitável", readonly=True, copy=False
+    )
+
+    gnre_bar_code = fields.Char(string="Código de Barras", readonly=True, copy=False)
+
+    gnre_pix_payload = fields.Char(string="Pix Copia e Cola", readonly=True, copy=False)
+
+    gnre_payment_due = fields.Char(
+        string="Data Limite de Pagamento", readonly=True, copy=False
+    )
+
+    gnre_pdf_id = fields.Many2one(
+        comodel_name="ir.attachment",
+        string="PDF da Guia",
+        readonly=True,
+        copy=False,
+    )
+
+    def _gnre_guides(self):
+        document_type = self._gnre_document_type()
+        return self.filtered(lambda d: d.document_type_id == document_type)
+
+    def _gnre_certificate(self):
+        """PKCS12 bytes and password of the company certificate."""
+        certificate = self.company_id._get_br_certificate()
+        return (
+            certificate.with_context(bin_size=False).content,
+            certificate.pkcs12_password,
+        )
+
+    def _gnre_client(self):
+        """Return the nfelib GNRE client for the company of the guides."""
+        from nfelib.gnre.client.v2_0 import GnreClient
+
+        company = self.company_id
+        pkcs12_data, pkcs12_password = self._gnre_certificate()
+        return GnreClient(
+            ambiente=company.gnre_environment,
+            pkcs12_data=pkcs12_data,
+            pkcs12_password=pkcs12_password,
+        )
+
+    def _gnre_attach(self, name, data, mimetype):
+        self.ensure_one()
+        if isinstance(data, str):
+            data = data.encode()
+        return self.env["ir.attachment"].create(
+            {
+                "name": name,
+                "res_model": self._name,
+                "res_id": self.id,
+                "raw": data,
+                "mimetype": mimetype,
+            }
+        )
+
+    def _gnre_attach_exchange(self, client, label):
+        """Keep the XML sent and received, as the edocs of the localization do."""
+        for guide in self:
+            for kind, data in (
+                ("envio", getattr(client, "last_request_xml", None)),
+                ("retorno", getattr(client, "last_response_xml", None)),
+            ):
+                if data:
+                    guide._gnre_attach(
+                        f"gnre-{label}-{kind}-{guide.id}.xml", data, "application/xml"
+                    )
+
+    def action_gnre_transmit(self):
+        """Send the selected guides in one lote and keep the receipt."""
+        guides = self._gnre_guides().filtered(
+            lambda g: g.gnre_transmission_state in ("draft", "rejected")
+        )
+        if not guides:
+            raise UserError(_("Nenhuma guia GNRE para transmitir."))
+        if len(guides.company_id) > 1:
+            raise UserError(_("Um lote de GNRE não pode misturar empresas."))
+
+        xml = self.env["l10n_br_gnre.xml"].render_lote(guides)
+        if len(xml.encode()) > GNRE_MAX_MESSAGE_SIZE:
+            raise UserError(
+                _("O lote passa de 600 KB, o limite do portal. Envie menos guias.")
+            )
+
+        client = guides._gnre_client()
+        try:
+            receipt = client.envia_lote(xml)
+        except Exception as error:  # the portal answer is kept, not raised
+            _logger.warning("GNRE transmission failed: %s", error)
+            guides.write(
+                {
+                    "gnre_transmission_state": "rejected",
+                    "gnre_status_code": False,
+                    "gnre_status_message": str(error)[:255],
+                }
+            )
+            return False
+        guides._gnre_attach_exchange(client, "lote")
+        guides._gnre_process_receipt(receipt)
+        return True
+
+    def _gnre_process_receipt(self, receipt):
+        situation = receipt.situacaoRecepcao
+        code = _value(situation.codigo) if situation else False
+        message = _value(situation.descricao) if situation else False
+        if code != RECEPTION_OK or not receipt.recibo:
+            self.write(
+                {
+                    "gnre_transmission_state": "rejected",
+                    "gnre_status_code": code,
+                    "gnre_status_message": message,
+                }
+            )
+            return
+        for position, guide in enumerate(self):
+            guide.write(
+                {
+                    "gnre_transmission_state": "sent",
+                    "gnre_receipt_number": _value(receipt.recibo.numero),
+                    "gnre_receipt_date": _value(receipt.recibo.dataHoraRecibo),
+                    "gnre_lot_position": position,
+                    "gnre_status_code": code,
+                    "gnre_status_message": message,
+                    "gnre_rejection": False,
+                }
+            )
+
+    def action_gnre_check_result(self):
+        """Read the result of the lotes of the selected guides."""
+        guides = self._gnre_guides().filtered(
+            lambda g: g.gnre_transmission_state in ("sent", "pending")
+            and g.gnre_receipt_number
+        )
+        if not guides:
+            raise UserError(_("Nenhuma guia GNRE aguardando o resultado do lote."))
+        for receipt_number in set(guides.mapped("gnre_receipt_number")):
+            lot = guides.filtered(
+                lambda g, number=receipt_number: g.gnre_receipt_number == number
+            ).sorted("gnre_lot_position")
+            client = lot._gnre_client()
+            try:
+                result = client.consulta_lote(receipt_number, incluir_pdf_guias=True)
+            except Exception as error:  # try again on the next check
+                _logger.warning("GNRE result query failed: %s", error)
+                lot.write({"gnre_status_message": str(error)[:255]})
+                continue
+            lot._gnre_attach_exchange(client, "resultado")
+            lot._gnre_process_result(result)
+        return True
+
+    def _gnre_process_result(self, result):
+        situation = result.situacaoProcess
+        code = _value(situation.codigo) if situation else False
+        message = _value(situation.descricao) if situation else False
+        values = {"gnre_status_code": code, "gnre_status_message": message}
+        if code in LOT_WAITING or not result.resultado:
+            self.write(values)
+            return
+        if code == LOT_ERROR or code not in LOT_DONE:
+            self.write(dict(values, gnre_transmission_state="rejected"))
+            return
+
+        pdf = _value(result.resultado.pdfGuias)
+        results = result.resultado.guia
+        for guide in self:
+            found = guide._gnre_match_result(results)
+            if not found:
+                guide.write(dict(values, gnre_transmission_state="pending"))
+                continue
+            guide._gnre_apply_guide_result(found, values, pdf)
+
+    def _gnre_match_result(self, results):
+        """Find the result of this guide in the lote.
+
+        The portal answers in the order of the lote; state and amount are
+        checked so a reordered answer never lands on the wrong guide.
+        """
+        self.ensure_one()
+
+        def same(found):
+            state = _value(found.ufFavorecida)
+            amount = _value(found.valorGNRE)
+            if state and state != self.gnre_fiscal_state_id.code:
+                return False
+            total = sum(self.gnre_obligation_ids.mapped("amount_total"))
+            return not amount or abs(float(amount) - total) < 0.005
+
+        position = self.gnre_lot_position
+        if position < len(results) and same(results[position]):
+            return results[position]
+        return next((found for found in results if same(found)), False)
+
+    def _gnre_apply_guide_result(self, found, values, pdf):
+        self.ensure_one()
+        situation = _value(found.situacaoGuia)
+        reasons = []
+        if found.motivosRejeicao:
+            for reason in found.motivosRejeicao.motivo:
+                field_name = _value(getattr(reason, "campo", None))
+                reasons.append(
+                    " ".join(
+                        p
+                        for p in (
+                            _value(reason.codigo),
+                            _value(reason.descricao),
+                            f"({field_name})" if field_name else "",
+                        )
+                        if p
+                    )
+                )
+        values = dict(
+            values,
+            gnre_rejection="\n".join(reasons) or False,
+            gnre_digitable_line=_value(found.linhaDigitavel),
+            gnre_bar_code=_value(found.codigoBarras),
+            gnre_pix_payload=_value(found.qrcodePayload),
+            gnre_payment_due=_value(found.dataLimitePagamento),
+        )
+        if situation == GUIDE_PROCESSED:
+            values["gnre_transmission_state"] = "processed"
+            if pdf:
+                values["gnre_pdf_id"] = self._gnre_attach(
+                    f"gnre-{self.id}.pdf", base64.b64decode(pdf), "application/pdf"
+                ).id
+            self.gnre_obligation_ids.write({"state": "transmitted"})
+        elif situation == GUIDE_PENDING:
+            values["gnre_transmission_state"] = "pending"
+        else:
+            values["gnre_transmission_state"] = "rejected"
+        self.write(values)
+
+    def action_gnre_download_pdf(self):
+        self.ensure_one()
+        if not self.gnre_pdf_id:
+            raise UserError(_("O portal ainda não devolveu o PDF desta guia."))
+        return {
+            "type": "ir.actions.act_url",
+            "url": f"/web/content/{self.gnre_pdf_id.id}?download=true",
+            "target": "self",
+        }
+
+    def _cron_gnre_check_results(self):
+        """Poll the lotes still waiting for the portal, one company at a time."""
+        guides = self.search(
+            [
+                ("gnre_transmission_state", "in", ("sent", "pending")),
+                ("gnre_receipt_number", "!=", False),
+            ]
+        )
+        for company in guides.company_id:
+            company_guides = guides.filtered(lambda g, c=company: g.company_id == c)
+            company_guides.with_company(company).action_gnre_check_result()

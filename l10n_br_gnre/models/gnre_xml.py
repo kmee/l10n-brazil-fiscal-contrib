@@ -43,19 +43,87 @@ class GnreXml(models.AbstractModel):
             node.text = str(text)
         return node
 
-    def _append_emitter(self, guia, company):
-        """contribuinteEmitente, o contribuinte que recolhe."""
+    def _text(self, value, size):
+        """Trim to the XSD size: TString refuses leading or trailing spaces."""
+        return " ".join((value or "").split())[:size].strip()
+
+    def _state_ie(self, partner, state):
+        """State tax number of the partner in the favoured state, if any.
+
+        The GNRE IE is the registration in the favoured state (rejection 202
+        of the manual), not the one of the state where the partner lives.
+        """
+        if partner.state_id == state and partner.l10n_br_ie_code:
+            return partner.l10n_br_ie_code
+        number = partner.state_tax_number_ids.filtered(lambda n: n.state_id == state)[
+            :1
+        ]
+        return number.l10n_br_ie_code if number else False
+
+    def _append_identification(self, parent, partner, state):
+        identificacao = self._element(parent, "identificacao")
+        document = self._digits(partner.vat)
+        tag = "CPF" if len(document) == 11 else "CNPJ"
+        self._element(identificacao, tag, document)
+        # A IE vai sem mascara: o XSD exige o pattern [0-9]{2,16}.
+        ie = self._digits(self._state_ie(partner, state))
+        if ie:
+            self._element(identificacao, "IE", ie)
+        return bool(ie)
+
+    def _municipality(self, partner):
+        """TCodMunIBGE has the 5 digits of the city, without the state."""
+        return self._digits(partner.city_id.ibge_code)[-5:] or False
+
+    def _append_emitter(self, guia, company, state):
+        """contribuinteEmitente, o contribuinte que recolhe.
+
+        Who is registered in the favoured state sends only the identification.
+        Who is not sends the address too (rejections 209 to 211 of the manual).
+        """
         partner = company.partner_id
         emitente = self._element(guia, "contribuinteEmitente")
-        identificacao = self._element(emitente, "identificacao")
-        self._element(identificacao, "CNPJ", self._digits(partner.vat))
-        # A IE vai sem mascara: o XSD exige o pattern [0-9]{2,16}.
-        if partner.l10n_br_ie_code:
-            self._element(identificacao, "IE", self._digits(partner.l10n_br_ie_code))
+        registered = self._append_identification(emitente, partner, state)
         if partner.legal_name or partner.name:
             self._element(
-                emitente, "razaoSocial", (partner.legal_name or partner.name)[:60]
+                emitente,
+                "razaoSocial",
+                self._text(partner.legal_name or partner.name, 60),
             )
+        if registered:
+            return emitente
+        address = ", ".join(p for p in (partner.street, partner.district) if p)
+        if address:
+            self._element(emitente, "endereco", self._text(address, 60))
+        municipio = self._municipality(partner)
+        if municipio:
+            self._element(emitente, "municipio", municipio)
+        if partner.state_id:
+            self._element(emitente, "uf", partner.state_id.code)
+        cep = self._digits(partner.zip)
+        if len(cep) == 8:
+            self._element(emitente, "cep", cep)
+        phone = self._digits(partner.phone)[-11:]
+        if len(phone) >= 6:
+            self._element(emitente, "telefone", phone)
+        return emitente
+
+    def _append_recipient(self, item, obligation):
+        """contribuinteDestinatario, required by some states for the DIFAL."""
+        partner = obligation.document_id.partner_id
+        if not obligation.config_id.recipient_required or not partner:
+            return
+        destinatario = self._element(item, "contribuinteDestinatario")
+        self._append_identification(destinatario, partner, obligation.fiscal_state_id)
+        if partner.legal_name or partner.name:
+            self._element(
+                destinatario,
+                "razaoSocial",
+                self._text(partner.legal_name or partner.name, 60),
+            )
+        municipio = self._municipality(partner)
+        if municipio:
+            self._element(destinatario, "municipio", municipio)
 
     def _append_value(self, item, value_type, amount):
         if not amount:
@@ -94,7 +162,10 @@ class GnreXml(models.AbstractModel):
         self._append_value(item, VALUE_TYPE_ICMS, obligation.amount_principal)
         self._append_value(item, VALUE_TYPE_FCP, obligation.amount_fcp)
         if obligation.config_id.convenio:
-            self._element(item, "convenio", obligation.config_id.convenio)
+            self._element(
+                item, "convenio", self._text(obligation.config_id.convenio, 30)
+            )
+        self._append_recipient(item, obligation)
         return item
 
     def _append_guide(self, guias, guide):
@@ -111,7 +182,7 @@ class GnreXml(models.AbstractModel):
         )
         self._element(guia, "ufFavorecida", guide.gnre_fiscal_state_id.code)
         self._element(guia, "tipoGnre", guide.gnre_type)
-        self._append_emitter(guia, guide.company_id)
+        self._append_emitter(guia, guide.company_id, guide.gnre_fiscal_state_id)
         itens = self._element(guia, "itensGNRE")
         for obligation in obligations:
             self._append_item(itens, obligation)

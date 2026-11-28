@@ -38,6 +38,7 @@
                             <field name="revenue_code" />
                             <field name="detail_revenue_code" />
                             <field name="convenio" />
+                            <field name="recipient_required" />
                             <field name="authority_partner_id" />
                         </group>
                         <group string="Apuração">

@@ -79,6 +79,13 @@ class GnreObligation(models.Model):
         required=True,
     )
 
+    amount_source = fields.Selection(
+        related="config_id.amount_source",
+        string="Origem do Valor",
+        store=True,
+        help="Separa ICMS ST de DIFAL na análise das obrigações.",
+    )
+
     authority_partner_id = fields.Many2one(
         comodel_name="res.partner",
         string="Secretaria da Fazenda",

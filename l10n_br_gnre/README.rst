@@ -16,20 +16,15 @@ GNRE
 .. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
-.. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fl10n--brazil-lightgray.png?logo=github
-    :target: https://github.com/OCA/l10n-brazil/tree/18.0/l10n_br_gnre
-    :alt: OCA/l10n-brazil
-.. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/l10n-brazil-18-0/l10n-brazil-18-0-l10n_br_gnre
-    :alt: Translate me on Weblate
-.. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
-    :target: https://runboat.odoo-community.org/builds?repo=OCA/l10n-brazil&target_branch=18.0
-    :alt: Try me on Runboat
+.. |badge3| image:: https://img.shields.io/badge/github-kmee%2Fl10n--brazil--fiscal--contrib-lightgray.png?logo=github
+    :target: https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/18.0/l10n_br_gnre
+    :alt: kmee/l10n-brazil-fiscal-contrib
 
-|badge1| |badge2| |badge3| |badge4| |badge5|
+|badge1| |badge2| |badge3|
 
-Emissão da GNRE (Guia Nacional de Recolhimento de Tributos Estaduais) a
-partir dos dados que o Odoo já tem, sem redigitação no portal.
+Emissão e transmissão da GNRE (Guia Nacional de Recolhimento de Tributos
+Estaduais) a partir dos dados que o Odoo já tem, sem redigitação no
+portal.
 
 O módulo cobre os dois modos que a operação exige: uma guia por
 documento, para quem não tem inscrição estadual no destino e precisa que
@@ -38,6 +33,14 @@ para quem tem inscrição e apura.
 
 A escolha entre os dois é dado, não código: fica no cadastro de regras
 por UF.
+
+A guia é transmitida ao Portal GNRE pelo webservice do Manual de
+Integração do Contribuinte (lote 2.00), com o certificado digital da
+empresa. O resultado do lote traz o PDF da guia, a linha digitável, o
+código de barras e o Pix copia e cola, que ficam gravados na guia.
+
+As obrigações têm uma análise por UF, origem do valor (ICMS ST ou
+DIFAL), receita e mês de vencimento, em tabela dinâmica e gráfico.
 
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
@@ -49,13 +52,50 @@ por UF.
 .. contents::
    :local:
 
+Configuration
+=============
+
+1. Na empresa, aba Fiscal, página Documentos Eletrônicos, escolha o
+   ambiente da GNRE (homologação ou produção) e confira o certificado
+   digital e-CNPJ. O CNPJ do certificado precisa estar habilitado no
+   Portal GNRE para usar o webservice (rejeição 102 do manual).
+2. Em Fiscal, Configuração, Regras de GNRE por UF, cadastre uma regra
+   para cada UF favorecida e origem de valor (ICMS ST ou DIFAL): código
+   de receita, detalhamento, modo (guia por documento ou consolidada),
+   período, prazo e convênio.
+3. Marque "Informar Destinatário" quando a UF exigir o contribuinte
+   destinatário no item, o que é comum no DIFAL de venda a consumidor
+   final.
+4. Quando a empresa for inscrita como substituta na UF favorecida,
+   cadastre a inscrição entre as inscrições estaduais de outras UFs da
+   empresa. Sem ela, a guia leva o endereço completo do emitente, como o
+   manual exige de quem não é inscrito.
+
+Usage
+=====
+
+1. As obrigações nascem da nota fiscal (com o ``l10n_br_account_gnre``,
+   na postagem da fatura) e aparecem em Fiscal, Obrigações de GNRE.
+2. Em Fiscal, Gerar Guias GNRE, escolha o período de vencimento e as
+   UFs: o assistente agrupa as obrigações pendentes em guias,
+   respeitando o limite de 100 itens por guia.
+3. Na guia, use Transmitir GNRE. Guias selecionadas juntas vão no mesmo
+   lote, e o portal devolve um recibo.
+4. Use Consultar Resultado, ou espere a ação agendada que consulta os
+   lotes pendentes a cada 30 minutos. Guia processada recebe o PDF, a
+   linha digitável, o código de barras e o Pix; guia rejeitada mostra os
+   motivos e pode ser transmitida de novo depois da correção.
+5. Em Fiscal, Análise de GNRE, acompanhe os valores por UF, origem (ICMS
+   ST ou DIFAL), receita e mês.
+
 Known issues / Roadmap
 ======================
 
-Esta entrega para na geração da guia. A transmissão ao webservice virá
-depois, fora do addon, em duas camadas: ``nfelib/gnre/`` com os bindings
-e os endpoints, e ``erpbrasil.edoc.gnre`` com a orquestração, seguindo o
-par que já existe para MDF-e.
+A transmissão usa o cliente da GNRE da nfelib (akretion/nfelib#157 e o
+cliente empilhado sobre ele), instalado pelo git até ser publicado no
+PyPI. O WSDL do portal só responde com certificado de cliente, então os
+namespaces do envelope seguem a implementação aberta sped-gnre e
+precisam ser confirmados no primeiro envio em homologação.
 
 Fora do escopo por decisão consciente:
 
@@ -69,20 +109,23 @@ Fora do escopo por decisão consciente:
 - cadastro completo dos códigos de receita das 27 UFs, que é dado e
   entra por contribuição.
 
-A serialização do lote usa lxml em vez de ``spec_driven_model`` sobre os
-mixins ``gnre20_``. É provisório: o ``_build_binding`` precisa dos
-bindings da GNRE na nfelib, que ainda não foram publicados
-(akretion/nfelib#157). Quando entrarem, o ``l10n_br_gnre.xml`` dá lugar
-ao ``StackedModel``, e os XSD de ``tests/data/`` saem daqui, porque o
-lugar deles é a nfelib.
+Próximos passos:
+
+- consultar as configurações da UF (GnreConfigUF) a partir da regra por
+  UF, para preencher sozinho o que cada receita exige (destinatário,
+  detalhamento, produto, campos extras);
+- campos extras e os valores de multa, juros e atualização monetária no
+  item;
+- trocar a serialização em lxml pelo ``StackedModel`` sobre os mixins
+  ``gnre20_``, agora que os bindings estão na nfelib.
 
 Bug Tracker
 ===========
 
-Bugs are tracked on `GitHub Issues <https://github.com/OCA/l10n-brazil/issues>`_.
+Bugs are tracked on `GitHub Issues <https://github.com/kmee/l10n-brazil-fiscal-contrib/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/OCA/l10n-brazil/issues/new?body=module:%20l10n_br_gnre%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/kmee/l10n-brazil-fiscal-contrib/issues/new?body=module:%20l10n_br_gnre%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -104,24 +147,14 @@ Contributors
 Maintainers
 -----------
 
-This module is maintained by the OCA.
-
-.. image:: https://odoo-community.org/logo.png
-   :alt: Odoo Community Association
-   :target: https://odoo-community.org
-
-OCA, or the Odoo Community Association, is a nonprofit organization whose
-mission is to support the collaborative development of Odoo features and
-promote its widespread use.
-
 .. |maintainer-mileo| image:: https://github.com/mileo.png?size=40px
     :target: https://github.com/mileo
     :alt: mileo
 
-Current `maintainer <https://odoo-community.org/page/maintainer-role>`__:
+Current maintainer:
 
 |maintainer-mileo| 
 
-This module is part of the `OCA/l10n-brazil <https://github.com/OCA/l10n-brazil/tree/18.0/l10n_br_gnre>`_ project on GitHub.
+This module is part of the `kmee/l10n-brazil-fiscal-contrib <https://github.com/kmee/l10n-brazil-fiscal-contrib/tree/18.0/l10n_br_gnre>`_ project on GitHub.
 
-You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.
+You are welcome to contribute.
