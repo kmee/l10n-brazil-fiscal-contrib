@@ -196,6 +196,45 @@ class TestGnreTransmission(TransactionCase):
         self.assertEqual(client.sent[0].count("<TDadosGNRE"), 2)
         self.assertEqual(guides.mapped("gnre_lot_position"), [0, 1])
 
+    def _three_guides(self):
+        guides = self.env["l10n_br_fiscal.document"]
+        for index, key in enumerate(
+            (
+                "35260799001100220051550010000010001000010008",
+                "35260799001100220051550010000010002000010006",
+                "35260799001100220051550010000010003000010004",
+            )
+        ):
+            guides |= self._create_guide(key, number=str(1000 + index))
+        return guides
+
+    def test_guides_are_split_by_the_guide_limit(self):
+        """No máximo 50 guias por lote: acima disso, um lote por fatia."""
+        guides = self._three_guides()
+        client = FakeGnreClient(receipt=receipt())
+        with (
+            self._patch_client(client),
+            patch(
+                "odoo.addons.l10n_br_gnre.models.document.GNRE_MAX_GUIDES_PER_LOT", 2
+            ),
+        ):
+            self.assertTrue(guides.action_gnre_transmit())
+
+        self.assertEqual([lote.count("<TDadosGNRE") for lote in client.sent], [2, 1])
+        self.assertEqual(guides.mapped("gnre_lot_position"), [0, 1, 0])
+
+    def test_guides_are_split_by_the_item_limit(self):
+        """No máximo 300 itens por lote, somando os itens das guias."""
+        guides = self._three_guides()
+        client = FakeGnreClient(receipt=receipt())
+        with (
+            self._patch_client(client),
+            patch("odoo.addons.l10n_br_gnre.models.document.GNRE_MAX_ITEMS_PER_LOT", 1),
+        ):
+            guides.action_gnre_transmit()
+
+        self.assertEqual(len(client.sent), 3)
+
     def test_refused_reception_is_recorded_not_raised(self):
         guide = self._create_guide()
         client = FakeGnreClient(receipt=receipt(code="102"))

@@ -2,7 +2,21 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import _, api, fields, models
-from odoo.exceptions import ValidationError
+from odoo.exceptions import UserError, ValidationError
+
+from .document import _value
+
+# Consulta de configurações da UF (manual, item 4.3): 450 é a consulta efetuada.
+CONFIG_OK = "450"
+
+# Campos extras cujo valor sai do documento de origem, pelo título que a UF
+# publica na consulta de configurações. Os demais ficam como texto fixo.
+EXTRA_SOURCE_BY_TITLE = {
+    "data de emissão": "document_date",
+    "chave de acesso": "document_key",
+    "chave da nfe": "document_key",
+    "número do documento": "document_number",
+}
 
 GNRE_MODE = [
     ("document", "Uma guia por documento"),
@@ -122,6 +136,43 @@ class GnreStateConfig(models.Model):
         "configurações da UF (GnreConfigUF) para a receita.",
     )
 
+    origin_document_type = fields.Char(
+        string="Tipo do Documento de Origem",
+        default="10",
+        help="Código do tipo de documento de origem que a UF aceita para a "
+        "receita, informado na consulta de configurações da UF (por exemplo "
+        "10, nota fiscal, ou 24, chave do DF-e).",
+    )
+
+    period_reference = fields.Boolean(
+        string="Informar Período de Referência",
+        default=True,
+        help="Envia a referência (período, mês e ano) no item da guia.",
+    )
+
+    payment_date_required = fields.Boolean(
+        string="Informar Data de Pagamento",
+        help="A UF exige a data de pagamento na guia; vai a data de vencimento.",
+    )
+
+    fcp_required = fields.Boolean(
+        string="FCP Sempre Informado",
+        help="A UF exige o valor do FCP no item, mesmo quando é zero.",
+    )
+
+    extra_field_ids = fields.One2many(
+        comodel_name="l10n_br_gnre.state.config.extra",
+        inverse_name="config_id",
+        string="Campos Extras",
+        help="Campos adicionais que a UF exige no item, no máximo três.",
+    )
+
+    portal_rules = fields.Text(
+        string="Regras do Portal",
+        readonly=True,
+        help="Resumo da última consulta de configurações da UF no portal.",
+    )
+
     active = fields.Boolean(default=True)
 
     _sql_constraints = [
@@ -139,6 +190,115 @@ class GnreStateConfig(models.Model):
                 raise ValidationError(
                     _("Guia consolidada exige um período de apuração.")
                 )
+
+    @api.constrains("extra_field_ids")
+    def _check_extra_fields(self):
+        for record in self:
+            if len(record.extra_field_ids) > 3:
+                raise ValidationError(
+                    _("O item da guia aceita no máximo três campos extras.")
+                )
+
+    def action_gnre_fetch_rules(self):
+        """Fill the rule with what the portal requires for the revenue.
+
+        Reads the GnreConfigUF answer of the favoured state for the revenue
+        code and sets the recipient, the origin document type, the payment
+        date, the FCP and the mandatory extra fields accordingly.
+        """
+        self.ensure_one()
+        client = self.company_id._gnre_client()
+        answer = client.consulta_config_uf(
+            uf=self.fiscal_state_id.code, receita=self.revenue_code
+        )
+        situation = answer.situacaoConsulta
+        code = _value(situation.codigo) if situation else False
+        if code != CONFIG_OK:
+            message = _value(situation.descricao) if situation else ""
+            raise UserError(
+                _(
+                    "O portal recusou a consulta: %(code)s %(message)s",
+                    code=code or "",
+                    message=message,
+                )
+            )
+        revenue = next(
+            (
+                item
+                for item in (answer.receitas.receita if answer.receitas else [])
+                if _value(item.codigo) == self.revenue_code
+            ),
+            None,
+        )
+        if revenue is None:
+            raise UserError(
+                _(
+                    "A UF %(state)s não gera GNRE para a receita %(revenue)s.",
+                    state=self.fiscal_state_id.code,
+                    revenue=self.revenue_code,
+                )
+            )
+        self.write(self._gnre_rules_values(revenue))
+        return True
+
+    def _gnre_rules_values(self, revenue):
+        def required(node):
+            return _value(node) == "S"
+
+        values = {
+            "recipient_required": required(revenue.exigeContribuinteDestinatario),
+            "period_reference": required(revenue.exigePeriodoReferencia),
+            "payment_date_required": required(revenue.exigeDataPagamento),
+            "fcp_required": required(revenue.exigeValorFecp),
+        }
+        origin_types = (
+            revenue.tiposDocumentosOrigem.tipoDocumentoOrigem
+            if revenue.tiposDocumentosOrigem
+            else []
+        )
+        if origin_types:
+            values["origin_document_type"] = _value(origin_types[0].codigo)
+        extras = [(5, 0, 0)]
+        summary = []
+        additional = (
+            revenue.camposAdicionais.campoAdicional if revenue.camposAdicionais else []
+        )
+        for extra in additional:
+            title = _value(extra.titulo) or ""
+            mandatory = required(extra.obrigatorio)
+            summary.append(
+                f"{_value(extra.codigo)} {title}"
+                + (" (obrigatório)" if mandatory else "")
+            )
+            if mandatory:
+                extras.append(
+                    (
+                        0,
+                        0,
+                        {
+                            "code": int(_value(extra.codigo)),
+                            "name": title,
+                            "field_type": _value(extra.tipo),
+                            "source": EXTRA_SOURCE_BY_TITLE.get(title.lower(), "fixed"),
+                        },
+                    )
+                )
+        values["extra_field_ids"] = extras
+        values["portal_rules"] = "\n".join(
+            [
+                _("Destinatário: %s") % _value(revenue.exigeContribuinteDestinatario),
+                _("Documento de origem: %s")
+                % ", ".join(
+                    f"{_value(t.codigo)} {_value(t.descricao)}" for t in origin_types
+                ),
+                _("Data de pagamento: %s") % _value(revenue.exigeDataPagamento),
+                _("FCP: %s") % _value(revenue.exigeValorFecp),
+                _("Detalhamento: %s") % _value(revenue.exigeDetalhamentoReceita),
+                _("Produto: %s") % _value(revenue.exigeProduto),
+                _("Campos extras: %s") % ("; ".join(summary) or "-"),
+            ]
+        )
+        return values
 
     @api.model
     def _find_config(self, company, fiscal_state, amount_source):
