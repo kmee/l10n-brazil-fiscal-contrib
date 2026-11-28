@@ -5,3 +5,6 @@ signxml==3.2.2
 # and installing a newer cryptography there breaks pyOpenSSL
 # (oca_install_addons can no longer probe the addons path).
 requests_pkcs12<1.23
+# GNRE bindings and client: akretion/nfelib#157 and the client stacked on it,
+# until they are released on PyPI.
+nfelib @ git+https://github.com/kmee/nfelib.git@gnre-client
