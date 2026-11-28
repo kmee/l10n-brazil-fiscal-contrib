@@ -1,6 +1,11 @@
 # Copyright 2026 KMEE - Luis Felipe Mileo <mileo@kmee.com.br>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+from os import path
+
+import nfelib
+from lxml import etree
+
 from odoo import Command
 from odoo.exceptions import UserError
 from odoo.tests import tagged
@@ -57,7 +62,7 @@ class TestAccountGnre(AccountMoveBRCommon):
                 "fiscal_state_id": cls.state_rj.id,
                 "tax_group_id": cls.env.ref("l10n_br_fiscal.tax_group_icmsst").id,
                 "amount_source": "icmsst",
-                "revenue_code": "100102",
+                "revenue_code": "100099",
                 "mode": "document",
                 "due_days": 0,
             }
@@ -92,7 +97,7 @@ class TestAccountGnre(AccountMoveBRCommon):
         obligation = move.gnre_obligation_ids
         self.assertEqual(obligation.state, "pending")
         self.assertEqual(obligation.fiscal_state_id, self.state_rj)
-        self.assertEqual(obligation.revenue_code, "100102")
+        self.assertEqual(obligation.revenue_code, "100099")
         self.assertEqual(obligation.amount_principal, 100.0)
         self.assertEqual(obligation.amount_fcp, 15.0)
         self.assertEqual(obligation.amount_total, 115.0)
@@ -261,3 +266,108 @@ class TestAccountGnre(AccountMoveBRCommon):
         action = move.action_view_gnre_obligations()
         self.assertEqual(action["res_model"], "l10n_br_gnre.obligation")
         self.assertIn(("move_id", "=", move.id), action["domain"])
+
+    def _difal_config(self):
+        config = self.env["l10n_br_gnre.state.config"].create(
+            {
+                "company_id": self.company_data["company"].id,
+                "fiscal_state_id": self.state_rj.id,
+                "tax_group_id": self.env.ref("l10n_br_fiscal.tax_group_icms").id,
+                "amount_source": "difal",
+                "revenue_code": "100102",
+                "mode": "document",
+                "due_days": 0,
+                "recipient_required": True,
+            }
+        )
+        if not self.has_wh_lookup:
+            config.authority_partner_id = self.sefaz_rj
+        return config
+
+    def test_difal_creates_its_own_obligation(self):
+        """DIFAL e FCP de destino viram a obrigação da receita do DIFAL."""
+        config = self._difal_config()
+        move = self._create_invoice(icmsst=0.0)
+        move.fiscal_document_id.fiscal_line_ids.write(
+            {"icms_destination_value": 80.0, "icmsfcp_value": 16.0}
+        )
+        move.action_post()
+
+        obligation = move.gnre_obligation_ids
+        self.assertEqual(obligation.config_id, config)
+        self.assertEqual(obligation.amount_source, "difal")
+        self.assertEqual(obligation.revenue_code, "100102")
+        self.assertEqual(obligation.amount_principal, 80.0)
+        self.assertEqual(obligation.amount_fcp, 16.0)
+
+    def test_icmsst_and_difal_of_the_same_invoice(self):
+        """A mesma nota com ICMS ST e DIFAL gera uma obrigação de cada."""
+        self._difal_config()
+        move = self._create_invoice(icmsst=100.0)
+        move.fiscal_document_id.fiscal_line_ids.write({"icms_destination_value": 80.0})
+        move.action_post()
+
+        self.assertEqual(
+            sorted(move.gnre_obligation_ids.mapped("amount_source")),
+            ["difal", "icmsst"],
+        )
+
+    def test_difal_from_the_tax_engine(self):
+        """Venda a consumidor final de outra UF: o motor calcula o DIFAL.
+
+        Nenhum valor é escrito na linha fiscal: a obrigação nasce do que o
+        motor fiscal calculou, e a guia que sai dela passa no XSD oficial,
+        com o destinatário que a regra da UF exige.
+        """
+        self._difal_config()
+        consumer = self.env["res.partner"].create(
+            {
+                "name": "Consumidor Final RJ",
+                "vat": "529.982.247-25",
+                "state_id": self.state_rj.id,
+                "city_id": self.env.ref("l10n_br_base.city_3304557").id,
+                "country_id": self.env.ref("base.br").id,
+                "ind_ie_dest": "9",
+            }
+        )
+        move = self.init_invoice(
+            "out_invoice",
+            products=[self.product_a],
+            partner=consumer,
+            document_type=self.env.ref("l10n_br_fiscal.document_55"),
+            document_serie_id=self.empresa_lc_document_55_serie_1,
+            fiscal_operation=self.env.ref("l10n_br_fiscal.fo_venda"),
+            fiscal_operation_lines=[
+                self.env.ref("l10n_br_fiscal.fo_venda_venda_nao_contribuinte")
+            ],
+        )
+        lines = move.fiscal_document_id.fiscal_line_ids
+        difal = sum(lines.mapped("icms_destination_value"))
+        self.assertGreater(difal, 0.0, "o motor fiscal calcula o DIFAL")
+        move.action_post()
+
+        obligation = move.gnre_obligation_ids.filtered(
+            lambda o: o.amount_source == "difal"
+        )
+        self.assertEqual(obligation.amount_principal, difal)
+        self.assertEqual(obligation.amount_fcp, sum(lines.mapped("icmsfcp_value")))
+
+        guide = self.env["l10n_br_fiscal.document"]._create_gnre_guide(obligation)
+        lote = self.env["l10n_br_gnre.xml"].build_lote(guide)
+        schema = etree.XMLSchema(
+            etree.parse(
+                path.join(
+                    path.dirname(nfelib.__file__),
+                    "gnre",
+                    "schemas",
+                    "v2_0",
+                    "lote_gnre_v2.00.xsd",
+                )
+            )
+        )
+        schema.assertValid(lote)
+        ns = "{http://www.gnre.pe.gov.br}"
+        self.assertEqual(lote.find(f".//{ns}receita").text, "100102")
+        self.assertEqual(
+            lote.find(f".//{ns}contribuinteDestinatario//{ns}CPF").text, "52998224725"
+        )
